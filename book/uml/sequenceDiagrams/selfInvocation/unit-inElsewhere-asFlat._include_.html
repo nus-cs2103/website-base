@@ -1,0 +1,64 @@
+<p><span class="dimmed"><strong><span>Tools → UML → Sequence Diagrams →
+</span></strong></span></p>
+<div id="title-and-body">
+<div><h4 id="self-invocation"><span>Self invocation</span><a class="fa fa-anchor" href="#self-invocation" onclick="event.stopPropagation()"></a></h4></div>
+<div id="main">
+<div>
+<p><strong>UML can show a method of an object calling another of its own methods.</strong></p>
+<p>Notation:</p>
+<pic eager src="/website/book/uml/sequenceDiagrams/selfInvocation/images/notation.png" width="200"></pic>
+<p></p>
+<box>
+<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The <code class="hljs inline no-lang" v-pre>markCellAt(...)</code> method of a <code class="hljs inline no-lang" v-pre>Logic</code> object is calling its own <code class="hljs inline no-lang" v-pre>updateState(...)</code> method.</p>
+<pic eager src="/website/book/uml/sequenceDiagrams/selfInvocation/images/logic.png" width="350"></pic>
+<p></p>
+<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In this variation, the <code class="hljs inline no-lang" v-pre>Book#write()</code> method is calling the <code class="hljs inline no-lang" v-pre>Chapter#getText()</code> method which in turn does a <em>call back</em> by calling the <code class="hljs inline no-lang" v-pre>getAuthor()</code> method of the calling object.</p>
+<pic eager src="/website/book/uml/sequenceDiagrams/selfInvocation/images/callBack.png" width="350"></pic>
+<p></p></box>
+<p><span class="badge rounded-pill bg-success text-white"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> <strong>'Unroll' chained/compound method calls before drawing sequence diagram.</strong> Consider the Java statement <code class="hljs inline java" v-pre><span class="hljs-keyword">new</span> Book().add(<span class="hljs-keyword">new</span> Chapter());</code>. How do we show it as a sequence diagram? First, 'unroll' it into a simpler series of statements, which can then be drawn as a sequence diagram easily. For example, that statement is equivalent to the following:</p>
+<pre><code class="no-line-numbers hljs java" v-pre><span>Book b = <span class="hljs-keyword">new</span> Book();
+</span><span>Chapter c = <span class="hljs-keyword">new</span> Chapter();
+</span><span>b.add(c);
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "/>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "/>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre></div>
+<div></div></div></div>

@@ -1,0 +1,1545 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="generator" content="MarkBind 6.0.2">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><title>CS2103/T - T1L4. Specifying What to Include in a Snapshot</title> <link rel="stylesheet" href="/website/markbind/css/bootstrap.min.css"> <link rel="stylesheet" href="/website/markbind/fontawesome/css/all.min.css"> <link rel="stylesheet" href="/website/markbind/glyphicons/css/bootstrap-glyphicons.min.css"> <link rel="stylesheet" href="/website/markbind/css/octicons.css"><link rel="stylesheet" href="/website/markbind/css/codeblock-light.min.css"><link rel="stylesheet" href="/website/markbind/css/markbind.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3.2.0/dist/style.css"><link rel="preconnect" href="https://3DU4XTBX4T-dsn.algolia.net" crossorigin><link rel="stylesheet" href="/website/plugins/codeBlockCopyButtons/codeBlockButtons.css"><link rel="stylesheet" href="/website/plugins/codeBlockWrapButtons/codeBlockButtons.css"><link rel="stylesheet" href="/website/plugins/dataTable/datatables.min.css"><link rel="stylesheet" href="/website/plugins/dataTable/datatables-additional.css"><link rel="stylesheet" href="/website/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css"><link rel="stylesheet" href="/website/plugins/markbind-plugin-tree/markbind-plugin-tree.css">
+    
+<link rel="stylesheet" href="/website/css/main.css">
+<link rel="icon" href="/website/favicon.ico"></head>
+<script>
+  const baseUrl = '/website'
+</script>
+<body >
+<div id="app"><!--[--><header sticky><div placement="top" data-v-2dc82f13><nav class="navbar navbar-expand-md d-print-none navbar-dark bg-dark" data-v-2dc82f13><div class="container-fluid" data-v-2dc82f13><div class="navbar-left" data-v-2dc82f13><!--[--><a href="/website/index.html" title="Home" class="navbar-brand"><span class="badge rounded-pill bg-success">CS2103/T <small>2025 Aug-Nov</small></span></a><!--]--></div><div class="navbar-default" data-v-2dc82f13><ul class="navbar-nav me-auto mt-2 mt-lg-0" data-v-2dc82f13><!--[--> <li class="dropdown nav-link algolia-no-index" data-v-154e37d3><!--[--><a role="button" class="dropdown-toggle nav-link" data-bs-toggle="dropdown" data-v-154e37d3><!--[--><strong>Schedule</strong><!--]--><span data-v-154e37d3></span></a><!--]--><!--[--><ul class="dropdown-menu" data-v-154e37d3><!--[--> <li><a href="/website/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li> <li><a href="/website/schedule/week1/index.html" class="dropdown-item"><span><strong>Week 1</strong> [Mon, Aug 11th] </span></a></li> <li><a href="/website/schedule/week2/index.html" class="dropdown-item"><span><strong>Week 2</strong> [Mon, Aug 18th] </span></a></li> <li><a href="/website/schedule/week3/index.html" class="dropdown-item"><span><strong>Week 3</strong> [Mon, Aug 25th] </span></a></li> <li><a href="/website/schedule/week4/index.html" class="dropdown-item"><span><strong>Week 4</strong> [Mon, Sep 1st] </span></a></li> <li><a href="/website/schedule/week5/index.html" class="dropdown-item"><span><strong>Week 5</strong> [Mon, Sep 8th]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li> <li><a href="/website/schedule/week5/admin.html" class="dropdown-item">  ├ Week 5: <span><span aria-hidden="true" class="fas fa-info-circle"></span></span> <span><strong>Admin</strong></span></a></li> <li><a href="/website/schedule/week5/topics.html" class="dropdown-item">  ├ Week 5: <span><span aria-hidden="true" class="fas fa-book"></span></span> <span><strong>Topics</strong></span></a></li> <li><a href="/website/schedule/week5/project.html" class="dropdown-item">  ├ Week 5: <span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> <span><strong>Project</strong></span></a></li> <li><a href="/website/schedule/week5/tutorial.html" class="dropdown-item">  └ Week 5: <span><span aria-hidden="true" class="fas fa-chalkboard-teacher"></span></span> <span><strong>Tutorial</strong></span></a></li> <li><a href="/website/schedule/week6/index.html" class="dropdown-item"><span><strong>Week 6</strong> [Mon, Sep 15th] </span></a></li> <li><a href="/website/schedule/week7/index.html" class="dropdown-item"><span><strong>Week 7</strong> [Mon, Sep 29th] </span></a></li> <li><a href="/website/schedule/week8/index.html" class="dropdown-item"><span><strong>Week 8</strong> [Mon, Oct 6th] </span></a></li> <li><a href="/website/schedule/week9/index.html" class="dropdown-item"><span><strong>Week 9</strong> [Mon, Oct 13th] </span></a></li> <li><a href="/website/schedule/week10/index.html" class="dropdown-item"><span><strong>Week 10</strong> [Mon, Oct 20th] </span></a></li> <li><a href="/website/schedule/week11/index.html" class="dropdown-item"><span><strong>Week 11</strong> [Mon, Oct 27th] </span></a></li> <li><a href="/website/schedule/week12/index.html" class="dropdown-item"><span><strong>Week 12</strong> [Mon, Nov 3rd] </span></a></li> <li><a href="/website/schedule/week13/index.html" class="dropdown-item"><span><strong>Week 13</strong> [Mon, Nov 10th] </span></a></li><!--]--></ul><!--]--></li> <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li> <li class="dropdown nav-link algolia-no-index" data-v-154e37d3><!--[--><a role="button" class="dropdown-toggle nav-link" data-bs-toggle="dropdown" data-v-154e37d3><!--[--><strong>Admin Info</strong><!--]--><span data-v-154e37d3></span></a><!--]--><!--[--><ul class="dropdown-menu" data-v-154e37d3><!--[--> <li><a href="/website/admin/courseOverview.html" class="dropdown-item"><span>Course Overview </span></a></li> <li><a href="/website/admin/usingThisWebsite.html" class="dropdown-item"><span>Using this Website  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-danger"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>1</span></span></span></span></a></li> <li><a href="/website/admin/courseExpectations.html" class="dropdown-item"><span>Course Expectations  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></span></a></li> <li class="dropdown-submenu dropend algolia-no-index" data-v-154e37d3 data-v-1ebc3cbe><!--[--><a role="button" class="dropdown-item submenu-toggle" data-bs-toggle="dropdown" data-v-1ebc3cbe><!--[--><!--[--><strong>Course Structure</strong><!--]--><!--]--></a><!--]--><!--[--><ul class="dropdown-menu" data-v-1ebc3cbe><!--[--><!--[--> <li><a href="/website/admin/courseBriefings.html" class="dropdown-item"><span><small>Course Briefing Videos  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-info"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>3</span></span></span></small></span></a></li> <li><a href="/website/admin/weeklySchedule.html" class="dropdown-item"><span><small>Weekly Schedule  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-info"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>3</span></span></span></small></span></a></li> <li><a href="/website/admin/lectures.html" class="dropdown-item"><span><small>Weekly Briefings  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-info"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>3</span></span></span></small></span></a></li> <li><a href="/website/admin/tutorials.html" class="dropdown-item"><span><small>Tutorials  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li><!--]--><!--]--></ul><!--]--></li> <li><a href="/website/admin/instructors.html" class="dropdown-item"><span>Instructors  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-success"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>4</span></span></span></span></a></li> <li><a href="/website/admin/textbooks.html" class="dropdown-item"><span>Textbooks  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></span></a></li> <li><a href="/website/admin/programmingLanguages.html" class="dropdown-item"><span>Programming Language  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></span></a></li> <li><a href="/website/admin/standardsAndConventions.html" class="dropdown-item"><span>Standards/Conventions  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></span></a></li> <li class="dropdown-submenu dropend algolia-no-index" data-v-154e37d3 data-v-1ebc3cbe><!--[--><a role="button" class="dropdown-item submenu-toggle" data-bs-toggle="dropdown" data-v-1ebc3cbe><!--[--><!--[--><strong>Individual Project (iP)</strong><!--]--><!--]--></a><!--]--><!--[--><ul class="dropdown-menu" data-v-1ebc3cbe><!--[--><!--[--> <li><a href="/website/admin/ip-overview.html" class="dropdown-item"><span><small>iP (Individual Project): Overview  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/ip-w2.html" class="dropdown-item"><span><small>iP: Week 2  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/ip-w3.html" class="dropdown-item"><span><small>iP: Week 3  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/ip-w4.html" class="dropdown-item"><span><small>iP: Week 4  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/ip-w5.html" class="dropdown-item"><span><small>iP: Week 5  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/ip-w6.html" class="dropdown-item"><span><small>iP: Week 6  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-danger"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>1</span></span></span></small></span></a></li> <li><a href="/website/admin/ip-w7.html" class="dropdown-item"><span><small>iP: Week 7  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-success"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>4</span></span></span></small></span></a></li> <li><a href="/website/admin/ip-w8.html" class="dropdown-item"><span><small>iP: Week 8  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-danger"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>1</span></span></span></small></span></a></li> <li><a href="/website/admin/ip-grading.html" class="dropdown-item"><span><small>iP: Grading  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li><!--]--><!--]--></ul><!--]--></li> <li class="dropdown-submenu dropend algolia-no-index" data-v-154e37d3 data-v-1ebc3cbe><!--[--><a role="button" class="dropdown-item submenu-toggle" data-bs-toggle="dropdown" data-v-1ebc3cbe><!--[--><!--[--><strong>Team Project (tP)</strong><!--]--><!--]--></a><!--]--><!--[--><ul class="dropdown-menu" data-v-1ebc3cbe><!--[--><!--[--> <li><a href="/website/admin/tp-overview.html" class="dropdown-item"><span><small>tP (team project): Overview  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-expectations.html" class="dropdown-item"><span><small>tP: Expectations  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-timeline.html" class="dropdown-item"><span><small>tP: Timeline  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-info"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>3</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-constraints.html" class="dropdown-item"><span><small>tP: Constraints  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-teams.html" class="dropdown-item"><span><small>tP: Forming Teams  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-w3.html" class="dropdown-item"><span><small>tP Week 3: Kickoff  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-w4.html" class="dropdown-item"><span><small>tP Week 4: Set Direction  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-info"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>3</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-w5.html" class="dropdown-item"><span><small>tP Week 5: Gather Requirements  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-w6.html" class="dropdown-item"><span><small>tP Week 6: Define the MVP  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-w7.html" class="dropdown-item"><span><small>tP Week 7: Practice Iteration → v1.1  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-w8.html" class="dropdown-item"><span><small>tP Week 8: First Feature Increment → v1.2  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-info"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>3</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-w9.html" class="dropdown-item"><span><small>tP Week 9: MVP → v1.3  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-w10.html" class="dropdown-item"><span><small>tP Week 10: Alpha Version → v1.4  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-w11.html" class="dropdown-item"><span><small>tP Week 11: Release Candidate → v1.5  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-w12.html" class="dropdown-item"><span><small>tP Week 12: Public Release → v1.6  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-info"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>3</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-w13.html" class="dropdown-item"><span><small>tP Week 13: Post-Release Tasks  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-deliverables.html" class="dropdown-item"><span><small>tP: Deliverables  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-ped.html" class="dropdown-item"><span><small>tP: Practical Exam Dry Run  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-pe.html" class="dropdown-item"><span><small>tP: Practical Exam  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-grading.html" class="dropdown-item"><span><small>tP: Grading  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-supervision.html" class="dropdown-item"><span><small>tP: Supervision/Guidance  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li><!--]--><!--]--></ul><!--]--></li> <li><a href="/website/admin/peerEvaluations.html" class="dropdown-item"><span>Peer Evaluations  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></span></a></li> <li><a href="/website/admin/tools.html" class="dropdown-item"><span>Tools  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-info"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>3</span></span></span></span></a></li> <li><a href="/website/admin/exams.html" class="dropdown-item"><span>Exams  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></span></a></li> <li><a href="/website/admin/participation.html" class="dropdown-item"><span>Participation Marks  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></span></a></li> <li><a href="/website/admin/gradeBreakdown.html" class="dropdown-item"><span>Grade Breakdown  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></span></a></li> <li class="dropdown-submenu dropend algolia-no-index" data-v-154e37d3 data-v-1ebc3cbe><!--[--><a role="button" class="dropdown-item submenu-toggle" data-bs-toggle="dropdown" data-v-1ebc3cbe><!--[--><!--[--><strong>Appendices</strong><!--]--><!--]--></a><!--]--><!--[--><ul class="dropdown-menu" data-v-1ebc3cbe><!--[--><!--[--> <li><a href="/website/admin/appendixA-principles.html" class="dropdown-item"><span><small>Apdx A: Course Principles  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-success"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>4</span></span></span></small></span></a></li> <li><a href="/website/admin/appendixB-policies.html" class="dropdown-item"><span><small>Apdx B: Course Policies  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-danger"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>1</span></span></span></small></span></a></li> <li><a href="/website/admin/appendixC-faq.html" class="dropdown-item"><span><small>Apdx C: FAQ  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-danger"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>1</span></span></span></small></span></a></li> <li><a href="/website/admin/appendixD-help.html" class="dropdown-item"><span><small>Apdx D: Getting Help  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/appendixE-gitHub.html" class="dropdown-item"><span><small>Apdx E: Using GitHub  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-danger"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>1</span></span></span></small></span></a></li> <li><a href="/website/admin/appendixF-teamworkIssues.html" class="dropdown-item"><span><small>Apdx F: Handling Team Issues  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-success"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>4</span></span></span></small></span></a></li><!--]--><!--]--></ul><!--]--></li><!--]--></ul><!--]--></li> <li class="dropdown nav-link algolia-no-index" tags="m--cs2103 m--cs2113" data-v-154e37d3><!--[--><a role="button" class="dropdown-toggle nav-link" data-bs-toggle="dropdown" data-v-154e37d3><!--[--><strong>Dashboards</strong><!--]--><span data-v-154e37d3></span></a><!--]--><!--[--><ul class="dropdown-menu" data-v-154e37d3><!--[--> <li><a href="https://nus-cs2103-ay2526s1.github.io/dashboards/contents/participation.html" class="dropdown-item text-success" target="_blank"><span><span aria-hidden="true" class="fas fa-trophy"></span> <strong>Participation</strong> dashboard</span></a></li> <li><a href="https://nus-cs2103-ay2526s1.github.io/dashboards/contents/forum-activities.html" class="dropdown-item" target="_blank"><span><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-comment" aria-hidden="true"><path fill-rule="evenodd" d="M2.75 2.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h2a.75.75 0 01.75.75v2.19l2.72-2.72a.75.75 0 01.53-.22h4.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25H2.75zM1 2.75C1 1.784 1.784 1 2.75 1h10.5c.966 0 1.75.784 1.75 1.75v7.5A1.75 1.75 0 0113.25 12H9.06l-2.573 2.573A1.457 1.457 0 014 13.543V12H2.75A1.75 1.75 0 011 10.25v-7.5z"></path></svg> <strong>Forum</strong> Dashboard</span></a></li> <hr> <span><strong> iP dashboards:</strong></span> <li><a href="https://nus-cs2103-ay2526s1.github.io/dashboards/contents/ip-progress.html" target="_blank" class="dropdown-item text-success"><span><span aria-hidden="true" class="fas fa-tasks"></span> iP Progress Dashboard</span></a></li> <li><a href="https://nus-cs2103-ay2526s1.github.io/dashboards/contents/ip-comments.html" target="_blank" class="dropdown-item"><span><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-comment" aria-hidden="true"><path fill-rule="evenodd" d="M2.75 2.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h2a.75.75 0 01.75.75v2.19l2.72-2.72a.75.75 0 01.53-.22h4.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25H2.75zM1 2.75C1 1.784 1.784 1 2.75 1h10.5c.966 0 1.75.784 1.75 1.75v7.5A1.75 1.75 0 0113.25 12H9.06l-2.573 2.573A1.457 1.457 0 014 13.543V12H2.75A1.75 1.75 0 011 10.25v-7.5z"></path></svg> iP Comments dashboard</span></a></li> <li><a href="https://nus-cs2103-ay2526s1.github.io/ip-dashboard/?search=&amp;sort=groupTitle&amp;sortWithin=title&amp;timeframe=commit&amp;mergegroup=&amp;groupSelect=groupByRepos&amp;breakdown=true&amp;viewRepoTags=true&amp;checkedFileTypes=java~md~fxml~sh~bat~gradle~txt" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-chart-area"></span> iP Code Dashboard</span></a></li> <hr> <span><strong> tP dashboards:</strong></span> <li><a href="https://nus-cs2103-ay2526s1.github.io/dashboards/contents/tp-progress.html" target="_blank" class="dropdown-item text-success"><span><span aria-hidden="true" class="fas fa-tasks"></span> tP Progress Dashboard</span></a></li> <li><a href="https://nus-cs2103-ay2526s1.github.io/dashboards/contents/tp-comments.html" target="_blank" class="dropdown-item"><span><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-comment" aria-hidden="true"><path fill-rule="evenodd" d="M2.75 2.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h2a.75.75 0 01.75.75v2.19l2.72-2.72a.75.75 0 01.53-.22h4.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25H2.75zM1 2.75C1 1.784 1.784 1 2.75 1h10.5c.966 0 1.75.784 1.75 1.75v7.5A1.75 1.75 0 0113.25 12H9.06l-2.573 2.573A1.457 1.457 0 014 13.543V12H2.75A1.75 1.75 0 011 10.25v-7.5z"></path></svg> tP Comments Dashboard</span></a></li> <li><a href="https://nus-cs2103-ay2526s1.github.io/tp-dashboard/?search=&amp;sort=groupTitle&amp;sortWithin=title&amp;timeframe=commit&amp;mergegroup=&amp;groupSelect=groupByRepos&amp;breakdown=true&amp;checkedFileTypes=docs~functional-code~test-code~other" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-chart-area"></span> tP Code Dashboard</span></a></li><!--]--></ul><!--]--></li> <li class="dropdown nav-link algolia-no-index" tags="m--cs2103 m--cs2113" data-v-154e37d3><!--[--><a role="button" class="dropdown-toggle nav-link" data-bs-toggle="dropdown" data-v-154e37d3><!--[--><strong>Project Links</strong><!--]--><span data-v-154e37d3></span></a><!--]--><!--[--><ul class="dropdown-menu" data-v-154e37d3><!--[--> <span><strong> Individual Project (iP):</strong></span> <li><a href="/website/admin/ip-overview.html" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span></span> Individual Project Info</a></li> <li><a href="https://github.com/nus-cs2103-AY2526S1/ip" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-code-branch"></span></span></span> iP Upstream Repo</a></li> <li tags="m--cs2103"><a href="/website/admin/ip-showcase.html" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-list-alt"></span> iP Showcase</span></a></li> <li><a href="https://nus-cs2103-ay2526s1.github.io/dashboards/contents/ip-progress.html" target="_blank" class="dropdown-item text-success"><span><span aria-hidden="true" class="fas fa-tasks"></span> iP Progress Dashboard</span></a></li> <li><a href="https://nus-cs2103-ay2526s1.github.io/dashboards/contents/ip-comments.html" target="_blank" class="dropdown-item"><span><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-comment" aria-hidden="true"><path fill-rule="evenodd" d="M2.75 2.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h2a.75.75 0 01.75.75v2.19l2.72-2.72a.75.75 0 01.53-.22h4.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25H2.75zM1 2.75C1 1.784 1.784 1 2.75 1h10.5c.966 0 1.75.784 1.75 1.75v7.5A1.75 1.75 0 0113.25 12H9.06l-2.573 2.573A1.457 1.457 0 014 13.543V12H2.75A1.75 1.75 0 011 10.25v-7.5z"></path></svg> iP Comments dashboard</span></a></li> <li><a href="https://nus-cs2103-ay2526s1.github.io/ip-dashboard/?search=&amp;sort=groupTitle&amp;sortWithin=title&amp;timeframe=commit&amp;mergegroup=&amp;groupSelect=groupByRepos&amp;breakdown=true&amp;viewRepoTags=true&amp;checkedFileTypes=java~md~fxml~sh~bat~gradle~txt" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-chart-area"></span> iP Code Dashboard</span></a></li> <hr> <span><strong> Team Project (tP):</strong></span> <li><a href="/website/admin/tp-overview.html" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span></span> Team Project Info</a></li> <li tags="m--cs2103 m--cs2113"><a href="https://github.com/nus-cs2103-AY2526S1/tp" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-code-branch"></span></span></span> tP Upstream Repo (AB3)</a></li> <li><a href="/website/admin/teamList.html" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-list-alt"></span> Team List</span></a></li> <li><a href="https://nus-cs2103-ay2526s1.github.io/dashboards/contents/tp-progress.html" target="_blank" class="dropdown-item text-success"><span><span aria-hidden="true" class="fas fa-tasks"></span> tP Progress Dashboard</span></a></li> <li><a href="https://nus-cs2103-ay2526s1.github.io/dashboards/contents/tp-comments.html" target="_blank" class="dropdown-item"><span><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-comment" aria-hidden="true"><path fill-rule="evenodd" d="M2.75 2.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h2a.75.75 0 01.75.75v2.19l2.72-2.72a.75.75 0 01.53-.22h4.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25H2.75zM1 2.75C1 1.784 1.784 1 2.75 1h10.5c.966 0 1.75.784 1.75 1.75v7.5A1.75 1.75 0 0113.25 12H9.06l-2.573 2.573A1.457 1.457 0 014 13.543V12H2.75A1.75 1.75 0 011 10.25v-7.5z"></path></svg> tP Comments Dashboard</span></a></li> <li><a href="https://nus-cs2103-ay2526s1.github.io/tp-dashboard/?search=&amp;sort=groupTitle&amp;sortWithin=title&amp;timeframe=commit&amp;mergegroup=&amp;groupSelect=groupByRepos&amp;breakdown=true&amp;checkedFileTypes=docs~functional-code~test-code~other" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-chart-area"></span> tP Code Dashboard</span></a></li><!--]--></ul><!--]--></li> <li tags="m--cs2103 m--cs2113"><a href="https://github.com/nus-cs2103-AY2526S1/forum/issues" class="nav-link"><span><strong>Forum</strong></span></a></li> <li class="dropdown nav-link algolia-no-index" data-v-154e37d3><!--[--><a role="button" class="dropdown-toggle nav-link" data-bs-toggle="dropdown" data-v-154e37d3><!--[--><strong>Other Links</strong><!--]--><span data-v-154e37d3></span></a><!--]--><!--[--><ul class="dropdown-menu" data-v-154e37d3><!--[--> <li tags="m--cs2103 m--cs2113"><a href="https://github.com/nus-cs2103-AY2526S1/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-bug"></span> Report Bugs</span></a></li> <li><a href="https://github.com/nus-cs2103-AY2526S1/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li> <li><a href="/website/admin/instructors.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li> <li><a href="https://canvas.nus.edu.sg/courses/77826/announcements" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li> <li><a href="https://canvas.nus.edu.sg/courses/77826/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> Files (handouts, submissions etc.)</span></a></li> <li tags="m--cs2113 m--cs2103"><a href="/website/admin/tutorials.html" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-calendar"></span> Tutorial Schedule</span></a></li> <li><a href="/website/_markbind/layouts/n/a" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-users-cog"></span> MS Teams link</span></a></li> <li><a href="/website/se-book-adapted/git-trail/index.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-route"></span> Git Learning Trail</span></a></li> <li tags="m--cs2103 m--cs2113 m--tic2002"><a href="https://se-education.org/guides/conventions/java/intermediate.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-code"></span> Java Coding Standard</span></a></li> <li tags="m--cs2103 m--cs2113"><a href="https://se-education.org/guides/conventions/git.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fab fa-git-square"></span> Git Conventions</span></a></li> <li tags="m--cs2103"><a href="/website/admin/uml-reference-sheet.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-diagram-project"></span> UML Reference Sheet</span></a></li><!--]--></ul><!--]--></li> <!--]--></ul></div><ul class="navbar-nav navbar-right" data-v-2dc82f13><!--[--><li class="nav-link"><form class="navbar-form"><div style="position:relative;" class="dropdown" data-v-00e26d0a><div id="algolia-search-input" data-v-00e26d0a></div><ul class="dropdown-menu search-dropdown-menu dropdown-menu-hidden dropdown-menu-end" data-v-00e26d0a><!--[--><!--]--></ul></div></form></li><!--]--></ul></div></nav><div style="display:none;" class="lower-navbar-container" data-v-2dc82f13><!--[--><!----><!----><!--]--></div></div></header> <div id="flex-body"><div id="content-wrapper" class="fixed-header-padding"><div><link rel="stylesheet" href="/website/book/css/textbook.css"> <div class="website-content"><div><p><span class="dimmed"><strong><span>Tools → Git and GitHub →
+</span></strong></span></p> <div id="title-and-body"><div><h4 id="t1l4-specifying-what-to-include-in-a-snapshot"><span>T1L4. Specifying What to Include in a Snapshot</span><a class="fa fa-anchor" href="#t1l4-specifying-what-to-include-in-a-snapshot" onclick="event.stopPropagation()"></a></h4></div> <div id="main"><div><div class="non-printable"><div class="border border-success pt-0 ps-1 pb-1 pe-1 border-bottom-0 rounded-top" style="background-color:#e6fff2;"><div class="indented"><br> <div id="overview"><p>To save a snapshot, <strong>you start by specifying what to include in it, also called <em>staging</em></strong>.</p></div> <span><small>This lesson covers that part.</small></span></div></div> <br></div> <p><strong>Git considers new files that you add to the working directory as <span class="badge text-dark" style="background-color:rgba(13, 202, 240, 0.2);"><span class="large">&#39;untracked&#39;</span></span></strong> i.e., Git is aware of them, but they are not yet under Git&#39;s control. The same applies to files that existed in the working folder at the time you initialised the repo.</p> <p><strong>A Git repo has an internal space called the <span class="badge text-dark" style="background-color:rgba(13, 202, 240, 0.2);"><span class="large">staging area</span></span> which it uses to build the next snapshot</strong>. Another name for the staging area is the <span class="badge text-dark" style="background-color:rgba(13, 202, 240, 0.2);"><span class="large">index</span></span>.</p> <p><strong>We can <span class="badge text-dark" style="background-color:rgba(13, 202, 240, 0.2);"><span class="trigger" tabindex="0"><span><!--[--><span class="large">stage</span><!--]--></span></span></span> an untracked file</strong> to tell Git that we want its current version to be included in the next snapshot (in Git terminology, such a snapshot is called a <span class="badge text-dark" style="background-color:rgba(13, 202, 240, 0.2);"><span class="large">commit</span></span>). Once you stage an untracked file, it becomes <span class="badge text-dark" style="background-color:rgba(13, 202, 240, 0.2);"><span class="large">&#39;tracked&#39;</span></span> (i.e., under Git&#39;s control). A staged file can be <span class="badge text-dark" style="background-color:rgba(13, 202, 240, 0.2);"><span class="large">unstaged</span></span> to indicate that we no longer want it to be included in the next snapshot.</p> <span class="trigger" data-mb-component-type="popover" tabindex="0" id="pop:stage-"><!----><!-- do not delete this comment, it is for the stray space issue (#2419)
+ --><!----></span> <p>In the example below, you can see how staging files change the status of the repo as you go from (a) to (c).</p> <div class="d-flex flex-wrap gap-3"><div class="p-2 bg-light text-start" style="max-width:240px;"><div class="border border-info p-0 bg-white" style="width:220px;"><div class="bg-info text-white p-1"><span><span aria-hidden="true" class="fas fa-folder"></span> Working Directory</span></div> <div class="p-2"><div class="border border-warning bg-light pb-0" style="width:210px;"><div class="bg-warning text-dark p-1"><span><span aria-hidden="true" class="fas fa-folder"></span> .git Folder</span></div> <div style="width:210px;"><div class="pt-0 p-1"><p><span class="badge bg-warning text-dark mt-2">staging area</span><br></p> <div class="pt-0 pb-0 p-2"><small><div><p><span class="dimmed">[empty]</span></p></div></small></div></div> <div class="pb-0" style="border-top:1px dotted #aaa;"><p><span class="badge bg-light text-secondary mt-2">other metadata ...</span><br></p></div></div></div> <br> <small><div><p>├─ <span aria-hidden="true" class="fas fa-file"></span> fruits.txt <span class="mkb-text-red">(untracked!)</span><br>
+└─ <span aria-hidden="true" class="fas fa-file"></span> colours.txt <span class="mkb-text-red">(untracked!)</span></p></div></small></div></div> <br> <span>(a) State of the repo, just after initialisation, and creating two files. Both are untracked.</span></div> <div class="p-2 bg-light text-start" style="max-width:240px;"><div class="border border-info p-0 bg-white" style="width:220px;"><div class="bg-info text-white p-1"><span><span aria-hidden="true" class="fas fa-folder"></span> Working Directory</span></div> <div class="p-2"><div class="border border-warning bg-light pb-0" style="width:210px;"><div class="bg-warning text-dark p-1"><span><span aria-hidden="true" class="fas fa-folder"></span> .git Folder</span></div> <div style="width:210px;"><div class="pt-0 p-1"><p><span class="badge bg-warning text-dark mt-2">staging area</span><br></p> <div class="pt-0 pb-0 p-2"><small><div><p>└─ <mark><span aria-hidden="true" class="fas fa-file"></span> fruits.txt</mark><br></p></div></small></div></div> <div class="pb-0" style="border-top:1px dotted #aaa;"><p><span class="badge bg-light text-secondary mt-2">other metadata ...</span><br></p></div></div></div> <br> <small><div><p>├─ <span aria-hidden="true" class="fas fa-file"></span> fruits.txt <mark><span class="mkb-text-green">(tracked)</span></mark><br>
+└─ <span aria-hidden="true" class="fas fa-file"></span> colours.txt <span class="mkb-text-red">(untracked!)</span></p></div></small></div></div> <br> <span>(b) State after staging <code class="hljs inline no-lang">fruits.txt</code>.</span></div> <div class="p-2 bg-light text-start" style="max-width:240px;"><div class="border border-info p-0 bg-white" style="width:220px;"><div class="bg-info text-white p-1"><span><span aria-hidden="true" class="fas fa-folder"></span> Working Directory</span></div> <div class="p-2"><div class="border border-warning bg-light pb-0" style="width:210px;"><div class="bg-warning text-dark p-1"><span><span aria-hidden="true" class="fas fa-folder"></span> .git Folder</span></div> <div style="width:210px;"><div class="pt-0 p-1"><p><span class="badge bg-warning text-dark mt-2">staging area</span><br></p> <div class="pt-0 pb-0 p-2"><small><div><p>├─ <span aria-hidden="true" class="fas fa-file"></span> fruits.txt<br>
+└─ <mark><span aria-hidden="true" class="fas fa-file"></span> colours.txt</mark></p></div></small></div></div> <div class="pb-0" style="border-top:1px dotted #aaa;"><p><span class="badge bg-light text-secondary mt-2">other metadata ...</span><br></p></div></div></div> <br> <small><div><p>├─ <span aria-hidden="true" class="fas fa-file"></span> fruits.txt <span class="mkb-text-green">(tracked)</span><br>
+└─ <span aria-hidden="true" class="fas fa-file"></span> colours.txt  <mark><span class="mkb-text-green">(tracked)</span></mark></p></div></small></div></div> <br> <span>(c) State after staging <code class="hljs inline no-lang">colours.txt</code>.</span></div></div> <div class="non-printable"><span style="position:relative;top:10px;background-color:rgba(255, 0, 0, 0.2);" class="badge rounded-pill text-dark fs-6"><span><span aria-hidden="true" class="fas fa-laptop-code"></span></span> HANDS-ON: Adding untracked files</span> <div class="indented-level1"><div class="alert box-container seamless" style="" data-v-19514615><!--Icon and vertical divider for seamless header box--><!----><div class="header-and-body" data-v-19514615><!-- Header wrapper, not rendered if there is no header attribute --><!----><!-- Body wrapper --><div class="box-body-wrapper" data-v-19514615><!-- icon on the left, not shown if there is a header --><!----><!-- Icon -- content divider for seamless boxes without the header attribute --><div class="alert-danger vertical-divider" aria-hidden="true" data-v-19514615></div><!-- Content wrapper --><div class="contents" style="" data-v-19514615><!--[--><p><span style="position:relative;right:12px;background-color:rgba(255, 0, 0, 0.2);border-radius:0 0.7em 0.7em 0;" class="ps-3 pe-3 pb-1 pt-1 text-dark text-dark"><small><strong>1</strong></small></span> <strong>First, add a file</strong> (e.g., <code class="hljs inline no-lang">fruits.txt</code>) to the <code class="hljs inline no-lang">things</code> folder.</p> <div class="alert box-container seamless" style="" data-v-19514615><!--Icon and vertical divider for seamless header box--><!----><div class="header-and-body" data-v-19514615><!-- Header wrapper, not rendered if there is no header attribute --><!----><!-- Body wrapper --><div class="box-body-wrapper" data-v-19514615><!-- icon on the left, not shown if there is a header --><div class="icon-wrapper text-success" style="" data-v-19514615><!--[--><i class="fas fa-lightbulb" data-v-19514615></i><!--]--></div><!-- Icon -- content divider for seamless boxes without the header attribute --><div class="alert-success vertical-divider" aria-hidden="true" data-v-19514615></div><!-- Content wrapper --><div class="contents" style="" data-v-19514615><!--[--><p>Here is an easy way to do that with a single terminal command.</p> <pre><code class="no-line-numbers hljs bash"><span><span class="hljs-built_in">echo</span> -e <span class="hljs-string">&quot;apples\nbananas\ncherries&quot;</span> &gt; fruits.txt
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre><div class="d-flex"><div class="me-3"><span><span><strong><span class="dimmed">⤷</span></strong></span></span></div> <div class="flex-grow-1"><div class="code-block"><div class="code-block-heading"><span>things/fruits.txt</span></div><div class="code-block-content"><pre><code heading="things/fruits.txt" class="hljs txt"><span>apples
+</span><span>bananas
+</span><span>cherries
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre></div></div></div></div> <div class="alert box-container seamless" style="" data-v-19514615><!--Icon and vertical divider for seamless header box--><!----><div class="header-and-body" data-v-19514615><!-- Header wrapper, not rendered if there is no header attribute --><!----><!-- Body wrapper --><div class="box-body-wrapper" data-v-19514615><!-- icon on the left, not shown if there is a header --><div class="icon-wrapper text-danger" style="" data-v-19514615><!--[--><span aria-hidden="true" class="fab fa-windows"></span><!--]--></div><!-- Icon -- content divider for seamless boxes without the header attribute --><div class="alert-danger vertical-divider" aria-hidden="true" data-v-19514615></div><!-- Content wrapper --><div class="contents" style="" data-v-19514615><!--[--> <p><strong>Windows users: Use the git-bash terminal</strong> to run the above command (and all commands given in these lessons). Some of them might not work in other terminals such as the PowerShell.</p><!--]--></div><!-- dismiss button on the right, not shown if there is a header --><!----></div></div></div> <p>To see the content of the file, you can use the <code class="hljs inline no-lang">cat</code> command:</p> <pre><code class="hljs bash"><span>cat fruits.txt
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre><!--]--></div><!-- dismiss button on the right, not shown if there is a header --><!----></div></div></div> <p><span style="position:relative;right:12px;background-color:rgba(255, 0, 0, 0.2);border-radius:0 0.7em 0.7em 0;" class="ps-3 pe-3 pb-1 pt-1 text-dark text-dark"><small><strong>2</strong></small></span> <strong>Stage the new file</strong>.</p> <div class="printable-tabs" data-v-78737a60><!-- Nav tabs --><ul class="nav-tabs nav nav-tabs d-print-none" role="tablist" data-v-78737a60><!--[--><!--]--></ul><div class="tab-content" data-v-78737a60><!--[--><div role="tabpanel" class="tab-pane active printable-tab-pane tab-pane-hide" data-v-65067870><div class="nav-tabs printable-tab-header" data-v-65067870><div class="nav-link active" data-v-65067870><!--[-->CLI<!--]--></div></div><!--[--> <div><p><span style="position:relative;right:12px;background-color:rgba(255, 0, 0, 0.2);border-radius:0 0.7em 0.7em 0;" class="ps-3 pe-3 pb-1 pt-1 text-dark text-dark"><small><strong>2.1</strong></small></span> <strong>Check the status of the folder</strong> using the <code class="hljs inline no-lang">git status</code> command.</p> <div class="indented-level1"><pre><code class="no-line-numbers hljs bash"><span>git status
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre><div class="d-flex"><div class="me-3"><span><span><strong><span class="dimmed">⤷</span></strong></span></span></div> <div class="flex-grow-1"><pre><code class="no-line-numbers hljs"><span>On branch master
+</span><span>
+</span><span>No commits yet
+</span><span>
+</span><span>Untracked files:
+</span><span>  (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)
+</span><span>
+</span><span>  fruits.txt
+</span><span>nothing added to commit but untracked files present (use &quot;git add&quot; to track)
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre></div></div></div> <p><span style="position:relative;right:12px;background-color:rgba(255, 0, 0, 0.2);border-radius:0 0.7em 0.7em 0;" class="ps-3 pe-3 pb-1 pt-1 text-dark text-dark"><small><strong>2.2</strong></small></span> <strong>Use the <code class="hljs inline no-lang">git add &lt;file&gt;</code> command</strong> to stage the file.</p> <div class="indented-level1"><pre><code class="no-line-numbers hljs bash"><span>git add fruits.txt
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre><div class="alert box-container seamless" style="" data-v-19514615><!--Icon and vertical divider for seamless header box--><!----><div class="header-and-body" data-v-19514615><!-- Header wrapper, not rendered if there is no header attribute --><!----><!-- Body wrapper --><div class="box-body-wrapper" data-v-19514615><!-- icon on the left, not shown if there is a header --><div class="icon-wrapper text-success" style="" data-v-19514615><!--[--><i class="fas fa-lightbulb" data-v-19514615></i><!--]--></div><!-- Icon -- content divider for seamless boxes without the header attribute --><div class="alert-success vertical-divider" aria-hidden="true" data-v-19514615></div><!-- Content wrapper --><div class="contents" style="" data-v-19514615><!--[--><p>You can replace the <code class="hljs inline no-lang">add</code> with <code class="hljs inline no-lang">stage</code> (e.g., <code class="hljs inline no-lang">git stage fruits.txt</code>) and the result is the same (they are synonyms).</p><!--]--></div><!-- dismiss button on the right, not shown if there is a header --><!----></div></div></div> <div class="alert box-container seamless" style="" data-v-19514615><!--Icon and vertical divider for seamless header box--><!----><div class="header-and-body" data-v-19514615><!-- Header wrapper, not rendered if there is no header attribute --><!----><!-- Body wrapper --><div class="box-body-wrapper" data-v-19514615><!-- icon on the left, not shown if there is a header --><div class="icon-wrapper text-info" style="" data-v-19514615><!--[--><span aria-hidden="true" class="fab fa-windows"></span><!--]--></div><!-- Icon -- content divider for seamless boxes without the header attribute --><div class="alert-info vertical-divider" aria-hidden="true" data-v-19514615></div><!-- Content wrapper --><div class="contents" style="" data-v-19514615><!--[--> <p>Windows users: When using the <code class="hljs inline no-lang">echo</code> command to write to text files from Git Bash, you might see a warning <code class="hljs inline no-lang">LF will be replaced by CRLF the next time Git touches it</code> when Git interacts with such a file. This warning is caused by the way line endings are handled differently by Git and Windows. You can simply ignore it, or suppress it in future by running the following command:</p> <pre><code class="hljs bash"><span>git config --global core.safecrlf <span class="hljs-literal">false</span>
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre><!--]--></div><!-- dismiss button on the right, not shown if there is a header --><!----></div></div></div></div> <p><span style="position:relative;right:12px;background-color:rgba(255, 0, 0, 0.2);border-radius:0 0.7em 0.7em 0;" class="ps-3 pe-3 pb-1 pt-1 text-dark text-dark"><small><strong>2.3</strong></small></span> <strong>Check the status again.</strong> You can see the file is no longer &#39;untracked&#39;.</p> <div class="indented-level1"><pre><code class="no-line-numbers hljs bash"><span>git status
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre><div class="d-flex"><div class="me-3"><span><span><strong><span class="dimmed">⤷</span></strong></span></span></div> <div class="flex-grow-1"><pre><code class="no-line-numbers hljs"><span>On branch master
+</span><span>
+</span><span>No commits yet
+</span><span>
+</span><span>Changes to be committed:
+</span><span>  (use &quot;git rm --cached &lt;file&gt;...&quot; to unstage)
+</span><span>
+</span><span>      new file:   fruits.txt
+</span><span>
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre></div></div> <p><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> As before, don&#39;t worry if you don&#39;t understand the content of the output (we&#39;ll unpack it in a later lesson). The point to note is that the file is no longer listed as &#39;untracked&#39;.</p></div></div><!--]--><hr data-v-65067870></div> <div role="tabpanel" class="tab-pane active printable-tab-pane tab-pane-hide d-print-none algolia-no-index" data-v-65067870><div class="nav-tabs printable-tab-header" data-v-65067870><div class="nav-link active" data-v-65067870><!--[-->Sourcetree<!--]--></div></div><!--[--> <div><p><span style="position:relative;right:12px;background-color:rgba(255, 0, 0, 0.2);border-radius:0 0.7em 0.7em 0;" class="ps-3 pe-3 pb-1 pt-1 text-dark text-dark"><small><strong>2.1</strong></small></span> <strong>Note how the file is shown as ‘unstaged’.</strong> The question mark icon indicates the file is untracked.</p> <span class="image-wrapper" eager><img src="/website/book/gitAndGithub/stage/images/sourcetreeWinAddedFile.png" width="" height="" loading="eager" class="img-fluid rounded"><span class="image-caption"><!--[--><!--]--></span></span> <p></p> <div class="alert box-container seamless" style="" data-v-19514615><!--Icon and vertical divider for seamless header box--><!----><div class="header-and-body" data-v-19514615><!-- Header wrapper, not rendered if there is no header attribute --><!----><!-- Body wrapper --><div class="box-body-wrapper" data-v-19514615><!-- icon on the left, not shown if there is a header --><div class="icon-wrapper text-success" style="" data-v-19514615><!--[--><i class="fas fa-lightbulb" data-v-19514615></i><!--]--></div><!-- Icon -- content divider for seamless boxes without the header attribute --><div class="alert-success vertical-divider" aria-hidden="true" data-v-19514615></div><!-- Content wrapper --><div class="contents" style="" data-v-19514615><!--[--><p>If the newly-added file does not show up in Sourcetree UI, refresh the UI (<span aria-hidden="true" class="fab fa-windows"></span>: <kbd>F5</kbd><br> | <span aria-hidden="true" class="fab fa-apple"></span> <kbd>⌥</kbd>+<kbd>R</kbd>)</p><!--]--></div><!-- dismiss button on the right, not shown if there is a header --><!----></div></div></div> <div class="alert box-container seamless" style="" data-v-19514615><!--Icon and vertical divider for seamless header box--><!----><div class="header-and-body" data-v-19514615><!-- Header wrapper, not rendered if there is no header attribute --><!----><!-- Body wrapper --><div class="box-body-wrapper" data-v-19514615><!-- icon on the left, not shown if there is a header --><div class="icon-wrapper text-warning" style="" data-v-19514615><!--[--><i class="fas fa-exclamation" data-v-19514615></i><!--]--></div><!-- Icon -- content divider for seamless boxes without the header attribute --><div class="alert-warning vertical-divider" aria-hidden="true" data-v-19514615></div><!-- Content wrapper --><div class="contents" style="" data-v-19514615><!--[--><p><strong>Sourcetree screenshots/instructions: <span aria-hidden="true" class="fab fa-windows"></span> vs <span aria-hidden="true" class="fab fa-apple"></span></strong></p> <p>Note that Sourcetree UI can vary slightly between Windows and Mac versions. Some of the screenshots given in our lessons are from the Windows version while some are from the Mac version.</p> <p>In som cases, we have specified how they differ.<br>
+In other cases, you may need to adapt if the given screenshots/instructions are slightly different from what you are seeing in your Sourcetree.</p><!--]--></div><!-- dismiss button on the right, not shown if there is a header --><!----></div></div></div> <p><span style="position:relative;right:12px;background-color:rgba(255, 0, 0, 0.2);border-radius:0 0.7em 0.7em 0;" class="ps-3 pe-3 pb-1 pt-1 text-dark text-dark"><small><strong>2.2</strong></small></span> <strong>Stage the file</strong>:</p> <p><span aria-hidden="true" class="fab fa-windows"></span> Select the <code class="hljs inline no-lang">fruits.txt</code> and click on the <code class="hljs inline no-lang">Stage Selected</code> button.<br> <span class="image-wrapper" eager><img src="/website/book/gitAndGithub/stage/images/sourcetreeWinStageButton.png" width="350" height="" loading="eager" class="img-fluid rounded"><span class="image-caption"><!--[--><!--]--></span></span></p> <p></p> <p><span aria-hidden="true" class="fab fa-apple"></span> Staging can be done using tick boxes or the <code class="hljs inline no-lang">...</code> menu in front of the file.<br> <span class="image-wrapper" eager><img src="/website/book/gitAndGithub/stage/images/sourcetreeMacStageFile.png" width="" height="" loading="eager" class="img-fluid rounded"><span class="image-caption"><!--[--><!--]--></span></span></p> <p></p> <p><span style="position:relative;right:12px;background-color:rgba(255, 0, 0, 0.2);border-radius:0 0.7em 0.7em 0;" class="ps-3 pe-3 pb-1 pt-1 text-dark text-dark"><small><strong>2.3</strong></small></span> <strong>Note how the file is staged now</strong> i.e., <code class="hljs inline no-lang">fruits.txt</code> appears in the <code class="hljs inline no-lang">Staged files</code> panel now.</p> <span class="image-wrapper" eager><img src="/website/book/gitAndGithub/stage/images/sourcetreeWinNewFileStaged.png" width="" height="" loading="eager" class="img-fluid rounded"><span class="image-caption"><!--[--><!--]--></span></span> <p></p> <div class="alert box-container seamless" style="" data-v-19514615><!--Icon and vertical divider for seamless header box--><!----><div class="header-and-body" data-v-19514615><!-- Header wrapper, not rendered if there is no header attribute --><!----><!-- Body wrapper --><div class="box-body-wrapper" data-v-19514615><!-- icon on the left, not shown if there is a header --><div class="icon-wrapper text-info" style="" data-v-19514615><!--[--><i class="fas fa-info" data-v-19514615></i><!--]--></div><!-- Icon -- content divider for seamless boxes without the header attribute --><div class="alert-info vertical-divider" aria-hidden="true" data-v-19514615></div><!-- Content wrapper --><div class="contents" style="" data-v-19514615><!--[--><p><strong>If Sourcetree shows a <code class="hljs inline no-lang">\ No newline at the end of the file</code> message</strong> below the staged lines (i.e., below the <code class="hljs inline no-lang">cherries</code> line in the above screenshot), that is because you did not hit <kbd>enter</kbd> after entering the last line of the file (hence, Git is not sure if that line is complete). To rectify, move the cursor to the end of the last line in that file and hit <kbd>enter</kbd> (like you are adding a blank line below it). This new change will now appear as an &#39;unstaged&#39; change. Stage it as well.</p><!--]--></div><!-- dismiss button on the right, not shown if there is a header --><!----></div></div></div></div><!--]--><hr data-v-65067870></div><!--]--></div></div> <p><span style="position:relative;right:12px;background-color:rgba(255, 0, 0, 0.2);border-radius:0 0.7em 0.7em 0;" class="ps-3 pe-3 pb-1 pt-1 text-dark text-dark"><small><strong><span aria-hidden="true" class="far fa-square-check"></span> done!</strong></small></span></p><!--]--></div><!-- dismiss button on the right, not shown if there is a header --><!----></div></div></div></div></div> <p><strong>If you modify a staged file, it goes into the <span class="badge text-dark" style="background-color:rgba(13, 202, 240, 0.2);"><span class="large">&#39;modified&#39;</span></span> state</strong> i.e., the file contains modifications that are not present in the copy that is waiting (in the staging area) to be included in the next snapshot. If you wish to include these new changes in the next snapshot, you need to stage the file again, which will overwrite the copy of the file that was previously in the staging area.<br>
+The example below shows how the status of a file changes when it is modified <em>after</em> it was staged.</p> <div class="d-flex flex-wrap gap-3"><div class="p-2 bg-light text-start" style="max-width:240px;"><div class="border border-info p-0 bg-white" style="width:220px;"><div class="bg-info text-white p-1"><span><span aria-hidden="true" class="fas fa-folder"></span> Working Directory</span></div> <div class="p-2"><div class="border border-warning bg-light pb-0" style="width:210px;"><div class="bg-warning text-dark p-1"><span><span aria-hidden="true" class="fas fa-folder"></span> .git Folder</span></div> <div style="width:210px;"><div class="pt-0 p-1"><p><span class="badge bg-warning text-dark mt-2">staging area</span><br></p> <div class="pt-0 pb-0 p-2"><small><div><div class="code-block"><div class="code-block-heading inline-markdown-heading"><span><span aria-hidden="true" class="fas fa-file"></span> names.txt</span></div><div class="code-block-content"><pre><code heading=":fas-file: names.txt" class="no-line-numbers hljs txt"><span>Alice
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre></div></div></div></small></div></div> <div class="pb-0" style="border-top:1px dotted #aaa;"><p><span class="badge bg-light text-secondary mt-2">other metadata ...</span><br></p></div></div></div> <br> <small><div><div class="code-block"><div class="code-block-heading inline-markdown-heading"><span><span aria-hidden="true" class="fas fa-file"></span> names.txt</span></div><div class="code-block-content"><pre><code heading=":fas-file: names.txt" class="no-line-numbers hljs txt"><span>Alice
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre></div></div></div></small></div></div> <br> <span>(a) The file names.txt is staged. The copy in the staging area is an exact match to the one in the working directory.</span></div> <div class="p-2 bg-light text-start" style="max-width:240px;"><div class="border border-info p-0 bg-white" style="width:220px;"><div class="bg-info text-white p-1"><span><span aria-hidden="true" class="fas fa-folder"></span> Working Directory</span></div> <div class="p-2"><div class="border border-warning bg-light pb-0" style="width:210px;"><div class="bg-warning text-dark p-1"><span><span aria-hidden="true" class="fas fa-folder"></span> .git Folder</span></div> <div style="width:210px;"><div class="pt-0 p-1"><p><span class="badge bg-warning text-dark mt-2">staging area</span><br></p> <div class="pt-0 pb-0 p-2"><small><div><div class="code-block"><div class="code-block-heading inline-markdown-heading"><span><span aria-hidden="true" class="fas fa-file"></span> names.txt</span></div><div class="code-block-content"><pre><code heading=":fas-file: names.txt" class="no-line-numbers hljs txt"><span>Alice
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre></div></div></div></small></div></div> <div class="pb-0" style="border-top:1px dotted #aaa;"><p><span class="badge bg-light text-secondary mt-2">other metadata ...</span><br></p></div></div></div> <br> <small><div><div class="code-block"><div class="code-block-heading inline-markdown-heading"><span><span aria-hidden="true" class="fas fa-file"></span> names.txt <span class="mkb-text-red">(modified)</span></span></div><div class="code-block-content"><pre><code heading=":fas-file: names.txt #r#(modified)##" class="no-line-numbers hljs txt"><span>Alice
+</span><span><span class="highlighted">Bob</span>
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre></div></div></div></small></div></div> <br> <span>(b) State after adding a line to the file. Git indicates it as &#39;modified&#39; because it now differs from the version in the staged area.</span></div> <div class="p-2 bg-light text-start" style="max-width:240px;"><div class="border border-info p-0 bg-white" style="width:220px;"><div class="bg-info text-white p-1"><span><span aria-hidden="true" class="fas fa-folder"></span> Working Directory</span></div> <div class="p-2"><div class="border border-warning bg-light pb-0" style="width:210px;"><div class="bg-warning text-dark p-1"><span><span aria-hidden="true" class="fas fa-folder"></span> .git Folder</span></div> <div style="width:210px;"><div class="pt-0 p-1"><p><span class="badge bg-warning text-dark mt-2">staging area</span><br></p> <div class="pt-0 pb-0 p-2"><small><div><div class="code-block"><div class="code-block-heading inline-markdown-heading"><span><span aria-hidden="true" class="fas fa-file"></span> names.txt</span></div><div class="code-block-content"><pre><code heading=":fas-file: names.txt" class="no-line-numbers hljs txt"><span>Alice
+</span><span><span class="highlighted">Bob</span>
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre></div></div></div></small></div></div> <div class="pb-0" style="border-top:1px dotted #aaa;"><p><span class="badge bg-light text-secondary mt-2">other metadata ...</span><br></p></div></div></div> <br> <small><div><div class="code-block"><div class="code-block-heading inline-markdown-heading"><span><span aria-hidden="true" class="fas fa-file"></span> names.txt</span></div><div class="code-block-content"><pre><code heading=":fas-file: names.txt" class="no-line-numbers hljs txt"><span>Alice
+</span><span><span class="highlighted">Bob</span>
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre></div></div></div></small></div></div> <br> <span>(c) After staging the file again, the staging area is updated with the latest copy of the file, and it is no longer marked as &#39;modified&#39;.</span></div></div> <div class="non-printable"><span style="position:relative;top:10px;background-color:rgba(255, 0, 0, 0.2);" class="badge rounded-pill text-dark fs-6"><span><span aria-hidden="true" class="fas fa-laptop-code"></span></span> HANDS-ON: Re-staging &#39;modified&#39; files</span> <div class="indented-level1"><div class="alert box-container seamless" style="" data-v-19514615><!--Icon and vertical divider for seamless header box--><!----><div class="header-and-body" data-v-19514615><!-- Header wrapper, not rendered if there is no header attribute --><!----><!-- Body wrapper --><div class="box-body-wrapper" data-v-19514615><!-- icon on the left, not shown if there is a header --><!----><!-- Icon -- content divider for seamless boxes without the header attribute --><div class="alert-danger vertical-divider" aria-hidden="true" data-v-19514615></div><!-- Content wrapper --><div class="contents" style="" data-v-19514615><!--[--><p><span style="position:relative;right:12px;background-color:rgba(255, 0, 0, 0.2);border-radius:0 0.7em 0.7em 0;" class="ps-3 pe-3 pb-1 pt-1 text-dark text-dark"><small><strong>1</strong></small></span> <strong>First, add another line to <code class="hljs inline no-lang">fruits.txt</code></strong>, to make it &#39;modified&#39;.</p> <div class="indented-level1"><div class="alert box-container seamless" style="" data-v-19514615><!--Icon and vertical divider for seamless header box--><!----><div class="header-and-body" data-v-19514615><!-- Header wrapper, not rendered if there is no header attribute --><!----><!-- Body wrapper --><div class="box-body-wrapper" data-v-19514615><!-- icon on the left, not shown if there is a header --><div class="icon-wrapper text-success" style="" data-v-19514615><!--[--><i class="fas fa-lightbulb" data-v-19514615></i><!--]--></div><!-- Icon -- content divider for seamless boxes without the header attribute --><div class="alert-success vertical-divider" aria-hidden="true" data-v-19514615></div><!-- Content wrapper --><div class="contents" style="" data-v-19514615><!--[--><p>Here is a way to do that with a single terminal command.</p> <pre><code class="no-line-numbers hljs bash"><span><span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;dragon fruits&quot;</span> &gt;&gt; fruits.txt
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre><div class="d-flex"><div class="me-3"><span><span><strong><span class="dimmed">⤷</span></strong></span></span></div> <div class="flex-grow-1"><div class="code-block"><div class="code-block-heading"><span>things/fruits.txt</span></div><div class="code-block-content"><pre><code heading="things/fruits.txt" class="hljs txt"><span>apples
+</span><span>bananas
+</span><span>cherries
+</span><span><span class="highlighted">dragon fruits</span>
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre></div></div></div></div><!--]--></div><!-- dismiss button on the right, not shown if there is a header --><!----></div></div></div></div> <p><span style="position:relative;right:12px;background-color:rgba(255, 0, 0, 0.2);border-radius:0 0.7em 0.7em 0;" class="ps-3 pe-3 pb-1 pt-1 text-dark text-dark"><small><strong>2</strong></small></span> <strong>Now, verify that Git sees that file as &#39;modified&#39;.</strong></p> <div class="indented-level1"><div class="printable-tabs" data-v-78737a60><!-- Nav tabs --><ul class="nav-tabs nav nav-tabs d-print-none" role="tablist" data-v-78737a60><!--[--><!--]--></ul><div class="tab-content" data-v-78737a60><!--[--><div role="tabpanel" class="tab-pane active printable-tab-pane tab-pane-hide" data-v-65067870><div class="nav-tabs printable-tab-header" data-v-65067870><div class="nav-link active" data-v-65067870><!--[-->CLI<!--]--></div></div><!--[--> <div><p>Use the <code class="hljs inline no-lang">git status</code> command to check the status of the working directory.</p> <pre><code class="no-line-numbers hljs"><span>$ git status
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre><div class="d-flex"><div class="me-3"><span><span><strong><span class="dimmed">⤷</span></strong></span></span></div> <div class="flex-grow-1"><pre><code class="no-line-numbers hljs"><span>On branch master
+</span><span>
+</span><span>No commits yet
+</span><span>
+</span><span>Changes to be committed:
+</span><span>(use &quot;git rm --cached &lt;file&gt;...&quot; to unstage)
+</span><span><span class="highlighted">new file:   fruits.txt</span>
+</span><span>
+</span><span>Changes not staged for commit:
+</span><span>(use &quot;git add &lt;file&gt;...&quot; to update what will be committed)
+</span><span>(use &quot;git restore &lt;file&gt;...&quot; to discard changes in working directory)
+</span><span><span class="highlighted">modified:   fruits.txt</span>
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre></div></div> <p>Note how <code class="hljs inline no-lang">fruits.txt</code> now appears twice, once as <code class="hljs inline no-lang">new file: ...</code> (representing the  version of the file we staged earlier, which had only three lines) and once as <code class="hljs inline no-lang">modified: ...</code> (representing the latest version of the file which now has a fourth line).</p></div><!--]--><hr data-v-65067870></div> <div role="tabpanel" class="tab-pane active printable-tab-pane tab-pane-hide d-print-none algolia-no-index" data-v-65067870><div class="nav-tabs printable-tab-header" data-v-65067870><div class="nav-link active" data-v-65067870><!--[-->Sourcetree<!--]--></div></div><!--[--> <div><p>Note how <code class="hljs inline no-lang">fruits.txt</code> appears in the <code class="hljs inline no-lang">Staged files</code> panel as well as &#39;Unstaged files&#39;.</p> <span class="image-wrapper" eager><img src="/website/book/gitAndGithub/stage/images/sourcetreeMacStagedFileModified.png" width="600" height="" loading="eager" class="img-fluid rounded"><span class="image-caption"><!--[--><!--]--></span></span> <p></p></div><!--]--><hr data-v-65067870></div><!--]--></div></div></div> <p><span style="position:relative;right:12px;background-color:rgba(255, 0, 0, 0.2);border-radius:0 0.7em 0.7em 0;" class="ps-3 pe-3 pb-1 pt-1 text-dark text-dark"><small><strong>3</strong></small></span> <strong>Stage the file again</strong>, the same way you added/staged it earlier.</p> <p><span style="position:relative;right:12px;background-color:rgba(255, 0, 0, 0.2);border-radius:0 0.7em 0.7em 0;" class="ps-3 pe-3 pb-1 pt-1 text-dark text-dark"><small><strong>4</strong></small></span> <strong>Verify that Git no longer sees it as &#39;modified&#39;</strong>, similar to step 2.</p> <p><span style="position:relative;right:12px;background-color:rgba(255, 0, 0, 0.2);border-radius:0 0.7em 0.7em 0;" class="ps-3 pe-3 pb-1 pt-1 text-dark text-dark"><small><strong><span aria-hidden="true" class="far fa-square-check"></span> done!</strong></small></span></p><!--]--></div><!-- dismiss button on the right, not shown if there is a header --><!----></div></div></div></div></div> <p><strong>Staging applies regardless of whether a file is currently tracked.</strong></p> <ul><li>Staging an untracked file will both begin tracking the file and include it in the next snapshot.</li> <li><strong>Staging an already tracked file will simply mark its current changes for inclusion in the next commit.</strong></li></ul> <div class="non-printable"><p><strong>Git also supports fine-grained selective staging</strong> i.e., staging only specific changes within a file while leaving other changes to the same file unstaged. This will be covered in a later lesson.</p></div> <p><strong>Git does not track empty folders</strong>. It tracks only folders that contain tracked files.<br> <span class="non-printable">You can test this by adding an empty subfolder inside the <code class="hljs inline no-lang">things</code> folder (e.g., <code class="hljs inline no-lang">things/more-things</code>) and checking if it shows up as &#39;untracked&#39; (it will not). If you add a file to that folder (e.g., <code class="hljs inline no-lang">things/more-things/food.txt</code>) and then staged that file (e.g., <code class="hljs inline no-lang">git add more-things/food.txt</code>), the folder will now be included in the next snapshot.</span></p> <div><div class="alert box-container seamless d-flex bg-light" style="" data-v-19514615><!--Icon and vertical divider for seamless header box--><div class="d-flex" data-v-19514615><div class="icon-wrapper text-success" style="" data-v-19514615><!--[--><span aria-hidden="true" class="fas fa-rocket"></span><!--]--></div><div class="alert-success vertical-divider" aria-hidden="true" data-v-19514615></div></div><div class="header-and-body" data-v-19514615><!-- Header wrapper, not rendered if there is no header attribute --><div class="box-header-wrapper" data-v-19514615><!-- icon on the left of the header --><!----><!-- header --><div class="box-header" data-v-19514615><!--[--><p><strong class="text-success"><strong>PRO-TIP: Applying a Git command to multiple files in one go</strong></strong></p><!--]--></div><!-- dismiss button to the right of the header --><!----></div><!-- Body wrapper --><div class="box-body-wrapper box-body-wrapper-with-heading" data-v-19514615><!-- icon on the left, not shown if there is a header --><!----><!-- Icon -- content divider for seamless boxes without the header attribute --><!----><!-- Content wrapper --><div class="contents" style="" data-v-19514615><!--[--> <p>When a Git command expects a list of files or paths as a parameter (as the <code class="hljs inline no-lang">git add</code> command does), these parameters are known as <span class="badge text-dark" style="background-color:rgba(13, 202, 240, 0.2);"><span class="large">pathspecs</span></span> <strong>— patterns that tell Git which files or directories to operate on.</strong> Pathspecs can be simple file names, directory names, or more complex patterns.</p> <p>Here are some common ways to write them, shown with examples using the <code class="hljs inline no-lang">git add &lt;pathspec&gt;</code> command:</p> <ul style="list-style-type:none;padding-inline-start:0px;"><li style="display:flex;"><span aria-hidden="true" class="fas fa-circle-right text-success" style="font-size:unset;min-width:16px;line-height:unset;margin-inline-end:0.35em;align-self:flex-start;flex-shrink:0;">​</span><div><p><strong>Specify multiple files, separated by spaces:</strong></p> <pre><code class="hljs bash"><span><span>git add <span class="highlighted">f1.txt</span><span> <span class="highlighted">f2.txt</span><span> <span class="highlighted">data/lists/f3.txt</span>  </span></span></span><span class="hljs-comment"># stages the specified three files</span>
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre></div></li> <li style="display:flex;"><span aria-hidden="true" class="fas fa-circle-right text-success" style="font-size:unset;min-width:16px;line-height:unset;margin-inline-end:0.35em;align-self:flex-start;flex-shrink:0;">​</span><div><p><strong>Use a <a href="https://en.wikipedia.org/wiki/Glob_(programming)">glob pattern</a>:</strong></p> <pre><code class="hljs bash"><span>git add <span class="hljs-string highlighted">&#39;*.txt&#39;</span>  <span class="hljs-comment"># stages all .txt files in the current directory</span>
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre><p><span class="badge rounded-pill bg-success text-white"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Quoting the glob pattern is recommended so your shell doesn’t expand it before Git sees it.</p></div></li> <li style="display:flex;"><span aria-hidden="true" class="fas fa-circle-right text-success" style="font-size:unset;min-width:16px;line-height:unset;margin-inline-end:0.35em;align-self:flex-start;flex-shrink:0;">​</span><div><p><strong>Use <code class="hljs inline no-lang">.</code> to indicate &#39;all in the current directory and subdirectories&#39;:</strong></p> <pre><code class="hljs bash"><span><span>git add <span class="highlighted">.</span>  </span><span class="hljs-comment"># stages all files in current directory and its subdirectories</span>
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre></div></li> <li style="display:flex;"><span aria-hidden="true" class="fas fa-circle-right text-success" style="font-size:unset;min-width:16px;line-height:unset;margin-inline-end:0.35em;align-self:flex-start;flex-shrink:0;">​</span><div><p><strong>Specific directory, to indicate &#39;this directory and its subdirectories&#39;:</strong></p> <pre><code class="hljs bash"><span><span>git add <span class="highlighted">path/to/dir</span>  </span><span class="hljs-comment"><span># stages all files in <span class="highlighted">path/to/dir</span> and its subdirectories</span></span>
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre></div></li> <li style="display:flex;"><span aria-hidden="true" class="fas fa-circle-right text-success" style="font-size:unset;min-width:16px;line-height:unset;margin-inline-end:0.35em;align-self:flex-start;flex-shrink:0;">​</span><div><p><strong>Negated pathspecs, to indicate &#39;except these&#39;:</strong></p> <pre><code class="hljs bash"><span>git add . <span class="hljs-string highlighted">&#39;:!*.log&#39;</span>  <span class="hljs-comment"># stage everything except .log files</span>
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre></div></li></ul> <p>Git supports combining these features — for example, you could add all <code class="hljs inline no-lang">.txt</code> files except those in a certain folder using:</p> <pre><code class="hljs bash"><span>git add <span class="hljs-string">&#39;*.txt&#39;</span> <span class="hljs-string">&#39;:!docs/*.txt&#39;</span>
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre><!--]--></div><!-- dismiss button on the right, not shown if there is a header --><!----></div></div></div></div></div> <div><div class="card-container non-printable algolia-no-index" tags="git-mastery" data-v-4484e25a><div class="card expandable-card border-danger" data-v-4484e25a><div class="card-header header-toggle bg-danger border-danger" data-v-4484e25a><div class="caret-wrapper" data-v-4484e25a><!----></div><div class="header-wrapper card-title bg-danger text-white" data-v-4484e25a><!--[--><!--[--><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> EXERCISE: <code class="hljs inline no-lang">stage-fright</code></p><!--]--><!--]--></div><div class="button-wrapper" data-v-4484e25a><!--[--><button type="button" class="collapse-button btn btn-outline-light" style="" data-v-4484e25a><span class="collapse-icon glyphicon glyphicon-menu-down" aria-hidden="true"></span></button><button style="" type="button" class="btn-outline-light close-button btn" data-v-4484e25a><span class="glyphicon glyphicon-remove" aria-hidden="true" data-v-4484e25a></span></button><button style="display:none;" type="button" class="btn-outline-light popup-button btn" data-v-4484e25a><span class="glyphicon glyphicon-new-window" aria-hidden="true" data-v-4484e25a></span></button><!--]--></div></div><div class="card-collapse" data-v-4484e25a><!----><hr style="display:none;" data-v-4484e25a></div><!----></div></div> <a id="unstagingChanges"></a> <div class="card-container non-printable algolia-no-index" data-v-4484e25a><div class="card expandable-card border-warning" data-v-4484e25a><div class="card-header header-toggle bg-warning border-warning" data-v-4484e25a><div class="caret-wrapper" data-v-4484e25a><!----></div><div class="header-wrapper card-title bg-warning" data-v-4484e25a><!--[--><!--[--><p><span><span aria-hidden="true" class="fas fa-diamond-turn-right"></span></span> DETOUR: <strong>Unstaging Changes</strong></p><!--]--><!--]--></div><div class="button-wrapper" data-v-4484e25a><!--[--><button type="button" class="collapse-button btn btn-outline-secondary" style="" data-v-4484e25a><span class="collapse-icon glyphicon glyphicon-menu-down" aria-hidden="true"></span></button><button style="" type="button" class="btn-outline-secondary close-button btn" data-v-4484e25a><span class="glyphicon glyphicon-remove" aria-hidden="true" data-v-4484e25a></span></button><button style="display:none;" type="button" class="btn-outline-secondary popup-button btn" data-v-4484e25a><span class="glyphicon glyphicon-new-window" aria-hidden="true" data-v-4484e25a></span></button><!--]--></div></div><div class="card-peek-collapsed card-collapse" data-v-4484e25a><div class="d-print-none card-body" data-v-4484e25a><!--[--><!--[--> <div><p><strong>You can unstage a staged file, which simply removes it from the staging area but keeps the changes in your working directory.</strong> This is useful if you later realise that you don’t actually want to include a staged file in the next commit — perhaps you staged it by mistake, or you want to include that change in a later commit.</p> <div class="printable-tabs" data-v-78737a60><!-- Nav tabs --><ul class="nav-tabs nav nav-tabs d-print-none" role="tablist" data-v-78737a60><!--[--><!--]--></ul><div class="tab-content" data-v-78737a60><!--[--><div role="tabpanel" class="tab-pane active printable-tab-pane tab-pane-hide" data-v-65067870><div class="nav-tabs printable-tab-header" data-v-65067870><div class="nav-link active" data-v-65067870><!--[-->CLI<!--]--></div></div><!--[--> <ul><li><p><strong>To unstage a file you added or modified</strong>, run <code class="hljs inline no-lang">git restore --staged &lt;pathspec&gt;</code>. This command removes the file from the staging area, leaving your working directory untouched.</p> <pre><code class="hljs bash"><span><span>git <span class="highlighted">restore --staged</span> plan.txt budget.txt data/list.txt
+</span></span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre><div class="alert box-container seamless" style="" data-v-19514615><!--Icon and vertical divider for seamless header box--><!----><div class="header-and-body" data-v-19514615><!-- Header wrapper, not rendered if there is no header attribute --><!----><!-- Body wrapper --><div class="box-body-wrapper" data-v-19514615><!-- icon on the left, not shown if there is a header --><div class="icon-wrapper text-warning" style="" data-v-19514615><!--[--><i class="fas fa-exclamation" data-v-19514615></i><!--]--></div><!-- Icon -- content divider for seamless boxes without the header attribute --><div class="alert-warning vertical-divider" aria-hidden="true" data-v-19514615></div><!-- Content wrapper --><div class="contents" style="" data-v-19514615><!--[--><p><strong>If your repo does not have any commits yet, <code class="hljs inline no-lang">git restore --staged</code> will fail</strong> with the error <span class="mkb-text-red">fatal: could not resolve HEAD</span>.<br>
+The remedy is to use <code class="hljs inline no-lang">git reset &lt;pathspec&gt;</code> instead.</p> <pre><code class="hljs bash"><span>git reset plan.txt
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre><p><strong>In fact, <code class="hljs inline no-lang">git reset</code> is an alternative way of unstaging files</strong>, and it works regardless of whether you have any commits.</p> <p><strong>Wait. Then why does <code class="hljs inline no-lang">git restore --staged</code> exists at all</strong>, given it is more verbose and doesn&#39;t even work in some special cases?<br>
+Answer: It is still considered the &quot;modern&quot; way of unstaging files (it was introduced more recently), because it is more intuitive and purpose-specific -- whereas the <code class="hljs inline no-lang">git reset</code> serves multiple purposes and, if used incorrectly, can cause unintended consequences.</p><!--]--></div><!-- dismiss button on the right, not shown if there is a header --><!----></div></div></div> <div class="alert box-container seamless" style="" data-v-19514615><!--Icon and vertical divider for seamless header box--><!----><div class="header-and-body" data-v-19514615><!-- Header wrapper, not rendered if there is no header attribute --><!----><!-- Body wrapper --><div class="box-body-wrapper" data-v-19514615><!-- icon on the left, not shown if there is a header --><div class="icon-wrapper text-success" style="" data-v-19514615><!--[--><i class="fas fa-lightbulb" data-v-19514615></i><!--]--></div><!-- Icon -- content divider for seamless boxes without the header attribute --><div class="alert-success vertical-divider" aria-hidden="true" data-v-19514615></div><!-- Content wrapper --><div class="contents" style="" data-v-19514615><!--[--><p>The <code class="hljs inline no-lang">restore</code> command can accept multiple files/paths as input, which means you can use the <span class="trigger-click" tabindex="0"><span><!--[-->notation for specifying multiple files<!--]--></span></span>. For example, to unstage all changes you&#39;ve staged, you can use the <code class="hljs inline no-lang">git restore --staged .</code></p><!--]--></div><!-- dismiss button on the right, not shown if there is a header --><!----></div></div></div></li> <li><p><strong>To unstage a file deletion</strong> (staged using <code class="hljs inline no-lang">git rm</code>), use the same command as above. It will unstage the deletion and restore the file in the staging area.<br> <strong>If you also deleted the file from your working directory</strong>, you may need to recover it separately with <code class="hljs inline no-lang">git restore &lt;file-name(s)&gt;</code></p> <pre><code class="hljs bash"><span><span>git <span class="highlighted">restore</span> data/list.txt data/plan.txt
+</span></span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre></li> <li><p><strong>To &#39;nuke&#39; all changes</strong> (i.e., get rid of all staged <span class="underline">and</span> unstaged changes to tracked files), you can add the <code class="hljs inline no-lang">--worktree</code> flag to the <code class="hljs inline no-lang">git restore --staged &lt;pathspec&gt;</code> command.</p> <pre><code class="hljs bash"><span><span>git restore --staged <span class="highlighted">--worktree</span> .  </span><span class="hljs-comment"># nuke all changes in current folder and subfolders</span>
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre></li></ul> <!--[--><!-- NavBar has z-index of 1000, hence the z-index here should exceed that --><!-- SSR property is required for the snapshot tests to work --><!----><!--]--><!--]--><hr data-v-65067870></div> <div role="tabpanel" class="tab-pane active printable-tab-pane tab-pane-hide d-print-none algolia-no-index" data-v-65067870><div class="nav-tabs printable-tab-header" data-v-65067870><div class="nav-link active" data-v-65067870><!--[-->Sourcetree<!--]--></div></div><!--[--> <p>To unstage a file, locate the file among the <code class="hljs inline no-lang">staged files</code> section, click the <code class="hljs inline no-lang">...</code> in front the file, and choose <code class="hljs inline no-lang">Unstage file</code>:<br> <span class="image-wrapper"><img src="/website/book/gitAndGithub/stage/images/sourcetreeUnstageFile.png" width="" height="" loading="eager" class="img-fluid rounded"><span class="image-caption"><!--[--><!--]--></span></span></p><!--]--><hr data-v-65067870></div><!--]--></div></div> <div class="card-container non-printable algolia-no-index" tags="git-mastery" data-v-4484e25a><div class="card expandable-card border-danger" data-v-4484e25a><div class="card-header header-toggle bg-danger border-danger" data-v-4484e25a><div class="caret-wrapper" data-v-4484e25a><!----></div><div class="header-wrapper card-title bg-danger text-white" data-v-4484e25a><!--[--><!--[--><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> EXERCISE: <code class="hljs inline no-lang">staging-intervention</code></p><!--]--><!--]--></div><div class="button-wrapper" data-v-4484e25a><!--[--><button type="button" class="collapse-button btn btn-outline-light" style="" data-v-4484e25a><span class="collapse-icon glyphicon glyphicon-menu-down" aria-hidden="true"></span></button><button style="" type="button" class="btn-outline-light close-button btn" data-v-4484e25a><span class="glyphicon glyphicon-remove" aria-hidden="true" data-v-4484e25a></span></button><button style="display:none;" type="button" class="btn-outline-light popup-button btn" data-v-4484e25a><span class="glyphicon glyphicon-new-window" aria-hidden="true" data-v-4484e25a></span></button><!--]--></div></div><div class="card-collapse" data-v-4484e25a><!----><hr style="display:none;" data-v-4484e25a></div><!----></div></div></div><!--]--><!--]--><!----><div class="bottom-button-wrapper" data-v-4484e25a><button type="button" class="collapse-button btn btn-outline-secondary" style="" data-v-4484e25a><span class="collapse-icon glyphicon glyphicon-menu-down" aria-hidden="true"></span></button></div></div><hr style="display:none;" data-v-4484e25a></div><div class="peek-read-more glyphicon glyphicon-chevron-down" data-v-4484e25a></div></div></div> <div class="card-container non-printable" data-v-4484e25a><div class="card expandable-card border-secondary" data-v-4484e25a><div class="card-header header-toggle bg-secondary border-secondary" data-v-4484e25a><div class="caret-wrapper" data-v-4484e25a><!----></div><div class="header-wrapper card-title bg-secondary text-white" data-v-4484e25a><!--[--><!--[--><p><span><span aria-hidden="true" class="fas fa-diamond-turn-right"></span></span> Related DETOUR: <strong>Staging File Deletions</strong></p><!--]--><!--]--></div><div class="button-wrapper" data-v-4484e25a><!--[--><button type="button" class="collapse-button btn btn-outline-light" style="" data-v-4484e25a><span class="collapse-icon glyphicon glyphicon-menu-down opened" aria-hidden="true"></span></button><button style="" type="button" class="btn-outline-light close-button btn" data-v-4484e25a><span class="glyphicon glyphicon-remove" aria-hidden="true" data-v-4484e25a></span></button><button style="display:none;" type="button" class="btn-outline-light popup-button btn" data-v-4484e25a><span class="glyphicon glyphicon-new-window" aria-hidden="true" data-v-4484e25a></span></button><!--]--></div></div><div class="card-collapse" data-v-4484e25a><div class="card-body" data-v-4484e25a><!--[--><!--[--> <div><p>When you delete a tracked file from your working directory, Git doesn’t automatically assume you want that change to be part of your next commit. <strong>To tell Git you intend to record a file deletion in the repository’s history, you need to stage the deletion explicitly.</strong></p></div> <p>That aspect is covered in
+the tour <em>Staging File Deletions</em> given in the lesson <a href="/website/book/gitAndGithub/commit#stagingFileDeletions"><em>T1L5. Saving a Snapshot</em></a>.</p><!--]--><!--]--><!----><div class="bottom-button-wrapper" data-v-4484e25a><button type="button" class="collapse-button btn btn-outline-secondary" style="" data-v-4484e25a><span class="collapse-icon glyphicon glyphicon-menu-down opened" aria-hidden="true"></span></button></div></div><hr style="display:none;" data-v-4484e25a></div><!----></div></div></div></div></div></div></div></div></div> <nav id="page-nav" class="fixed-header-padding" data-v-6b1b63d2><!--[--><div class="nav-component slim-scroll"></div><!--]--><!--v-if--></nav> <div class="scroll-top-button fa-lg d-print-none" style="display:none;bottom:2%;right:2%;position:fixed;" aria-hidden="true"><!--[--><i class="fas fa-arrow-circle-up"></i><!--]--></div></div> <footer><div class="text-center"><small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 6.0.2</a>, generated on Mon, 8 Sept 2025, 11:04:52 GMT+8]</small></div></footer><!--]--></div>
+</body><script src="/website/markbind/js/bootstrap-utility.min.js"></script>
+<script src="/website/markbind/js/polyfill.min.js"></script>
+<script src="/website/markbind/js/vue.global.prod.min.js"></script>
+<script src="/website/markbind/js/markbind.min.js"></script>
+<script src="index.page-vue-render.js"></script>
+<script>
+  MarkBind.setup()
+</script>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122519234-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'UA-122519234-1');
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3.2.0/dist/umd/index.js"></script>
+    <script>
+    docsearch({
+      container: "#algolia-search-input",
+      appId: "3DU4XTBX4T",
+      apiKey: "772d7386c7a785f7a60fec5a096311ef",
+      indexName: "nus-tic2002-2020a",
+      searchParameters: {"facetFilters":[["site:nus-cs2103-ay2526s1.github.io"],["tags:admin","tags:se-book-adapted","tags:schedule"]]}
+    });
+  </script>
+    <script>
+    const style = document.createElement('style');
+    style.innerHTML = ".DocSearch-Container { z-index: 1002; position: fixed; }";
+    document.getElementsByTagName('head')[0].appendChild(style);
+  </script>
+  
+    <script>
+    function copyCodeBlock(element) {
+        const pre = element.parentElement.parentElement;
+        const codeElement = pre.querySelector('code');
+        const copyButtonBody = element.querySelector('.function-btn-body');
+        const tooltipText = element.querySelector(".tooltiptext");
+
+        // create dummy text element to select() the text field
+        const textElement = document.createElement('textarea');
+        textElement.value = codeElement.textContent;
+        document.body.appendChild(textElement);
+        textElement.select();
+
+        document.execCommand('copy');
+        document.body.removeChild(textElement);
+        copyButtonBody.innerHTML = `
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="18"
+    height="18"
+    viewBox="2 2 22 22"
+  >
+    <path d="M 19.28125 5.28125 L 9 15.5625 L 4.71875 11.28125 L 3.28125 12.71875 L 8.28125 17.71875 
+    L 9 18.40625 L 9.71875 17.71875 L 20.71875 6.71875 Z"></path>
+  </svg>
+`;
+        console.log("Running tooltip");
+        tooltipText.innerText  = `Copied!`;
+        setTimeout(() => {
+            copyButtonBody.innerHTML = `
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "/>
+    </g>
+</svg>
+`;
+            tooltipText.innerText  = `Copy`;
+        }, 3000);
+    }
+    </script>
+    <script>
+    function toggleCodeBlockWrap(element) {
+      const pre = element.parentElement.parentElement;
+      const tooltipText = element.querySelector(".tooltiptext");
+      const classList = pre.querySelector('code').classList; 
+      if (classList.contains('wrap')) {
+          classList.remove('wrap');
+          tooltipText.innerText  = `Wrap Text`;
+      } else {
+          classList.add('wrap')
+          tooltipText.innerText  = `Unwrap Text`;
+      }
+    }
+    </script>
+    <script src="/website/plugins/dataTable/datatables.min.js"></script>
+    
+  <script>
+    function getTableOptions(el) {
+      const options = {};
+      if ($(el).hasClass('sortable-table')) {
+        options.searching = false;
+        options.paging = false;
+        options.info = false;
+      } else if ($(el).hasClass('searchable-table')) {
+        options.ordering = false;
+        options.paging = false;
+        options.info = false;
+        options.dom = '<"row"<"col-sm-12"f>>' + '<"row"<"col-sm-12"t>>';
+      } else if ($(el).hasClass('sortable-searchable-table')) {
+        options.paging = false;
+        options.info = false;
+        options.dom = '<"row"<"col-sm-12"f>>' + '<"row"<"col-sm-12"t>>';
+      }
+      return options;
+    }
+
+    function initializeTables(tables) {
+      if (!tables || tables.length === 0) return;
+      tables.forEach(table => {
+        const options = getTableOptions(table);
+        $(table).DataTable(options);
+        $(table).addClass('dt-processed');
+      });
+    }
+
+    function setupTableObserver() {
+      const observer = new MutationObserver((mutations) => {
+        let newTables = [];
+        
+        mutations.forEach(mutation => {
+          if (mutation.addedNodes.length) {
+            mutation.addedNodes.forEach(node => {
+
+              if (node.nodeType === 1 && node.tagName === 'TABLE' && 
+                  !$(node).hasClass('dt-processed') &&
+                  ($(node).hasClass('sortable-table') || 
+                   $(node).hasClass('searchable-table') || 
+                   $(node).hasClass('sortable-searchable-table'))) {
+                newTables.push(node);
+              }
+              
+              if (node.nodeType === 1 && node.querySelectorAll) {
+                const tablesInNode = node.querySelectorAll(
+                'table.sortable-table:not(.dt-processed), ' +
+                'table.searchable-table:not(.dt-processed), ' +
+                'table.sortable-searchable-table:not(.dt-processed)');
+                if (tablesInNode.length) {
+                  newTables = [...newTables, ...tablesInNode];
+                }
+              }
+            });
+          }
+        });
+
+        if (newTables.length > 0) {
+          initializeTables(newTables);
+        }
+      });
+      
+      // Start observing the entire document for changes
+      observer.observe(document.body, {
+        childList: true,
+        subtree: true
+      });
+      
+      return observer;
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+      // Process any existing tables
+      const existingTables = document.querySelectorAll(
+        'table.sortable-table:not(.dt-processed), ' +
+        'table.searchable-table:not(.dt-processed), ' +
+        'table.sortable-searchable-table:not(.dt-processed)'
+      );
+      if (existingTables.length > 0) {
+        initializeTables(existingTables);
+      }
+      
+      setupTableObserver();
+    });
+
+  </script>
+
+    <script type="module">
+    window.mermaidPromise = null;
+    
+    const loadMermaid = () => {
+      if (window.mermaidPromise === null) {
+        window.mermaidPromise = import('https://unpkg.com/mermaid@11.7.0/dist/mermaid.esm.min.mjs')
+          .then(({ default: mermaid }) => {
+            mermaid.initialize({
+              startOnLoad: false,
+            });
+            console.log('Mermaid loaded successfully');
+            return mermaid;
+          })
+          .catch((error) => {
+            console.error('Mermaid failed to load:', error);
+            window.mermaidPromise = false;
+            return null;
+          });
+      }
+      return window.mermaidPromise;
+    };
+
+    const renderMermaidDiagrams = (elements) => {
+      if (!elements || elements.length === 0) {
+        return Promise.resolve();
+      }
+
+      return loadMermaid().then(mermaid => {
+        if (!mermaid) return;
+        return mermaid.run({ nodes: Array.from(elements) })
+          .catch(err => console.error('Error rendering mermaid diagrams:', err));
+      });
+    };
+
+    const setupMermaidObserver = () => {
+      const observer = new MutationObserver((mutations) => {
+        let newMermaidElements = [];
+        
+        mutations.forEach(mutation => {
+          if (mutation.addedNodes.length) {
+            mutation.addedNodes.forEach(node => {
+              if (node.nodeType === 1 && node.classList && 
+                  node.classList.contains('mermaid')) {
+                newMermaidElements.push(node);
+              }
+              
+              if (node.nodeType === 1 && node.querySelectorAll) {
+                const mermaidInNode = node.querySelectorAll('.mermaid');
+                if (mermaidInNode.length) {
+                  newMermaidElements = [...newMermaidElements, ...mermaidInNode];
+                }
+              }
+            });
+          }
+        });
+        
+        if (newMermaidElements.length > 0) {
+          renderMermaidDiagrams(newMermaidElements);
+        }
+      });
+      
+      observer.observe(document.body, {
+        childList: true,
+        subtree: true
+      });
+      
+      return observer;
+    };
+
+    // Initialize on DOM content loaded
+    document.addEventListener('DOMContentLoaded', () => {
+      const existingDiagrams = document.querySelectorAll('.mermaid');
+      if (existingDiagrams.length > 0) {
+        renderMermaidDiagrams(existingDiagrams);
+      }
+      
+      setupMermaidObserver();
+    });
+
+  </script>
+</html>

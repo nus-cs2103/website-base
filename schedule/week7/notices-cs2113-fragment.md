@@ -1,7 +1,0 @@
-{% from "common/macros.njk" import embed_topic, show_as_tab, timing_badge with context %}
-<box type="info">
-
-* There are no Java exercises this week, and hereafter.
-* This week's post-lecture quiz covers the [full _code quality_ chapter]({{ baseUrl }}/se-book-adapted/chapters/codeQuality.html), as we have now covered all parts of it.
-</box>
-<p/>

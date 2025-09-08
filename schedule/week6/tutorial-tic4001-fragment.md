@@ -1,3 +1,0 @@
-
-* Briefing
-* Project work

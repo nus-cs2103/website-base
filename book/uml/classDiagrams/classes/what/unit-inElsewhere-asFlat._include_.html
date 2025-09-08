@@ -1,0 +1,418 @@
+<p><span class="dimmed"><strong><span>Tools → UML → Class Diagrams → Classes →
+</span></strong></span></p>
+<div id="title-and-body">
+<div><h4 id="what"><span>What</span><a class="fa fa-anchor" href="#what" onclick="event.stopPropagation()"></a></h4></div>
+<div id="main">
+<div>
+<p>The basic UML notations used to represent a <em>class</em>:<br></p>
+<pic eager src="/website/book/uml/classDiagrams/classes/what/images/basicNotation.png" height="130"></pic>
+<p></p>
+<box>
+<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> A <code class="hljs inline no-lang" v-pre>Table</code> class shown in UML notation:</p>
+<div class="alt-java">
+<pic eager src="/website/book/uml/classDiagrams/classes/what/images/operations.png" height="150"></pic></div>
+<div class="alt-python">
+<pic src="/website/76c0042ace6f4746fe7b0f3d2d585ec2.png"></pic></div>
+<p></p>
+<panel type="seamless" class="algolia-no-index"><template #header><p>The equivalent code</p></template>
+<div class="alt-java">
+<pre><code class="hljs java" v-pre><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Table</span> </span>{
+</span><span>
+</span><span>    Integer number;
+</span><span>    Chair[] chairs = <span class="hljs-keyword">null</span>;
+</span><span>
+</span><span>    <span class="hljs-function">Integer <span class="hljs-title">getNumber</span><span class="hljs-params">()</span> </span>{
+</span><span>        <span class="hljs-comment">// ...</span>
+</span><span>    }
+</span><span>
+</span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setNumber</span><span class="hljs-params">(Integer n)</span> </span>{
+</span><span>        <span class="hljs-comment">// ...</span>
+</span><span>    }
+</span><span>}
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "/>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "/>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre></div>
+<div class="alt-python">
+<pre><code class="hljs python" v-pre><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Table</span>:</span>
+</span><span>
+</span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span>(<span class="hljs-params">self</span>):</span>
+</span><span>    self.number = <span class="hljs-number">0</span>
+</span><span>    self.chairs = []
+</span><span>
+</span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_number</span>(<span class="hljs-params">self</span>):</span>
+</span><span>    <span class="hljs-comment"># ...</span>
+</span><span>
+</span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">set_number</span>(<span class="hljs-params">self, n</span>):</span>
+</span><span>    <span class="hljs-comment"># ...</span>
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "/>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "/>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre></div></panel></box>
+<p><strong>The 'Operations' compartment and/or the 'Attributes' compartment may be omitted</strong> if such details are not important for the task at hand. Similarly, <em>some</em> attributes/operations can be omitted if not relevant to the purpose of the diagram. 'Attributes' always appear above the 'Operations' compartment. All operations should be in one compartment rather than each operation in a separate compartment. Same goes for attributes.</p>
+<box>
+<pic eager src="/website/book/uml/classDiagrams/classes/what/images/classes.png" height="100"></pic></box>
+<p><strong>The <em>visibility</em> of attributes and operations is used to indicate the level of access allowed for each attribute or operation.</strong> The types of visibility and their exact meanings depend on the programming language used. Here are some common visibilities and how they are indicated in a class diagram:</p>
+<ul>
+<li><code class="hljs inline no-lang" v-pre>+</code> : public</li>
+<li><code class="hljs inline no-lang" v-pre>-</code> : private</li>
+<li><code class="hljs inline no-lang" v-pre>#</code> : protected</li>
+<li><code class="hljs inline no-lang" v-pre>~</code> : package private</li></ul>
+<panel type="seamless" class="algolia-no-index"><template #header><p>How visibilities map to programming language features</p></template>
+<div class="table-responsive"><table class="markbind-table table table-bordered table-striped"><thead>
+<tr>
+<th>Visibility</th>
+<th>Java</th>
+<th>Python</th></tr></thead>
+<tbody>
+<tr>
+<td><code class="hljs inline no-lang" v-pre>-</code> private</td>
+<td><code class="hljs inline no-lang" v-pre>private</code></td>
+<td>at least two leading underscores (and at most one trailing underscores) in the name</td></tr>
+<tr>
+<td><code class="hljs inline no-lang" v-pre>#</code> protected</td>
+<td><code class="hljs inline no-lang" v-pre>protected</code></td>
+<td>one leading underscore in the name</td></tr>
+<tr>
+<td><code class="hljs inline no-lang" v-pre>+</code> public</td>
+<td><code class="hljs inline no-lang" v-pre>public</code></td>
+<td>all other cases</td></tr>
+<tr>
+<td><code class="hljs inline no-lang" v-pre>~</code> package private</td>
+<td>default visibility</td>
+<td>not applicable</td></tr></tbody></table></div></panel><p></p>
+<box>
+<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> <code class="hljs inline no-lang" v-pre>Table</code> class with visibilities shown:</p>
+<div class="alt-java">
+<pic eager src="/website/book/uml/classDiagrams/classes/what/images/operationsVisibility.png" height="150"></pic></div>
+<div class="alt-python">
+<pic src="/website/1410ea6b2ad07b8eb4795f97d3ac641e.png"></pic></div>
+<p></p>
+<panel type="seamless" class="algolia-no-index"><template #header><p>The equivalent code</p></template>
+<div class="alt-java">
+<pre><code class="hljs java" v-pre><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Table</span> </span>{
+</span><span>
+</span><span>    <span class="hljs-keyword">private</span> Integer number;
+</span><span>    <span class="hljs-keyword">private</span> Chair[] chairs = <span class="hljs-keyword">null</span>;
+</span><span>
+</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> Integer <span class="hljs-title">getNumber</span><span class="hljs-params">()</span> </span>{
+</span><span>        <span class="hljs-comment">//...</span>
+</span><span>    }
+</span><span>
+</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setNumber</span><span class="hljs-params">(Integer n)</span> </span>{
+</span><span>        <span class="hljs-comment">//...</span>
+</span><span>    }
+</span><span>}
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "/>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "/>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre></div>
+<div class="alt-python">
+<pre><code class="hljs python" v-pre><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Table</span>:</span>
+</span><span>
+</span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span>(<span class="hljs-params">self</span>):</span>
+</span><span>    self.__number = <span class="hljs-number">0</span>
+</span><span>    self.__chairs = []
+</span><span>
+</span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_number</span>(<span class="hljs-params">self</span>):</span>
+</span><span>    <span class="hljs-comment"># ...</span>
+</span><span>
+</span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">set_number</span>(<span class="hljs-params">self, n</span>):</span>
+</span><span>    <span class="hljs-comment"># ...</span>
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "/>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "/>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre></div></panel></box>
+<box type="warning" seamless>
+<p><strong>There is no <em>default</em> visibility</strong> in UML. If a class diagram does not show the visibility of a <tooltip><template #content>i.e., an attribute or an operation</template>member</tooltip>, it simply means the <em>visibility is unspecified</em> (for reasons such as the visibility not being decided yet or it being not important to the purpose of the diagram).</p></box>
+<div class="alt-java">
+<p><strong>Generic classes can be shown as given below</strong>. The notation format is shown on the left, followed by two examples.</p>
+<pic eager src="/website/book/uml/classDiagrams/classes/what/images/generic.png" width="618"></pic>
+<p></p></div></div>
+<div>
+<div><br>
+<h5 id="exercises"><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span></span> Exercises:<a class="fa fa-anchor" href="#exercises" onclick="event.stopPropagation()"></a></h5>
+<div><div><panel class="algolia-no-index"><template #header><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span></span> Which classes are correct?</p></template>
+<p>Which of these follow the correct UML notation?</p>
+<pic eager src="/website/book/uml/classDiagrams/classes/what/images/chooseNotation.jpg" height="130"></pic>
+<p></p>
+<ul class="contains-task-list">
+<li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> 1</li>
+<li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> 2</li>
+<li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> 3</li>
+<li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> 4</li>
+<li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> 5</li></ul>
+<panel type="seamless" minimized class="algolia-no-index"><template #header><p><span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span></span> Answer</p></template>
+<ol>
+<li>Incorrect: <em>Attributes</em> compartment should be above the <em>Methods</em> compartment.</li>
+<li>Incorrect: All attributes should be inside the same compartment.</li>
+<li>Correct</li>
+<li>Correct: Both <em>Attributes</em> and <em>Methods</em> compartments can be omitted.</li>
+<li>Correct: The <em>Attributes</em> and <em>Methods</em> compartments can be empty.</li></ol></panel></panel></div>
+<div><panel class="algolia-no-index"><template #header><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Draw Car class</p></template>
+<p>Draw a UML diagram to represent the <code class="hljs inline no-lang" v-pre>Car</code> class as given below. Include visibilities.</p>
+<div class="alt-java">
+<pre><code class="hljs java" v-pre><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span> </span>{
+</span><span>
+</span><span>    Engine engine;
+</span><span>    <span class="hljs-keyword">private</span> List&lt;Wheel&gt; wheels = <span class="hljs-keyword">null</span>;
+</span><span>    <span class="hljs-keyword">public</span> String model;
+</span><span>
+</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">drive</span><span class="hljs-params">(<span class="hljs-keyword">int</span> speed)</span> </span>{
+</span><span>        move(speed);
+</span><span>    }
+</span><span>
+</span><span>    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">move</span><span class="hljs-params">(<span class="hljs-keyword">int</span> speed)</span> </span>{
+</span><span>        ...
+</span><span>    }
+</span><span>}
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "/>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "/>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre></div>
+<div class="alt-python">
+<p><span class="badge rounded-pill bg-success text-white"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> You may omit <code class="hljs inline no-lang" v-pre>self</code> from method signatures in the class diagram.</p>
+<pre><code class="hljs python" v-pre><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span>:</span>
+</span><span>
+</span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span>(<span class="hljs-params">self, model</span>):</span>
+</span><span>    self._engine = <span class="hljs-literal">None</span> <span class="hljs-comment"># type: Engine</span>
+</span><span>    self.__wheels = []  <span class="hljs-comment"># type: a <span class="hljs-built_in">list</span> of Wheel objects</span>
+</span><span>    self.model = model  <span class="hljs-comment"># type: string</span>
+</span><span>
+</span><span>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">drive</span>(<span class="hljs-params">self, speed</span>):</span> <span class="hljs-comment"># speed is an int</span>
+</span><span>      self.move(speed)
+</span><span>
+</span><span>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__move</span>(<span class="hljs-params">self, speed</span>):</span>
+</span><span>      <span class="hljs-keyword">pass</span>
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "/>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "/>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre></div></panel></div></div></div></div></div></div>

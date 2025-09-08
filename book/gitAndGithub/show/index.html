@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="generator" content="MarkBind 6.0.2">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><title>CS2103/T - T4L1. Examining a Commit</title> <link rel="stylesheet" href="/website/markbind/css/bootstrap.min.css"> <link rel="stylesheet" href="/website/markbind/fontawesome/css/all.min.css"> <link rel="stylesheet" href="/website/markbind/glyphicons/css/bootstrap-glyphicons.min.css"> <link rel="stylesheet" href="/website/markbind/css/octicons.css"><link rel="stylesheet" href="/website/markbind/css/codeblock-light.min.css"><link rel="stylesheet" href="/website/markbind/css/markbind.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3.2.0/dist/style.css"><link rel="preconnect" href="https://3DU4XTBX4T-dsn.algolia.net" crossorigin><link rel="stylesheet" href="/website/plugins/codeBlockCopyButtons/codeBlockButtons.css"><link rel="stylesheet" href="/website/plugins/codeBlockWrapButtons/codeBlockButtons.css"><link rel="stylesheet" href="/website/plugins/dataTable/datatables.min.css"><link rel="stylesheet" href="/website/plugins/dataTable/datatables-additional.css"><link rel="stylesheet" href="/website/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css"><link rel="stylesheet" href="/website/plugins/markbind-plugin-tree/markbind-plugin-tree.css">
+    
+<link rel="stylesheet" href="/website/css/main.css">
+<link rel="icon" href="/website/favicon.ico"></head>
+<script>
+  const baseUrl = '/website'
+</script>
+<body >
+<div id="app"><!--[--><header sticky><div placement="top" data-v-2dc82f13><nav class="navbar navbar-expand-md d-print-none navbar-dark bg-dark" data-v-2dc82f13><div class="container-fluid" data-v-2dc82f13><div class="navbar-left" data-v-2dc82f13><!--[--><a href="/website/index.html" title="Home" class="navbar-brand"><span class="badge rounded-pill bg-success">CS2103/T <small>2025 Aug-Nov</small></span></a><!--]--></div><div class="navbar-default" data-v-2dc82f13><ul class="navbar-nav me-auto mt-2 mt-lg-0" data-v-2dc82f13><!--[--> <li class="dropdown nav-link algolia-no-index" data-v-154e37d3><!--[--><a role="button" class="dropdown-toggle nav-link" data-bs-toggle="dropdown" data-v-154e37d3><!--[--><strong>Schedule</strong><!--]--><span data-v-154e37d3></span></a><!--]--><!--[--><ul class="dropdown-menu" data-v-154e37d3><!--[--> <li><a href="/website/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li> <li><a href="/website/schedule/week1/index.html" class="dropdown-item"><span><strong>Week 1</strong> [Mon, Aug 11th] </span></a></li> <li><a href="/website/schedule/week2/index.html" class="dropdown-item"><span><strong>Week 2</strong> [Mon, Aug 18th] </span></a></li> <li><a href="/website/schedule/week3/index.html" class="dropdown-item"><span><strong>Week 3</strong> [Mon, Aug 25th] </span></a></li> <li><a href="/website/schedule/week4/index.html" class="dropdown-item"><span><strong>Week 4</strong> [Mon, Sep 1st] </span></a></li> <li><a href="/website/schedule/week5/index.html" class="dropdown-item"><span><strong>Week 5</strong> [Mon, Sep 8th]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li> <li><a href="/website/schedule/week5/admin.html" class="dropdown-item">  ├ Week 5: <span><span aria-hidden="true" class="fas fa-info-circle"></span></span> <span><strong>Admin</strong></span></a></li> <li><a href="/website/schedule/week5/topics.html" class="dropdown-item">  ├ Week 5: <span><span aria-hidden="true" class="fas fa-book"></span></span> <span><strong>Topics</strong></span></a></li> <li><a href="/website/schedule/week5/project.html" class="dropdown-item">  ├ Week 5: <span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> <span><strong>Project</strong></span></a></li> <li><a href="/website/schedule/week5/tutorial.html" class="dropdown-item">  └ Week 5: <span><span aria-hidden="true" class="fas fa-chalkboard-teacher"></span></span> <span><strong>Tutorial</strong></span></a></li> <li><a href="/website/schedule/week6/index.html" class="dropdown-item"><span><strong>Week 6</strong> [Mon, Sep 15th] </span></a></li> <li><a href="/website/schedule/week7/index.html" class="dropdown-item"><span><strong>Week 7</strong> [Mon, Sep 29th] </span></a></li> <li><a href="/website/schedule/week8/index.html" class="dropdown-item"><span><strong>Week 8</strong> [Mon, Oct 6th] </span></a></li> <li><a href="/website/schedule/week9/index.html" class="dropdown-item"><span><strong>Week 9</strong> [Mon, Oct 13th] </span></a></li> <li><a href="/website/schedule/week10/index.html" class="dropdown-item"><span><strong>Week 10</strong> [Mon, Oct 20th] </span></a></li> <li><a href="/website/schedule/week11/index.html" class="dropdown-item"><span><strong>Week 11</strong> [Mon, Oct 27th] </span></a></li> <li><a href="/website/schedule/week12/index.html" class="dropdown-item"><span><strong>Week 12</strong> [Mon, Nov 3rd] </span></a></li> <li><a href="/website/schedule/week13/index.html" class="dropdown-item"><span><strong>Week 13</strong> [Mon, Nov 10th] </span></a></li><!--]--></ul><!--]--></li> <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li> <li class="dropdown nav-link algolia-no-index" data-v-154e37d3><!--[--><a role="button" class="dropdown-toggle nav-link" data-bs-toggle="dropdown" data-v-154e37d3><!--[--><strong>Admin Info</strong><!--]--><span data-v-154e37d3></span></a><!--]--><!--[--><ul class="dropdown-menu" data-v-154e37d3><!--[--> <li><a href="/website/admin/courseOverview.html" class="dropdown-item"><span>Course Overview </span></a></li> <li><a href="/website/admin/usingThisWebsite.html" class="dropdown-item"><span>Using this Website  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-danger"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>1</span></span></span></span></a></li> <li><a href="/website/admin/courseExpectations.html" class="dropdown-item"><span>Course Expectations  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></span></a></li> <li class="dropdown-submenu dropend algolia-no-index" data-v-154e37d3 data-v-1ebc3cbe><!--[--><a role="button" class="dropdown-item submenu-toggle" data-bs-toggle="dropdown" data-v-1ebc3cbe><!--[--><!--[--><strong>Course Structure</strong><!--]--><!--]--></a><!--]--><!--[--><ul class="dropdown-menu" data-v-1ebc3cbe><!--[--><!--[--> <li><a href="/website/admin/courseBriefings.html" class="dropdown-item"><span><small>Course Briefing Videos  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-info"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>3</span></span></span></small></span></a></li> <li><a href="/website/admin/weeklySchedule.html" class="dropdown-item"><span><small>Weekly Schedule  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-info"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>3</span></span></span></small></span></a></li> <li><a href="/website/admin/lectures.html" class="dropdown-item"><span><small>Weekly Briefings  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-info"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>3</span></span></span></small></span></a></li> <li><a href="/website/admin/tutorials.html" class="dropdown-item"><span><small>Tutorials  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li><!--]--><!--]--></ul><!--]--></li> <li><a href="/website/admin/instructors.html" class="dropdown-item"><span>Instructors  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-success"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>4</span></span></span></span></a></li> <li><a href="/website/admin/textbooks.html" class="dropdown-item"><span>Textbooks  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></span></a></li> <li><a href="/website/admin/programmingLanguages.html" class="dropdown-item"><span>Programming Language  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></span></a></li> <li><a href="/website/admin/standardsAndConventions.html" class="dropdown-item"><span>Standards/Conventions  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></span></a></li> <li class="dropdown-submenu dropend algolia-no-index" data-v-154e37d3 data-v-1ebc3cbe><!--[--><a role="button" class="dropdown-item submenu-toggle" data-bs-toggle="dropdown" data-v-1ebc3cbe><!--[--><!--[--><strong>Individual Project (iP)</strong><!--]--><!--]--></a><!--]--><!--[--><ul class="dropdown-menu" data-v-1ebc3cbe><!--[--><!--[--> <li><a href="/website/admin/ip-overview.html" class="dropdown-item"><span><small>iP (Individual Project): Overview  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/ip-w2.html" class="dropdown-item"><span><small>iP: Week 2  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/ip-w3.html" class="dropdown-item"><span><small>iP: Week 3  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/ip-w4.html" class="dropdown-item"><span><small>iP: Week 4  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/ip-w5.html" class="dropdown-item"><span><small>iP: Week 5  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/ip-w6.html" class="dropdown-item"><span><small>iP: Week 6  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-danger"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>1</span></span></span></small></span></a></li> <li><a href="/website/admin/ip-w7.html" class="dropdown-item"><span><small>iP: Week 7  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-success"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>4</span></span></span></small></span></a></li> <li><a href="/website/admin/ip-w8.html" class="dropdown-item"><span><small>iP: Week 8  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-danger"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>1</span></span></span></small></span></a></li> <li><a href="/website/admin/ip-grading.html" class="dropdown-item"><span><small>iP: Grading  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li><!--]--><!--]--></ul><!--]--></li> <li class="dropdown-submenu dropend algolia-no-index" data-v-154e37d3 data-v-1ebc3cbe><!--[--><a role="button" class="dropdown-item submenu-toggle" data-bs-toggle="dropdown" data-v-1ebc3cbe><!--[--><!--[--><strong>Team Project (tP)</strong><!--]--><!--]--></a><!--]--><!--[--><ul class="dropdown-menu" data-v-1ebc3cbe><!--[--><!--[--> <li><a href="/website/admin/tp-overview.html" class="dropdown-item"><span><small>tP (team project): Overview  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-expectations.html" class="dropdown-item"><span><small>tP: Expectations  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-timeline.html" class="dropdown-item"><span><small>tP: Timeline  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-info"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>3</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-constraints.html" class="dropdown-item"><span><small>tP: Constraints  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-teams.html" class="dropdown-item"><span><small>tP: Forming Teams  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-w3.html" class="dropdown-item"><span><small>tP Week 3: Kickoff  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-w4.html" class="dropdown-item"><span><small>tP Week 4: Set Direction  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-info"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>3</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-w5.html" class="dropdown-item"><span><small>tP Week 5: Gather Requirements  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-w6.html" class="dropdown-item"><span><small>tP Week 6: Define the MVP  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-w7.html" class="dropdown-item"><span><small>tP Week 7: Practice Iteration → v1.1  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-w8.html" class="dropdown-item"><span><small>tP Week 8: First Feature Increment → v1.2  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-info"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>3</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-w9.html" class="dropdown-item"><span><small>tP Week 9: MVP → v1.3  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-w10.html" class="dropdown-item"><span><small>tP Week 10: Alpha Version → v1.4  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-w11.html" class="dropdown-item"><span><small>tP Week 11: Release Candidate → v1.5  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-w12.html" class="dropdown-item"><span><small>tP Week 12: Public Release → v1.6  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-info"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>3</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-w13.html" class="dropdown-item"><span><small>tP Week 13: Post-Release Tasks  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-deliverables.html" class="dropdown-item"><span><small>tP: Deliverables  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-ped.html" class="dropdown-item"><span><small>tP: Practical Exam Dry Run  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-pe.html" class="dropdown-item"><span><small>tP: Practical Exam  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-grading.html" class="dropdown-item"><span><small>tP: Grading  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-supervision.html" class="dropdown-item"><span><small>tP: Supervision/Guidance  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li><!--]--><!--]--></ul><!--]--></li> <li><a href="/website/admin/peerEvaluations.html" class="dropdown-item"><span>Peer Evaluations  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></span></a></li> <li><a href="/website/admin/tools.html" class="dropdown-item"><span>Tools  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-info"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>3</span></span></span></span></a></li> <li><a href="/website/admin/exams.html" class="dropdown-item"><span>Exams  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></span></a></li> <li><a href="/website/admin/participation.html" class="dropdown-item"><span>Participation Marks  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></span></a></li> <li><a href="/website/admin/gradeBreakdown.html" class="dropdown-item"><span>Grade Breakdown  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></span></a></li> <li class="dropdown-submenu dropend algolia-no-index" data-v-154e37d3 data-v-1ebc3cbe><!--[--><a role="button" class="dropdown-item submenu-toggle" data-bs-toggle="dropdown" data-v-1ebc3cbe><!--[--><!--[--><strong>Appendices</strong><!--]--><!--]--></a><!--]--><!--[--><ul class="dropdown-menu" data-v-1ebc3cbe><!--[--><!--[--> <li><a href="/website/admin/appendixA-principles.html" class="dropdown-item"><span><small>Apdx A: Course Principles  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-success"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>4</span></span></span></small></span></a></li> <li><a href="/website/admin/appendixB-policies.html" class="dropdown-item"><span><small>Apdx B: Course Policies  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-danger"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>1</span></span></span></small></span></a></li> <li><a href="/website/admin/appendixC-faq.html" class="dropdown-item"><span><small>Apdx C: FAQ  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-danger"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>1</span></span></span></small></span></a></li> <li><a href="/website/admin/appendixD-help.html" class="dropdown-item"><span><small>Apdx D: Getting Help  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/appendixE-gitHub.html" class="dropdown-item"><span><small>Apdx E: Using GitHub  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-danger"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>1</span></span></span></small></span></a></li> <li><a href="/website/admin/appendixF-teamworkIssues.html" class="dropdown-item"><span><small>Apdx F: Handling Team Issues  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-success"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>4</span></span></span></small></span></a></li><!--]--><!--]--></ul><!--]--></li><!--]--></ul><!--]--></li> <li class="dropdown nav-link algolia-no-index" tags="m--cs2103 m--cs2113" data-v-154e37d3><!--[--><a role="button" class="dropdown-toggle nav-link" data-bs-toggle="dropdown" data-v-154e37d3><!--[--><strong>Dashboards</strong><!--]--><span data-v-154e37d3></span></a><!--]--><!--[--><ul class="dropdown-menu" data-v-154e37d3><!--[--> <li><a href="https://nus-cs2103-ay2526s1.github.io/dashboards/contents/participation.html" class="dropdown-item text-success" target="_blank"><span><span aria-hidden="true" class="fas fa-trophy"></span> <strong>Participation</strong> dashboard</span></a></li> <li><a href="https://nus-cs2103-ay2526s1.github.io/dashboards/contents/forum-activities.html" class="dropdown-item" target="_blank"><span><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-comment" aria-hidden="true"><path fill-rule="evenodd" d="M2.75 2.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h2a.75.75 0 01.75.75v2.19l2.72-2.72a.75.75 0 01.53-.22h4.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25H2.75zM1 2.75C1 1.784 1.784 1 2.75 1h10.5c.966 0 1.75.784 1.75 1.75v7.5A1.75 1.75 0 0113.25 12H9.06l-2.573 2.573A1.457 1.457 0 014 13.543V12H2.75A1.75 1.75 0 011 10.25v-7.5z"></path></svg> <strong>Forum</strong> Dashboard</span></a></li> <hr> <span><strong> iP dashboards:</strong></span> <li><a href="https://nus-cs2103-ay2526s1.github.io/dashboards/contents/ip-progress.html" target="_blank" class="dropdown-item text-success"><span><span aria-hidden="true" class="fas fa-tasks"></span> iP Progress Dashboard</span></a></li> <li><a href="https://nus-cs2103-ay2526s1.github.io/dashboards/contents/ip-comments.html" target="_blank" class="dropdown-item"><span><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-comment" aria-hidden="true"><path fill-rule="evenodd" d="M2.75 2.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h2a.75.75 0 01.75.75v2.19l2.72-2.72a.75.75 0 01.53-.22h4.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25H2.75zM1 2.75C1 1.784 1.784 1 2.75 1h10.5c.966 0 1.75.784 1.75 1.75v7.5A1.75 1.75 0 0113.25 12H9.06l-2.573 2.573A1.457 1.457 0 014 13.543V12H2.75A1.75 1.75 0 011 10.25v-7.5z"></path></svg> iP Comments dashboard</span></a></li> <li><a href="https://nus-cs2103-ay2526s1.github.io/ip-dashboard/?search=&amp;sort=groupTitle&amp;sortWithin=title&amp;timeframe=commit&amp;mergegroup=&amp;groupSelect=groupByRepos&amp;breakdown=true&amp;viewRepoTags=true&amp;checkedFileTypes=java~md~fxml~sh~bat~gradle~txt" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-chart-area"></span> iP Code Dashboard</span></a></li> <hr> <span><strong> tP dashboards:</strong></span> <li><a href="https://nus-cs2103-ay2526s1.github.io/dashboards/contents/tp-progress.html" target="_blank" class="dropdown-item text-success"><span><span aria-hidden="true" class="fas fa-tasks"></span> tP Progress Dashboard</span></a></li> <li><a href="https://nus-cs2103-ay2526s1.github.io/dashboards/contents/tp-comments.html" target="_blank" class="dropdown-item"><span><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-comment" aria-hidden="true"><path fill-rule="evenodd" d="M2.75 2.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h2a.75.75 0 01.75.75v2.19l2.72-2.72a.75.75 0 01.53-.22h4.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25H2.75zM1 2.75C1 1.784 1.784 1 2.75 1h10.5c.966 0 1.75.784 1.75 1.75v7.5A1.75 1.75 0 0113.25 12H9.06l-2.573 2.573A1.457 1.457 0 014 13.543V12H2.75A1.75 1.75 0 011 10.25v-7.5z"></path></svg> tP Comments Dashboard</span></a></li> <li><a href="https://nus-cs2103-ay2526s1.github.io/tp-dashboard/?search=&amp;sort=groupTitle&amp;sortWithin=title&amp;timeframe=commit&amp;mergegroup=&amp;groupSelect=groupByRepos&amp;breakdown=true&amp;checkedFileTypes=docs~functional-code~test-code~other" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-chart-area"></span> tP Code Dashboard</span></a></li><!--]--></ul><!--]--></li> <li class="dropdown nav-link algolia-no-index" tags="m--cs2103 m--cs2113" data-v-154e37d3><!--[--><a role="button" class="dropdown-toggle nav-link" data-bs-toggle="dropdown" data-v-154e37d3><!--[--><strong>Project Links</strong><!--]--><span data-v-154e37d3></span></a><!--]--><!--[--><ul class="dropdown-menu" data-v-154e37d3><!--[--> <span><strong> Individual Project (iP):</strong></span> <li><a href="/website/admin/ip-overview.html" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span></span> Individual Project Info</a></li> <li><a href="https://github.com/nus-cs2103-AY2526S1/ip" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-code-branch"></span></span></span> iP Upstream Repo</a></li> <li tags="m--cs2103"><a href="/website/admin/ip-showcase.html" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-list-alt"></span> iP Showcase</span></a></li> <li><a href="https://nus-cs2103-ay2526s1.github.io/dashboards/contents/ip-progress.html" target="_blank" class="dropdown-item text-success"><span><span aria-hidden="true" class="fas fa-tasks"></span> iP Progress Dashboard</span></a></li> <li><a href="https://nus-cs2103-ay2526s1.github.io/dashboards/contents/ip-comments.html" target="_blank" class="dropdown-item"><span><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-comment" aria-hidden="true"><path fill-rule="evenodd" d="M2.75 2.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h2a.75.75 0 01.75.75v2.19l2.72-2.72a.75.75 0 01.53-.22h4.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25H2.75zM1 2.75C1 1.784 1.784 1 2.75 1h10.5c.966 0 1.75.784 1.75 1.75v7.5A1.75 1.75 0 0113.25 12H9.06l-2.573 2.573A1.457 1.457 0 014 13.543V12H2.75A1.75 1.75 0 011 10.25v-7.5z"></path></svg> iP Comments dashboard</span></a></li> <li><a href="https://nus-cs2103-ay2526s1.github.io/ip-dashboard/?search=&amp;sort=groupTitle&amp;sortWithin=title&amp;timeframe=commit&amp;mergegroup=&amp;groupSelect=groupByRepos&amp;breakdown=true&amp;viewRepoTags=true&amp;checkedFileTypes=java~md~fxml~sh~bat~gradle~txt" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-chart-area"></span> iP Code Dashboard</span></a></li> <hr> <span><strong> Team Project (tP):</strong></span> <li><a href="/website/admin/tp-overview.html" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span></span> Team Project Info</a></li> <li tags="m--cs2103 m--cs2113"><a href="https://github.com/nus-cs2103-AY2526S1/tp" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-code-branch"></span></span></span> tP Upstream Repo (AB3)</a></li> <li><a href="/website/admin/teamList.html" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-list-alt"></span> Team List</span></a></li> <li><a href="https://nus-cs2103-ay2526s1.github.io/dashboards/contents/tp-progress.html" target="_blank" class="dropdown-item text-success"><span><span aria-hidden="true" class="fas fa-tasks"></span> tP Progress Dashboard</span></a></li> <li><a href="https://nus-cs2103-ay2526s1.github.io/dashboards/contents/tp-comments.html" target="_blank" class="dropdown-item"><span><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-comment" aria-hidden="true"><path fill-rule="evenodd" d="M2.75 2.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h2a.75.75 0 01.75.75v2.19l2.72-2.72a.75.75 0 01.53-.22h4.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25H2.75zM1 2.75C1 1.784 1.784 1 2.75 1h10.5c.966 0 1.75.784 1.75 1.75v7.5A1.75 1.75 0 0113.25 12H9.06l-2.573 2.573A1.457 1.457 0 014 13.543V12H2.75A1.75 1.75 0 011 10.25v-7.5z"></path></svg> tP Comments Dashboard</span></a></li> <li><a href="https://nus-cs2103-ay2526s1.github.io/tp-dashboard/?search=&amp;sort=groupTitle&amp;sortWithin=title&amp;timeframe=commit&amp;mergegroup=&amp;groupSelect=groupByRepos&amp;breakdown=true&amp;checkedFileTypes=docs~functional-code~test-code~other" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-chart-area"></span> tP Code Dashboard</span></a></li><!--]--></ul><!--]--></li> <li tags="m--cs2103 m--cs2113"><a href="https://github.com/nus-cs2103-AY2526S1/forum/issues" class="nav-link"><span><strong>Forum</strong></span></a></li> <li class="dropdown nav-link algolia-no-index" data-v-154e37d3><!--[--><a role="button" class="dropdown-toggle nav-link" data-bs-toggle="dropdown" data-v-154e37d3><!--[--><strong>Other Links</strong><!--]--><span data-v-154e37d3></span></a><!--]--><!--[--><ul class="dropdown-menu" data-v-154e37d3><!--[--> <li tags="m--cs2103 m--cs2113"><a href="https://github.com/nus-cs2103-AY2526S1/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-bug"></span> Report Bugs</span></a></li> <li><a href="https://github.com/nus-cs2103-AY2526S1/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li> <li><a href="/website/admin/instructors.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li> <li><a href="https://canvas.nus.edu.sg/courses/77826/announcements" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li> <li><a href="https://canvas.nus.edu.sg/courses/77826/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> Files (handouts, submissions etc.)</span></a></li> <li tags="m--cs2113 m--cs2103"><a href="/website/admin/tutorials.html" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-calendar"></span> Tutorial Schedule</span></a></li> <li><a href="/website/_markbind/layouts/n/a" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-users-cog"></span> MS Teams link</span></a></li> <li><a href="/website/se-book-adapted/git-trail/index.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-route"></span> Git Learning Trail</span></a></li> <li tags="m--cs2103 m--cs2113 m--tic2002"><a href="https://se-education.org/guides/conventions/java/intermediate.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-code"></span> Java Coding Standard</span></a></li> <li tags="m--cs2103 m--cs2113"><a href="https://se-education.org/guides/conventions/git.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fab fa-git-square"></span> Git Conventions</span></a></li> <li tags="m--cs2103"><a href="/website/admin/uml-reference-sheet.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-diagram-project"></span> UML Reference Sheet</span></a></li><!--]--></ul><!--]--></li> <!--]--></ul></div><ul class="navbar-nav navbar-right" data-v-2dc82f13><!--[--><li class="nav-link"><form class="navbar-form"><div style="position:relative;" class="dropdown" data-v-00e26d0a><div id="algolia-search-input" data-v-00e26d0a></div><ul class="dropdown-menu search-dropdown-menu dropdown-menu-hidden dropdown-menu-end" data-v-00e26d0a><!--[--><!--]--></ul></div></form></li><!--]--></ul></div></nav><div style="display:none;" class="lower-navbar-container" data-v-2dc82f13><!--[--><!----><!----><!--]--></div></div></header> <div id="flex-body"><div id="content-wrapper" class="fixed-header-padding"><div><link rel="stylesheet" href="/website/book/css/textbook.css"> <div class="website-content"><div><p><span class="dimmed"><strong><span>Tools → Git and GitHub →
+</span></strong></span></p> <div id="title-and-body"><div><h4 id="t4l1-examining-a-commit"><span>T4L1. Examining a Commit</span><a class="fa fa-anchor" href="#t4l1-examining-a-commit" onclick="event.stopPropagation()"></a></h4></div> <div id="main"><div><div class="non-printable"><div class="border border-success pt-0 ps-1 pb-1 pe-1 border-bottom-0 rounded-top" style="background-color:#e6fff2;"><div class="indented"><br> <div id="overview"><p>It is useful to be able to <strong>see what changes were included in a specific commit</strong>.</p></div> <span><small>This lesson covers that part.</small></span></div></div> <br></div> <p><strong>When you examine a commit, normally what you see is the &#39;changes made since the previous commit&#39;.</strong> This does not mean that a Git commit contains only the changes made since the previous commit. As you recall, a Git commit contains a full snapshot of the working directory. However, tools used to examine commits typically show only the changes, as that is the more informative part.</p> <p><strong>Git shows changes included in a commit by <em>dynamically calculating</em> the difference</strong> between the snapshots stored in the target commit and the parent commit. This is because Git commits store snapshots of the working directory, not changes themselves.</p> <p><strong>Although each commit represents a copy of the entire working directory, Git uses space efficiently in two main ways:</strong></p> <ol><li><strong>Reuse of unchanged data:</strong> If a file hasn’t changed since a previous commit, the commit simply points to the already stored version of that file instead of making another copy. This means only new or changed files take up extra space, while unchanged files are reused.</li> <li><strong>Compression:</strong> Git also compresses all the files and data it stores using an algorithm (zlib). So, even the objects that are stored (whether reused or new) take up less disk space because they are saved in a compressed format.</li></ol> <p><strong>To address a specific commit, you can use its SHA</strong> (e.g., <code class="hljs inline no-lang">e60deaeb2964bf2ebc907b7416efc890c9d4914b</code>). In fact, just the first few characters of the SHA is enough to uniquely address a commit (e.g., <code class="hljs inline no-lang">e60deae</code>), provided the partial SHA is long enough to uniquely identify the commit (i.e., only one commit has that partial SHA).<br> <strong>Naturally, a commit can be addressed using any ref pointing to it</strong> too (e.g., <code class="hljs inline no-lang">HEAD</code>, <code class="hljs inline no-lang">master</code>).<br> <strong>Another related technique is to use the <code class="hljs inline no-lang">&lt;ref&gt;~&lt;n&gt;</code> notation</strong> (e.g., <code class="hljs inline no-lang">HEAD~1</code>) to address the commit that is <code class="hljs inline no-lang">n</code> commits prior to the commit pointed by <code class="hljs inline no-lang">&lt;ref&gt;</code> i.e., &quot;start with the commit pointed by <code class="hljs inline no-lang">&lt;ref&gt;</code> and go back <code class="hljs inline no-lang">n</code> commits&quot;.<br>
+A related alternative notation is <code class="hljs inline no-lang">HEAD~</code>, <code class="hljs inline no-lang">HEAD~~</code>, <code class="hljs inline no-lang">HEAD~~~</code>, ... to mean <code class="hljs inline no-lang">HEAD~1</code>, <code class="hljs inline no-lang">HEAD~2</code>, <code class="hljs inline no-lang">HEAD~3</code> etc.</p> <div class="d-flex align-items-center"><span class="d-flex justify-content-center align-items-center border bg-info text-white border-info" style="width:25px;height:25px;border-radius:50%;"><span><small>C3</small></span></span><span class="ms-1"><span><span class="badge bg-success text-white ps-1 pe-1"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-git-branch" aria-hidden="true"><path fill-rule="evenodd" d="M11.75 2.5a.75.75 0 100 1.5.75.75 0 000-1.5zm-2.25.75a2.25 2.25 0 113 2.122V6A2.5 2.5 0 0110 8.5H6a1 1 0 00-1 1v1.128a2.251 2.251 0 11-1.5 0V5.372a2.25 2.25 0 111.5 0v1.836A2.492 2.492 0 016 7h4a1 1 0 001-1v-.628A2.25 2.25 0 019.5 3.25zM4.25 12a.75.75 0 100 1.5.75.75 0 000-1.5zM3.5 3.25a.75.75 0 111.5 0 .75.75 0 01-1.5 0z"></path></svg> master</span> <span style="position:relative;left:-2px;"><span class="text-danger m-0 p-0">←</span><span class="badge bg-danger text-white me-2 ps-1 pe-1">HEAD</span></span></span></span><span class="ms-2 font-monospace small"><span><span class="dimmed">This commit can be addressed as <code class="hljs inline no-lang">HEAD</code> or <code class="hljs inline no-lang">master</code></span></span></span></div> <div class="d-flex justify-content-center align-items-center text-info" style="width:25px;height:18px;padding:0;margin:-4px 0;">|</div> <div class="d-flex align-items-center"><span class="d-flex justify-content-center align-items-center border bg-info text-white border-info" style="width:25px;height:25px;border-radius:50%;"><span><small>C2</small></span></span><span class="ms-2 font-monospace small"><span><span class="dimmed">Can be addressed as <code class="hljs inline no-lang">HEAD~1</code> or <code class="hljs inline no-lang">master~1</code> or <code class="hljs inline no-lang">HEAD~</code> or <code class="hljs inline no-lang">master~</code></span></span></span></div> <div class="d-flex justify-content-center align-items-center text-info" style="width:25px;height:18px;padding:0;margin:-4px 0;">|</div> <div class="d-flex align-items-center"><span class="d-flex justify-content-center align-items-center border bg-info text-white border-info" style="width:25px;height:25px;border-radius:50%;"><span><small>C1</small></span></span><span class="ms-2 font-monospace small"><span><span class="dimmed">Can be addressed as <code class="hljs inline no-lang">HEAD~2</code> or <code class="hljs inline no-lang">master~2</code></span></span></span></div> <p></p> <p><strong>Git uses the <span class="badge text-dark" style="background-color:rgba(13, 202, 240, 0.2);"><span class="large">diff</span></span> format to show file changes in a commit.</strong> The diff format was originally developed for Unix. It was later extended with headers and metadata to show changes between file versions and commits. Here is an example diff showing the changes to a file.</p> <pre><code class="no-line-numbers hljs diff"><span><span class="hljs-comment">diff --git a/fruits.txt b/fruits.txt</span>
+</span><span><span class="hljs-comment">index 7d0a594..f84d1c9 100644</span>
+</span><span><span class="hljs-comment">--- a/fruits.txt</span>
+</span><span><span class="hljs-comment">+++ b/fruits.txt</span>
+</span><span><span class="hljs-meta">@@ -1,6 +1,6 @@</span>
+</span><span><span class="hljs-deletion">-apples</span>
+</span><span><span class="hljs-addition">+apples, apricots</span>
+</span><span> bananas
+</span><span> cherries
+</span><span> dragon fruits
+</span><span><span class="hljs-deletion">-elderberries</span>
+</span><span> figs
+</span><span><span class="hljs-meta">@@ -20,2 +20,3 @@</span>
+</span><span> oranges
+</span><span><span class="hljs-addition">+pears</span>
+</span><span> raisins
+</span><span><span class="hljs-comment">diff --git a/colours.txt b/colours.txt</span>
+</span><span>new file mode 100644
+</span><span><span class="hljs-comment">index 0000000..55c8449</span>
+</span><span><span class="hljs-comment">--- /dev/null</span>
+</span><span><span class="hljs-comment">+++ b/colours.txt</span>
+</span><span>@@ -0,0 +1 @@
+</span><span><span class="hljs-addition">+a file for colours</span>
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre><p>A Git diff can consist of multiple <span class="badge text-dark" style="background-color:rgba(13, 202, 240, 0.2);"><span class="large">file diffs</span></span>, one for each changed file. Each file diff can contain one or more <span class="badge text-dark" style="background-color:rgba(13, 202, 240, 0.2);"><span class="large">hunk</span></span> i.e., a localised group of changes within the file — including lines added, removed, or left unchanged (included for context).</p> <div class="non-printable"><p>Given below is how the above diff is divided into its components:</p> <div class="border border-info p-2">
+All changes in the commit:
+<div class="border border-info p-2"><p>File diff for <code class="hljs inline no-lang">fruits.txt</code>:</p> <pre><code class="no-line-numbers hljs diff"><span><span class="hljs-comment">diff --git a/fruits.txt b/fruits.txt</span>
+</span><span><span class="hljs-comment">index 7d0a594..f84d1c9 100644</span>
+</span><span><span class="hljs-comment">--- a/fruits.txt</span>
+</span><span><span class="hljs-comment">+++ b/fruits.txt</span>
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre><div class="border border-info p-2"><p>Hunk 1:</p> <pre><code class="no-line-numbers hljs diff"><span><span class="hljs-meta">@@ -1,6 +1,6 @@</span>
+</span><span><span class="hljs-deletion">-apples</span>
+</span><span><span class="hljs-addition">+apples, apricots</span>
+</span><span> bananas
+</span><span> cherries
+</span><span> dragon fruits
+</span><span><span class="hljs-deletion">-elderberries</span>
+</span><span> figs
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre></div> <div class="border border-info p-2"><p>Hunk 2:</p> <pre><code class="no-line-numbers hljs diff"><span><span class="hljs-meta">@@ -20,2 +20,3 @@</span>
+</span><span> oranges
+</span><span><span class="hljs-addition">+pears</span>
+</span><span> raisins
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre></div></div> <div class="border border-info p-2"><p>File diff for <code class="hljs inline no-lang">colours.txt</code>:</p> <pre><code class="no-line-numbers hljs diff"><span><span class="hljs-comment">diff --git a/colours.txt b/colours.txt</span>
+</span><span>new file mode 100644
+</span><span><span class="hljs-comment">index 0000000..55c8449</span>
+</span><span><span class="hljs-comment">--- /dev/null</span>
+</span><span><span class="hljs-comment">+++ b/colours.txt</span>
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre><div class="border border-info p-2"><p>Hunk 1:</p> <pre><code class="no-line-numbers hljs diff"><span>@@ -0,0 +1 @@
+</span><span><span class="hljs-addition">+a file for colours</span>
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre></div></div></div> <p></p> <p>Here is an explanation of the diff:</p> <div class="table-responsive"><table class="markbind-table table table-bordered table-striped"><thead><tr><th><strong>Part of Diff</strong></th> <th><strong>Explanation</strong></th></tr></thead> <tbody><tr><td><code class="hljs inline diff"><span class="hljs-comment">diff --git a/fruits.txt b/fruits.txt</span></code></td> <td>The diff header, indicating that it is comparing the file <code class="hljs inline no-lang">fruits.txt</code> between two versions: the old (<code class="hljs inline no-lang">a/</code>) and new (<code class="hljs inline no-lang">b/</code>).</td></tr> <tr><td><code class="hljs inline diff"><span class="hljs-comment">index 7d0a594..f84d1c9 100644</span></code></td> <td>Shows the <span class="trigger" data-mb-component-type="popover" tabindex="0"><!----><!-- do not delete this comment, it is for the stray space issue (#2419)
+ --><!----></span> before and after the change, and the file mode (<code class="hljs inline no-lang">100</code> means a regular file, <code class="hljs inline no-lang">644</code> are file permission indicators).</td></tr> <tr><td><code class="hljs inline diff"><span class="hljs-comment">--- a/fruits.txt</span></code><br><code class="hljs inline diff"><span class="hljs-comment">+++ b/fruits.txt</span></code></td> <td>Marks the old version of the file (<code class="hljs inline no-lang">a/fruits.txt</code>) and the new version of the file (<code class="hljs inline no-lang">b/fruits.txt</code>).</td></tr> <tr><td><code class="hljs inline diff"><span class="hljs-meta">@@ -1,6 +1,6 @@</span></code></td> <td>This <span class="badge text-dark" style="background-color:rgba(13, 202, 240, 0.2);"><span class="large">hunk header</span></span> shows that lines 1-6 (i.e., starting at line <code class="hljs inline no-lang">1</code>, showing <code class="hljs inline no-lang">6</code> lines) in the old file were compared with lines 1–6 in the new file.</td></tr> <tr><td><code class="hljs inline diff"><span class="hljs-deletion">-apples</span></code><br><code class="hljs inline diff"><span class="hljs-addition">+apples, apricots</span></code></td> <td>Removed line <code class="hljs inline no-lang">apples</code> and added line <code class="hljs inline no-lang">apples, apricots</code>.</td></tr> <tr><td><code class="hljs inline diff"> bananas</code><br><code class="hljs inline diff">cherries</code><br><code class="hljs inline diff">dragon fruits</code></td> <td>Unchanged lines, shown for context.</td></tr> <tr><td><code class="hljs inline diff"><span class="hljs-deletion">-elderberries</span></code></td> <td>Removed line: <code class="hljs inline no-lang">elderberries</code>.</td></tr> <tr><td><code class="hljs inline diff"> figs</code></td> <td>Unchanged line, shown for context.</td></tr> <tr><td><code class="hljs inline diff"><span class="hljs-meta">@@ -20,2 +20,3 @@</span></code></td> <td>Hunk header showing that lines 20-21 in the old file were compared with lines 20–22 in the new file.</td></tr> <tr><td>  <code class="hljs inline diff">oranges</code><br><code class="hljs inline diff"><span class="hljs-addition">+pears</span></code><br>  <code class="hljs inline diff">raisins</code></td> <td>Unchanged line.<br>Added line: <code class="hljs inline no-lang">pears</code>.<br>Unchanged line.</td></tr> <tr><td><code class="hljs inline diff"><span class="hljs-comment">diff --git a/colours.txt b/colours.txt</span></code></td> <td>The usual diff header, indicates that Git is comparing two versions of the file <code class="hljs inline diff">colours.txt</code>: one before and one after the change.</td></tr> <tr><td><code class="hljs inline diff">new file mode 100644</code></td> <td>This is a new file being added. <code class="hljs inline diff">100644</code> means it’s a normal, non-executable file with standard read/write permissions.</td></tr> <tr><td><code class="hljs inline diff"><span class="hljs-comment">index 0000000..55c8449</span></code></td> <td>The usual SHA hashes for the two versions of the file. <mark><code class="hljs inline diff">0000000</code> indicates the file did not exist before.</mark></td></tr> <tr><td><code class="hljs inline diff"><span class="hljs-comment">--- /dev/null</span></code><br><code class="hljs inline diff"><span class="hljs-comment">+++ b/colours.txt</span></code></td> <td>Refers to the &quot;old&quot; version of the file (<mark><code class="hljs inline diff">/dev/null</code> means it didn’t exist before)</mark>, and the new version.</td></tr> <tr><td><code class="hljs inline diff">@@ -0,0 +1 @@</code></td> <td>Hunk header, saying: “0 lines in the old file were replaced with 1 line in the new file, starting at line 1.”</td></tr> <tr><td><code class="hljs inline diff"><span class="hljs-addition">+a file for colours</span></code></td> <td>Added line</td></tr></tbody></table></div><p>Points to note:</p> <ul><li><code class="hljs inline diff"><span class="hljs-addition">+</span></code> indicates a line being added.<br> <code class="hljs inline diff"><span class="hljs-deletion">-</span></code> indicates a line being deleted.</li> <li>Editing a line is seen as deleting the original line and adding the new line.</li></ul></div> <div class="non-printable"><span style="position:relative;top:10px;background-color:rgba(255, 0, 0, 0.2);" class="badge rounded-pill text-dark fs-6"><span><span aria-hidden="true" class="fas fa-laptop-code"></span></span> HANDS-ON: View specific commits</span> <div class="indented-level1"><div class="alert box-container seamless" style="" data-v-19514615><!--Icon and vertical divider for seamless header box--><!----><div class="header-and-body" data-v-19514615><!-- Header wrapper, not rendered if there is no header attribute --><!----><!-- Body wrapper --><div class="box-body-wrapper" data-v-19514615><!-- icon on the left, not shown if there is a header --><!----><!-- Icon -- content divider for seamless boxes without the header attribute --><div class="alert-danger vertical-divider" aria-hidden="true" data-v-19514615></div><!-- Content wrapper --><div class="contents" style="" data-v-19514615><!--[--><p><span style="position:relative;right:12px;background-color:rgba(255, 0, 0, 0.2);border-radius:0 0.7em 0.7em 0;" class="ps-3 pe-3 pb-1 pt-1 text-dark text-dark"><small><strong><span aria-hidden="true" class="fas fa-arrow-right"></span><span aria-hidden="true" class="fas fa-grip-lines-vertical"></span> Target</strong></small></span><strong>View contents of specific commits</strong> in a repo.</p> <p><span style="position:relative;right:12px;background-color:rgba(255, 0, 0, 0.2);border-radius:0 0.7em 0.7em 0;" class="ps-3 pe-3 pb-1 pt-1 text-dark text-dark"><small><strong><span aria-hidden="true" class="fas fa-suitcase"></span> Preparation</strong></small></span> You can use any repo that has commits e.g., the <code class="hljs inline no-lang">things</code> repo.</p> <div class="printable-tabs" data-v-78737a60><!-- Nav tabs --><ul class="nav-tabs nav nav-tabs d-print-none" role="tablist" data-v-78737a60><!--[--><!--]--></ul><div class="tab-content" data-v-78737a60><!--[--><div role="tabpanel" class="tab-pane active printable-tab-pane tab-pane-hide" data-v-65067870><div class="nav-tabs printable-tab-header" data-v-65067870><div class="nav-link active" data-v-65067870><!--[-->CLI<!--]--></div></div><!--[--> <p><span style="position:relative;right:12px;background-color:rgba(255, 0, 0, 0.2);border-radius:0 0.7em 0.7em 0;" class="ps-3 pe-3 pb-1 pt-1 text-dark text-dark"><small><strong>1</strong></small></span> <strong>Locate the commits to view</strong>, using the revision graph.</p> <pre><code class="no-line-numbers hljs bash"><span>git <span class="hljs-built_in">log</span> --oneline --decorate
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre><div class="d-flex"><div class="me-3"><span><span><strong><span class="dimmed">⤷</span></strong></span></span></div> <div class="flex-grow-1"><pre><code class="no-line-numbers hljs bash"><span> e60deae (HEAD -&gt; master, origin/master) Update fruits list
+</span><span> f761ea6 Add colours.txt, shapes.txt
+</span><span> 2bedace Add figs to fruits.txt
+</span><span> d5f91de Add fruits.txt
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre></div></div> <p><span style="position:relative;right:12px;background-color:rgba(255, 0, 0, 0.2);border-radius:0 0.7em 0.7em 0;" class="ps-3 pe-3 pb-1 pt-1 text-dark text-dark"><small><strong>2</strong></small></span> <strong>Use the <code class="hljs inline no-lang">git show</code> command to view specific commits</strong>.</p> <pre><code class="no-line-numbers hljs bash"><span>git show  <span class="hljs-comment"># shows the latest commit</span>
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre><div class="d-flex"><div class="me-3"><span><span><strong><span class="dimmed">⤷</span></strong></span></span></div> <div class="flex-grow-1"><pre><code class="no-line-numbers hljs diff"><span>commit e60deaeb2964bf2ebc907b7416efc890c9d4914b (HEAD -&gt; master, origin/master)
+</span><span>Author: damithc &lt;...@...&gt;
+</span><span>Date:   Sat Jun ...
+</span><span>
+</span><span>    Update fruits list
+</span><span>
+</span><span><span class="hljs-comment">diff --git a/fruits.txt b/fruits.txt</span>
+</span><span><span class="hljs-comment">index 7d0a594..6d502c3 100644</span>
+</span><span><span class="hljs-comment">--- a/fruits.txt</span>
+</span><span><span class="hljs-comment">+++ b/fruits.txt</span>
+</span><span><span class="hljs-meta">@@ -1,6 +1,6 @@</span>
+</span><span><span class="hljs-deletion">-apples</span>
+</span><span><span class="hljs-addition">+apples, apricots</span>
+</span><span> bananas
+</span><span><span class="hljs-addition">+blueberries</span>
+</span><span> cherries
+</span><span> dragon fruits
+</span><span><span class="hljs-deletion">-elderberries</span>
+</span><span> figs
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre></div></div> <p>To view the parent commit of the latest commit, you can use any of these commands:</p> <pre><code class="no-line-numbers hljs bash"><span>git show HEAD~1
+</span><span>git show master~1
+</span><span>git show e60deae  <span class="hljs-comment"># first few characters of the SHA</span>
+</span><span>git show e60deae.....  <span class="hljs-comment"># run git log to find the full SHA and specify the full SHA</span>
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre><p>To view the commit that is two commits before the latest commit, you can use <code class="hljs inline no-lang">git show HEAD~2</code> etc.</p><!--]--><hr data-v-65067870></div> <div role="tabpanel" class="tab-pane active printable-tab-pane tab-pane-hide d-print-none algolia-no-index" data-v-65067870><div class="nav-tabs printable-tab-header" data-v-65067870><div class="nav-link active" data-v-65067870><!--[-->Sourcetree<!--]--></div></div><!--[--> <p>Click on the commit. The remaining panels (indicated in the image below) will be populated with the details of the commit.</p> <span class="image-wrapper"><img src="/website/book/gitAndGithub/show/images/sourcetreeViewCommitInfo.png" width="700" height="" loading="eager" class="img-fluid rounded"><span class="image-caption"><!--[--><!--]--></span></span><!--]--><hr data-v-65067870></div><!--]--></div></div> <p><span style="position:relative;right:12px;background-color:rgba(255, 0, 0, 0.2);border-radius:0 0.7em 0.7em 0;" class="ps-3 pe-3 pb-1 pt-1 text-dark text-dark"><small><strong><span aria-hidden="true" class="far fa-square-check"></span> done!</strong></small></span></p><!--]--></div><!-- dismiss button on the right, not shown if there is a header --><!----></div></div></div></div></div> <div><div class="alert box-container seamless d-flex bg-light" style="" data-v-19514615><!--Icon and vertical divider for seamless header box--><div class="d-flex" data-v-19514615><div class="icon-wrapper text-success" style="" data-v-19514615><!--[--><span aria-hidden="true" class="fas fa-rocket"></span><!--]--></div><div class="alert-success vertical-divider" aria-hidden="true" data-v-19514615></div></div><div class="header-and-body" data-v-19514615><!-- Header wrapper, not rendered if there is no header attribute --><div class="box-header-wrapper" data-v-19514615><!-- icon on the left of the header --><!----><!-- header --><div class="box-header" data-v-19514615><!--[--><p><strong class="text-success"><strong>PRO-TIP: Use Git Aliases to Work Faster</strong></strong></p><!--]--></div><!-- dismiss button to the right of the header --><!----></div><!-- Body wrapper --><div class="box-body-wrapper box-body-wrapper-with-heading" data-v-19514615><!-- icon on the left, not shown if there is a header --><!----><!-- Icon -- content divider for seamless boxes without the header attribute --><!----><!-- Content wrapper --><div class="contents" style="" data-v-19514615><!--[--> <p><strong>The Git <span class="badge text-dark" style="background-color:rgba(13, 202, 240, 0.2);"><span class="large">alias</span></span> feature allows you to create custom shortcuts for frequently used Git commands.</strong> This saves time and reduces typing, especially for long or complex commands. Once an alias is defined, you can use the alias just like any other Git command e.g., use <code class="hljs inline no-lang">git lodg</code> as an alias for <code class="hljs inline no-lang">git log --oneline --decorate --graph</code>.</p> <div class="non-printable"><p><strong>To define a global git alias, you can use the <code class="hljs inline no-lang">git config --global alias.&lt;alias&gt; &quot;command&quot;</code> command.</strong> e.g.,</p> <pre><code class="hljs bash"><span>git config --global alias.lodg <span class="hljs-string">&quot;log --oneline --graph --decorate&quot;</span>
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre></div> <p><strong>You can also create shell-level aliases using your shell configuration (e.g., <code class="hljs inline no-lang">.bashrc</code>, <code class="hljs inline no-lang">.zshrc</code>) to make even shorter aliases.</strong> This lets you create shortcuts for any command, including Git commands, and even combine them with other tools. e.g., instead of the Git alias <code class="hljs inline no-lang">git lodg</code>, you can define a shorter shell-level alias <code class="hljs inline no-lang">glodg</code>.</p> <div class="non-printable"><div class="printable-tabs" data-v-78737a60><!-- Nav tabs --><ul class="nav-tabs nav nav-tabs d-print-none" role="tablist" data-v-78737a60><!--[--><!--]--></ul><div class="tab-content" data-v-78737a60><!--[--><div role="tabpanel" class="tab-pane active printable-tab-pane tab-pane-hide" data-v-65067870><div class="nav-tabs printable-tab-header" data-v-65067870><div class="nav-link active" data-v-65067870><!--[--><span aria-hidden="true" class="fab fa-windows"></span> Windows + Git-Bash<!--]--></div></div><!--[--> <p><strong>1. Locate your <code class="hljs inline no-lang">.bash_profile</code> file</strong> (likely to be in : <code class="hljs inline no-lang">C:\Users\&lt;YourName&gt;\.bash_profile</code> -- if it doesn’t exist, create it.)</p><!--]--><hr data-v-65067870></div> <div role="tabpanel" class="tab-pane active printable-tab-pane tab-pane-hide algolia-no-index" data-v-65067870><div class="nav-tabs printable-tab-header" data-v-65067870><div class="nav-link active" data-v-65067870><!--[--><span aria-hidden="true" class="fab fa-windows"></span> Windows + WSL (Ubuntu or other Linux distro)<!--]--></div></div><!--[--> <p><strong>1. Locate your shell&#39;s config file e.g., <code class="hljs inline no-lang">.bashrc</code> or <code class="hljs inline no-lang">.zshrc</code></strong> (likely to be in your <code class="hljs inline no-lang">~</code> folder)</p><!--]--><hr data-v-65067870></div> <div role="tabpanel" class="tab-pane active printable-tab-pane tab-pane-hide algolia-no-index" data-v-65067870><div class="nav-tabs printable-tab-header" data-v-65067870><div class="nav-link active" data-v-65067870><!--[--><span aria-hidden="true" class="fab fa-apple"></span> MacOS | <span aria-hidden="true" class="fab fa-linux"></span> Linux<!--]--></div></div><!--[--> <p><strong>1. Locate your shell&#39;s config file e.g., <code class="hljs inline no-lang">.bashrc</code> or <code class="hljs inline no-lang">.zshrc</code></strong> (likely to be in your <code class="hljs inline no-lang">~</code> folder)</p> <div class="alert box-container seamless" style="" data-v-19514615><!--Icon and vertical divider for seamless header box--><!----><div class="header-and-body" data-v-19514615><!-- Header wrapper, not rendered if there is no header attribute --><!----><!-- Body wrapper --><div class="box-body-wrapper" data-v-19514615><!-- icon on the left, not shown if there is a header --><div class="icon-wrapper text-success" style="" data-v-19514615><!--[--><i class="fas fa-lightbulb" data-v-19514615></i><!--]--></div><!-- Icon -- content divider for seamless boxes without the header attribute --><div class="alert-success vertical-divider" aria-hidden="true" data-v-19514615></div><!-- Content wrapper --><div class="contents" style="" data-v-19514615><!--[--><p><span aria-hidden="true" class="fab fa-apple"></span> <a href="https://ohmyz.sh">Oh-My-Zsh for Zsh terminal</a> supports a <a href="https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git">Git plugin</a> that adds a wide array of Git command aliases to your terminal.</p><!--]--></div><!-- dismiss button on the right, not shown if there is a header --><!----></div></div></div><!--]--><hr data-v-65067870></div><!--]--></div></div> <p><strong>2. Add aliases to that file:</strong></p> <pre><code class="hljs bash"><span><span class="hljs-built_in">alias</span> gs=<span class="hljs-string">&#39;git status&#39;</span>
+</span><span><span class="hljs-built_in">alias</span> glod=<span class="hljs-string">&#39;git log --oneline --graph --decorate&#39;</span>
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre><p><strong>3. Apply changes</strong> by running the command  <code class="hljs inline no-lang">source ~/.zshrc</code> or <code class="hljs inline no-lang">source ~/.bash_profile</code> or <code class="hljs inline no-lang">source ~/.bashrc</code>, depending on which file you put the aliases in.</p></div><!--]--></div><!-- dismiss button on the right, not shown if there is a header --><!----></div></div></div></div></div> <div></div></div></div></div></div></div></div> <nav id="page-nav" class="fixed-header-padding" data-v-6b1b63d2><!--[--><div class="nav-component slim-scroll"></div><!--]--><!--v-if--></nav> <div class="scroll-top-button fa-lg d-print-none" style="display:none;bottom:2%;right:2%;position:fixed;" aria-hidden="true"><!--[--><i class="fas fa-arrow-circle-up"></i><!--]--></div></div> <footer><div class="text-center"><small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 6.0.2</a>, generated on Mon, 8 Sept 2025, 11:04:52 GMT+8]</small></div></footer><!--]--></div>
+</body><script src="/website/markbind/js/bootstrap-utility.min.js"></script>
+<script src="/website/markbind/js/polyfill.min.js"></script>
+<script src="/website/markbind/js/vue.global.prod.min.js"></script>
+<script src="/website/markbind/js/markbind.min.js"></script>
+<script src="index.page-vue-render.js"></script>
+<script>
+  MarkBind.setup()
+</script>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122519234-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'UA-122519234-1');
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3.2.0/dist/umd/index.js"></script>
+    <script>
+    docsearch({
+      container: "#algolia-search-input",
+      appId: "3DU4XTBX4T",
+      apiKey: "772d7386c7a785f7a60fec5a096311ef",
+      indexName: "nus-tic2002-2020a",
+      searchParameters: {"facetFilters":[["site:nus-cs2103-ay2526s1.github.io"],["tags:admin","tags:se-book-adapted","tags:schedule"]]}
+    });
+  </script>
+    <script>
+    const style = document.createElement('style');
+    style.innerHTML = ".DocSearch-Container { z-index: 1002; position: fixed; }";
+    document.getElementsByTagName('head')[0].appendChild(style);
+  </script>
+  
+    <script>
+    function copyCodeBlock(element) {
+        const pre = element.parentElement.parentElement;
+        const codeElement = pre.querySelector('code');
+        const copyButtonBody = element.querySelector('.function-btn-body');
+        const tooltipText = element.querySelector(".tooltiptext");
+
+        // create dummy text element to select() the text field
+        const textElement = document.createElement('textarea');
+        textElement.value = codeElement.textContent;
+        document.body.appendChild(textElement);
+        textElement.select();
+
+        document.execCommand('copy');
+        document.body.removeChild(textElement);
+        copyButtonBody.innerHTML = `
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="18"
+    height="18"
+    viewBox="2 2 22 22"
+  >
+    <path d="M 19.28125 5.28125 L 9 15.5625 L 4.71875 11.28125 L 3.28125 12.71875 L 8.28125 17.71875 
+    L 9 18.40625 L 9.71875 17.71875 L 20.71875 6.71875 Z"></path>
+  </svg>
+`;
+        console.log("Running tooltip");
+        tooltipText.innerText  = `Copied!`;
+        setTimeout(() => {
+            copyButtonBody.innerHTML = `
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "/>
+    </g>
+</svg>
+`;
+            tooltipText.innerText  = `Copy`;
+        }, 3000);
+    }
+    </script>
+    <script>
+    function toggleCodeBlockWrap(element) {
+      const pre = element.parentElement.parentElement;
+      const tooltipText = element.querySelector(".tooltiptext");
+      const classList = pre.querySelector('code').classList; 
+      if (classList.contains('wrap')) {
+          classList.remove('wrap');
+          tooltipText.innerText  = `Wrap Text`;
+      } else {
+          classList.add('wrap')
+          tooltipText.innerText  = `Unwrap Text`;
+      }
+    }
+    </script>
+    <script src="/website/plugins/dataTable/datatables.min.js"></script>
+    
+  <script>
+    function getTableOptions(el) {
+      const options = {};
+      if ($(el).hasClass('sortable-table')) {
+        options.searching = false;
+        options.paging = false;
+        options.info = false;
+      } else if ($(el).hasClass('searchable-table')) {
+        options.ordering = false;
+        options.paging = false;
+        options.info = false;
+        options.dom = '<"row"<"col-sm-12"f>>' + '<"row"<"col-sm-12"t>>';
+      } else if ($(el).hasClass('sortable-searchable-table')) {
+        options.paging = false;
+        options.info = false;
+        options.dom = '<"row"<"col-sm-12"f>>' + '<"row"<"col-sm-12"t>>';
+      }
+      return options;
+    }
+
+    function initializeTables(tables) {
+      if (!tables || tables.length === 0) return;
+      tables.forEach(table => {
+        const options = getTableOptions(table);
+        $(table).DataTable(options);
+        $(table).addClass('dt-processed');
+      });
+    }
+
+    function setupTableObserver() {
+      const observer = new MutationObserver((mutations) => {
+        let newTables = [];
+        
+        mutations.forEach(mutation => {
+          if (mutation.addedNodes.length) {
+            mutation.addedNodes.forEach(node => {
+
+              if (node.nodeType === 1 && node.tagName === 'TABLE' && 
+                  !$(node).hasClass('dt-processed') &&
+                  ($(node).hasClass('sortable-table') || 
+                   $(node).hasClass('searchable-table') || 
+                   $(node).hasClass('sortable-searchable-table'))) {
+                newTables.push(node);
+              }
+              
+              if (node.nodeType === 1 && node.querySelectorAll) {
+                const tablesInNode = node.querySelectorAll(
+                'table.sortable-table:not(.dt-processed), ' +
+                'table.searchable-table:not(.dt-processed), ' +
+                'table.sortable-searchable-table:not(.dt-processed)');
+                if (tablesInNode.length) {
+                  newTables = [...newTables, ...tablesInNode];
+                }
+              }
+            });
+          }
+        });
+
+        if (newTables.length > 0) {
+          initializeTables(newTables);
+        }
+      });
+      
+      // Start observing the entire document for changes
+      observer.observe(document.body, {
+        childList: true,
+        subtree: true
+      });
+      
+      return observer;
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+      // Process any existing tables
+      const existingTables = document.querySelectorAll(
+        'table.sortable-table:not(.dt-processed), ' +
+        'table.searchable-table:not(.dt-processed), ' +
+        'table.sortable-searchable-table:not(.dt-processed)'
+      );
+      if (existingTables.length > 0) {
+        initializeTables(existingTables);
+      }
+      
+      setupTableObserver();
+    });
+
+  </script>
+
+    <script type="module">
+    window.mermaidPromise = null;
+    
+    const loadMermaid = () => {
+      if (window.mermaidPromise === null) {
+        window.mermaidPromise = import('https://unpkg.com/mermaid@11.7.0/dist/mermaid.esm.min.mjs')
+          .then(({ default: mermaid }) => {
+            mermaid.initialize({
+              startOnLoad: false,
+            });
+            console.log('Mermaid loaded successfully');
+            return mermaid;
+          })
+          .catch((error) => {
+            console.error('Mermaid failed to load:', error);
+            window.mermaidPromise = false;
+            return null;
+          });
+      }
+      return window.mermaidPromise;
+    };
+
+    const renderMermaidDiagrams = (elements) => {
+      if (!elements || elements.length === 0) {
+        return Promise.resolve();
+      }
+
+      return loadMermaid().then(mermaid => {
+        if (!mermaid) return;
+        return mermaid.run({ nodes: Array.from(elements) })
+          .catch(err => console.error('Error rendering mermaid diagrams:', err));
+      });
+    };
+
+    const setupMermaidObserver = () => {
+      const observer = new MutationObserver((mutations) => {
+        let newMermaidElements = [];
+        
+        mutations.forEach(mutation => {
+          if (mutation.addedNodes.length) {
+            mutation.addedNodes.forEach(node => {
+              if (node.nodeType === 1 && node.classList && 
+                  node.classList.contains('mermaid')) {
+                newMermaidElements.push(node);
+              }
+              
+              if (node.nodeType === 1 && node.querySelectorAll) {
+                const mermaidInNode = node.querySelectorAll('.mermaid');
+                if (mermaidInNode.length) {
+                  newMermaidElements = [...newMermaidElements, ...mermaidInNode];
+                }
+              }
+            });
+          }
+        });
+        
+        if (newMermaidElements.length > 0) {
+          renderMermaidDiagrams(newMermaidElements);
+        }
+      });
+      
+      observer.observe(document.body, {
+        childList: true,
+        subtree: true
+      });
+      
+      return observer;
+    };
+
+    // Initialize on DOM content loaded
+    document.addEventListener('DOMContentLoaded', () => {
+      const existingDiagrams = document.querySelectorAll('.mermaid');
+      if (existingDiagrams.length > 0) {
+        renderMermaidDiagrams(existingDiagrams);
+      }
+      
+      setupMermaidObserver();
+    });
+
+  </script>
+</html>

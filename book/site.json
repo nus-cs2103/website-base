@@ -1,0 +1,61 @@
+{
+  "baseUrl": "/se-book",
+  "timeZone": "Asia/Singapore",
+  "style": {
+    "codeTheme": "light"
+  },
+  "pages": [
+    {
+      "glob": "**/index.md"
+    },
+    {
+      "glob": "**/acknowledgements.md"
+    },
+    {
+      "glob": "**/usage.md"
+    },
+    {
+      "glob": "**/print.md"
+    },
+    {
+      "glob": "**/tours.md"
+    },
+    {
+      "glob": "**/definitions.md"
+    },
+    {
+      "glob": "**/outcomes.md"
+    },
+    {
+      "glob": "**/references.md"
+    },
+    {
+      "glob": "**/combined/exercises.md"
+    }
+  ],
+  "pagesExclude": ["**/*-fragment.md"],
+  "ignore": [
+    "_site/*",
+    "site.json",
+    "gitAndGithub/*/text.md",
+    "*.md",
+    ".git/*"
+  ],
+  "deploy": {
+    "message": "Site Update."
+  },
+  "intrasiteLinkValidation": {
+    "enabled": true
+  },
+  "enableSearch": true,
+  "titlePrefix": "SEforSDL",
+  "plugins": ["mermaid", "filterTags"],
+  "pluginsContext": {
+    "filterTags" : {
+      "tags": ["-git-mastery"]
+    },
+    "mermaid": {
+      "address": "https://unpkg.com/mermaid@11.7.0/dist/mermaid.esm.min.mjs"
+    }
+  }
+}

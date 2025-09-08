@@ -1,0 +1,1903 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="generator" content="MarkBind 6.0.2">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><title>CS2103/T - C++ to Java: Some Useful Classes</title> <link rel="stylesheet" href="/website/markbind/css/bootstrap.min.css"> <link rel="stylesheet" href="/website/markbind/fontawesome/css/all.min.css"> <link rel="stylesheet" href="/website/markbind/glyphicons/css/bootstrap-glyphicons.min.css"> <link rel="stylesheet" href="/website/markbind/css/octicons.css"><link rel="stylesheet" href="/website/markbind/css/codeblock-light.min.css"><link rel="stylesheet" href="/website/markbind/css/markbind.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3.2.0/dist/style.css"><link rel="preconnect" href="https://3DU4XTBX4T-dsn.algolia.net" crossorigin><link rel="stylesheet" href="/website/plugins/codeBlockCopyButtons/codeBlockButtons.css"><link rel="stylesheet" href="/website/plugins/codeBlockWrapButtons/codeBlockButtons.css"><link rel="stylesheet" href="/website/plugins/dataTable/datatables.min.css"><link rel="stylesheet" href="/website/plugins/dataTable/datatables-additional.css"><link rel="stylesheet" href="/website/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css"><link rel="stylesheet" href="/website/plugins/markbind-plugin-tree/markbind-plugin-tree.css">
+    
+<link rel="stylesheet" href="/website/css/main.css">
+<link rel="icon" href="/website/favicon.ico"></head>
+<script>
+  const baseUrl = '/website'
+</script>
+<body >
+<div id="app"><!--[--><header sticky><div placement="top" data-v-2dc82f13><nav class="navbar navbar-expand-md d-print-none navbar-dark bg-dark" data-v-2dc82f13><div class="container-fluid" data-v-2dc82f13><div class="navbar-left" data-v-2dc82f13><!--[--><a href="/website/index.html" title="Home" class="navbar-brand"><span class="badge rounded-pill bg-success">CS2103/T <small>2025 Aug-Nov</small></span></a><!--]--></div><div class="navbar-default" data-v-2dc82f13><ul class="navbar-nav me-auto mt-2 mt-lg-0" data-v-2dc82f13><!--[--> <li class="dropdown nav-link algolia-no-index" data-v-154e37d3><!--[--><a role="button" class="dropdown-toggle nav-link" data-bs-toggle="dropdown" data-v-154e37d3><!--[--><strong>Schedule</strong><!--]--><span data-v-154e37d3></span></a><!--]--><!--[--><ul class="dropdown-menu" data-v-154e37d3><!--[--> <li><a href="/website/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li> <li><a href="/website/schedule/week1/index.html" class="dropdown-item"><span><strong>Week 1</strong> [Mon, Aug 11th] </span></a></li> <li><a href="/website/schedule/week2/index.html" class="dropdown-item"><span><strong>Week 2</strong> [Mon, Aug 18th] </span></a></li> <li><a href="/website/schedule/week3/index.html" class="dropdown-item"><span><strong>Week 3</strong> [Mon, Aug 25th] </span></a></li> <li><a href="/website/schedule/week4/index.html" class="dropdown-item"><span><strong>Week 4</strong> [Mon, Sep 1st] </span></a></li> <li><a href="/website/schedule/week5/index.html" class="dropdown-item"><span><strong>Week 5</strong> [Mon, Sep 8th]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li> <li><a href="/website/schedule/week5/admin.html" class="dropdown-item">  ├ Week 5: <span><span aria-hidden="true" class="fas fa-info-circle"></span></span> <span><strong>Admin</strong></span></a></li> <li><a href="/website/schedule/week5/topics.html" class="dropdown-item">  ├ Week 5: <span><span aria-hidden="true" class="fas fa-book"></span></span> <span><strong>Topics</strong></span></a></li> <li><a href="/website/schedule/week5/project.html" class="dropdown-item">  ├ Week 5: <span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> <span><strong>Project</strong></span></a></li> <li><a href="/website/schedule/week5/tutorial.html" class="dropdown-item">  └ Week 5: <span><span aria-hidden="true" class="fas fa-chalkboard-teacher"></span></span> <span><strong>Tutorial</strong></span></a></li> <li><a href="/website/schedule/week6/index.html" class="dropdown-item"><span><strong>Week 6</strong> [Mon, Sep 15th] </span></a></li> <li><a href="/website/schedule/week7/index.html" class="dropdown-item"><span><strong>Week 7</strong> [Mon, Sep 29th] </span></a></li> <li><a href="/website/schedule/week8/index.html" class="dropdown-item"><span><strong>Week 8</strong> [Mon, Oct 6th] </span></a></li> <li><a href="/website/schedule/week9/index.html" class="dropdown-item"><span><strong>Week 9</strong> [Mon, Oct 13th] </span></a></li> <li><a href="/website/schedule/week10/index.html" class="dropdown-item"><span><strong>Week 10</strong> [Mon, Oct 20th] </span></a></li> <li><a href="/website/schedule/week11/index.html" class="dropdown-item"><span><strong>Week 11</strong> [Mon, Oct 27th] </span></a></li> <li><a href="/website/schedule/week12/index.html" class="dropdown-item"><span><strong>Week 12</strong> [Mon, Nov 3rd] </span></a></li> <li><a href="/website/schedule/week13/index.html" class="dropdown-item"><span><strong>Week 13</strong> [Mon, Nov 10th] </span></a></li><!--]--></ul><!--]--></li> <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li> <li class="dropdown nav-link algolia-no-index" data-v-154e37d3><!--[--><a role="button" class="dropdown-toggle nav-link" data-bs-toggle="dropdown" data-v-154e37d3><!--[--><strong>Admin Info</strong><!--]--><span data-v-154e37d3></span></a><!--]--><!--[--><ul class="dropdown-menu" data-v-154e37d3><!--[--> <li><a href="/website/admin/courseOverview.html" class="dropdown-item"><span>Course Overview </span></a></li> <li><a href="/website/admin/usingThisWebsite.html" class="dropdown-item"><span>Using this Website  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-danger"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>1</span></span></span></span></a></li> <li><a href="/website/admin/courseExpectations.html" class="dropdown-item"><span>Course Expectations  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></span></a></li> <li class="dropdown-submenu dropend algolia-no-index" data-v-154e37d3 data-v-1ebc3cbe><!--[--><a role="button" class="dropdown-item submenu-toggle" data-bs-toggle="dropdown" data-v-1ebc3cbe><!--[--><!--[--><strong>Course Structure</strong><!--]--><!--]--></a><!--]--><!--[--><ul class="dropdown-menu" data-v-1ebc3cbe><!--[--><!--[--> <li><a href="/website/admin/courseBriefings.html" class="dropdown-item"><span><small>Course Briefing Videos  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-info"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>3</span></span></span></small></span></a></li> <li><a href="/website/admin/weeklySchedule.html" class="dropdown-item"><span><small>Weekly Schedule  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-info"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>3</span></span></span></small></span></a></li> <li><a href="/website/admin/lectures.html" class="dropdown-item"><span><small>Weekly Briefings  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-info"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>3</span></span></span></small></span></a></li> <li><a href="/website/admin/tutorials.html" class="dropdown-item"><span><small>Tutorials  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li><!--]--><!--]--></ul><!--]--></li> <li><a href="/website/admin/instructors.html" class="dropdown-item"><span>Instructors  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-success"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>4</span></span></span></span></a></li> <li><a href="/website/admin/textbooks.html" class="dropdown-item"><span>Textbooks  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></span></a></li> <li><a href="/website/admin/programmingLanguages.html" class="dropdown-item"><span>Programming Language  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></span></a></li> <li><a href="/website/admin/standardsAndConventions.html" class="dropdown-item"><span>Standards/Conventions  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></span></a></li> <li class="dropdown-submenu dropend algolia-no-index" data-v-154e37d3 data-v-1ebc3cbe><!--[--><a role="button" class="dropdown-item submenu-toggle" data-bs-toggle="dropdown" data-v-1ebc3cbe><!--[--><!--[--><strong>Individual Project (iP)</strong><!--]--><!--]--></a><!--]--><!--[--><ul class="dropdown-menu" data-v-1ebc3cbe><!--[--><!--[--> <li><a href="/website/admin/ip-overview.html" class="dropdown-item"><span><small>iP (Individual Project): Overview  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/ip-w2.html" class="dropdown-item"><span><small>iP: Week 2  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/ip-w3.html" class="dropdown-item"><span><small>iP: Week 3  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/ip-w4.html" class="dropdown-item"><span><small>iP: Week 4  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/ip-w5.html" class="dropdown-item"><span><small>iP: Week 5  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/ip-w6.html" class="dropdown-item"><span><small>iP: Week 6  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-danger"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>1</span></span></span></small></span></a></li> <li><a href="/website/admin/ip-w7.html" class="dropdown-item"><span><small>iP: Week 7  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-success"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>4</span></span></span></small></span></a></li> <li><a href="/website/admin/ip-w8.html" class="dropdown-item"><span><small>iP: Week 8  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-danger"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>1</span></span></span></small></span></a></li> <li><a href="/website/admin/ip-grading.html" class="dropdown-item"><span><small>iP: Grading  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li><!--]--><!--]--></ul><!--]--></li> <li class="dropdown-submenu dropend algolia-no-index" data-v-154e37d3 data-v-1ebc3cbe><!--[--><a role="button" class="dropdown-item submenu-toggle" data-bs-toggle="dropdown" data-v-1ebc3cbe><!--[--><!--[--><strong>Team Project (tP)</strong><!--]--><!--]--></a><!--]--><!--[--><ul class="dropdown-menu" data-v-1ebc3cbe><!--[--><!--[--> <li><a href="/website/admin/tp-overview.html" class="dropdown-item"><span><small>tP (team project): Overview  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-expectations.html" class="dropdown-item"><span><small>tP: Expectations  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-timeline.html" class="dropdown-item"><span><small>tP: Timeline  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-info"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>3</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-constraints.html" class="dropdown-item"><span><small>tP: Constraints  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-teams.html" class="dropdown-item"><span><small>tP: Forming Teams  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-w3.html" class="dropdown-item"><span><small>tP Week 3: Kickoff  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-w4.html" class="dropdown-item"><span><small>tP Week 4: Set Direction  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-info"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>3</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-w5.html" class="dropdown-item"><span><small>tP Week 5: Gather Requirements  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-w6.html" class="dropdown-item"><span><small>tP Week 6: Define the MVP  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-w7.html" class="dropdown-item"><span><small>tP Week 7: Practice Iteration → v1.1  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-w8.html" class="dropdown-item"><span><small>tP Week 8: First Feature Increment → v1.2  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-info"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>3</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-w9.html" class="dropdown-item"><span><small>tP Week 9: MVP → v1.3  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-w10.html" class="dropdown-item"><span><small>tP Week 10: Alpha Version → v1.4  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-w11.html" class="dropdown-item"><span><small>tP Week 11: Release Candidate → v1.5  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-w12.html" class="dropdown-item"><span><small>tP Week 12: Public Release → v1.6  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-info"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>3</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-w13.html" class="dropdown-item"><span><small>tP Week 13: Post-Release Tasks  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-deliverables.html" class="dropdown-item"><span><small>tP: Deliverables  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-ped.html" class="dropdown-item"><span><small>tP: Practical Exam Dry Run  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-pe.html" class="dropdown-item"><span><small>tP: Practical Exam  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-grading.html" class="dropdown-item"><span><small>tP: Grading  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-supervision.html" class="dropdown-item"><span><small>tP: Supervision/Guidance  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li><!--]--><!--]--></ul><!--]--></li> <li><a href="/website/admin/peerEvaluations.html" class="dropdown-item"><span>Peer Evaluations  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></span></a></li> <li><a href="/website/admin/tools.html" class="dropdown-item"><span>Tools  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-info"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>3</span></span></span></span></a></li> <li><a href="/website/admin/exams.html" class="dropdown-item"><span>Exams  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></span></a></li> <li><a href="/website/admin/participation.html" class="dropdown-item"><span>Participation Marks  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></span></a></li> <li><a href="/website/admin/gradeBreakdown.html" class="dropdown-item"><span>Grade Breakdown  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></span></a></li> <li class="dropdown-submenu dropend algolia-no-index" data-v-154e37d3 data-v-1ebc3cbe><!--[--><a role="button" class="dropdown-item submenu-toggle" data-bs-toggle="dropdown" data-v-1ebc3cbe><!--[--><!--[--><strong>Appendices</strong><!--]--><!--]--></a><!--]--><!--[--><ul class="dropdown-menu" data-v-1ebc3cbe><!--[--><!--[--> <li><a href="/website/admin/appendixA-principles.html" class="dropdown-item"><span><small>Apdx A: Course Principles  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-success"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>4</span></span></span></small></span></a></li> <li><a href="/website/admin/appendixB-policies.html" class="dropdown-item"><span><small>Apdx B: Course Policies  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-danger"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>1</span></span></span></small></span></a></li> <li><a href="/website/admin/appendixC-faq.html" class="dropdown-item"><span><small>Apdx C: FAQ  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-danger"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>1</span></span></span></small></span></a></li> <li><a href="/website/admin/appendixD-help.html" class="dropdown-item"><span><small>Apdx D: Getting Help  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/appendixE-gitHub.html" class="dropdown-item"><span><small>Apdx E: Using GitHub  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-danger"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>1</span></span></span></small></span></a></li> <li><a href="/website/admin/appendixF-teamworkIssues.html" class="dropdown-item"><span><small>Apdx F: Handling Team Issues  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-success"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>4</span></span></span></small></span></a></li><!--]--><!--]--></ul><!--]--></li><!--]--></ul><!--]--></li> <li class="dropdown nav-link algolia-no-index" tags="m--cs2103 m--cs2113" data-v-154e37d3><!--[--><a role="button" class="dropdown-toggle nav-link" data-bs-toggle="dropdown" data-v-154e37d3><!--[--><strong>Dashboards</strong><!--]--><span data-v-154e37d3></span></a><!--]--><!--[--><ul class="dropdown-menu" data-v-154e37d3><!--[--> <li><a href="https://nus-cs2103-ay2526s1.github.io/dashboards/contents/participation.html" class="dropdown-item text-success" target="_blank"><span><span aria-hidden="true" class="fas fa-trophy"></span> <strong>Participation</strong> dashboard</span></a></li> <li><a href="https://nus-cs2103-ay2526s1.github.io/dashboards/contents/forum-activities.html" class="dropdown-item" target="_blank"><span><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-comment" aria-hidden="true"><path fill-rule="evenodd" d="M2.75 2.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h2a.75.75 0 01.75.75v2.19l2.72-2.72a.75.75 0 01.53-.22h4.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25H2.75zM1 2.75C1 1.784 1.784 1 2.75 1h10.5c.966 0 1.75.784 1.75 1.75v7.5A1.75 1.75 0 0113.25 12H9.06l-2.573 2.573A1.457 1.457 0 014 13.543V12H2.75A1.75 1.75 0 011 10.25v-7.5z"></path></svg> <strong>Forum</strong> Dashboard</span></a></li> <hr> <span><strong> iP dashboards:</strong></span> <li><a href="https://nus-cs2103-ay2526s1.github.io/dashboards/contents/ip-progress.html" target="_blank" class="dropdown-item text-success"><span><span aria-hidden="true" class="fas fa-tasks"></span> iP Progress Dashboard</span></a></li> <li><a href="https://nus-cs2103-ay2526s1.github.io/dashboards/contents/ip-comments.html" target="_blank" class="dropdown-item"><span><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-comment" aria-hidden="true"><path fill-rule="evenodd" d="M2.75 2.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h2a.75.75 0 01.75.75v2.19l2.72-2.72a.75.75 0 01.53-.22h4.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25H2.75zM1 2.75C1 1.784 1.784 1 2.75 1h10.5c.966 0 1.75.784 1.75 1.75v7.5A1.75 1.75 0 0113.25 12H9.06l-2.573 2.573A1.457 1.457 0 014 13.543V12H2.75A1.75 1.75 0 011 10.25v-7.5z"></path></svg> iP Comments dashboard</span></a></li> <li><a href="https://nus-cs2103-ay2526s1.github.io/ip-dashboard/?search=&amp;sort=groupTitle&amp;sortWithin=title&amp;timeframe=commit&amp;mergegroup=&amp;groupSelect=groupByRepos&amp;breakdown=true&amp;viewRepoTags=true&amp;checkedFileTypes=java~md~fxml~sh~bat~gradle~txt" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-chart-area"></span> iP Code Dashboard</span></a></li> <hr> <span><strong> tP dashboards:</strong></span> <li><a href="https://nus-cs2103-ay2526s1.github.io/dashboards/contents/tp-progress.html" target="_blank" class="dropdown-item text-success"><span><span aria-hidden="true" class="fas fa-tasks"></span> tP Progress Dashboard</span></a></li> <li><a href="https://nus-cs2103-ay2526s1.github.io/dashboards/contents/tp-comments.html" target="_blank" class="dropdown-item"><span><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-comment" aria-hidden="true"><path fill-rule="evenodd" d="M2.75 2.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h2a.75.75 0 01.75.75v2.19l2.72-2.72a.75.75 0 01.53-.22h4.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25H2.75zM1 2.75C1 1.784 1.784 1 2.75 1h10.5c.966 0 1.75.784 1.75 1.75v7.5A1.75 1.75 0 0113.25 12H9.06l-2.573 2.573A1.457 1.457 0 014 13.543V12H2.75A1.75 1.75 0 011 10.25v-7.5z"></path></svg> tP Comments Dashboard</span></a></li> <li><a href="https://nus-cs2103-ay2526s1.github.io/tp-dashboard/?search=&amp;sort=groupTitle&amp;sortWithin=title&amp;timeframe=commit&amp;mergegroup=&amp;groupSelect=groupByRepos&amp;breakdown=true&amp;checkedFileTypes=docs~functional-code~test-code~other" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-chart-area"></span> tP Code Dashboard</span></a></li><!--]--></ul><!--]--></li> <li class="dropdown nav-link algolia-no-index" tags="m--cs2103 m--cs2113" data-v-154e37d3><!--[--><a role="button" class="dropdown-toggle nav-link" data-bs-toggle="dropdown" data-v-154e37d3><!--[--><strong>Project Links</strong><!--]--><span data-v-154e37d3></span></a><!--]--><!--[--><ul class="dropdown-menu" data-v-154e37d3><!--[--> <span><strong> Individual Project (iP):</strong></span> <li><a href="/website/admin/ip-overview.html" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span></span> Individual Project Info</a></li> <li><a href="https://github.com/nus-cs2103-AY2526S1/ip" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-code-branch"></span></span></span> iP Upstream Repo</a></li> <li tags="m--cs2103"><a href="/website/admin/ip-showcase.html" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-list-alt"></span> iP Showcase</span></a></li> <li><a href="https://nus-cs2103-ay2526s1.github.io/dashboards/contents/ip-progress.html" target="_blank" class="dropdown-item text-success"><span><span aria-hidden="true" class="fas fa-tasks"></span> iP Progress Dashboard</span></a></li> <li><a href="https://nus-cs2103-ay2526s1.github.io/dashboards/contents/ip-comments.html" target="_blank" class="dropdown-item"><span><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-comment" aria-hidden="true"><path fill-rule="evenodd" d="M2.75 2.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h2a.75.75 0 01.75.75v2.19l2.72-2.72a.75.75 0 01.53-.22h4.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25H2.75zM1 2.75C1 1.784 1.784 1 2.75 1h10.5c.966 0 1.75.784 1.75 1.75v7.5A1.75 1.75 0 0113.25 12H9.06l-2.573 2.573A1.457 1.457 0 014 13.543V12H2.75A1.75 1.75 0 011 10.25v-7.5z"></path></svg> iP Comments dashboard</span></a></li> <li><a href="https://nus-cs2103-ay2526s1.github.io/ip-dashboard/?search=&amp;sort=groupTitle&amp;sortWithin=title&amp;timeframe=commit&amp;mergegroup=&amp;groupSelect=groupByRepos&amp;breakdown=true&amp;viewRepoTags=true&amp;checkedFileTypes=java~md~fxml~sh~bat~gradle~txt" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-chart-area"></span> iP Code Dashboard</span></a></li> <hr> <span><strong> Team Project (tP):</strong></span> <li><a href="/website/admin/tp-overview.html" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span></span> Team Project Info</a></li> <li tags="m--cs2103 m--cs2113"><a href="https://github.com/nus-cs2103-AY2526S1/tp" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-code-branch"></span></span></span> tP Upstream Repo (AB3)</a></li> <li><a href="/website/admin/teamList.html" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-list-alt"></span> Team List</span></a></li> <li><a href="https://nus-cs2103-ay2526s1.github.io/dashboards/contents/tp-progress.html" target="_blank" class="dropdown-item text-success"><span><span aria-hidden="true" class="fas fa-tasks"></span> tP Progress Dashboard</span></a></li> <li><a href="https://nus-cs2103-ay2526s1.github.io/dashboards/contents/tp-comments.html" target="_blank" class="dropdown-item"><span><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-comment" aria-hidden="true"><path fill-rule="evenodd" d="M2.75 2.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h2a.75.75 0 01.75.75v2.19l2.72-2.72a.75.75 0 01.53-.22h4.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25H2.75zM1 2.75C1 1.784 1.784 1 2.75 1h10.5c.966 0 1.75.784 1.75 1.75v7.5A1.75 1.75 0 0113.25 12H9.06l-2.573 2.573A1.457 1.457 0 014 13.543V12H2.75A1.75 1.75 0 011 10.25v-7.5z"></path></svg> tP Comments Dashboard</span></a></li> <li><a href="https://nus-cs2103-ay2526s1.github.io/tp-dashboard/?search=&amp;sort=groupTitle&amp;sortWithin=title&amp;timeframe=commit&amp;mergegroup=&amp;groupSelect=groupByRepos&amp;breakdown=true&amp;checkedFileTypes=docs~functional-code~test-code~other" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-chart-area"></span> tP Code Dashboard</span></a></li><!--]--></ul><!--]--></li> <li tags="m--cs2103 m--cs2113"><a href="https://github.com/nus-cs2103-AY2526S1/forum/issues" class="nav-link"><span><strong>Forum</strong></span></a></li> <li class="dropdown nav-link algolia-no-index" data-v-154e37d3><!--[--><a role="button" class="dropdown-toggle nav-link" data-bs-toggle="dropdown" data-v-154e37d3><!--[--><strong>Other Links</strong><!--]--><span data-v-154e37d3></span></a><!--]--><!--[--><ul class="dropdown-menu" data-v-154e37d3><!--[--> <li tags="m--cs2103 m--cs2113"><a href="https://github.com/nus-cs2103-AY2526S1/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-bug"></span> Report Bugs</span></a></li> <li><a href="https://github.com/nus-cs2103-AY2526S1/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li> <li><a href="/website/admin/instructors.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li> <li><a href="https://canvas.nus.edu.sg/courses/77826/announcements" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li> <li><a href="https://canvas.nus.edu.sg/courses/77826/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> Files (handouts, submissions etc.)</span></a></li> <li tags="m--cs2113 m--cs2103"><a href="/website/admin/tutorials.html" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-calendar"></span> Tutorial Schedule</span></a></li> <li><a href="/website/_markbind/layouts/n/a" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-users-cog"></span> MS Teams link</span></a></li> <li><a href="/website/se-book-adapted/git-trail/index.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-route"></span> Git Learning Trail</span></a></li> <li tags="m--cs2103 m--cs2113 m--tic2002"><a href="https://se-education.org/guides/conventions/java/intermediate.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-code"></span> Java Coding Standard</span></a></li> <li tags="m--cs2103 m--cs2113"><a href="https://se-education.org/guides/conventions/git.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fab fa-git-square"></span> Git Conventions</span></a></li> <li tags="m--cs2103"><a href="/website/admin/uml-reference-sheet.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-diagram-project"></span> UML Reference Sheet</span></a></li><!--]--></ul><!--]--></li> <!--]--></ul></div><ul class="navbar-nav navbar-right" data-v-2dc82f13><!--[--><li class="nav-link"><form class="navbar-form"><div style="position:relative;" class="dropdown" data-v-00e26d0a><div id="algolia-search-input" data-v-00e26d0a></div><ul class="dropdown-menu search-dropdown-menu dropdown-menu-hidden dropdown-menu-end" data-v-00e26d0a><!--[--><!--]--></ul></div></form></li><!--]--></ul></div></nav><div style="display:none;" class="lower-navbar-container" data-v-2dc82f13><!--[--><!----><!----><!--]--></div></div></header> <div id="flex-body"><div id="content-wrapper" class="fixed-header-padding"><div><link rel="stylesheet" href="/website/book/css/textbook.css"> <div class="website-content" id="all"><p><span class="dimmed"><strong><span>C++ to Java →
+</span></strong></span></p> <div id="title"><h1 id="some-useful-classes"><span>Some useful classes</span><a class="fa fa-anchor" href="#some-useful-classes" onclick="event.stopPropagation()"></a></h1></div> <div id="main"><div><div><div class="card-container" data-v-4484e25a><div class="card expandable-card card-seamless border-0" data-v-4484e25a><div class="card-header header-toggle bg-transparent border-0" data-v-4484e25a><div class="caret-wrapper" data-v-4484e25a><span class="glyphicon glyphicon-chevron-down" data-v-4484e25a></span></div><div class="header-wrapper-seamless header-wrapper card-title bg-transparent" data-v-4484e25a><!--[--><!--[--><span class="card-title"><div><h4 id="java-api"><span>Java API</span><a class="fa fa-anchor" href="#java-api" onclick="event.stopPropagation()"></a></h4></div></span><!--]--><!--]--></div><div class="button-wrapper" data-v-4484e25a><!--[--><button type="button" class="collapse-button btn btn-outline-light" style="display:none;" data-v-4484e25a><span class="collapse-icon glyphicon glyphicon-menu-down opened" aria-hidden="true"></span></button><button style="" type="button" class="btn-outline-light seamless-button close-button btn" data-v-4484e25a><span class="glyphicon glyphicon-remove" aria-hidden="true" data-v-4484e25a></span></button><button style="display:none;" type="button" class="btn-outline-light seamless-button popup-button btn" data-v-4484e25a><span class="glyphicon glyphicon-new-window" aria-hidden="true" data-v-4484e25a></span></button><!--]--></div></div><div class="card-collapse" data-v-4484e25a><div class="card-body" data-v-4484e25a><!--[--><!--[--> <div class="indented"><div><p>Java comes with a rich collection of classes that you can use. They form what is known as the Java API (Application Programming Interface). <strong>Each class in the API comes with documentation in a standard format.</strong></p> <ul><li><a href="https://docs.oracle.com/javase/9/docs/api/index.html?overview-summary.html">List of all Java classes</a></li> <li><a href="https://docs.oracle.com/javase/9/docs/api/java/lang/String.html">Example: API documentation of the <code class="hljs inline no-lang">String</code> class</a></li></ul></div> <div></div></div><!--]--><!--]--><!----><div class="bottom-button-wrapper" data-v-4484e25a><button type="button" class="collapse-button btn btn-seamless" style="" data-v-4484e25a><span class="collapse-icon glyphicon glyphicon-menu-down opened" aria-hidden="true"></span></button></div></div><hr style="" data-v-4484e25a></div><!----></div></div></div> <div><div class="card-container" data-v-4484e25a><div class="card expandable-card card-seamless border-0" data-v-4484e25a><div class="card-header header-toggle bg-transparent border-0" data-v-4484e25a><div class="caret-wrapper" data-v-4484e25a><span class="glyphicon glyphicon-chevron-down" data-v-4484e25a></span></div><div class="header-wrapper-seamless header-wrapper card-title bg-transparent" data-v-4484e25a><!--[--><!--[--><span class="card-title"><div><h4 id="the-string-class"><span>The <code class="hljs inline no-lang">String</code> class</span><a class="fa fa-anchor" href="#the-string-class" onclick="event.stopPropagation()"></a></h4></div></span><!--]--><!--]--></div><div class="button-wrapper" data-v-4484e25a><!--[--><button type="button" class="collapse-button btn btn-outline-light" style="display:none;" data-v-4484e25a><span class="collapse-icon glyphicon glyphicon-menu-down opened" aria-hidden="true"></span></button><button style="" type="button" class="btn-outline-light seamless-button close-button btn" data-v-4484e25a><span class="glyphicon glyphicon-remove" aria-hidden="true" data-v-4484e25a></span></button><button style="display:none;" type="button" class="btn-outline-light seamless-button popup-button btn" data-v-4484e25a><span class="glyphicon glyphicon-new-window" aria-hidden="true" data-v-4484e25a></span></button><!--]--></div></div><div class="card-collapse" data-v-4484e25a><div class="card-body" data-v-4484e25a><!--[--><!--[--> <div class="indented"><div><p>String is a built-in Java class that you <span class="trigger-click" tabindex="0"><span><!--[-->can use without importing<!--]--></span></span>. Given below are some useful String methods:</p> <!--[--><!-- NavBar has z-index of 1000, hence the z-index here should exceed that --><!-- SSR property is required for the snapshot tests to work --><!----><!--]--> <h5 id="find-characters-of-a-string">Find characters of a string<a class="fa fa-anchor" href="#find-characters-of-a-string" onclick="event.stopPropagation()"></a></h5> <div class="indented"><p>Strings provide a method named <code class="hljs inline no-lang">charAt</code>, which extracts a character. It returns a <code class="hljs inline no-lang">char</code>, a primitive type that stores an individual character (as opposed to strings of them).</p> <pre><code class="hljs java"><span>String fruit = <span class="hljs-string">&quot;banana&quot;</span>;
+</span><span><span class="hljs-keyword">char</span> letter = fruit.charAt(<span class="hljs-number">0</span>);
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre><p>The argument 0 means that we want the letter at position 0. Like array indexes, string indexes start at 0, so the character assigned to <code class="hljs inline no-lang">letter</code> is <code class="hljs inline no-lang">&#39;b&#39;</code>.</p> <p>You can convert a string to an array of characters using the <code class="hljs inline no-lang">toCharArray</code> method.</p> <pre><code class="hljs java"><span><span class="hljs-keyword">char</span>[] fruitChars = fruit.toCharArray()
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre></div> <h5 id="change-a-string-to-upper-lower-case">Change a string to upper/lower case<a class="fa fa-anchor" href="#change-a-string-to-upper-lower-case" onclick="event.stopPropagation()"></a></h5> <div class="indented"><p>Strings provide methods, <code class="hljs inline no-lang">toUpperCase</code> and <code class="hljs inline no-lang">toLowerCase</code>, that convert from uppercase to lowercase and back.</p> <div class="alert box-container alert-default" style="" data-v-19514615><!--Icon and vertical divider for seamless header box--><!----><div class="header-and-body" data-v-19514615><!-- Header wrapper, not rendered if there is no header attribute --><!----><!-- Body wrapper --><div class="box-body-wrapper" data-v-19514615><!-- icon on the left, not shown if there is a header --><!----><!-- Icon -- content divider for seamless boxes without the header attribute --><!----><!-- Content wrapper --><div class="contents" style="" data-v-19514615><!--[--><p><span><span aria-hidden="true" class="fas fa-cube"></span></span> After these statements run, <code class="hljs inline no-lang">upperName</code> refers to the string <code class="hljs inline no-lang">&quot;ALAN TURING&quot;</code> but <code class="hljs inline no-lang">name</code> still refers to <code class="hljs inline no-lang">&quot;Alan Turing&quot;</code>.</p> <pre><code class="hljs java"><span>String name = <span class="hljs-string">&quot;Alan Turing&quot;</span>;
+</span><span>String upperName = name.toUpperCase();
+</span><span>System.out.println(name);
+</span><span>System.out.println(upperName);
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre><p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span></p> <pre><code class="hljs"><span>Alan Turing
+</span><span>ALAN TURING
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre><!--]--></div><!-- dismiss button on the right, not shown if there is a header --><!----></div></div></div> <p>Note that <strong>a string method cannot change the string object on which the method is invoked, because strings are <span class="trigger" data-mb-component-type="tooltip" tabindex="0"><!----><!-- do not delete this comment, it is for the stray space issue (#2419)
+ --><!----></span></strong>. For example, when you invoke <code class="hljs inline no-lang">toUpperCase</code> on a string <code class="hljs inline no-lang">&quot;abc&quot;</code>, you get a new string object <code class="hljs inline no-lang">&quot;ABC&quot;</code> as the return value rather than the string <code class="hljs inline no-lang">&quot;abc&quot;</code> being changed to <code class="hljs inline no-lang">&quot;ABC&quot;</code>. As a result, for such string methods that <em>seemingly</em> modify the string but <em>actually</em> return a new string instead e.g., <code class="hljs inline no-lang">toLowerCase</code>, <mark>invoking the method has no effect if you don’t assign the return value to a variable</mark>.</p> <pre><code class="hljs java"><span>String s = <span class="hljs-string">&quot;Ada&quot;</span>;
+</span><span>s.toUpperCase(); <span class="hljs-comment">// no effect</span>
+</span><span>s = s.toUpperCase(); <span class="hljs-comment">// the correct way</span>
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre></div> <h5 id="replacing-parts-of-a-string">Replacing parts of a string<a class="fa fa-anchor" href="#replacing-parts-of-a-string" onclick="event.stopPropagation()"></a></h5> <div class="indented"><p>Another useful method is <code class="hljs inline no-lang">replace</code>, which finds and replaces instances of one string within another.</p> <div class="alert box-container alert-default" style="" data-v-19514615><!--Icon and vertical divider for seamless header box--><!----><div class="header-and-body" data-v-19514615><!-- Header wrapper, not rendered if there is no header attribute --><!----><!-- Body wrapper --><div class="box-body-wrapper" data-v-19514615><!-- icon on the left, not shown if there is a header --><!----><!-- Icon -- content divider for seamless boxes without the header attribute --><!----><!-- Content wrapper --><div class="contents" style="" data-v-19514615><!--[--><p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This example replaces <code class="hljs inline no-lang">&quot;Computer Science&quot;</code> with <code class="hljs inline no-lang">&quot;CS&quot;</code>.</p> <pre><code class="hljs java"><span>String text = <span class="hljs-string">&quot;Computer Science is fun!&quot;</span>;
+</span><span>text = text.replace(<span class="hljs-string">&quot;Computer Science&quot;</span>, <span class="hljs-string">&quot;CS&quot;</span>);
+</span><span>System.out.println(text);
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre><p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span></p> <pre><code class="hljs"><span>CS is fun!
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre><!--]--></div><!-- dismiss button on the right, not shown if there is a header --><!----></div></div></div></div> <h5 id="accessing-substrings">Accessing substrings<a class="fa fa-anchor" href="#accessing-substrings" onclick="event.stopPropagation()"></a></h5> <div class="indented"><p>The <code class="hljs inline no-lang">substring</code> method returns a new string that copies letters from an existing string, starting at the given index.</p> <ul><li><code class="hljs inline no-lang">&quot;banana&quot;.substring(0)</code> <span><span aria-hidden="true" class="fas fa-arrow-right"></span></span> <code class="hljs inline no-lang">&quot;banana&quot;</code></li> <li><code class="hljs inline no-lang">&quot;banana&quot;.substring(2)</code> <span><span aria-hidden="true" class="fas fa-arrow-right"></span></span> <code class="hljs inline no-lang">&quot;nana&quot;</code></li> <li><code class="hljs inline no-lang">&quot;banana&quot;.substring(6)</code> <span><span aria-hidden="true" class="fas fa-arrow-right"></span></span> <code class="hljs inline no-lang">&quot;&quot;</code></li></ul> <p>If it’s invoked with two arguments, they are treated as a start and end index:</p> <ul><li><code class="hljs inline no-lang">&quot;banana&quot;.substring(0, 3)</code> <span><span aria-hidden="true" class="fas fa-arrow-right"></span></span> <code class="hljs inline no-lang">&quot;ban&quot;</code></li> <li><code class="hljs inline no-lang">&quot;banana&quot;.substring(2, 5)</code> <span><span aria-hidden="true" class="fas fa-arrow-right"></span></span> <code class="hljs inline no-lang">&quot;nan&quot;</code></li> <li><code class="hljs inline no-lang">&quot;banana&quot;.substring(6, 6)</code> <span><span aria-hidden="true" class="fas fa-arrow-right"></span></span> <code class="hljs inline no-lang">&quot;&quot;</code></li></ul></div> <h5 id="searching-within-strings">Searching within strings<a class="fa fa-anchor" href="#searching-within-strings" onclick="event.stopPropagation()"></a></h5> <div class="indented"><p>The <code class="hljs inline no-lang">indexOf</code> method searches for a single character (or a substring) in a string and returns the index of the first occurrence. The method returns <code class="hljs inline no-lang">-1</code> if there are no occurrences.</p> <ul><li><code class="hljs inline no-lang">&quot;banana&quot;.indexOf(&#39;a&#39;)</code> <span><span aria-hidden="true" class="fas fa-arrow-right"></span></span> <code class="hljs inline no-lang">1</code></li> <li><code class="hljs inline no-lang">&quot;banana&quot;.indexOf(&#39;a&#39;, 2)</code> <span><span aria-hidden="true" class="fas fa-arrow-right"></span></span> <code class="hljs inline no-lang">3</code> <span class="dimmed">searches for <code class="hljs inline no-lang">&#39;a&#39;</code>, starting from position 2</span></li> <li><code class="hljs inline no-lang">&quot;banana&quot;.indexOf(&#39;x&#39;)</code> <span><span aria-hidden="true" class="fas fa-arrow-right"></span></span> <code class="hljs inline no-lang">-1</code></li> <li><code class="hljs inline no-lang">&quot;banana&quot;.indexOf(&quot;nan&quot;)</code> <span><span aria-hidden="true" class="fas fa-arrow-right"></span></span> <code class="hljs inline no-lang">2</code> <span class="dimmed">searches for the substring <code class="hljs inline no-lang">&quot;nan&quot;</code></span></li></ul></div> <h5 id="comparing-strings">Comparing strings<a class="fa fa-anchor" href="#comparing-strings" onclick="event.stopPropagation()"></a></h5> <div class="indented"><p>To compare two strings, it is tempting to use the <code class="hljs inline no-lang">==</code> and <code class="hljs inline no-lang">!=</code> operators.</p> <pre><code class="hljs java"><span>String name1 = <span class="hljs-string">&quot;Alan Turing&quot;</span>;
+</span><span>String name2 = <span class="hljs-string">&quot;Alan Turing&quot;</span>;
+</span><span>System.out.println(name1 == name2);
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre><p>This code compiles and runs, and most of the time it shows <code class="hljs inline no-lang">true</code>. But it is not correct. The problem is, <span class="trigger" data-mb-component-type="tooltip" tabindex="0"><!----><!-- do not delete this comment, it is for the stray space issue (#2419)
+ --><!----></span>, the <code class="hljs inline no-lang">==</code> operator checks whether the two variables refer to the same object (by comparing the references). If you give it two different string objects that contain the same letters, it is supposed to yield <code class="hljs inline no-lang">false</code> because they are two distinct objects even if they contain the same text. However, because Java strings are immutable, <mark>in some cases (but not always)</mark> Java reuses existing string objects instead of creating multiple objects, which can cause the above code to yield <code class="hljs inline no-lang">true</code>. Therefore, it is not safe to use <code class="hljs inline no-lang">==</code> to compare strings if your intention is to check if they contain the same text.</p> <p><strong>The right way to compare strings is with the <code class="hljs inline no-lang">equals</code> method.</strong></p> <div class="alert box-container alert-default" style="" data-v-19514615><!--Icon and vertical divider for seamless header box--><!----><div class="header-and-body" data-v-19514615><!-- Header wrapper, not rendered if there is no header attribute --><!----><!-- Body wrapper --><div class="box-body-wrapper" data-v-19514615><!-- icon on the left, not shown if there is a header --><!----><!-- Icon -- content divider for seamless boxes without the header attribute --><!----><!-- Content wrapper --><div class="contents" style="" data-v-19514615><!--[--><p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This example invokes <code class="hljs inline no-lang">equals</code> on <code class="hljs inline no-lang">name1</code> and passes <code class="hljs inline no-lang">name2</code> as an argument. The <code class="hljs inline no-lang">equals</code> method returns <code class="hljs inline no-lang">true</code> if the strings contain the same characters; otherwise it returns <code class="hljs inline no-lang">false</code>.</p> <pre><code class="hljs java"><span><span class="hljs-keyword">if</span> (name1.equals(name2)) {
+</span><span>    System.out.println(<span class="hljs-string">&quot;The names are the same.&quot;</span>);
+</span><span>}
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre><!--]--></div><!-- dismiss button on the right, not shown if there is a header --><!----></div></div></div> <p>If the strings differ, you can use <code class="hljs inline no-lang">compareTo</code> to see which comes first in alphabetical order. The return value from <code class="hljs inline no-lang">compareTo</code> is the difference between the first characters in the strings that differ. If the strings are equal, their difference is zero. If the first string (the one on which the method is invoked) comes first in the alphabet, the difference is negative. Otherwise, the difference is positive.</p> <div class="alert box-container alert-default" style="" data-v-19514615><!--Icon and vertical divider for seamless header box--><!----><div class="header-and-body" data-v-19514615><!-- Header wrapper, not rendered if there is no header attribute --><!----><!-- Body wrapper --><div class="box-body-wrapper" data-v-19514615><!-- icon on the left, not shown if there is a header --><!----><!-- Icon -- content divider for seamless boxes without the header attribute --><!----><!-- Content wrapper --><div class="contents" style="" data-v-19514615><!--[--><p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In this example, <code class="hljs inline no-lang">compareTo</code> returns positive 8, because the second letter of &quot;Alan&quot; comes 8 letters <em>after</em> the second letter of &quot;Ada&quot;.</p> <pre><code class="hljs java"><span>String name1 = <span class="hljs-string">&quot;Alan&quot;</span>;
+</span><span>String name2 = <span class="hljs-string">&quot;Ada&quot;</span>;
+</span><span><span class="hljs-keyword">int</span> diff = name1.compareTo(name2);
+</span><span><span class="hljs-keyword">if</span> (diff == <span class="hljs-number">0</span>) {
+</span><span>    System.out.println(<span class="hljs-string">&quot;The names are the same.&quot;</span>);
+</span><span>} <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (diff &lt; <span class="hljs-number">0</span>) {
+</span><span>    System.out.println(<span class="hljs-string">&quot;name1 comes before name2.&quot;</span>);
+</span><span>} <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (diff &gt; <span class="hljs-number">0</span>) {
+</span><span>    System.out.println(<span class="hljs-string">&quot;name2 comes before name1.&quot;</span>);
+</span><span>}
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre><!--]--></div><!-- dismiss button on the right, not shown if there is a header --><!----></div></div></div> <p>Both <code class="hljs inline no-lang">equals</code> and <code class="hljs inline no-lang">compareTo</code> are case-sensitive. The uppercase letters come before the lowercase letters, so <code class="hljs inline no-lang">&quot;Ada&quot;</code> comes before <code class="hljs inline no-lang">&quot;ada&quot;</code>. To check if two strings are similar irrespective of the differences in case, you can use the <code class="hljs inline no-lang">equalsIgnoreCase</code> method.</p> <pre><code class="hljs java"><span>String s1 = <span class="hljs-string">&quot;Apple&quot;</span>;
+</span><span>String s2 = <span class="hljs-string">&quot;apple&quot;</span>;
+</span><span>System.out.println(s1.equals(s2)); <span class="hljs-comment">//false</span>
+</span><span>System.out.println(s1.equalsIgnoreCase(s2)); <span class="hljs-comment">//true</span>
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre><p>Some more comparison-related <code class="hljs inline no-lang">String</code> methods:</p> <ul><li><code class="hljs inline no-lang">contains</code>: checks if one string is a sub-string of the other e.g., <code class="hljs inline no-lang">Snapple</code> and <code class="hljs inline no-lang">app</code></li> <li><code class="hljs inline no-lang">startsWith</code>: checks if one string has the other as a substring at the <em>beginning</em> e.g., <code class="hljs inline no-lang">Apple</code> and <code class="hljs inline no-lang">App</code></li> <li><code class="hljs inline no-lang">endsWith</code>: checks if one string has the other as a substring at the <em>end</em> e.g., <code class="hljs inline no-lang">Crab</code> and <code class="hljs inline no-lang">ab</code></li></ul></div> <h5 id="printing-special-characters-line-breaks-tabs">Printing special characters (line breaks, tabs, ...)<a class="fa fa-anchor" href="#printing-special-characters-line-breaks-tabs" onclick="event.stopPropagation()"></a></h5> <div class="indented"><p>You can embed a special character <span class="dimmed">e.g., line break, tab, backspace, etc.</span> in a string using an <em>escape sequence</em>.</p> <div class="table-responsive"><table class="markbind-table table table-bordered table-striped"><thead><tr><th>Escape sequence</th> <th>meaning</th></tr></thead> <tbody><tr><td><code class="hljs inline no-lang">\n</code></td> <td>newline character</td></tr> <tr><td><code class="hljs inline no-lang">\t</code></td> <td>tab character</td></tr> <tr><td><code class="hljs inline no-lang">\b</code></td> <td>backspace character</td></tr> <tr><td><code class="hljs inline no-lang">\f</code></td> <td>form feed character</td></tr> <tr><td><code class="hljs inline no-lang">\r</code></td> <td>carriage return character</td></tr> <tr><td><code class="hljs inline no-lang">\&quot;</code></td> <td>&quot; (double quote) character</td></tr> <tr><td><code class="hljs inline no-lang">\&#39;</code></td> <td>&#39; (single quote) character</td></tr> <tr><td><code class="hljs inline no-lang">\\</code></td> <td>\ (back slash) character</td></tr> <tr><td><code class="hljs inline no-lang">\uDDDD</code></td> <td>character from the Unicode character set, by specifying the Unicode as four hex digits in the place of <code class="hljs inline no-lang">DDDD</code></td></tr></tbody></table></div><div class="alert box-container alert-default" style="" data-v-19514615><!--Icon and vertical divider for seamless header box--><!----><div class="header-and-body" data-v-19514615><!-- Header wrapper, not rendered if there is no header attribute --><!----><!-- Body wrapper --><div class="box-body-wrapper" data-v-19514615><!-- icon on the left, not shown if there is a header --><!----><!-- Icon -- content divider for seamless boxes without the header attribute --><!----><!-- Content wrapper --><div class="contents" style="" data-v-19514615><!--[--><p><span><span aria-hidden="true" class="fas fa-cube"></span></span> An example of using escape sequences to print some special characters.</p> <pre><code class="hljs java"><span>System.out.println(<span class="hljs-string">&quot;First line\nSecond \&quot;line\&quot;&quot;</span>);
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre><p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span></p> <pre><code class="hljs"><span>First line
+</span><span>Second &quot;line&quot;
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre><!--]--></div><!-- dismiss button on the right, not shown if there is a header --><!----></div></div></div> <p><span class="badge rounded-pill bg-success text-white"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> As the behavior of the <code class="hljs inline no-lang">\n</code> <span class="trigger" data-mb-component-type="tooltip" tabindex="0"><!----><!-- do not delete this comment, it is for the stray space issue (#2419)
+ --><!----></span>, the recommended way to print a line break is using the <code class="hljs inline no-lang">System.lineSeparator()</code> as it works the same in all platforms.</p> <div class="alert box-container alert-default" style="" data-v-19514615><!--Icon and vertical divider for seamless header box--><!----><div class="header-and-body" data-v-19514615><!-- Header wrapper, not rendered if there is no header attribute --><!----><!-- Body wrapper --><div class="box-body-wrapper" data-v-19514615><!-- icon on the left, not shown if there is a header --><!----><!-- Icon -- content divider for seamless boxes without the header attribute --><!----><!-- Content wrapper --><div class="contents" style="" data-v-19514615><!--[--><p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Using <code class="hljs inline no-lang">System.lineSeparator()</code> to print a line break.</p> <pre><code class="no-line-numbers hljs java"><span>System.out.println(<span class="hljs-string">&quot;First&quot;</span> + System.lineSeparator() + <span class="hljs-string">&quot;Second&quot;</span>);
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre><p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span></p> <pre><code class="no-line-numbers hljs"><span>First
+</span><span>Second
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre><!--]--></div><!-- dismiss button on the right, not shown if there is a header --><!----></div></div></div></div> <h5 id="string-formatting">String formatting<a class="fa fa-anchor" href="#string-formatting" onclick="event.stopPropagation()"></a></h5> <div class="indented"><p>Sometimes programs need to create strings that are formatted in a certain way. <code class="hljs inline no-lang">String.format</code> takes a <em>format specifier</em> followed by a sequence of values and returns a new string formatted as specified.</p> <div class="alert box-container alert-default" style="" data-v-19514615><!--Icon and vertical divider for seamless header box--><!----><div class="header-and-body" data-v-19514615><!-- Header wrapper, not rendered if there is no header attribute --><!----><!-- Body wrapper --><div class="box-body-wrapper" data-v-19514615><!-- icon on the left, not shown if there is a header --><!----><!-- Icon -- content divider for seamless boxes without the header attribute --><!----><!-- Content wrapper --><div class="contents" style="" data-v-19514615><!--[--><p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The following method returns a time string in 12-hour format. The format specifier <code class="hljs inline no-lang">\%02d</code> means “two digit integer padded with zeros”, so <code class="hljs inline no-lang">timeString(19, 5)</code> returns the string <code class="hljs inline no-lang">&quot;07:05 PM&quot;</code>.</p> <pre><code class="hljs java"><span><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> String <span class="hljs-title">timeString</span><span class="hljs-params">(<span class="hljs-keyword">int</span> hour, <span class="hljs-keyword">int</span> minute)</span> </span>{
+</span><span>    String ampm;
+</span><span>    <span class="hljs-keyword">if</span> (hour &lt; <span class="hljs-number">12</span>) {
+</span><span>        ampm = <span class="hljs-string">&quot;AM&quot;</span>;
+</span><span>        <span class="hljs-keyword">if</span> (hour == <span class="hljs-number">0</span>) {
+</span><span>            hour = <span class="hljs-number">12</span>;  <span class="hljs-comment">// midnight</span>
+</span><span>        }
+</span><span>    } <span class="hljs-keyword">else</span> {
+</span><span>        ampm = <span class="hljs-string">&quot;PM&quot;</span>;
+</span><span>        hour = hour - <span class="hljs-number">12</span>;
+</span><span>    }
+</span><span>
+</span><span>    <span class="highlighted"><span class="hljs-comment">// returns &quot;07:05 PM&quot;</span></span>
+</span><span>    <span class="highlighted"><span class="hljs-keyword">return</span> String.format(<span class="hljs-string">&quot;%02d:%02d %s&quot;</span>, hour, minute, ampm);</span>
+</span><span>}
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre><!--]--></div><!-- dismiss button on the right, not shown if there is a header --><!----></div></div></div></div></div> <div><div><br> <h5 id="resources"><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources:<a class="fa fa-anchor" href="#resources" onclick="event.stopPropagation()"></a></h5> <div><ul><li><a href="https://docs.oracle.com/javase/9/docs/api/java/lang/String.html"><code class="hljs inline no-lang">String</code> API</a></li> <li><a href="https://docs.oracle.com/javase/tutorial/essential/io/formatting.html">Oracle&#39;s tutorial on string formatting</a></li></ul></div></div> <div><br> <h5 id="exercises"><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span></span> Exercises:<a class="fa fa-anchor" href="#exercises" onclick="event.stopPropagation()"></a></h5> <div><div><div class="card-container" data-v-4484e25a><div class="card expandable-card border-dark" data-v-4484e25a><div class="card-header header-toggle bg-dark border-dark" data-v-4484e25a><div class="caret-wrapper" data-v-4484e25a><!----></div><div class="header-wrapper card-title bg-dark text-white" data-v-4484e25a><!--[--><!--[--><h3 id="key-exercise-printprice-method"><small><small><span><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></span> [Key Exercise] <code class="hljs inline no-lang">printPrice</code> method</small></small><a class="fa fa-anchor" href="#key-exercise-printprice-method" onclick="event.stopPropagation()"></a></h3><!--]--><!--]--></div><div class="button-wrapper" data-v-4484e25a><!--[--><button type="button" class="collapse-button btn btn-outline-light" style="" data-v-4484e25a><span class="collapse-icon glyphicon glyphicon-menu-down opened" aria-hidden="true"></span></button><button style="" type="button" class="btn-outline-light close-button btn" data-v-4484e25a><span class="glyphicon glyphicon-remove" aria-hidden="true" data-v-4484e25a></span></button><button style="display:none;" type="button" class="btn-outline-light popup-button btn" data-v-4484e25a><span class="glyphicon glyphicon-new-window" aria-hidden="true" data-v-4484e25a></span></button><!--]--></div></div><div class="card-collapse" data-v-4484e25a><div class="card-body" data-v-4484e25a><!--[--><!--[--> <p>Implement the <code class="hljs inline no-lang">printPrice</code> method in the code below to produce the given output. Its behavior:</p> <ul><li>The parameter <code class="hljs inline no-lang">item</code> is a string in the format <code class="hljs inline no-lang">name--$price</code> i.e., a name and a price of an item separated using a <code class="hljs inline no-lang">--</code> e.g., <code class="hljs inline no-lang">banana--$3/50</code></li> <li>It prints the <code class="hljs inline no-lang">NAME: price</code> where the name is in upper case. The price does not have a <code class="hljs inline no-lang">$</code> sign and has <code class="hljs inline no-lang">.</code> in place of the <code class="hljs inline no-lang">/</code><br>
+e.g., <code class="hljs inline no-lang">banana--$3/50</code> <span><span aria-hidden="true" class="fas fa-arrow-right"></span></span> <code class="hljs inline no-lang">BANANA: 3.50</code></li> <li>The <code class="hljs inline no-lang">name</code> part of the input can have trailing/leading spaces which should be omitted from the output.<br>
+e.g., <code class="hljs inline no-lang"></code> <code class="hljs inline no-lang">banana    --$3/50</code> <span><span aria-hidden="true" class="fas fa-arrow-right"></span></span> <code class="hljs inline no-lang">BANANA: 3.50</code></li></ul> <p><span class="badge rounded-pill bg-success text-white"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Do a Web search to find how to remove leading/trailing spaces. Suggested search terms <code class="hljs inline no-lang">java string remove leading trailing spaces</code></p> <pre><code class="hljs java"><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
+</span><span>
+</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">printPrice</span><span class="hljs-params">(String item)</span> </span>{
+</span><span>        <span class="hljs-comment">// <span class="hljs-doctag">TODO:</span> add your code here</span>
+</span><span>
+</span><span>    }
+</span><span>
+</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+</span><span>        printPrice(<span class="hljs-string">&quot;sandwich  --$4/50&quot;</span>);
+</span><span>        printPrice(<span class="hljs-string">&quot;  soda --$10/00&quot;</span>);
+</span><span>        printPrice(<span class="hljs-string">&quot;  fries --$0/50&quot;</span>);
+</span><span>    }
+</span><span>}
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre><p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span></p> <pre><code class="hljs"><span>SANDWICH: 4.50
+</span><span>SODA: 10.00
+</span><span>FRIES: 0.50
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre><div class="card-container algolia-no-index" data-v-4484e25a><div class="card expandable-card card-seamless border-0" data-v-4484e25a><div class="card-header header-toggle bg-transparent border-0" data-v-4484e25a><div class="caret-wrapper" data-v-4484e25a><span class="glyphicon glyphicon-chevron-right" data-v-4484e25a></span></div><div class="header-wrapper-seamless header-wrapper card-title bg-transparent" data-v-4484e25a><!--[--><!--[--><p>Hint</p><!--]--><!--]--></div><div class="button-wrapper" data-v-4484e25a><!--[--><button type="button" class="collapse-button btn btn-outline-light" style="display:none;" data-v-4484e25a><span class="collapse-icon glyphicon glyphicon-menu-down" aria-hidden="true"></span></button><button style="" type="button" class="btn-outline-light seamless-button close-button btn" data-v-4484e25a><span class="glyphicon glyphicon-remove" aria-hidden="true" data-v-4484e25a></span></button><button style="display:none;" type="button" class="btn-outline-light seamless-button popup-button btn" data-v-4484e25a><span class="glyphicon glyphicon-new-window" aria-hidden="true" data-v-4484e25a></span></button><!--]--></div></div><div class="card-collapse" data-v-4484e25a><!----><hr style="" data-v-4484e25a></div><!----></div></div><!--]--><!--]--><!----><div class="bottom-button-wrapper" data-v-4484e25a><button type="button" class="collapse-button btn btn-outline-secondary" style="" data-v-4484e25a><span class="collapse-icon glyphicon glyphicon-menu-down opened" aria-hidden="true"></span></button></div></div><hr style="display:none;" data-v-4484e25a></div><!----></div></div></div></div></div></div></div><!--]--><!--]--><!----><div class="bottom-button-wrapper" data-v-4484e25a><button type="button" class="collapse-button btn btn-seamless" style="" data-v-4484e25a><span class="collapse-icon glyphicon glyphicon-menu-down opened" aria-hidden="true"></span></button></div></div><hr style="" data-v-4484e25a></div><!----></div></div></div> <div><div class="card-container" data-v-4484e25a><div class="card expandable-card card-seamless border-0" data-v-4484e25a><div class="card-header header-toggle bg-transparent border-0" data-v-4484e25a><div class="caret-wrapper" data-v-4484e25a><span class="glyphicon glyphicon-chevron-down" data-v-4484e25a></span></div><div class="header-wrapper-seamless header-wrapper card-title bg-transparent" data-v-4484e25a><!--[--><!--[--><span class="card-title"><div><h4 id="wrapper-classes-for-primitive-types"><span>Wrapper Classes for primitive types</span><a class="fa fa-anchor" href="#wrapper-classes-for-primitive-types" onclick="event.stopPropagation()"></a></h4></div></span><!--]--><!--]--></div><div class="button-wrapper" data-v-4484e25a><!--[--><button type="button" class="collapse-button btn btn-outline-light" style="display:none;" data-v-4484e25a><span class="collapse-icon glyphicon glyphicon-menu-down opened" aria-hidden="true"></span></button><button style="" type="button" class="btn-outline-light seamless-button close-button btn" data-v-4484e25a><span class="glyphicon glyphicon-remove" aria-hidden="true" data-v-4484e25a></span></button><button style="display:none;" type="button" class="btn-outline-light seamless-button popup-button btn" data-v-4484e25a><span class="glyphicon glyphicon-new-window" aria-hidden="true" data-v-4484e25a></span></button><!--]--></div></div><div class="card-collapse" data-v-4484e25a><div class="card-body" data-v-4484e25a><!--[--><!--[--> <div class="indented"><div><p>Primitive values (like <code class="hljs inline no-lang">int</code>, <code class="hljs inline no-lang">double</code>, and <code class="hljs inline no-lang">char</code>) do not provide methods.</p> <div class="alert box-container alert-default" style="" data-v-19514615><!--Icon and vertical divider for seamless header box--><!----><div class="header-and-body" data-v-19514615><!-- Header wrapper, not rendered if there is no header attribute --><!----><!-- Body wrapper --><div class="box-body-wrapper" data-v-19514615><!-- icon on the left, not shown if there is a header --><!----><!-- Icon -- content divider for seamless boxes without the header attribute --><!----><!-- Content wrapper --><div class="contents" style="" data-v-19514615><!--[--><p><span><span aria-hidden="true" class="fas fa-cube"></span></span> For example, you can’t call <code class="hljs inline no-lang">equals</code> on an <code class="hljs inline no-lang">int</code>:</p> <pre><code class="hljs java"><span><span class="hljs-keyword">int</span> i = <span class="hljs-number">5</span>;
+</span><span>System.out.println(i.equals(<span class="hljs-number">5</span>));  <span class="hljs-comment">// compiler error</span>
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre><!--]--></div><!-- dismiss button on the right, not shown if there is a header --><!----></div></div></div> <p>But <strong>for each primitive type, there is a corresponding class in the Java library, called a <em>wrapper class</em></strong>, as given in the table below. They are in the <code class="hljs inline no-lang">java.lang</code> package i.e., no need to import.</p> <div class="table-responsive"><table class="markbind-table table table-bordered table-striped"><thead><tr><th>Primitive type</th> <th>Wrapper class</th></tr></thead> <tbody><tr><td><code class="hljs inline no-lang">byte</code></td> <td><code class="hljs inline no-lang">Byte</code></td></tr> <tr><td><code class="hljs inline no-lang">short</code></td> <td><code class="hljs inline no-lang">Short</code></td></tr> <tr><td><code class="hljs inline no-lang">int</code></td> <td><code class="hljs inline no-lang">Integer</code></td></tr> <tr><td><code class="hljs inline no-lang">long</code></td> <td><code class="hljs inline no-lang">Long</code></td></tr> <tr><td><code class="hljs inline no-lang">float</code></td> <td><code class="hljs inline no-lang">Float</code></td></tr> <tr><td><code class="hljs inline no-lang">double</code></td> <td><code class="hljs inline no-lang">Double</code></td></tr> <tr><td><code class="hljs inline no-lang">char</code></td> <td><code class="hljs inline no-lang">Character</code></td></tr> <tr><td><code class="hljs inline no-lang">boolean</code></td> <td><code class="hljs inline no-lang">Boolean</code></td></tr></tbody></table></div><div class="alert box-container alert-default" style="" data-v-19514615><!--Icon and vertical divider for seamless header box--><!----><div class="header-and-body" data-v-19514615><!-- Header wrapper, not rendered if there is no header attribute --><!----><!-- Body wrapper --><div class="box-body-wrapper" data-v-19514615><!-- icon on the left, not shown if there is a header --><!----><!-- Icon -- content divider for seamless boxes without the header attribute --><!----><!-- Content wrapper --><div class="contents" style="" data-v-19514615><!--[--><p><span><span aria-hidden="true" class="fas fa-cube"></span></span></p> <pre><code class="hljs java"><span><span class="highlighted">Double d = <span class="hljs-keyword">new</span> Double(<span class="hljs-number">2.5</span>);</span>
+</span><span><span class="hljs-keyword">int</span> i = d.intValue();
+</span><span>System.out.println(d);
+</span><span>System.out.println(i);
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre><p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span></p> <pre><code class="hljs"><span>2.5
+</span><span>2
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre><!--]--></div><!-- dismiss button on the right, not shown if there is a header --><!----></div></div></div> <p>Each wrapper class defines constants <code class="hljs inline no-lang">MIN_VALUE</code> and <code class="hljs inline no-lang">MAX_VALUE</code>.</p> <div class="alert box-container alert-default" style="" data-v-19514615><!--Icon and vertical divider for seamless header box--><!----><div class="header-and-body" data-v-19514615><!-- Header wrapper, not rendered if there is no header attribute --><!----><!-- Body wrapper --><div class="box-body-wrapper" data-v-19514615><!-- icon on the left, not shown if there is a header --><!----><!-- Icon -- content divider for seamless boxes without the header attribute --><!----><!-- Content wrapper --><div class="contents" style="" data-v-19514615><!--[--><p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Accessing max and min values for integers:</p> <pre><code class="hljs java"><span>System.out.println(Integer.MIN_VALUE + <span class="hljs-string">&quot; : &quot;</span> + Integer.MAX_VALUE);
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre><p><span><span aria-hidden="true" class="fas fa-arrow-right"></span></span> <code class="hljs inline no-lang">-2147483648 : 2147483647</code></p><!--]--></div><!-- dismiss button on the right, not shown if there is a header --><!----></div></div></div> <p><strong>Wrapper classes provide methods for <span class="trigger" data-mb-component-type="tooltip" tabindex="0"><!----><!-- do not delete this comment, it is for the stray space issue (#2419)
+ --><!----></span> strings to other types</strong> e.g., <code class="hljs inline no-lang">Integer.parseInt</code> converts a string to (you guessed it) an integer. The other wrapper classes provide similar methods, like <code class="hljs inline no-lang">Double.parseDouble</code> and <code class="hljs inline no-lang">Boolean.parseBoolean</code>.</p> <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> <code class="hljs inline no-lang">Integer.parseInt(&quot;1234&quot;)</code> <span><span aria-hidden="true" class="fas fa-arrow-right"></span></span> <code class="hljs inline no-lang">1234</code></p> <p>Wrapper classes also provide <code class="hljs inline no-lang">toString</code>, which returns a string representation of a value.</p> <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> <code class="hljs inline no-lang">Integer.toString(1234)</code> <span><span aria-hidden="true" class="fas fa-arrow-right"></span></span> <code class="hljs inline no-lang">&quot;1234&quot;</code></p></div> <div><div><br> <h5 id="exercises-2"><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span></span> Exercises:<a class="fa fa-anchor" href="#exercises-2" onclick="event.stopPropagation()"></a></h5> <div><div><div class="card-container" data-v-4484e25a><div class="card expandable-card border-dark" data-v-4484e25a><div class="card-header header-toggle bg-dark border-dark" data-v-4484e25a><div class="caret-wrapper" data-v-4484e25a><!----></div><div class="header-wrapper card-title bg-dark text-white" data-v-4484e25a><!--[--><!--[--><h3 id="key-exercise-printtotalscore-method"><small><small><span><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></span> [Key Exercise] <code class="hljs inline no-lang">printTotalScore</code> method</small></small><a class="fa fa-anchor" href="#key-exercise-printtotalscore-method" onclick="event.stopPropagation()"></a></h3><!--]--><!--]--></div><div class="button-wrapper" data-v-4484e25a><!--[--><button type="button" class="collapse-button btn btn-outline-light" style="" data-v-4484e25a><span class="collapse-icon glyphicon glyphicon-menu-down opened" aria-hidden="true"></span></button><button style="" type="button" class="btn-outline-light close-button btn" data-v-4484e25a><span class="glyphicon glyphicon-remove" aria-hidden="true" data-v-4484e25a></span></button><button style="display:none;" type="button" class="btn-outline-light popup-button btn" data-v-4484e25a><span class="glyphicon glyphicon-new-window" aria-hidden="true" data-v-4484e25a></span></button><!--]--></div></div><div class="card-collapse" data-v-4484e25a><div class="card-body" data-v-4484e25a><!--[--><!--[--> <p>Implement the <code class="hljs inline no-lang">printTotalScore</code> method in the code below to produce the given output. Its behavior:</p> <ul><li><code class="hljs inline no-lang">values</code> is an array of strings, each string representing an integer e.g., <code class="hljs inline no-lang">[&quot;5&quot;, &quot;-1&quot;]</code></li> <li>The method prints the total of the numbers represented by the strings in the array<br> <code class="hljs inline no-lang">[&quot;5&quot;, &quot;-1&quot;]</code> <span><span aria-hidden="true" class="fas fa-arrow-right"></span></span> <code class="hljs inline no-lang">4</code></li></ul> <pre><code class="hljs java"><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
+</span><span>
+</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">printTotalScore</span><span class="hljs-params">(String[] values)</span></span>{
+</span><span>        <span class="hljs-comment">// <span class="hljs-doctag">TODO:</span> add your code here</span>
+</span><span>    }
+</span><span>
+</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+</span><span>        printTotalScore(<span class="hljs-keyword">new</span> String[]{});
+</span><span>        printTotalScore(<span class="hljs-keyword">new</span> String[]{<span class="hljs-string">&quot;0&quot;</span>, <span class="hljs-string">&quot;124&quot;</span>, <span class="hljs-string">&quot;-15&quot;</span>});
+</span><span>    }
+</span><span>}
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre><p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span></p> <pre><code class="hljs"><span>0
+</span><span>109
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre><!--]--><!--]--><!----><div class="bottom-button-wrapper" data-v-4484e25a><button type="button" class="collapse-button btn btn-outline-secondary" style="" data-v-4484e25a><span class="collapse-icon glyphicon glyphicon-menu-down opened" aria-hidden="true"></span></button></div></div><hr style="display:none;" data-v-4484e25a></div><!----></div></div></div></div></div></div></div><!--]--><!--]--><!----><div class="bottom-button-wrapper" data-v-4484e25a><button type="button" class="collapse-button btn btn-seamless" style="" data-v-4484e25a><span class="collapse-icon glyphicon glyphicon-menu-down opened" aria-hidden="true"></span></button></div></div><hr style="" data-v-4484e25a></div><!----></div></div></div> <div><div class="card-container" data-v-4484e25a><div class="card expandable-card card-seamless border-0" data-v-4484e25a><div class="card-header header-toggle bg-transparent border-0" data-v-4484e25a><div class="caret-wrapper" data-v-4484e25a><span class="glyphicon glyphicon-chevron-down" data-v-4484e25a></span></div><div class="header-wrapper-seamless header-wrapper card-title bg-transparent" data-v-4484e25a><!--[--><!--[--><span class="card-title"><div><h4 id="the-arrays-class"><span>The <code class="hljs inline no-lang">Arrays</code> class</span><a class="fa fa-anchor" href="#the-arrays-class" onclick="event.stopPropagation()"></a></h4></div></span><!--]--><!--]--></div><div class="button-wrapper" data-v-4484e25a><!--[--><button type="button" class="collapse-button btn btn-outline-light" style="display:none;" data-v-4484e25a><span class="collapse-icon glyphicon glyphicon-menu-down opened" aria-hidden="true"></span></button><button style="" type="button" class="btn-outline-light seamless-button close-button btn" data-v-4484e25a><span class="glyphicon glyphicon-remove" aria-hidden="true" data-v-4484e25a></span></button><button style="display:none;" type="button" class="btn-outline-light seamless-button popup-button btn" data-v-4484e25a><span class="glyphicon glyphicon-new-window" aria-hidden="true" data-v-4484e25a></span></button><!--]--></div></div><div class="card-collapse" data-v-4484e25a><div class="card-body" data-v-4484e25a><!--[--><!--[--> <div class="indented"><div><p><strong><a href="https://docs.oracle.com/javase/9/docs/api/java/util/Arrays.html"><code class="hljs inline no-lang">java.util.Arrays</code></a> provides methods for working with arrays.</strong> One of them, <code class="hljs inline no-lang">toString</code>, returns a string representation of an array. It also provides a <code class="hljs inline no-lang">copyOf</code> that copies an array.</p> <div class="alert box-container alert-default" style="" data-v-19514615><!--Icon and vertical divider for seamless header box--><!----><div class="header-and-body" data-v-19514615><!-- Header wrapper, not rendered if there is no header attribute --><!----><!-- Body wrapper --><div class="box-body-wrapper" data-v-19514615><!-- icon on the left, not shown if there is a header --><!----><!-- Icon -- content divider for seamless boxes without the header attribute --><!----><!-- Content wrapper --><div class="contents" style="" data-v-19514615><!--[--><p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Using <code class="hljs inline no-lang">Arrays.copyOf</code> and <code class="hljs inline no-lang">Arrays.toString</code>:</p> <pre><code class="hljs java"><span><span class="hljs-keyword">int</span>[] a = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[]{<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>};
+</span><span>
+</span><span><span class="hljs-keyword">int</span>[] b = Arrays.copyOf(a, <span class="hljs-number">3</span>); <span class="hljs-comment">// copy first three elements</span>
+</span><span>System.out.println(Arrays.toString(b));
+</span><span>
+</span><span><span class="hljs-keyword">int</span>[] c = Arrays.copyOf(a, a.length); <span class="hljs-comment">// copy all elements</span>
+</span><span>System.out.println(Arrays.toString(c));
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre><p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span></p> <pre><code class="hljs"><span>[1, 2, 3]
+</span><span>[1, 2, 3, 4]
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre><!--]--></div><!-- dismiss button on the right, not shown if there is a header --><!----></div></div></div></div> <div><div><br> <h5 id="exercises-3"><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span></span> Exercises:<a class="fa fa-anchor" href="#exercises-3" onclick="event.stopPropagation()"></a></h5> <div><div><div class="card-container" data-v-4484e25a><div class="card expandable-card border-dark" data-v-4484e25a><div class="card-header header-toggle bg-dark border-dark" data-v-4484e25a><div class="caret-wrapper" data-v-4484e25a><!----></div><div class="header-wrapper card-title bg-dark text-white" data-v-4484e25a><!--[--><!--[--><h3 id="key-exercise-filteremails-method"><small><small><span><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></span> [Key Exercise] <code class="hljs inline no-lang">filterEmails</code> method</small></small><a class="fa fa-anchor" href="#key-exercise-filteremails-method" onclick="event.stopPropagation()"></a></h3><!--]--><!--]--></div><div class="button-wrapper" data-v-4484e25a><!--[--><button type="button" class="collapse-button btn btn-outline-light" style="" data-v-4484e25a><span class="collapse-icon glyphicon glyphicon-menu-down opened" aria-hidden="true"></span></button><button style="" type="button" class="btn-outline-light close-button btn" data-v-4484e25a><span class="glyphicon glyphicon-remove" aria-hidden="true" data-v-4484e25a></span></button><button style="display:none;" type="button" class="btn-outline-light popup-button btn" data-v-4484e25a><span class="glyphicon glyphicon-new-window" aria-hidden="true" data-v-4484e25a></span></button><!--]--></div></div><div class="card-collapse" data-v-4484e25a><div class="card-body" data-v-4484e25a><!--[--><!--[--> <p>Implement the following two methods in the code below to produce the given output.</p> <ul><li><strong><code class="hljs inline no-lang">filterEmails(String[] items): String[]</code></strong> <ul><li><code class="hljs inline no-lang">items</code> is an array of strings each of which may be an email address or some other random string</li> <li>Returns a <code class="hljs inline no-lang">String[]</code> containing email addresses that were in <code class="hljs inline no-lang">items</code>. Any string containing <code class="hljs inline no-lang">@</code> is considered as an email.<br> <code class="hljs inline no-lang">[&quot;aaa@bbb&quot;, &quot;xyz&quot;]</code> <span><span aria-hidden="true" class="fas fa-arrow-right"></span></span> <code class="hljs inline no-lang">[&quot;aaa@bbb&quot;]</code></li></ul></li> <li><strong><code class="hljs inline no-lang">printItems(String[] items)</code></strong> <ul><li>Prints <code class="hljs inline no-lang">items</code> in the standard array format. e.g., <code class="hljs inline no-lang">[&quot;aaa&quot;, &quot;bbb&quot;]</code> <span><span aria-hidden="true" class="fas fa-arrow-right"></span></span> <code class="hljs inline no-lang">[aaa, bbb]</code></li></ul></li></ul> <pre><code class="hljs java"><span><span class="hljs-keyword">import</span> java.util.Arrays;
+</span><span>
+</span><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
+</span><span>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> String[] filterEmails(String[] items){
+</span><span>        <span class="hljs-comment">// <span class="hljs-doctag">TODO:</span> add your code here</span>
+</span><span>    }
+</span><span>
+</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">printItems</span><span class="hljs-params">(String[] items)</span></span>{
+</span><span>        <span class="hljs-comment">// <span class="hljs-doctag">TODO:</span> add your code here</span>
+</span><span>    }
+</span><span>
+</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+</span><span>        printItems(filterEmails(<span class="hljs-keyword">new</span> String[]{}));
+</span><span>        printItems(filterEmails(<span class="hljs-keyword">new</span> String[]{<span class="hljs-string">&quot;abc&quot;</span>}));
+</span><span>        printItems(filterEmails(<span class="hljs-keyword">new</span> String[]{<span class="hljs-string">&quot;adam@example.com&quot;</span>, <span class="hljs-string">&quot;aab&quot;</span>, <span class="hljs-string">&quot;john@example.com&quot;</span>, <span class="hljs-string">&quot;some@&quot;</span>}));
+</span><span>        printItems(filterEmails(<span class="hljs-keyword">new</span> String[]{<span class="hljs-string">&quot;xyz&quot;</span>, <span class="hljs-string">&quot;@bee.com&quot;</span>, <span class="hljs-string">&quot;aab&quot;</span>}));
+</span><span>    }
+</span><span>}
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre><p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span></p> <pre><code class="hljs"><span>[]
+</span><span>[]
+</span><span>[adam@example.com, john@example.com, some@]
+</span><span>[@bee.com]
+</span><span>
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre><div class="card-container algolia-no-index" data-v-4484e25a><div class="card expandable-card card-seamless border-0" data-v-4484e25a><div class="card-header header-toggle bg-transparent border-0" data-v-4484e25a><div class="caret-wrapper" data-v-4484e25a><span class="glyphicon glyphicon-chevron-right" data-v-4484e25a></span></div><div class="header-wrapper-seamless header-wrapper card-title bg-transparent" data-v-4484e25a><!--[--><!--[--><p>Hint</p><!--]--><!--]--></div><div class="button-wrapper" data-v-4484e25a><!--[--><button type="button" class="collapse-button btn btn-outline-light" style="display:none;" data-v-4484e25a><span class="collapse-icon glyphicon glyphicon-menu-down" aria-hidden="true"></span></button><button style="" type="button" class="btn-outline-light seamless-button close-button btn" data-v-4484e25a><span class="glyphicon glyphicon-remove" aria-hidden="true" data-v-4484e25a></span></button><button style="display:none;" type="button" class="btn-outline-light seamless-button popup-button btn" data-v-4484e25a><span class="glyphicon glyphicon-new-window" aria-hidden="true" data-v-4484e25a></span></button><!--]--></div></div><div class="card-collapse" data-v-4484e25a><!----><hr style="" data-v-4484e25a></div><!----></div></div><!--]--><!--]--><!----><div class="bottom-button-wrapper" data-v-4484e25a><button type="button" class="collapse-button btn btn-outline-secondary" style="" data-v-4484e25a><span class="collapse-icon glyphicon glyphicon-menu-down opened" aria-hidden="true"></span></button></div></div><hr style="display:none;" data-v-4484e25a></div><!----></div></div></div></div></div></div></div><!--]--><!--]--><!----><div class="bottom-button-wrapper" data-v-4484e25a><button type="button" class="collapse-button btn btn-seamless" style="" data-v-4484e25a><span class="collapse-icon glyphicon glyphicon-menu-down opened" aria-hidden="true"></span></button></div></div><hr style="" data-v-4484e25a></div><!----></div></div></div> <div><div class="card-container" data-v-4484e25a><div class="card expandable-card card-seamless border-0" data-v-4484e25a><div class="card-header header-toggle bg-transparent border-0" data-v-4484e25a><div class="caret-wrapper" data-v-4484e25a><span class="glyphicon glyphicon-chevron-down" data-v-4484e25a></span></div><div class="header-wrapper-seamless header-wrapper card-title bg-transparent" data-v-4484e25a><!--[--><!--[--><span class="card-title"><div><h4 id="the-scanner-class"><span>The <code class="hljs inline no-lang">Scanner</code> class</span><a class="fa fa-anchor" href="#the-scanner-class" onclick="event.stopPropagation()"></a></h4></div></span><!--]--><!--]--></div><div class="button-wrapper" data-v-4484e25a><!--[--><button type="button" class="collapse-button btn btn-outline-light" style="display:none;" data-v-4484e25a><span class="collapse-icon glyphicon glyphicon-menu-down opened" aria-hidden="true"></span></button><button style="" type="button" class="btn-outline-light seamless-button close-button btn" data-v-4484e25a><span class="glyphicon glyphicon-remove" aria-hidden="true" data-v-4484e25a></span></button><button style="display:none;" type="button" class="btn-outline-light seamless-button popup-button btn" data-v-4484e25a><span class="glyphicon glyphicon-new-window" aria-hidden="true" data-v-4484e25a></span></button><!--]--></div></div><div class="card-collapse" data-v-4484e25a><div class="card-body" data-v-4484e25a><!--[--><!--[--> <div class="indented"><div><p><strong><code class="hljs inline no-lang">Scanner</code> is a class that provides methods for inputting words, numbers, and other data.</strong> <code class="hljs inline no-lang">Scanner</code> provides a method called <code class="hljs inline no-lang">nextLine</code> that reads a line of input from the keyboard and returns a String. The following example reads two lines and repeats them back to the user:</p> <pre><code class="hljs java"><span><span class="highlighted"><span class="hljs-keyword">import</span> java.util.Scanner;</span>
+</span><span>
+</span><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Echo</span> </span>{
+</span><span>
+</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+</span><span>        String line;
+</span><span>        <span class="highlighted">Scanner in = <span class="hljs-keyword">new</span> Scanner(System.in);</span>
+</span><span>
+</span><span>        System.out.print(<span class="hljs-string">&quot;Type something: &quot;</span>);
+</span><span>        <span class="highlighted">line = in.nextLine();</span>
+</span><span>        System.out.println(<span class="hljs-string">&quot;You said: &quot;</span> + line);
+</span><span>
+</span><span>        System.out.print(<span class="hljs-string">&quot;Type something else: &quot;</span>);
+</span><span>        line = in.nextLine();
+</span><span>        System.out.println(<span class="hljs-string">&quot;You also said: &quot;</span> + line);
+</span><span>    }
+</span><span>}
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre><p><code class="hljs inline no-lang">Scanner</code> class normally reads inputs as strings but it can read in a specific type of input too.</p> <div class="alert box-container alert-default" style="" data-v-19514615><!--Icon and vertical divider for seamless header box--><!----><div class="header-and-body" data-v-19514615><!-- Header wrapper, not rendered if there is no header attribute --><!----><!-- Body wrapper --><div class="box-body-wrapper" data-v-19514615><!-- icon on the left, not shown if there is a header --><!----><!-- Icon -- content divider for seamless boxes without the header attribute --><!----><!-- Content wrapper --><div class="contents" style="" data-v-19514615><!--[--><p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The code below uses the <code class="hljs inline no-lang">nextInt</code> method of the <code class="hljs inline no-lang">Scanner</code> class to read an input as an integer.</p> <pre><code class="hljs java"><span>
+</span><span>Scanner in = <span class="hljs-keyword">new</span> Scanner(System.in);
+</span><span>
+</span><span>System.out.print(<span class="hljs-string">&quot;What is your age? &quot;</span>);
+</span><span><span class="hljs-keyword">int</span><span> age = in.<span class="highlighted">nextInt()</span>;
+</span></span><span>in.nextLine();  <span class="hljs-comment">// read the new-line character that follows the integer</span>
+</span><span>System.out.print(<span class="hljs-string">&quot;What is your name? &quot;</span>);
+</span><span>String name = in.nextLine();
+</span><span>System.out.printf(<span class="hljs-string">&quot;Hello %s, age %d\n&quot;</span>, name, age);
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre><p><span class="badge rounded-pill bg-success text-white"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Note the <a href="https://docs.oracle.com/javase/tutorial/java/data/numberformat.html">use of <code class="hljs inline no-lang">printf</code> method for formatting the output</a>.</p><!--]--></div><!-- dismiss button on the right, not shown if there is a header --><!----></div></div></div></div> <div><div><br> <h5 id="exercises-4"><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span></span> Exercises:<a class="fa fa-anchor" href="#exercises-4" onclick="event.stopPropagation()"></a></h5> <div><div><div class="card-container" data-v-4484e25a><div class="card expandable-card border-dark" data-v-4484e25a><div class="card-header header-toggle bg-dark border-dark" data-v-4484e25a><div class="caret-wrapper" data-v-4484e25a><!----></div><div class="header-wrapper card-title bg-dark text-white" data-v-4484e25a><!--[--><!--[--><h3 id="key-exercise-find-total-expenditure"><small><small><span><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></span> [Key Exercise] find total expenditure</small></small><a class="fa fa-anchor" href="#key-exercise-find-total-expenditure" onclick="event.stopPropagation()"></a></h3><!--]--><!--]--></div><div class="button-wrapper" data-v-4484e25a><!--[--><button type="button" class="collapse-button btn btn-outline-light" style="" data-v-4484e25a><span class="collapse-icon glyphicon glyphicon-menu-down opened" aria-hidden="true"></span></button><button style="" type="button" class="btn-outline-light close-button btn" data-v-4484e25a><span class="glyphicon glyphicon-remove" aria-hidden="true" data-v-4484e25a></span></button><button style="display:none;" type="button" class="btn-outline-light popup-button btn" data-v-4484e25a><span class="glyphicon glyphicon-new-window" aria-hidden="true" data-v-4484e25a></span></button><!--]--></div></div><div class="card-collapse" data-v-4484e25a><div class="card-body" data-v-4484e25a><!--[--><!--[--> <p>Write a program to ask the user for a description of overseas expenses (presumably, the user has just returned from an overseas trip) and calculate the total in local currency.</p> <ul><li>The conversion rate from overseas currency to local currency : overseas <code class="hljs inline no-lang">$1.0</code> = local <code class="hljs inline no-lang">$1.70</code></li> <li>The user can describe expenses is in free form text, as one line. The program takes all amounts mentioned in the format <code class="hljs inline no-lang">$amount</code> e.g., <code class="hljs inline no-lang">$1.50</code></li></ul> <p>Here is one example output: <span><span aria-hidden="true" class="fas fa-arrow-down"></span></span></p> <pre><code class="no-line-numbers hljs"><span>Your expenses while overseas?beer $4.50 books $3.00 $5.00 for food, that&#39;s all
+</span><span>Expenses in overseas currency:[$4.50, $3.00, $5.00]
+</span><span>Total in local currency: $21.25
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre><p>Here is another: <span><span aria-hidden="true" class="fas fa-arrow-down"></span></span></p> <pre><code class="no-line-numbers hljs"><span>Your expenses while overseas?nothing. I lived off my friends all the time.
+</span><span>Expenses in overseas currency:[]
+</span><span>Total in local currency: $0.00
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre><p>One more: <span><span aria-hidden="true" class="fas fa-arrow-down"></span></span></p> <pre><code class="no-line-numbers hljs"><span>Your expenses while overseas? Just $10
+</span><span>Expenses in overseas currency:[$10]
+</span><span>Total in local currency: $17.00
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre><p>Here&#39;s the skeleton code to use as the starting point:</p> <pre><code class="hljs java"><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
+</span><span>
+</span><span>    <span class="hljs-comment">// You can add more methods here</span>
+</span><span>
+</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+</span><span>        String line;
+</span><span>        Scanner in = <span class="hljs-keyword">new</span> Scanner(System.in);
+</span><span>
+</span><span>        System.out.print(<span class="hljs-string">&quot;Your expenses while overseas?&quot;</span>);
+</span><span>       <span class="hljs-comment">// <span class="hljs-doctag">TODO:</span> add your code here</span>
+</span><span>    }
+</span><span>}
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre><p><span class="badge rounded-pill bg-success text-white"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> You can use the <code class="hljs inline no-lang">split</code> method of the <code class="hljs inline no-lang">String</code> class to convert a sentence into an array of words. e.g.,<br></p> <pre><code class="hljs java"><span>String sentence = <span class="hljs-string">&quot;hello my dear&quot;</span>;
+</span><span>
+</span><span><span class="highlighted"><span class="hljs-comment">// split using the space as the delimiter</span></span>
+</span><span><span class="highlighted">String[] words = sentence.split(<span class="hljs-string">&quot; &quot;</span>);</span>
+</span><span>
+</span><span>System.out.println(Arrays.toString(words));
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre><p><span><span aria-hidden="true" class="fas fa-arrow-right"></span></span> <code class="hljs inline no-lang">[hello, my, dear]</code></p> <div class="card-container algolia-no-index" data-v-4484e25a><div class="card expandable-card card-seamless border-0" data-v-4484e25a><div class="card-header header-toggle bg-transparent border-0" data-v-4484e25a><div class="caret-wrapper" data-v-4484e25a><span class="glyphicon glyphicon-chevron-right" data-v-4484e25a></span></div><div class="header-wrapper-seamless header-wrapper card-title bg-transparent" data-v-4484e25a><!--[--><!--[--><p>Hint</p><!--]--><!--]--></div><div class="button-wrapper" data-v-4484e25a><!--[--><button type="button" class="collapse-button btn btn-outline-light" style="display:none;" data-v-4484e25a><span class="collapse-icon glyphicon glyphicon-menu-down" aria-hidden="true"></span></button><button style="" type="button" class="btn-outline-light seamless-button close-button btn" data-v-4484e25a><span class="glyphicon glyphicon-remove" aria-hidden="true" data-v-4484e25a></span></button><button style="display:none;" type="button" class="btn-outline-light seamless-button popup-button btn" data-v-4484e25a><span class="glyphicon glyphicon-new-window" aria-hidden="true" data-v-4484e25a></span></button><!--]--></div></div><div class="card-collapse" data-v-4484e25a><!----><hr style="" data-v-4484e25a></div><!----></div></div><!--]--><!--]--><!----><div class="bottom-button-wrapper" data-v-4484e25a><button type="button" class="collapse-button btn btn-outline-secondary" style="" data-v-4484e25a><span class="collapse-icon glyphicon glyphicon-menu-down opened" aria-hidden="true"></span></button></div></div><hr style="display:none;" data-v-4484e25a></div><!----></div></div></div></div></div></div></div><!--]--><!--]--><!----><div class="bottom-button-wrapper" data-v-4484e25a><button type="button" class="collapse-button btn btn-seamless" style="" data-v-4484e25a><span class="collapse-icon glyphicon glyphicon-menu-down opened" aria-hidden="true"></span></button></div></div><hr style="" data-v-4484e25a></div><!----></div></div></div></div></div></div></div></div> <nav id="page-nav" class="fixed-header-padding" data-v-6b1b63d2><!--[--><div class="nav-component slim-scroll"></div><!--]--><!--v-if--></nav> <div class="scroll-top-button fa-lg d-print-none" style="display:none;bottom:2%;right:2%;position:fixed;" aria-hidden="true"><!--[--><i class="fas fa-arrow-circle-up"></i><!--]--></div></div> <footer><div class="text-center"><small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 6.0.2</a>, generated on Mon, 8 Sept 2025, 11:04:52 GMT+8]</small></div></footer><!--]--></div>
+</body><script src="/website/markbind/js/bootstrap-utility.min.js"></script>
+<script src="/website/markbind/js/polyfill.min.js"></script>
+<script src="/website/markbind/js/vue.global.prod.min.js"></script>
+<script src="/website/markbind/js/markbind.min.js"></script>
+<script src="index.page-vue-render.js"></script>
+<script>
+  MarkBind.setup()
+</script>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122519234-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'UA-122519234-1');
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3.2.0/dist/umd/index.js"></script>
+    <script>
+    docsearch({
+      container: "#algolia-search-input",
+      appId: "3DU4XTBX4T",
+      apiKey: "772d7386c7a785f7a60fec5a096311ef",
+      indexName: "nus-tic2002-2020a",
+      searchParameters: {"facetFilters":[["site:nus-cs2103-ay2526s1.github.io"],["tags:admin","tags:se-book-adapted","tags:schedule"]]}
+    });
+  </script>
+    <script>
+    const style = document.createElement('style');
+    style.innerHTML = ".DocSearch-Container { z-index: 1002; position: fixed; }";
+    document.getElementsByTagName('head')[0].appendChild(style);
+  </script>
+  
+    <script>
+    function copyCodeBlock(element) {
+        const pre = element.parentElement.parentElement;
+        const codeElement = pre.querySelector('code');
+        const copyButtonBody = element.querySelector('.function-btn-body');
+        const tooltipText = element.querySelector(".tooltiptext");
+
+        // create dummy text element to select() the text field
+        const textElement = document.createElement('textarea');
+        textElement.value = codeElement.textContent;
+        document.body.appendChild(textElement);
+        textElement.select();
+
+        document.execCommand('copy');
+        document.body.removeChild(textElement);
+        copyButtonBody.innerHTML = `
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="18"
+    height="18"
+    viewBox="2 2 22 22"
+  >
+    <path d="M 19.28125 5.28125 L 9 15.5625 L 4.71875 11.28125 L 3.28125 12.71875 L 8.28125 17.71875 
+    L 9 18.40625 L 9.71875 17.71875 L 20.71875 6.71875 Z"></path>
+  </svg>
+`;
+        console.log("Running tooltip");
+        tooltipText.innerText  = `Copied!`;
+        setTimeout(() => {
+            copyButtonBody.innerHTML = `
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "/>
+    </g>
+</svg>
+`;
+            tooltipText.innerText  = `Copy`;
+        }, 3000);
+    }
+    </script>
+    <script>
+    function toggleCodeBlockWrap(element) {
+      const pre = element.parentElement.parentElement;
+      const tooltipText = element.querySelector(".tooltiptext");
+      const classList = pre.querySelector('code').classList; 
+      if (classList.contains('wrap')) {
+          classList.remove('wrap');
+          tooltipText.innerText  = `Wrap Text`;
+      } else {
+          classList.add('wrap')
+          tooltipText.innerText  = `Unwrap Text`;
+      }
+    }
+    </script>
+    <script src="/website/plugins/dataTable/datatables.min.js"></script>
+    
+  <script>
+    function getTableOptions(el) {
+      const options = {};
+      if ($(el).hasClass('sortable-table')) {
+        options.searching = false;
+        options.paging = false;
+        options.info = false;
+      } else if ($(el).hasClass('searchable-table')) {
+        options.ordering = false;
+        options.paging = false;
+        options.info = false;
+        options.dom = '<"row"<"col-sm-12"f>>' + '<"row"<"col-sm-12"t>>';
+      } else if ($(el).hasClass('sortable-searchable-table')) {
+        options.paging = false;
+        options.info = false;
+        options.dom = '<"row"<"col-sm-12"f>>' + '<"row"<"col-sm-12"t>>';
+      }
+      return options;
+    }
+
+    function initializeTables(tables) {
+      if (!tables || tables.length === 0) return;
+      tables.forEach(table => {
+        const options = getTableOptions(table);
+        $(table).DataTable(options);
+        $(table).addClass('dt-processed');
+      });
+    }
+
+    function setupTableObserver() {
+      const observer = new MutationObserver((mutations) => {
+        let newTables = [];
+        
+        mutations.forEach(mutation => {
+          if (mutation.addedNodes.length) {
+            mutation.addedNodes.forEach(node => {
+
+              if (node.nodeType === 1 && node.tagName === 'TABLE' && 
+                  !$(node).hasClass('dt-processed') &&
+                  ($(node).hasClass('sortable-table') || 
+                   $(node).hasClass('searchable-table') || 
+                   $(node).hasClass('sortable-searchable-table'))) {
+                newTables.push(node);
+              }
+              
+              if (node.nodeType === 1 && node.querySelectorAll) {
+                const tablesInNode = node.querySelectorAll(
+                'table.sortable-table:not(.dt-processed), ' +
+                'table.searchable-table:not(.dt-processed), ' +
+                'table.sortable-searchable-table:not(.dt-processed)');
+                if (tablesInNode.length) {
+                  newTables = [...newTables, ...tablesInNode];
+                }
+              }
+            });
+          }
+        });
+
+        if (newTables.length > 0) {
+          initializeTables(newTables);
+        }
+      });
+      
+      // Start observing the entire document for changes
+      observer.observe(document.body, {
+        childList: true,
+        subtree: true
+      });
+      
+      return observer;
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+      // Process any existing tables
+      const existingTables = document.querySelectorAll(
+        'table.sortable-table:not(.dt-processed), ' +
+        'table.searchable-table:not(.dt-processed), ' +
+        'table.sortable-searchable-table:not(.dt-processed)'
+      );
+      if (existingTables.length > 0) {
+        initializeTables(existingTables);
+      }
+      
+      setupTableObserver();
+    });
+
+  </script>
+
+    <script type="module">
+    window.mermaidPromise = null;
+    
+    const loadMermaid = () => {
+      if (window.mermaidPromise === null) {
+        window.mermaidPromise = import('https://unpkg.com/mermaid@11.7.0/dist/mermaid.esm.min.mjs')
+          .then(({ default: mermaid }) => {
+            mermaid.initialize({
+              startOnLoad: false,
+            });
+            console.log('Mermaid loaded successfully');
+            return mermaid;
+          })
+          .catch((error) => {
+            console.error('Mermaid failed to load:', error);
+            window.mermaidPromise = false;
+            return null;
+          });
+      }
+      return window.mermaidPromise;
+    };
+
+    const renderMermaidDiagrams = (elements) => {
+      if (!elements || elements.length === 0) {
+        return Promise.resolve();
+      }
+
+      return loadMermaid().then(mermaid => {
+        if (!mermaid) return;
+        return mermaid.run({ nodes: Array.from(elements) })
+          .catch(err => console.error('Error rendering mermaid diagrams:', err));
+      });
+    };
+
+    const setupMermaidObserver = () => {
+      const observer = new MutationObserver((mutations) => {
+        let newMermaidElements = [];
+        
+        mutations.forEach(mutation => {
+          if (mutation.addedNodes.length) {
+            mutation.addedNodes.forEach(node => {
+              if (node.nodeType === 1 && node.classList && 
+                  node.classList.contains('mermaid')) {
+                newMermaidElements.push(node);
+              }
+              
+              if (node.nodeType === 1 && node.querySelectorAll) {
+                const mermaidInNode = node.querySelectorAll('.mermaid');
+                if (mermaidInNode.length) {
+                  newMermaidElements = [...newMermaidElements, ...mermaidInNode];
+                }
+              }
+            });
+          }
+        });
+        
+        if (newMermaidElements.length > 0) {
+          renderMermaidDiagrams(newMermaidElements);
+        }
+      });
+      
+      observer.observe(document.body, {
+        childList: true,
+        subtree: true
+      });
+      
+      return observer;
+    };
+
+    // Initialize on DOM content loaded
+    document.addEventListener('DOMContentLoaded', () => {
+      const existingDiagrams = document.querySelectorAll('.mermaid');
+      if (existingDiagrams.length > 0) {
+        renderMermaidDiagrams(existingDiagrams);
+      }
+      
+      setupMermaidObserver();
+    });
+
+  </script>
+</html>

@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="generator" content="MarkBind 6.0.2">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><title>CS2103/T - Error Handling</title> <link rel="stylesheet" href="/website/markbind/css/bootstrap.min.css"> <link rel="stylesheet" href="/website/markbind/fontawesome/css/all.min.css"> <link rel="stylesheet" href="/website/markbind/glyphicons/css/bootstrap-glyphicons.min.css"> <link rel="stylesheet" href="/website/markbind/css/octicons.css"><link rel="stylesheet" href="/website/markbind/css/codeblock-light.min.css"><link rel="stylesheet" href="/website/markbind/css/markbind.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3.2.0/dist/style.css"><link rel="preconnect" href="https://3DU4XTBX4T-dsn.algolia.net" crossorigin><link rel="stylesheet" href="/website/plugins/codeBlockCopyButtons/codeBlockButtons.css"><link rel="stylesheet" href="/website/plugins/codeBlockWrapButtons/codeBlockButtons.css"><link rel="stylesheet" href="/website/plugins/dataTable/datatables.min.css"><link rel="stylesheet" href="/website/plugins/dataTable/datatables-additional.css"><link rel="stylesheet" href="/website/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css"><link rel="stylesheet" href="/website/plugins/markbind-plugin-tree/markbind-plugin-tree.css">
+    
+<link rel="stylesheet" href="/website/css/main.css">
+<link rel="icon" href="/website/favicon.ico"></head>
+<script>
+  const baseUrl = '/website'
+</script>
+<body >
+<div id="app"><!--[--><header sticky><div placement="top" data-v-2dc82f13><nav class="navbar navbar-expand-md d-print-none navbar-dark bg-dark" data-v-2dc82f13><div class="container-fluid" data-v-2dc82f13><div class="navbar-left" data-v-2dc82f13><!--[--><a href="/website/index.html" title="Home" class="navbar-brand"><span class="badge rounded-pill bg-success">CS2103/T <small>2025 Aug-Nov</small></span></a><!--]--></div><div class="navbar-default" data-v-2dc82f13><ul class="navbar-nav me-auto mt-2 mt-lg-0" data-v-2dc82f13><!--[--> <li class="dropdown nav-link algolia-no-index" data-v-154e37d3><!--[--><a role="button" class="dropdown-toggle nav-link" data-bs-toggle="dropdown" data-v-154e37d3><!--[--><strong>Schedule</strong><!--]--><span data-v-154e37d3></span></a><!--]--><!--[--><ul class="dropdown-menu" data-v-154e37d3><!--[--> <li><a href="/website/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li> <li><a href="/website/schedule/week1/index.html" class="dropdown-item"><span><strong>Week 1</strong> [Mon, Aug 11th] </span></a></li> <li><a href="/website/schedule/week2/index.html" class="dropdown-item"><span><strong>Week 2</strong> [Mon, Aug 18th] </span></a></li> <li><a href="/website/schedule/week3/index.html" class="dropdown-item"><span><strong>Week 3</strong> [Mon, Aug 25th] </span></a></li> <li><a href="/website/schedule/week4/index.html" class="dropdown-item"><span><strong>Week 4</strong> [Mon, Sep 1st] </span></a></li> <li><a href="/website/schedule/week5/index.html" class="dropdown-item"><span><strong>Week 5</strong> [Mon, Sep 8th]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li> <li><a href="/website/schedule/week5/admin.html" class="dropdown-item">  ├ Week 5: <span><span aria-hidden="true" class="fas fa-info-circle"></span></span> <span><strong>Admin</strong></span></a></li> <li><a href="/website/schedule/week5/topics.html" class="dropdown-item">  ├ Week 5: <span><span aria-hidden="true" class="fas fa-book"></span></span> <span><strong>Topics</strong></span></a></li> <li><a href="/website/schedule/week5/project.html" class="dropdown-item">  ├ Week 5: <span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> <span><strong>Project</strong></span></a></li> <li><a href="/website/schedule/week5/tutorial.html" class="dropdown-item">  └ Week 5: <span><span aria-hidden="true" class="fas fa-chalkboard-teacher"></span></span> <span><strong>Tutorial</strong></span></a></li> <li><a href="/website/schedule/week6/index.html" class="dropdown-item"><span><strong>Week 6</strong> [Mon, Sep 15th] </span></a></li> <li><a href="/website/schedule/week7/index.html" class="dropdown-item"><span><strong>Week 7</strong> [Mon, Sep 29th] </span></a></li> <li><a href="/website/schedule/week8/index.html" class="dropdown-item"><span><strong>Week 8</strong> [Mon, Oct 6th] </span></a></li> <li><a href="/website/schedule/week9/index.html" class="dropdown-item"><span><strong>Week 9</strong> [Mon, Oct 13th] </span></a></li> <li><a href="/website/schedule/week10/index.html" class="dropdown-item"><span><strong>Week 10</strong> [Mon, Oct 20th] </span></a></li> <li><a href="/website/schedule/week11/index.html" class="dropdown-item"><span><strong>Week 11</strong> [Mon, Oct 27th] </span></a></li> <li><a href="/website/schedule/week12/index.html" class="dropdown-item"><span><strong>Week 12</strong> [Mon, Nov 3rd] </span></a></li> <li><a href="/website/schedule/week13/index.html" class="dropdown-item"><span><strong>Week 13</strong> [Mon, Nov 10th] </span></a></li><!--]--></ul><!--]--></li> <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li> <li class="dropdown nav-link algolia-no-index" data-v-154e37d3><!--[--><a role="button" class="dropdown-toggle nav-link" data-bs-toggle="dropdown" data-v-154e37d3><!--[--><strong>Admin Info</strong><!--]--><span data-v-154e37d3></span></a><!--]--><!--[--><ul class="dropdown-menu" data-v-154e37d3><!--[--> <li><a href="/website/admin/courseOverview.html" class="dropdown-item"><span>Course Overview </span></a></li> <li><a href="/website/admin/usingThisWebsite.html" class="dropdown-item"><span>Using this Website  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-danger"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>1</span></span></span></span></a></li> <li><a href="/website/admin/courseExpectations.html" class="dropdown-item"><span>Course Expectations  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></span></a></li> <li class="dropdown-submenu dropend algolia-no-index" data-v-154e37d3 data-v-1ebc3cbe><!--[--><a role="button" class="dropdown-item submenu-toggle" data-bs-toggle="dropdown" data-v-1ebc3cbe><!--[--><!--[--><strong>Course Structure</strong><!--]--><!--]--></a><!--]--><!--[--><ul class="dropdown-menu" data-v-1ebc3cbe><!--[--><!--[--> <li><a href="/website/admin/courseBriefings.html" class="dropdown-item"><span><small>Course Briefing Videos  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-info"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>3</span></span></span></small></span></a></li> <li><a href="/website/admin/weeklySchedule.html" class="dropdown-item"><span><small>Weekly Schedule  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-info"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>3</span></span></span></small></span></a></li> <li><a href="/website/admin/lectures.html" class="dropdown-item"><span><small>Weekly Briefings  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-info"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>3</span></span></span></small></span></a></li> <li><a href="/website/admin/tutorials.html" class="dropdown-item"><span><small>Tutorials  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li><!--]--><!--]--></ul><!--]--></li> <li><a href="/website/admin/instructors.html" class="dropdown-item"><span>Instructors  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-success"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>4</span></span></span></span></a></li> <li><a href="/website/admin/textbooks.html" class="dropdown-item"><span>Textbooks  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></span></a></li> <li><a href="/website/admin/programmingLanguages.html" class="dropdown-item"><span>Programming Language  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></span></a></li> <li><a href="/website/admin/standardsAndConventions.html" class="dropdown-item"><span>Standards/Conventions  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></span></a></li> <li class="dropdown-submenu dropend algolia-no-index" data-v-154e37d3 data-v-1ebc3cbe><!--[--><a role="button" class="dropdown-item submenu-toggle" data-bs-toggle="dropdown" data-v-1ebc3cbe><!--[--><!--[--><strong>Individual Project (iP)</strong><!--]--><!--]--></a><!--]--><!--[--><ul class="dropdown-menu" data-v-1ebc3cbe><!--[--><!--[--> <li><a href="/website/admin/ip-overview.html" class="dropdown-item"><span><small>iP (Individual Project): Overview  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/ip-w2.html" class="dropdown-item"><span><small>iP: Week 2  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/ip-w3.html" class="dropdown-item"><span><small>iP: Week 3  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/ip-w4.html" class="dropdown-item"><span><small>iP: Week 4  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/ip-w5.html" class="dropdown-item"><span><small>iP: Week 5  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/ip-w6.html" class="dropdown-item"><span><small>iP: Week 6  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-danger"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>1</span></span></span></small></span></a></li> <li><a href="/website/admin/ip-w7.html" class="dropdown-item"><span><small>iP: Week 7  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-success"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>4</span></span></span></small></span></a></li> <li><a href="/website/admin/ip-w8.html" class="dropdown-item"><span><small>iP: Week 8  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-danger"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>1</span></span></span></small></span></a></li> <li><a href="/website/admin/ip-grading.html" class="dropdown-item"><span><small>iP: Grading  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li><!--]--><!--]--></ul><!--]--></li> <li class="dropdown-submenu dropend algolia-no-index" data-v-154e37d3 data-v-1ebc3cbe><!--[--><a role="button" class="dropdown-item submenu-toggle" data-bs-toggle="dropdown" data-v-1ebc3cbe><!--[--><!--[--><strong>Team Project (tP)</strong><!--]--><!--]--></a><!--]--><!--[--><ul class="dropdown-menu" data-v-1ebc3cbe><!--[--><!--[--> <li><a href="/website/admin/tp-overview.html" class="dropdown-item"><span><small>tP (team project): Overview  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-expectations.html" class="dropdown-item"><span><small>tP: Expectations  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-timeline.html" class="dropdown-item"><span><small>tP: Timeline  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-info"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>3</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-constraints.html" class="dropdown-item"><span><small>tP: Constraints  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-teams.html" class="dropdown-item"><span><small>tP: Forming Teams  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-w3.html" class="dropdown-item"><span><small>tP Week 3: Kickoff  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-w4.html" class="dropdown-item"><span><small>tP Week 4: Set Direction  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-info"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>3</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-w5.html" class="dropdown-item"><span><small>tP Week 5: Gather Requirements  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-w6.html" class="dropdown-item"><span><small>tP Week 6: Define the MVP  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-w7.html" class="dropdown-item"><span><small>tP Week 7: Practice Iteration → v1.1  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-w8.html" class="dropdown-item"><span><small>tP Week 8: First Feature Increment → v1.2  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-info"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>3</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-w9.html" class="dropdown-item"><span><small>tP Week 9: MVP → v1.3  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-w10.html" class="dropdown-item"><span><small>tP Week 10: Alpha Version → v1.4  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-w11.html" class="dropdown-item"><span><small>tP Week 11: Release Candidate → v1.5  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-w12.html" class="dropdown-item"><span><small>tP Week 12: Public Release → v1.6  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-info"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>3</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-w13.html" class="dropdown-item"><span><small>tP Week 13: Post-Release Tasks  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-deliverables.html" class="dropdown-item"><span><small>tP: Deliverables  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-ped.html" class="dropdown-item"><span><small>tP: Practical Exam Dry Run  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-pe.html" class="dropdown-item"><span><small>tP: Practical Exam  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-grading.html" class="dropdown-item"><span><small>tP: Grading  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-supervision.html" class="dropdown-item"><span><small>tP: Supervision/Guidance  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li><!--]--><!--]--></ul><!--]--></li> <li><a href="/website/admin/peerEvaluations.html" class="dropdown-item"><span>Peer Evaluations  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></span></a></li> <li><a href="/website/admin/tools.html" class="dropdown-item"><span>Tools  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-info"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>3</span></span></span></span></a></li> <li><a href="/website/admin/exams.html" class="dropdown-item"><span>Exams  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></span></a></li> <li><a href="/website/admin/participation.html" class="dropdown-item"><span>Participation Marks  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></span></a></li> <li><a href="/website/admin/gradeBreakdown.html" class="dropdown-item"><span>Grade Breakdown  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></span></a></li> <li class="dropdown-submenu dropend algolia-no-index" data-v-154e37d3 data-v-1ebc3cbe><!--[--><a role="button" class="dropdown-item submenu-toggle" data-bs-toggle="dropdown" data-v-1ebc3cbe><!--[--><!--[--><strong>Appendices</strong><!--]--><!--]--></a><!--]--><!--[--><ul class="dropdown-menu" data-v-1ebc3cbe><!--[--><!--[--> <li><a href="/website/admin/appendixA-principles.html" class="dropdown-item"><span><small>Apdx A: Course Principles  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-success"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>4</span></span></span></small></span></a></li> <li><a href="/website/admin/appendixB-policies.html" class="dropdown-item"><span><small>Apdx B: Course Policies  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-danger"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>1</span></span></span></small></span></a></li> <li><a href="/website/admin/appendixC-faq.html" class="dropdown-item"><span><small>Apdx C: FAQ  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-danger"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>1</span></span></span></small></span></a></li> <li><a href="/website/admin/appendixD-help.html" class="dropdown-item"><span><small>Apdx D: Getting Help  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/appendixE-gitHub.html" class="dropdown-item"><span><small>Apdx E: Using GitHub  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-danger"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>1</span></span></span></small></span></a></li> <li><a href="/website/admin/appendixF-teamworkIssues.html" class="dropdown-item"><span><small>Apdx F: Handling Team Issues  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-success"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>4</span></span></span></small></span></a></li><!--]--><!--]--></ul><!--]--></li><!--]--></ul><!--]--></li> <li class="dropdown nav-link algolia-no-index" tags="m--cs2103 m--cs2113" data-v-154e37d3><!--[--><a role="button" class="dropdown-toggle nav-link" data-bs-toggle="dropdown" data-v-154e37d3><!--[--><strong>Dashboards</strong><!--]--><span data-v-154e37d3></span></a><!--]--><!--[--><ul class="dropdown-menu" data-v-154e37d3><!--[--> <li><a href="https://nus-cs2103-ay2526s1.github.io/dashboards/contents/participation.html" class="dropdown-item text-success" target="_blank"><span><span aria-hidden="true" class="fas fa-trophy"></span> <strong>Participation</strong> dashboard</span></a></li> <li><a href="https://nus-cs2103-ay2526s1.github.io/dashboards/contents/forum-activities.html" class="dropdown-item" target="_blank"><span><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-comment" aria-hidden="true"><path fill-rule="evenodd" d="M2.75 2.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h2a.75.75 0 01.75.75v2.19l2.72-2.72a.75.75 0 01.53-.22h4.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25H2.75zM1 2.75C1 1.784 1.784 1 2.75 1h10.5c.966 0 1.75.784 1.75 1.75v7.5A1.75 1.75 0 0113.25 12H9.06l-2.573 2.573A1.457 1.457 0 014 13.543V12H2.75A1.75 1.75 0 011 10.25v-7.5z"></path></svg> <strong>Forum</strong> Dashboard</span></a></li> <hr> <span><strong> iP dashboards:</strong></span> <li><a href="https://nus-cs2103-ay2526s1.github.io/dashboards/contents/ip-progress.html" target="_blank" class="dropdown-item text-success"><span><span aria-hidden="true" class="fas fa-tasks"></span> iP Progress Dashboard</span></a></li> <li><a href="https://nus-cs2103-ay2526s1.github.io/dashboards/contents/ip-comments.html" target="_blank" class="dropdown-item"><span><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-comment" aria-hidden="true"><path fill-rule="evenodd" d="M2.75 2.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h2a.75.75 0 01.75.75v2.19l2.72-2.72a.75.75 0 01.53-.22h4.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25H2.75zM1 2.75C1 1.784 1.784 1 2.75 1h10.5c.966 0 1.75.784 1.75 1.75v7.5A1.75 1.75 0 0113.25 12H9.06l-2.573 2.573A1.457 1.457 0 014 13.543V12H2.75A1.75 1.75 0 011 10.25v-7.5z"></path></svg> iP Comments dashboard</span></a></li> <li><a href="https://nus-cs2103-ay2526s1.github.io/ip-dashboard/?search=&amp;sort=groupTitle&amp;sortWithin=title&amp;timeframe=commit&amp;mergegroup=&amp;groupSelect=groupByRepos&amp;breakdown=true&amp;viewRepoTags=true&amp;checkedFileTypes=java~md~fxml~sh~bat~gradle~txt" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-chart-area"></span> iP Code Dashboard</span></a></li> <hr> <span><strong> tP dashboards:</strong></span> <li><a href="https://nus-cs2103-ay2526s1.github.io/dashboards/contents/tp-progress.html" target="_blank" class="dropdown-item text-success"><span><span aria-hidden="true" class="fas fa-tasks"></span> tP Progress Dashboard</span></a></li> <li><a href="https://nus-cs2103-ay2526s1.github.io/dashboards/contents/tp-comments.html" target="_blank" class="dropdown-item"><span><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-comment" aria-hidden="true"><path fill-rule="evenodd" d="M2.75 2.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h2a.75.75 0 01.75.75v2.19l2.72-2.72a.75.75 0 01.53-.22h4.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25H2.75zM1 2.75C1 1.784 1.784 1 2.75 1h10.5c.966 0 1.75.784 1.75 1.75v7.5A1.75 1.75 0 0113.25 12H9.06l-2.573 2.573A1.457 1.457 0 014 13.543V12H2.75A1.75 1.75 0 011 10.25v-7.5z"></path></svg> tP Comments Dashboard</span></a></li> <li><a href="https://nus-cs2103-ay2526s1.github.io/tp-dashboard/?search=&amp;sort=groupTitle&amp;sortWithin=title&amp;timeframe=commit&amp;mergegroup=&amp;groupSelect=groupByRepos&amp;breakdown=true&amp;checkedFileTypes=docs~functional-code~test-code~other" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-chart-area"></span> tP Code Dashboard</span></a></li><!--]--></ul><!--]--></li> <li class="dropdown nav-link algolia-no-index" tags="m--cs2103 m--cs2113" data-v-154e37d3><!--[--><a role="button" class="dropdown-toggle nav-link" data-bs-toggle="dropdown" data-v-154e37d3><!--[--><strong>Project Links</strong><!--]--><span data-v-154e37d3></span></a><!--]--><!--[--><ul class="dropdown-menu" data-v-154e37d3><!--[--> <span><strong> Individual Project (iP):</strong></span> <li><a href="/website/admin/ip-overview.html" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span></span> Individual Project Info</a></li> <li><a href="https://github.com/nus-cs2103-AY2526S1/ip" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-code-branch"></span></span></span> iP Upstream Repo</a></li> <li tags="m--cs2103"><a href="/website/admin/ip-showcase.html" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-list-alt"></span> iP Showcase</span></a></li> <li><a href="https://nus-cs2103-ay2526s1.github.io/dashboards/contents/ip-progress.html" target="_blank" class="dropdown-item text-success"><span><span aria-hidden="true" class="fas fa-tasks"></span> iP Progress Dashboard</span></a></li> <li><a href="https://nus-cs2103-ay2526s1.github.io/dashboards/contents/ip-comments.html" target="_blank" class="dropdown-item"><span><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-comment" aria-hidden="true"><path fill-rule="evenodd" d="M2.75 2.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h2a.75.75 0 01.75.75v2.19l2.72-2.72a.75.75 0 01.53-.22h4.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25H2.75zM1 2.75C1 1.784 1.784 1 2.75 1h10.5c.966 0 1.75.784 1.75 1.75v7.5A1.75 1.75 0 0113.25 12H9.06l-2.573 2.573A1.457 1.457 0 014 13.543V12H2.75A1.75 1.75 0 011 10.25v-7.5z"></path></svg> iP Comments dashboard</span></a></li> <li><a href="https://nus-cs2103-ay2526s1.github.io/ip-dashboard/?search=&amp;sort=groupTitle&amp;sortWithin=title&amp;timeframe=commit&amp;mergegroup=&amp;groupSelect=groupByRepos&amp;breakdown=true&amp;viewRepoTags=true&amp;checkedFileTypes=java~md~fxml~sh~bat~gradle~txt" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-chart-area"></span> iP Code Dashboard</span></a></li> <hr> <span><strong> Team Project (tP):</strong></span> <li><a href="/website/admin/tp-overview.html" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span></span> Team Project Info</a></li> <li tags="m--cs2103 m--cs2113"><a href="https://github.com/nus-cs2103-AY2526S1/tp" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-code-branch"></span></span></span> tP Upstream Repo (AB3)</a></li> <li><a href="/website/admin/teamList.html" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-list-alt"></span> Team List</span></a></li> <li><a href="https://nus-cs2103-ay2526s1.github.io/dashboards/contents/tp-progress.html" target="_blank" class="dropdown-item text-success"><span><span aria-hidden="true" class="fas fa-tasks"></span> tP Progress Dashboard</span></a></li> <li><a href="https://nus-cs2103-ay2526s1.github.io/dashboards/contents/tp-comments.html" target="_blank" class="dropdown-item"><span><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-comment" aria-hidden="true"><path fill-rule="evenodd" d="M2.75 2.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h2a.75.75 0 01.75.75v2.19l2.72-2.72a.75.75 0 01.53-.22h4.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25H2.75zM1 2.75C1 1.784 1.784 1 2.75 1h10.5c.966 0 1.75.784 1.75 1.75v7.5A1.75 1.75 0 0113.25 12H9.06l-2.573 2.573A1.457 1.457 0 014 13.543V12H2.75A1.75 1.75 0 011 10.25v-7.5z"></path></svg> tP Comments Dashboard</span></a></li> <li><a href="https://nus-cs2103-ay2526s1.github.io/tp-dashboard/?search=&amp;sort=groupTitle&amp;sortWithin=title&amp;timeframe=commit&amp;mergegroup=&amp;groupSelect=groupByRepos&amp;breakdown=true&amp;checkedFileTypes=docs~functional-code~test-code~other" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-chart-area"></span> tP Code Dashboard</span></a></li><!--]--></ul><!--]--></li> <li tags="m--cs2103 m--cs2113"><a href="https://github.com/nus-cs2103-AY2526S1/forum/issues" class="nav-link"><span><strong>Forum</strong></span></a></li> <li class="dropdown nav-link algolia-no-index" data-v-154e37d3><!--[--><a role="button" class="dropdown-toggle nav-link" data-bs-toggle="dropdown" data-v-154e37d3><!--[--><strong>Other Links</strong><!--]--><span data-v-154e37d3></span></a><!--]--><!--[--><ul class="dropdown-menu" data-v-154e37d3><!--[--> <li tags="m--cs2103 m--cs2113"><a href="https://github.com/nus-cs2103-AY2526S1/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-bug"></span> Report Bugs</span></a></li> <li><a href="https://github.com/nus-cs2103-AY2526S1/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li> <li><a href="/website/admin/instructors.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li> <li><a href="https://canvas.nus.edu.sg/courses/77826/announcements" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li> <li><a href="https://canvas.nus.edu.sg/courses/77826/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> Files (handouts, submissions etc.)</span></a></li> <li tags="m--cs2113 m--cs2103"><a href="/website/admin/tutorials.html" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-calendar"></span> Tutorial Schedule</span></a></li> <li><a href="/website/_markbind/layouts/n/a" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-users-cog"></span> MS Teams link</span></a></li> <li><a href="/website/se-book-adapted/git-trail/index.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-route"></span> Git Learning Trail</span></a></li> <li tags="m--cs2103 m--cs2113 m--tic2002"><a href="https://se-education.org/guides/conventions/java/intermediate.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-code"></span> Java Coding Standard</span></a></li> <li tags="m--cs2103 m--cs2113"><a href="https://se-education.org/guides/conventions/git.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fab fa-git-square"></span> Git Conventions</span></a></li> <li tags="m--cs2103"><a href="/website/admin/uml-reference-sheet.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-diagram-project"></span> UML Reference Sheet</span></a></li><!--]--></ul><!--]--></li> <!--]--></ul></div><ul class="navbar-nav navbar-right" data-v-2dc82f13><!--[--><li class="nav-link"><form class="navbar-form"><div style="position:relative;" class="dropdown" data-v-00e26d0a><div id="algolia-search-input" data-v-00e26d0a></div><ul class="dropdown-menu search-dropdown-menu dropdown-menu-hidden dropdown-menu-end" data-v-00e26d0a><!--[--><!--]--></ul></div></form></li><!--]--></ul></div></nav><div style="display:none;" class="lower-navbar-container" data-v-2dc82f13><!--[--><!----><!----><!--]--></div></div></header> <div id="flex-body"><div id="content-wrapper" class="fixed-header-padding"><link rel="stylesheet" href="/website/book/css/textbook.css"> <link rel="stylesheet" href="/website/book/css/print.css"> <div class="website-content"><div id="title"><div><h1 id="error-handling"><span>Error handling</span><a class="fa fa-anchor" href="#error-handling" onclick="event.stopPropagation()"></a></h1></div></div> <div><small><span class="dimmed"><span><span aria-hidden="true" class="glyphicon glyphicon-print"></span></span> This is a <strong>printer-friendly</strong> version. It omits exercises, optional topics (i.e., four-star topics), and other extra content such as learning outcomes.</span></small></div> <div><h2 id="introduction"><span>Introduction</span><a class="fa fa-anchor" href="#introduction" onclick="event.stopPropagation()"></a></h2></div> <div class="indented-less"><div class="indented-less"><h4 id="what">What <span class="badge bg-light text-dark"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-flash"></span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span></small></small></span><a class="fa fa-anchor" href="#what" onclick="event.stopPropagation()"></a></h4> <div class="indented-less"><div><blockquote><p>Well-written applications include error-handling code that allows them to recover gracefully from unexpected errors. When an error occurs, the application may need to request user intervention, or it may be able to recover on its own. In extreme cases, the application may log the user off or shut down the system. -- <sub><a href="https://docs.microsoft.com/en-my/windows/win32/debug/error-handling">Microsoft</a></sub></p></blockquote></div></div></div></div> <div><h2 id="exceptions"><span>Exceptions</span><a class="fa fa-anchor" href="#exceptions" onclick="event.stopPropagation()"></a></h2></div> <div class="indented-less"><div class="indented-less"><h4 id="what-2">What <span class="badge bg-light text-dark"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-flash"></span></small></small></span><a class="fa fa-anchor" href="#what-2" onclick="event.stopPropagation()"></a></h4> <div class="indented-less"><div><p><strong>Exceptions are used to deal with <em>&#39;unusual&#39; but not entirely unexpected</em> situations</strong> that the program might encounter at runtime.</p> <div class="alert box-container seamless" style="" data-v-19514615><!--Icon and vertical divider for seamless header box--><!----><div class="header-and-body" data-v-19514615><!-- Header wrapper, not rendered if there is no header attribute --><!----><!-- Body wrapper --><div class="box-body-wrapper" data-v-19514615><!-- icon on the left, not shown if there is a header --><div class="icon-wrapper text-primary" style="" data-v-19514615><!--[--><i class="fas fa-atlas" data-v-19514615></i><!--]--></div><!-- Icon -- content divider for seamless boxes without the header attribute --><div class="alert-primary vertical-divider" aria-hidden="true" data-v-19514615></div><!-- Content wrapper --><div class="contents" style="" data-v-19514615><!--[--><div><p><strong>Exception</strong>:</p> <blockquote><p>The term <em>exception</em> is shorthand for the phrase &quot;exceptional event.&quot; An <em>exception</em> is an event, which occurs during the execution of a program, that disrupts the normal flow of the program&#39;s instructions. –- Java Tutorial (Oracle Inc.)</p></blockquote></div><!--]--></div><!-- dismiss button on the right, not shown if there is a header --><!----></div></div></div> <div class="alert box-container alert-default" style="" data-v-19514615><!--Icon and vertical divider for seamless header box--><!----><div class="header-and-body" data-v-19514615><!-- Header wrapper, not rendered if there is no header attribute --><!----><!-- Body wrapper --><div class="box-body-wrapper" data-v-19514615><!-- icon on the left, not shown if there is a header --><!----><!-- Icon -- content divider for seamless boxes without the header attribute --><!----><!-- Content wrapper --><div class="contents" style="" data-v-19514615><!--[--><p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Examples:</p> <ul><li>A network connection encounters a timeout due to a slow server.</li> <li>The code tries to read a file from the hard disk but the file is corrupted and cannot be read.</li></ul><!--]--></div><!-- dismiss button on the right, not shown if there is a header --><!----></div></div></div></div></div></div> <div class="indented-less"><h4 id="how">How <span class="badge bg-light text-dark"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-flash"></span></small></small></span><a class="fa fa-anchor" href="#how" onclick="event.stopPropagation()"></a></h4> <div class="indented-less"><div><p><strong>Most languages allow code that encountered an &quot;exceptional&quot; situation to encapsulate details of the situation in an <em>Exception</em> object and <em>throw</em>/<em>raise</em> that object so that another piece of code can <em>catch</em> it and deal with it.</strong> This is especially useful when the code that encountered the unusual situation does not know how to deal with it.</p> <p>The extract below from the <small><span style="opacity:0.5;"><span class="badge bg-secondary">-- Java Tutorial</span></span></small> (with slight adaptations) explains how exceptions are typically handled.</p> <div class="indented"><p><strong>When an error occurs at some point in the execution, the code being executed creates an <em>exception object</em> and hands it off to the runtime system.</strong> The exception object contains information about the error, including its type and the state of the program when the error occurred. Creating an exception object and handing it to the runtime system is called <em>throwing</em> an exception.</p> <p><strong>After a method throws an exception, the runtime system attempts to find something to handle it in the <span class="trigger" data-mb-component-type="tooltip" tabindex="0"><!----><!-- do not delete this comment, it is for the stray space issue (#2419)
+ --><!----></span>.</strong> The runtime system searches the call stack for a method that contains a block of code that can handle the exception. This block of code is called an <em>exception handler</em>. The search begins with the method in which the error occurred and proceeds through the call stack in the reverse order in which the methods were called. When an appropriate handler is found, the runtime system passes the exception to the handler. An exception handler is considered appropriate if the type of the exception object thrown matches the type that can be handled by the handler.</p> <p><strong>The exception handler chosen is said to <em>catch</em> the exception.</strong> If the runtime system exhaustively searches all the methods on the call stack without finding an appropriate exception handler, the program terminates.</p></div> <p>Advantages of exception handling in this way:</p> <ul><li>The ability to propagate error information through the call stack.</li> <li>The separation of code that deals with &#39;unusual&#39; situations from the code that does the &#39;usual&#39; work.</li></ul></div></div></div> <div class="indented-less"><h4 id="when">When <span class="badge bg-light text-dark"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-flash"></span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span></small></small></span><a class="fa fa-anchor" href="#when" onclick="event.stopPropagation()"></a></h4> <div class="indented-less"><div><p>In general, use exceptions only for &#39;unusual&#39; conditions. Use normal <code class="hljs inline no-lang">return</code> statements to pass control to the caller for conditions that are &#39;normal&#39;.</p></div></div></div></div> <div><h2 id="assertions"><span>Assertions</span><a class="fa fa-anchor" href="#assertions" onclick="event.stopPropagation()"></a></h2></div> <div class="indented-less"><div class="indented-less"><h4 id="what-3">What <span class="badge bg-light text-dark"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-flash"></span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span></small></small></span><a class="fa fa-anchor" href="#what-3" onclick="event.stopPropagation()"></a></h4> <div class="indented-less"><div><p><strong><em>Assertions</em> are used to define assumptions about the program state so that the runtime can verify them.</strong> An assertion failure indicates a possible bug in the code <span class="dimmed">because the code has resulted in a program state that violates an assumption about how the code <em>should</em> behave</span>.</p> <div class="alert box-container alert-default" style="" data-v-19514615><!--Icon and vertical divider for seamless header box--><!----><div class="header-and-body" data-v-19514615><!-- Header wrapper, not rendered if there is no header attribute --><!----><!-- Body wrapper --><div class="box-body-wrapper" data-v-19514615><!-- icon on the left, not shown if there is a header --><!----><!-- Icon -- content divider for seamless boxes without the header attribute --><!----><!-- Content wrapper --><div class="contents" style="" data-v-19514615><!--[--><p><span><span aria-hidden="true" class="fas fa-cube"></span></span> An assertion can be used to express something like <em>when the execution comes to this point, the variable <code class="hljs inline no-lang">v</code> cannot be null</em>.</p><!--]--></div><!-- dismiss button on the right, not shown if there is a header --><!----></div></div></div> <p><strong>If the runtime detects an <em>assertion failure</em>, it typically takes some drastic action</strong> such as terminating the execution with an error message. This is because an assertion failure indicates a possible bug and the sooner the execution stops, the safer it is.</p> <div class="alert box-container alert-default" style="" data-v-19514615><!--Icon and vertical divider for seamless header box--><!----><div class="header-and-body" data-v-19514615><!-- Header wrapper, not rendered if there is no header attribute --><!----><!-- Body wrapper --><div class="box-body-wrapper" data-v-19514615><!-- icon on the left, not shown if there is a header --><!----><!-- Icon -- content divider for seamless boxes without the header attribute --><!----><!-- Content wrapper --><div class="contents" style="" data-v-19514615><!--[--><p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In the Java code below, suppose you set an assertion that <code class="hljs inline no-lang">timeout</code> returned by <code class="hljs inline no-lang">Config.getTimeout()</code> is greater than <code class="hljs inline no-lang">0</code>. Now, if <code class="hljs inline no-lang">Config.getTimeout()</code> returns <code class="hljs inline no-lang">-1</code> in a specific execution of this line, the runtime can detect it as an <em>assertion failure</em> -- i.e., an assumption about the expected behavior of the code turned out to be wrong which could potentially be the result of a bug -- and take some drastic action such as terminating the execution.</p> <pre><code class="no-line-numbers hljs java"><span><span class="hljs-keyword">int</span> timeout = Config.getTimeout();
+</span><span><span class="hljs-comment">// set assertion here ...</span>
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre><!--]--></div><!-- dismiss button on the right, not shown if there is a header --><!----></div></div></div></div></div></div> <div class="indented-less"><h4 id="how-2">How <span class="badge bg-light text-dark"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-flash"></span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span></small></small></span><a class="fa fa-anchor" href="#how-2" onclick="event.stopPropagation()"></a></h4> <div class="indented-less"><div><p>Use the <code class="hljs inline no-lang">assert</code> keyword to define assertions.</p> <div class="alert box-container alert-default" style="" data-v-19514615><!--Icon and vertical divider for seamless header box--><!----><div class="header-and-body" data-v-19514615><!-- Header wrapper, not rendered if there is no header attribute --><!----><!-- Body wrapper --><div class="box-body-wrapper" data-v-19514615><!-- icon on the left, not shown if there is a header --><!----><!-- Icon -- content divider for seamless boxes without the header attribute --><!----><!-- Content wrapper --><div class="contents" style="" data-v-19514615><!--[--><p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This assertion will fail with the message <code class="hljs inline no-lang">x should be 0</code> if <code class="hljs inline no-lang">x</code> is not 0 at this point.</p> <pre><code class="hljs java"><span>x = getX();
+</span><span><span class="hljs-keyword">assert</span> x == <span class="hljs-number">0</span> : <span class="hljs-string">&quot;x should be 0&quot;</span>;
+</span><span>...
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre><!--]--></div><!-- dismiss button on the right, not shown if there is a header --><!----></div></div></div> <p><strong>Assertions can be disabled without modifying the code.</strong></p> <div class="alert box-container alert-default" style="" data-v-19514615><!--Icon and vertical divider for seamless header box--><!----><div class="header-and-body" data-v-19514615><!-- Header wrapper, not rendered if there is no header attribute --><!----><!-- Body wrapper --><div class="box-body-wrapper" data-v-19514615><!-- icon on the left, not shown if there is a header --><!----><!-- Icon -- content divider for seamless boxes without the header attribute --><!----><!-- Content wrapper --><div class="contents" style="" data-v-19514615><!--[--><p><span><span aria-hidden="true" class="fas fa-cube"></span></span> <code class="hljs inline no-lang">java -enableassertions HelloWorld</code> (or <code class="hljs inline no-lang">java -ea HelloWorld</code>) will run <code class="hljs inline no-lang">HelloWorld</code> with assertions enabled while <code class="hljs inline no-lang">java -disableassertions HelloWorld</code> will run it without verifying assertions.</p><!--]--></div><!-- dismiss button on the right, not shown if there is a header --><!----></div></div></div> <div class="alert box-container alert-danger" style="" data-v-19514615><!--Icon and vertical divider for seamless header box--><!----><div class="header-and-body" data-v-19514615><!-- Header wrapper, not rendered if there is no header attribute --><!----><!-- Body wrapper --><div class="box-body-wrapper" data-v-19514615><!-- icon on the left, not shown if there is a header --><div class="icon-wrapper" style="" data-v-19514615><!--[--><i class="fas fa-flag" data-v-19514615></i><!--]--></div><!-- Icon -- content divider for seamless boxes without the header attribute --><!----><!-- Content wrapper --><div class="contents" style="" data-v-19514615><!--[--><p><strong>Java disables assertions by default.</strong> This could create a situation where you think all assertions are being verified as <code class="hljs inline no-lang">true</code> while in fact they are not being verified at all. Therefore, remember to enable assertions when you run the program if you want them to be in effect.</p><!--]--></div><!-- dismiss button on the right, not shown if there is a header --><!----></div></div></div> <p><span class="badge rounded-pill bg-success text-white"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Enable assertions in IntelliJ (<a href="https://se-education.org/guides/tutorials/intellijUsefulSettings.html">how?</a>) and get an assertion to fail temporarily (e.g. insert an <code class="hljs inline no-lang">assert false</code> into the code temporarily) to confirm assertions are being verified.</p> <p><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> <strong>Java <code class="hljs inline no-lang">assert</code> vs JUnit assertions: Both check for a given condition but JUnit assertions are more powerful and customized for testing.</strong> In addition, JUnit assertions are not disabled by default. Use JUnit assertions in test code and Java <code class="hljs inline no-lang">assert</code> in functional code.</p></div></div></div> <div class="indented-less"><h4 id="when-2">When <span class="badge bg-light text-dark"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-flash"></span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span></small></small></span><a class="fa fa-anchor" href="#when-2" onclick="event.stopPropagation()"></a></h4> <div class="indented-less"><div><p><strong>It is recommended that assertions be used liberally in the code.</strong> Their impact on performance is low, and worth the additional safety they provide.</p> <p><strong>Do not use assertions to do <em>work</em></strong> because assertions can be disabled. If not, your program will stop working when assertions are not enabled.</p> <div class="alert box-container alert-default" style="" data-v-19514615><!--Icon and vertical divider for seamless header box--><!----><div class="header-and-body" data-v-19514615><!-- Header wrapper, not rendered if there is no header attribute --><!----><!-- Body wrapper --><div class="box-body-wrapper" data-v-19514615><!-- icon on the left, not shown if there is a header --><!----><!-- Icon -- content divider for seamless boxes without the header attribute --><!----><!-- Content wrapper --><div class="contents" style="" data-v-19514615><!--[--><p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The code below will not invoke the <code class="hljs inline no-lang">writeFile()</code> method when assertions are disabled. <span class="dimmed">If that method is performing some work that is necessary for your program, your program will not work correctly when assertions are disabled.</span></p> <pre><code class="no-line-numbers hljs java"><span>...
+</span><span><span class="hljs-function"><span class="hljs-keyword">assert</span> <span class="hljs-title">writeFile</span><span class="hljs-params">()</span> : &quot;File writing is supposed to return <span class="hljs-keyword">true</span>&quot;</span>;
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre><!--]--></div><!-- dismiss button on the right, not shown if there is a header --><!----></div></div></div> <p><strong>Assertions are suitable for verifying assumptions about <em>Internal Invariants</em>, <em>Control-Flow Invariants</em>,
+<em>Preconditions</em>, <em>Postconditions</em>, and <em>Class Invariants</em>.</strong> Refer to <a href="http://docs.oracle.com/javase/8/docs/technotes/guides/language/assert.html#usage">Programming with Assertions (second half)</a> to learn more.</p> <p><strong>Exceptions and assertions are two complementary ways of handling errors in software but they serve different purposes.</strong> Therefore, both assertions and exceptions should be used in code.</p> <ul><li>The raising of an exception indicates an unusual condition created by the user <span class="dimmed">(e.g.  user inputs an unacceptable input)</span> or the environment <span class="dimmed">(e.g., a file needed for the program is missing)</span>.</li> <li>An assertion failure indicates the programmer made a mistake in the code <span class="dimmed">(e.g., a null value is returned from a method that is not supposed to return null under any circumstances)</span>.</li></ul></div></div></div></div> <div><h2 id="logging"><span>Logging</span><a class="fa fa-anchor" href="#logging" onclick="event.stopPropagation()"></a></h2></div> <div class="indented-less"><div class="indented-less"><h4 id="what-4">What <span class="badge bg-light text-dark"><small><small><span style="color:DarkOrange;"><span aria-hidden="true" class="glyphicon glyphicon-flash"></span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span></span></small></small></span><a class="fa fa-anchor" href="#what-4" onclick="event.stopPropagation()"></a></h4> <div class="indented-less"><div><p><strong><em>Logging</em> is the deliberate recording of certain information during a program execution for future reference.</strong> Logs are typically written to a log file but it is also possible to log information in other ways <span class="dimmed">e.g. into a database or a remote server</span>.</p> <p><strong><em>Logging</em> can be useful for troubleshooting problems</strong>. A good logging system records some system information regularly. When bad things happen to a system <span class="dimmed">e.g. an unanticipated failure</span>, their associated log files may provide indications of what went wrong and actions can then be taken to prevent it from happening again.</p> <div alt="blackbox photo"><div class="alert box-container alert-default" style="" data-v-19514615><!--Icon and vertical divider for seamless header box--><!----><div class="header-and-body" data-v-19514615><!-- Header wrapper, not rendered if there is no header attribute --><!----><!-- Body wrapper --><div class="box-body-wrapper" data-v-19514615><!-- icon on the left, not shown if there is a header --><!----><!-- Icon -- content divider for seamless boxes without the header attribute --><!----><!-- Content wrapper --><div class="contents" style="" data-v-19514615><!--[--><p><span class="badge rounded-pill bg-success text-white"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> <strong>A log file is like the <span class="trigger" data-mb-component-type="tooltip" tabindex="0"><!----><!-- do not delete this comment, it is for the stray space issue (#2419)
+ --><!----></span> of an airplane</strong>; they don&#39;t prevent problems but they can be helpful in understanding what went wrong after the fact.</p> <div class="non-printable"><p><span class="image-wrapper" eager><img src="https://upload.wikimedia.org/wikipedia/commons/5/5b/Flight_data_recorder_displayed_at_HAL_Museum_7893.JPG" width="250" height="" loading="eager" class="img-fluid rounded"><span class="image-caption"><!--[--><br> <sub>source: <a href="https://upload.wikimedia.org/wikipedia/commons/5/5b/Flight_data_recorder_displayed_at_HAL_Museum_7893.JPG">https://commons.wikimedia.org</a></sub><!--]--></span></span></p></div><!--]--></div><!-- dismiss button on the right, not shown if there is a header --><!----></div></div></div></div></div></div></div> <div class="indented-less"><h4 id="how-3">How <span class="badge bg-light text-dark"><small><small><span style="color:DodgerBlue;"><span aria-hidden="true" class="glyphicon glyphicon-flash"></span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span></span></small></small></span><a class="fa fa-anchor" href="#how-3" onclick="event.stopPropagation()"></a></h4> <div class="indented-less"><div><p><strong>Most programming environments come with logging systems that allow sophisticated forms of logging.</strong> They have features such as the ability to enable and disable logging easily or to change the logging <span class="trigger" data-mb-component-type="tooltip" tabindex="0"><!----><!-- do not delete this comment, it is for the stray space issue (#2419)
+ --><!----></span>.</p> <div class="alert box-container alert-default" style="" data-v-19514615><!--Icon and vertical divider for seamless header box--><!----><div class="header-and-body" data-v-19514615><!-- Header wrapper, not rendered if there is no header attribute --><!----><!-- Body wrapper --><div class="box-body-wrapper" data-v-19514615><!-- icon on the left, not shown if there is a header --><!----><!-- Icon -- content divider for seamless boxes without the header attribute --><!----><!-- Content wrapper --><div class="contents" style="" data-v-19514615><!--[--><p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This sample Java code uses Java’s default logging mechanism.</p> <p>First, import the relevant Java package:</p> <pre><code class="no-line-numbers hljs java"><span><span class="hljs-keyword">import</span> java.util.logging.*;
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre><p>Next, create a <code class="hljs inline no-lang">Logger</code>:</p> <pre><code class="no-line-numbers hljs java"><span><span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> Logger logger = Logger.getLogger(<span class="hljs-string">&quot;Foo&quot;</span>);
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre><p>Now, you can use the <code class="hljs inline no-lang">Logger</code> object to log information. Note the use of a <span class="trigger" data-mb-component-type="popover" tabindex="0"><!----><!-- do not delete this comment, it is for the stray space issue (#2419)
+ --><!----></span>  for each message. When running the code, the logging level can be set to <code class="hljs inline no-lang">WARNING</code> so that log messages specified as having <code class="hljs inline no-lang">INFO</code> level (which is a lower level than <code class="hljs inline no-lang">WARNING</code>) will not be written to the log file at all.</p> <pre><code class="hljs java"><span><span class="hljs-comment">// log a message at INFO level</span>
+</span><span>logger.log(Level.INFO, <span class="hljs-string">&quot;going to start processing&quot;</span>);
+</span><span><span class="hljs-comment">// ...</span>
+</span><span>processInput();
+</span><span><span class="hljs-keyword">if</span> (error) {
+</span><span>    <span class="hljs-comment">// log a message at WARNING level</span>
+</span><span>    logger.log(Level.WARNING, <span class="hljs-string">&quot;processing error&quot;</span>, ex);
+</span><span>}
+</span><span><span class="hljs-comment">// ...</span>
+</span><span>logger.log(Level.INFO, <span class="hljs-string">&quot;end of processing&quot;</span>);
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre><!--]--></div><!-- dismiss button on the right, not shown if there is a header --><!----></div></div></div></div></div></div></div> <div><h2 id="defensive-programming"><span>Defensive programming</span><a class="fa fa-anchor" href="#defensive-programming" onclick="event.stopPropagation()"></a></h2></div> <div class="indented-less"><div class="indented-less"><h4 id="what-5">What <span class="badge bg-light text-dark"><small><small><span style="color:DarkOrange;"><span aria-hidden="true" class="glyphicon glyphicon-flash"></span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span></span></small></small></span><a class="fa fa-anchor" href="#what-5" onclick="event.stopPropagation()"></a></h4> <div class="indented-less"><div><p><strong>A defensive programmer codes under the assumption &quot;if you leave room for things to go wrong, they <em>will</em> go wrong&quot;.</strong> Therefore, a defensive programmer proactively tries to eliminate any room for things to go wrong.</p> <div class="alert box-container alert-default" style="" data-v-19514615><!--Icon and vertical divider for seamless header box--><!----><div class="header-and-body" data-v-19514615><!-- Header wrapper, not rendered if there is no header attribute --><!----><!-- Body wrapper --><div class="box-body-wrapper" data-v-19514615><!-- icon on the left, not shown if there is a header --><!----><!-- Icon -- content divider for seamless boxes without the header attribute --><!----><!-- Content wrapper --><div class="contents" style="" data-v-19514615><!--[--><p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider a method <code class="hljs inline no-lang">MainApp#getConfig()</code> that returns a <code class="hljs inline no-lang">Config</code> object containing configuration data. A typical implementation is given below:</p> <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MainApp</span> </span>{
+</span><span>    Config config;
+</span><span>    
+</span><span>    <span class="hljs-comment">/** Returns the config object */</span>
+</span><span>    <span class="hljs-function">Config <span class="hljs-title">getConfig</span><span class="hljs-params">()</span> </span>{
+</span><span>        <span class="hljs-keyword">return</span> config;
+</span><span>    }
+</span><span>}
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre><p>If the returned <code class="hljs inline no-lang">Config</code> object is not meant to be modified, a defensive programmer might use a more <em>defensive</em> implementation given below. <span class="dimmed">This is more defensive because even if the returned <code class="hljs inline no-lang">Config</code> object is modified (although it is not meant to be), it will not affect the <code class="hljs inline no-lang">config</code> object inside the <code class="hljs inline no-lang">MainApp</code> object.</span></p> <pre><code class="hljs java"><span>    <span class="hljs-comment">/** Returns a copy of the config object */</span>
+</span><span>    <span class="hljs-function">Config <span class="hljs-title">getConfig</span><span class="hljs-params">()</span> </span>{
+</span><span>        <span class="hljs-keyword">return</span> config.copy(); <span class="hljs-comment">// return a defensive copy</span>
+</span><span>    }
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre><!--]--></div><!-- dismiss button on the right, not shown if there is a header --><!----></div></div></div></div></div></div> <div class="indented-less"><h4 id="enforcing-compulsory-associations">Enforcing Compulsory Associations <span class="badge bg-light text-dark"><small><small><span style="color:DodgerBlue;"><span aria-hidden="true" class="glyphicon glyphicon-flash"></span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span></span></small></small></span><a class="fa fa-anchor" href="#enforcing-compulsory-associations" onclick="event.stopPropagation()"></a></h4> <div class="indented-less"><div><p>Consider two classes, <code class="hljs inline no-lang">Account</code> and <code class="hljs inline no-lang">Guarantor</code>, with an association as shown in the following diagram:</p> <div class="alert box-container alert-default" style="" data-v-19514615><!--Icon and vertical divider for seamless header box--><!----><div class="header-and-body" data-v-19514615><!-- Header wrapper, not rendered if there is no header attribute --><!----><!-- Body wrapper --><div class="box-body-wrapper" data-v-19514615><!-- icon on the left, not shown if there is a header --><!----><!-- Icon -- content divider for seamless boxes without the header attribute --><!----><!-- Content wrapper --><div class="contents" style="" data-v-19514615><!--[--><p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Example:</p> <span class="image-wrapper" eager><img src="/website/book/errorHandling/defensiveProgramming/compulsoryAssociations/images/accountGuarantor.png" width="" height="" loading="eager" class="img-fluid rounded"><span class="image-caption"><!--[--><!--]--></span></span> <p></p> <p>Here, the association is compulsory i.e., an <code class="hljs inline no-lang">Account</code> object should always be linked to a <code class="hljs inline no-lang">Guarantor</code>. One way to implement this is to simply use a reference variable, like this:</p> <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span> </span>{
+</span><span>    Guarantor guarantor;
+</span><span>
+</span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setGuarantor</span><span class="hljs-params">(Guarantor g)</span> </span>{
+</span><span>        guarantor = g;
+</span><span>    }
+</span><span>}
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre><p>However, what if someone else used the <code class="hljs inline no-lang">Account</code> class like this?</p> <pre><code class="hljs java"><span>Account a = <span class="hljs-keyword">new</span> Account();
+</span><span>a.setGuarantor(<span class="hljs-keyword">null</span>);
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre><p>This results in an <code class="hljs inline no-lang">Account</code> without a <code class="hljs inline no-lang">Guarantor</code>! In a real banking system, this could have serious consequences! The code here did not try to prevent such a thing from happening. You can make the code more defensive by proactively enforcing the multiplicity constraint, like this:</p> <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span> </span>{
+</span><span>    <span class="hljs-keyword">private</span> Guarantor guarantor;
+</span><span>
+</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Account</span><span class="hljs-params">(Guarantor g)</span> </span>{
+</span><span>        <span class="hljs-keyword">if</span> (g == <span class="hljs-keyword">null</span>) {
+</span><span>            stopSystemWithMessage(
+</span><span>                    <span class="hljs-string">&quot;multiplicity violated. Null Guarantor&quot;</span>);
+</span><span>        }
+</span><span>        guarantor = g;
+</span><span>    }
+</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setGuarantor</span><span class="hljs-params">(Guarantor g)</span> </span>{
+</span><span>        <span class="hljs-keyword">if</span> (g == <span class="hljs-keyword">null</span>) {
+</span><span>            stopSystemWithMessage(
+</span><span>                    <span class="hljs-string">&quot;multiplicity violated. Null Guarantor&quot;</span>);
+</span><span>        }
+</span><span>        guarantor = g;
+</span><span>    }
+</span><span>    <span class="hljs-comment">// ...</span>
+</span><span>}
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre><!--]--></div><!-- dismiss button on the right, not shown if there is a header --><!----></div></div></div></div></div></div> <div class="indented-less"><h4 id="when-3">When <span class="badge bg-light text-dark"><small><small><span style="color:DodgerBlue;"><span aria-hidden="true" class="glyphicon glyphicon-flash"></span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span></span></small></small></span><a class="fa fa-anchor" href="#when-3" onclick="event.stopPropagation()"></a></h4> <div class="indented-less"><div><p><strong>It is not necessary to be 100% defensive all the time.</strong> While defensive code may be less prone to be misused or abused, such code can also be more complicated and slower to run.</p> <p>The suitable degree of defensiveness depends on many factors such as:</p> <ul><li>How critical is the system?</li> <li>Will the code be used by programmers other than the author?</li> <li>The level of programming language support for defensive programming</li> <li>The overhead of being defensive</li></ul></div></div></div></div></div></div> <nav id="page-nav" class="fixed-header-padding" data-v-6b1b63d2><!--[--><div class="nav-component slim-scroll"></div><!--]--><!--v-if--></nav> <div class="scroll-top-button fa-lg d-print-none" style="display:none;bottom:2%;right:2%;position:fixed;" aria-hidden="true"><!--[--><i class="fas fa-arrow-circle-up"></i><!--]--></div></div> <footer><div class="text-center"><small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 6.0.2</a>, generated on Mon, 8 Sept 2025, 11:04:52 GMT+8]</small></div></footer><!--]--></div>
+</body><script src="/website/markbind/js/bootstrap-utility.min.js"></script>
+<script src="/website/markbind/js/polyfill.min.js"></script>
+<script src="/website/markbind/js/vue.global.prod.min.js"></script>
+<script src="/website/markbind/js/markbind.min.js"></script>
+<script src="errorHandling-printable.page-vue-render.js"></script>
+<script>
+  MarkBind.setup()
+</script>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122519234-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'UA-122519234-1');
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3.2.0/dist/umd/index.js"></script>
+    <script>
+    docsearch({
+      container: "#algolia-search-input",
+      appId: "3DU4XTBX4T",
+      apiKey: "772d7386c7a785f7a60fec5a096311ef",
+      indexName: "nus-tic2002-2020a",
+      searchParameters: {"facetFilters":[["site:nus-cs2103-ay2526s1.github.io"],["tags:admin","tags:se-book-adapted","tags:schedule"]]}
+    });
+  </script>
+    <script>
+    const style = document.createElement('style');
+    style.innerHTML = ".DocSearch-Container { z-index: 1002; position: fixed; }";
+    document.getElementsByTagName('head')[0].appendChild(style);
+  </script>
+  
+    <script>
+    function copyCodeBlock(element) {
+        const pre = element.parentElement.parentElement;
+        const codeElement = pre.querySelector('code');
+        const copyButtonBody = element.querySelector('.function-btn-body');
+        const tooltipText = element.querySelector(".tooltiptext");
+
+        // create dummy text element to select() the text field
+        const textElement = document.createElement('textarea');
+        textElement.value = codeElement.textContent;
+        document.body.appendChild(textElement);
+        textElement.select();
+
+        document.execCommand('copy');
+        document.body.removeChild(textElement);
+        copyButtonBody.innerHTML = `
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="18"
+    height="18"
+    viewBox="2 2 22 22"
+  >
+    <path d="M 19.28125 5.28125 L 9 15.5625 L 4.71875 11.28125 L 3.28125 12.71875 L 8.28125 17.71875 
+    L 9 18.40625 L 9.71875 17.71875 L 20.71875 6.71875 Z"></path>
+  </svg>
+`;
+        console.log("Running tooltip");
+        tooltipText.innerText  = `Copied!`;
+        setTimeout(() => {
+            copyButtonBody.innerHTML = `
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "/>
+    </g>
+</svg>
+`;
+            tooltipText.innerText  = `Copy`;
+        }, 3000);
+    }
+    </script>
+    <script>
+    function toggleCodeBlockWrap(element) {
+      const pre = element.parentElement.parentElement;
+      const tooltipText = element.querySelector(".tooltiptext");
+      const classList = pre.querySelector('code').classList; 
+      if (classList.contains('wrap')) {
+          classList.remove('wrap');
+          tooltipText.innerText  = `Wrap Text`;
+      } else {
+          classList.add('wrap')
+          tooltipText.innerText  = `Unwrap Text`;
+      }
+    }
+    </script>
+    <script src="/website/plugins/dataTable/datatables.min.js"></script>
+    
+  <script>
+    function getTableOptions(el) {
+      const options = {};
+      if ($(el).hasClass('sortable-table')) {
+        options.searching = false;
+        options.paging = false;
+        options.info = false;
+      } else if ($(el).hasClass('searchable-table')) {
+        options.ordering = false;
+        options.paging = false;
+        options.info = false;
+        options.dom = '<"row"<"col-sm-12"f>>' + '<"row"<"col-sm-12"t>>';
+      } else if ($(el).hasClass('sortable-searchable-table')) {
+        options.paging = false;
+        options.info = false;
+        options.dom = '<"row"<"col-sm-12"f>>' + '<"row"<"col-sm-12"t>>';
+      }
+      return options;
+    }
+
+    function initializeTables(tables) {
+      if (!tables || tables.length === 0) return;
+      tables.forEach(table => {
+        const options = getTableOptions(table);
+        $(table).DataTable(options);
+        $(table).addClass('dt-processed');
+      });
+    }
+
+    function setupTableObserver() {
+      const observer = new MutationObserver((mutations) => {
+        let newTables = [];
+        
+        mutations.forEach(mutation => {
+          if (mutation.addedNodes.length) {
+            mutation.addedNodes.forEach(node => {
+
+              if (node.nodeType === 1 && node.tagName === 'TABLE' && 
+                  !$(node).hasClass('dt-processed') &&
+                  ($(node).hasClass('sortable-table') || 
+                   $(node).hasClass('searchable-table') || 
+                   $(node).hasClass('sortable-searchable-table'))) {
+                newTables.push(node);
+              }
+              
+              if (node.nodeType === 1 && node.querySelectorAll) {
+                const tablesInNode = node.querySelectorAll(
+                'table.sortable-table:not(.dt-processed), ' +
+                'table.searchable-table:not(.dt-processed), ' +
+                'table.sortable-searchable-table:not(.dt-processed)');
+                if (tablesInNode.length) {
+                  newTables = [...newTables, ...tablesInNode];
+                }
+              }
+            });
+          }
+        });
+
+        if (newTables.length > 0) {
+          initializeTables(newTables);
+        }
+      });
+      
+      // Start observing the entire document for changes
+      observer.observe(document.body, {
+        childList: true,
+        subtree: true
+      });
+      
+      return observer;
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+      // Process any existing tables
+      const existingTables = document.querySelectorAll(
+        'table.sortable-table:not(.dt-processed), ' +
+        'table.searchable-table:not(.dt-processed), ' +
+        'table.sortable-searchable-table:not(.dt-processed)'
+      );
+      if (existingTables.length > 0) {
+        initializeTables(existingTables);
+      }
+      
+      setupTableObserver();
+    });
+
+  </script>
+
+    <script type="module">
+    window.mermaidPromise = null;
+    
+    const loadMermaid = () => {
+      if (window.mermaidPromise === null) {
+        window.mermaidPromise = import('https://unpkg.com/mermaid@11.7.0/dist/mermaid.esm.min.mjs')
+          .then(({ default: mermaid }) => {
+            mermaid.initialize({
+              startOnLoad: false,
+            });
+            console.log('Mermaid loaded successfully');
+            return mermaid;
+          })
+          .catch((error) => {
+            console.error('Mermaid failed to load:', error);
+            window.mermaidPromise = false;
+            return null;
+          });
+      }
+      return window.mermaidPromise;
+    };
+
+    const renderMermaidDiagrams = (elements) => {
+      if (!elements || elements.length === 0) {
+        return Promise.resolve();
+      }
+
+      return loadMermaid().then(mermaid => {
+        if (!mermaid) return;
+        return mermaid.run({ nodes: Array.from(elements) })
+          .catch(err => console.error('Error rendering mermaid diagrams:', err));
+      });
+    };
+
+    const setupMermaidObserver = () => {
+      const observer = new MutationObserver((mutations) => {
+        let newMermaidElements = [];
+        
+        mutations.forEach(mutation => {
+          if (mutation.addedNodes.length) {
+            mutation.addedNodes.forEach(node => {
+              if (node.nodeType === 1 && node.classList && 
+                  node.classList.contains('mermaid')) {
+                newMermaidElements.push(node);
+              }
+              
+              if (node.nodeType === 1 && node.querySelectorAll) {
+                const mermaidInNode = node.querySelectorAll('.mermaid');
+                if (mermaidInNode.length) {
+                  newMermaidElements = [...newMermaidElements, ...mermaidInNode];
+                }
+              }
+            });
+          }
+        });
+        
+        if (newMermaidElements.length > 0) {
+          renderMermaidDiagrams(newMermaidElements);
+        }
+      });
+      
+      observer.observe(document.body, {
+        childList: true,
+        subtree: true
+      });
+      
+      return observer;
+    };
+
+    // Initialize on DOM content loaded
+    document.addEventListener('DOMContentLoaded', () => {
+      const existingDiagrams = document.querySelectorAll('.mermaid');
+      if (existingDiagrams.length > 0) {
+        renderMermaidDiagrams(existingDiagrams);
+      }
+      
+      setupMermaidObserver();
+    });
+
+  </script>
+</html>

@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="generator" content="MarkBind 6.0.2">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><title>CS2103/T - Project Duke</title> <link rel="stylesheet" href="/website/markbind/css/bootstrap.min.css"> <link rel="stylesheet" href="/website/markbind/fontawesome/css/all.min.css"> <link rel="stylesheet" href="/website/markbind/glyphicons/css/bootstrap-glyphicons.min.css"> <link rel="stylesheet" href="/website/markbind/css/octicons.css"><link rel="stylesheet" href="/website/markbind/css/codeblock-light.min.css"><link rel="stylesheet" href="/website/markbind/css/markbind.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3.2.0/dist/style.css"><link rel="preconnect" href="https://3DU4XTBX4T-dsn.algolia.net" crossorigin><link rel="stylesheet" href="/website/plugins/codeBlockCopyButtons/codeBlockButtons.css"><link rel="stylesheet" href="/website/plugins/codeBlockWrapButtons/codeBlockButtons.css"><link rel="stylesheet" href="/website/plugins/dataTable/datatables.min.css"><link rel="stylesheet" href="/website/plugins/dataTable/datatables-additional.css"><link rel="stylesheet" href="/website/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css"><link rel="stylesheet" href="/website/plugins/markbind-plugin-tree/markbind-plugin-tree.css">
+    
+  <link rel="stylesheet" href="/website/css/main.css">
+  <link rel="stylesheet" href="/website/book/css/textbook.css">
+<link rel="icon" href="/website/favicon.ico"></head>
+<script>
+  const baseUrl = '/website'
+</script>
+<body  data-bs-spy="scroll" data-bs-target="#mb-page-nav" data-bs-offset="100" >
+<div id="app"><!--[--><header sticky><div placement="top" data-v-2dc82f13><nav class="navbar navbar-expand-md d-print-none navbar-dark bg-dark" data-v-2dc82f13><div class="container-fluid" data-v-2dc82f13><div class="navbar-left" data-v-2dc82f13><!--[--><a href="/website/index.html" title="Home" class="navbar-brand"><span class="badge rounded-pill bg-success">CS2103/T <small>2025 Aug-Nov</small></span></a><!--]--></div><div class="navbar-default" data-v-2dc82f13><ul class="navbar-nav me-auto mt-2 mt-lg-0" data-v-2dc82f13><!--[--> <li class="dropdown nav-link algolia-no-index" data-v-154e37d3><!--[--><a role="button" class="dropdown-toggle nav-link" data-bs-toggle="dropdown" data-v-154e37d3><!--[--><strong>Schedule</strong><!--]--><span data-v-154e37d3></span></a><!--]--><!--[--><ul class="dropdown-menu" data-v-154e37d3><!--[--> <li><a href="/website/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li> <li><a href="/website/schedule/week1/index.html" class="dropdown-item"><span><strong>Week 1</strong> [Mon, Aug 11th] </span></a></li> <li><a href="/website/schedule/week2/index.html" class="dropdown-item"><span><strong>Week 2</strong> [Mon, Aug 18th] </span></a></li> <li><a href="/website/schedule/week3/index.html" class="dropdown-item"><span><strong>Week 3</strong> [Mon, Aug 25th] </span></a></li> <li><a href="/website/schedule/week4/index.html" class="dropdown-item"><span><strong>Week 4</strong> [Mon, Sep 1st] </span></a></li> <li><a href="/website/schedule/week5/index.html" class="dropdown-item"><span><strong>Week 5</strong> [Mon, Sep 8th]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li> <li><a href="/website/schedule/week5/admin.html" class="dropdown-item">  ├ Week 5: <span><span aria-hidden="true" class="fas fa-info-circle"></span></span> <span><strong>Admin</strong></span></a></li> <li><a href="/website/schedule/week5/topics.html" class="dropdown-item">  ├ Week 5: <span><span aria-hidden="true" class="fas fa-book"></span></span> <span><strong>Topics</strong></span></a></li> <li><a href="/website/schedule/week5/project.html" class="dropdown-item">  ├ Week 5: <span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> <span><strong>Project</strong></span></a></li> <li><a href="/website/schedule/week5/tutorial.html" class="dropdown-item">  └ Week 5: <span><span aria-hidden="true" class="fas fa-chalkboard-teacher"></span></span> <span><strong>Tutorial</strong></span></a></li> <li><a href="/website/schedule/week6/index.html" class="dropdown-item"><span><strong>Week 6</strong> [Mon, Sep 15th] </span></a></li> <li><a href="/website/schedule/week7/index.html" class="dropdown-item"><span><strong>Week 7</strong> [Mon, Sep 29th] </span></a></li> <li><a href="/website/schedule/week8/index.html" class="dropdown-item"><span><strong>Week 8</strong> [Mon, Oct 6th] </span></a></li> <li><a href="/website/schedule/week9/index.html" class="dropdown-item"><span><strong>Week 9</strong> [Mon, Oct 13th] </span></a></li> <li><a href="/website/schedule/week10/index.html" class="dropdown-item"><span><strong>Week 10</strong> [Mon, Oct 20th] </span></a></li> <li><a href="/website/schedule/week11/index.html" class="dropdown-item"><span><strong>Week 11</strong> [Mon, Oct 27th] </span></a></li> <li><a href="/website/schedule/week12/index.html" class="dropdown-item"><span><strong>Week 12</strong> [Mon, Nov 3rd] </span></a></li> <li><a href="/website/schedule/week13/index.html" class="dropdown-item"><span><strong>Week 13</strong> [Mon, Nov 10th] </span></a></li><!--]--></ul><!--]--></li> <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li> <li class="dropdown nav-link algolia-no-index" data-v-154e37d3><!--[--><a role="button" class="dropdown-toggle nav-link" data-bs-toggle="dropdown" data-v-154e37d3><!--[--><strong>Admin Info</strong><!--]--><span data-v-154e37d3></span></a><!--]--><!--[--><ul class="dropdown-menu" data-v-154e37d3><!--[--> <li><a href="/website/admin/courseOverview.html" class="dropdown-item"><span>Course Overview </span></a></li> <li><a href="/website/admin/usingThisWebsite.html" class="dropdown-item"><span>Using this Website  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-danger"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>1</span></span></span></span></a></li> <li><a href="/website/admin/courseExpectations.html" class="dropdown-item"><span>Course Expectations  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></span></a></li> <li class="dropdown-submenu dropend algolia-no-index" data-v-154e37d3 data-v-1ebc3cbe><!--[--><a role="button" class="dropdown-item submenu-toggle" data-bs-toggle="dropdown" data-v-1ebc3cbe><!--[--><!--[--><strong>Course Structure</strong><!--]--><!--]--></a><!--]--><!--[--><ul class="dropdown-menu" data-v-1ebc3cbe><!--[--><!--[--> <li><a href="/website/admin/courseBriefings.html" class="dropdown-item"><span><small>Course Briefing Videos  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-info"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>3</span></span></span></small></span></a></li> <li><a href="/website/admin/weeklySchedule.html" class="dropdown-item"><span><small>Weekly Schedule  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-info"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>3</span></span></span></small></span></a></li> <li><a href="/website/admin/lectures.html" class="dropdown-item"><span><small>Weekly Briefings  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-info"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>3</span></span></span></small></span></a></li> <li><a href="/website/admin/tutorials.html" class="dropdown-item"><span><small>Tutorials  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li><!--]--><!--]--></ul><!--]--></li> <li><a href="/website/admin/instructors.html" class="dropdown-item"><span>Instructors  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-success"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>4</span></span></span></span></a></li> <li><a href="/website/admin/textbooks.html" class="dropdown-item"><span>Textbooks  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></span></a></li> <li><a href="/website/admin/programmingLanguages.html" class="dropdown-item"><span>Programming Language  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></span></a></li> <li><a href="/website/admin/standardsAndConventions.html" class="dropdown-item"><span>Standards/Conventions  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></span></a></li> <li class="dropdown-submenu dropend algolia-no-index" data-v-154e37d3 data-v-1ebc3cbe><!--[--><a role="button" class="dropdown-item submenu-toggle" data-bs-toggle="dropdown" data-v-1ebc3cbe><!--[--><!--[--><strong>Individual Project (iP)</strong><!--]--><!--]--></a><!--]--><!--[--><ul class="dropdown-menu" data-v-1ebc3cbe><!--[--><!--[--> <li><a href="/website/admin/ip-overview.html" class="dropdown-item"><span><small>iP (Individual Project): Overview  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/ip-w2.html" class="dropdown-item"><span><small>iP: Week 2  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/ip-w3.html" class="dropdown-item"><span><small>iP: Week 3  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/ip-w4.html" class="dropdown-item"><span><small>iP: Week 4  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/ip-w5.html" class="dropdown-item"><span><small>iP: Week 5  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/ip-w6.html" class="dropdown-item"><span><small>iP: Week 6  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-danger"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>1</span></span></span></small></span></a></li> <li><a href="/website/admin/ip-w7.html" class="dropdown-item"><span><small>iP: Week 7  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-success"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>4</span></span></span></small></span></a></li> <li><a href="/website/admin/ip-w8.html" class="dropdown-item"><span><small>iP: Week 8  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-danger"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>1</span></span></span></small></span></a></li> <li><a href="/website/admin/ip-grading.html" class="dropdown-item"><span><small>iP: Grading  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li><!--]--><!--]--></ul><!--]--></li> <li class="dropdown-submenu dropend algolia-no-index" data-v-154e37d3 data-v-1ebc3cbe><!--[--><a role="button" class="dropdown-item submenu-toggle" data-bs-toggle="dropdown" data-v-1ebc3cbe><!--[--><!--[--><strong>Team Project (tP)</strong><!--]--><!--]--></a><!--]--><!--[--><ul class="dropdown-menu" data-v-1ebc3cbe><!--[--><!--[--> <li><a href="/website/admin/tp-overview.html" class="dropdown-item"><span><small>tP (team project): Overview  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-expectations.html" class="dropdown-item"><span><small>tP: Expectations  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-timeline.html" class="dropdown-item"><span><small>tP: Timeline  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-info"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>3</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-constraints.html" class="dropdown-item"><span><small>tP: Constraints  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-teams.html" class="dropdown-item"><span><small>tP: Forming Teams  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-w3.html" class="dropdown-item"><span><small>tP Week 3: Kickoff  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-w4.html" class="dropdown-item"><span><small>tP Week 4: Set Direction  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-info"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>3</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-w5.html" class="dropdown-item"><span><small>tP Week 5: Gather Requirements  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-w6.html" class="dropdown-item"><span><small>tP Week 6: Define the MVP  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-w7.html" class="dropdown-item"><span><small>tP Week 7: Practice Iteration → v1.1  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-w8.html" class="dropdown-item"><span><small>tP Week 8: First Feature Increment → v1.2  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-info"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>3</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-w9.html" class="dropdown-item"><span><small>tP Week 9: MVP → v1.3  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-w10.html" class="dropdown-item"><span><small>tP Week 10: Alpha Version → v1.4  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-w11.html" class="dropdown-item"><span><small>tP Week 11: Release Candidate → v1.5  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-w12.html" class="dropdown-item"><span><small>tP Week 12: Public Release → v1.6  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-info"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>3</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-w13.html" class="dropdown-item"><span><small>tP Week 13: Post-Release Tasks  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-deliverables.html" class="dropdown-item"><span><small>tP: Deliverables  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-ped.html" class="dropdown-item"><span><small>tP: Practical Exam Dry Run  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-pe.html" class="dropdown-item"><span><small>tP: Practical Exam  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-grading.html" class="dropdown-item"><span><small>tP: Grading  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/tp-supervision.html" class="dropdown-item"><span><small>tP: Supervision/Guidance  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li><!--]--><!--]--></ul><!--]--></li> <li><a href="/website/admin/peerEvaluations.html" class="dropdown-item"><span>Peer Evaluations  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></span></a></li> <li><a href="/website/admin/tools.html" class="dropdown-item"><span>Tools  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-info"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>3</span></span></span></span></a></li> <li><a href="/website/admin/exams.html" class="dropdown-item"><span>Exams  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></span></a></li> <li><a href="/website/admin/participation.html" class="dropdown-item"><span>Participation Marks  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></span></a></li> <li><a href="/website/admin/gradeBreakdown.html" class="dropdown-item"><span>Grade Breakdown  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></span></a></li> <li class="dropdown-submenu dropend algolia-no-index" data-v-154e37d3 data-v-1ebc3cbe><!--[--><a role="button" class="dropdown-item submenu-toggle" data-bs-toggle="dropdown" data-v-1ebc3cbe><!--[--><!--[--><strong>Appendices</strong><!--]--><!--]--></a><!--]--><!--[--><ul class="dropdown-menu" data-v-1ebc3cbe><!--[--><!--[--> <li><a href="/website/admin/appendixA-principles.html" class="dropdown-item"><span><small>Apdx A: Course Principles  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-success"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>4</span></span></span></small></span></a></li> <li><a href="/website/admin/appendixB-policies.html" class="dropdown-item"><span><small>Apdx B: Course Policies  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-danger"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>1</span></span></span></small></span></a></li> <li><a href="/website/admin/appendixC-faq.html" class="dropdown-item"><span><small>Apdx C: FAQ  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-danger"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>1</span></span></span></small></span></a></li> <li><a href="/website/admin/appendixD-help.html" class="dropdown-item"><span><small>Apdx D: Getting Help  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-warning"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>2</span></span></span></small></span></a></li> <li><a href="/website/admin/appendixE-gitHub.html" class="dropdown-item"><span><small>Apdx E: Using GitHub  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-danger"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>1</span></span></span></small></span></a></li> <li><a href="/website/admin/appendixF-teamworkIssues.html" class="dropdown-item"><span><small>Apdx F: Handling Team Issues  <span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-success"><span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span>4</span></span></span></small></span></a></li><!--]--><!--]--></ul><!--]--></li><!--]--></ul><!--]--></li> <li class="dropdown nav-link algolia-no-index" tags="m--cs2103 m--cs2113" data-v-154e37d3><!--[--><a role="button" class="dropdown-toggle nav-link" data-bs-toggle="dropdown" data-v-154e37d3><!--[--><strong>Dashboards</strong><!--]--><span data-v-154e37d3></span></a><!--]--><!--[--><ul class="dropdown-menu" data-v-154e37d3><!--[--> <li><a href="https://nus-cs2103-ay2526s1.github.io/dashboards/contents/participation.html" class="dropdown-item text-success" target="_blank"><span><span aria-hidden="true" class="fas fa-trophy"></span> <strong>Participation</strong> dashboard</span></a></li> <li><a href="https://nus-cs2103-ay2526s1.github.io/dashboards/contents/forum-activities.html" class="dropdown-item" target="_blank"><span><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-comment" aria-hidden="true"><path fill-rule="evenodd" d="M2.75 2.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h2a.75.75 0 01.75.75v2.19l2.72-2.72a.75.75 0 01.53-.22h4.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25H2.75zM1 2.75C1 1.784 1.784 1 2.75 1h10.5c.966 0 1.75.784 1.75 1.75v7.5A1.75 1.75 0 0113.25 12H9.06l-2.573 2.573A1.457 1.457 0 014 13.543V12H2.75A1.75 1.75 0 011 10.25v-7.5z"></path></svg> <strong>Forum</strong> Dashboard</span></a></li> <hr> <span><strong> iP dashboards:</strong></span> <li><a href="https://nus-cs2103-ay2526s1.github.io/dashboards/contents/ip-progress.html" target="_blank" class="dropdown-item text-success"><span><span aria-hidden="true" class="fas fa-tasks"></span> iP Progress Dashboard</span></a></li> <li><a href="https://nus-cs2103-ay2526s1.github.io/dashboards/contents/ip-comments.html" target="_blank" class="dropdown-item"><span><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-comment" aria-hidden="true"><path fill-rule="evenodd" d="M2.75 2.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h2a.75.75 0 01.75.75v2.19l2.72-2.72a.75.75 0 01.53-.22h4.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25H2.75zM1 2.75C1 1.784 1.784 1 2.75 1h10.5c.966 0 1.75.784 1.75 1.75v7.5A1.75 1.75 0 0113.25 12H9.06l-2.573 2.573A1.457 1.457 0 014 13.543V12H2.75A1.75 1.75 0 011 10.25v-7.5z"></path></svg> iP Comments dashboard</span></a></li> <li><a href="https://nus-cs2103-ay2526s1.github.io/ip-dashboard/?search=&amp;sort=groupTitle&amp;sortWithin=title&amp;timeframe=commit&amp;mergegroup=&amp;groupSelect=groupByRepos&amp;breakdown=true&amp;viewRepoTags=true&amp;checkedFileTypes=java~md~fxml~sh~bat~gradle~txt" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-chart-area"></span> iP Code Dashboard</span></a></li> <hr> <span><strong> tP dashboards:</strong></span> <li><a href="https://nus-cs2103-ay2526s1.github.io/dashboards/contents/tp-progress.html" target="_blank" class="dropdown-item text-success"><span><span aria-hidden="true" class="fas fa-tasks"></span> tP Progress Dashboard</span></a></li> <li><a href="https://nus-cs2103-ay2526s1.github.io/dashboards/contents/tp-comments.html" target="_blank" class="dropdown-item"><span><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-comment" aria-hidden="true"><path fill-rule="evenodd" d="M2.75 2.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h2a.75.75 0 01.75.75v2.19l2.72-2.72a.75.75 0 01.53-.22h4.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25H2.75zM1 2.75C1 1.784 1.784 1 2.75 1h10.5c.966 0 1.75.784 1.75 1.75v7.5A1.75 1.75 0 0113.25 12H9.06l-2.573 2.573A1.457 1.457 0 014 13.543V12H2.75A1.75 1.75 0 011 10.25v-7.5z"></path></svg> tP Comments Dashboard</span></a></li> <li><a href="https://nus-cs2103-ay2526s1.github.io/tp-dashboard/?search=&amp;sort=groupTitle&amp;sortWithin=title&amp;timeframe=commit&amp;mergegroup=&amp;groupSelect=groupByRepos&amp;breakdown=true&amp;checkedFileTypes=docs~functional-code~test-code~other" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-chart-area"></span> tP Code Dashboard</span></a></li><!--]--></ul><!--]--></li> <li class="dropdown nav-link algolia-no-index" tags="m--cs2103 m--cs2113" data-v-154e37d3><!--[--><a role="button" class="dropdown-toggle nav-link" data-bs-toggle="dropdown" data-v-154e37d3><!--[--><strong>Project Links</strong><!--]--><span data-v-154e37d3></span></a><!--]--><!--[--><ul class="dropdown-menu" data-v-154e37d3><!--[--> <span><strong> Individual Project (iP):</strong></span> <li><a href="/website/admin/ip-overview.html" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span></span> Individual Project Info</a></li> <li><a href="https://github.com/nus-cs2103-AY2526S1/ip" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-code-branch"></span></span></span> iP Upstream Repo</a></li> <li tags="m--cs2103"><a href="/website/admin/ip-showcase.html" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-list-alt"></span> iP Showcase</span></a></li> <li><a href="https://nus-cs2103-ay2526s1.github.io/dashboards/contents/ip-progress.html" target="_blank" class="dropdown-item text-success"><span><span aria-hidden="true" class="fas fa-tasks"></span> iP Progress Dashboard</span></a></li> <li><a href="https://nus-cs2103-ay2526s1.github.io/dashboards/contents/ip-comments.html" target="_blank" class="dropdown-item"><span><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-comment" aria-hidden="true"><path fill-rule="evenodd" d="M2.75 2.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h2a.75.75 0 01.75.75v2.19l2.72-2.72a.75.75 0 01.53-.22h4.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25H2.75zM1 2.75C1 1.784 1.784 1 2.75 1h10.5c.966 0 1.75.784 1.75 1.75v7.5A1.75 1.75 0 0113.25 12H9.06l-2.573 2.573A1.457 1.457 0 014 13.543V12H2.75A1.75 1.75 0 011 10.25v-7.5z"></path></svg> iP Comments dashboard</span></a></li> <li><a href="https://nus-cs2103-ay2526s1.github.io/ip-dashboard/?search=&amp;sort=groupTitle&amp;sortWithin=title&amp;timeframe=commit&amp;mergegroup=&amp;groupSelect=groupByRepos&amp;breakdown=true&amp;viewRepoTags=true&amp;checkedFileTypes=java~md~fxml~sh~bat~gradle~txt" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-chart-area"></span> iP Code Dashboard</span></a></li> <hr> <span><strong> Team Project (tP):</strong></span> <li><a href="/website/admin/tp-overview.html" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span></span> Team Project Info</a></li> <li tags="m--cs2103 m--cs2113"><a href="https://github.com/nus-cs2103-AY2526S1/tp" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-code-branch"></span></span></span> tP Upstream Repo (AB3)</a></li> <li><a href="/website/admin/teamList.html" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-list-alt"></span> Team List</span></a></li> <li><a href="https://nus-cs2103-ay2526s1.github.io/dashboards/contents/tp-progress.html" target="_blank" class="dropdown-item text-success"><span><span aria-hidden="true" class="fas fa-tasks"></span> tP Progress Dashboard</span></a></li> <li><a href="https://nus-cs2103-ay2526s1.github.io/dashboards/contents/tp-comments.html" target="_blank" class="dropdown-item"><span><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-comment" aria-hidden="true"><path fill-rule="evenodd" d="M2.75 2.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h2a.75.75 0 01.75.75v2.19l2.72-2.72a.75.75 0 01.53-.22h4.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25H2.75zM1 2.75C1 1.784 1.784 1 2.75 1h10.5c.966 0 1.75.784 1.75 1.75v7.5A1.75 1.75 0 0113.25 12H9.06l-2.573 2.573A1.457 1.457 0 014 13.543V12H2.75A1.75 1.75 0 011 10.25v-7.5z"></path></svg> tP Comments Dashboard</span></a></li> <li><a href="https://nus-cs2103-ay2526s1.github.io/tp-dashboard/?search=&amp;sort=groupTitle&amp;sortWithin=title&amp;timeframe=commit&amp;mergegroup=&amp;groupSelect=groupByRepos&amp;breakdown=true&amp;checkedFileTypes=docs~functional-code~test-code~other" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-chart-area"></span> tP Code Dashboard</span></a></li><!--]--></ul><!--]--></li> <li tags="m--cs2103 m--cs2113"><a href="https://github.com/nus-cs2103-AY2526S1/forum/issues" class="nav-link"><span><strong>Forum</strong></span></a></li> <li class="dropdown nav-link algolia-no-index" data-v-154e37d3><!--[--><a role="button" class="dropdown-toggle nav-link" data-bs-toggle="dropdown" data-v-154e37d3><!--[--><strong>Other Links</strong><!--]--><span data-v-154e37d3></span></a><!--]--><!--[--><ul class="dropdown-menu" data-v-154e37d3><!--[--> <li tags="m--cs2103 m--cs2113"><a href="https://github.com/nus-cs2103-AY2526S1/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-bug"></span> Report Bugs</span></a></li> <li><a href="https://github.com/nus-cs2103-AY2526S1/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li> <li><a href="/website/admin/instructors.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li> <li><a href="https://canvas.nus.edu.sg/courses/77826/announcements" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li> <li><a href="https://canvas.nus.edu.sg/courses/77826/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> Files (handouts, submissions etc.)</span></a></li> <li tags="m--cs2113 m--cs2103"><a href="/website/admin/tutorials.html" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-calendar"></span> Tutorial Schedule</span></a></li> <li><a href="/website/_markbind/layouts/n/a" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-users-cog"></span> MS Teams link</span></a></li> <li><a href="/website/se-book-adapted/git-trail/index.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-route"></span> Git Learning Trail</span></a></li> <li tags="m--cs2103 m--cs2113 m--tic2002"><a href="https://se-education.org/guides/conventions/java/intermediate.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-code"></span> Java Coding Standard</span></a></li> <li tags="m--cs2103 m--cs2113"><a href="https://se-education.org/guides/conventions/git.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fab fa-git-square"></span> Git Conventions</span></a></li> <li tags="m--cs2103"><a href="/website/admin/uml-reference-sheet.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-diagram-project"></span> UML Reference Sheet</span></a></li><!--]--></ul><!--]--></li> <!--]--></ul></div><ul class="navbar-nav navbar-right" data-v-2dc82f13><!--[--><li class="nav-link"><form class="navbar-form"><div style="position:relative;" class="dropdown" data-v-00e26d0a><div id="algolia-search-input" data-v-00e26d0a></div><ul class="dropdown-menu search-dropdown-menu dropdown-menu-hidden dropdown-menu-end" data-v-00e26d0a><!--[--><!--]--></ul></div></form></li><!--]--></ul></div></nav><div style="display:none;" class="lower-navbar-container" data-v-2dc82f13><!--[--><!----><!----><!--]--></div></div></header> <div id="flex-body"><nav id="site-nav" class="fixed-header-padding" data-v-6b1b63d2><!--[--><div class="site-nav-top"><div class="font-weight-bold mb-2" style="font-size:1.25rem;">SE Textbook</div></div> <div class="nav-component slim-scroll"><div><div class="site-nav-root"><!--[--><ul class="site-nav-list site-nav-list-root" data-v-6b1b63d2><!--[--><li><div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/index.html">Home <span aria-hidden="true" class="glyphicon glyphicon-home"></span>, printable versions <span><span aria-hidden="true" class="glyphicon glyphicon-print"></span></span></a></div></li> <li><div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><strong>Software Engineering</strong> <div class="site-nav-dropdown-btn-container"><i class="site-nav-dropdown-btn-icon" onclick="handleSiteNavClick(this.parentNode.parentNode, false); event.stopPropagation();"><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div></div><ul class="site-nav-dropdown-container site-nav-list"><li><div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/softwareEngineering.html">Software Engineering</a></div></li></ul></li> <li><div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><strong>Programming Paradigms</strong> <div class="site-nav-dropdown-btn-container"><i class="site-nav-dropdown-btn-icon" onclick="handleSiteNavClick(this.parentNode.parentNode, false); event.stopPropagation();"><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div></div><ul class="site-nav-dropdown-container site-nav-list"><li><div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/oop.html">Object-Oriented Programming</a></div></li></ul></li> <li><div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><strong>Requirements</strong> <div class="site-nav-dropdown-btn-container"><i class="site-nav-dropdown-btn-icon" onclick="handleSiteNavClick(this.parentNode.parentNode, false); event.stopPropagation();"><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div></div><ul class="site-nav-dropdown-container site-nav-list"><li><div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/requirements.html">Requirements</a></div></li> <li><div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/gatheringRequirements.html">Gathering Requirements</a></div></li> <li><div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/specifyingRequirements.html">Specifying Requirements</a></div></li></ul></li> <li><div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><strong>Design</strong> <div class="site-nav-dropdown-btn-container"><i class="site-nav-dropdown-btn-icon" onclick="handleSiteNavClick(this.parentNode.parentNode, false); event.stopPropagation();"><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div></div><ul class="site-nav-dropdown-container site-nav-list"><li><div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/design.html">Software Design</a></div></li> <li><div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/designFundamentals.html">Design Fundamentals</a></div></li> <li><div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/modeling.html">Modeling (Using UML)</a></div></li> <li><div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/architecture.html">Software Architecture</a></div></li> <li><div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/designPatterns.html">Software Design Patterns</a></div></li> <li><div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/designApproaches.html">Design Approaches</a></div></li></ul></li> <li><div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><strong>Implementation</strong> <div class="site-nav-dropdown-btn-container"><i class="site-nav-dropdown-btn-icon" onclick="handleSiteNavClick(this.parentNode.parentNode, false); event.stopPropagation();"><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div></div><ul class="site-nav-dropdown-container site-nav-list"><li><div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/ides.html">IDEs</a></div></li> <li><div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/codeQuality.html">Code Quality</a></div></li> <li><div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/refactoring.html">Refactoring</a></div></li> <li><div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/documentation.html">Documentation</a></div></li> <li><div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/errorHandling.html">Error Handling</a></div></li> <li><div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/integration.html">Integration</a></div></li> <li><div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/reuse.html">Reuse</a></div></li></ul></li> <li><div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><strong>Quality Assurance</strong> <div class="site-nav-dropdown-btn-container"><i class="site-nav-dropdown-btn-icon" onclick="handleSiteNavClick(this.parentNode.parentNode, false); event.stopPropagation();"><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div></div><ul class="site-nav-dropdown-container site-nav-list"><li><div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/qualityAssurance.html">Quality Assurance</a></div></li> <li><div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/testing.html">Testing</a></div></li> <li><div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/testCaseDesign.html">Test Case Design</a></div></li></ul></li> <li><div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><strong>Project Management</strong> <div class="site-nav-dropdown-btn-container"><i class="site-nav-dropdown-btn-icon" onclick="handleSiteNavClick(this.parentNode.parentNode, false); event.stopPropagation();"><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div></div><ul class="site-nav-dropdown-container site-nav-list"><li><div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/gitAndGithub.html">Revision Control (Using Git &amp; GitHub)</a></div></li> <li><div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/processModels.html">SDLC Process Models</a></div></li> <li><div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/projectPlanning.html">Project Planning</a></div></li> <li><div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/teamwork.html">Teamwork</a></div></li></ul></li> <li><div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><strong>Principles</strong> <div class="site-nav-dropdown-btn-container"><i class="site-nav-dropdown-btn-icon" onclick="handleSiteNavClick(this.parentNode.parentNode, false); event.stopPropagation();"><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div></div><ul class="site-nav-dropdown-container site-nav-list"><li><div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/principles.html">Principles</a></div></li></ul></li> <li><div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)">Supplementary
+
+<div class="site-nav-dropdown-btn-container"><i class="site-nav-dropdown-btn-icon" onclick="handleSiteNavClick(this.parentNode.parentNode, false); event.stopPropagation();"><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div></div><ul class="site-nav-dropdown-container site-nav-list"><li><div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/cppToJava.html">C++ to Java</a></div></li> <li><div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/git-trail/index.html">Git Learning Trail</a></div></li> <li><div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/projectDuke/index.html">Project Duke</a></div></li> <li><div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/common/exercises.html">Combined Exercises</a></div></li> <li><div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/common/definitions.html">List of Definitions</a></div></li></ul></li><!--]--><!--v-if--></ul><!--]--></div></div></div><!--]--><!--v-if--></nav> <div id="content-wrapper" class="fixed-header-padding"><link rel="stylesheet" href="/website/book/css/textbook.css"> <div class="website-content"><div><div id="intro"><h1 id="project-duke">Project Duke<a class="fa fa-anchor" href="#project-duke" onclick="event.stopPropagation()"></a></h1> <div class="lead"><span class="image-wrapper float-start border me-2 mt-2 p1 bg-white" eager><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Duke_%28Java_mascot%29_waving.svg/226px-Duke_%28Java_mascot%29_waving.svg.png" width="60" height="" loading="eager" class="img-fluid rounded"><span class="image-caption"><!--[--><p><small><small><strong>Duke</strong>, the Java Mascot<br>[<a href="https://en.wikipedia.org/wiki/File:Duke_(Java_mascot)_waving.svg">credit: Wikipedia</a>]</small></small></p><!--]--></span></span><p></p> <p><strong>Project Duke is an educational software project designed to take you through the steps of building a small software <em>incrementally</em></strong>, while applying as many Java and SE techniques as possible along the way.</p></div> <p><strong>The project aims to build a product named <em>Duke</em>, a Personal Assistant Chatbot that helps a person to keep track of various things.</strong> <span class="dimmed">The name <em>Duke</em> was chosen as a placeholder name, in honor of <a href="https://www.oracle.com/java/duke.html">Duke, the Java Mascot</a>.</span></p> <p>Here is a sample interaction with Duke:</p> <pre><code class="no-line-numbers hljs"><span>    ____________________________________________________________
+</span><span>      ____        _
+</span><span>     |  _ \ _   _| | _____
+</span><span>     | | | | | | | |/ / _ \
+</span><span>     | |_| | |_| |   &lt;  __/
+</span><span>     |____/ \__,_|_|\_\___|
+</span><span>
+</span><span>     Hello! I&#39;m Duke
+</span><span>     What can I do for you?
+</span><span>    ____________________________________________________________
+</span><span>
+</span><span>list
+</span><span>    ____________________________________________________________
+</span><span>     Here are the tasks in your list:
+</span><span>     1.[T][X] read book
+</span><span>     2.[D][ ] return book (by: June 6th)
+</span><span>     3.[E][ ] project meeting (from: Aug 6th 2pm to: 4pm)
+</span><span>     4.[T][X] join sports club
+</span><span>    ____________________________________________________________
+</span><span>
+</span><span>todo borrow book
+</span><span>    ____________________________________________________________
+</span><span>     Got it. I&#39;ve added this task:
+</span><span>       [T][ ] borrow book
+</span><span>     Now you have 5 tasks in the list.
+</span><span>    ____________________________________________________________
+</span><span>
+</span><span>
+</span><span>deadline return book /by Sunday
+</span><span>    ____________________________________________________________
+</span><span>     Got it. I&#39;ve added this task:
+</span><span>       [D][ ] return book (by: Sunday)
+</span><span>     Now you have 6 tasks in the list.
+</span><span>    ____________________________________________________________
+</span><span>
+</span><span>mark 2
+</span><span>    ____________________________________________________________
+</span><span>     Nice! I&#39;ve marked this task as done:
+</span><span>       [D][X] return book (by: June 6th)
+</span><span>    ____________________________________________________________
+</span><span>
+</span><span>blah
+</span><span>    ____________________________________________________________
+</span><span>     OOPS!!! I&#39;m sorry, but I don&#39;t know what that means :-(
+</span><span>    ____________________________________________________________
+</span><span>
+</span><span>bye
+</span><span>    ____________________________________________________________
+</span><span>     Bye. Hope to see you again soon!
+</span><span>    ____________________________________________________________
+</span><span>
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre><p><span class="badge rounded-pill bg-success text-white"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> <strong>You are <mark>encouraged to give your chatbot another name (and a different personality if you wish)</mark></strong>, to differentiate yours from others&#39;. In the case of the latter, please do not use slang/words that some others in the class might not know, and also avoid offensive language.</p> <div id="increments_summary"><p>The project consists of the following <em>increments</em>:</p> <ul><li><strong>Levels</strong>: A series of features, meant to be added to Duke in the given order, although some can be skipped. These have been named <code class="hljs inline no-lang">Level 1</code> to <code class="hljs inline no-lang">Level 10</code> to indicate how each makes the product progressively &quot;level up&quot;.</li> <li><strong>Extensions:</strong> <ul><li><span class="large"><span class="badge rounded-pill bg-primary">Category A</span></span> These are internal/feature enhancements meant to help you practice a specific Java or an SE technique.</li> <li><span class="large"><span class="badge rounded-pill bg-info">Category B</span></span> These are enhancements related to task tracking.</li> <li><span class="large"><span class="badge rounded-pill bg-success">Category C</span></span> These are enhancements, not specifically related to task tracking.</li> <li><span class="large"><span class="badge rounded-pill bg-danger">Category D</span></span> Each of these adds the ability to track another type of entities.</li></ul></li></ul></div></div> <h2 id="levels"><div class="text-white bg-dark p-1">Levels</div><a class="fa fa-anchor" href="#levels" onclick="event.stopPropagation()"></a></h2> <div id="Level-0"><span><span class="thumb-wrapper float-start bg-dark me-2 mt-2" style="font-size:40px;color:white;"><img class="thumb-image" width="" height="" alt=""><!--[--><span aria-hidden="true" class="fas fa-grin-hearts"></span><!--]--></span></span> <h3 id="level-0-rename-greet-exit">Level 0. Rename, Greet, Exit<a class="fa fa-anchor" href="#level-0-rename-greet-exit" onclick="event.stopPropagation()"></a></h3> <p><strong>(a) Give your chatbot a new name</strong>, to differentiate it from the placeholder name <code class="hljs inline no-lang">Duke</code>.<br> <strong>Avoid these common choices</strong> as well: <code class="hljs inline no-lang">Chatty</code>, <code class="hljs inline no-lang">Jarvis</code>, <code class="hljs inline no-lang">ChatBot</code>, <code class="hljs inline no-lang">Chad</code></p> <p><strong>(b) Implement an initial <em>skeletal</em> version</strong> of it that simply greets the user and exits.
+<br>
+Example:</p> <pre><code class="no-line-numbers hljs"><span>____________________________________________________________
+</span><span> Hello! I&#39;m [YOUR CHATBOT NAME]
+</span><span> What can I do for you?
+</span><span>____________________________________________________________
+</span><span> Bye. Hope to see you again soon!
+</span><span>____________________________________________________________
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre><ul><li>Horizontal lines are optional.</li> <li>Recommended to rename <code class="hljs inline no-lang">Duke.java</code> to match the chatbot name you selected, and remove all traces of <code class="hljs inline no-lang">Duke</code> from the source code.</li></ul></div><hr> <div id="Level-1"><span><span class="thumb-wrapper float-start bg-dark me-2 mt-2" style="font-size:40px;color:white;"><img class="thumb-image" width="" height="" alt=""><!--[--><span aria-hidden="true" class="fas fa-comments"></span><!--]--></span></span> <h3 id="level-1-echo">Level 1. Echo<a class="fa fa-anchor" href="#level-1-echo" onclick="event.stopPropagation()"></a></h3> <p>Improve the <em>skeletal</em> version of Duke so that it echos commands entered by the user, and exits when the user types the command <code class="hljs inline no-lang">bye</code>.
+<br>
+Example:</p> <pre><code class="no-line-numbers hljs"><span>    ____________________________________________________________
+</span><span>     Hello! I&#39;m [YOUR CHATBOT NAME]
+</span><span>     What can I do for you?
+</span><span>    ____________________________________________________________
+</span><span>
+</span><span>list
+</span><span>    ____________________________________________________________
+</span><span>     list
+</span><span>    ____________________________________________________________
+</span><span>
+</span><span>blah
+</span><span>    ____________________________________________________________
+</span><span>     blah
+</span><span>    ____________________________________________________________
+</span><span>
+</span><span>bye
+</span><span>    ____________________________________________________________
+</span><span>     Bye. Hope to see you again soon!
+</span><span>    ____________________________________________________________
+</span><span>
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre><ul><li>The indentations are optional.</li></ul> <div class="alert box-container seamless" style="" data-v-19514615><!--Icon and vertical divider for seamless header box--><!----><div class="header-and-body" data-v-19514615><!-- Header wrapper, not rendered if there is no header attribute --><!----><!-- Body wrapper --><div class="box-body-wrapper" data-v-19514615><!-- icon on the left, not shown if there is a header --><div class="icon-wrapper text-success" style="" data-v-19514615><!--[--><i class="fas fa-lightbulb" data-v-19514615></i><!--]--></div><!-- Icon -- content divider for seamless boxes without the header attribute --><div class="alert-success vertical-divider" aria-hidden="true" data-v-19514615></div><!-- Content wrapper --><div class="contents" style="" data-v-19514615><!--[--><p><strong>You are strongly encouraged to customize the chatbot</strong>: In addition to the command/display formats, you can even customize the personality of the chatbot to make your chatbot unique.</p><!--]--></div><!-- dismiss button on the right, not shown if there is a header --><!----></div></div></div></div><hr> <div id="Level-2"><span><span class="thumb-wrapper float-start bg-dark me-2 mt-2" style="font-size:40px;color:white;"><img class="thumb-image" width="" height="" alt=""><!--[--><span aria-hidden="true" class="fas fa-list"></span><!--]--></span></span> <h3 id="level-2-add-list">Level 2. Add, List<a class="fa fa-anchor" href="#level-2-add-list" onclick="event.stopPropagation()"></a></h3> <p>Add the ability to store whatever text entered by the user and display them back to the user when requested.</p> <p>Example:</p> <pre><code class="no-line-numbers hljs"><span>    ____________________________________________________________
+</span><span>     Hello! I&#39;m [YOUR CHATBOT NAME]
+</span><span>     What can I do for you?
+</span><span>    ____________________________________________________________
+</span><span>
+</span><span>read book
+</span><span>    ____________________________________________________________
+</span><span>     added: read book
+</span><span>    ____________________________________________________________
+</span><span>
+</span><span>return book
+</span><span>    ____________________________________________________________
+</span><span>     added: return book
+</span><span>    ____________________________________________________________
+</span><span>
+</span><span>list
+</span><span>    ____________________________________________________________
+</span><span>     1. read book
+</span><span>     2. return book
+</span><span>    ____________________________________________________________
+</span><span>bye
+</span><span>    ____________________________________________________________
+</span><span>     Bye. Hope to see you again soon!
+</span><span>    ____________________________________________________________
+</span><span>
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre><ul><li>There is no need to save the data to the hard disk.</li> <li>Assume there will be no more than 100 tasks. If you wish, you may use a fixed size array (e.g., <code class="hljs inline no-lang">String[100]</code>) to store the items.</li></ul></div><hr> <div id="Level-3"><span><span class="thumb-wrapper float-start bg-dark me-2 mt-2" style="font-size:40px;color:white;"><img class="thumb-image" width="" height="" alt=""><!--[--><span aria-hidden="true" class="fas fa-check"></span><!--]--></span></span> <h3 id="level-3-mark-as-done">Level 3. Mark as Done<a class="fa fa-anchor" href="#level-3-mark-as-done" onclick="event.stopPropagation()"></a></h3> <p>Add the ability to mark tasks as <em>done</em>. Optionally, add the ability to change the status back to <em>not done</em>.<br><br></p> <pre><code class="no-line-numbers hljs"><span>list
+</span><span>    ____________________________________________________________
+</span><span>     Here are the tasks in your list:
+</span><span>     1.[X] read book
+</span><span>     2.[ ] return book
+</span><span>     3.[ ] buy bread
+</span><span>    ____________________________________________________________
+</span><span>
+</span><span>mark 2
+</span><span>    ____________________________________________________________
+</span><span>     Nice! I&#39;ve marked this task as done:
+</span><span>       [X] return book
+</span><span>    ____________________________________________________________
+</span><span>
+</span><span>unmark 2
+</span><span>    ____________________________________________________________
+</span><span>     OK, I&#39;ve marked this task as not done yet:
+</span><span>       [ ] return book
+</span><span>    ____________________________________________________________
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre><div><p><span class="badge rounded-pill bg-success text-white"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> When implementing this feature, you are also recommended to implement the following extension:</p> <div class="indented"><div class="card-container algolia-no-index" data-v-4484e25a><div class="card expandable-card" data-v-4484e25a><div class="card-header header-toggle bg-light" data-v-4484e25a><div class="caret-wrapper" data-v-4484e25a><!----></div><div class="header-wrapper card-title bg-light" data-v-4484e25a><!--[--><!--[--><p><strong>Extension: <code class="hljs inline no-lang">A-Classes</code></strong></p><!--]--><!--]--></div><div class="button-wrapper" data-v-4484e25a><!--[--><button type="button" class="collapse-button btn btn-outline-secondary" style="" data-v-4484e25a><span class="collapse-icon glyphicon glyphicon-menu-down" aria-hidden="true"></span></button><button style="" type="button" class="btn-outline-secondary close-button btn" data-v-4484e25a><span class="glyphicon glyphicon-remove" aria-hidden="true" data-v-4484e25a></span></button><button style="display:none;" type="button" class="btn-outline-secondary popup-button btn" data-v-4484e25a><span class="glyphicon glyphicon-new-window" aria-hidden="true" data-v-4484e25a></span></button><!--]--></div></div><div class="card-collapse" data-v-4484e25a><!----><hr style="display:none;" data-v-4484e25a></div><!----></div></div></div></div></div><hr> <div id="Level-4"><span><span class="thumb-wrapper float-start bg-dark me-2 mt-2" style="font-size:40px;color:white;"><img class="thumb-image" width="" height="" alt=""><!--[--><span aria-hidden="true" class="fas fa-business-time"></span><!--]--></span></span> <h3 id="level-4-todos-events-deadlines">Level 4. ToDos, Events, Deadlines<a class="fa fa-anchor" href="#level-4-todos-events-deadlines" onclick="event.stopPropagation()"></a></h3> <p>Add support for tracking three types of tasks:
+<br> <br></p> <ol><li><strong>ToDos</strong>: tasks without any date/time attached to it <span class="dimmed">e.g., <em>visit new theme park</em></span></li> <li><strong>Deadlines</strong>: tasks that need to be done before a specific date/time <span class="dimmed">e.g., <em>submit report by 11/10/2019 5pm</em></span></li> <li><strong>Events</strong>: tasks that start at a specific date/time and ends at a specific date/time<br> <span class="dimmed">e.g., (a) <em>team project meeting 2/10/2019 2-4pm</em> (b) <em>orientation week  4/10/2019 to 11/10/2019</em></span></li></ol> <p>Example:</p> <pre><code class="no-line-numbers hljs"><span>todo borrow book
+</span><span>    ____________________________________________________________
+</span><span>     Got it. I&#39;ve added this task:
+</span><span>       [T][ ] borrow book
+</span><span>     Now you have 5 tasks in the list.
+</span><span>    ____________________________________________________________
+</span><span>
+</span><span>list
+</span><span>    ____________________________________________________________
+</span><span>     Here are the tasks in your list:
+</span><span>     1.[T][X] read book
+</span><span>     2.[D][ ] return book (by: June 6th)
+</span><span>     3.[E][ ] project meeting (from: Aug 6th 2pm to: 4pm)
+</span><span>     4.[T][X] join sports club
+</span><span>     5.[T][ ] borrow book
+</span><span>    ____________________________________________________________
+</span><span>
+</span><span>deadline return book /by Sunday
+</span><span>    ____________________________________________________________
+</span><span>     Got it. I&#39;ve added this task:
+</span><span>       [D][ ] return book (by: Sunday)
+</span><span>     Now you have 6 tasks in the list.
+</span><span>    ____________________________________________________________
+</span><span>
+</span><span>event project meeting /from Mon 2pm /to 4pm
+</span><span>    ____________________________________________________________
+</span><span>     Got it. I&#39;ve added this task:
+</span><span>       [E][ ] project meeting (from: Mon 2pm to: 4pm)
+</span><span>     Now you have 7 tasks in the list.
+</span><span>    ____________________________________________________________
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre><p>At this point, dates/times can be treated as strings; there is no need to convert them to actual dates/times.</p> <p>Example:</p> <pre><code class="no-line-numbers hljs"><span>
+</span><span>deadline do homework /by no idea :-p
+</span><span>    ____________________________________________________________
+</span><span>     Got it. I&#39;ve added this task:
+</span><span>       [D][ ] do homework (by: no idea :-p)
+</span><span>     Now you have 6 tasks in the list.
+</span><span>    ____________________________________________________________
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre><div><p><span class="badge rounded-pill bg-success text-white"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> When implementing this feature, you are also recommended to implement the following extension:</p> <div class="indented"><div class="card-container algolia-no-index" data-v-4484e25a><div class="card expandable-card" data-v-4484e25a><div class="card-header header-toggle bg-light" data-v-4484e25a><div class="caret-wrapper" data-v-4484e25a><!----></div><div class="header-wrapper card-title bg-light" data-v-4484e25a><!--[--><!--[--><p><strong>Extension: <code class="hljs inline no-lang">A-Inheritance</code></strong></p><!--]--><!--]--></div><div class="button-wrapper" data-v-4484e25a><!--[--><button type="button" class="collapse-button btn btn-outline-secondary" style="" data-v-4484e25a><span class="collapse-icon glyphicon glyphicon-menu-down" aria-hidden="true"></span></button><button style="" type="button" class="btn-outline-secondary close-button btn" data-v-4484e25a><span class="glyphicon glyphicon-remove" aria-hidden="true" data-v-4484e25a></span></button><button style="display:none;" type="button" class="btn-outline-secondary popup-button btn" data-v-4484e25a><span class="glyphicon glyphicon-new-window" aria-hidden="true" data-v-4484e25a></span></button><!--]--></div></div><div class="card-collapse" data-v-4484e25a><!----><hr style="display:none;" data-v-4484e25a></div><!----></div></div></div></div></div><hr> <div id="Level-5"><span><span class="thumb-wrapper float-start bg-dark me-2 mt-2" style="font-size:40px;color:white;"><img class="thumb-image" width="" height="" alt=""><!--[--><span aria-hidden="true" class="fas fa-exclamation-triangle"></span><!--]--></span></span> <h3 id="level-5-handle-errors">Level 5. Handle Errors<a class="fa fa-anchor" href="#level-5-handle-errors" onclick="event.stopPropagation()"></a></h3> <p>Teach the chatbot to deal with errors such as incorrect inputs entered by the user.
+<br> <br></p> <p>Example:</p> <pre><code class="no-line-numbers hljs"><span>todo
+</span><span>    ____________________________________________________________
+</span><span>     OOPS!!! The description of a todo cannot be empty.
+</span><span>    ____________________________________________________________
+</span><span>
+</span><span>blah
+</span><span>    ____________________________________________________________
+</span><span>     OOPS!!! I&#39;m sorry, but I don&#39;t know what that means :-(
+</span><span>    ____________________________________________________________
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre><div class="alert box-container seamless" style="" data-v-19514615><!--Icon and vertical divider for seamless header box--><!----><div class="header-and-body" data-v-19514615><!-- Header wrapper, not rendered if there is no header attribute --><!----><!-- Body wrapper --><div class="box-body-wrapper" data-v-19514615><!-- icon on the left, not shown if there is a header --><div class="icon-wrapper text-danger" style="" data-v-19514615><!--[--><i class="fas fa-flag" data-v-19514615></i><!--]--></div><!-- Icon -- content divider for seamless boxes without the header attribute --><div class="alert-danger vertical-divider" aria-hidden="true" data-v-19514615></div><!-- Content wrapper --><div class="contents" style="" data-v-19514615><!--[--><p>You are strongly encouraged to use your own wording for the error messages, rather than use the error message given in the example above.</p><!--]--></div><!-- dismiss button on the right, not shown if there is a header --><!----></div></div></div> <div><p><span class="badge rounded-pill bg-success text-white"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> When implementing this feature, you are also recommended to implement the following extension:</p> <div class="indented"><div class="card-container algolia-no-index" data-v-4484e25a><div class="card expandable-card" data-v-4484e25a><div class="card-header header-toggle bg-light" data-v-4484e25a><div class="caret-wrapper" data-v-4484e25a><!----></div><div class="header-wrapper card-title bg-light" data-v-4484e25a><!--[--><!--[--><p><strong>Extension: <code class="hljs inline no-lang">A-Exceptions</code></strong></p><!--]--><!--]--></div><div class="button-wrapper" data-v-4484e25a><!--[--><button type="button" class="collapse-button btn btn-outline-secondary" style="" data-v-4484e25a><span class="collapse-icon glyphicon glyphicon-menu-down" aria-hidden="true"></span></button><button style="" type="button" class="btn-outline-secondary close-button btn" data-v-4484e25a><span class="glyphicon glyphicon-remove" aria-hidden="true" data-v-4484e25a></span></button><button style="display:none;" type="button" class="btn-outline-secondary popup-button btn" data-v-4484e25a><span class="glyphicon glyphicon-new-window" aria-hidden="true" data-v-4484e25a></span></button><!--]--></div></div><div class="card-collapse" data-v-4484e25a><!----><hr style="display:none;" data-v-4484e25a></div><!----></div></div></div></div> <p></p> <ul><li><strong>Minimal</strong>: handle at least the two types of errors shown in the example above.</li> <li><strong>Typical</strong>:
+<ul><li>Handle all possible errors in the current version.</li> <li>As you evolve the chatbot, continue to handle errors related to the new features added.</li></ul></li> <li><strong>Stretch goals</strong>:
+<ul><li>Make the error handling more error-specific e.g., give the user a clear/specific explanation of the error and how to correct it.</li></ul></li></ul></div><hr> <div id="Level-6"><span><span class="thumb-wrapper float-start bg-dark me-2 mt-2" style="font-size:40px;color:white;"><img class="thumb-image" width="" height="" alt=""><!--[--><span aria-hidden="true" class="fas fa-trash-alt"></span><!--]--></span></span> <h3 id="level-6-delete">Level 6. Delete<a class="fa fa-anchor" href="#level-6-delete" onclick="event.stopPropagation()"></a></h3> <p>Add support for deleting tasks from the list.
+<br> <br></p> <p>Example:</p> <pre><code class="no-line-numbers hljs"><span>list
+</span><span>    ____________________________________________________________
+</span><span>     Here are the tasks in your list:
+</span><span>     1.[T][X] read book
+</span><span>     2.[D][X] return book (by: June 6th)
+</span><span>     3.[E][ ] project meeting (from: Aug 6th 2pm to: 4pm)
+</span><span>     4.[T][X] join sports club
+</span><span>     5.[T][ ] borrow book
+</span><span>    ____________________________________________________________
+</span><span>
+</span><span>delete 3
+</span><span>    ____________________________________________________________
+</span><span>     Noted. I&#39;ve removed this task:
+</span><span>       [E][ ] project meeting (from: Aug 6th 2pm to: 4pm)
+</span><span>     Now you have 4 tasks in the list.
+</span><span>    ____________________________________________________________
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre><div><p><span class="badge rounded-pill bg-success text-white"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> When implementing this feature, you are also recommended to implement the following extension:</p> <div class="indented"><div class="card-container algolia-no-index" data-v-4484e25a><div class="card expandable-card" data-v-4484e25a><div class="card-header header-toggle bg-light" data-v-4484e25a><div class="caret-wrapper" data-v-4484e25a><!----></div><div class="header-wrapper card-title bg-light" data-v-4484e25a><!--[--><!--[--><p><strong>Extension: <code class="hljs inline no-lang">A-Collections</code></strong></p><!--]--><!--]--></div><div class="button-wrapper" data-v-4484e25a><!--[--><button type="button" class="collapse-button btn btn-outline-secondary" style="" data-v-4484e25a><span class="collapse-icon glyphicon glyphicon-menu-down" aria-hidden="true"></span></button><button style="" type="button" class="btn-outline-secondary close-button btn" data-v-4484e25a><span class="glyphicon glyphicon-remove" aria-hidden="true" data-v-4484e25a></span></button><button style="display:none;" type="button" class="btn-outline-secondary popup-button btn" data-v-4484e25a><span class="glyphicon glyphicon-new-window" aria-hidden="true" data-v-4484e25a></span></button><!--]--></div></div><div class="card-collapse" data-v-4484e25a><!----><hr style="display:none;" data-v-4484e25a></div><!----></div></div></div></div></div><hr> <div id="Level-7"><span><span class="thumb-wrapper float-start bg-dark me-2 mt-2" style="font-size:40px;color:white;"><img class="thumb-image" width="" height="" alt=""><!--[--><span aria-hidden="true" class="fas fa-save"></span><!--]--></span></span> <h3 id="level-7-save">Level 7. Save<a class="fa fa-anchor" href="#level-7-save" onclick="event.stopPropagation()"></a></h3> <p>Save the tasks in the hard disk automatically whenever the task list changes. Load the data from the hard disk when the chatbot starts up. You may hard-code the file name and relative path from the project root <span class="dimmed">e.g., <code class="hljs inline no-lang">./data/duke.txt</code></span></p> <p>The format of the file is up to you. Example:</p> <pre><code class="no-line-numbers hljs"><span>T | 1 | read book
+</span><span>D | 0 | return book | June 6th
+</span><span>E | 0 | project meeting | Aug 6th 2-4pm
+</span><span>T | 1 | join sports club
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre><div class="alert box-container seamless" style="" data-v-19514615><!--Icon and vertical divider for seamless header box--><!----><div class="header-and-body" data-v-19514615><!-- Header wrapper, not rendered if there is no header attribute --><!----><!-- Body wrapper --><div class="box-body-wrapper" data-v-19514615><!-- icon on the left, not shown if there is a header --><div class="icon-wrapper text-success" style="" data-v-19514615><!--[--><i class="fas fa-lightbulb" data-v-19514615></i><!--]--></div><!-- Icon -- content divider for seamless boxes without the header attribute --><div class="alert-success vertical-divider" aria-hidden="true" data-v-19514615></div><!-- Content wrapper --><div class="contents" style="" data-v-19514615><!--[--><p><strong>If you use file paths in your code,</strong></p> <ul><li>remember to use relative paths rather than absolute paths such as <code class="hljs inline no-lang">C:\data</code>. If not, your app can cause unpredictable results when used in another computer.</li> <li>remember to <a href="https://www.sghill.net/how-do-i-make-cross-platform-file-paths-in-java.html">specify file paths in an OS-independent way</a>. If not, your app might not work when used on a different OS.</li></ul><!--]--></div><!-- dismiss button on the right, not shown if there is a header --><!----></div></div></div> <div class="alert box-container seamless" style="" data-v-19514615><!--Icon and vertical divider for seamless header box--><!----><div class="header-and-body" data-v-19514615><!-- Header wrapper, not rendered if there is no header attribute --><!----><!-- Body wrapper --><div class="box-body-wrapper" data-v-19514615><!-- icon on the left, not shown if there is a header --><div class="icon-wrapper text-danger" style="" data-v-19514615><!--[--><i class="fas fa-flag" data-v-19514615></i><!--]--></div><!-- Icon -- content divider for seamless boxes without the header attribute --><div class="alert-danger vertical-divider" aria-hidden="true" data-v-19514615></div><!-- Content wrapper --><div class="contents" style="" data-v-19514615><!--[--><p><strong>Your code must <span class="trigger" data-mb-component-type="tooltip" tabindex="0"><!----><!-- do not delete this comment, it is for the stray space issue (#2419)
+ --><!----></span> the case where the data file doesn&#39;t exist at the start.</strong> Reason: when someone else takes your chatbot and runs it for the first time, the required file will not exist in their computer. Similarly, if you expect the data file to be in a specific folder (e.g., <code class="hljs inline no-lang">./data/</code>), you must also handle the folder-does-not-exist-yet case.</p><!--]--></div><!-- dismiss button on the right, not shown if there is a header --><!----></div></div></div> <p><strong>Stretch goal</strong>: Handle the situation of the data file being corrupted (i.e., content not in the expected format).</p></div><hr> <div id="Level-8"><span><span class="thumb-wrapper float-start bg-dark me-2 mt-2" style="font-size:40px;color:white;"><img class="thumb-image" width="" height="" alt=""><!--[--><span aria-hidden="true" class="fas fa-clock"></span><!--]--></span></span> <h3 id="level-8-dates-and-times">Level 8. Dates and Times<a class="fa fa-anchor" href="#level-8-dates-and-times" onclick="event.stopPropagation()"></a></h3> <p>Teach the chatbot how to understand dates and times. For example, if the command is <code class="hljs inline no-lang">deadline return book /by 2/12/2019 1800</code>, the chatbot should understand <code class="hljs inline no-lang">2/12/2019 1800</code> as <em>2nd of December 2019, 6pm</em>, instead of treating it as just a String.</p> <ul><li><strong>Minimal</strong>: Store deadline dates as a <code class="hljs inline no-lang">java.time.LocalDate</code> (or <code class="hljs inline no-lang">java.time.LocalDateTime</code>) in your task objects. Accept dates in a format such as <code class="hljs inline no-lang">yyyy-mm-dd</code> format (e.g., <code class="hljs inline no-lang">2019-10-15</code>)  and print in a different format such as <code class="hljs inline no-lang">MMM dd yyyy</code> e.g., (<code class="hljs inline no-lang">Oct 15 2019</code>).</li> <li><strong>Stretch goal</strong>: Use dates and times in more meaningful ways. e.g., add a command to print deadlines/events occurring on a specific date.</li></ul> <span class="card-container algolia-no-index" data-v-4484e25a><span class="morph" data-v-4484e25a><button class="morph-display-wrapper btn btn-outline-secondary" data-v-4484e25a><div class="minimal-caret-wrapper" data-v-4484e25a><span class="glyphicon glyphicon-chevron-right" data-v-4484e25a></span></div><span class="card-title" data-v-4484e25a><!--[--><!--[--><!--[--><p>Using dates/times in Java</p><!--]--><!--]--><!--]--></span></button></span></span></div><hr> <div id="Level-9"><span><span class="thumb-wrapper float-start bg-dark me-2 mt-2" style="font-size:40px;color:white;"><img class="thumb-image" width="" height="" alt=""><!--[--><span aria-hidden="true" class="fas fa-search"></span><!--]--></span></span> <h3 id="level-9-find">Level 9. Find<a class="fa fa-anchor" href="#level-9-find" onclick="event.stopPropagation()"></a></h3> <p>Give users a way to find a task by searching for a keyword in the task description.
+<br> <br></p> <p>Example:</p> <pre><code class="no-line-numbers hljs"><span>find book
+</span><span>    ____________________________________________________________
+</span><span>     Here are the matching tasks in your list:
+</span><span>     1.[T][X] read book
+</span><span>     2.[D][X] return book (by: June 6th)
+</span><span>    ____________________________________________________________
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre></div><hr> <div id="Level-10"><span><span class="thumb-wrapper float-start bg-dark me-2 mt-2" style="font-size:40px;color:white;"><img class="thumb-image" width="" height="" alt=""><!--[--><span aria-hidden="true" class="fas fa-window-maximize"></span><!--]--></span></span> <h3 id="level-10-gui">Level 10. GUI<a class="fa fa-anchor" href="#level-10-gui" onclick="event.stopPropagation()"></a></h3> <p>Add a GUI to the chatbot. Use the JavaFX technology to implement the GUI.</p> <br> <br> <p>Refer to the <a href="https://se-education.org/guides/tutorials/javaFx.html"><em>JavaFX tutorial</em> @SE-EDU/guides</a> to learn how to get started with JavaFX.<br>
+Go through <mark>at least up to part 4 of the tutorial</mark>. Part 5 covers cosmetic UI tweaks, and is optional to learn.</p> <div class="alert box-container seamless" style="" data-v-19514615><!--Icon and vertical divider for seamless header box--><!----><div class="header-and-body" data-v-19514615><!-- Header wrapper, not rendered if there is no header attribute --><!----><!-- Body wrapper --><div class="box-body-wrapper" data-v-19514615><!-- icon on the left, not shown if there is a header --><div class="icon-wrapper text-warning" style="" data-v-19514615><!--[--><i class="fas fa-exclamation" data-v-19514615></i><!--]--></div><!-- Icon -- content divider for seamless boxes without the header attribute --><div class="alert-warning vertical-divider" aria-hidden="true" data-v-19514615></div><!-- Content wrapper --><div class="contents" style="" data-v-19514615><!--[--><p><strong>There are two non-trivial steps</strong> to take here:</p> <ol><li>learning JavaFX basics</li> <li>creating a GUI for your chatbot</li></ol> <p>You are <span class="text-danger">cautioned against trying to do both in one go</span>. Instead, complete the JavaFX tutorial as a separate project before adding a GUI to the chatbot.</p><!--]--></div><!-- dismiss button on the right, not shown if there is a header --><!----></div></div></div> <div class="alert box-container seamless" style="" data-v-19514615><!--Icon and vertical divider for seamless header box--><!----><div class="header-and-body" data-v-19514615><!-- Header wrapper, not rendered if there is no header attribute --><!----><!-- Body wrapper --><div class="box-body-wrapper" data-v-19514615><!-- icon on the left, not shown if there is a header --><div class="icon-wrapper text-danger" style="" data-v-19514615><!--[--><i class="fas fa-flag" data-v-19514615></i><!--]--></div><!-- Icon -- content divider for seamless boxes without the header attribute --><div class="alert-danger vertical-divider" aria-hidden="true" data-v-19514615></div><!-- Content wrapper --><div class="contents" style="" data-v-19514615><!--[--><p><span class="mkb-text-red"><strong>Common mistake</strong>:</span> Forgetting to add a separate <code class="hljs inline no-lang">Launcher</code> class (as explained in the <a href="https://se-education.org/guides/tutorials/javaFxPart1.html">JavaFX tutorial Part 1</a>)  when adding the GUI to your project.</p><!--]--></div><!-- dismiss button on the right, not shown if there is a header --><!----></div></div></div> <p><strong>Minimal requirement:</strong> The GUI should be fit-for-purpose i.e., users should be able to use the chatbot via the GUI.</p></div> <p></p> <div><h2 id="extensions-category-a"><div class="text-white bg-primary p-1">Extensions: Category A</div><a class="fa fa-anchor" href="#extensions-category-a" onclick="event.stopPropagation()"></a></h2> <div id="A-Classes"><div><h3 id="a-classes-2"><span class="badge rounded-pill bg-primary">A-Classes</span><a class="fa fa-anchor" href="#a-classes-2" onclick="event.stopPropagation()"></a></h3> <p>     <span class="large">↳</span> <strong>Use a class to represent tasks</strong></p></div> <p>While it is possible to represent a task list as a multi-dimensional array containing <span class="trigger" data-mb-component-type="tooltip" tabindex="0"><!----><!-- do not delete this comment, it is for the stray space issue (#2419)
+ --><!----></span>, the more natural approach is to use a <code class="hljs inline no-lang">Task</code> class to represent tasks.</p> <span class="card-container algolia-no-index" data-v-4484e25a><span class="morph" data-v-4484e25a><button class="morph-display-wrapper morph-display-wrapper-seamless btn" data-v-4484e25a><div class="minimal-caret-wrapper" data-v-4484e25a><span class="glyphicon glyphicon-chevron-right" data-v-4484e25a></span></div><span class="card-title" data-v-4484e25a><!--[--><!--[--><!--[--><p>Partial solution</p><!--]--><!--]--><!--]--></span></button></span></span></div><hr> <div id="A-Inheritance"><div><h3 id="a-inheritance-2"><span class="badge rounded-pill bg-primary">A-Inheritance</span><a class="fa fa-anchor" href="#a-inheritance-2" onclick="event.stopPropagation()"></a></h3> <p>     <span class="large">↳</span> <strong>Use Inheritance to support multiple task types</strong></p></div> <p>As there are multiple types of tasks that have some similarity between them, you can implement classes <code class="hljs inline no-lang">Todo</code>, <code class="hljs inline no-lang">Deadline</code> and <code class="hljs inline no-lang">Event</code> classes to inherit from a <code class="hljs inline no-lang">Task</code> class.</p> <p>Furthermore, use polymorphism to store all tasks in a data structure containing <code class="hljs inline no-lang">Task</code> objects e.g., <code class="hljs inline no-lang">Task[100]</code>.</p> <span class="card-container algolia-no-index" data-v-4484e25a><span class="morph" data-v-4484e25a><button class="morph-display-wrapper morph-display-wrapper-seamless btn" data-v-4484e25a><div class="minimal-caret-wrapper" data-v-4484e25a><span class="glyphicon glyphicon-chevron-right" data-v-4484e25a></span></div><span class="card-title" data-v-4484e25a><!--[--><!--[--><!--[--><p>Partial solution</p><!--]--><!--]--><!--]--></span></button></span></span></div><hr> <div id="A-AbstractClasses"><div><h3 id="a-abstractclasses"><span class="badge rounded-pill bg-primary">A-AbstractClasses</span><a class="fa fa-anchor" href="#a-abstractclasses" onclick="event.stopPropagation()"></a></h3> <p>     <span class="large">↳</span> <strong>Use abstract classes</strong></p></div> <p>Make the <code class="hljs inline no-lang">Task</code> class an abstract class. If applicable, use abstract methods as well.</p></div><hr> <div id="A-Exceptions"><div><h3 id="a-exceptions-2"><span class="badge rounded-pill bg-primary">A-Exceptions</span><a class="fa fa-anchor" href="#a-exceptions-2" onclick="event.stopPropagation()"></a></h3> <p>     <span class="large">↳</span> <strong>Use Exceptions to handle errors</strong></p></div> <p>Use exceptions to handle errors. For example, define a class <code class="hljs inline no-lang">DukeException</code> to represent exceptions specific to Duke.</p></div><hr> <div id="A-TextUiTesting"><div><h3 id="a-textuitesting"><span class="badge rounded-pill bg-primary">A-TextUiTesting</span><a class="fa fa-anchor" href="#a-textuitesting" onclick="event.stopPropagation()"></a></h3> <p>     <span class="large">↳</span> <strong>Test using the I/O redirection technique</strong></p></div> <p>Use the input/output redirection technique to semi-automate the testing of Duke.</p> <p>Notes:</p> <ul><li>A tutorial of this technique is <a href="https://se-education.org/guides/tutorials/textUiTesting.html">here</a>.</li> <li>The required scripts are provided in the Duke repo (see the <code class="hljs inline no-lang">text-ui-test</code> folder).</li></ul> <p>Expectations:</p> <ul><li><strong>Minimal</strong>: Use this technique to ensure at least <em>some</em> user commands receive the correct response from the chatbot.</li> <li><strong>Typical</strong>: Use this technique to test <em>most</em> of the typical user commands, reducing the need for manual testing as much as possible.</li> <li><strong>Stretch goals</strong>: Keep evolving these tests as you add more features to the chatbot, to ensure most current features are tested through this technique.</li></ul></div><hr> <div id="A-Collections"><div><h3 id="a-collections-2"><span class="badge rounded-pill bg-primary">A-Collections</span><a class="fa fa-anchor" href="#a-collections-2" onclick="event.stopPropagation()"></a></h3> <p>     <span class="large">↳</span> <strong>Use Java Collections classes</strong></p></div> <p>Use Java Collections classes for storing data. For example, you can use an <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayList.html"><code class="hljs inline no-lang">ArrayList&lt;Task&gt;</code></a> to store the tasks. They offer many advantages (e.g., dynamic sizing, easy to find/add/delete items),  over using a primitive data structure such as a normal array.</p></div><hr> <div id="A-MoreOOP"><div><h3 id="a-moreoop"><span class="badge rounded-pill bg-primary">A-MoreOOP</span><a class="fa fa-anchor" href="#a-moreoop" onclick="event.stopPropagation()"></a></h3> <p>     <span class="large">↳</span> <strong>Make the code more OOP</strong></p></div> <p>Gradually (i.e., in small steps) extract out closely related code as classes.</p> <ul><li><strong>Minimal</strong>: Extract the following classes:
+<ul><li><code class="hljs inline no-lang">Ui</code>: deals with interactions with the user</li> <li><code class="hljs inline no-lang">Storage</code>: deals with loading tasks from the file and saving tasks in the file</li> <li><code class="hljs inline no-lang">Parser</code>: deals with making sense of the user command</li> <li><code class="hljs inline no-lang">TaskList</code>: contains the task list <span class="dimmed">e.g., it has operations to add/delete tasks in the list</span></li></ul></li></ul> <div class="indented-level2"><p>For example, the code of the main class could look like this:</p> <pre><code class="hljs java"><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Duke</span> </span>{
+</span><span>
+</span><span>    <span class="hljs-keyword">private</span> Storage storage;
+</span><span>    <span class="hljs-keyword">private</span> TaskList tasks;
+</span><span>    <span class="hljs-keyword">private</span> Ui ui;
+</span><span>
+</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Duke</span><span class="hljs-params">(String filePath)</span> </span>{
+</span><span>        ui = <span class="hljs-keyword">new</span> Ui();
+</span><span>        storage = <span class="hljs-keyword">new</span> Storage(filePath);
+</span><span>        <span class="hljs-keyword">try</span> {
+</span><span>            tasks = <span class="hljs-keyword">new</span> TaskList(storage.load());
+</span><span>        } <span class="hljs-keyword">catch</span> (DukeException e) {
+</span><span>            ui.showLoadingError();
+</span><span>            tasks = <span class="hljs-keyword">new</span> TaskList();
+</span><span>        }
+</span><span>    }
+</span><span>
+</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">run</span><span class="hljs-params">()</span> </span>{
+</span><span>        <span class="hljs-comment">//...</span>
+</span><span>    }
+</span><span>
+</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+</span><span>        <span class="hljs-keyword">new</span> Duke(<span class="hljs-string">&quot;data/tasks.txt&quot;</span>).run();
+</span><span>    }
+</span><span>}
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre></div> <ul><li><strong>Stretch Goal</strong>: Consider extracting more classes. e.g., <code class="hljs inline no-lang">*Command</code> classes (i.e., <code class="hljs inline no-lang">AddCommand</code>, <code class="hljs inline no-lang">DeleteCommand</code>, <code class="hljs inline no-lang">ExitCommand</code> etc.) that inherit from an abstract <code class="hljs inline no-lang">Command</code> class, so that you can write the main logic of the App as follows:<pre><code class="hljs java"><span><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">run</span><span class="hljs-params">()</span> </span>{
+</span><span>    ui.showWelcome();
+</span><span>    <span class="hljs-keyword">boolean</span> isExit = <span class="hljs-keyword">false</span>;
+</span><span>    <span class="hljs-keyword">while</span> (!isExit) {
+</span><span>        <span class="hljs-keyword">try</span> {
+</span><span>            String fullCommand = ui.readCommand();
+</span><span>            ui.showLine(); <span class="hljs-comment">// show the divider line (&quot;_______&quot;)</span>
+</span><span>            Command c = Parser.parse(fullCommand);
+</span><span>            c.execute(tasks, ui, storage);
+</span><span>            isExit = c.isExit();
+</span><span>        } <span class="hljs-keyword">catch</span> (DukeException e) {
+</span><span>            ui.showError(e.getMessage());
+</span><span>        } <span class="hljs-keyword">finally</span> {
+</span><span>            ui.showLine();
+</span><span>        }
+</span><span>    }
+</span><span>}
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
+      2.0410156 0.93164062 L 4.8203125 0.93164062 L 4.8203125 9.3222656 L 3.4746094
+      9.3222656 L 3.4746094 10.144531 L 8.8027344 10.144531 L 8.8027344 9.3222656 L
+      7.4492188 9.3222656 L 7.4492188 0.93164062 L 10.25 0.93164062 L 10.25 2.5351562 L
+      11.166016 2.5351562 L 11.166016 0 L 1.109375 0 z M 10.84375 5.1054688 L 10.84375
+      6.6074219 C 12.268027 6.6074219 13.40625 7.7456444 13.40625 9.1699219 C 13.40625
+      10.185673 12.827237 11.055036 11.978516 11.470703 L 11.978516 9.5175781 L 7.1386719
+      12.3125 L 11.978516 15.105469 L 11.978516 13.072266 C 13.66701 12.577757 14.910156
+      11.012746 14.910156 9.1699219 C 14.910156 6.9333638 13.080308 5.1054688 10.84375
+      5.1054688 z "></path>
+    </g>
+</svg>
+
+    </div>
+    </div>
+    </button></div></pre></li></ul> <div class="alert box-container seamless" style="" data-v-19514615><!--Icon and vertical divider for seamless header box--><!----><div class="header-and-body" data-v-19514615><!-- Header wrapper, not rendered if there is no header attribute --><!----><!-- Body wrapper --><div class="box-body-wrapper" data-v-19514615><!-- icon on the left, not shown if there is a header --><div class="icon-wrapper text-info" style="" data-v-19514615><!--[--><i class="fas fa-info" data-v-19514615></i><!--]--></div><!-- Icon -- content divider for seamless boxes without the header attribute --><div class="alert-info vertical-divider" aria-hidden="true" data-v-19514615></div><!-- Content wrapper --><div class="contents" style="" data-v-19514615><!--[--><p>Your class names may differ from the ones given above. The design can differ too, if you can justify your design is a good OOP design (there is no one <em>correct</em> design solution for most design problems, after all).</p><!--]--></div><!-- dismiss button on the right, not shown if there is a header --><!----></div></div></div> <div class="alert box-container seamless" style="" data-v-19514615><!--Icon and vertical divider for seamless header box--><!----><div class="header-and-body" data-v-19514615><!-- Header wrapper, not rendered if there is no header attribute --><!----><!-- Body wrapper --><div class="box-body-wrapper" data-v-19514615><!-- icon on the left, not shown if there is a header --><div class="icon-wrapper text-success" style="" data-v-19514615><!--[--><i class="fas fa-lightbulb" data-v-19514615></i><!--]--></div><!-- Icon -- content divider for seamless boxes without the header attribute --><div class="alert-success vertical-divider" aria-hidden="true" data-v-19514615></div><!-- Content wrapper --><div class="contents" style="" data-v-19514615><!--[--><p>You can get some inspiration from how the class structure of the <a href="https://github.com/se-edu/addressbook-level2">addressbook-level2</a> is organized.</p><!--]--></div><!-- dismiss button on the right, not shown if there is a header --><!----></div></div></div> <div class="alert box-container seamless" style="" data-v-19514615><!--Icon and vertical divider for seamless header box--><!----><div class="header-and-body" data-v-19514615><!-- Header wrapper, not rendered if there is no header attribute --><!----><!-- Body wrapper --><div class="box-body-wrapper" data-v-19514615><!-- icon on the left, not shown if there is a header --><div class="icon-wrapper text-danger" style="" data-v-19514615><!--[--><i class="fas fa-flag" data-v-19514615></i><!--]--></div><!-- Icon -- content divider for seamless boxes without the header attribute --><div class="alert-danger vertical-divider" aria-hidden="true" data-v-19514615></div><!-- Content wrapper --><div class="contents" style="" data-v-19514615><!--[--><p class="text-danger"><strong>Common mistake:</strong> Trying to do the entire change in one shot.</p> <p><strong>Recommended:</strong> Change one small code change at a time, while ensuring the code works after each step.<br> Example: identify one bit of functionality that is best put in the <code class="hljs inline no-lang">Storage</code> class → move only that functionality to a new class <code class="hljs inline no-lang">Storage</code> → Test the code to ensure everything is working → Look for the next piece of functionality to move to <code class="hljs inline no-lang">Storage</code> class, and so on.</p><!--]--></div><!-- dismiss button on the right, not shown if there is a header --><!----></div></div></div></div><hr> <div id="A-JUnit"><div><h3 id="a-junit"><span class="badge rounded-pill bg-primary">A-JUnit</span><a class="fa fa-anchor" href="#a-junit" onclick="event.stopPropagation()"></a></h3> <p>     <span class="large">↳</span> <strong>Add JUnit tests</strong></p></div> <p>Add JUnit tests to test the behavior of the code.</p> <ul><li><strong>Minimal</strong>: Use JUnit to test <mark>at least two non-trivial methods</mark>, from two different classes (if you have multiple classes),<br>
+and, ensure they are <mark>tested reasonably well</mark> (i.e., the test code should try to catch most potential bugs in the target methods).</li> <li><strong>Stretch goal</strong>: Use JUnit to test all non-trivial public methods of all classes.</li></ul> <p>Refer to the <a href="https://se-education.org/guides/tutorials/junit.html"><em>JUnit tutorial</em> @se-edu/guides</a> to find how to use JUnit (in the context of this project).</p></div><hr> <div id="A-Packages"><div><h3 id="a-packages"><span class="badge rounded-pill bg-primary">A-Packages</span><a class="fa fa-anchor" href="#a-packages" onclick="event.stopPropagation()"></a></h3> <p>     <span class="large">↳</span> <strong>Divide classes into packages</strong></p></div> <p>Organize the classes into suitable java packages.</p> <div class="alert box-container seamless" style="" data-v-19514615><!--Icon and vertical divider for seamless header box--><!----><div class="header-and-body" data-v-19514615><!-- Header wrapper, not rendered if there is no header attribute --><!----><!-- Body wrapper --><div class="box-body-wrapper" data-v-19514615><!-- icon on the left, not shown if there is a header --><div class="icon-wrapper text-warning" style="" data-v-19514615><!--[--><i class="fas fa-exclamation" data-v-19514615></i><!--]--></div><!-- Icon -- content divider for seamless boxes without the header attribute --><div class="alert-warning vertical-divider" aria-hidden="true" data-v-19514615></div><!-- Content wrapper --><div class="contents" style="" data-v-19514615><!--[--><p>Note that <code class="hljs inline no-lang">src/main/java</code> should be kept as the <span class="trigger" data-mb-component-type="tooltip" tabindex="0"><!----><!-- do not delete this comment, it is for the stray space issue (#2419)
+ --><!----></span> folder, as some tools we&#39;ll be using later will look for the Java source code in that folder by default.</p> <p>For example, suppose you have the following structure now, and you wish to move <code class="hljs inline no-lang">Duke.java</code> into a package <code class="hljs inline no-lang">duke.ui</code>.</p> <div class="tree"><span aria-hidden="true" class="far fa-folder"></span> [project root] <span class="dimmed">e.g., C:\courses\project\</span>
+└── <span aria-hidden="true" class="far fa-folder"></span> <span class="mkb-text-green">src</span>\
+    └── <span aria-hidden="true" class="far fa-folder"></span> <span class="mkb-text-green">main</span>\
+        └── <span class="mkb-text-green"><span aria-hidden="true" class="fas fa-folder"></span> java</span>\ <span class="mkb-text-green">[source root]</span>
+            └── <span aria-hidden="true" class="far fa-file"></span> Duke.java (not in a package)
+</div> <p>The correct way to do so is:</p> <div class="tree"><span aria-hidden="true" class="far fa-folder"></span> [project root] <span class="dimmed">e.g., C:\courses\project\</span>
+└── <span aria-hidden="true" class="far fa-folder"></span> <span class="mkb-text-green">src</span>\
+    └── <span aria-hidden="true" class="far fa-folder"></span> <span class="mkb-text-green">main</span>\
+        └── <span class="mkb-text-green"><span aria-hidden="true" class="fas fa-folder"></span> java</span>\ <span class="mkb-text-green">[source root]</span>
+            └── <span aria-hidden="true" class="far fa-folder"></span> <mark>duke</mark>\
+                └── <span aria-hidden="true" class="far fa-folder"></span> <mark>ui</mark>\
+                    └── <span aria-hidden="true" class="far fa-file"></span> Duke.java (in package <code class="hljs inline no-lang">duke.ui</code>)
+</div> <p>Do not convert <code class="hljs inline no-lang">src</code>, <code class="hljs inline no-lang">main</code>, <code class="hljs inline no-lang">java</code> into packages. For example, the following is <span class="mkb-text-red">incorrect</span>:</p> <div class="tree"><span aria-hidden="true" class="far fa-folder"></span> [project root] <span class="mkb-text-red">[source root]</span>
+└── <span aria-hidden="true" class="far fa-folder"></span> <span class="mkb-text-green">src</span>\
+    └── <span aria-hidden="true" class="far fa-folder"></span> <span class="mkb-text-green">main</span>\
+        └── <span aria-hidden="true" class="far fa-folder"></span> <span class="mkb-text-green">java</span>\
+            └── <span aria-hidden="true" class="far fa-file"></span> Duke.java (in package <code class="hljs inline no-lang">src.main.java</code>)
+</div><!--]--></div><!-- dismiss button on the right, not shown if there is a header --><!----></div></div></div> <ul><li><strong>Minimal</strong>: put all classes in one package e.g., <code class="hljs inline no-lang">duke</code></li> <li><strong>Stretch goal</strong>: divide into multiple packages as the number of classes increase e.g., <code class="hljs inline no-lang">duke.task</code>, <code class="hljs inline no-lang">duke.command</code></li></ul></div><hr> <div id="A-JavaDoc"><div><h3 id="a-javadoc"><span class="badge rounded-pill bg-primary">A-JavaDoc</span><a class="fa fa-anchor" href="#a-javadoc" onclick="event.stopPropagation()"></a></h3> <p>     <span class="large">↳</span> <strong>Add JavaDoc comments</strong></p></div> <p>Add JavaDoc comments to the code.</p> <ul><li><strong>Minimal</strong>: Add header comments to at least half of the non-private classes/methods.</li> <li><strong>Stretch goal</strong>: Add header comments to all non-private classes/methods, and non-trivial private methods.</li></ul></div><hr> <div id="A-CodingStandard"><div><h3 id="a-codingstandard"><span class="badge rounded-pill bg-primary">A-CodingStandard</span><a class="fa fa-anchor" href="#a-codingstandard" onclick="event.stopPropagation()"></a></h3> <p>     <span class="large">↳</span> <strong>Tweak the code to comply with a coding standard</strong></p></div> <p>Tweak the code to comply with a given coding standard. From this point onward, ensure any new code added are compliant with the given coding standard.</p> <div class="alert box-container seamless" style="" data-v-19514615><!--Icon and vertical divider for seamless header box--><!----><div class="header-and-body" data-v-19514615><!-- Header wrapper, not rendered if there is no header attribute --><!----><!-- Body wrapper --><div class="box-body-wrapper" data-v-19514615><!-- icon on the left, not shown if there is a header --><div class="icon-wrapper text-success" style="" data-v-19514615><!--[--><i class="fas fa-lightbulb" data-v-19514615></i><!--]--></div><!-- Icon -- content divider for seamless boxes without the header attribute --><div class="alert-success vertical-divider" aria-hidden="true" data-v-19514615></div><!-- Content wrapper --><div class="contents" style="" data-v-19514615><!--[--><p>SE-EDU guides on configuring the code style in IDEs: <a href="https://se-education.org/guides/tutorials/intellijCodeStyle.html">Intellij IDEA</a> | <a href="https://se-education.org/guides/tutorials/vscCodeStyle.html">VS Code</a></p><!--]--></div><!-- dismiss button on the right, not shown if there is a header --><!----></div></div></div></div><hr> <div id="A-CheckStyle"><div><h3 id="a-checkstyle"><span class="badge rounded-pill bg-primary">A-CheckStyle</span><a class="fa fa-anchor" href="#a-checkstyle" onclick="event.stopPropagation()"></a></h3> <p>     <span class="large">↳</span> <strong>Use CheckStyle</strong></p></div> <p>Use checkStyle to detect coding style violations.</p> <p>Refer the tutorial <a href="https://se-education.org/guides/tutorials/checkstyle.html"><em>Using Checkstyle</em> @SE-EDU/guides</a> to learn how to use Checkstyle.</p> <p></p></div><hr> <div id="A-CodeQuality"><div><h3 id="a-codequality"><span class="badge rounded-pill bg-primary">A-CodeQuality</span><a class="fa fa-anchor" href="#a-codequality" onclick="event.stopPropagation()"></a></h3> <p>     <span class="large">↳</span> <strong>Improve code quality</strong></p></div> <p>Critically examines the code and refactor to improve the code quality where necessary.</p> <p><span style="color:red;"><span class="large"><span><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></span></span></span> When adding this increment, follow closely the &#39;Code Quality&#39; topics you have learned so far, rather than merely follow your own intuition about code quality.</p></div><hr> <div id="A-Assertions"><div><h3 id="a-assertions"><span class="badge rounded-pill bg-primary">A-Assertions</span><a class="fa fa-anchor" href="#a-assertions" onclick="event.stopPropagation()"></a></h3> <p>     <span class="large">↳</span> <strong>Use Assertions</strong></p></div> <p>Use <code class="hljs inline no-lang">assert</code> feature (not JUnit assertions) to document important assumptions that should hold at various points in the code.</p></div><hr> <div id="A-Jar"><div><h3 id="a-jar"><span class="badge rounded-pill bg-primary">A-Jar</span><a class="fa fa-anchor" href="#a-jar" onclick="event.stopPropagation()"></a></h3> <p>     <span class="large">↳</span> <strong>Package the App as a JAR file</strong></p></div> <p>Package the app as an executable JAR file so that it can be distributed easily.</p> <p>You can assume <strong>the user will run the jar file in the following way only</strong>:</p> <ol><li>Copy the jar file into an empty folder.</li> <li>Open a command window in that folder.</li> <li>Run the command <code class="hljs inline no-lang">java -jar &quot;{filename}.jar&quot;</code> e.g., <code class="hljs inline no-lang">java -jar &quot;Duke.jar&quot;</code> (i.e., run the command in the same folder as the jar file).</li></ol> <div class="alert box-container seamless" style="" data-v-19514615><!--Icon and vertical divider for seamless header box--><!----><div class="header-and-body" data-v-19514615><!-- Header wrapper, not rendered if there is no header attribute --><!----><!-- Body wrapper --><div class="box-body-wrapper" data-v-19514615><!-- icon on the left, not shown if there is a header --><div class="icon-wrapper text-info" style="" data-v-19514615><!--[--><i class="fas fa-info" data-v-19514615></i><!--]--></div><!-- Icon -- content divider for seamless boxes without the header attribute --><div class="alert-info vertical-divider" aria-hidden="true" data-v-19514615></div><!-- Content wrapper --><div class="contents" style="" data-v-19514615><!--[--><p>The double quotes around the filename in the <code class="hljs inline no-lang">java -jar &quot;{filename}.jar&quot;</code> is not normally needed, but it is needed if the filename contains special characters such as spaces or <code class="hljs inline no-lang">[</code>.</p><!--]--></div><!-- dismiss button on the right, not shown if there is a header --><!----></div></div></div> <div class="alert box-container seamless" style="" data-v-19514615><!--Icon and vertical divider for seamless header box--><!----><div class="header-and-body" data-v-19514615><!-- Header wrapper, not rendered if there is no header attribute --><!----><!-- Body wrapper --><div class="box-body-wrapper" data-v-19514615><!-- icon on the left, not shown if there is a header --><div class="icon-wrapper text-info" style="" data-v-19514615><!--[--><span aria-hidden="true" class="fas fa-question"></span><!--]--></div><!-- Icon -- content divider for seamless boxes without the header attribute --><div class="alert-info vertical-divider" aria-hidden="true" data-v-19514615></div><!-- Content wrapper --><div class="contents" style="" data-v-19514615><!--[--> <p>FAQ: Can we double-click the jar file to run it?<br>
+A: Yes, that usually works too, being able to do so is not a requirement here. Instead, the <code class="hljs inline no-lang">java -jar</code> command is the recommended way to run the jar file.</p><!--]--></div><!-- dismiss button on the right, not shown if there is a header --><!----></div></div></div> <p>Refer to the tutorial <a href="https://se-education.org/guides/tutorials/jar.html"><em>Working with JAR files</em> @SE-EDU/guides</a> to find how to create JAR files (in the context of this project).</p> <div class="alert box-container seamless" style="" data-v-19514615><!--Icon and vertical divider for seamless header box--><!----><div class="header-and-body" data-v-19514615><!-- Header wrapper, not rendered if there is no header attribute --><!----><!-- Body wrapper --><div class="box-body-wrapper" data-v-19514615><!-- icon on the left, not shown if there is a header --><div class="icon-wrapper text-info" style="" data-v-19514615><!--[--><i class="fas fa-info" data-v-19514615></i><!--]--></div><!-- Icon -- content divider for seamless boxes without the header attribute --><div class="alert-info vertical-divider" aria-hidden="true" data-v-19514615></div><!-- Content wrapper --><div class="contents" style="" data-v-19514615><!--[--><p><strong>If your project is being revision controlled using Git/GitHub</strong>,<br></p> <ul><li><p><span class="text-danger">do not commit the JAR file created</span>. Reason: We don&#39;t normally commit generated binary files into the repository.</p></li> <li><p>Instead, you can make the JAR file available (via the GitHub release mechanism) in the following manner.</p> <ol><li>Go to your fork on GitHub and <a href="https://help.github.com/en/articles/creating-releases">create a new <em>release</em></a>.</li> <li>In the page where you supply the details of the release,
+<ol><li>give an appropriate version number e.g., <code class="hljs inline no-lang">v0.1</code></li> <li>attach the JAR file where it says <code class="hljs inline no-lang">Attach binaries by dropping them ...</code>.</li></ol></li></ol></li></ul><!--]--></div><!-- dismiss button on the right, not shown if there is a header --><!----></div></div></div></div><hr> <div id="A-Gradle"><div><h3 id="a-gradle"><span class="badge rounded-pill bg-primary">A-Gradle</span><a class="fa fa-anchor" href="#a-gradle" onclick="event.stopPropagation()"></a></h3> <p>     <span class="large">↳</span> <strong>Automate project builds using Gradle</strong></p></div> <p>Use Gradle to automate some of the build tasks of the project, as follows:</p> <ul style="list-style-type:none;padding-inline-start:0px;"><li style="display:flex;"><span aria-hidden="true" style="line-height:unset;margin-inline-end:0.35em;align-self:flex-start;flex-shrink:0;">Step 1.</span><div>Gradle support is provided as a separate branch named <code class="hljs inline no-lang">add-gradle-support</code> in the Duke repo. <mark>Merge that branch to your <code class="hljs inline no-lang">master</code> branch</mark>.</div></li></ul> <pre class="mermaid">%%{init: { &#39;theme&#39;: &#39;default&#39;, &#39;gitGraph&#39;: {&#39;mainBranchName&#39;: &#39;master&#39;}} }%%
+gitGraph
+commit id: &quot;m1&quot;
+branch add-gradle-support
+checkout add-gradle-support
+commit id: &quot;b1&quot;
+commit id: &quot;b2&quot;
+checkout master
+commit id: &quot;m2&quot;
+commit id: &quot;m3&quot;
+merge add-gradle-support id: &quot;Merge branch ...&quot;
+</pre> <ul style="list-style-type:none;padding-inline-start:0px;"><li style="display:flex;"><span aria-hidden="true" style="line-height:unset;margin-inline-end:0.35em;align-self:flex-start;flex-shrink:0;">Step 2.</span><div>Go to the <a href="https://se-education.org/guides/tutorials/gradle.html"><em>Gradle tutorial</em> @SE-EDU</a>.
+<ul style="list-style-type:none;padding-inline-start:0px;"><li texts="[&#39;2a.&#39;,&#39;2b.&#39;, &#39;2c.&#39;]" style="display:flex;"><span aria-hidden="true" style="line-height:unset;margin-inline-end:0.35em;align-self:flex-start;flex-shrink:0;">2a.</span><div>If you are new to Gradle, read the <em>Basics</em> section to get an overview of Gradle.</div></li> <li style="display:flex;"><span aria-hidden="true" style="line-height:unset;margin-inline-end:0.35em;align-self:flex-start;flex-shrink:0;">2b.</span><div>Next, follow the <a href="https://se-education.org/guides/tutorials/gradle.html#:~:text=click%20it.-,Scenario%202,-%3A%20You%20are"><mark><em>scenario 2</em></mark> of the <em>Adding Gradle to the project</em> section</a>, to add Gradle to your project.</div></li> <li style="display:flex;"><span aria-hidden="true" style="line-height:unset;margin-inline-end:0.35em;align-self:flex-start;flex-shrink:0;">2c.</span><div>Read the rest of the tutorial to find how to use Gradle to build, run, test etc.</div></li></ul></div></li></ul> <p></p> <p>Requirements for this increment:</p> <ul><li><strong>Minimal</strong>: Set up gradle so that you can build and run Duke using gradle.</li> <li><strong>Recommended</strong>: Be able to run JUnit tests using Gradle (this can only be done after you&#39;ve reached the <code class="hljs inline no-lang">A-JUnit</code> increment).</li> <li><strong>Stretch Goal</strong>: Use gradle to automate more things in your project, as you progress through the project.</li></ul></div><hr> <div id="A-CI"><div><h3 id="a-ci"><span class="badge rounded-pill bg-primary">A-CI</span><a class="fa fa-anchor" href="#a-ci" onclick="event.stopPropagation()"></a></h3> <p>     <span class="large">↳</span> <strong>Set up CI</strong></p></div> <p>Use GitHub Actions to set up Continuous Integration (CI).</p> <p>The workflow specified by <a href="https://github.com/se-edu/duke/blob/full-template/.github/workflows/gradle.yml">this <code class="hljs inline no-lang">.yml</code> file</a> is a good candidate for this project. The last three segments are related to I/O redirection tests; can be deleted if not applicable to your project.</p> <p>Refer to the <a href="https://se-education.org/guides/tutorials/githubActions.html"><em>Using GitHub Actions</em> @SE-EDU/guides</a> to learn how to use that <code class="hljs inline no-lang">.yml</code> file to set up GitHub actions.</p> <p>Also note that pushing a GitHub Actions related file to GitHub requires you to authenticate using a <span class="trigger" data-mb-component-type="tooltip" tabindex="0"><!----><!-- do not delete this comment, it is for the stray space issue (#2419)
+ --><!----></span> that has <code class="hljs inline no-lang">workflow</code> permissions (because you are modifying a workflow of your repo). If you are using Sourcetree, you can refer to <a href="https://se-education.org/guides/tutorials/sourcetree.html"><em>Sourcetree Guide</em> @SE-EDU/guides</a> to learn how to connect Sourcetree with GitHub using a PAT.</p></div><hr> <div id="A-Enums"><div><h3 id="a-enums"><span class="badge rounded-pill bg-primary">A-Enums</span><a class="fa fa-anchor" href="#a-enums" onclick="event.stopPropagation()"></a></h3> <p>     <span class="large">↳</span> <strong>Use Enumerations</strong></p></div> <p>Use Java <code class="hljs inline no-lang">enum</code>s, if applicable.</p></div><hr> <div id="A-Varargs"><div><h3 id="a-varargs"><span class="badge rounded-pill bg-primary">A-Varargs</span><a class="fa fa-anchor" href="#a-varargs" onclick="event.stopPropagation()"></a></h3> <p>     <span class="large">↳</span> <strong>Use var-args</strong></p></div> <p>Use Java varargs feature, if applicable.</p></div><hr> <div id="A-Lambdas"><div><h3 id="a-lambdas"><span class="badge rounded-pill bg-primary">A-Lambdas</span><a class="fa fa-anchor" href="#a-lambdas" onclick="event.stopPropagation()"></a></h3> <p>     <span class="large">↳</span> <strong>Use Lambdas</strong></p></div> <p>Use the Lambdas feature of Java in your code, if applicable.</p></div><hr> <div id="A-Streams"><div><h3 id="a-streams"><span class="badge rounded-pill bg-primary">A-Streams</span><a class="fa fa-anchor" href="#a-streams" onclick="event.stopPropagation()"></a></h3> <p>     <span class="large">↳</span> <strong>Use Streams</strong></p></div> <p>Use the Streams feature of Java in your code, if applicable.</p></div><hr> <div id="A-Libraries"><div><h3 id="a-libraries"><span class="badge rounded-pill bg-primary">A-Libraries</span><a class="fa fa-anchor" href="#a-libraries" onclick="event.stopPropagation()"></a></h3> <p>     <span class="large">↳</span> <strong>Use external libraries</strong></p></div> <p>Use third-party libraries in your project. For example, you can use the Natty library to parse strings into meaningful dates.</p></div><hr> <div id="A-UserGuide"><div><h3 id="a-userguide"><span class="badge rounded-pill bg-primary">A-UserGuide</span><a class="fa fa-anchor" href="#a-userguide" onclick="event.stopPropagation()"></a></h3> <p>     <span class="large">↳</span> <strong>Add a User Guide</strong></p></div> <p>Add a User Guide to the project in the following way:</p> <ul><li>Update the given <code class="hljs inline no-lang">docs\README.md</code>. See <a href="https://guides.github.com/features/mastering-markdown/">this guide</a> to GitHub flavored Markdown (GFMD).</li> <li>Enable the <em>GitHub Pages</em> feature for your fork:
+<ol><li>Go to your repo&#39;s <span class="border border-secondary border-bottom-0 pe-1 ps-1 mr-1 ml-1 rounded-top"><small><span aria-hidden="true" class="fas fa-cog"></span> settings</small></span> tab.</li> <li>Click <code class="hljs inline no-lang">Pages</code> on the menu on the left edge of page.</li> <li>Set the <code class="hljs inline no-lang">Source</code> as: [<strong><span class="dimmed"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-git-branch" aria-hidden="true"><path fill-rule="evenodd" d="M11.75 2.5a.75.75 0 100 1.5.75.75 0 000-1.5zm-2.25.75a2.25 2.25 0 113 2.122V6A2.5 2.5 0 0110 8.5H6a1 1 0 00-1 1v1.128a2.251 2.251 0 11-1.5 0V5.372a2.25 2.25 0 111.5 0v1.836A2.492 2.492 0 016 7h4a1 1 0 001-1v-.628A2.25 2.25 0 019.5 3.25zM4.25 12a.75.75 0 100 1.5.75.75 0 000-1.5zM3.5 3.25a.75.75 0 111.5 0 .75.75 0 01-1.5 0z"></path></svg> Branch:</span></strong> master <svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-triangle-down" aria-hidden="true"><path d="M4.427 7.427l3.396 3.396a.25.25 0 00.354 0l3.396-3.396A.25.25 0 0011.396 7H4.604a.25.25 0 00-.177.427z"></path></svg>] branch and [<svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-file-directory" aria-hidden="true"><path fill-rule="evenodd" d="M1.75 1A1.75 1.75 0 000 2.75v10.5C0 14.216.784 15 1.75 15h12.5A1.75 1.75 0 0016 13.25v-8.5A1.75 1.75 0 0014.25 3h-6.5a.25.25 0 01-.2-.1l-.9-1.2c-.33-.44-.85-.7-1.4-.7h-3.5z"></path></svg> /docs <svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-triangle-down" aria-hidden="true"><path d="M4.427 7.427l3.396 3.396a.25.25 0 00.354 0l3.396-3.396A.25.25 0 0011.396 7H4.604a.25.25 0 00-.177.427z"></path></svg>] folder and click <code class="hljs inline no-lang">Save</code>.<br>
+You can select a theme too.</li></ol></li> <li>Go to <code class="hljs inline no-lang">https://{your username}.github.io/{repo name}/</code> to view the user guide of your product. <span class="dimmed">Note: it could take 5-10 minutes for GitHub to update the page.</span><br> <span style="color:red;"><span class="large"><span><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></span></span></span> It is important that you carefully check the content of the UG available at the above URL to ensure the HTML version of the page (auto-generated by GitHub Pages, based on your Markdown text) has the right content. In some rare cases, the page might look alright on GitHub file preview but will not render correctly on GitHub pages.</li></ul> <p><strong>Minimal</strong>:</p> <ul><li>Ensure the chatbot name is stated clearly at the top of the User Guide.</li> <li>Provide the reader with enough guidance to be able to use all important features of your chatbot.</li></ul> <p><span class="badge rounded-pill bg-success text-white"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> <strong>How detailed should the user guide be?</strong> It should be fit-for-purpose. i.e., think from the user&#39;s point of view and include as much information as necessary for the user (while trying to keep it as short as possible -- users don&#39;t have the patience to read lengthy user guides either), in a format as friendly to the user as possible.<br>
+You can use the &#39;Features&#39; section of <a href="https://se-education.org/addressbook-level3/UserGuide.html#features">this user guide</a> as a benchmark.</p></div><hr> <div id="A-DevGuide"><div><h3 id="a-devguide"><span class="badge rounded-pill bg-primary">A-DevGuide</span><a class="fa fa-anchor" href="#a-devguide" onclick="event.stopPropagation()"></a></h3> <p>     <span class="large">↳</span> <strong>Add a Developer Guide</strong></p></div> <p>Add a Developer Guide to the project, explaining the design and implementation to future developers.</p></div><hr> <div id="A-Release"><div><h3 id="a-release"><span class="badge rounded-pill bg-primary">A-Release</span><a class="fa fa-anchor" href="#a-release" onclick="event.stopPropagation()"></a></h3> <p>     <span class="large">↳</span> <strong>Release the product</strong></p></div> <p>Release the product to be used by potential users. <span class="dimmed">e.g., you can make it available on GitHub</span></p></div><hr> <div id="A-BetterGui"><div><h3 id="a-bettergui"><span class="badge rounded-pill bg-primary">A-BetterGui</span><a class="fa fa-anchor" href="#a-bettergui" onclick="event.stopPropagation()"></a></h3> <p>     <span class="large">↳</span> <strong>Improve the GUI</strong></p></div> <p>Improve the GUI to make it more <em>polished</em>. Some examples:</p> <ul><li>Tweak the GUI to match the asymmetric nature of the conversation: As the conversation is between the user and the app (not between two humans), it is asymmetric in nature. Accordingly, it makes sense not to display both sides of the conversion in the same visual format.</li> <li>Highlight errors e.g., when the user types a wrong command, the error should be shown in a different format to catch ther user&#39;s attention.</li> <li>Tweak padding, fonts, colors, alignments to make the GUI more pleasing to look at.<br>
+Given the app is likely to take only a small portion of the screen, and the bot replies can contain lot of text, try to optimize for space (e.g., avoid wasting display space that simply shows the background graphics).</li> <li>Allow resizing of the Window, and ensure the content resize appropriately as the Window changes size.</li> <li>Profile pictures: If your GUI shows profile pictures, you can tweak the way the picture is shown (e.g., crop as a circle or a square with rounded corners). In fact, an easy tweak is to use a picture with a transparent background so that it blends nicely with the background.<br>
+Given that the participants of the conversion are fixed (i.e., you and the chatbot), do you even need big profile pictures?</li> <li>Focus more on tweaks that actually <em>improves</em> the user experience (UX). Some changes <span class="dimmed">(e.g., profile pictures, background graphics)</span> can be eye catching but can even degrade the UX if not done right <span class="dimmed">(e.g., it can make the text harder to read)</span></li></ul> <p><span class="badge rounded-pill bg-success text-white"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> You can take inspiration from <a href="https://nus-cs2103-ay2122s1.github.io/website/admin/ip-showcase.html">these past projects</a>. If you adopt any ideas from them, don&#39;t forget to give credit to the original author.</p></div> <div id="A-Personality"><div><h3 id="a-personality"><span class="badge rounded-pill bg-primary">A-Personality</span><a class="fa fa-anchor" href="#a-personality" onclick="event.stopPropagation()"></a></h3> <p>     <span class="large">↳</span> <strong>Give a unique personality</strong></p></div> <p>Choose a unique personality for Duke, and tweak the following aspects to go with that personality:</p> <ul><li>Name</li> <li>Phrases used by Duke (e.g., when responding to a command)</li> <li>GUI (colors, icons, font, etc.)</li></ul></div> <div id="A-MoreTesting"><div><h3 id="a-moretesting"><span class="badge rounded-pill bg-primary">A-MoreTesting</span><a class="fa fa-anchor" href="#a-moretesting" onclick="event.stopPropagation()"></a></h3> <p>     <span class="large">↳</span> <strong>More automated tests</strong></p></div> <p>Write more JUnit tests, to test nearly all code that <em>can</em> be tested automatically.</p> <p>You may omit code that are hard to test automatically e.g., GUI functionality (test those manually instead).</p> <p>This can include more manual testing as well e.g., testing on different OSes, different screen resolution, different OS language settings (English vs Chinese)</p></div> <div id="A-MoreErrorHandling"><div><h3 id="a-moreerrorhandling"><span class="badge rounded-pill bg-primary">A-MoreErrorHandling</span><a class="fa fa-anchor" href="#a-moreerrorhandling" onclick="event.stopPropagation()"></a></h3> <p>     <span class="large">↳</span> <strong>More error handling</strong></p></div> <p>Improve the code to handle all errors you anticipate the product will encounter during usage.</p> <p>Some examples of errors:</p> <ul><li>command format errors: multiple spaces where only one is expected, trailing/leading spaces in the command, an essential parameter missing, a parameter is specified multiple times, special characters used where they are not expected, ...</li> <li>environment issues: an expected file is missing, access to a file is denied, a file content is not as expected, ...</li> <li>data is not as expected: start date/time is later (or same as) than end/time, a value that should be unique is duplicated (e.g., two tasks with the same exact details), non-existent dates (e.g., Feb 30)</li></ul></div> <div id="A-AiAssisted"><div><h3 id="a-aiassisted"><span class="badge rounded-pill bg-primary">A-AiAssisted</span><a class="fa fa-anchor" href="#a-aiassisted" onclick="event.stopPropagation()"></a></h3> <p>     <span class="large">↳</span> <strong>Enhance the code using AI tools</strong></p></div> <p>Use AI tools (e.g., GitHub Copilot, ChatGPT, Claude, Cursor etc.) to enhance your chatbot code. For example, you can get AI tools to help you,</p> <ul><li>improve the quality of the current code.</li> <li>tweak an existing feature to make it more useful to the user.</li> <li>add or improve documentation, tests.</li></ul> <p>You can refer the <a href="https://se-education.org/guides/tutorials/aiAssistedCoding.html">se-edu guide on AI-Assisted Coding</a> for further resources.</p></div> <h2 id="extensions-category-b"><div class="text-white bg-info p-1">Extensions: Category B</div><a class="fa fa-anchor" href="#extensions-category-b" onclick="event.stopPropagation()"></a></h2> <div id="B-TentativeScheduling"><div><h3 id="b-tentativescheduling"><span class="badge rounded-pill bg-info">B-TentativeScheduling</span><a class="fa fa-anchor" href="#b-tentativescheduling" onclick="event.stopPropagation()"></a></h3> <p>     <span class="large">↳</span> <strong>Tentative scheduling</strong></p></div> <p>Provide a way for an event to be tentatively scheduled in multiple slots, and later to be confirmed to one of the slots.</p></div><hr> <div id="B-Snooze"><div><h3 id="b-snooze"><span class="badge rounded-pill bg-info">B-Snooze</span><a class="fa fa-anchor" href="#b-snooze" onclick="event.stopPropagation()"></a></h3> <p>     <span class="large">↳</span> <strong>Snoozing/postponing tasks</strong></p></div> <p>Provide a way to easily snooze/postpone/reschedule tasks.</p></div><hr> <div id="B-RecurringTasks"><div><h3 id="b-recurringtasks"><span class="badge rounded-pill bg-info">B-RecurringTasks</span><a class="fa fa-anchor" href="#b-recurringtasks" onclick="event.stopPropagation()"></a></h3> <p>     <span class="large">↳</span> <strong>Recurring tasks</strong></p></div> <p>Provide support for managing <em>recurring</em> tasks <span class="dimmed">e.g., a weekly project meeting</span>.</p></div><hr> <div id="B-DoAfterTasks"><div><h3 id="b-doaftertasks"><span class="badge rounded-pill bg-info">B-DoAfterTasks</span><a class="fa fa-anchor" href="#b-doaftertasks" onclick="event.stopPropagation()"></a></h3> <p>     <span class="large">↳</span> <strong>&#39;Do after&#39; tasks</strong></p></div> <p>Support the managing of tasks that need to be <em>done</em> after a specific time/task <span class="dimmed">e.g., return book after the exam is over</span>.</p></div><hr> <div id="B-DoWithinPeriodTasks"><div><h3 id="b-dowithinperiodtasks"><span class="badge rounded-pill bg-info">B-DoWithinPeriodTasks</span><a class="fa fa-anchor" href="#b-dowithinperiodtasks" onclick="event.stopPropagation()"></a></h3> <p>     <span class="large">↳</span> <strong>&#39;Do within a period&#39; task</strong></p></div> <p>Provide support for managing tasks that need to be done within a certain period <span class="dimmed">e.g., collect certificate between Jan 15 and 25th</span>.</p></div><hr> <div id="B-FixedDurationTasks"><div><h3 id="b-fixeddurationtasks"><span class="badge rounded-pill bg-info">B-FixedDurationTasks</span><a class="fa fa-anchor" href="#b-fixeddurationtasks" onclick="event.stopPropagation()"></a></h3> <p>     <span class="large">↳</span> <strong>Unscheduled tasks with a fixed duration</strong></p></div> <p>Provide support for managing tasks that takes a fixed amount of time but does not have a fixed start/end time <span class="dimmed">e.g., reading the sales report (needs 2 hours)</span>.</p></div><hr> <div id="B-Reminders"><div><h3 id="b-reminders"><span class="badge rounded-pill bg-info">B-Reminders</span><a class="fa fa-anchor" href="#b-reminders" onclick="event.stopPropagation()"></a></h3> <p>     <span class="large">↳</span> <strong>Reminders for tasks</strong></p></div> <p>Provide a way to get reminders about tasks <span class="dimmed">e.g., remind the user about upcoming deadlines</span>.</p></div><hr> <div id="B-FindFreeTimes"><div><h3 id="b-findfreetimes"><span class="badge rounded-pill bg-info">B-FindFreeTimes</span><a class="fa fa-anchor" href="#b-findfreetimes" onclick="event.stopPropagation()"></a></h3> <p>     <span class="large">↳</span> <strong>Find free times</strong></p></div> <p>Provide a way for the user to find free times <span class="dimmed">e.g., when is the nearest day in which I have a 4 hour free slot?</span>.</p></div><hr> <div id="B-ViewSchedules"><div><h3 id="b-viewschedules"><span class="badge rounded-pill bg-info">B-ViewSchedules</span><a class="fa fa-anchor" href="#b-viewschedules" onclick="event.stopPropagation()"></a></h3> <p>     <span class="large">↳</span> <strong>View schedules</strong></p></div> <p>Provide a way to view tasks in the form of a schedule <span class="dimmed">e.g., view the schedule for a specific date</span>.</p></div><hr> <div id="B-DetectAnomalies"><div><h3 id="b-detectanomalies"><span class="badge rounded-pill bg-info">B-DetectAnomalies</span><a class="fa fa-anchor" href="#b-detectanomalies" onclick="event.stopPropagation()"></a></h3> <p>     <span class="large">↳</span> <strong>Detect scheduling anomalies</strong></p></div> <p>Deal with schedule anomalies <span class="dimmed">e.g., detect if a task being added clashes with another task in the list</span>.</p></div> <h2 id="extensions-category-c"><div class="text-white bg-success p-1">Extensions: Category C</div><a class="fa fa-anchor" href="#extensions-category-c" onclick="event.stopPropagation()"></a></h2> <div id="C-DetectDuplicates"><div><h3 id="c-detectduplicates"><span class="badge rounded-pill bg-success">C-DetectDuplicates</span><a class="fa fa-anchor" href="#c-detectduplicates" onclick="event.stopPropagation()"></a></h3> <p>     <span class="large">↳</span> <strong>Deal duplicate items</strong></p></div> <p>Add the ability to recognize and deal with duplicate items. <span class="dimmed">e.g., the same task added multiple times</span>.</p></div><hr> <div id="C-FlexibleDataSource"><div><h3 id="c-flexibledatasource"><span class="badge rounded-pill bg-success">C-FlexibleDataSource</span><a class="fa fa-anchor" href="#c-flexibledatasource" onclick="event.stopPropagation()"></a></h3> <p>     <span class="large">↳</span> <strong>Flexible data source</strong></p></div> <p>Provide more flexibility with the data source <span class="dimmed">e.g., the ability for the user to specify which file to use as the data source</span>.</p></div><hr> <div id="C-Sort"><div><h3 id="c-sort"><span class="badge rounded-pill bg-success">C-Sort</span><a class="fa fa-anchor" href="#c-sort" onclick="event.stopPropagation()"></a></h3> <p>     <span class="large">↳</span> <strong>Sorting items managed by the App</strong></p></div> <p>The ability to sort items <span class="dimmed">e.g., sort deadlines chronologically</span>.</p></div> <div id="C-NaturalDates"><div><h3 id="c-naturaldates"><span class="badge rounded-pill bg-success">C-NaturalDates</span><a class="fa fa-anchor" href="#c-naturaldates" onclick="event.stopPropagation()"></a></h3> <p>     <span class="large">↳</span> <strong>More natural date formats</strong></p></div> <p>Support more natural date formats <span class="dimmed">e.g., <code class="hljs inline no-lang">Mon</code> in a user command can be interpreted as the date of the next Monday in the calendar</span>.</p></div> <div id="C-BetterSearch"><div><h3 id="c-bettersearch"><span class="badge rounded-pill bg-success">C-BetterSearch</span><a class="fa fa-anchor" href="#c-bettersearch" onclick="event.stopPropagation()"></a></h3> <p>     <span class="large">↳</span> <strong>More flexibility in searching for items</strong></p></div> <p>All more flexibility in search <span class="dimmed">e.g., find items even if the keyword matches the item only partially</span>.</p></div> <div id="C-Update"><div><h3 id="c-update"><span class="badge rounded-pill bg-success">C-Update</span><a class="fa fa-anchor" href="#c-update" onclick="event.stopPropagation()"></a></h3> <p>     <span class="large">↳</span> <strong>Easily edit items</strong></p></div> <p>Support a way to easily edit details of items <span class="dimmed">e.g., change the end time of an event without changing anything else</span>.</p> <p>Minimal: the ability to update an existing item without having to delete it first</p> <p>Other ideas:</p> <ul><li>the ability to <em>clone</em> items (to easily create new items based on existing items)</li></ul></div> <div id="C-Tagging"><div><h3 id="c-tagging"><span class="badge rounded-pill bg-success">C-Tagging</span><a class="fa fa-anchor" href="#c-tagging" onclick="event.stopPropagation()"></a></h3> <p>     <span class="large">↳</span> <strong>Tagging items</strong></p></div> <p>Provide a way to tag items <span class="dimmed">e.g., tag a task as <code class="hljs inline no-lang">#fun</code></span>.</p></div> <div id="C-Priority"><div><h3 id="c-priority"><span class="badge rounded-pill bg-success">C-Priority</span><a class="fa fa-anchor" href="#c-priority" onclick="event.stopPropagation()"></a></h3> <p>     <span class="large">↳</span> <strong>Prioritizing items</strong></p></div> <p>Provide a way to attach priorities to items <span class="dimmed">e.g., mark an item as a <code class="hljs inline no-lang">high</code> priority (or priority level <code class="hljs inline no-lang">1</code>)</span>.</p></div> <div id="C-Archive"><div><h3 id="c-archive"><span class="badge rounded-pill bg-success">C-Archive</span><a class="fa fa-anchor" href="#c-archive" onclick="event.stopPropagation()"></a></h3> <p>     <span class="large">↳</span> <strong>Archiving items</strong></p></div> <p>Provide a way to <em>archive</em> items so that the user can remove items from the app but still keep a record of them somewhere <span class="dimmed">e.g., archive all tasks in the list into a file so that the user can start over with a clean slate</span>.</p></div> <div id="C-MassOps"><div><h3 id="c-massops"><span class="badge rounded-pill bg-success">C-MassOps</span><a class="fa fa-anchor" href="#c-massops" onclick="event.stopPropagation()"></a></h3> <p>     <span class="large">↳</span> <strong>Mass operations</strong></p></div> <p>Provide a way to perform tasks on multiple items <span class="dimmed">e.g., delete some specific items in one go</span>.</p></div> <div id="C-Statistics"><div><h3 id="c-statistics"><span class="badge rounded-pill bg-success">C-Statistics</span><a class="fa fa-anchor" href="#c-statistics" onclick="event.stopPropagation()"></a></h3> <p>     <span class="large">↳</span> <strong>Statistics and insights</strong></p></div> <p>Provide a way to leverage statistics about the items managed by the App <span class="dimmed">e.g., show the number of tasks that have been completed in the past week</span>.</p></div> <div id="C-UndoRedo"><div><h3 id="c-undo"><span class="badge rounded-pill bg-success">C-Undo</span><a class="fa fa-anchor" href="#c-undo" onclick="event.stopPropagation()"></a></h3> <p>     <span class="large">↳</span> <strong>Undo</strong></p></div> <p>Provide a way to undo a command.</p> <p>Minimal: the ability to undo the most recent command.</p></div> <div id="C-Help"><div><h3 id="c-help"><span class="badge rounded-pill bg-success">C-Help</span><a class="fa fa-anchor" href="#c-help" onclick="event.stopPropagation()"></a></h3> <p>     <span class="large">↳</span> <strong>Give help to users</strong></p></div> <p>Provide in-App guidance to users.</p> <p>Minimal: add a command to access a help page.</p> <p>Other ideas:</p> <ul><li>Load the App with some sample data at the first run.</li></ul></div> <div id="C-FriendlierSyntax"><div><h3 id="c-friendliersyntax"><span class="badge rounded-pill bg-success">C-FriendlierSyntax</span><a class="fa fa-anchor" href="#c-friendliersyntax" onclick="event.stopPropagation()"></a></h3> <p>     <span class="large">↳</span> <strong>Friendlier syntax for commands</strong></p></div> <p>Make the command syntax more flexible.</p> <p>Minimal: provide shorter aliases for keywords <span class="dimmed">e.g., <code class="hljs inline no-lang">t</code> can be shorter alias for <code class="hljs inline no-lang">todo</code></span>.</p> <p>Other ideas:</p> <ul><li>Allow users to define their own aliases</li> <li>Remove the need for the parts of a command to be in a specific order</li></ul></div> <h2 id="extensions-category-d"><div class="text-white bg-danger p-1">Extensions: Category D</div><a class="fa fa-anchor" href="#extensions-category-d" onclick="event.stopPropagation()"></a></h2> <div id="D-Contacts"><div><h3 id="d-contacts"><span class="badge rounded-pill bg-danger">D-Contacts</span><a class="fa fa-anchor" href="#d-contacts" onclick="event.stopPropagation()"></a></h3> <p>     <span class="large">↳</span> <strong>Support managing contacts</strong></p></div> <p>Support managing info about contacts <span class="dimmed">e.g., details of friends</span></p></div> <div id="D-Notes"><div><h3 id="d-notes"><span class="badge rounded-pill bg-danger">D-Notes</span><a class="fa fa-anchor" href="#d-notes" onclick="event.stopPropagation()"></a></h3> <p>     <span class="large">↳</span> <strong>Support managing notes</strong></p></div> <p>Support managing info about small snippets of textual information the user wants to record <span class="dimmed">e.g., one&#39;s own waist size, a name of a movie that the user wants to remember</span></p></div> <div id="D-Expenses"><div><h3 id="d-expenses"><span class="badge rounded-pill bg-danger">D-Expenses</span><a class="fa fa-anchor" href="#d-expenses" onclick="event.stopPropagation()"></a></h3> <p>     <span class="large">↳</span> <strong>Support managing expenses</strong></p></div> <p>Support managing info about expenses <span class="dimmed">e.g., the amounts spent on food, books, transport, etc.</span></p></div> <div id="D-Loans"><div><h3 id="d-loans"><span class="badge rounded-pill bg-danger">D-Loans</span><a class="fa fa-anchor" href="#d-loans" onclick="event.stopPropagation()"></a></h3> <p>     <span class="large">↳</span> <strong>Support managing loan records</strong></p></div> <p>Support keeping records of loans given/taken <span class="dimmed">e.g., money lent/owed to colleagues/friends</span></p></div> <div id="D-Places"><div><h3 id="d-places"><span class="badge rounded-pill bg-danger">D-Places</span><a class="fa fa-anchor" href="#d-places" onclick="event.stopPropagation()"></a></h3> <p>     <span class="large">↳</span> <strong>Support managing info about places</strong></p></div> <p>Support recording info about places <span class="dimmed">e.g., info about restaurants visited, for future reference</span></p></div> <div id="D-Trivia"><div><h3 id="d-trivia"><span class="badge rounded-pill bg-danger">D-Trivia</span><a class="fa fa-anchor" href="#d-trivia" onclick="event.stopPropagation()"></a></h3> <p>     <span class="large">↳</span> <strong>Support managing trivia</strong></p></div> <p>Provide the ability to learn/memorize things <span class="dimmed">e.g., learn vocabulary, answers to questions</span></p></div> <div id="D-Clients"><div><h3 id="d-clients"><span class="badge rounded-pill bg-danger">D-Clients</span><a class="fa fa-anchor" href="#d-clients" onclick="event.stopPropagation()"></a></h3> <p>     <span class="large">↳</span> <strong>Support managing client info</strong></p></div> <p>Support managing info about clients <span class="dimmed">e.g., for an insurance agent to keep track of clients</span></p></div> <div id="D-Merchandise"><div><h3 id="d-merchandise"><span class="badge rounded-pill bg-danger">D-Merchandise</span><a class="fa fa-anchor" href="#d-merchandise" onclick="event.stopPropagation()"></a></h3> <p>     <span class="large">↳</span> <strong>Support managing merchandise info</strong></p></div> <p>Support managing info about merchandise <span class="dimmed">e.g., a property agent to keep track of properties, a collector of stamps keep track of items in the collection</span></p></div></div></div></div></div> <nav id="page-nav" class="fixed-header-padding" data-v-6b1b63d2><!--[--><div class="nav-component slim-scroll"><nav id="mb-page-nav" class="nav nav-pills flex-column my-0 small no-flex-wrap" data-v-6b1b63d2><!--[--><a class="nav-link py-1" href="#project-duke">Project Duke‎</a> <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap"><a class="nav-link py-1" href="#levels">Levels‎</a> <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap"><a class="nav-link py-1" href="#level-0-rename-greet-exit">Level 0. Rename, Greet, Exit‎</a> <a class="nav-link py-1" href="#level-1-echo">Level 1. Echo‎</a> <a class="nav-link py-1" href="#level-2-add-list">Level 2. Add, List‎</a> <a class="nav-link py-1" href="#level-3-mark-as-done">Level 3. Mark as Done‎</a> <a class="nav-link py-1" href="#level-4-todos-events-deadlines">Level 4. ToDos, Events, Deadlines‎</a> <a class="nav-link py-1" href="#level-5-handle-errors">Level 5. Handle Errors‎</a> <a class="nav-link py-1" href="#level-6-delete">Level 6. Delete‎</a> <a class="nav-link py-1" href="#level-7-save">Level 7. Save‎</a> <a class="nav-link py-1" href="#level-8-dates-and-times">Level 8. Dates and Times‎</a> <a class="nav-link py-1" href="#level-9-find">Level 9. Find‎</a> <a class="nav-link py-1" href="#level-10-gui">Level 10. GUI‎</a></nav> <a class="nav-link py-1" href="#extensions-category-a">Extensions: Category A‎</a> <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap"><a class="nav-link py-1" href="#a-classes-2">A-Classes‎</a> <a class="nav-link py-1" href="#a-inheritance-2">A-Inheritance‎</a> <a class="nav-link py-1" href="#a-abstractclasses">A-AbstractClasses‎</a> <a class="nav-link py-1" href="#a-exceptions-2">A-Exceptions‎</a> <a class="nav-link py-1" href="#a-textuitesting">A-TextUiTesting‎</a> <a class="nav-link py-1" href="#a-collections-2">A-Collections‎</a> <a class="nav-link py-1" href="#a-moreoop">A-MoreOOP‎</a> <a class="nav-link py-1" href="#a-junit">A-JUnit‎</a> <a class="nav-link py-1" href="#a-packages">A-Packages‎</a> <a class="nav-link py-1" href="#a-javadoc">A-JavaDoc‎</a> <a class="nav-link py-1" href="#a-codingstandard">A-CodingStandard‎</a> <a class="nav-link py-1" href="#a-checkstyle">A-CheckStyle‎</a> <a class="nav-link py-1" href="#a-codequality">A-CodeQuality‎</a> <a class="nav-link py-1" href="#a-assertions">A-Assertions‎</a> <a class="nav-link py-1" href="#a-jar">A-Jar‎</a> <a class="nav-link py-1" href="#a-gradle">A-Gradle‎</a> <a class="nav-link py-1" href="#a-ci">A-CI‎</a> <a class="nav-link py-1" href="#a-enums">A-Enums‎</a> <a class="nav-link py-1" href="#a-varargs">A-Varargs‎</a> <a class="nav-link py-1" href="#a-lambdas">A-Lambdas‎</a> <a class="nav-link py-1" href="#a-streams">A-Streams‎</a> <a class="nav-link py-1" href="#a-libraries">A-Libraries‎</a> <a class="nav-link py-1" href="#a-userguide">A-UserGuide‎</a> <a class="nav-link py-1" href="#a-devguide">A-DevGuide‎</a> <a class="nav-link py-1" href="#a-release">A-Release‎</a> <a class="nav-link py-1" href="#a-bettergui">A-BetterGui‎</a> <a class="nav-link py-1" href="#a-personality">A-Personality‎</a> <a class="nav-link py-1" href="#a-moretesting">A-MoreTesting‎</a> <a class="nav-link py-1" href="#a-moreerrorhandling">A-MoreErrorHandling‎</a> <a class="nav-link py-1" href="#a-aiassisted">A-AiAssisted‎</a></nav> <a class="nav-link py-1" href="#extensions-category-b">Extensions: Category B‎</a> <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap"><a class="nav-link py-1" href="#b-tentativescheduling">B-TentativeScheduling‎</a> <a class="nav-link py-1" href="#b-snooze">B-Snooze‎</a> <a class="nav-link py-1" href="#b-recurringtasks">B-RecurringTasks‎</a> <a class="nav-link py-1" href="#b-doaftertasks">B-DoAfterTasks‎</a> <a class="nav-link py-1" href="#b-dowithinperiodtasks">B-DoWithinPeriodTasks‎</a> <a class="nav-link py-1" href="#b-fixeddurationtasks">B-FixedDurationTasks‎</a> <a class="nav-link py-1" href="#b-reminders">B-Reminders‎</a> <a class="nav-link py-1" href="#b-findfreetimes">B-FindFreeTimes‎</a> <a class="nav-link py-1" href="#b-viewschedules">B-ViewSchedules‎</a> <a class="nav-link py-1" href="#b-detectanomalies">B-DetectAnomalies‎</a></nav> <a class="nav-link py-1" href="#extensions-category-c">Extensions: Category C‎</a> <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap"><a class="nav-link py-1" href="#c-detectduplicates">C-DetectDuplicates‎</a> <a class="nav-link py-1" href="#c-flexibledatasource">C-FlexibleDataSource‎</a> <a class="nav-link py-1" href="#c-sort">C-Sort‎</a> <a class="nav-link py-1" href="#c-naturaldates">C-NaturalDates‎</a> <a class="nav-link py-1" href="#c-bettersearch">C-BetterSearch‎</a> <a class="nav-link py-1" href="#c-update">C-Update‎</a> <a class="nav-link py-1" href="#c-tagging">C-Tagging‎</a> <a class="nav-link py-1" href="#c-priority">C-Priority‎</a> <a class="nav-link py-1" href="#c-archive">C-Archive‎</a> <a class="nav-link py-1" href="#c-massops">C-MassOps‎</a> <a class="nav-link py-1" href="#c-statistics">C-Statistics‎</a> <a class="nav-link py-1" href="#c-undo">C-Undo‎</a> <a class="nav-link py-1" href="#c-help">C-Help‎</a> <a class="nav-link py-1" href="#c-friendliersyntax">C-FriendlierSyntax‎</a></nav> <a class="nav-link py-1" href="#extensions-category-d">Extensions: Category D‎</a> <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap"><a class="nav-link py-1" href="#d-contacts">D-Contacts‎</a> <a class="nav-link py-1" href="#d-notes">D-Notes‎</a> <a class="nav-link py-1" href="#d-expenses">D-Expenses‎</a> <a class="nav-link py-1" href="#d-loans">D-Loans‎</a> <a class="nav-link py-1" href="#d-places">D-Places‎</a> <a class="nav-link py-1" href="#d-trivia">D-Trivia‎</a> <a class="nav-link py-1" href="#d-clients">D-Clients‎</a> <a class="nav-link py-1" href="#d-merchandise">D-Merchandise‎</a></nav></nav><!--]--><!--v-if--></nav></div><!--]--><!--v-if--></nav> <div class="scroll-top-button fa-lg d-print-none" style="display:none;bottom:2%;right:2%;position:fixed;" aria-hidden="true"><!--[--><i class="fas fa-arrow-circle-up"></i><!--]--></div></div> <footer><div class="text-center"><small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 6.0.2</a>, generated on Mon, 8 Sept 2025, 11:04:52 GMT+8]</small></div></footer><!--]--></div>
+</body><script src="/website/markbind/js/bootstrap-utility.min.js"></script>
+<script src="/website/markbind/js/polyfill.min.js"></script>
+<script src="/website/markbind/js/vue.global.prod.min.js"></script>
+<script src="/website/markbind/js/markbind.min.js"></script>
+<script src="index.page-vue-render.js"></script>
+<script>
+  MarkBind.setup()
+</script>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122519234-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'UA-122519234-1');
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3.2.0/dist/umd/index.js"></script>
+    <script>
+    docsearch({
+      container: "#algolia-search-input",
+      appId: "3DU4XTBX4T",
+      apiKey: "772d7386c7a785f7a60fec5a096311ef",
+      indexName: "nus-tic2002-2020a",
+      searchParameters: {"facetFilters":[["site:nus-cs2103-ay2526s1.github.io"],["tags:admin","tags:se-book-adapted","tags:schedule"]]}
+    });
+  </script>
+    <script>
+    const style = document.createElement('style');
+    style.innerHTML = ".DocSearch-Container { z-index: 1002; position: fixed; }";
+    document.getElementsByTagName('head')[0].appendChild(style);
+  </script>
+  
+    <script>
+    function copyCodeBlock(element) {
+        const pre = element.parentElement.parentElement;
+        const codeElement = pre.querySelector('code');
+        const copyButtonBody = element.querySelector('.function-btn-body');
+        const tooltipText = element.querySelector(".tooltiptext");
+
+        // create dummy text element to select() the text field
+        const textElement = document.createElement('textarea');
+        textElement.value = codeElement.textContent;
+        document.body.appendChild(textElement);
+        textElement.select();
+
+        document.execCommand('copy');
+        document.body.removeChild(textElement);
+        copyButtonBody.innerHTML = `
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="18"
+    height="18"
+    viewBox="2 2 22 22"
+  >
+    <path d="M 19.28125 5.28125 L 9 15.5625 L 4.71875 11.28125 L 3.28125 12.71875 L 8.28125 17.71875 
+    L 9 18.40625 L 9.71875 17.71875 L 20.71875 6.71875 Z"></path>
+  </svg>
+`;
+        console.log("Running tooltip");
+        tooltipText.innerText  = `Copied!`;
+        setTimeout(() => {
+            copyButtonBody.innerHTML = `
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "/>
+    </g>
+</svg>
+`;
+            tooltipText.innerText  = `Copy`;
+        }, 3000);
+    }
+    </script>
+    <script>
+    function toggleCodeBlockWrap(element) {
+      const pre = element.parentElement.parentElement;
+      const tooltipText = element.querySelector(".tooltiptext");
+      const classList = pre.querySelector('code').classList; 
+      if (classList.contains('wrap')) {
+          classList.remove('wrap');
+          tooltipText.innerText  = `Wrap Text`;
+      } else {
+          classList.add('wrap')
+          tooltipText.innerText  = `Unwrap Text`;
+      }
+    }
+    </script>
+    <script src="/website/plugins/dataTable/datatables.min.js"></script>
+    
+  <script>
+    function getTableOptions(el) {
+      const options = {};
+      if ($(el).hasClass('sortable-table')) {
+        options.searching = false;
+        options.paging = false;
+        options.info = false;
+      } else if ($(el).hasClass('searchable-table')) {
+        options.ordering = false;
+        options.paging = false;
+        options.info = false;
+        options.dom = '<"row"<"col-sm-12"f>>' + '<"row"<"col-sm-12"t>>';
+      } else if ($(el).hasClass('sortable-searchable-table')) {
+        options.paging = false;
+        options.info = false;
+        options.dom = '<"row"<"col-sm-12"f>>' + '<"row"<"col-sm-12"t>>';
+      }
+      return options;
+    }
+
+    function initializeTables(tables) {
+      if (!tables || tables.length === 0) return;
+      tables.forEach(table => {
+        const options = getTableOptions(table);
+        $(table).DataTable(options);
+        $(table).addClass('dt-processed');
+      });
+    }
+
+    function setupTableObserver() {
+      const observer = new MutationObserver((mutations) => {
+        let newTables = [];
+        
+        mutations.forEach(mutation => {
+          if (mutation.addedNodes.length) {
+            mutation.addedNodes.forEach(node => {
+
+              if (node.nodeType === 1 && node.tagName === 'TABLE' && 
+                  !$(node).hasClass('dt-processed') &&
+                  ($(node).hasClass('sortable-table') || 
+                   $(node).hasClass('searchable-table') || 
+                   $(node).hasClass('sortable-searchable-table'))) {
+                newTables.push(node);
+              }
+              
+              if (node.nodeType === 1 && node.querySelectorAll) {
+                const tablesInNode = node.querySelectorAll(
+                'table.sortable-table:not(.dt-processed), ' +
+                'table.searchable-table:not(.dt-processed), ' +
+                'table.sortable-searchable-table:not(.dt-processed)');
+                if (tablesInNode.length) {
+                  newTables = [...newTables, ...tablesInNode];
+                }
+              }
+            });
+          }
+        });
+
+        if (newTables.length > 0) {
+          initializeTables(newTables);
+        }
+      });
+      
+      // Start observing the entire document for changes
+      observer.observe(document.body, {
+        childList: true,
+        subtree: true
+      });
+      
+      return observer;
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+      // Process any existing tables
+      const existingTables = document.querySelectorAll(
+        'table.sortable-table:not(.dt-processed), ' +
+        'table.searchable-table:not(.dt-processed), ' +
+        'table.sortable-searchable-table:not(.dt-processed)'
+      );
+      if (existingTables.length > 0) {
+        initializeTables(existingTables);
+      }
+      
+      setupTableObserver();
+    });
+
+  </script>
+
+    <script type="module">
+    window.mermaidPromise = null;
+    
+    const loadMermaid = () => {
+      if (window.mermaidPromise === null) {
+        window.mermaidPromise = import('https://unpkg.com/mermaid@11.7.0/dist/mermaid.esm.min.mjs')
+          .then(({ default: mermaid }) => {
+            mermaid.initialize({
+              startOnLoad: false,
+            });
+            console.log('Mermaid loaded successfully');
+            return mermaid;
+          })
+          .catch((error) => {
+            console.error('Mermaid failed to load:', error);
+            window.mermaidPromise = false;
+            return null;
+          });
+      }
+      return window.mermaidPromise;
+    };
+
+    const renderMermaidDiagrams = (elements) => {
+      if (!elements || elements.length === 0) {
+        return Promise.resolve();
+      }
+
+      return loadMermaid().then(mermaid => {
+        if (!mermaid) return;
+        return mermaid.run({ nodes: Array.from(elements) })
+          .catch(err => console.error('Error rendering mermaid diagrams:', err));
+      });
+    };
+
+    const setupMermaidObserver = () => {
+      const observer = new MutationObserver((mutations) => {
+        let newMermaidElements = [];
+        
+        mutations.forEach(mutation => {
+          if (mutation.addedNodes.length) {
+            mutation.addedNodes.forEach(node => {
+              if (node.nodeType === 1 && node.classList && 
+                  node.classList.contains('mermaid')) {
+                newMermaidElements.push(node);
+              }
+              
+              if (node.nodeType === 1 && node.querySelectorAll) {
+                const mermaidInNode = node.querySelectorAll('.mermaid');
+                if (mermaidInNode.length) {
+                  newMermaidElements = [...newMermaidElements, ...mermaidInNode];
+                }
+              }
+            });
+          }
+        });
+        
+        if (newMermaidElements.length > 0) {
+          renderMermaidDiagrams(newMermaidElements);
+        }
+      });
+      
+      observer.observe(document.body, {
+        childList: true,
+        subtree: true
+      });
+      
+      return observer;
+    };
+
+    // Initialize on DOM content loaded
+    document.addEventListener('DOMContentLoaded', () => {
+      const existingDiagrams = document.querySelectorAll('.mermaid');
+      if (existingDiagrams.length > 0) {
+        renderMermaidDiagrams(existingDiagrams);
+      }
+      
+      setupMermaidObserver();
+    });
+
+  </script>
+</html>
