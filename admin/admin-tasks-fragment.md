@@ -138,7 +138,8 @@ Installing and configuring Git is covered in [this lesson]({{ baseUrl }}/book/gi
 <span id="heading_accept_github_invitations">Accept GitHub invitation from the course organization</span>
 <div id="desc_accept_github_invitations">
 
-* We will be adding you all to {{ course | lower }}-{{ semester }} github org. **Please accept the invitation sent by GitHub** as you need to be a member of the org for some of the future course activities. If you did not receive the invitation link, you can use the link [https://github.com/orgs/nus-{{ course | lower }}-{{ semester }}/invitation](https://github.com/orgs/nus-{{ course | lower }}-{{ semester }}/invitation).
+* We will be adding you all to {{ course | lower }}-{{ semester }} github org. **Please accept the invitation sent by GitHub** as you need to be a member of the org for some of the future course activities. If you did not receive the invitation link, you can use the link [https://github.com/orgs/nus-{{ course | lower }}-{{ semester }}](https://github.com/orgs/nus-{{ course | lower }}-{{ semester }}) (==you need to log in to GitHub first== -- otherwise the invitation will not show up).<br>
+  {{ icon_tip }} If you are unable to view [this repo](https://github.com/nus-{{ course | lower }}-{{ semester }}/membership-check), you have not joined the org yet.
 * Worth `2` participation points
 </div>
 {#====================================================================================================================#}

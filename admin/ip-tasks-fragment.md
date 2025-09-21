@@ -1,6 +1,6 @@
 {% from "common/admin.njk" import show_admin_page, show_project_summary_lead with context %}
 {% from "common/topics.njk" import panopto, topic_preamble with context %}
-{% from "common/macros.njk" import as_tag, button, embed_topic, get_date, show_faq, step, thumb, timing_badge with context %}
+{% from "common/macros.njk" import as_tag, button, embed_topic, get_date, show_faq, show_troubleshooting, step, thumb, timing_badge with context %}
 {% from "_course-" + course + "/weeklyIpTasks-fragment.md" import weekly_ip_tasks with context %}
 
 {#====================================================================================================================
@@ -323,7 +323,7 @@ In previous iP increments, you learned:
 
 In the following iP task you will learn how to do the following new things, which are relevant to the tP:
 
-* How to merge branches remotely, and pull to your local repo
+* How to merge branches in the remote repo, and pull the merged branch to your local repo
 * How to create PRs from branches other than `master`
 * How to manage PRs that your repo receive
 * How to work with parallel PRs
@@ -547,7 +547,7 @@ commit id: "m6"
 <div tags="m--cs2103 m--tic2002">
 <p/>
 
-* Do the following increments in the given order because after doing `A-Gradle` you can use the Gradle option (rather than the IntelliJ option) when doing `A-JUnit` and `A-JAR` as they are easier to do using Gradle.{ icon="glyphicon-exclamation-sign" i-class="text-danger" i-size="25px"}
+* Do the following increments in the given order because after doing `A-Gradle` you should #r#use the Gradle option (rather than the IntelliJ option)## when doing `A-JUnit` and `A-JAR` as they are easier to do using Gradle.{ icon="glyphicon-exclamation-sign" i-class="text-danger" i-size="25px"}
 
 <div class="indented-level2" id="pulling-branch-from-upstream">
 <panel type="seamless" >
@@ -617,6 +617,7 @@ If your fork doesn't have the `add-gradle-support` branch (i.e., you did not cop
 {% set ip_ai_link = "[iP.AI route](../schedule/week2/project.html#:~:text=iP.AI%3A%20an%20AI%2Dassisted%20approach%20to%20the%20iP)" %}
 * If you are already following the {{ ip_ai_link }}, you may add the `A-AiAssisted` tag to the latest commit of your repo without needing any further work.
 * Otherwise (i.e., if you haven't been using AI tools in the iP until now), the increment below is an opportunity for you to use the iP to explore how AI tools can help with programming tasks. If you take it up, in places where you use AI-assisted code, give some details (e.g., which tool you used how it helped) as a code comment. Alternatively, you can add an `AI.md` file, similar to the {{ ip_ai_link }}.
+* You may also do this increment in combination with optional increments given later in this page. For example, you can do the `A-BetterGui` using AI assistance.
 </div>
 
 {#====================================================================================================================#}
@@ -971,6 +972,11 @@ This activity is worth `2x2=4` participation points.
    1. Pass the jar file to team members and ask them to do a test drive. Assuming some of your team members' OS differ from yours, this should verify if the app is cross-platform.<br>
       {{ icon_tip }} If you don't have ready access to a specific OS, you can ask others' help to smoke-test it by [posting a smoke-testing request in the forum]({{ url_forum }}/new?template=smoke.md) -- some of them will even appreciate the opportunity to help a classmate.<br>
      {{ icon_info }} Note that concepts you encounter while doing course project tasks (e.g., _smoke testing_) are in the [scope of the final exam](exams.html#:~:text=you%20are%20expected%20to%20be%20aware%20of%20SE%2Drelated%20things%20(i.e.%2C%20tools%2C%20techniques%2C%20concepts)%20encountered%20while%20dong%20the%20iP%20and%20the%20tP).
+
+{{ show_troubleshooting("missingJavafxComponent", is_compact=1) }}
+{{ show_troubleshooting("pipelineNotFound", is_compact=1) }}
+{{ show_troubleshooting("moreRecentJavaVersion") }}
+
 4. **Create a new release on GitHub** (e.g., `v0.2`) and upload the JAR file.
    * Recommended to refrain from uploading multiple JAR files as this can cause extra work for the evaluators.
 

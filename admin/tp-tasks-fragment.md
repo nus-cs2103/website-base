@@ -726,8 +726,9 @@ As we are still at the early stages of identifying a problem to solve, do not th
 
 {{ panopto("c0612db9-3cf1-4bab-a066-b07501387c0f", desc="Additional commentary on the recipe to be used") }}{% endif %}
 
-* **Follow the steps in the recipe mentioned above to arrive at user stories for the product**, with your team members.  <span tags="m--cs2103"><span class="text-danger">If you don't follow the recipe mentioned above</span>, you could end up with a different set of user stories than otherwise.
-  </span>
+* **==Follow the steps in the recipe mentioned above to arrive at user stories== for the product**, with your team members.  <span tags="m--cs2103"><span class="text-danger">If you don't follow the recipe mentioned above</span>, you could end up with a different set of user stories than otherwise.
+  </span><br>
+  **Keep records of all intermediate steps e.g., the persona, scope, narrative.**
 
 * **User stories for what version?** At this stage, collect user stories to cover at least the final version you hope to deliver at the end of the semester. It is OK to go even beyond that %%(reason: we are simulating a project that will continue even after the semester is over)%%.{% if cs2103 %}<br>
   Do not omit user stories already covered by the features in AB3 %%i.e., the user story should be recorded even if AB3 already caters for it.%%{% endif %}
@@ -738,15 +739,15 @@ As we are still at the early stages of identifying a problem to solve, do not th
   * {{ bad }} As a user, I can track my schedule, so that I can know when to do things.<br>
     %%Reason: too big, as _track_ can involve a lot of things.%%
   * {{ good }} As a user, I can add a time to a task, so that I can record when a task need to be done.
-  * {{ good }} As a user, I can see the pending task that has the next earliest deadline, so that I can know what I need to do next.
+  * {{ good }} As a user, I can see the pending task that has the next earliest deadline, so that I can know what I need to do next.<br><br>
 
-* **What format?**: You may use a sentence format or a table format but do maintain the prescribed three-part structure of a user story. In particular, ==try to include the _benefit_ part in most user stories== as that will come in handy when prioritizing user stories later.
+* **What format?**: You may use a sentence format or a table format but do maintain the prescribed three-part structure of a user story. In particular, ==try to include the _benefit_ part in most user stories== as that will come in handy when prioritizing user stories later.<br>
+  {{ icon_tip }} **Use an online spreadsheet for recording user stories** (e.g., Google Sheets), if you are not sure which tool to use. -- they are easy to edit, share, color, and more importantly, sort/filter.
 
 * **Submission** (to be checked by the tutor later):<br>
-  * Intermediate steps (e.g., persona, scenarios): Keep records of these in your collaborative project document started in the previous week.
-  * Brainstormed user stories:  Record them using an <!--~~write each user story in a piece of paper (e.g., yellow sticky note, index card, or just pieces of paper about the size of a playing card). Alternatively you can~~--> online tool (some examples given in <trigger trigger="click" for="modal:v10-onlinetools">[Textbook {{ icon_embedding }} Specifying Requirements → UserStories → Usage → (panel) Tool Examples ]</trigger>).<br>
-  {{ icon_tip }} **Use an online spreadsheet for recording user stories** (e.g., Google Sheets), if you are not sure which tool to use. -- they are easy to edit, share, color, and more importantly, sort/filter.<br>
-  {{ icon_info }} If you put the user stories in a page/file other than your main collaborative project notes document (i.e., the one given [here](teamList.html)), ensure that page/file is viewable by the public, and the main document has a link to that page/file. Otherwise, the tutor will not be able to see your list of user stories.
+  * **Intermediate steps** (e.g., persona, narrative): These should be in your collaborative project document started in the previous week. Mark them clearly so that the tutor can detect them easily.
+  * **Brainstormed user stories**:  Record them using an <!--~~write each user story in a piece of paper (e.g., yellow sticky note, index card, or just pieces of paper about the size of a playing card). Alternatively you can~~--> online tool (some examples given in <trigger trigger="click" for="modal:v10-onlinetools">[Textbook {{ icon_embedding }} Specifying Requirements → UserStories → Usage → (panel) Tool Examples ]</trigger>).<br>
+  {{ icon_info }} If you put the user stories in a page/file other than your main collaborative project notes document (i.e., the one given [here]({{ baseUrl }}/admin/teamList.html)), ensure that page/file is viewable by the public, and the main document has a link to that page/file. Otherwise, the tutor will not be able to see your list of user stories.
 
 <modal large header="Textbook {{ icon_embedding }}" id="modal:v10-brainstorming">
 <include src="../book/gatheringRequirements/brainstorming/unit-inElsewhere-asFlat.md" boilerplate/>
@@ -922,7 +923,7 @@ Submission: not required.
   * How does UPPER/lower case affects values -- is `John Doe` same as `john doe`?
   * It's not enough to state 'valid name'; you need to specify what rules will be used to determine if the input is a valid name.
 * Error message if the value is not acceptable
-* Rationale for any the validity rule %%e.g., why only certain characters are allowed for person names?%%
+* Rationale for the validity rule %%e.g., why only certain characters are allowed for person names?%%
 
 Yes, making these decisions is not easy -- and that's why we want you to think about them now rather than later. Feel free to discuss these validation rules in the forum.
 
@@ -1036,7 +1037,7 @@ If you did the above updates correctly, your UI mock up and profile photos shoul
 
 ****B: Also update site-wide settings****, as necessary:
 
-* You need to update the `AB-3` in the top navigation bar of your project website (it's in `docs\_config.yml` and `docs/_sass/minima/_base.scss` if using Jekyll; in `docs\_markbind\layouts\default.md` if using MarkBind).<br>
+* You need to update the `AB-3` in the top navigation bar of your project website (it's in `docs/_config.yml` and `docs/_sass/minima/_base.scss` if using Jekyll; in `docs/_markbind/layouts/default.md` if using MarkBind).<br>
 
 * More info on updating site-wide settings such as the above:
   * If using Jekyll: follow [the Jekyll Guide @SE-EDU/guides](https://se-education.org/guides/tutorials/jekyll.html#:~:text=the%20final%20outcome.-,Site%2Dwide%20settings,-Typically%2C%20the%20_config).<br>

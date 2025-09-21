@@ -13,7 +13,9 @@ The tutorial is held F2F from this week onwards. See [the tutorials page]({{ bas
 {{ icon_team }} This activity is to be done as a team. One team member needs to be connected to the TV.
 </div -->
 
-1. **Find the PR you have been allocated to discuss** (expand the panel below). If the allocated PR is not available or suitable, you can choose the fallback option, and failing that, any random PR.
+1. {{ timing_badge("prior to the tutorial, or in the first 10 minutes", "warning") }} ****Find code quality problems in iP PRs:****
+
+   **1a) Find the PR you have been allocated to discuss** (expand the panel below). If the allocated PR is not available or suitable, you can choose the fallback option, and failing that, any random PR.
 
    <panel header="**PR allocation**" peek>
 
@@ -31,14 +33,12 @@ The tutorial is held F2F from this week onwards. See [the tutorials page]({{ bas
    </panel>
    <p/>
 
-1. {{ timing_badge("10 minutes", "info") }} **Find instances of the three code quality problems listed below**: Go through the code in the diff view (i.e., the {{ show_as_rounded_tab(':octicon-diff: files changed') }} tab), and find instances of following code quality problems <span class="text-danger">(ignore other types of code quality problems)</span><br>
-   **a) weak <trigger trigger="click" for="modal:t4-slapDescription">SLAP</trigger>**<br>
-   **b) nesting problems**: _arrow-head style code_ or _too-deep nesting_ %%(<trigger trigger="click" for="modal:t4-arrowVsDeepNesting">what's the difference?</trigger>)%%<br>
-   **c) too-long methods**<br>
+   **1b) Find instances of the three code quality problems listed below**: Go through the code in the diff view (i.e., the {{ show_as_rounded_tab(':octicon-diff: files changed') }} tab) of those PRs, **and take screenshots** of instances of the following three code quality problems #r#(ignore other types of code quality problems)##:<br>
+   **a) Weak <trigger trigger="click" for="modal:t4-slapDescription">SLAP</trigger>**<br>
+   **b) Nesting problems**: _arrow-head style code_ or _too-deep nesting_ %%(<trigger trigger="click" for="modal:t4-arrowVsDeepNesting">what's the difference?</trigger>)%%<br>
+   **c) Too-long methods**<br>
    * If you can't find at least one example, you can try the fallback option provided, and failing that, another random iP PR.
    * You may select _borderline_ and _possibly_ problematic cases too.
-
-   **Paste screenshots of problematic code** in the `.pptx` the tutor will share with you via MSTeams.
 
    <box>
 
@@ -51,9 +51,12 @@ The tutorial is held F2F from this week onwards. See [the tutorials page]({{ bas
 
 {{ show_faq("howToDecideTooLongOrTooDeepMethods") }}
 
-3. {{ timing_badge("10 minutes", "info") }} **Discussion**: The tutor will lead a short discussion to go through the problematic code you found.
+2. {{ timing_badge("first 10 minutes", "warning") }} **Paste screenshots you took in the `T5-Workspace.pptx` file** the tutor will share with you via MSTeams.
 
-1. **After the tutorial**, you can apply the insights gained from this activity to **improve the code quality of your own iP**, if necessary.
+
+1. {{ timing_badge("next 10 minutes", "warning") }} **Discussion**: The tutor will lead a short discussion to go through the problematic code you found.
+
+1. {{ timing_badge("after the tutorial", "warning") }} **Apply the insights gained from this activity to improve the code quality of your own iP**, if necessary.
    <box type="info" seamless>
    You are not required to (but welcome to) post review comments in the PRs you examined.
    </box>

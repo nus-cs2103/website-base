@@ -85,6 +85,19 @@
 {{ "<p/>" if not is_compact }}
 {% endmacro %}
 
+{% macro show_troubleshooting(ts_id, is_main_page="", status="", is_compact=0) %}
+<panel type="seamless" {{ "expanded" if is_main_page else status }}>
+<span slot="header" class="card-title"><markdown>{{ "####" if is_main_page else "" }} {{ ts }} <include src="{{ baseUrl }}/admin/troubleshooting-fragment.md#ts-{{ ts_id }}-E" inline /></markdown></span>
+<box type="secondary" seamless>
+
+%%**:fas-wrench: Possible solution(s):**%%
+
+<include src="{{ baseUrl }}/admin/troubleshooting-fragment.md#ts-{{ ts_id }}-S" />
+</box>
+</panel>
+{{ "<p/>" if not is_compact }}
+{% endmacro %}
+
 
 {% macro show_admin_sections_to_read(topics, policies, faqs, sections_to_show, is_flat=false) %}
 

@@ -54,7 +54,8 @@ Please follow the organization/repo name format precisely or else our grading sc
 
 After receiving your team ID, one team member should do the following steps:
 * Create a GitHub organization with the following details:
-  * **Organization name** ==(all UPPER CASE) :`{{ semester }}-TEAM_ID`==. e.g., {% if has_t %}`{{ semester }}-{{ course }}T-W12-1`,{% endif %} `{{ semester }}-{{ example_team_id }}`
+  * **Organization name** ==(all UPPER CASE) :`{{ semester }}-TEAM_ID`==. e.g., {% if has_t %}`{{ semester }}-{{ course }}T-W12-1`, `{{ semester }}-{{ course }}T-F10a-1`,{% endif %} `{{ semester }}-{{ example_team_id }}`{% if cs2103 %}<br>
+  {{ icon_warning }} The `TEAM_ID` should use `CS2103` or `CS2103T` based on the course code you are enrolled under. You can also find the precise team ID from the [Team List]({{ baseUrl }}/admin/teamList.html) page.{% endif %}
   * Plan: Open Source ($0/month)
   * This organization belongs to: My personal account
 * Add members to the organization:
@@ -237,7 +238,7 @@ Tracking need | GitHub tool used
 {{ thumb_small("b", thumb_style="primary") }} **WHO** should do which task? i.e., tasks assignment | Issues are given **assignees**.
 {{ thumb_small("c", thumb_style="primary") }} **WHEN** is a task to be done? i.e., task scheduling | Issues are assigned to a GitHub **milestones**, which in turn has a **deadline**.
 {{ thumb_small("d", thumb_style="primary") }} **HOW** is a task progressing? | **PRs** are created to match tasks in progress.<br>**Merging** the PR (and closing of the matching issue) indicates task completion.
-{{ thumb_small("e", thumb_style="primary") }} **HOW** is an iteration progressing? | A GitHub **milestone** is used to track an iteration.<br>A GitHub **release** represents the iteration deliverables.<br>Closing the milestone indicates the completion of the iteration.
+{{ thumb_small("e", thumb_style="primary") }} **WHERE** are you now? | A GitHub **milestone** is used to track an iteration.<br>A GitHub **release** represents the iteration deliverables.<br>Closing the milestone indicates the completion of the iteration.<br> The progress of an iteration can be estimated from the number of closed and open issues/PRs attached to the milestone.
 
 <box type="tip" seamless>
 

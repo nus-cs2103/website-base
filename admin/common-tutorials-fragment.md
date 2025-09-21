@@ -355,7 +355,7 @@ Note the following:
 <p/>
 </div>
 
-2. {{ timing_badge("during the tutorial", "info") }}
+2. {{ timing_badge("first few minutes of the tutorial", "warning") }}
    * Paste the diagram (take a photo if you drew on paper) in the _tutorial workspace_ document.
    * **Discuss answers** as guided by the tutor.
 </div>
@@ -387,7 +387,7 @@ class PersonList{
 </div>
 
 
-2. {{ timing_badge("during the tutorial", "info") }}:
+2. {{ timing_badge("first few minutes of the tutorial", "warning") }}:
 
 <div class="indented">
 
