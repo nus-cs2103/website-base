@@ -85,7 +85,8 @@
 {{ "<p/>" if not is_compact }}
 {% endmacro %}
 
-{% macro show_troubleshooting(ts_id, is_main_page="", status="", is_compact=0) %}
+{% macro show_troubleshooting(ts_id, is_main_page="", status="", is_compact=0, is_cs2103_only=0) %}
+{% if cs2103 or (is_cs2103_only and cs2103) %}
 <panel type="seamless" {{ "expanded" if is_main_page else status }}>
 <span slot="header" class="card-title"><markdown>{{ "####" if is_main_page else "" }} {{ ts }} <include src="{{ baseUrl }}/admin/troubleshooting-fragment.md#ts-{{ ts_id }}-E" inline /></markdown></span>
 <box type="secondary" seamless>
@@ -96,6 +97,7 @@
 </box>
 </panel>
 {{ "<p/>" if not is_compact }}
+{% endif %}
 {% endmacro %}
 
 

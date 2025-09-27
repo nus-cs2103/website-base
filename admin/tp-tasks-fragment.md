@@ -904,39 +904,31 @@ Submission: not required.
   * The intended audience for this document is team members, not users (i.e., this is not a user guide).
   * Use a medium that is convenient for collaboration (e.g., a GoogleDoc).
   * The content need not be polished. Don't waste time in formatting, copy editing etc.
-  * **For each feature, specify the following:**
+  * **For each feature, specify #r#all## of the following:**
 
 <div class="indented-level2">
 <box>
 
-**Feature**: Name of the feature %%e.g., Add contact%%<br>
-**Purpose**: What it does
-
-**Command format**: The precise command format of the command.<br>
-**Example commands**: %%(to show how the command is used)%%
-
-**For each parameter**, specify:
-
-* Acceptable values %%e.g., If a command takes a person name as a parameter, what inputs are accepted as valid person names?%% Some example aspect to consider:
-  * Which formats are allowed for dates, times, telephone numbers, etc.?
-  * How does extra/leading/trailing spaces affect the value -- for instance is 'John Doe' same as 'John&nbsp;&nbsp;&nbsp;Doe' (note the multiple spaces in the middle of the name)?
-  * How does UPPER/lower case affects values -- is `John Doe` same as `john doe`?
-  * It's not enough to state 'valid name'; you need to specify what rules will be used to determine if the input is a valid name.
-* Error message if the value is not acceptable
-* Rationale for the validity rule %%e.g., why only certain characters are allowed for person names?%%
-
-Yes, making these decisions is not easy -- and that's why we want you to think about them now rather than later. Feel free to discuss these validation rules in the forum.
-
-**Outputs**: Precise expected outputs when the command,
-* succeeds %%e.g., changes in the GUI, messages shown to the user%%
-* fails %%e.g., what are the error messages shown when a specific parameter is invalid, missing, specified multiple times, etc.%%
-
-**Duplicate handling:** What rules are used to determine if two contacts are duplicates? %%e.g., is having the same name enough for two contacts to be considered duplicates, or all details need to be the same?%%<br>
+* **Feature**: Name of the feature %%e.g., Add contact%% {{ bullet_checkbox_selected_green }}
+* **Purpose**: What it does<br><br>
+* **Command format**: The precise command format of the command.
+* **Example commands**: %%(to show how the command is used)%%<br><br>
+* **For each parameter**, specify the following.<br>
+  Yes, making these decisions is not easy -- and that's why we want you to think about them now rather than later. Feel free to discuss these validation rules in the forum.<br>
+  * Acceptable values %%e.g., If a command takes a person name as a parameter, what inputs are accepted as valid person names?%% Some example aspect to consider:
+    * Which formats are allowed for dates, times, telephone numbers, etc.?
+    * How does extra/leading/trailing spaces affect the value -- for instance is 'John Doe' same as 'John&nbsp;&nbsp;&nbsp;Doe' (note the multiple spaces in the middle of the name)?
+    * How does UPPER/lower case affects values -- is `John Doe` same as `john doe`?
+    * It's not enough to state 'valid name'; you need to specify what rules will be used to determine if the input is a valid name.
+  * Error message if the value is not acceptable
+  * Rationale for the validity rule %%e.g., why only certain characters are allowed for person names?%%<br><br>
+* **Outputs**: Precise expected outputs when the command,
+  * succeeds %%e.g., changes in the GUI, messages shown to the user%%
+  * fails %%e.g., what are the error messages shown when a specific parameter is invalid, missing, specified multiple times, etc.%%
+* **Duplicate handling:** What rules are used to determine if two contacts are duplicates? %%e.g., is having the same name enough for two contacts to be considered duplicates, or all details need to be the same?%%<br>
 How does the application react to such duplicate entries? Reject or accept? Why?
-
-**Possible errors:** A list of potential errors related to the feature (excluding the ones mentioned above already) %%e.g., editing a contact in a way that it becomes inconsistent with the rest of the data%%, and how the app responds to each error %%e.g., the error message%%.
-
-**Relevant UI mock-ups** (unless the UI will be exactly the same as AB3, in which case you should use AB3 screenshots in place of UI mock-ups): %%they can be hand-drawn or created using a tool such as PowerPoint, PlantUML, Figma, etc. -- they can be very low-fidelity mock-ups, as they are meant to be temporary%%
+* **Possible errors:** A list of potential errors related to the feature (excluding the ones mentioned above already) %%e.g., editing a contact in a way that it becomes inconsistent with the rest of the data%%, and how the app responds to each error %%e.g., the error message%%.
+* **Relevant UI mock-ups** (unless the UI will be exactly the same as AB3, in which case you should use AB3 screenshots in place of UI mock-ups): %%they can be hand-drawn or created using a tool such as PowerPoint, PlantUML, Figma, etc. -- they can be very low-fidelity mock-ups, as they are meant to be temporary%%
 
 ---
 
@@ -944,6 +936,8 @@ How does the application react to such duplicate entries? Reject or accept? Why?
    %%e.g., you can decide one date format that is to be supported in user commands as must-have and two other formats as nice-to-have.%%
 </box>
 </div>
+
+* **What features should be in the MVP?** In our context, the MVP is considered as the must-have features of your product, for the intended target audience. That is, the product is _impossible_ (not merely inconvenient) to use without those features. %%For example, a product is impossible to use without an 'add' feature but can be used without a 'edit' feature (because deleting and re-adding can be used in place of editing).%%
 
 * **It is OK to make compromises** when making product decisions -- every design option has costs and benefits, and sometimes, costs outweigh the benefits.<br>
 For example, it is fine to restrict the person name to a certain length and a character set even if it is theoretically possible for those restrictions to conflict with some rare real-world person names. But you need to be aware of such conflicts, justify the restriction (e.g., ease of implementation/display), and know how users can work around such a conflict should they encounter it %%(e.g., if you app doesn't allow two contacts to have the same name but the user need to store two contacts which are different people with the same name, what should the user do?)%%.

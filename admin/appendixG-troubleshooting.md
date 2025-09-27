@@ -8,8 +8,11 @@
 
 ## iP
 
-{{ show_troubleshooting("missingJavafxComponent", is_main_page=1) }}
-{{ show_troubleshooting("pipelineNotFound", is_main_page=1) }}
+{{ show_troubleshooting("uiPngRed", is_main_page=1, is_cs2103_only=1) }}
+{{ show_troubleshooting("markdownTablesNotRendering", is_main_page=1, is_cs2103_only=1) }}
+{{ show_troubleshooting("jarBreaksOnOtherOs", is_main_page=1, is_cs2103_only=1) }}
+{{ show_troubleshooting("missingJavafxComponent", is_main_page=1, is_cs2103_only=1) }}
+{{ show_troubleshooting("pipelineNotFound", is_main_page=1, is_cs2103_only=1) }}
 {{ show_troubleshooting("moreRecentJavaVersion", is_main_page=1) }}
 </div>
 

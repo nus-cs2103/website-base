@@ -148,7 +148,6 @@
   ['ROBI..HOSH', 'CS2103-F13-2', 'robinlogic'],
   ['WONG..GANE', 'CS2103-F13-2', 'Huffle-Buffle'],
   ['LOKE..MUND', 'CS2103-F13-3', 'WhyXLook'],
-  ['MELV..YUAN', 'CS2103-F13-3', 'Melvilleleesy'],
   ['RAHU..ITRA', 'CS2103-F13-3', 'Rah-Rah-Mitra'],
   ['TAN .. KIT', 'CS2103-F13-3', 'x3zapper'],
   ['TEW ..HONG', 'CS2103-F13-3', 'tyuzuwu'],
@@ -708,7 +707,8 @@
 ]%}
 
 {% set org_replacements = {
-    'AY2526S1-CS2103T-F13-1': 'AY2526S1-CS2103T-F13-1a'
+    'AY2526S1-CS2103T-F13-1': 'AY2526S1-CS2103T-F13-1a',
+    'AY2526S1-CS2103T-W12-3': 'AY2526S1-CS2103T-W12-3a'
 }%}
 
 {% set teams = {
@@ -738,7 +738,7 @@
  'CS2103T-F09-2': 'https://docs.google.com/document/d/1FL8yGleGjV8agtdKJVtTdil7qWa5_IbQcrr0F-gFo_0/edit?usp=sharing',
  'CS2103T-F09-3': 'https://docs.google.com/document/d/1XW5adSw95M24J4Fp4iTSKYZwzh8UUTuzTt4bogO-oug/edit?usp=sharing',
  'CS2103T-F09-4': 'https://docs.google.com/document/d/10cTORj1CIfSpyJ9WzUl-ZZVl3cueqr1ZRr8097Q-Ykc/edit?usp=drivesdk',
- 'CS2103T-F10-1': 'https://docs.google.com/document/d/1qv_L2gfD3w0e6YOCc4zYI3SdIF9F6KvQLx1j8EiENwU',
+ 'CS2103T-F10-1': 'https://docs.google.com/document/d/1FzrD4vCjA_lJeTLdhBrFN2k-1nTj-70lb6EUYG9oTlg',
  'CS2103T-F10-2': 'https://docs.google.com/document/d/1MxDTXf9fg6kJY5AEkw4Poi5b0htFrSHWTh0fI_8Rm3o/edit?usp=sharing',
  'CS2103T-F10-3': 'https://docs.google.com/document/d/1brNY1RpJ6cvA_DP-Vncw73Vde6KC1GHSOUMQFxOaa7E/edit?usp=sharing',
  'CS2103T-F10-4': 'https://docs.google.com/document/d/1HYqwp0WK6c44bcIV61civSA8_wLBaAoeKM0WUjx24zM/edit?usp=sharing',

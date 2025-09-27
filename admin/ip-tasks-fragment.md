@@ -930,6 +930,7 @@ This activity is worth `2x2=4` participation points.
 
 * **Add a representative screenshot** of the product to the `docs` folder.
   * ==The file should be in the `docs` folder and named `Ui.png` exactly== (even if the file format is not `png`, name it `png`)
+  * `Ui.png`, not `UI.png` (case-sensitive).
   * `Ui.png` should show the _full_ GUI window (i.e., not just the part containing the chat messages).
   * `Ui.png` should be a _single_ GUI window (i.e., do not stitch multiple screenshots together).
   * Ideally, the product name should be visible in the screenshot e.g., in the title bar of the Window
@@ -937,6 +938,17 @@ This activity is worth `2x2=4` participation points.
 
 {{ embed_topic("tp-deliverables-website-fragment.md#tips-for-product-screenshot", "Admin " + icon_embedding + " Team Project (tP) → Tips for Product Screenshots", "3", indent="2") }}
 </div>
+
+<div  tags="m--cs2103" id="ip-ui-png-test">
+
+<box type="tip" seamless>
+
+If you added the `Ui.png` correctly and set up the product website correctly, ==you should be able to **see your screenshot in the [iP Showcase](ip-showcase.html) page**== %%(a link to the iP Showcase page is also available in the top navigation menu → Links)%% and you should be able to access the image using the link `https://{your username}.github.io/{repo name}/Ui.png` (e.g., `https://johndoe.github.io/ip/Ui.png`).
+
+{{ show_troubleshooting("uiPngRed", is_compact=1) }}
+</box>
+</div>
+
 
 * **Add a brief User Guide (UG)**
 
@@ -946,10 +958,9 @@ This activity is worth `2x2=4` participation points.
 </div>
 <p/>
 
-<div  tags="m--cs2103" id="ip-ui-png-test">
 
-* {{ icon_tip }} If you added the `Ui.png` correctly and set up the product website correctly, ==you should be able to **see your screenshot in the [iP Showcase](ip-showcase.html) page**== %%(a link to the iP Showcase page is also available in the top navigation menu → Links)%% and you should be able to access the image using the link `https://{your username}.github.io/{repo name}/Ui.png` (e.g., `https://johndoe.github.io/ip/Ui.png`).
-</div>
+{{ show_troubleshooting("markdownTablesNotRendering", is_compact=1) }}
+
 </div>
 {#====================================================================================================================#}
 <span id="heading_submit_the_final_version">Submit the final version</span>
@@ -973,6 +984,7 @@ This activity is worth `2x2=4` participation points.
       {{ icon_tip }} If you don't have ready access to a specific OS, you can ask others' help to smoke-test it by [posting a smoke-testing request in the forum]({{ url_forum }}/new?template=smoke.md) -- some of them will even appreciate the opportunity to help a classmate.<br>
      {{ icon_info }} Note that concepts you encounter while doing course project tasks (e.g., _smoke testing_) are in the [scope of the final exam](exams.html#:~:text=you%20are%20expected%20to%20be%20aware%20of%20SE%2Drelated%20things%20(i.e.%2C%20tools%2C%20techniques%2C%20concepts)%20encountered%20while%20dong%20the%20iP%20and%20the%20tP).
 
+{{ show_troubleshooting("jarBreaksOnOtherOs", is_compact=1) }}
 {{ show_troubleshooting("missingJavafxComponent", is_compact=1) }}
 {{ show_troubleshooting("pipelineNotFound", is_compact=1) }}
 {{ show_troubleshooting("moreRecentJavaVersion") }}
