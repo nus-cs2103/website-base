@@ -1,6 +1,8 @@
+{% from "common/macros.njk" import show_faq with context %}
+
 <h1>
 <span class="text-info">TIC2002/TCX3221 Mid-Semester Survey Followup</span>
- <small class="text-muted">[AY2425S1]</small>
+ <small class="text-muted">[AY2526S1]</small>
 </h1>
 
 <p class="lead">
@@ -10,8 +12,8 @@ of them.
 
 <box type="info" icon=":fas-chart-pie:" seamless>
 
-**Response rate**: **58%** (11/19) --
-  Thanks to the 11 of you for taking time to respond!<br>
+**Response rate**: **50%** (8/16) --
+  Thanks to the 8 of you for taking time to respond!<br>
 </box>
 
 
@@ -20,14 +22,14 @@ of them.
 ### Lectures - Zoom briefings{.text-info}
 
 
-%%Option%% | %%Count%% %%(/11)%% | %%Percentage%%
+%%Option%% | %%Count%% %%(/8)%% | %%Percentage%%
 -------|-------|-----------
-Excellent<br><span class="text-info bg-info">................................................................................................................................</span><span class="text-light bg-light">........................................................................</span> |7 | 63.64%
-Good<br><span class="text-info bg-info">........................................................................</span><span class="text-light bg-light">................................................................................................................................</span> |4 | 36.36%
-Average<br><span class="text-info bg-info"></span><span class="text-light bg-light">........................................................................................................................................................................................................</span> |0 | 0.0%
-Below average<br><span class="text-info bg-info"></span><span class="text-light bg-light">........................................................................................................................................................................................................</span> |0 | 0.0%
-Poor<br><span class="text-info bg-info"></span><span class="text-light bg-light">........................................................................................................................................................................................................</span> |0 | 0.0%
-Can't comment. I have stopped attending them.<br><span class="text-info bg-info"></span><span class="text-light bg-light">........................................................................................................................................................................................................</span> |0 | 0.0%
+Excellent<br><span class="text-info bg-info">.........................</span><span class="text-light bg-light">...........................................................................</span> |2 | 25.0%
+Good<br><span class="text-info bg-info">...........................................................................</span><span class="text-light bg-light">.........................</span> |6 | 75.0%
+Average<br><span class="text-info bg-info"></span><span class="text-light bg-light">....................................................................................................</span> |0 | 0.0%
+Below average<br><span class="text-info bg-info"></span><span class="text-light bg-light">....................................................................................................</span> |0 | 0.0%
+Poor<br><span class="text-info bg-info"></span><span class="text-light bg-light">....................................................................................................</span> |0 | 0.0%
+Can't comment. I have stopped attending them.<br><span class="text-info bg-info"></span><span class="text-light bg-light">....................................................................................................</span> |0 | 0.0%
         
 
 
@@ -50,14 +52,14 @@ done at your own pace, using the textbook and the pre-recorded videos.
 ### Lectures - pre-recorded videos{.text-info}
 
 
-%%Option%% | %%Count%% %%(/11)%% | %%Percentage%%
+%%Option%% | %%Count%% %%(/8)%% | %%Percentage%%
 -------|-------|-----------
-Excellent<br><span class="text-info bg-info">..................................................................................................................................................</span><span class="text-light bg-light">......................................................</span> |8 | 72.73%
-Good<br><span class="text-info bg-info">....................................</span><span class="text-light bg-light">....................................................................................................................................................................</span> |2 | 18.18%
-Average<br><span class="text-info bg-info"></span><span class="text-light bg-light">........................................................................................................................................................................................................</span> |0 | 0.0%
-Below average<br><span class="text-info bg-info"></span><span class="text-light bg-light">........................................................................................................................................................................................................</span> |0 | 0.0%
-Poor<br><span class="text-info bg-info"></span><span class="text-light bg-light">........................................................................................................................................................................................................</span> |0 | 0.0%
-Can't comment. I don't watch them.<br><span class="text-info bg-info">..................</span><span class="text-light bg-light">......................................................................................................................................................................................</span> |1 | 9.09%
+Excellent<br><span class="text-info bg-info">......................................</span><span class="text-light bg-light">..............................................................</span> |3 | 37.5%
+Good<br><span class="text-info bg-info">..................................................</span><span class="text-light bg-light">..................................................</span> |4 | 50.0%
+Average<br><span class="text-info bg-info"></span><span class="text-light bg-light">....................................................................................................</span> |0 | 0.0%
+Below average<br><span class="text-info bg-info"></span><span class="text-light bg-light">....................................................................................................</span> |0 | 0.0%
+Poor<br><span class="text-info bg-info"></span><span class="text-light bg-light">....................................................................................................</span> |0 | 0.0%
+Can't comment. I don't watch them.<br><span class="text-info bg-info">............</span><span class="text-light bg-light">........................................................................................</span> |1 | 12.5%
         
 
 
@@ -79,13 +81,13 @@ I'll continue to improve the existing ones and add more videos.
 ### Course website{.text-info}
 
 
-%%Option%% | %%Count%% %%(/11)%% | %%Percentage%%
+%%Option%% | %%Count%% %%(/8)%% | %%Percentage%%
 -------|-------|-----------
-Excellent<br><span class="text-info bg-info">......................................................................................................................................................................................</span><span class="text-light bg-light">..................</span> |10 | 90.91%
-Good<br><span class="text-info bg-info">..................</span><span class="text-light bg-light">......................................................................................................................................................................................</span> |1 | 9.09%
-Average<br><span class="text-info bg-info"></span><span class="text-light bg-light">........................................................................................................................................................................................................</span> |0 | 0.0%
-Below average<br><span class="text-info bg-info"></span><span class="text-light bg-light">........................................................................................................................................................................................................</span> |0 | 0.0%
-Poor<br><span class="text-info bg-info"></span><span class="text-light bg-light">........................................................................................................................................................................................................</span> |0 | 0.0%
+Excellent<br><span class="text-info bg-info">...........................................................................</span><span class="text-light bg-light">.........................</span> |6 | 75.0%
+Good<br><span class="text-info bg-info">.........................</span><span class="text-light bg-light">...........................................................................</span> |2 | 25.0%
+Average<br><span class="text-info bg-info"></span><span class="text-light bg-light">....................................................................................................</span> |0 | 0.0%
+Below average<br><span class="text-info bg-info"></span><span class="text-light bg-light">....................................................................................................</span> |0 | 0.0%
+Poor<br><span class="text-info bg-info"></span><span class="text-light bg-light">....................................................................................................</span> |0 | 0.0%
         
 
 
@@ -113,13 +115,13 @@ The feedback for the course website is generally positive but I'm sure there are
 ### The workload{.text-info}
 
 
-%%Option%% | %%Count%% %%(/11)%% | %%Percentage%%
+%%Option%% | %%Count%% %%(/8)%% | %%Percentage%%
 -------|-------|-----------
-Too high. I can't keep up.<br><span class="text-info bg-info"></span><span class="text-light bg-light">........................................................................................................................................................................................................</span> |0 | 0.0%
-A bit high, but I can manage.<br><span class="text-info bg-info">........................................................................</span><span class="text-light bg-light">................................................................................................................................</span> |4 | 36.36%
-Just right.<br><span class="text-info bg-info">................................................................................................................................</span><span class="text-light bg-light">........................................................................</span> |7 | 63.64%
-A bit low. I can manage even if it is to increase a bit more.<br><span class="text-info bg-info"></span><span class="text-light bg-light">........................................................................................................................................................................................................</span> |0 | 0.0%
-Too low. <br><span class="text-info bg-info"></span><span class="text-light bg-light">........................................................................................................................................................................................................</span> |0 | 0.0%
+Too high. I can't keep up.<br><span class="text-info bg-info">.........................</span><span class="text-light bg-light">...........................................................................</span> |2 | 25.0%
+A bit high, but I can manage.<br><span class="text-info bg-info">............</span><span class="text-light bg-light">........................................................................................</span> |1 | 12.5%
+Just right.<br><span class="text-info bg-info">..............................................................</span><span class="text-light bg-light">......................................</span> |5 | 62.5%
+A bit low. I can manage even if it is to increase a bit more.<br><span class="text-info bg-info"></span><span class="text-light bg-light">....................................................................................................</span> |0 | 0.0%
+Too low. <br><span class="text-info bg-info"></span><span class="text-light bg-light">....................................................................................................</span> |0 | 0.0%
         
 
 
@@ -128,7 +130,8 @@ Too low. <br><span class="text-info bg-info"></span><span class="text-light bg-l
 **:fas-comment: My comments:**
 
 
-Good to see that the workload is manageable to all who responded, but I realize it may not be the case for a few among those who did not respond.
+Good to see that the workload is manageable to almost all who responded, 
+ but I realize it may not be the case for a few among those who did not respond.
 
 * **If the workload is higher than you can manage:** This course can feel heavy, 
   especially if you don't have prior programming
@@ -138,7 +141,7 @@ Good to see that the workload is manageable to all who responded, but I realize 
   the minimum you need to do to get a decent grade. 
 * **If you have room for more work:**
   * Try to do more in the project: The project is open ended are you are encouraged to do as much as you want.
-    You can refer to [Duke full description](https://nus-tic2002-ay2425s1.github.io/website/se-book-adapted/projectDuke/index.html) to find
+    You can refer to [Duke full description](https://nus-tic2002-ay2526s1.github.io/website/se-book-adapted/projectDuke/index.html) to find
     more things you can do with it.
   * Learn the optional topics: I have added a lot more optional topics to the second half of the semester.
     This means there is more to learn every week, if you have the capacity to do so.
@@ -153,13 +156,13 @@ Good to see that the workload is manageable to all who responded, but I realize 
 ### The pace of the course{.text-info}
 
 
-%%Option%% | %%Count%% %%(/11)%% | %%Percentage%%
+%%Option%% | %%Count%% %%(/8)%% | %%Percentage%%
 -------|-------|-----------
-Too fast, I can't keep up<br><span class="text-info bg-info"></span><span class="text-light bg-light">........................................................................................................................................................................................................</span> |0 | 0.0%
-A bit fast, but I can manage<br><span class="text-info bg-info">......................................................</span><span class="text-light bg-light">..................................................................................................................................................</span> |3 | 27.27%
-Just right<br><span class="text-info bg-info">..................................................................................................................................................</span><span class="text-light bg-light">......................................................</span> |8 | 72.73%
-A bit too slow. I don't mind a slightly faster pace<br><span class="text-info bg-info"></span><span class="text-light bg-light">........................................................................................................................................................................................................</span> |0 | 0.0%
-Too slow. Please speed up a lot<br><span class="text-info bg-info"></span><span class="text-light bg-light">........................................................................................................................................................................................................</span> |0 | 0.0%
+Too fast, I can't keep up<br><span class="text-info bg-info"></span><span class="text-light bg-light">....................................................................................................</span> |0 | 0.0%
+A bit fast, but I can manage<br><span class="text-info bg-info">.........................</span><span class="text-light bg-light">...........................................................................</span> |2 | 25.0%
+Just right<br><span class="text-info bg-info">..............................................................</span><span class="text-light bg-light">......................................</span> |5 | 62.5%
+A bit too slow. I don't mind a slightly faster pace.<br><span class="text-info bg-info">............</span><span class="text-light bg-light">........................................................................................</span> |1 | 12.5%
+Too slow. Please speed up a lot<br><span class="text-info bg-info"></span><span class="text-light bg-light">....................................................................................................</span> |0 | 0.0%
         
 
 
@@ -194,17 +197,26 @@ Good to see that the pace is mostly manageable for most too.
 </tr>
 <tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
 <td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<markdown>The course have been great!</markdown>
+<markdown>maybe release handout for the week before lecture not after</markdown>
 
-<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Glad to hear that :-).</markdown>
+<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>The proper 'handout' is the weekly textbook topics, which we release in advance-- it's the 'Topics' page of the weekly schedule in the course website ([example](https://nus-tic2002-ay2526s1.github.io/website/schedule/week6/topics.html)). Slides are not meant to be documents to print and study for exams (the textbook is the resource more suitable for exam prep). Their purpose is to support the briefing delivery and keep you engaged during the briefing. That's why our slides are less detailed and more visual.</markdown>
 </span></box>
 </td>
 </tr>
 <tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
 <td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<markdown>I really like the pacing and workload so far, the explanations in lectures are also good for laying a strong foundation in java and OOP. I particularly enjoy reading the textbook on the course website. It was informative and very easy to understand. Thank you for the effort you've put in for this mod!</markdown>
+<markdown>Weekly tasks provides the link to the old repo:
+https://github.com/nus-tic2002-AY2425S1/duke</markdown>
 
-<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Good to hear you liked the textbook and the lecture briefings :-)</markdown>
+<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>:-o Oops, please let me know in which page/week so that I can fix it. I looked through the pages of weeks 1-6 but couldn't find it.</markdown>
+</span></box>
+</td>
+</tr>
+<tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
+<td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
+<markdown>The material is very detailed and very useful. I love the website. However, it maybe a bit too much to read. It would be really helpful for me if I could know which parts I can skip or focus less on.</markdown>
+
+<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Indeed, the course website can be overwhelming at times. The [topic levels system](https://nus-tic2002-ay2526s1.github.io/website/admin/index.html#:~:text=the-,topic%20levels%20system,-indicates%20the%20progression) can be used to decide which topics are more important than others. For example, level-4 topics are non-examinable and can be skipped.</markdown>
 </span></box>
 </td>
 </tr>

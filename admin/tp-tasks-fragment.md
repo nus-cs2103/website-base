@@ -303,7 +303,7 @@ Having practiced the workflow in the previous iteration, **this week's iteration
 {{ show_tp_iterations_gantt("tpGanttChart-iterations.png", "", 19, 37) }}
 {{ show_tp_goals(version_first, "v12-goals") }}
 
-The _breadth-first iterative_ approach requires each intermediate version to be a full working product. However, to make things a bit easier for you (as you are only getting started with the project), **we will not be releasing any new product version at the end of this iteration.** This means you have the freedom to create PRs for small code changes, without the pressure to implement a feature end-to-end within one PR (or even within this iteration).
+The _breadth-first iterative_ approach requires each intermediate version to be a full working product. However, to make things a bit easier for you (as you are only getting started with the project), **you need not release any new product version at the end of this iteration.** This means you have the freedom to create PRs for small code changes, without the pressure to implement a feature end-to-end within one PR (or even within this iteration).
 
 ++**Things to note:**++{.text-info}
 
@@ -1083,7 +1083,7 @@ At the end of the project, each member needs to create a Project Portfolio Page 
   {{ icon_tip }} Some examples of these can be found in the [AB3 Developer Guide](https://se-education.org/addressbook-level3/DeveloperGuide.html#product-scope).
 
   * **Target user profile**, **value proposition**, and <trigger trigger="click" for="modal:v10-userstories">**user stories**</trigger>: Update the target user profile and value proposition to match the project direction you have selected. Give a list of the user stories (and update/delete existing ones, if applicable), including priorities. This can include user stories considered but will not be included in the final product.
-  * <trigger trigger="click" for="modal:v10-usecases">**Use cases**</trigger>: Give a few representative use cases (textual form) that need multiple steps to complete. %%e.g. Adding a tag to a person (assume the user needs to find the person first)%%
+  * <trigger trigger="click" for="modal:v10-usecases">**Use cases**</trigger>: Give <tooltip content="suggested: each member adds at least one use case">a few</tooltip> representative use cases (textual form) that need multiple steps to complete. %%e.g. Adding a tag to a person (assume the user needs to find the person first)%%
   * <trigger trigger="click" for="modal:v10-nfr">**Non-functional requirements**</trigger>: List whichever NFRs you think are reasonable for your product %%e.g. performance requirements, usability requirements, scalability requirements, etc.%%<br>
     {{ icon_tip }} Some of the given [project constraints](tp-constraints.md) can be framed as NFRs (e.g. `Constraint-Portable`) while others are purely for pedagogical/course-admin purposes (e.g., `Constraint-Incremental`).
   * <trigger trigger="click" for="modal:v10-glossary">**Glossary**</trigger>: Define terms that are worth recording.
@@ -1192,7 +1192,8 @@ Furthermore, these sections will be graded at the final project evaluation, and 
   {{ icon_tick }} commit messages comply with the [Git Conventions]({{ baseUrl }}/admin/standardsAndConventions.html). {text="3.6"}
 {{ embed_topic("appendixE-gitHub.md#tp-schedule-tracking-prs-reviewing", "Admin " + icon_embedding + " Appendix E(extract): **Using PRs to track task progress -> Reviewing PRs**", "1", indent="1") }}
 
-* Merge the PR. {text="3.7"}
+* Merge the PR.<br>
+  After that, sync your local repo and your fork with the team repo. {text="3.7"}
 {{ embed_topic("appendixE-gitHub.md#tp-schedule-tracking-prs-merging", "Admin " + icon_embedding + " Appendix E(extract): **Using PRs to track task progress -> Merging PRs**", "1", indent="1") }}
 
 * Good job on merging the first PR into the team repo! {text="3.8"}
@@ -1251,7 +1252,7 @@ Although MVP version is scheduled to be released in `{{ version_mvp }}` and not 
   * It consists of not only<br>
     **the most essential features** of the target product, but also,<br>
     **the simplest implementation of those features** %%(e.g., when adding a new feature to track birthdays of contacts, the simplest implementation of it could be simply adding a new text field for the contact)%%.
-  * It will **still be a working product** (i.e., it can be used)<br>
+  * It will **still be a working product** (i.e., it _can_ be used)<br>
     %%Reason: As we are following the breadth-first iterative approach, each intermediate version should be a working product.%%
 * {{ icon_team }} **Divide the features among the team members** i.e., who will be implementing which feature.
   * Reminder: We recommend that the work to be ==divided primarily based on features/enhancements, not by components==.
@@ -1397,11 +1398,12 @@ Tip: Especially ==note the part on _overzealous input validation_==, which is a 
     * Get the PR merged. Close the corresponding issue.
 * {{ icon_individual }} **Continue to implement more code changes** (i.e., repeat S1 and S2) to implement more code changes that move you towards your MVP feature(s). Recommended to create <tooltip content="i.e., while waiting for one PR to be merged, create a new PR to fix another issue">parallel PRs</tooltip>, when implementing code changes with no/low dependency between them.{text="S3."}
 * {{ icon_team }} **Wrap up the milestone** When the iteration period is over, do the following:{text="S4."}
-  * Move any pending issues/PRs to the next milestone (i.e., `{{ version_mvp }}`). %%As we did not plan to release a product version at the end of this iteration, we can freely move any pending work to the next iteration.%%
+  * Move any pending issues/PRs to the next milestone (i.e., `{{ version_mvp }}`). %%As you do not need to release a product version at the end of this iteration, we can freely move any pending work to the next iteration.%%
   * Close the milestone.
   * There is no need to do a product release.
 
 {{ show_faq("tpHowMuchCodeInV12", is_compact=1) }}
+{{ show_faq("tpIterationDeadline", is_compact=1) }}
 {{ show_faq("tpMissingIterationDeadlines", is_compact=1) }}
 {{ show_faq("tpUpdateTestsWithCode", is_compact=1) }}
 {{ show_faq("tpCodecovFails", is_compact=1) }}

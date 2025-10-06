@@ -360,7 +360,11 @@ In our project, we use _user stories_ to track user requirements. Instead of usi
 * **After merging a PR**,
   * **close the corresponding issue** (which should happen automatically, if you followed [this trick](https://help.github.com/en/articles/closing-issues-using-keywords)).
   * **sync your individual repos/forks with the team repo** as follows:
-    * Pull the latest `master` from the team repo, and push it to your own fork.
+    * Pull the latest `master` from the _team repo_ (not your own fork), and push it to your own fork. Example:
+      ```bash
+      git pull upstream master
+      git push origin master
+      ```
     * If there are any unmerged branches in your local repo, for each of them,<br>
       merge `master` branch to it, and push the updated branch to your fork.<br>
       %%{{ icon_info }} Another way to sync a branch with the `master` branch is to rebase it. But we discourage that approach as it will change the timestamp of your branch commits, affecting how our grading scripts track your work.%%

@@ -880,7 +880,10 @@ This activity is worth `2x2=4` participation points.
      %%Reason: data files will be created relative to the folder the terminal is currently in.%%
    * {{ icon_important_big_red }} Run the ==`java -version` command== to confirm you are using Java 17.{% if cs2103 %}<br>
       :fab-apple: Mac user, confirm you are using the exact Java distribution we have prescribed [here](programmingLanguages.md).{% endif %}
-   * Run the jar file using the ==`java -jar "{file_name}"` command== (rather than double-clicking) in the same terminal.
+   * Run the jar file using the ==`java -jar "{file_name}"` command== (rather than double-clicking) in the same terminal.<br>
+     ```
+     java -jar "my task manager.jar"
+     ```
 1. **Do a light testing of the app** (not more than 10 minutes) to ensure the claimed features actually exist and there are no obvious bugs.<br>
 1. **Do a quick examination of the code** (~ 5 minutes) by following the provided link.
 1. **Submit your evaluation** using the survey.

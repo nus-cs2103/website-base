@@ -23,7 +23,7 @@
 <span tags="m--cs2103">
 
 {% call show_constraint("Constraint-Brownfield") -%}
-The final product should be a result of evolving/enhancing/morphing the given codebase. However, you are allowed to replace all existing code with new code, as long as it is done incrementally. %%e.g., done in small steps, each producing a working product%%<br/>
+The final product should be a result of evolving the given codebase. However, you are not barred from doing major changes to the code, provided it is done incrementally. %%e.g., done in small steps, each producing a working product%%<br/>
 %%**Reason:** To simulate a brownfield project.%%
 {%- endcall  %}
 </span>
