@@ -598,7 +598,6 @@
   ['GUO ..O YU', 'CS2103T-W09-3', 'aliensarefake'],
   ['HON .. HAO', 'CS2103T-W09-3', 'yihao03'],
   ['ZHOU..NIEL', 'CS2103T-W09-3', 'algebananazzzzz'],
-  ['DINH..LONG', 'CS2103T-W09-4', 'dinhcodes'],
   ['JAIS..IRAN', 'CS2103T-W09-4', 'JG-Kiran'],
   ['LIM .. HAO', 'CS2103T-W09-4', 'tokitobashi1'],
   ['LIM .. RON', 'CS2103T-W09-4', 'RandomNerd01'],

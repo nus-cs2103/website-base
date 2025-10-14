@@ -399,7 +399,7 @@ class PersonList{
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="demo-test-coverage">
 
-* Measure test coverage in your own IDE. Take a screenshot showing test coverage details such as lines covered, lines not covered, percentage of coverage for different files etc.
+* {{ timing_badge("before the tutorial, or in the first 10 minutes", "warning") }} Measure test coverage in your own iP using your IDE. Take a screenshot showing test coverage details such as lines covered, lines not covered, percentage of coverage for different files etc.
 
 {{ embed_topic("../book/testing/testCoverage/text.md#body", "Textbook " + icon_embedding + " Testing → **Test Coverage**", "3", indent=1) }}
 
