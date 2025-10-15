@@ -68,9 +68,6 @@
     "mermaid": {
        "address": "https://unpkg.com/mermaid@11.7.0/dist/mermaid.esm.min.mjs"
     },
-    "mermaid": {
-       "address": "https://unpkg.com/mermaid@11.7.0/dist/mermaid.esm.min.mjs"
-    },
     "algolia": {
       "apiKey": "772d7386c7a785f7a60fec5a096311ef",
       "appId": "3DU4XTBX4T",
