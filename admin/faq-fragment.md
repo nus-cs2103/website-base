@@ -721,11 +721,7 @@ Not surprisingly, a common question tutors receive is "can you look at our proje
 
 **The tP _effort_ is graded primarily based on peer judgements** (tutor judgements are used too). That means you will be judging the effort of another team later, which also means you should be able to make a similar judgement for your own project now. While we understand effort estimating is hard for software projects, it is an essential SE skill, and we must practice it when we can.
 
-**The expected minimum bar to get full marks for _effort_** is given <trigger trigger="click" for="modal:mid13-effortBar"> here</trigger>.
-
-<modal large header="tP -> Expectations -> [Extract] Functionality Expectations" id="modal:mid13-effortBar">
-<include src="tp-expectations.md#functionality-expectations"/>
-</modal>
+**The expected minimum bar to get full marks for _effort_** is given [here](tp-expectations.md).
 
 If you surpass the above bars (in your own estimation), you should be in a good position to receive full marks for the effort. But keep in mind that there are many other components in the [tP grading](tp-grading.md), not just the effort.
 </div>
@@ -785,6 +781,16 @@ Note that Codecov is there to help you manage code coverage -- it is not graded.
 For reference,
 
 {{ embed_topic("tp-expectations.md#testing-expectations", "Admin " + icon_embedding + " tP → Grading → **Expectation on testing**", "3", indent="1") }}
+</div>
+<!-- =============================================================== -->
+<div id="faq-tpIsCiPassingCompulsory-Q">Is it compulsory to keep CI passing?</div>
+<div id="faq-tpIsCiPassingCompulsory-A">
+
+Among other things, CI functions as **a safety mechanism that alerts you when a PR is introducing regressions to the codebase**. If your CI is failing continuously, you will lose the benefit of this important safety mechanism.
+
+Therefore, if you break CI accidentally (or even deliberately -- e.g., CodeCov dropping due to changes in an 'untestable' part of the code), **we recommended that you get CI back to a passing state** soon after.
+
+There is no direct penalty for occasionally failing CI. But #r#extended periods of CI failures can cost you marks directly or indirectly## (e.g., the failure could be due to a coding standard violation that can cost you marks if not fixed).
 </div>
 <!-- =============================================================== -->
 <div id="faq-tpAddChangesInFeatureBranch-Q">Can we PR against a branch other than `master`, and merge that branch to `master` in a later iteration?</div>

@@ -111,6 +111,7 @@
 {{ show_expanded_faq("tpNoPrInIteration") if cs2103 }}
 {{ show_expanded_faq("tpUpdateTestsWithCode") if cs2103 }}
 {{ show_expanded_faq("tpCodecovFails") if cs2103 }}
+{{ show_expanded_faq("tpIsCiPassingCompulsory") if cs2103 }}
 {{ show_expanded_faq("tpUpdateDocsWithCode") if cs2103 }}
 {{ show_expanded_faq("tpMustWeFixAllBugs") }}
 {{ show_expanded_faq("tpGuiTestAutomation") if cs2103 }}

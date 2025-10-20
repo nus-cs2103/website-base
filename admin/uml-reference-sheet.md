@@ -2,11 +2,9 @@
 title: "UML Reference Sheet"
 </frontmatter>
 
-# UML Reference Sheet
-
 <div id="main">
 
-{% for pic in range(1,11) %}
-<pic src="images/uml/Slide{{ pic }}.png" width="385"/>
+{% for pic in range(5,7) %}
+<pic src="images/uml/Slide{{ pic }}.png" width="1080"/>
 {% endfor %}
 </div>

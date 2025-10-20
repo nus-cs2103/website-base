@@ -45,14 +45,12 @@ week9: [
   {id: 'submit_post_lecture_quiz', graded: true}
 ],
 week10: [
-  {id: 'submit_post_lecture_quiz', graded: true},
-  {id: 'join_catcher_load_testing', graded: true, deadline: "during the briefing on " + get_date(date_w10_start, 4, format="MMM Do", time=""), deadline_type: 'danger'}
+  {id: 'submit_post_lecture_quiz', graded: true}
 ],
 week11: [
   {id: 'submit_post_lecture_quiz', graded: true}
 ] if pe_schedule_late else [
-  {id: 'submit_post_lecture_quiz', graded: true},
-  {id: 'submit_pe_mode_selection', deadline: "COMPULSORY | " + get_date(date_w11_start, 5), deadline_type: 'danger'}
+  {id: 'submit_post_lecture_quiz', graded: true}
 ],
 week12: [
   {id: 'submit_reuse_declaration', deadline: "COMPULSORY | " + get_date(date_w13_start, 1), deadline_type: 'danger', graded: true},

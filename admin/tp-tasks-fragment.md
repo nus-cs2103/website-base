@@ -1407,6 +1407,7 @@ Tip: Especially ==note the part on _overzealous input validation_==, which is a 
 {{ show_faq("tpMissingIterationDeadlines", is_compact=1) }}
 {{ show_faq("tpUpdateTestsWithCode", is_compact=1) }}
 {{ show_faq("tpCodecovFails", is_compact=1) }}
+{{ show_faq("tpIsCiPassingCompulsory", is_compact=1) }}
 {{ show_faq("tpAddChangesInFeatureBranch", is_compact=1) }}
 {{ show_faq("tpUpdateDocsWithCode", is_compact=1) }}
 {{ show_faq("tpChangeFeatureSpec", is_compact=1) }}
@@ -1470,6 +1471,12 @@ Note that the product you deliver at the end of this iteration must be working a
 </box>
 </div>
 
+<box type="important" seamless>
+
+#r#**Finishing the iteration on time is no longer 'optional'!**## From {{ version_mvp }} iteration, the {{ as_tag( 'v1._ on time', tag_style='dark') }} item in the [tP dashboard]({{ url_tp_progress_dashboard_team }}) will turn red and remain red if the iteration wasn't wrapped up properly by the deadline (i.e., Thu 23:59).<br>
+ %%Reason: Learning to meet project deadlines is an intended learning outcome. As this is the third tP iteration, you should be able to finish iterations on time by now.%%
+</box>
+
 * {{ icon_team }} **Manage the iteration** `{{ version_mvp }}`, and reach the milestone `{{ version_mvp }}` (which delivers product version `{{ version_mvp }}`)
 * {{ icon_team }} **Aim to deliver on time**, as that is linked to our tP learning outcome of this iteration. This means you need to monitor progress, and course-correct as you go.
   * Revise the MVP design further, if needed. If you think some of the ongoing work intended for the current iteration may not finish in time, you can reassign them to a future iteration, provided they are not _essential_ for the `{{ version_mvp }}` %%(i.e., you can still get a 'working product' without them)%%.
@@ -1490,6 +1497,7 @@ Note that the product you deliver at the end of this iteration must be working a
 
 {{ show_faq("tpUpdateTestsWithCode", is_compact=1) }}
 {{ show_faq("tpCodecovFails", is_compact=1) }}
+{{ show_faq("tpIsCiPassingCompulsory", is_compact=1) }}
 {{ show_faq("tpAddChangesInFeatureBranch", is_compact=1) }}
 {{ show_faq("tpUpdateDocsWithCode", is_compact=1) }}
 {{ show_faq("tpChangeFeatureSpec", is_compact=1) }}
@@ -1608,13 +1616,15 @@ Resist the temptation to try to deliver each of those features/enhancements in o
 
 ##### {{ icon_tip }} Ways to level up your tP game:{.text-success}
 
-1. <span class="text-success">**Use parallel PRs:**</span> We encourage you to try sending parallel PRs (i.e., send another PR while the previous PR you sent is waiting to be merged) if you haven't done that yet. %%Reason: It's important to learn how to do that, because in most real projects it is common to have multiple open PRs from the same author.%%<br>
+1. <span class="text-success">**Use parallel PRs:**</span> We encourage you to try sending parallel PRs (i.e., send another PR while the previous PR you sent is waiting to be merged) if you haven't done that yet.<br>
+   Reason: It's important to learn how to do that, because in most real projects it is common to have ==multiple open PRs from the **same author**==.<br>
    {{ icon_important_big_red }} We require each student to have parallel PRs at least once during the tP %%so that we can confirm you are able to handle parallel PRs%%.
 1. **Maintain the defensiveness of the code:**{.text-success} Use assertions, exceptions, and logging in your code, as well as other defensive programming measures (refer this week's topic on _defensive programming_ for more details) when appropriate. This will be considered when grading your tP code quality.<br>
    Remember to [enable assertions in your IDEA run configurations](https://se-education.org/guides/tutorials/intellijUsefulSettings.html) and [in the gradle file](https://se-education.org/guides/tutorials/gradle.html#enabling-assertions).
 </box>
 
-{{ show_faq("tpFeatureDesignChoice", is_compact=0) }}
+{{ show_faq("tpFeatureDesignChoice", is_compact=1) }}
+{{ show_faq("tpHowMuchToGetFullMarks", is_compact=0) }}
 
 %%Some other relevant FAQs, repeated from last week:%%
 
@@ -2032,7 +2042,7 @@ Also see:
 * Use this extra week to finish any leftover tasks from the previous week.
 </div>
 {#====================================================================================================================#}
-<span id="heading_attend_the_PED">{{ icon_individual }} Attend the practical exam dry run</span>
+<span id="heading_attend_the_PED">{{ icon_individual }} Take part in the practical exam dry run</span>
 <div id="desc_attend_the_PED">
 
 * The practical exam dry run (PE-D) will be held in this {{ lecture_name }}. It is ==graded==. See the panel below for more info.
@@ -2043,7 +2053,7 @@ Also see:
 <span id="heading_alpha_test">{{ icon_individual }} Alpha-test the product</span>
 <div id="desc_alpha_test">
 
-Test the product yourself (test each others' features) using the JAR file, report the bugs in the issue tracker, and fix them in due course.
+Test the product yourself (test each other's features) using the JAR file, report the bugs in the issue tracker, and fix them in due course.
 </div>
 {#====================================================================================================================#}
 <span id="heading_start_fixing_PED_bugs">{{ icon_team }} Fix PE-D bugs</span>

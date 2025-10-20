@@ -147,6 +147,7 @@
 <variable name="url_tp_dashboard_fc_only">{{ url_tp_dashboard_base }}&checkedFileTypes=functional-code</variable>
 <variable name="url_tp_feature_freeze_dashboard">{{ url_tp_dashboard_fc_only | replace ("/tp-dashboard/", "/tp-feature-freeze-dashboard/") }}</variable>
 <variable name="url_tp_progress_dashboard">{{ url_dashboards }}/contents/tp-progress.html</variable>
+<variable name="url_tp_progress_dashboard_team">{{ url_dashboards }}/contents/tp-progress-team.html</variable>
 
 <!-- ===========================  icons ================================================= -->
 

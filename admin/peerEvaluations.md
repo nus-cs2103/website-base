@@ -40,7 +40,7 @@ This course leverages peer feedback/evaluations in many ways. In particular, we 
 * When investigating such cases to decide if and how much the marks should be adjusted based on peer evaluations, we consider factors such as the following:
   * Is there a consensus among team members? We do not want an extreme input from one team member to unduly affect the outcome. In many cases, we discard the highest and lowest ratings received before calculating the average.
   * Do the other data points (e.g., LoC written, tutor feedback, commit history) corroborates the peer evaluations?
-* In some cases, a lower contribution rating given be peers (even if corroborated by other data) might not affect marks at all  e.g., if the lower contribution still meets the bar for earning full marks for that component.
+* In some cases, a lower contribution rating given by peers (even if corroborated by other data) might not affect marks at all  e.g., if the lower contribution still meets the bar for earning full marks for that component.
 
 ### Guidelines for giving peer feedback
 
@@ -62,7 +62,7 @@ When you receive results of a peer evaluation question about contribution, use i
 * Example 2:<br>
   _Your view (of your own contribution)_&nbsp;: <span class="text-success">**E+15%**</span> %%i.e., 10% more than an equal share%%<br>
   _Team view (of your own contribution)_: <span class="text-success">**E+3%**</span><br>
-  Conclusion: The team's thinks you did significantly less than you claimed you did.
+  Conclusion: The team thinks you did significantly less than you claimed you did.
 
 </span>
 
