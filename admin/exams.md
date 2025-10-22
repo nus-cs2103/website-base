@@ -55,7 +55,7 @@ The final exam has two types of questions:
 
 1. **Schedule/venue:** The final exam will be as per the normal exam schedule, which will be sent to you by the Registrar's Office (or you can find via EduRec -> Academics -> Exams -> View exam schedule). You can find the date/time from [NUSMODS](https://nusmods.com/modules/{{ course }}) as well.
 1. **Scope:**
-   * All topics in the textbook, excluding level 4 topics (i.e., optional topics), are examinable. For your convenience, you can view the examinable portion of the textbook in [this printable view of the textbook](../se-book-adapted/print.html) (same as the PDF version of the textbook provided to you).
+   * All topics in the textbook, excluding level 4 topics (i.e., optional topics), are examinable. For your convenience, you can view the examinable portion of the textbook in [this printable view of the textbook](../se-book-adapted/print.html).
    * In addition, you are expected to be aware of SE-related things (i.e., tools, techniques, concepts) encountered while doing the iP and the tP %%e.g., Was testing technique X used in the tP?%%.<br>
      That is, you are expected to strengthen your SE _knowledge_ (not just hands-on skills) as you do the course projects -- in particular, to be able to connect theory to practice.
 1. **Mode: F2F, using Examplify**. You ==need to **bring your own device**== (<span class="text-danger">iPads not suitable</span>), which can connect to the NUS Wi-Fi network.<br>
@@ -67,7 +67,10 @@ The final exam has two types of questions:
 1. ==**Examplify will use the {{ 'full' if is_full_lockdown else '~~full~~ simulated' }} lock-down**== mode during the exam i.e., no access Internet, and,
    {{ 'no' if is_full_lockdown else 'not allowed to' }} access any applications/files on your computer during the exam {{ '==except the _Exam Reference_ PDF file==' if not is_full_lockdown }}.<br>
    %%Reason: Because of the risk of locally-installed LLMs affecting the integrity of the exam, NUS recommends using full-lockdown mode.%%
-1. **This is a 'cheatsheet' exam**: **You are allowed the usual one A4 size cheatsheet** (both sides). There is no restriction on what it can contain.
+1. **This is a 'cheatsheet' exam**: **You are allowed the usual one A4 size cheatsheet** (both sides). There is no restriction on what it can contain.<br>
+   In addition,
+   * **[this exam-reference-sheet](exam-reference-sheet.html) will be made available inside Examplify**, as an exam-wide PDF file attachment.
+   * **Java and Git coding standards will be given as question-specific attachments**, if the question is related to either of them.
 1. **==You need to check the exam-compatibility of your device early==** (as given in the panel below) -- even if you have used Examplify for other exams before, as the Examplify behaviour varies based on the specific exam configuration -- and work with NUS CIT to resolve any issues you encounter.{% if is_full_lockdown %}<br>
    Issues encountered by past students include problems in viewing and searching the _exam reference_ PDF file inside Examplify.{% endif %}
 
@@ -83,18 +86,9 @@ The final exam has two types of questions:
 
 * **Download the mock exam**{.text-info} we have provided. It has only three dummy questions, for you to get familiar with the exam mode.
 * **Do the mock exam**{.text-info} (password: `Hello123`).<br>
-  **Confirm you are able to open/resize/navigate{% if is_full_lockdown %}/search{% endif %} the PDF file**{.text-info} we have provided as an attachment inside Examplify (this file can be accessed via the `EXAM CONTROLS` menu in the Examplify UI).{% if is_full_lockdown %}<br>
-  In particular, ==check the search feature== (some have found the search to be too slow or non-responsive).{% else %}In the mock exam, this PDF file contains just a single page with some dummy content.{% endif %}
+  **Confirm you are able to open/resize/navigate{% if is_full_lockdown %}/search{% endif %} the PDF file**{.text-info} we have provided as an attachment inside Examplify (this file can be accessed via the `EXAM CONTROLS` menu in the Examplify UI).{% if is_full_lockdown %}{% else %}In the mock exam, this PDF file contains just a single page with some dummy content.{% endif %}
 
-{% if is_full_lockdown %}**If searching the Exam Reference PDF file inside Examplify is not working properly**:
-
-* Ensure that you can use Adobe Acrobat to search the copy of the Exam Reference PDF file provided in Canvas/files/handouts.
-* Delete Adobe Acrobat Reader cache (see https://www.youtube.com/watch?v=92xTlXv4Us8) and try the PDF attachment in Examplify again.
-* If the above doesn't work, uninstall, and install, the Adobe Acrobat Reader. Restart the computer.  Then, try Examplify again.
-* If the problem persists, contact CIT urgently, and request a time to go there and troubleshoot the issue (that way, you can conclude the problem faster than troubleshooting via email).
-{% endif %}
-
-Deadline to complete the compatibility check (including liaising with CIT): #r#at least {{ '10' if semester == 'AY2425S2' else '14' }} days before the exam##
+Deadline to complete the compatibility check (including liaising with CIT): #r#at least 10 days before the exam##
 
 </panel>
 <p/>
@@ -119,7 +113,7 @@ Deadline to complete the compatibility check (including liaising with CIT): #r#a
 
 <div tags="m--cs2103">
 
-* The exam will be divided into 2 parts.
+* The exam has 2 parts.
 * Although the official duration of the exam is 1.5 hours, note that the actual exam might take up to 2 hours (due to technical issues). So, please don't schedule anything important right after the exam.
 
 ### Final exam - part 1
@@ -249,9 +243,6 @@ The following exam resources will be **available from the start of week 13**.
 
 <include src="courseBriefings.md#topics-video" />
 
-* **PDF files useful for the exam** (given in {{ handouts_link }}):
-  * Exam Reference PDF
-  * Topics infographic (shows how the various topics fit into the big picture)
 * **Forum questions useful for exam preparations** are listed [here]({{ url_forum }}?q=label%3AsuitableForExamPrep) (marked with the label `suitableForExamPrep`).<br>
    You are strongly encouraged to join those discussions -- it will help with exam prep, and earn you forum participation credit as well.
 

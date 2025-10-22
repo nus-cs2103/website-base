@@ -108,7 +108,6 @@ While PE and PE-D are primarily _manual_ testing sessions, **you may also use an
 ****Steps for testing a tP JAR file**** (please follow closely)
 
 1. Put the JAR file ==in an empty folder== in which the app is allowed to create files %%(i.e., do not use a write-protected folder)%%.<br>
-  In rare cases, the team could have submitted a ZIP file instead of a JAR file. In that case, unzip that file into the target folder.
 1. Open a command window. Run the `java -version` command to ensure you are using Java 17.<br>
   {{ icon_important_big_red }} Do this again even if you did this before, as your OS might have auto-updated the default Java version to a newer version.
 1. Check the UG to see if there are extra things you need to do before launching the JAR file %%e.g., download another file from somewhere%%<br>

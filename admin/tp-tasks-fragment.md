@@ -22,7 +22,7 @@ Finer details of this limit are given below (**also see [Q0] and [Q1]** given un
 * **The limit applies to functional code only** i.e., changes to files inside the `src\main` folder and sub-folders. The feature freeze doesn't apply to test code, documentation, or non-code files (e.g., images).
 * **The calculation is based on the [tP code dashboard]({{ url_tp_dashboard }})**, as 'of the total functional LoC attributed to you at the end of `{{ version_final }}`, what percentage was edited by you during the feature freeze?'.
 * **The penalty for violating the feature freeze will be case-by-case basis**, but not smaller than `-2`.
-* **We will allow 2% a margin-of-error on top of the 10%** -- so, you will not be penalised if you exceed 10% by a tiny bit (i.e., up to 12%).
+* **We will allow 5% a margin-of-error on top of the 10%** -- so, you will not be penalised if you exceed 10% by a tiny bit (i.e., up to 15%).
 * **There is no limit on the nature of changes you can do** to functional code, but we **strongly recommend to choose based on,**<br>
   a) the **priority** (i.e., how important the change is), and,<br>
   b) the **risk** (i.e., the risk of the change introducing new bugs).
@@ -1931,7 +1931,7 @@ The panel below contains guidelines your peers will use when determining bugs in
     1. **DG** (PDF file) -- similar to the UG
   * You may choose any suitable filename, but recommended not to have spaces or special characters in the JAR file name.
   * It is optional to write detailed release notes for this version.
-* **You can do an _additional_ release before the [PE dry run (PE-D)](tp-ped.html)** if you wish, as long as you do it <span class="text-danger">before 10 am Friday</span>. {% if cs2103 %}That additional release is still considered part of {{ version_penultimate }} and therefore, not subjected to the feature freeze.{% endif %} When doing this additional release, do not delete the previous release %%(reason: it is good to preserver the release history)%% -- testers are expected to test the latest release file anyway. You may use any suitable version number for this JAR file e.g., `{{ version_penultimate }}.1`.<br>
+* **You can do an _additional_ release before the [PE dry run (PE-D)](tp-ped.html)** if you wish, as long as you do it <span class="text-danger">before 10 am Friday</span>. {% if cs2103 %}That additional release is still considered part of {{ version_penultimate }} and therefore, not subjected to the feature freeze.{% endif %} When doing this additional release, do not delete the previous release %%(reason: it is good to preserve the release history)%% -- testers are expected to test the latest release file anyway. You may use any suitable version number for this JAR file e.g., `{{ version_penultimate }}.1`.<br>
   Waiting till Friday 10am to release the `{{ version_penultimate }}` is strongly discouraged because if you miss that deadline, your team will not be able to benefit from the PE-D at all. It is better to have an earlier release to fall back on in case that happens.
 * As before, wrap up the milestone %%(i.e., reschedule/close any remaining issues/PRs and close the milestone).%%
 
