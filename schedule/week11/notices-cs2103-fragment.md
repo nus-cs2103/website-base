@@ -31,7 +31,7 @@ What you need to do:
 {% if ped_week == '11' %}
 <box type="info" header="****This Friday's briefing (and the PE Dry Run)****">
 
-Heads up! ==Attendance is compulsory== for the weekly briefing coming up on {{ get_date(date_w11_start, 4, time='') }}, as we use that time slot for the [Practical Exam Dry Run](../../admin/tp-ped.md) (<span class="text-danger">graded</span>).
+Heads up! ==Attendance is compulsory== for the weekly briefing coming up on {{ get_date(date_w11_start, 4, time='') }}, as we use that time slot for the [Practical Exam Dry Run](../../admin/tp-ped.md) (<span class="text-danger">graded</span>) -- but you finish the PE-D by 4pm, you need not attend the briefing live (you can watch the recording later).
 
 </box>
 <p/>

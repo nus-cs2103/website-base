@@ -26,14 +26,19 @@
 * **The PE is divided into four phases, and is of the form 'take home assignment'**:
   * ****Phase 1: Bug Reporting****{.text-success}: <span id="pe-p1-desc">In this phase, you will test the allocated product and report bugs, similar to PE-D.<br>
     This phase is divided further into parts I, II, and III.<br>
-    The recommended order and the recommended duration of each phase is given below. You will be given about 24 hours (Friday 12 noon to Saturday 12 noon) to finish this phase.<br>
-    We recommend that you do during the lecture slot (reason: support from the teaching team will be more readily available during that time).</span>
+    the recommended order and the recommended duration of each part is given below. you will be given about **24 hours (friday 12 noon to saturday 12 noon) to finish this phase**.<br>
+    **We recommend that you do during the lecture slot, or earlier** (reason: support from the teaching team will be available only during that time).</span>
     * <span class="badge bg-success">Phase 1 - part I</span> **Product Testing** [60 minutes] -- to focus on reporting bugs in the product (but can report documentation bugs too)
     * <span class="badge bg-success">Phase 1 - part II</span> **Evaluating Documents** [30 minutes] -- to focus on reporting bugs in the UG and DG (but can report product bugs too)
     * <span class="badge bg-success">Phase 1 - part III</span> **Overall Evaluation** [15 minutes] -- to give overall evaluation of the product, documentation, effort, etc.
+    * <span class="badge bg-success">Phase 1 - part IV</span> **Bug trimming** [15 minutes] -- to choose upto {{ tp_pe_bug_count }} bugs that you wish to send to the dev team.
+
   * ****Phase 2: Developer Response****{.text-success}: <span id="pe-p2-desc">This phase is for you to respond to the bug reports you received. Done during Sunday - Tuesday period after PE </span>
   * ****Phase 3: Tester Response****{.text-success}: <span id="pe-p3-desc">In this phase you will receive the dev teams response to the bugs you reported, and will give your own counter response (if needed). Done during Wednesday - Friday period after the PE.</span>
   * ****Phase 4: Tutor Moderation****{.text-secondary}: <span id="pe-p4-desc">In this phase tutors will look through all dev responses you objected to in the previous phase and decide on a final outcome. Students are not usually involved in this phase.</span><br><br>
+
+{{ show_faq('peTooLong', is_compact=1) }}
+{{ show_faq('peOtherCommitments') }}
 
 * **Grading**:
   * Your performance in the practical exam will affect your final grade and your peers', as explained in [_Admin: Project Grading_]({{ baseUrl }}/admin/tp-grading.html) section.
@@ -52,68 +57,26 @@
 
 <div id="pe-mode-info">
 
-* **Mode: you can choose between remote or F2F** (we'll use a Canvas survey to collect your preferred mode):
-  * **Remote mode**: This is the ==recommended mode==. Proctored via Zoom. You'll need to join the Zoom session from a quiet place (i.e., conducive to an exam) at which you can set up a Zoom device for proctoring.<br>
-    Choose this mode only if you are able to comply with the Zoom proctoring requirements given further down.
-  * **F2F mode**: Attend the PE at the lecture venue ({{ lecture_venue }}).<br>
-    Choose only if you are unable to use the remote mode (reason: higher the number of F2F attendees, higher the risk of Wi-Fi speed issues and GitHub throttling issues).
+* **Mode: individual, take-home assignment.** You may do this from anywhere, but you should do it on your own.
 </div>
 
-* **Those opting for the F2F mode can ignore any Zoom-related points** in the instructions below.
+* **When**: ==Fri 1200 to Sat 1200 of week {{ pe_week }}== ({{ get_date(date_w13_start if pe_week == "13" else date_w12_start, 4, format=format_normal, time="") | trim }} noon to {{ get_date(date_w13_start if pe_week == "13" else date_w12_start, 5, format=format_normal, time="") | trim }} noon).
 
-* **When**: ==In the lecture slot of week {{ pe_week }}== ({{ get_date(date_w13_start if pe_week == "13" else date_w12_start, 4, format=format_normal, time="") | trim }}).
-
-{{ show_faq("tpPeEndTime") }}
-
-* **PE Phase 1 will be conducted under exam conditions. For the remote mode, ==we will be following the [SoC's E-Exam SOP](https://mysoc.nus.edu.sg/academic/e-exam-sop-for-students/)==**, combined with the deviations/refinements given below. Any non-compliance will be dealt with similar to a non-compliance in the final exam.<br>
-
-
-<div id="pe-proctoring-info">
-
-* **Remote mode proctoring will be done via Zoom.** No admission if the following requirements are not met.{% if cs2103 %}
-  * **You need two Zoom devices** (PC: chat, audio ~~video~~, Phone: video, ~~audio~~), unless you have an external webcam for your PC.
-  * {{ icon_tip }} To change the Zoom display name as required by the PE, !!you must first join the PE Zoom meeting!! (Zoom will not allow you to change the name in advance). Then, go to the 'Participation' panel, and search for yourself. Then, click on 'More', followed by 'Rename'.
-  * **Add your `[PE_seat_number]` in front of the _first name_ of your Zoom display name**, in your Zoom devices. ==Seat numbers can be found in [here]({{ pe_seat_numbers_gsheet }})== about 2 days before the PE. e.g.,
-    * `[M18] John Doe` (`M18` is the seat number)
-    * `[M18][PC] John Doe` (for the PC, if using a phone as well){% elseif cs2113 %}
-  * You will be ==notified of the zoom session== that you should log in at least 1 day in advance via Canvas. ==**Remember: we will NOT use the same zoom session as the lectures**==
-  * **You need two Zoom devices** (PC: chat, audio ~~video~~, Phone: video, ~~audio~~), unless you have an external webcam for your PC.
-  * Set your zoom display name to show your actual name as shown on Canvas.
-  * **Add `[PC]` in front of the _first name_ of your zoom display name on the pc**.
-    * E.g., `John Doe` (for the zoom session connected via the phone)
-    * `[PC] John Doe` (for the zoom session on PC){% endif %}
-  * **Set your camera** so that _all_ the following are visible:
-    1. your face (side view, ==no mask==)
-    1. your hands
-    1. the work area (i.e., the tabletop)
-    1. the computer screen<br>
-    <pic eager src="images/zoomCameraExample.png" width="362"></pic>
-
-</div>
-
-* **Strongly recommended to join the Zoom waiting room ==15-30 minutes before the start time==.** Admitting you to the Zoom session can take some time. You need to be in the meeting and ready to start the PE by 4.05pm{% if cs2103 %}<br>
-  **If on F2F mode:** Strongly recommended to arrive at lecture venue ({{ lecture_venue }}) around 10-15 minutes early. We can allow only 5 minutes (i.e., until 4.05pm) for you to get ready to start the PE.{% endif %}
-* **In case of Zoom outage**, we'll fall back on MS Teams (MST).{% if cs2103 %} Make sure you have MST running and have joined the [MST Team for the class]({{ url_ms_teams_class }}).{% elseif cs2113 %} Make sure you have MST running; proctoring will be done via individual tutorial MST teams that we have been using.{% endif %}
-* **Recording the screen is not required.**
-* **You are allowed to use head/ear phones.** But no talking allowed (unless you are talking to the invigilator) -- so, no talking/singing to yourself as this can be mistaken for a rule violation.
-* **==Only one screen== is allowed** (for both remote mode and F2F mode). If you want to use the secondary monitor, you should switch off (or cover up) the primary monitor. The screen being used should be fully visible in the Zoom camera view.<br>
-  If using a second device for Zoom proctoring, the screen of that device should only be used for Zoom.
-* **Do not use the public chat channel to ask questions** from the prof. If you do, you might accidentally reveal which team you are testing.
-* **Do not use more than one CATcher instance** at the same time. Our grading scripts will red-flag you if you use multiple CATcher instances in parallel.
-* **Use MS Teams (not Zoom) private messages to communicate with the prof.**{% if cs2103%} Zoom sessions are invigilated by tutors, not the prof.{% endif %}
-* **Do not view video Zoom feeds of others** while the testing is ongoing. Keep the video view minimized.
-* **Bug reporting will be done using CATcher**, similar to PE-D, ==except how you download the files to be tested (you need to #r#do this in advance##)==. See the panel below to learn how:
+* Bug reporting will be done mostly similar to PE-D. See the panel below to learn how:
 <div class="indented-level1">
 
 <panel type="primary" header="PE Preparation" expanded>
 
-<include src="tp-testing-fragment.md#testingPreparations" var-pe_active_tab="1"/>
+<include src="tp-testing-fragment.md#testingPreparations" var-pe_session="pe" var-pe_session_name="PE" var-pe_active_tab="1"/>
 </panel>
 </div>
 <p/>
 
 * **Bugs reported during the PE should be the result of your own testing**. <span class="text-danger">Reporting bugs found by others as your own will be reported as a case of academic dishonesty</span> (severity is similar to cheating during the final exam).
 * **While the PE is primarily a manual testing session, you may use automated tools** or scripts to flush out bugs as well, including AI tools.
+
+{{ show_faq('peMorePowerfulTools') }}
+
 * **Recommended to read the guidelines the dev team will follow when responding to your bug reports later**, given in the panel below. This will help decide what kind of bugs to report.
 <div class="indented-level1">
 <panel type="info" header="Guidelines for the dev team to follow when triaging PE bugs" peek>
@@ -123,18 +86,9 @@
 </div>
 <p/>
 
-* **[Within 24 hours prior to the PE] Get CATcher 'warmed-up' for the PE**.<br>
-  ==Strongly recommended== to do the following about a day in advance, so that there is enough lead time to sort out any CATcher-related problems _before_ the PE.
-  1. Login to [CATcher](https://catcher-org.github.io/CATcher/),
-while choosing the `{{ course_pair }} PE` as the session.
-  1. Allow CATcher to create a repo named `pe`, when asked.
-  1. Create a dummy bug report. Edit it. Delete it.<br>
-     Caution: Do not reuse these dummy bug reports (i.e., by editing them later) to submit real PE bugs.
-     As they were created outside the PE duration, they will be ignored by PE bug processing scripts.
-  1. If you encounter any problems, post in the [CATcher issue tracker](https://github.com/CATcher-org/CATcher/issues).
-  1. If you have not downloaded the PE files to test, do so now. Details given below:
+* **Download the PE files to test**, as given below:
 
-{{ embed_topic(baseUrl+"/admin/tp-testing-fragment.md#zip-download-unzip-info", "Repeating... " + icon_embedding + " Downloading and unzipping JAR/PDF files you will test in the PE", indent=2) }}
+{{ embed_topic(baseUrl+"/admin/tp-testing-fragment.md#zip-download-unzip-info",  icon_embedding + " Downloading and unzipping JAR/PDF files you will test in the PE", indent=1, status='expanded') }}
 
 </div>
 
@@ -152,7 +106,7 @@ while choosing the `{{ course_pair }} PE` as the session.
 
 **Test the product and report bugs** as described below. You may report both product bugs and documentation bugs during this period.
 
-<include src="tp-ped-fragment.md#tp-pe-testing-instructions" var-pe_active_tab="1"/>
+<include src="tp-ped-fragment.md#tp-pe-testing-instructions" var-pe_session="pe" var-pe_session_name="PE" var-pe_active_tab="1"/>
 
 
 * =={{ icon_tip }} **When in doubt, choose the lower severity:**== If the severity of a bug seems to be smack in the _middle_ of two severity levels, choose the lower severity (unless much closer to the higher one than the lower one).
@@ -168,9 +122,9 @@ while choosing the `{{ course_pair }} PE` as the session.
 #### <span class="badge bg-success">&rarr; PE Phase 1 - Part II</span> <span class="text-success">Evaluating Documents [~30 minutes]</span>
 
 * **Use this slot mainly to report documentation bugs** (but you may report product bugs too). You may report bugs related to the UG and the DG.<br>
-  Only the content of the UG/DG PDF files (not the online version) should be considered.
+  Only the content of the UG/DG PDF files (not the online version) should be considered. Do not report bugs that are not contained within those two files (e.g., bugs in the `README.md`).
 * **For each bug reported, cite evidence and justify.** For example, if you think the explanation of a feature is too brief, explain what information is missing and why the omission hinders the reader.<br>
-  Do not report bugs that are not contained within in the UG and DG pdf files (e.g., bugs in the `README.md`).
+
 
 {{ embed_topic("tp-grading-bugs-fragment.md#ugBugs", "Admin " + icon_embedding + " tP Grading → **Possible UG Bugs**", "3", indent="1") }}
 {{ embed_topic("tp-grading-bugs-fragment.md#dgBugs", "Admin " + icon_embedding + " tP Grading → **Possible DG Bugs**", "3", indent="1") }}
@@ -200,7 +154,7 @@ Evaluate based on the User Guide and the actual product behavior.
 `target user` | Not specified | | | Clearly specified and narrowed down appropriately
 `value proposition`| Not specified | The value to target user is low. App is not worth using | Some small group of target users might find the app worth using | Most of the target users are likely to find the app worth using
 `optimized for target user` | | Not enough focus for CLI users | Mostly CLI-based, but cumbersome to use most of the time | Feels like a fast typist can be more productive with the app, compared to an equivalent GUI app without a CLI
-`feature-fit` | | Many of the features don't fit with others | Most features fit together but a few may be possible misfits | All features fit together to for a cohesive whole
+`feature-fit` | | Many of the features don't fit with others | Most features fit together but a few may be possible misfits | All features fit together to form a cohesive whole
 </div>
 <p/>
 <div id="projectGrading-userGuide-instructions">
@@ -269,7 +223,7 @@ Use the person's PPP and RepoSense page to evaluate the effort.
 
 #### <span class="badge bg-success">&rarr; PE Phase 1 - Part IV</span> <span class="text-success">Trimming bugs</span>
 
-**This segment gives testers a second chance revisit their bug reports, and choose upto {{ tp_pe_bug_count }} bugs that they wish to send to the dev team.**
+**In this part testers choose ==upto {{ tp_pe_bug_count }} bugs== that they wish to send to the dev team.**
 
 <box type="tip" seamless>
 
@@ -291,16 +245,14 @@ The above **applies to this and all remaining PE phases**.
 
 ****Procedure:****
 
-1. **Wait for the announcement** declaring this part of the PE to be open -- expected to be Friday night or Saturday morning.
-1. **Open CATcher** as before (i.e., go to [CATcher Web app](https://catcher-org.github.io/CATcher/), and login to the profile `{{ course_pair }} PE`).
 1. **Decide which bugs should be sent to the dev team**. You may select ==no more than {{ tp_pe_bug_count }}==.<br>
    **Of these bugs, ==the highest scoring 5 bugs will be used for your tP grading==.** %%We allow you to select up to {{ tp_pe_bug_count }} bugs (instead of 5), to reduce your decision-stress (i.e., it provides a safety margin against wrong choices).%%
    * **Choose based on,**<br>
      * **severity** -- %%because higher severity will earn higher marks.%% {{ bullet_tick_green }}
      * **confidence** level that it is indeed a bug %%-- if the bug is eventually rejected, it will not earn any marks.%%
      * **but not bug type** -- for this purpose, consider all bug types as equal. {{ bullet_x_red }}
-1. **Delete the remaining bug reports** using CATcher.
-   * What if I deleted a bug that I intended to keep? CATcher allows you to 'undelete' an issue.
+1. **Close the remaining bug reports**.
+   * What if I closed a bug that I intended to keep? You can reopen it.
    * What if I keep more than {{ tp_pe_bug_count }} bugs? In that case, we take the {{ tp_pe_bug_count }} bugs with the highest severity. When choosing between two bugs with same severity, we take the bug that was created earlier (i.e., the one with a lower issue number).
 
 ------------------------------------------------------------------------------------ {.thick-2 .border-success}
@@ -351,69 +303,30 @@ Note that `response.NotInScope` bugs earn a small amount of credit for the teste
 
 <include src="tp-pe-fragment.md#pe-questions-we-cannot-answer" />
 
-<box>
 
-**++Instructions for Reviewing Bug Reports++**
+****Where to find the bug reports****:{ .text-info }
 
-* **Suggested workflow:**
-  1. Give a deadline for team members to self-assign bugs they voluntarily take responsibility for.
-  1. After the deadline, assign the remaining bugs based on team consensus (e.g., discuss through a team meeting).
-  1. Optionally, review how team members have responded to the bugs assigned to them, and providing suggestions on their choice of `response.*` label and justifications.
-* **Don't freak out if there are a lot of bug reports.** Many can be duplicates and some can be _false positives_. In any case, we anticipate that all of these products will have some bugs and our penalty for bugs is not harsh. Furthermore, it depends on the severity of the bug. Some bug may not even be penalized.
-* **Nit-picking is a good sign**: If you receive a lot of nit-picking type of bugs that make you roll your eyes, it means testers were unable to find more serious bugs. That's a good thing.
-* **Not exactly zero-sum**: As mentioned earlier, the penalty for having a specific bug is not the same as the reward for reporting that bug (it's not a _zero-sum_ game). For example, the reward for testers will be higher (because we don't expect the products to have that many bugs after they have gone through so much prior testing)
+* We will create a private repo `pe-{your team ID}` in the [course's GitHub org]({{ url_course_org }}) and transfer there all bugs your team received. Only your team members will be able to access it. We'll let you know when it is ready.
+* The issue tracker will already contain the necessary labels.
+  * Do not edit the labels (i.e., text/colour) that we have provided.
+  * You may add more labels. We will ignore those extra labels.<br>
+    Do not use `type.` and `severity.` as prefixes of extra labels you add.
+* Do not use the 'transfer bug' feature to transfer the bug to another repo (to your team repo, for example).
+* Do not edit the body text or the subject of the issue. Doing so will invalidate your response (i.e., we accept the bug as reported by the tester).
+* Do not create new issues in this issue tracker.
+* You may close bug reports if you wish, to move them out of your view. Closing an issue does not affect their status in the PE i.e., we process close issues the same way open issues are processed.
+    You may pin issues if you wish, to help with triaging.
 
-<box type="info" seamless>
+****How to respond to bug reports:****{ .text-info }
 
-**Penalty for a minor bug (e.g., <tooltip content="an indicative value only; the actual value depends on the severity, type, and the number of assignees">-0.15</tooltip>) is unlikely to make a difference in your final grade**, especially given that the penalty applies only if you have more than a certain amount of bugs.<br>
-
-For example, in a typical case a developer might be assigned 5+ `severity.VeryLow` bugs before the penalty even starts affecting their marks.
-
-Accordingly, we hope you'll **accept bug reports graciously** (rather than fight tooth-and-nail to reject _every_ bug report received) if you think the bug is within the ballpark of 'reasonable'. Those minor bugs are really not worth stressing/fighting over.
-</box>
-
-
-<tabs>
-<tab header="Using CATcher">
-
-<box type="info" icon=":fas-hard-hat:">
-
-* CATcher does not come with a UG, but the UI is fairly intuitive (there are tool tips too). Do post in the forum if you need any guidance with its usage.
-* Tip: If you think others might be editing the same issues at the same time, use the `Sync` button at the top to force-sync your view with the latest data from GitHub.
-</box>
-
-* Go to [CATcher Web app](https://catcher-org.github.io/CATcher/), and login to the profile `{{ course_pair }} PE`. It will show all the bugs assigned to your team, divided into three sections:
-  1. `Issues Pending Responses` - Issues that your team has not processed yet.
-  1. `Issues Responded` - Your job is to get all issues to this category.
-  1. `Faulty Issues` - e.g., Bugs marked as duplicates of each other, or causing circular _duplicate_ relationships. Fix the problem given so that no issues remain in this category.
-* Respond to the bug reports shown.
-</tab>
-<tab header="Not using CATcher">
-<div class="indented-less">
-
-<div id="warning-use-catcher">
-
-<box type="wrong">
-
-**You must use CATcher. You are strictly prohibited from editing PE bug reports using the GitHub Web interface** as it can render bug reports unprocessable by CATcher, sometimes in an irreversible ways, and can affect the entire class. Please contact the prof if you are unable to use CATcher for some reason.
-</box>
-</div>
-
-</div>
-</tab>
-</tabs>
-<p/>
-
-* **If a bug seems to be for a different product** (i.e., wrongly assigned to your team), let us know ASAP.
-* **If the bug is reported multiple times**,
-  * Mark <span class="text-danger">all copies ==EXCEPT one==</span> as duplicates of the one left out (let's call that one the _original_) using the :fas-check-square: `A Duplicate of` tick box.
-  * For each group of duplicates, all duplicates should point to one _original_ i.e., no multiple levels of duplicates, and no cyclical duplication relationships.
-  * If the duplication status is eventually accepted, all duplicates will be assumed to have inherited the `type.*` and `severity.*` from the _original_.
-* **If you cannot reproduce the bug based on the info given by the tester** you are still expected to make a _reasonable attempt_ to go beyond the information provided by the tester to reproduce the bug, if there is clear evidence of something wrong.<br>
- For example, the screenshot in the bug report clearly shows an error message that should not appear, but you can't reproduce the error message based on the info given by the tester. Perhaps the error was caused by something else the tester did although the tester didn't realize it is connected to the error. In this case, based on the error message, you might be in a better position to figure out the real cause of the error. If you don't, the decision can go against you in a later phase if either the tester or the moderator figures out how to reproduce the error and the moderator decides that it is something you should have been able to figure out yourself.
-<p/>
-
-* **Apply one of these labels** (if missing, we assign: `response.Accepted`)
+* **Stray bugs:**{ .text-info } **If a bug seems to be for a different product** (i.e., wrongly assigned to your team), let us know ASAP.
+* **Assignee(s):**{ .text-info } **Assign to the issue team member(s) responsible for the bug.** If no one is assigned, we consider the whole team as responsible for it.
+  * There is no need to actually fix the bug though. It's simply an indication/acceptance of responsibility. The penalty for the bug (if any) will be divided among the assignees %%e.g., if the penalty is -0.4 and there are 2 assignees, each member will be penalized -0.2%%.
+  * If it is not easy to decide the assignee(s), we recommend (but not enforce) that the feature owner should be assigned bugs related to the feature, Reason: The feature owner should have defended the feature against bugs using automated tests and defensive coding techniques.
+  * It is also fine to not assign a bug to anyone, in which case the penalty will be divided equally among team members.
+  * You may need to type the GitHub username of a member for it to appear in the assignee list.<br>
+   <img width="347" src="../images/peAssignMemberDropdown.png" />
+* **Acceptance status:**{ .text-info } **Apply exactly one `response.*` label** (if missing, or if there are multiple such labels, we assign: `response.Accepted`)
 
 <div class="indented">
 <box>
@@ -426,13 +339,15 @@ Accordingly, we hope you'll **accept bug reports graciously** (rather than fight
 * `response.IssueUnclear`: The issue description is not clear. Don't post comments asking the tester to give more info. The tester will not be able to see those comments because the bug reports are anonymous.
 
 Only the `response.Accepted` bugs are counted against the dev team. While `response.NotInScope` are not counted against the dev team, they can earn a small amount of consolation marks for the tester. The other three do not affect marks of either the dev team or the tester, except when calculating bonus marks for accuracy.
-
-
 </box>
 </div>
 
+* **Duplicate bugs:**{ .text-info } **To mark an issue as a duplicate of another**, mark one as a sub-issue of the other using the GitHub sub-issue feature (`Create sub-issue` → `Add existing issue`).<br>
+   <img width="271" src="../images/peSelectSubIssues.png" />
+  * For each group of duplicates, all duplicates should be marked as sub-issues of one _original_ i.e., no multiple levels of sub-issues.
+  * If the duplication status is eventually accepted, all duplicates will be assumed to have inherited the `type.*` and `severity.*` of the _original_ issue (i.e., all sub-issues will be given the labels of the parent issue automatically, even if sub-issues have different labels).
 
-* **If you disagree with the original bug type assigned to the bug**, you may change it to the correct type.
+* **Bug type:**{ .text-info }**If you disagree with the original bug type assigned to the bug**, you may change it to the correct type. <br>
 
 <div class="indented" id="type-labels">
 <box>
@@ -444,18 +359,55 @@ Only the `response.Accepted` bugs are counted against the dev team. While `respo
   Features that work as specified by the UG but _should have been designed to work differently_ (from the end-user's point of view) fall in this category too.
 * `type.DocumentationBug`: A flaw in the documentation %%e.g., a missing step, a wrong instruction, typos%%
 </box>
+
+* If you assign more than one type label, we'll pick one of them at random. If there is no type label, we will revert back to the one given by the tester.
+* If a bug fits multiple types _equally_ well, the team is free to choose the one they think the best match.
 </div>
 
-**If a bug fits multiple types _equally_ well**, the team is free to choose the one they think the best match, but keep the type chosen by the tester if it is one of the types that fits the bug equally well.
-
-* **If you disagree with the original severity assigned to the bug**, you may change it to the correct level.
-
+* **Bug severity:**{ .text-info } **If you disagree with the original severity assigned to the bug**, change it to the correct level.
 <div class="indented">
 <include src="appendixE-gitHub.md#bug-severity" />
+
+* If there are multiple severity labels, we choose the lowest one. If there is no severity label, we revert to the one assigned by the tester.
 </div>
 
-* **If you need the teaching team's inputs when deciding on a bug** %%(e.g., if you are not sure if the UML notation is correct)%%, post in the [forum]({{ url_forum }}). Remember to ==quote the issue number shown in CATcher== (it appears at the end of the issue title).<br/>
-  Keep in mind that the bug triaging accuracy affects your marks, and therefore, the teaching team prefers not to dictate a specific response, type, or severity for a particular bug report (i.e., that decision should be yours). Nevertheless, we can provide some general comments relevant to the issue at hand. Additionally, we encourage other students to chime in with their opinions, as such discussions have learning value.
+* **Justification:**{ .text-info } **Add a _team response comment_, justifying your response.** This comment will be communicated to the tester (who will then add their own counter-response) and will be considered by the teaching team in later phases (when resolving disputed bug reports).
+  * **Give your teams response as a single comment, starting with a line that has the text `# T`** (<kbd>#</kbd><kbd> space </kbd><kbd>T</kbd>). Example:<br>
+     Markdown text:
+     ```markdown
+     # T
+
+     We don't agree with the severity because ...
+
+     We think fixing this bug is out of scope because ...
+     ```
+     Result:
+     ># T
+     >
+     >We don't agree with the severity because ...
+     >
+     >We think fixing this bug is out of scope because ...
+  * ==You must add a team response comment justifying your stance==, for all the following cases:
+    * downgrading severity
+    * non-acceptance of a bug
+    * ~~changing the bug type~~ (no need to justify this)
+    * non-obvious duplicate
+   *  {{ icon_important_big_red }} If you don't provide a justification and the tester disagrees with your response to the bug, the teaching team will have no choice but to rule in favor of the tester.
+   * You may use issue comments to discuss the bug with team members.<br>
+     If there are multiple comments in the issue thread, we will take the latest comment that starts with `# T` as the team's response. If there aren't any comments starting with `# T`, we will take the latest comment as the team's response.
+
+{{ show_faq("tpJustifyBugsAcceptedAsIs", is_compact=0) }}
+
+* **As far as possible, ==choose the correct `type.*`, `severity.*`, `response.*`, assignees, and duplicate status even for bugs you are not accepting==**. Reason: your _non-acceptance_  may be rejected in a later phase, in which case we need to grade it as an accepted bug.<br>
+**If a bug's 'duplicate' status was rejected later** %%(i.e., the tester says it is not really a duplicate and the teaching team agrees with the tester)%%, it will inherit the response/type/severity/assignees from the 'original' bug that it was claimed to be a duplicate of.
+
+****Suggested workflow:****{ .text-info }
+
+1. Give a deadline for team members to self-assign bugs they voluntarily take responsibility for.
+1. After the deadline, assign the remaining bugs based on team consensus (e.g., discuss through a team meeting).
+1. Optionally, review how team members have responded to the bugs assigned to them, and providing suggestions on their choice of `response.*` label and justifications.
+
+* Must read: Guidelines for bug triaging is given below:
 
 <div class="indented-level1" id="additionalGuidelinesForBugTriaging">
 
@@ -465,31 +417,16 @@ Only the `response.Accepted` bugs are counted against the dev team. While `respo
 <p/>
 </div>
 
-* **Decide who should take responsibility for the bug**. Use the `Assignees` field to assign the issue to that person(s). There is no need to actually fix the bug though. It's simply an indication/acceptance of responsibility. The penalty for the bug (if any) will be divided among the assignees %%e.g., if the penalty is -0.4 and there are 2 assignees, each member will be penalized -0.2%%.
-  * If it is not easy to decide the assignee(s), we recommend (but not enforce) that the feature owner should be assigned bugs related to the feature, Reason: The feature owner should have defended the feature against bugs using automated tests and defensive coding techniques.
-  * It is also fine to not assign a bug to anyone, in which case the penalty will be divided equally among team members.
 <p/>
 
-* As far as possible, ==**choose the correct `type.*`, `severity.*`, `response.*`, assignees, and duplicate status even for bugs you are not accepting**==. Reason: your _non-acceptance_  may be rejected in a later phase, in which case we need to grade it as an accepted bug.<br>
-  **If a bug's 'duplicate' status was rejected later** %%(i.e., the tester says it is not really a duplicate and the teaching team agrees with the tester)%%, it will inherit the response/type/severity/assignees from the 'original' bug that it was claimed to be a duplicate of.
 
-* **Justify your response.** For all the following cases, ==you must add a comment justifying your stance==. Testers will get to respond to all those cases and will be considered by the teaching team in later phases (when resolving disputed bug reports).<br>
-  {{ icon_important_big_red }} If you don't provide a justification and the tester disagrees with your decision, the teaching team will have no choice but to rule in favor of the tester.
-  * downgrading severity
-  * non-acceptance of a bug
-  * changing the bug type
-  * non-obvious duplicate
-
-{{ show_faq("tpJustifyBugsAcceptedAsIs", is_compact=1) }}
 {{ show_faq("tpMoreCodeMeansHigherPenalty", is_compact=1) }}
 {{ show_faq("tpRealBugWrongLabel", is_compact=1) }}
-{{ show_faq("tpCorrectBugIncorrectSuggestion", is_compact=1) }}
-<p/>
-</box>
+{{ show_faq("tpCorrectBugIncorrectSuggestion", is_compact=0) }}
 
-* You can also refer to the below guidelines:
+* In addition, you can also refer to PE grading guidelines given below:
 
-{{ embed_topic("tp-grading-bugs-fragment.md#bugCalculationNotes", "Admin " + icon_embedding + " tP Grading → Grading bugs found in the PE", "pe-gradingBugsFoundInPe", indent=1) }}
+{{ embed_topic("tp-grading-bugs-fragment.md#bugCalculationNotes", "Admin " + icon_embedding + " tP Grading → Grading bugs found in the PE", "pe-gradingBugsFoundInPe", indent=1, status='peek') }}
 
 ------------------------------------------------------------------------------------ {.thick-2 .border-success}
 
@@ -501,26 +438,48 @@ Only the `response.Accepted` bugs are counted against the dev team. While `respo
 
 <div class="indented">
 
-{{ icon_important_big_red }} While you are waiting for Phase 3 to start, comments will be added to the bug reports in your `/pe` repo, to indicate the response each received from the receiving team. <span class="text-danger">Please do not edit any of those comments or reply to them via the GitHub interface.</span> Doing so can invalidate them, in which case the grading script will assume that you agree with the dev team's response. Instead, wait till the start of the Phase 3 is announced, after which you should use CATcher to respond.
+{{ icon_important_big_red }} Within 24 hours of the end of phase 2, comments will be added to the bug reports in the same issue tracker you reported bugs, to indicate the response each received from the receiving team.
 </div>
 
 ==**Deadline:** {{ get_date(date_w13_start if pe_week == "13" else date_w12_start, 11) }}==. Strongly recommended to ==**finish early, by 6pm**== on that day (reason: we will be sending out a status update email at 6pm -- if there are any discrepancies, you can still rectify them before the hard deadline).
 
-* In this phase you will get to state whether you agree or disagree with the dev team's response to the bugs you reported. If a bug reported has been subjected to any of the below by the dev team, you can record your objections and the reason for the objection.
-  * `response.*`: bug not accepted {texts="['(a)', '(b)', '(c)', '(d)']"}
-  * `severity.*`: severity downgraded
-  * `type.*`: bug type changed
-  * `duplicate`: bug flagged as duplicate %%(Note that you still get credit for bugs flagged as duplicates, unless you reported both bugs yourself. Nevertheless, it is in your interest to object to incorrect duplicate flags because when a bug is reported by more testers, it will be considered an 'obvious' bug and will earn slightly less credit than otherwise)%%
-* If CATcher doesn't give you an option to object to (a), (b), (c), or (d) mentioned above, that means there is nothing to object to %%e.g., if there is no option to object to (a), that means the bug was accepted by the team.%%
-
 <div class="indented">
 <box type="important">
 
-**Don't get upset if the dev team did not fully agree** with most of the bugs you reported. That is to be expected, given you had a very short time to make those bug decisions while the dev team had a lot more time to deliberate about them. Some may have provided arguments against your bug reports that you consider unreasonable; not to worry, just give your counterarguments and leave it to the teaching team to decide (in the next phase) which position is more reasonable.
+**Don't get upset if the dev team did not fully agree** with most of the bugs you reported. Some may have provided arguments against your bug reports that you consider unreasonable; not to worry, just give your counterarguments and leave it to the teaching team to decide (in the next phase) which position is more reasonable.
 
 However, ==if the dev team's argument is not too far from 'reasonable', it may be **better to agree than disagree**.==<br> Reason: an incorrect counterargument at this phase will lower your accuracy more than an incorrect decision made during the testing phase, since you now have more time to think about the bug, i.e., changing your position after having more time to consider it and after seeing more information is encouraged, compared to sticking to your initial position 'no matter what'.
 </box>
 </div>
+
+* If a bug reported has been subjected to any of the below by the dev team, and you don't agree with their action, you can record your objections and the reason for the objection.
+  * `response.*`: bug not accepted {texts="['(a)', '(b)', '(c)', '(d)']"}
+  * `severity.*`: severity downgraded
+  * `duplicate`: bug flagged as duplicate %%(Note that you still get credit for bugs flagged as duplicates, unless you reported both bugs yourself. Nevertheless, it is in your interest to object to incorrect duplicate flags because when a bug is reported by more testers, it will be considered an 'obvious' bug and will earn slightly less credit than otherwise)%%
+  * ~~`type.*`: bug type changed~~ (you can ignore this, as the bug type does not affect your marks)
+<p/>
+
+* No action is required for a bug if,
+  * none of (a), (b), and (c) above applies to it.
+  * you have no objections to the actions taken by the dev team on it, w.r.t. (a), (b), (c)
+  * the bug was not selected to send to the dev team in the first place.
+
+* When the phase has been announced as open, go to your PE bug reporting issue tracker.
+* For each issue, check the comment posted by our script, informing you of the team's response. If there is any aspect that needs your input, they will be listed under the heading **Aspects You Can Object To:**
+  * If the team has downgraded the severity and you agree with the downgrade, no action needed. If you disagree, explain your objection using exactly one comment, starting with the line `# S` (<kbd>#</kbd><kbd> space </kbd><kbd>S</kbd>)e.g.,
+    ```markdown
+    # S
+
+    I don't agree with the severity downgrade because ...
+    ```
+  * If you don't agree with the team's `response.*`, explain your objections in a similar but separate comment starting with the line `# R`.
+  * If the team has indicated the bug as a duplicate of another, but you don't agree with it, explain your objections in a comment starting with the line `# D`.
+  * If you wish to update your objections, you may edit the one you previously added.
+* Do not,
+   * change the subject, labels, or the description of the original issue.
+   * edit the labels (i.e., text/colour) that we have provided, add new labels to the repo, or delete labels in the repo.
+   * close bug reports, or reopen bugs you previously closed.
+* If you do not respond to a dev response, we'll assume that you agree with it.
 
 * **If you would like to revise your own initial type/severity** in response to the team's inputs, you can state that in your explanation %%e.g., you rated the bug `severity.High` and the team changed it to `severity.Low` but now you think it should be `severity.Medium`%% (do not change the original labels yourself though).<br>
   Similarly, if the bug was rejected, but you think it should be `NotInScope`, you can disagree with their `response.Reject` and give your reasoning why it should be `NotInScope`.
@@ -544,38 +503,11 @@ Tester choice | Dev choice | Tester reaction | Teacher decision | Dev accuracy  
 `High`    | `Low`           | disagreed     | `Low `              | {{ up }}           | {{ down }}
 </div>
 
-* If you do not respond to a dev response, we'll assume that you agree with it.
-* Procedure:
 
-<div class="indented-level2">
-
-<tabs>
-<tab header="Using CATcher">
-
-* When the phase has been announced as open, login to [CATcher](https://catcher-org.github.io/CATcher) as usual (profile: `{{ course_pair }} PE`).
-* For each issue listed in the `Issues Pending Responses` section:
-  * Click on it to go to the details, and read the dev team's response.
-  * If you disagree with any of the items listed, tick the `I disagree` checkbox and enter your justification for the disagreement, and click `Save`.
-  * If you are fine with the team's changes, click `Save` without any other changes upon which the issue will move to the `Issue Responded` section.
-* No action is required for the bugs the team accepted _exactly as you reported them_ (i.e., no change to type or severity). They are shown in CATcher for your reference only.<br>
-  No action required for bugs that were not selected to send to the dev team.
-
-</tab>
-<tab header="Not using CATcher">
-
-<div class="indented-less">
-
-<include src="tp-pe-fragment.md#warning-use-catcher" />
-</div>
-</tab>
-</tabs>
-</div>
-
-
-{{ show_faq("tpPeAccuracyForNotInScope") }}
-{{ show_faq("tpPeNotInScopeSeverity") }}
-{{ show_faq("tpTesterAddingMoreInfoLater") }}
-{{ show_faq("tpBugRejectedWithReason") }}
+{{ show_faq("tpPeAccuracyForNotInScope", is_compact=1) }}
+{{ show_faq("tpPeNotInScopeSeverity", is_compact=1) }}
+{{ show_faq("tpTesterAddingMoreInfoLater", is_compact=1) }}
+{{ show_faq("tpBugRejectedWithReason", is_compact=1) }}
 <p/>
 
 ------------------------------------------------------------------------------------ {.thick-2 .border-success}

@@ -1814,7 +1814,7 @@ This week, we would like you to smoke-test the CATcher app **to ensure it can wo
 4. **Report bugs** you found, and ==even suggestions for improvements==.
    * If in doubt, report anyway.
    * ==Apply the `alpha-bug` label== to the bug report, as our grading scripts will look for it when assessing your contribution level for this task.
-   * {{ icon_important_big_red }} For this individual tP tasks to be marked as done, you need to submit at least 5 issues labelled `alpha-bug`.
+   * {{ icon_important_big_red }} For this individual tP tasks to be marked as done, you need to submit at least 5 issues labelled `alpha-bug` %%i.e., If someone submit 5 alpha bugs, it is marked as 'done' for that person (irrespective of how many alpha-bugs other team members submit)%%.
 
 <box type="tip" seamless>
 

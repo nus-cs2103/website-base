@@ -126,7 +126,9 @@
 
 ### FAQs on: tP PE
 
-{{ show_expanded_faq("tpPeEndTime") }}
+{{ show_expanded_faq("peTooLong") }}
+{{ show_expanded_faq("peOtherCommitments") }}
+{{ show_expanded_faq("peMorePowerfulTools") }}
 {{ show_expanded_faq("tpTesterAddingMoreInfoLater") }}
 {{ show_expanded_faq("tpBugRejectedWithReason") }}
 {{ show_expanded_faq("tpPeAccuracyForNotInScope") }}

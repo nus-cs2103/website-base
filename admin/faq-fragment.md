@@ -1073,10 +1073,27 @@ Caution: Mass renaming can disrupt authorship tracking. So, it is best to do any
 </div>
 <!-- =============================================================== -->
 
-<div id="faq-tpPeEndTime-Q">What time does the PE end?</div>
-<div id="faq-tpPeEndTime-A">
+<div id="faq-peTooLong-Q">Isn't it unreasonable to expect us to spend so many hours for the PE/PE-D?</div>
+<div id="faq-peTooLong-A">
 
-If you need to, you should be able to leave the PE after 5.45pm, as the part III of the PE (i.e., the last task to be done during the PE slot) can be done later (but you should complete part III before the midnight of the same day).
+The product testing part of the PE (and the PE-D) is expected to take no more than 2 hours. Typically, the bugs you can find within 2 hours should be enough to get full marks for the product testing component of the tP. The additional time is given as a buffer, and to reduce stress.
+
+Note that you can send no more than 6 bugs to the dev team anyway, and the product testing is only a small component of tP marks (i.e., 3-4 marks). So, there is not much value spending too long on this.
+
+</div>
+<!-- =============================================================== -->
+
+<div id="faq-peOtherCommitments-Q">Isn't it unfair to students who have other committments during the PE/PE-D period?</div>
+<div id="faq-peOtherCommitments-A">
+
+The product testing part of the PE (and the PE-D) is expected to take no more than 2 hours, and hence, can be done during the lecture slot of the course.
+</div>
+<!-- =============================================================== -->
+
+<div id="faq-peMorePowerfulTools-Q">Will students using more powerful (e.g., paid) tools for testing will have an unfair advantage?</div>
+<div id="faq-peMorePowerfulTools-A">
+
+Given the nature of the product you are testing (small, simple), we expect that everyone will be able to find enough bugs to qualify for full marks for the product testing portion of the tP, even if you are not using any tools at all (i.e., manual testing only). At this scale, and at the current state of the art, we estimate the difference between using AI tools and manual testing to be negligible.
 </div>
 <!-- =============================================================== -->
 

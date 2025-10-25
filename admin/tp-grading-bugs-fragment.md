@@ -125,7 +125,7 @@ These are considered _functionality bugs_:<br>
 
 * **Marks for finding bugs in the PE:** 3 marks. If you found 'enough' bugs (depends on how buggy the product was), you get full marks.<br>
   **Bugs found in your product:** determines 7 marks under the QA component, but in addition, also affect other components of the tP grade (e.g., documentation bugs affect the documentation component of the tP grade).
-* **Bugs rejected by the dev team**, if the rejection is approved by the teaching team, will not affect marks of the tester or the developer.
+* **Bugs not accepted by the dev team**, if the non-acceptance is approved by the teaching team, will not affect marks of the tester or the developer.
 * **The penalty/credit for a bug varies based on the severity** of the bug: `severity.High` > `severity.Medium` > `severity.Low` > `severity.VeryLow`
 * **The three bug types (i.e., `type.FunctionalityBug`, `type.DocumentationBug`, `type.FeatureFlaw`) are counted for three different grade components.** The penalty/credit can vary slightly based on the bug type, but you may consider them as roughly equivalent. %%So, always choose the most suitable type for a bug rather than try to choose a type that benefits your grade.%%
 * **The penalty for a bug is divided equally** among <popover content="In the PE, each team get to decide who are the assignees for each bug report they received">assignees</popover>.
