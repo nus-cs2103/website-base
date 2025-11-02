@@ -6,6 +6,8 @@
 
 **When**: To be done within a period of about 6 hours at the start of week {{ (ped_week | int) }} &rarr; {{ (ped_week | int) + 1 }} transition point (i.e., {{ get_date(date_w11_start if ped_week=='11' else date_w12_start, 4, time='1200-1800') }}). We recommend that you spend about 1-1.5 hours of the lecture slot (the one that falls inside the above period) for this task.
 
+**Where**: You can do the PE-D from anywhere. There is ==no need to join a Zoom meeting== during the PE-D (or the PE).
+
 <modal large header="Admin {{ icon_embedding }} tP → Practical Exam" id="modal:projectDeliverablesPeDryRun-pe">
 <include src="tp-pe.md#tp-practicalexam"/>
 </modal>
@@ -27,7 +29,7 @@
 
 #### <span class="badge bg-primary">PE-D</span> <span class="text-primary">During the session</span>
 
-**Use MS Teams private messages to contact prof** if you need help during the PE-D. You may also use email to contact the teaching team.
+**Use MS Teams private messages to contact prof** {{ "Damith (name: `Damith Chatura RAJAPAKSE`, NUSNET: `dcsdcr`)" if cs2103 else ''}}  via MS Teams if you need help during the PE-D. You may also use email to contact the teaching team.
 
 <box type="warning" seamless>
 
@@ -81,7 +83,15 @@ While PE and PE-D are primarily _manual_ testing sessions, **you may also use an
 <tabs active="{{ pe_active_tab }}">
 <tab header="PE Dry Run (at **{{ version_penultimate }}**)">
 
-Do the following steps ==#r#after 12 noon on the PE-D day, latest by 4pm##== (recommended to start earlier rather than wait till 4pm).
+A few hours before the PE-D starts, you will be notified via email which team you will be testing in the PE-D. After sending out those emails. we'll also announce it in Canvas. %%FYI, team members will be given different teams to test, and the team you test in PE-D is different from the team you test in the PE.%%
+
+{{ icon_important_big_red }} #r#You are not allowed to##,
+
+* reveal the team you are testing in the PE-D/PE to anyone## or put that information in a place where others can see it. {{ bullet_x_red }}
+* to share your PE-D/PE bug reports with anyone.
+* to involve anyone else in your PE-D or PE tasks -- both are individual assignments, to be done by yourself.
+
+Do the following steps ==#r#after 12 noon on the PE-D day -- get started at least by 4pm##==.
 * First, download the _latest_ `.jar` file and UG/DG `.pdf` files from the team's releases page, if you haven't done this already.
 * Then, you can start testing it and reporting bugs.
 
@@ -137,9 +147,13 @@ Do the following steps ==#r#after 12 noon on the PE-D day, latest by 4pm##== (re
 
 ###### <div class="text-white bg-secondary p-1">b) What to test</div>
 
+#g#In the scope of PE/PE-D## | #r#Not in the scope##
+-------------------|---------------------
+{{ icon_tick_green }} The behaviour of product jar file<br>{{ icon_tick_green }} UG (pdf file only)<br>{{ icon_tick_green }} DG (pdf file only) | {{ icon_x_red }} The product website, including `.md` files such as README.md<br>{{ icon_x_red }} Data and config files that comes with the app (unless they affect the app behavior)<br>{{ icon_x_red }} Terminal output (unless it attracts the attention of the user and worries/alarms him/her unnecessarily)<br>{{ icon_x_red }} Code quality issues (but there is no restriction on examining code to identify product/UG/DG bugs)
+
 * **Test ==based on the Developer Guide== (Appendix named _Instructions for Manual Testing_) ==and the User Guide== PDF files.** The testing instructions in the Developer Guide can provide you some guidance but if you follow those instructions strictly, you are unlikely to find many bugs. You can deviate from the instructions to probe areas that are more likely to have bugs.<br>
- **If the provided UG/DG PDF files have serious issues** (e.g., some parts seem to be missing) you can report it as a bug, and then, use the Web versions of UG/DG for the testing.{% if cs2103 %}
-* **[Applicable to PE only, not PE-D] The DG appendix named _Planned Enhancements_** (if it exists) gives some enhancements the team is planning for the near future. The feature flaws these enhancements address are 'known' -- reporting them will not earn you any credit.<br/>
+ **If the provided UG/DG PDF files have serious issues** (e.g., some parts seem to be missing) you can report it as a bug, and then, use the Web versions of UG/DG for the testing.{% if cs2103 and pe_session=='pe' %}
+* **[==PE-only== (not applicable to PE-D)] The DG appendix named _Planned Enhancements_** (if it exists) gives some enhancements the team is planning for the near future. The feature flaws these enhancements address are 'known' -- reporting them will not earn you any credit.<br/>
   However, you can report `type.FeatureFlaws` bugs if you think these enhancements themselves are flawed/inadequate.<br/>
   You can also report `type.DocumentationBug` bugs if any of the enhancements in this list combines more than one enhancement.
 {% endif %}
@@ -163,6 +177,14 @@ Do the following steps ==#r#after 12 noon on the PE-D day, latest by 4pm##== (re
 
 * Do not post suggestions but if the product is missing a critical functionality that makes the product less useful to the intended user, it can be reported as a bug of type `Type.FeatureFlaw`. The dev team is allowed to reject bug reports framed as mere suggestions or/and lacking in a convincing justification as to why the omission or the current design of that functionality is problematic.
 
+* **It may be useful to read the PE guidelines the dev team will follow when responding to bug reports**, given in the panel below. You can ignore the `General:` section though.
+<div class="indented-level1">
+<panel type="info" header="Guidelines for the dev team to follow when triaging PE bugs" peek>
+
+<include src="tp-pe-bug-triaging-guidelines-fragment.md"/>
+</panel>
+</div>
+<p/>
 
 
 ###### <div class="text-white bg-secondary p-1">d) How to report bugs</div>

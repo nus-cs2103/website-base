@@ -1,17 +1,14 @@
 <div id="testingPreparations">
 
 * Ensure that you have accepted the invitation to join the GitHub org used by the course. Go to [{{ url_course_org }}]({{ url_course_org }}) to accept the invitation.
-
 * Ensure you have access to a **computer that is able to run course projects** %%e.g., has the right Java version%%.
-
 <div id="pe-create-repo">
 
 * We will create a private repo `{{ pe_session }}-{your GitHub username}` in the [course's GitHub org]({{ url_course_org }}) about 24 hours before the {{ pe_session_name }} session starts. We'll let you know when it is ready. You will use that repo's issue tracker to report your {{ pe_session_name }} bugs.
 * The issue tracker will already contain the necessary labels.
   * #r#Do not## edit the labels (i.e., text/colour) that we have provided.
-  * You may add more labels.<br>
-    #r#Do not## use `type.` and `severity.` as prefixes of labels you add.
-
+  * You may create more labels if you wish (for your own convenience). Such labels will be ignored by our bug processing scripts.<br>
+    #r#Do not## use `type.` and `severity.` as prefixes of labels you create yourself.
 </div>
 
 </panel><p/>

@@ -17,11 +17,11 @@ Accordingly, we hope you'll **accept bug reports graciously** (rather than fight
 
 * **If you cannot reproduce the bug based on the info given by the tester** you are still expected to make a _reasonable attempt_ to go beyond the information provided by the tester to reproduce the bug, if there is clear evidence of something wrong.<br>
  For example, the screenshot in the bug report clearly shows an error message that should not appear, but you can't reproduce the error message based on the info given by the tester. Perhaps the error was caused by something else the tester did although the tester didn't realize it is connected to the error. In this case, based on the error message, you might be in a better position to figure out the real cause of the error. If you don't, the decision can go against you in a later phase if either the tester or the moderator figures out how to reproduce the error and the moderator decides that it is something you should have been able to figure out yourself.
-* **If you need the teaching team's inputs when deciding on a bug** %%(e.g., if you are not sure if the UML notation is correct)%%, post in the [forum]({{ url_forum }}). Remember to ==quote the issue number shown in CATcher== (it appears at the end of the issue title).<br/>
+* **If you need the teaching team's inputs when deciding on a bug** %%(e.g., if you are not sure if the UML notation is correct)%%, post in the [forum]({{ url_forum }}). Remember to ==give the URL of the issue== in your post.<br/>
   Keep in mind that the bug triaging accuracy affects your marks, and therefore, the teaching team prefers not to dictate a specific response, type, or severity for a particular bug report (i.e., that decision should be yours). Nevertheless, we can provide some general comments relevant to the issue at hand. Additionally, we encourage other students to chime in with their opinions, as such discussions have learning value.
 
 * **If a bug report contains multiple bugs** (i.e., despite instructions to the contrary, a tester included multiple bugs in a single bug report), you have to choose one bug and ignore the others. If there are valid bugs, choose from valid bugs. Among the choices available, choose the one with the highest severity (in your opinion). In your response, mention which bug you chose.
-* **If a bug report has broken image links**, check with the prof instead of rejecting them outright using the missing image as an excuse -- the missing image may be due to a technical problem of CATcher.
+* **If a bug report has broken image links**, check with the prof instead of rejecting them outright using the missing image as an excuse -- the missing image may be due to a technical problem in the PE issue transfer script.
 * **What bugs can be considered duplicates?** It is up to the dev team to prove conclusively that a bug is a duplicate. If the proof is not convincing enough, they will be considered as 'not duplicates'. Only the following cases can be considered duplicates:<br>
   (a) The exact same bug reported multiple times.<br>
   (b) Multiple buggy behaviors that are actually caused by the same defect and ==cannot be fixed independently== (i.e., fixing one fixes the others automatically).<br>
@@ -46,7 +46,7 @@ Accordingly, we hope you'll **accept bug reports graciously** (rather than fight
 
 * **Even bugs inherited from AB3 are counted**. As the current development team, you are responsible for all bugs in the product, irrespective of when it was created.
 
-* **Listing something as a known issue** in the DG can reduce the severity of the issue %%(because informing users about the issues, possibly how to avoid/circumvent the issue reduces the impact of the issue to some extent)%5 but that does not mean it is totally immune from being considered a bug.
+* **Listing something as a known issue** in the UG can reduce the severity of the issue %%(because informing users about the issues, possibly how to avoid/circumvent the issue reduces the impact of the issue to some extent)%% but that does not mean it is totally immune from being considered a bug.
 
 <div id="triaging-functionality-bugs">
 
@@ -63,7 +63,10 @@ However, if it is possible for a user mistake to cause such inputs %%(e.g., the 
 * **Use of symbols in input values**: It is acceptable to disallow certain characters in input values if there is a justification (e.g., because using those symbols in an input value makes the command harder to parse), but they can still be considered `FeatureFlaw` bugs if they cause inconvenience to the user. For example, disallowing `s/o` in a person name because `/` is used as a command delimiter can cause a major problem if the input is expected to match the legal name of the person.
 * **Mismatch between the UG and the feature**: If the feature behavior needs to be changed, it is either a `type.FunctionalityBug` or `type.FeatureFlaw`. But if it is the UG that needs to be updated, it is a `type.DocumentationBug`.{% if cs2103 %}
 * **Issues with the output shown in the terminal**: While the terminal output is not critical to the functioning of the product, it is expected to 'behave' in a reasonably presentable manner e.g., avoid showing misleading or alarming information to the user who happens to glance at the terminal output. Therefore, issues related to the terminal can be classified at comparatively lower severities and might qualify to be `NotInScope`.
-* **Handling manual edits to the data file**: AB3 UG specifies [the current level of support for manually editing the data file](https://se-education.org/addressbook-level3/UserGuide.html#editing-the-data-file) i.e., 'if you edit the file correctly, things will work; but if you edited it wrongly, there's no guarantee that things will work'. At least that level of support should be supported in the new product as well.
+* **Handling manual edits to the data file**: AB3 UG specifies [the current level of support for manually editing the data file](https://se-education.org/addressbook-level3/UserGuide.html#editing-the-data-file) i.e., 'if you edit the file correctly, things will work; but if you edited it wrongly, there's no guarantee that things will work'. At least that level of support should be provided in the product as well. Bugs can be filed in the following cases:<br>
+ (a) The product's support for editing the data files is less than that of AB3.<br>
+ (b) The UG promises more support than AB3 but the product doesn't deliver that support.<br>
+ (c) The data file format is not suitable for manual editing at all (it violates [Constraint-Human-Editable-File]({{ baseUrl }}/admin/tp-constraints.html#constraint-human-editable-file)).
 {% endif %}
 
 </div>
