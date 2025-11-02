@@ -19,7 +19,7 @@ Finer details of this limit are given below (**also see [Q0] and [Q1]** given un
 
 * **The feature freeze ==starts at 10am on the PE-D day==.** Any code updated after that deadlines is counted against the feature freeze.
 * **The limit is applied per member**. That is, we compare the amount of code attributed to each member (as per the tP code dashboard) against the portion of that code that was changed during the feature freeze. Any penalty for violating the feature freeze will be applied to that member only.
-* **The limit applies to functional code only** i.e., changes to files inside the `src\main` folder and sub-folders. The feature freeze doesn't apply to test code, documentation, or non-code files (e.g., images).
+* **The limit applies to functional code only**. More specifically, all changes (including blank lines and comments) to any code file inside the `src\main` folder  and sub-folders. The feature freeze doesn't apply to test code, documentation, or non-code files (e.g., images).
 * **The calculation is based on the [tP code dashboard]({{ url_tp_dashboard }})**, as 'of the total functional LoC attributed to you at the end of `{{ version_final }}`, what percentage was edited by you during the feature freeze?'.
 * **The penalty for violating the feature freeze will be case-by-case basis**, but not smaller than `-2`.
 * **We will allow 5% a margin-of-error on top of the 10%** -- so, you will not be penalised if you exceed 10% by a tiny bit (i.e., up to 15%).
@@ -35,9 +35,12 @@ Finer details of this limit are given below (**also see [Q0] and [Q1]** given un
 
 <panel type="seamless" header="**==[Q0]==** **How exactly is the LoC limit calculated**?" minimal>
 
-**A:** The calculation is based on your LoC at the end of the `{{ version_final }}`, not the current LoC.
+**A:** The calculation is based on your LoC !!at the end!! of the `{{ version_final }}`, not the current LoC.
 
-Example: Suppose you currently have `600 LoC` under your name. At the end of the `{{ version_final }}` you ended up with,
+Furthermore, it is based on 'in the final code, how many lines are attributed to you (by the code dashboard)'.<br>
+<pic src="images/tpCodeDashboardLoc.png" />
+
+Example (note: LoC numbers refer to lines of functional code only): Suppose you currently have `600 LoC` of code under your name. At the end of the `{{ version_final }}` you ended up with,
 
 * `650 LoC` %%(you added some code, and edited some other code)%%:<br>
   → Of that `650 LoC`, you could have added/edited up to `650 * 10% = 65 LoC` during the feature freeze.
@@ -47,15 +50,17 @@ Example: Suppose you currently have `600 LoC` under your name. At the end of the
   → `400 * 10% = 40 LoC` is less than `50 LoC`. You could have added/edited up to `50 Loc` of that `400 LoC`.
 
 So, **deleting lines does not count as a change** (only editing and adding are counted as changes) but deleting lines reduces the number of LoC attributed to you, and hence, reduces the number of lines you can change during the feature freeze.
+
+**Editing the same line multiple times** (in different commits/PRs) still counts as one line.
 </panel>
 
 <panel type="seamless" header="**==[Q1]==** How can a student **calculate/track how much code s/he can change**?" minimal>
 
 **A:** Keep in mind that the calculation is based on your LoC at the end of the `{{ version_final }}`, not the current LoC (the current LoC can still provide a rough estimate). You may use the following two code dashboards to find the current functional code LoC attributed to you:
 
-* [**tP Code Dashboard (Functional Code Only)**]({{ url_tp_dashboard_fc_only }}) -- this is the normal tP code dashboard, but configured to show functional code changes only.
-* [**tP Code Dashboard (Feature Freeze Period Only)**]({{ url_tp_feature_freeze_dashboard }}) -- this shows changes to functional code during the feature freeze period only.<br>
-  Caveat: This dashboard shows code changes from Week 11 Saturday onwards, not from Friday 10am %%(reason: RepoSense does not support setting the start to a specific time)%%. So, it will not show code changes you did in the Friday 10am to midnight. If you did some code changes during that period, you need to factor that in manually.
+1. [**tP Code Dashboard (Functional Code Only)**]({{ url_tp_dashboard_fc_only }}) -- this is the normal tP code dashboard, but configured to show functional code changes only. From there, you can find how many functional LoC is attributed to you, as per the most recent code dashboard update.<br>
+  <pic src="images/tpCodeDashboardLoc.png" />
+1. [**tP Code Dashboard (Feature Freeze Period Only)**]({{ url_tp_feature_freeze_dashboard }}) -- this shows changes to functional code during the feature freeze period only. You can use this LoC number against the number you found in (1) above to estimate the percentage of LoC that you touched during the feature freeze period.
 
 The above two dashboard links are also available in the top navigation menu of the course website (see under `Project Links`).
 
@@ -1007,6 +1012,15 @@ Now that you have learned the tP workflow, you can proceed to updating a few mor
 * If your project is using **Jekyll** for documentation, refer [this Jekyll Guide @SE-EDU/guides](https://se-education.org/guides/tutorials/jekyll.html#:~:text=github.io/myrepo-,Updating%20documents,-Jekyll%20uses%20kramdown).
 * If your project is using **Markbind** for documentation, refer [this MarkBind Guide @SE-EDU/guides](https://se-education.org/guides/tutorials/markbind-forked-sites.html#:~:text=latest%20%2D%2Dsave%2Ddev-,Updating%20documents,-MarkBind%20is%20a).
 
+{{ icon_important_big_red }} **Each member must PR their part of the documentation work.** Reasons:
+
+<div class="indented-level1">
+
+1. We use Git data to detect contributions to documentation. If one person committed all documents on behalf of the entire team, our grading scripts will identify that person as the sole contributor to documentation.
+1. Git authorship data will help you identify the person responsible for specific bugs in documentation %%-- in the final submission, only the person(s) responsible for each bug is penalised for that bug.%%
+1. The project is intended as an exercise for you to practice using Git to manage changes to the same code in parallel.
+</div>
+
 {{ show_faq("githubIssuesMultipleDocAuthors") }}
 </box>
 
@@ -1718,6 +1732,27 @@ In addition,
 </div>
 </div>
 {#====================================================================================================================#}
+<span id="heading_settle_code_authorship">{{ icon_individual }} Settle code authorship</span>
+<div id="desc_settle_code_authorship">
+
+<box type="important" seamless>
+
+#r#Do this before the feature freeze begins## (i.e., Friday 10am). Any changes done after that will be subjected to the limits of the feature freeze.
+</box>
+
+* **Ensure your code is <tooltip content="i.e., RepoSense can detect your code as yours">RepoSense-compatible</tooltip>** and the **code it attributes to you is indeed the code written by you**, as explained below:
+  * Go to the [tp Code Dashboard]({{ url_tp_dashboard }}). Click on the `</>` icon against your name and verify that the ==lines attributed to you (i.e., lines marked as green)== reflects your code contribution correctly. This is important because some aspects of your project grade (e.g., code quality) will be graded based on those lines.<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;<img src="images/greenLines.png" width="600">
+  <p/>
+
+  * More info on how to make the code RepoSense compatible:
+
+{{ embed_topic("tools.md#reposense", "Admin " + icon_embedding + " Tools → RepoSense", "1", indent="2") }}
+
+{{ show_faq("tpFeatureTakeovers") }}
+
+</div>
+{#====================================================================================================================#}
 <span id="heading_smoke_test_catcher">{{ icon_individual }} Smoke-test CATcher</span>
 <div id="desc_smoke_test_catcher">
 
@@ -1806,7 +1841,7 @@ This week, we would like you to smoke-test the CATcher app **to ensure it can wo
    * Decide who will be testing which feature. Suggested: Assign two members (exclude the feature author) to test each feature.
    * Set a deadline (suggested: should be earlier in the iteration, as you need time to fix the reported bugs).
 1. **Start testing** as soon as the `{{ version_alpha }}` jar file is ready.<br>
-   ==Test using the JAR file==.<br>
+   ==Test using the JAR file==. If you have already added some more features since you released `{{ version_alpha }}`%%, you are free to do a new release (e.g., `{{ version_alpha }}.1`) and use that for alpha testing too.%%<br>
    Use the same steps we use in the PE, reproduced in the panel below.
 
 {{ embed_topic("tp-ped-fragment.md#tp-jar-testing-steps", "Admin " + icon_embedding + " Practical Exam (Extract) → **Steps for testing a tP JAR file**", "1", indent="1", status="expanded") }}
@@ -2088,7 +2123,10 @@ Test the product yourself (test each other's features) using the JAR file, repor
    If yes, you can expect to categorise it as `NotInScope` if the same is reported in the PE (<trigger trigger="click" for="modal:pedTriagingWorkflow-peNotInScope">eligibility criteria</trigger>).
 1. **Else, it is something you should have fixed in the current version.**
    * You may fix it in this iteration. If left unfixed, it can be reported as a bug in PE, and _might_ result in a penalty eventually.{text="3.a)"}
-   * Alternatively, you can list it under 'Planned Enhancements' in the DG so that it becomes immune to PE bug reporting. In addition, you can also update the UG to mitigate its impact on users (e.g., keep users informed of it).{text="3.b)"}
+   * Alternatively, you can list it under 'Planned Enhancements' in the DG so that it becomes immune to PE bug reporting (caution: there is a limit on how many items you can list as panned enhancements -- see the panel below for more details).<br>
+     In addition, you can also update the UG to mitigate its impact on users (e.g., keep users informed of it).{text="3.b)"}
+
+{{ embed_topic("tp-deliverables.md#tp-deliverables-dg", "Admin " + icon_embedding + " tP → Deliverables → Developer Guide", "3", indent="3") }}
 
 {{ show_faq("tpFeatureDesignChoice") }}
 </box>
@@ -2140,7 +2178,6 @@ Rank the PE-D testers based on their performance (five rank 1 to the top perform
 <div class="indented-level1">
 
 PE-D bug titles will be prefixed with tester ID e.g., (`[PE-D][Tester A] UG does not load`) to make it easy for you to <tooltip content="using GitHub issue tracker's filters/search box">filter</tooltip> bugs reported by each tester.<br>
-Furthermore, tester ID mapping (i.e., who is Tester A, Tester B, etc.) will be sent to you via email within 1 day after the PE-D.
 </div>
 
 
@@ -2377,7 +2414,7 @@ Reminder: double-check to ensure the code attributed to you by RepoSense is corr
 * After reading the above 2, we ==strongly recommend you read ahead the info given in the item {{ thumb_small("5" if cs2103 else "6")}} below== as well, to know in advance what will happen during the PE itself.
 </div>
 {#====================================================================================================================#}
-<span id="heading_attend_the_PE">{{ icon_individual }} Attend the practical exam</span>
+<span id="heading_attend_the_PE">{{ icon_individual }} Take part in the practical exam</span>
 <div id="desc_attend_the_PE">
 
 * Ensure you read the instructions on **PE Preparation** (given in item {{ thumb_small("5" if cs2103 else "5")}} above)

@@ -96,7 +96,7 @@ These are considered _functionality bugs_:<br>
 <span tags="m--cs2103" id="useCaseBugs">
 
 :fas-bug: Problems in Use Cases. Examples:
-* Important use cases missing %%(a use case is _important_ if it involves a user interaction that is worthy of documenting e.g., it has multiple extensions -- this is not the same as the feature being important)%%
+* Important use cases missing
 * Formatting/notational errors
 * Incorrect step numbering
 * Unnecessary UI details mentioned

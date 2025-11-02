@@ -46,8 +46,9 @@ week11: [
   {id: 'alpha_test_product'},
   {id: 'fix_alpha_test_bugs'},
   {id: 'update_ug_dg'},
+  {id: 'settle_code_authorship'},
   {id: 'release_as_a_jar_file', deadline: get_date(date_w11_start, 3, time="23:59")},
-  {id: 'attend_the_PED', deadline: get_date(date_w11_start, 4, time="1600-1800"), graded: true}
+  {id: 'attend_the_PED', deadline: get_date(date_w11_start, 4, time="1200-1800"), graded: true}
 ],
 week12: [
   {id: 'finish_remaining_tasks'},
@@ -56,9 +57,7 @@ week12: [
   {id: 'start_fixing_PED_bugs'},
   {id: 'submit_final_deliverables', deadline: get_date(date_final_submission, time=time_final_submission)},
   {id: 'prepare_for_PE'},
-  {id: 'make_code_reposense_compatible'},
-  {id: 'attend_the_PE', deadline: get_date(date_w12_start, 4, format=format_normal, time="1600-1800"), deadline_type: 'warning'},
-  {id: 'attend_the_makeup_PE', deadline: get_date(date_w12_start, 6, format=format_normal, time="1400-1600"), deadline_type: 'secondary'}
+  {id: 'attend_the_PE', deadline: (get_date(date_w12_start, 4, format=format_normal, time="12 noon") + " to " + get_date(date_w12_start, 5, format=format_normal, time="12 noon")), deadline_type: 'warning'}
 ],
 week13: [
   {id: 'start_fixing_PED_bugs'},

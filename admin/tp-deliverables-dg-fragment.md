@@ -72,6 +72,10 @@
  * **The _Appendix: Requirements_ section** should be updated as follows:
    * Requirements implemented in the current version: make sure requirements match the way they are actually been implemented (e.g., use case steps).
    * Requirements yet to be implemented: keep these as well, as this is an ongoing project and these are meant to be implemented in future iterations.
+   * More on user stories: You need to document all user stories for the current version, and possible, for near-future versions.<br>Reason: It is essential to capture all user needs.
+   * More on use cases: Use cases are complementary to user stories. Their purpose is to capture non-trivial interactions. Hence, a use case is _important_ if it involves a user interaction that is worthy of documenting e.g., it has multiple extensions -- this is not the same as the feature being important.<br>
+      So, you need not document use cases that have simple interactions. Also, avoid documenting multiple use cases with very similar interactions either %%(it is enough to document one of them and mention how others are similar/vary)%%.<br>
+      Is sum, use cases should cover all non-trivial and unique user interaction patterns covering features that are in the current system at least, but can also cover upcoming features too if you wish.
 </div>
 
 ##### DG Tips

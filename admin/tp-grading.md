@@ -87,7 +87,7 @@ Note that 'product design' or 'functionality' are not critical learning outcomes
 
 {{ embed_topic("tp-pe-fragment.md#projectGrading-effort-instructions", "Admin " + icon_embedding + " tP → PE → ==Questions used for Implementation Effort==", "3", indent="2") }}
 
-* Step 2: Evaluate how much of that effort can be attributed to you. This is evaluated by team members, and tutors.
+* Step 2: Evaluate how much of that effort can be attributed to you. This is evaluated by team members, and tutors. Cross-validated against Git and GitHub data.
 
 {{ embed_topic("peerEvaluations-midterm-fragment.md#teamMemberEvaluation-implementation", "Admin " + icon_embedding + " Peer Evaluations → ==Questions used for Evaluating Implementation Effort==", "3", indent="2") }}
 
@@ -158,7 +158,7 @@ Note: Effort put into non-user-visible implementation work (e.g., major refactor
 {{ embed_topic("tp-pe-fragment.md#projectGrading-userGuide-instructions", "Admin " + icon_embedding + " tP → PE → ==Grading Instructions for User Guide==", "3", indent="2") }}
 {{ embed_topic("tp-pe-fragment.md#projectGrading-devGuide-instructions", "Admin " + icon_embedding + " tP → PE → ==Grading Instructions for Developer Guide==", "3", indent="2") }}
 
-* Step 2: Evaluate how much of that effort can be attributed to you. This is evaluated by team members, and tutors.
+* Step 2: Evaluate how much of that effort can be attributed to you. This is evaluated by team members, and tutors. Cross-validated against Git and GitHub data.
 
 {{ embed_topic("peerEvaluations-midterm-fragment.md#teamMemberEvaluation-ug", "Admin " + icon_embedding + " Peer Evaluations → ==Questions used for Evaluating the Contribution to the UG==", "3", indent="2") }}
 {{ embed_topic("peerEvaluations-midterm-fragment.md#teamMemberEvaluation-dg", "Admin " + icon_embedding + " Peer Evaluations → ==Questions used for Evaluating the Contribution to the DG==", "3", indent="2") }}

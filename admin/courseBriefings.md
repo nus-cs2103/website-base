@@ -138,7 +138,7 @@ In these two videos, we used an ==AI-driven text-to-speech tool== to create some
 
 <div id="topics-video">
 
-{{ panopto(desc="[Course Briefing Video] Topics overview + ==some exam-like questions== %%(19 mins)%%", "e1bf94be-36e3-4ab1-8261-b14f00fd2cc9", start_week="12") }}
+{{ panopto(desc="[Course Briefing Video] Topics overview + ==some exam-like questions== %%(19 mins)%%", "e1bf94be-36e3-4ab1-8261-b14f00fd2cc9", start_week="13") }}
 </div>
 
 </div>

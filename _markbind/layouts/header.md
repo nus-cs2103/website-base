@@ -86,6 +86,7 @@
     <li tags="m--cs2103 m--cs2113 m--tic2002"><a href="{{url_java_coding_standard}}" target="_blank" class="dropdown-item"><md>:fas-code: Java Coding Standard</md></a></li>
     <li tags="m--cs2103 m--cs2113"><a href="{{url_git_conventions}}" target="_blank" class="dropdown-item"><md>:fab-git-square: Git Conventions</md></a></li>
     <li tags="m--cs2103"><a href="{{ baseUrl }}/admin/uml-reference-sheet.md" target="_blank" class="dropdown-item"><md>:fas-diagram-project: UML Reference Sheet</md></a></li>
+    <li tags="m--cs2103"><a href="{{ baseUrl }}/admin/exam-reference-sheet.md" target="_blank" class="dropdown-item"><md>:fas-file-lines: Exam Reference Sheet</md></a></li>
     <li tags="m--tic2002"><a href="{{url_ip_dashboard}}" target="_blank" class="dropdown-item"><md>:fas-chart-area: Code Dashboard</md></a></li>
     <li tags="m--tic2002"><a href="{{url_course_org}}/{{ ip_repo_name }}" target="_blank" class="dropdown-item"><md>{{ icon_repo }} Duke repo</md></a></li>
   </dropdown>
