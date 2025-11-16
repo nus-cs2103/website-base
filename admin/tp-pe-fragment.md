@@ -23,18 +23,19 @@
 </panel><p/>
 </div>
 
-* **The PE is divided into four phases, and is of the form 'take home assignment'**:
-  * ****Phase 1: Bug Reporting****{.text-success}: <span id="pe-p1-desc">In this phase, you will test the allocated product and report bugs, similar to PE-D.<br>
-    This phase is divided further into parts I, II, and III.<br>
+* **The PE is divided into four phases, and is of the form 'take-home assignment'**:
+  * ****Phase 1: Bug Reporting****{.text-success}: <span id="pe-p1-desc">In this phase, you will test the allocated product, report bugs, and ==select upto 6 bugs to send to the dev team==.<br>
+    This phase is divided further into parts I, II, III, and IV.<br>
     the recommended order and the recommended duration of each part is given below. you will be given about **24 hours (friday 12 noon to saturday 12 noon) to finish this phase**.<br>
-    **We recommend that you do during the lecture slot, or earlier** (reason: support from the teaching team will be available only during that time).</span>
+    **We recommend that you ==do the bulk of the PE during the lecture slot, or earlier==** (Reason: Support from the teaching team will be available only during that time).<br>
+    **We recommend that you ==aim to finish this phase by Friday 23:59==**, and use Saturday portion as a buffer only (Reason: We'll send you a status report of your PE bug reports at the end of Friday, alerting you to any problems in the bug reports you have filed -- if there are any such issues, you can use the Saturday portion to fix those problems).</span>
     * <span class="badge bg-success">Phase 1 - part I</span> **Product Testing** [60 minutes] -- to focus on reporting bugs in the product (but can report documentation bugs too)
     * <span class="badge bg-success">Phase 1 - part II</span> **Evaluating Documents** [30 minutes] -- to focus on reporting bugs in the UG and DG (but can report product bugs too)
     * <span class="badge bg-success">Phase 1 - part III</span> **Overall Evaluation** [15 minutes] -- to give overall evaluation of the product, documentation, effort, etc.
     * <span class="badge bg-success">Phase 1 - part IV</span> **Bug trimming** [15 minutes] -- to choose upto {{ tp_pe_bug_count }} bugs that you wish to send to the dev team.
 
   * ****Phase 2: Developer Response****{.text-success}: <span id="pe-p2-desc">This phase is for you to respond to the bug reports you received. Done during Sunday - Tuesday period after PE </span>
-  * ****Phase 3: Tester Response****{.text-success}: <span id="pe-p3-desc">In this phase you will receive the dev teams response to the bugs you reported, and will give your own counter response (if needed). Done during Wednesday - Friday period after the PE.</span>
+  * ****Phase 3: Tester Response****{.text-success}: <span id="pe-p3-desc">In this phase you will receive the dev teams response to the bugs you reported, and will give your own counter-response (if needed). Done during Wednesday - Friday period after the PE.</span>
   * ****Phase 4: Tutor Moderation****{.text-secondary}: <span id="pe-p4-desc">In this phase tutors will look through all dev responses you objected to in the previous phase and decide on a final outcome. Students are not usually involved in this phase.</span><br><br>
 
 {{ show_faq('peTooLong', is_compact=1) }}
@@ -106,6 +107,11 @@
 
 **Test the product and report bugs** as described below. You may report both product bugs and documentation bugs during this period.
 
+<box type="important" seamless>
+
+Unlike the PE-D, you can send #r#no more than 6 bugs to the dev team## in the PE. So, if you encounter a lower severity bug when you have already recorded more than 6 higher severity bugs, there is little value in recording that new bug in the issue tracker (although you are welcome to).
+</box>
+
 <include src="tp-ped-fragment.md#tp-pe-testing-instructions" var-pe_session="pe" var-pe_session_name="PE" var-pe_active_tab="1"/>
 
 
@@ -113,16 +119,30 @@
   * Reason: The teaching team follow the same policy when adjudicating disputed severity levels in the last phase of the PE.
   * As the tester, you might feel like you are throwing away marks by choosing a lower priority; but the lower priority has a lower risk of being disputed by the dev team, giving you (and the dev team) a better chance of earning bonus marks for accuracy.
 
+<div id="pe-questions-we-cannot-answer">
+<box type="info" seamless>
+
+**If you are not sure if something is a bug, or the correct severity ...**{.text-info}
+
+If you are not sure if something is a bug, or the correct severity, you are welcome to post in the forum and discuss with peers. But given these decisions are part of PE deliverables, the teaching team will not be able to directly answer questions such as 'is this a bug?' or 'what's the correct severity for this bug?' -- but we can still pitch in by providing relevant information/guidelines.
+
+The above **applies to this and all remaining PE phases**.
+</box>
+</div>
+
+
 {{ show_faq("tpTestingLessBuggyProducts", is_compact="1") }}
 {{ show_faq("tpNoBugsInTestedProduct", is_compact="1") }}
-{{ show_faq("tpNeedToFindAllBugs") }}
+{{ show_faq("tpNeedToFindAllBugs", is_compact="1") }}
+{{ show_faq("peVaguePlannedEnhancements", is_compact="1") }}
+{{ show_faq("peCanTestersCombineBugs") }}
 
 -------------------------------------------------------------------------{.border-success}
 
 #### <span class="badge bg-success">&rarr; PE Phase 1 - Part II</span> <span class="text-success">Evaluating Documents [~30 minutes]</span>
 
 * **Use this slot mainly to report documentation bugs** (but you may report product bugs too). You may report bugs related to the UG and the DG.<br>
-  Only the content of the UG/DG PDF files (not the online version) should be considered. Do not report bugs that are not contained within those two files (e.g., bugs in the `README.md`).
+  Only the content of the UG/DG PDF files (unless you had to resort to using the Web version because the PDF version was unusable) should be considered. Do not report bugs that are not contained within those two files (e.g., bugs in the `README.md`).
 * **For each bug reported, cite evidence and justify.** For example, if you think the explanation of a feature is too brief, explain what information is missing and why the omission hinders the reader.<br>
 
 
@@ -232,17 +252,6 @@ Use the person's PPP and RepoSense page to evaluate the effort.
 You will receive bonus marks if a high percentage (e.g., some bonus if >50%, a substantial bonus if >70%) of your bugs are _**accepted as reported**_ (i.e., the eventual ~~`type.*` and~~ `severity.*` of the bug matches the value you chose initially and the bug is either `response.Accepted` or `response.NotInScope`).
 </box>
 
-<div id="pe-questions-we-cannot-answer">
-<box type="info" seamless>
-
-**If you are not sure if something is a bug, or the correct severity ...**{.text-info}
-
-If you are not sure if something is a bug, or the correct severity, you are welcome to post in the forum and discuss with peers. But given these decisions are part of PE deliverables, the teaching team will not be able to directly answer questions such as 'is this a bug?' or 'what's the correct severity for this bug?' -- but we can still pitch in by providing relevant information/guidelines.
-
-The above **applies to this and all remaining PE phases**.
-</box>
-</div>
-
 ****Procedure:****
 
 1. **Decide which bugs should be sent to the dev team**. You may select ==no more than {{ tp_pe_bug_count }}==.<br>
@@ -251,9 +260,12 @@ The above **applies to this and all remaining PE phases**.
      * **severity** -- %%because higher severity will earn higher marks.%% {{ bullet_tick_green }}
      * **confidence** level that it is indeed a bug %%-- if the bug is eventually rejected, it will not earn any marks.%%
      * **but not bug type** -- for this purpose, consider all bug types as equal. {{ bullet_x_red }}
-1. **Close the remaining bug reports**.
-   * What if I closed a bug that I intended to keep? You can reopen it.
-   * What if I keep more than {{ tp_pe_bug_count }} bugs? In that case, we take the {{ tp_pe_bug_count }} bugs with the highest severity. When choosing between two bugs with same severity, we take the bug that was created earlier (i.e., the one with a lower issue number).
+   * {{ faq }} Why limit the bug count? To reduce the number of bugs your team needs to deal with in phase 2, and to filter out low-value bug reports.
+1. **Close the remaining bug reports**.<br>
+   %%It does not matter which option in GitHub you choose when closing a bug (e.g., `Close as completed` vs `Close as not planned`).%%
+   * {{ faq }} What if I closed a bug that I intended to keep? You can reopen it.
+   * {{ faq }} What if I keep more than {{ tp_pe_bug_count }} bugs open? In that case, we take the {{ tp_pe_bug_count }} bugs with the highest severity. When choosing between two bugs with same severity, we take the bug that was created earlier (i.e., the one with a lower issue number).
+   * {{ faq }} Do the 'excess' bugs (i.e., the ones not sent to the dev team) still affect our marks? No. They are ignored entirely when grading.
 
 ------------------------------------------------------------------------------------ {.thick-2 .border-success}
 
@@ -261,7 +273,8 @@ The above **applies to this and all remaining PE phases**.
 
 <include src="tp-pe-fragment.md#pe-p2-desc" inline /><p/>
 
-==**Deadline:** {{ get_date(date_w13_start if pe_week == "13" else date_w12_start, 8 if S == 2 else 8) }}==
+==**Deadline:** {{ get_date(date_w13_start if pe_week == "13" else date_w12_start, 8 if S == 2 else 8, time="23:59") }}==<br>
+==**Aim to finish by Mon 23:59**== and keep Tuesday as a buffer. Reason: We'll send you a status update at the end of Monday, so that you can fix any problems with your responses during Tuesday.
 
 <box type="important" >
 
@@ -292,11 +305,11 @@ More importantly, this is not a bargaining between two parties; it's **an attemp
 
 <box type="tip" seamless>
 
-==**Favor `response.NotInScope` over `response.Reject`**=={.text-success}
+==**Favor `response.NotInScope` over `response.Rejected`**=={.text-success}
 
 If there is even the slightest chance that the change directly suggested (or indirectly hinted at) by a bug report is an improvement that you *might* consider doing in a future version of the product, choose `response.NotInScope`.<br/>
- Choose `response.Reject` only for bug reports that are clearly incorrect (e.g., the tester misunderstood something).<br>
-Accordingly, it is typical a team to have a lot more `response.NotInScope` bugs and very few `response.Reject` bugs.
+ Choose `response.Rejected` only for bug reports that are clearly incorrect (e.g., the tester misunderstood something).<br>
+Accordingly, it is typical a team to have a lot more `response.NotInScope` bugs and very few `response.Rejected` bugs.
 
 Note that `response.NotInScope` bugs earn a small amount of credit for the tester without any penalty for the dev team, unless there is an unusually high number of such bugs for a team.
 </box>
@@ -308,13 +321,13 @@ Note that `response.NotInScope` bugs earn a small amount of credit for the teste
 
 * We will create a private repo `pe-{your team ID}` in the [course's GitHub org]({{ url_course_org }}) and transfer there all bugs your team received. Only your team members will be able to access it. We'll let you know when it is ready.
 * The issue tracker will already contain the necessary labels.
-  * Do not edit the labels (i.e., text/colour) that we have provided.
-  * You may add more labels. We will ignore those extra labels.<br>
-    Do not use `type.` and `severity.` as prefixes of extra labels you add.
-* Do not use the 'transfer bug' feature to transfer the bug to another repo (to your team repo, for example).
-* Do not edit the body text or the subject of the issue. Doing so will invalidate your response (i.e., we accept the bug as reported by the tester).
-* Do not create new issues in this issue tracker.
-* You may close bug reports if you wish, to move them out of your view. Closing an issue does not affect their status in the PE i.e., we process close issues the same way open issues are processed.
+  * #r#Do not change the text/colour of labels## that we have provided.
+  * #g#You may add more labels.## We will ignore those extra labels.<br>
+    #r#Do not use `type.` and `severity.` as prefixes## of extra labels you add.
+* #r#Do not use the 'transfer bug' feature## to transfer the bug to another repo (to your team repo, for example).
+* #r#Do not edit the body text or the subject of the issue.## Doing so will invalidate your response (i.e., we accept the bug as reported by the tester).
+* #r#Do not create new issues## in this issue tracker.
+* #g#You may close bug reports if you wish##, to move them out of your view. Closing an issue does not affect their status in the PE i.e., we process close issues the same way open issues are processed.
     You may pin issues if you wish, to help with triaging.
 
 ****How to respond to bug reports:****{ .text-info }
@@ -342,10 +355,6 @@ Only the `response.Accepted` bugs are counted against the dev team. While `respo
 </box>
 </div>
 
-* **Duplicate bugs:**{ .text-info } **To mark an issue as a duplicate of another**, mark one as a sub-issue of the other using the GitHub sub-issue feature (`Create sub-issue` → `Add existing issue`).<br>
-   <img width="271" src="../images/peSelectSubIssues.png" />
-  * For each group of duplicates, all duplicates should be marked as sub-issues of one _original_ i.e., no multiple levels of sub-issues.
-  * If the duplication status is eventually accepted, all duplicates will be assumed to have inherited the `type.*` and `severity.*` of the _original_ issue (i.e., all sub-issues will be given the labels of the parent issue automatically, even if sub-issues have different labels).
 
 * **Bug type:**{ .text-info }**If you disagree with the original bug type assigned to the bug**, you may change it to the correct type. <br>
 
@@ -371,7 +380,7 @@ Only the `response.Accepted` bugs are counted against the dev team. While `respo
 * If there are multiple severity labels, we choose the lowest one. If there is no severity label, we revert to the one assigned by the tester.
 </div>
 
-* **Justification:**{ .text-info } **Add a _team response comment_, justifying your response.** This comment will be communicated to the tester (who will then add their own counter-response) and will be considered by the teaching team in later phases (when resolving disputed bug reports).
+* **Justification:**{ .text-info } **Add a _team response comment_, justifying your response.** This comment will be communicated to the tester (who can then add their own counter-response, if they don't agree with yours) and will be considered by the teaching team in later phases (when resolving disputed bug reports).
   * **Give your teams response as a single comment, starting with a line that has the text `# T`** (<kbd>#</kbd><kbd> space </kbd><kbd>T</kbd>). Example:<br>
      Markdown text:
      ```markdown
@@ -382,22 +391,77 @@ Only the `response.Accepted` bugs are counted against the dev team. While `respo
      We think fixing this bug is not in scope because ...
      ```
      Result:
-     ># T
+     >++++**T**++++
      >
      >We don't agree with the severity because ...
      >
      >We think fixing this bug is not in scope because ...
-  * ==You must add a team response comment justifying your stance==, for all the following cases:
-    * downgrading severity
-    * non-acceptance of a bug
-    * ~~changing the bug type~~ (no need to justify this)
-    * non-obvious duplicate
+  * **==You must add a team response comment==, if you** did _any_ of the following to the bug:
+    * **downgraded the severity**<br>
+      Note:  if the 'inherited' severity of a duplicate is lower than the severity given by the tester, it counts as a downgrading of severity, and you need to justify it in your team response of either the _original_ bug or the duplicate bug (both team responses will be shown to the tester).
+    * **did not choose `response.Accepted`**
+    * **chose it as a duplicate of another bug**
+    * ~~changed the bug type~~ (no need to justify this)
    *  {{ icon_important_big_red }} Keep it short and to the point. #r#No more than 500 words.##
+   *  {{ icon_important_big_red }} Do not cross-reference (e.g., `see #21`) other issues in your comment (such references will not work after the comment is transferred back to the tester's issue tracker).
    *  {{ icon_important_big_red }} If you don't provide a justification and the tester disagrees with your response to the bug, the teaching team will have no choice but to rule in favor of the tester.
-   * You may use issue comments to discuss the bug with team members.<br>
-     If there are multiple comments in the issue thread, we will take the latest comment that starts with `# T` as the team's response. If there aren't any comments starting with `# T`, we will take the latest comment as the team's response.
+ * **You may use issue comments to discuss the bug with team members.**<br>
+     If there are multiple comments in the issue thread, we will take the latest comment that starts with `# T` as the team's response. ~~If there aren't any comments starting with `# T`, we will take the latest comment as the team's response~~.
 
 {{ show_faq("tpJustifyBugsAcceptedAsIs", is_compact=0) }}
+
+<div class="d-none">
+
+<puml  name="duplicates-cluster-one-level.png">
+@startuml
+hide circle
+hide empty members
+skinparam backgroundcolor transparent
+
+class "Bug#1\n(the original)" as Original
+class "Bug#2\n(a duplicate)" as Duplicate1
+class "Bug#3\n(a duplicate)" as Duplicate2
+class "Bug#4\n(a duplicate)" as Duplicate3
+
+Original <-down- Duplicate1: "sub-issue of"
+Original <-down- Duplicate2: "sub-issue of"
+Original <-down- Duplicate3: "sub-issue of"
+
+@enduml
+</puml>
+<puml  name="duplicates-cluster-multi-level.png">
+@startuml
+hide circle
+hide empty members
+skinparam backgroundcolor transparent
+
+class "Bug#1\n(the original)" as Original
+class "Bug#2\n(a duplicate)" as Duplicate1
+class "Bug#3\n(a duplicate)" as Duplicate2
+class "Bug#4\n(a duplicate)" as Duplicate3
+
+Original <-down- Duplicate1: "sub-issue of"
+Original <-down- Duplicate2: "sub-issue of"
+Duplicate2 <-- Duplicate3: "sub-issue of"
+
+@enduml
+</puml>
+</div>
+
+* **Duplicate bugs:**{ .text-info } **To mark an issue as a duplicate of another**, mark one as a sub-issue of the other using the GitHub sub-issue feature (`Create sub-issue` → `Add existing issue`).<br>
+   <img width="271" src="../images/peSelectSubIssues.png" />
+  * For each group of duplicates, ==**all duplicates should be marked as sub-issues of !!#r#one##!! _original_**== i.e., no multiple levels of sub-issues.<br>
+    Choose the most representative bug of the duplicates cluster as the _original_ and assign the rest as sub-issues of that bug.
+    #g#OK## | #r#Not OK##
+    ---|---
+    <pic src="duplicates-cluster-one-level.png"></pic> | <pic src="duplicates-cluster-multi-level.png"></pic>
+  * **No need to set labels/assignees for duplicate bugs.** When you designate a bug as a duplicate of another, ==the `type.*`, `severity.*`, `response.*` and assignees of the _original_ issue are inherited by (and override) those of the duplicate== -- i.e., the duplicate's own different labels/assignees (if any) are ignored.
+  * **Use the duplicate's team comment to explain why it is a duplicate of the original.** When a duplicate bug is shown to the tester, the justification (i.e., the team comment) of the _original_ bug will be shown together with the justification of the duplicate. Therefore, you need not repeat the details in the original's justification in the duplicate's justification.<br>
+    {{ icon_important_big_red }} **CAUTION: If the duplicate bug currently has a lower severity than the _original_ bug**, the duplicate bug is effectively getting a severity downgrade (when it inherits the severity from the _original_ bug). This downgrade can be contested by the tester of the duplicate bug. Hence, you need to either,<br>
+     → a) justify the downgrade in the team comment of the duplicate (e.g., `We downgrade the severity to from X to Y because ...`), or,<br>
+     → b) justify the current severity level of the _original_ bug in its team comment (e.g., `We think the severity for this bug is Y because ...`).<br>
+    {{ icon_important_big_red }} **Remember not to cross-refer the issue number of the _original_** (`e.g., this is same as #23`) in the justification of the duplicate bug -- use the issue title instead (e.g., `This is a duplicate of the bug 'UG formatting is wrong' because ...`).
+
 
 * **As far as possible, ==choose the correct `type.*`, `severity.*`, `response.*`, assignees, and duplicate status even for bugs you are not accepting==**. Reason: your _non-acceptance_  may be rejected in a later phase, in which case we need to grade it as an accepted bug.<br>
 **If a bug's 'duplicate' status was rejected later** %%(i.e., the tester says it is not really a duplicate and the teaching team agrees with the tester)%%, it will inherit the response/type/severity/assignees from the 'original' bug that it was claimed to be a duplicate of.
@@ -406,7 +470,7 @@ Only the `response.Accepted` bugs are counted against the dev team. While `respo
 
 1. Give a deadline for team members to self-assign bugs they voluntarily take responsibility for.
 1. After the deadline, assign the remaining bugs based on team consensus (e.g., discuss through a team meeting).
-1. Optionally, review how team members have responded to the bugs assigned to them, and providing suggestions on their choice of `response.*` label and justifications.
+1. Optionally, you can help team members by reviewing how they have responded to the bugs assigned to them, and providing suggestions on their choice of `response.*` label and justifications.
 
 * Must read: Guidelines for bug triaging is given below:
 
@@ -439,7 +503,7 @@ Only the `response.Accepted` bugs are counted against the dev team. While `respo
 
 <div class="indented">
 
-{{ icon_important_big_red }} Within 24 hours of the end of phase 2, comments will be added to the bug reports in the same issue tracker you reported bugs, to indicate the response each received from the receiving team.
+{{ icon_important_big_red }} Within 24 hours of the end of phase 2, comments will be added to the bug reports in the same issue tracker you reported bugs, to indicate the response each received from the receiving team. But wait till we announce the start of the _Tester Response Phase_ before you start responding to them.
 </div>
 
 ==**Deadline:** {{ get_date(date_w13_start if pe_week == "13" else date_w12_start, 11) }}==. Strongly recommended to ==**finish early, by 6pm**== on that day (reason: we will be sending out a status update email at 6pm -- if there are any discrepancies, you can still rectify them before the hard deadline).
@@ -457,7 +521,6 @@ However, ==if the dev team's argument is not too far from 'reasonable', it may b
   * `response.*`: bug not accepted {texts="['(a)', '(b)', '(c)', '(d)']"}
   * `severity.*`: severity downgraded
   * `duplicate`: bug flagged as duplicate %%(Note that you still get credit for bugs flagged as duplicates, unless you reported both bugs yourself. Nevertheless, it is in your interest to object to incorrect duplicate flags because when a bug is reported by more testers, it will be considered an 'obvious' bug and will earn slightly less credit than otherwise)%%
-  * ~~`type.*`: bug type changed~~ (you can ignore this, as the bug type does not affect your marks)
 <p/>
 
 * No action is required for a bug if,
@@ -465,25 +528,65 @@ However, ==if the dev team's argument is not too far from 'reasonable', it may b
   * you have no objections to the actions taken by the dev team on it, w.r.t. (a), (b), (c)
   * the bug was not selected to send to the dev team in the first place.
 
-* When the phase has been announced as open, go to your PE bug reporting issue tracker.
-* For each issue, check the comment posted by our script, informing you of the team's response. If there is any aspect that needs your input, they will be listed under the heading **Aspects You Can Object To:**
-  * If the team has downgraded the severity and you agree with the downgrade, no action needed. If you disagree, explain your objection using exactly one comment, starting with the line `# S` (<kbd>#</kbd><kbd> space </kbd><kbd>S</kbd>)e.g.,
+* When the phase has been announced as open, go to your PE bug reporting issue tracker. Then, for each issue, check the comment posted by our script, informing you of the team's response. If there is any aspect for which we can consider your objections for, they will be listed under the heading **Aspects You Can Object To:**
+  * **If the team has downgraded the severity**, and you agree with the downgrade, no action needed. If you disagree, explain your objection using exactly one comment, starting with the line `# S` (<kbd>#</kbd><kbd> space </kbd><kbd>S</kbd>)e.g.,
     ```markdown
     # S
 
     I don't agree with the severity downgrade because ...
     ```
-  * If you don't agree with the team's `response.*`, explain your objections in a similar but separate comment starting with the line `# R`.
-  * If the team has indicated the bug as a duplicate of another, but you don't agree with it, explain your objections in a comment starting with the line `# D`.
-  * If you wish to update your objections, you may edit the one you previously added.
-* Do not,
-   * change the subject, labels, or the description of the original issue.
-   * edit the labels (i.e., text/colour) that we have provided, add new labels to the repo, or delete labels in the repo.
-   * close bug reports, or reopen bugs you previously closed.
-* If you do not respond to a dev response, we'll assume that you agree with it.
+  * **If you disagree with the team's `response.*`**, explain your objections in a similar but separate comment starting with the line `# R` e.g.,
+    ```markdown
+    # R
 
-* **If you would like to revise your own initial type/severity** in response to the team's inputs, you can state that in your explanation %%e.g., you rated the bug `severity.High` and the team changed it to `severity.Low` but now you think it should be `severity.Medium`%% (do not change the original labels yourself though).<br>
-  Similarly, if the bug was rejected, but you think it should be `NotInScope`, you can disagree with their `response.Reject` and give your reasoning why it should be `NotInScope`.
+    I don't agree that this bug should be rejected. It should at least be NotInScope because ...
+    ```
+  * **If the team has indicated the bug as a duplicate of another**, but you disagree, explain your objections in a separate comment starting with the line `# D` e.g.,
+    ```markdown
+    # D
+
+    I don't agree that these two bugs are duplicates because ...
+    ```
+  * **If the team has given a response you think is unprofessional** (e.g., rude, confrontational, spammy) you may complain to the teaching team using a separate comment starting with the line `# U` e.g.,
+    ```markdown
+    # U
+
+    I think the team responded unprofessionally because ...
+    ```
+    {{ icon_important_big_red }} Use this option sparingly. Complaining about trivial things is unprofessional too. If the teaching team deems either part is acting unprofessionally, a penalty will be applied.<br>
+    Don't use this route to flag out weak justifications or the absence of a suitable justification, as those are automatically penalised by ruling the corresponding dispute in favour of the tester.
+  * **You need to submit ==one comment per each aspect== you object to.** #r#Do not combine multiple objections into one comment##.<br>
+    * {{ good }}:
+      ```
+      # R
+      ...
+      ```
+      ```
+      # S
+      ...
+      ```
+      {{ bad }}:
+      ```
+      # R
+      ...
+
+      # S
+      ...
+      ```
+  *  **Word limit: no more than 500 words per comment.**
+  * **If the team's `response.*` is not listed among aspects you can object to**, that means the bug was accepted by the team (hence, no need to object).<br>
+    **If a severity downgrade is not listed among aspects you can object to**, that means the team gave the same (or a higher) severity to the bug.
+  * **If you wish to update your objections later** (i.e., before the deadline is over), you may edit the one you previously added (rather than add another comment).
+  * **If you do not object to an aspect you are allowed to object to**, we'll assume that you agree with the dev team on that aspect.
+* #r#Do not##,
+   * #r#change the subject, labels, or the description## of the original issue.
+   * #r#edit the labels text/colour of the labels that we have provided,<br>
+     add new labels to the repo, or<br>
+     delete labels in the repo##.
+   * #r#close bug reports##.
+     If you accidentally closed a bug during this phase, simply reopen it and it will be fine.
+* **If the team gave `response.Rejected`, but you think it should be `NotInScope`**, you can disagree with their `response.Rejected` and give your reasoning why it should be `NotInScope`.
+* **If the bug is either `response.Rejected` or `response.CannotReproduce` and you agree with that response**, you will not earn marks for that bug -- hence, there is no point objecting to a severity downgrade (if any) or duplicate status (if any).
 * You can also refer to the below guidelines, mentioned during the previous phase as well:
 
 {{ embed_topic("tp-pe-fragment.md#additionalGuidelinesForBugTriaging", "Admin " + icon_embedding + " PE → Phase 2 → Additional Guidelines for Bug Triaging", "pe-additionalGuidelinesForBugTriaging", indent=1) }}
@@ -502,6 +605,8 @@ Tester choice | Dev choice | Tester reaction | Teacher decision | Dev accuracy  
 `High`    | `Low`           | agreed        |                     | {{ up }}           | no effect
 `High`    | `Low`           | disagreed     | `High`              | {{ down }}         | {{ up }}
 `High`    | `Low`           | disagreed     | `Low `              | {{ up }}           | {{ down }}
+
+{{ icon_info }} Dev accuracy is calculated individually (not per team), based on assignees.
 </div>
 
 

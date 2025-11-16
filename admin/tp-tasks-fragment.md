@@ -2166,7 +2166,7 @@ no bug reports from this tester | just a few bug reports, and none are good | 3-
 </panel>
 <panel type="seamless" header="Q2: Rank PE-D testers" minimized>
 
-Rank the PE-D testers based on their performance (five rank 1 to the top performing tester):
+Rank the PE-D testers based on their performance (give rank 1 to the top performing tester):
 
 `Tester A`: rank __<br>
 `Tester B`: rank __<br>

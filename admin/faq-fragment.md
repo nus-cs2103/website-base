@@ -1111,10 +1111,32 @@ If the total bugs found (by _all_ testers) in a product is below a certain level
 </div>
 <!-- =============================================================== -->
 
-<div id="faq-tpNeedToFindAllBugs-Q">What if the product I tested is very buggy? Am I expected to find all those bugs?</div>
+<div id="faq-tpNeedToFindAllBugs-Q">Am I expected to find the {{ tp_pe_bug_count }} highest severity bugs in the entire product, among _all_ bugs in the product?</div>
 <div id="faq-tpNeedToFindAllBugs-A">
 
-No. Given the PE has only a short time, we don't expect you to find _all_ bugs in the product. To get full marks, you only need to report a certain percentage of the bugs (e.g., half), or a certain quantity of bugs (the quantity also factors in the nature of the bug e.g., severity), whichever is lower.
+It is too much to expect you to first find _all_ bugs in the product (which could take a long time if the product is very buggy) and then choose the {{ tp_pe_bug_count }} most severe among them. To get full marks, you only need to have a certain percentage of those bugs among the {{ tp_pe_bug_count }} bugs you report. For example, suppose a product received 10 Medium/High severity bugs -- you could be given full marks if you have at least 3 of them among your {{ tp_pe_bug_count }} bugs. Even if you don't meet that bar, you still earn marks based on the bugs you've reported.
+</div>
+<!-- =============================================================== -->
+
+<div id="faq-peCanTestersCombineBugs-Q">Can a tester combine multiple similar bugs into a single bug report?</div>
+<div id="faq-peCanTestersCombineBugs-A">
+
+**In the PE-D**, it is OK to do so.
+
+**In the PE**, report each bug as a separate bug report. If you include multiple bugs in one bug report, the dev team is allowed to pick one bug out of them and discard the rest.
+
+* Reasons:
+  * It is hard to evaluate when multiple bugs are in the same report e.g., what if some of them are valid but others are not?
+  * It can open the door for testers to define very high-level bugs %%(e.g., UG not well-formatted)%% and cramming more and more bugs into one bug report. It is hard to define what's acceptable in such cases.
+  * Given these are lower-severity bugs, it is better to report them once and focus more on looking for higher-severity bugs.
+* On the positive side, if similar bugs reported (even by multiple testers) are later combined into one bug report by the dev team (with our permission) and given a higher severity, all testers who reported instances of that bug will benefit from the higher severity.
+</div>
+<!-- =============================================================== -->
+
+<div id="faq-peVaguePlannedEnhancements-Q">What if a 'Planned Enhancement' is written broadly so that it covers a variety of bugs?</div>
+<div id="faq-peVaguePlannedEnhancements-A">
+
+As per our instructions, each planned enhancement should be specific and detailed. If you feel a certain planned enhancement is too broad or not specific enough, you can 'reject' that planned enhancement and still report bugs as if it didn't exist. But in this case you should also justify why you 'reject' the corresponding planned enhancement.
 </div>
 <!-- =============================================================== -->
 

@@ -53,6 +53,9 @@
     > 1. **Make 'failed contact deletion' message more specific**: The current error message for a failed contact deletion `Operation failed!` is too general. We plan to make the error message also mention which action failed and the reason for the failure: `The contact Amy Lee could not be deleted as it is referenced by another contact Ben Chua`.
     > 2. ...
   * Each enhancement should be a tweak to an existing feature, and should not be a new feature altogether.
+  * An enhancement should not be too broad, or fix multiple things.
+    * #r#Too broad##: `Make the name field more flexible`, `Make error messages more informative`
+    * #g#OK##: `Accept non-English characters for the name`, `When a command fails due to an invalid index, state the reason in the error message`
   * `type.FeatureFlaw` bug reports matching an item in this section ==will not be penalized== for the team, and testers will not earn credit for reporting them either. However, testers can report `type.FeatureFlaw` bugs on the enhancements listed in this section, if they think the planned feature tweak itself is flawed/inadequate.
 
 {{ show_faq("tpCountingSimilarPlannedEnhancements") }}
@@ -72,7 +75,7 @@
  * **The _Appendix: Requirements_ section** should be updated as follows:
    * Requirements implemented in the current version: make sure requirements match the way they are actually been implemented (e.g., use case steps).
    * Requirements yet to be implemented: keep these as well, as this is an ongoing project and these are meant to be implemented in future iterations.
-   * More on user stories: You need to document all user stories for the current version, and possible, for near-future versions.<br>Reason: It is essential to capture all user needs.
+   * More on user stories: You need to document all user stories for the current version, and possibly, for near-future versions.<br>Reason: It is essential to capture all user needs.
    * More on use cases: Use cases are complementary to user stories. Their purpose is to capture non-trivial interactions. Hence, a use case is _important_ if it involves a user interaction that is worthy of documenting e.g., it has multiple extensions -- this is not the same as the feature being important.<br>
       So, you need not document use cases that have simple interactions. Also, avoid documenting multiple use cases with very similar interactions either %%(it is enough to document one of them and mention how others are similar/vary)%%.<br>
       Is sum, use cases should cover all non-trivial and unique user interaction patterns covering features that are in the current system at least, but can also cover upcoming features too if you wish.

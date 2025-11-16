@@ -129,6 +129,8 @@
 {{ show_expanded_faq("peTooLong") }}
 {{ show_expanded_faq("peOtherCommitments") }}
 {{ show_expanded_faq("peMorePowerfulTools") }}
+{{ show_expanded_faq("peCanTestersCombineBugs") }}
+{{ show_expanded_faq("peVaguePlannedEnhancements") }}
 {{ show_expanded_faq("tpTesterAddingMoreInfoLater") }}
 {{ show_expanded_faq("tpBugRejectedWithReason") }}
 {{ show_expanded_faq("tpPeAccuracyForNotInScope") }}
