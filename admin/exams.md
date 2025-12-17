@@ -58,7 +58,10 @@ The final exam has two types of questions:
    * All topics in the textbook, excluding level 4 topics (i.e., optional topics), are examinable. For your convenience, you can view the examinable portion of the textbook in [this printable view of the textbook](../se-book-adapted/print.html).
    * In addition, you are expected to be aware of SE-related things (i.e., tools, techniques, concepts) encountered while doing the iP and the tP %%e.g., Was testing technique X used in the tP?%%.<br>
      That is, you are expected to strengthen your SE _knowledge_ (not just hands-on skills) as you do the course projects -- in particular, to be able to connect theory to practice.
-1. **Mode: F2F, using Examplify**. You ==need to **bring your own device**== (<span class="text-danger">iPads not suitable</span>), which can connect to the NUS Wi-Fi network.<br>
+
+{{ show_faq('examIsXyzInScope') }}
+
+3. **Mode: F2F, using Examplify**. You ==need to **bring your own device**== (<span class="text-danger">iPads not suitable</span>), which can connect to the NUS Wi-Fi network.<br>
   Please use these resources if you haven't used Examplify in the recent past (the behavior may be different from the version you used last semester):
    * See [NUS Guides on Examplify](https://nus.atlassian.net/wiki/spaces/DAstudent/overview).
    * Try a few practice exams provided in the above link.
@@ -126,7 +129,17 @@ Deadline to complete the compatibility check (including liaising with CIT): #r#a
 * These diagrams will not be graded directly. Instead, you will use them when answering part 2 of the exam.<br>
   However, we may use the diagrams to give _some_ consolation marks should you score very low in the corresponding MCQ questions.<br>
   For that purpose, the papers will be collected at the end of the full exam (i.e., after part 2 is over).
+* The question will be provided as a question-specific PDF attachment (can be accessed through the `TOOL KIT` menu) while the exam reference PDF will be provided as an exam-wide PDF attachment (can be accessed through the `EXAM CONTROLS` menu). You can open both at the same time and arrange them side-by-side. See teh panel below for an illustration.
+
+<div class="indented-level1">
+
+<panel type="secondary" header="Viewing question-specific and exam-wide PDF attachments" peek>
+
+<pic src="images/examplify-two-pdf-files.png" />
+</panel>
 </div>
+</div>
+
 <div tags="m--cs2103">
 
 ### Final exam - part 2
@@ -210,16 +223,24 @@ The following exam resources will be **available from the start of week 13**.
   You can use it to get familiar with the quiz format that will be used for the final exam.
   Password: `Hello123`<br>
   Model answers are in {{ handouts_link }}.
-* **A practice exam** of same format/length/difficulty as the actual exam will be available at least one week before the exam.<br>
+* **A practice exam** of same format/length/difficulty<sup>[see caveat]</sup> as the actual exam will be available at least one week before the exam.<br>
   You can use it to practice your timing/pace. Multiple attempts are allowed.
   * Recommended:
       * Watch the exam briefing video and finish studying the topics before
         you attempt the practice exam, to get its full benefit.<br>
       * Do the mock exam (to get used to the software and question structure) before the practice exam.
   * Where to find it: on Examplify.
-    * Part 1: Password `Hello123`  (Resume code: `B5FCD8`)
-    * Part 2: Password `Hello123`  (Resume code: `BD097F`)
+    * Part 1: Password `Hello123`  (Resume code: `68B783`)
+    * Part 2: Password `Hello123`  (Resume code: `81BB06`)
   * Model answers are available on {{ handouts_link }}.
+
+<box type="warning" header="CAVEAT about difficulty level of the practice exam" seamless>
+
+Although the practice exam is meant to be the same difficulty as the actual exam, past students have commented that they found the actual exam slightly difficult than the practice exam. We have also noted that about a 1/3 of the exam questions are 'heavier' than their practice exam counterparts %%('heavier' how? for example, while the practice question is based on a code fragment of 15 LoC, the actual exam question's code fragment might be 20 LoC.)%%
+
+So, ensure you can do the practice exam fairly comfortably within the given time.
+</box>
+
 * **Some extra practice questions** for exam part 1 are in
   {{ handouts_link }} -- look for the file `Additional practice questions for part 1.pdf`
 * **UML Worked Examples** that you previously encountered (also given in the panel below) too are a suitable tool to prepare for the exam. For example, you can watch the first few minutes to see the code that will the basis for the diagram, then draw the diagram yourself, and watch the remainder of the video to compare your answer to the model answer.

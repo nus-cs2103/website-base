@@ -1214,6 +1214,18 @@ Yes. A higher severity means the enhancement you suggested is of higher value/im
 =============================================================== -->
 
 <!-- =============================================================== -->
+<div id="faq-examIsXyzInScope-Q">Is ____ in the scope of the exam?</div>
+<div id="faq-examIsXyzInScope-A">
+
+Aspect | Is in the scope?
+-------|------------------
+External pages hyperlinked from the [examinable version of the textbook]({{ url_course_website }}/se-book-adapted/print.html) e.g., eXtreme Programming website | No.
+Content listed in _Resources_ panels | No.
+Book titles and authors mentioned e.g., The Mythical Man-Month by Fred Brooks | No.
+Refactoring and code 'smells' listed under the topic [Refactoring]({{ url_course_website }}/se-book-adapted/chapters/refactoring.html) | You should be able to cite examples of refactorings and code smells but their details will not be tested
+
+</div>
+<!-- =============================================================== -->
 <div id="faq-examGradingFollowUpQuestion-Q">How is the follow-up question graded?</div>
 <div id="faq-examGradingFollowUpQuestion-A">
 
