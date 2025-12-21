@@ -21,7 +21,6 @@ Instructions below are from the previous semester. Will be updated closer to the
 
 * We will use Examplify for the final exam.
 * The exam is **closed-book** (i.e., secure exam).
-* However, the course textbook (pdf version) and UML reference sheet will be made available to you via the exam attachment.
 * Permitted materials:<br>
   1 A4 sized cheat sheet.<br>
   NUS-approved calculator.

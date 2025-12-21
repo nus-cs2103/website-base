@@ -649,9 +649,10 @@ Use this week extra week to finish up any leftover work from the previous week.
 
 <box type="tip" seamless>Mentorship within the team is highly-encouraged and rewarded. Besides, it is in your interest to help team members level up before the tP coding begins, and also, a good early opportunity to build team spirit.</box>
 
+{% if cs2103 %}
 * #r#**Submission** (one person per team):## via Canvas. Submission will open Friday evening, after team forming is complete for all tutorials. We'll let you know when it is open.<br>
   After completing this task (i.e., after asking all team members if they need help for the iP, and coming up with a plan to help those who asked for help), one member should submit a brief summary of the status of this task.<br>
-   e.g., `One member is slightly behind and one significantly behind. We plan to have a code-together session on Sunday so that we can help them if they encounter problems.`
+   e.g., `One member is slightly behind and one significantly behind. We plan to have a code-together session on Sunday so that we can help them if they encounter problems.`{% endif %}
 </div>
 {#====================================================================================================================#}
 <span id="heading_start_weekly_meetings">{{ icon_team }} Start weekly project meetings</span>
