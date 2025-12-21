@@ -8,19 +8,19 @@
 <variable name="S">1</variable>
 <variable name="semester">AY2526S{{ S }}</variable>
 <variable name="period">2025 Aug-Nov</variable>
-<variable name="current_week">-1</variable>
+<variable name="current_week">15</variable>
 
 <variable name="algolia">yes</variable>
 
 <variable name="canvas_course_id">x</variable>
-<variable name="url_instructors">https://docs.google.com/document/d/e/2PACX-1vQ3yMfxtxatSX5XxWnZparVJN9UkEOu504YHyShketpCzdqQth4JDcwQwhWvOBi-XH8-gkdgMgGpg1t/pub?embedded=true</variable>
-<variable name="url_coursemology_classroom">https://coursemology.org/courses/x</variable>
-<variable name="url_ms_teams_class">x</variable>
+<variable name="url_instructors">https://docs.google.com/document/d/e/2PACX-1vQ6WVvS-upoXY9rlef7o9c55hYisjdB8dab4x71jKevYaRly9_t8QVlcUYZA7oaklHkDVoUwVKQ1fDP/pub?embedded=true</variable>
+<variable name="url_coursemology_classroom">https://coursemology.org/courses/3128</variable>
+<variable name="url_ms_teams_class">https://teams.microsoft.com/l/team/19%3ASkJ82bUkRMRWpAtkSD7xXLENa3poS9aIXjpKTt_jtJk1%40thread.tacv2/conversations?groupId=59e4b2b0-be12-46be-a7bf-758f00d2cbc5&tenantId=5ba5ef5e-3109-4e77-85bd-cfeb0d347e82</variable>
 
 <variable name="date_w1_start">2025-08-11</variable>
 <variable name="day_first_tutorial">Wednesday</variable>
 <variable name="recess_after_week">6</variable>
-<variable name="lecture_venue">LT16</variable>
+<variable name="lecture_venue">LT9</variable>
 <variable name="time_lecture_start">1600</variable>
 <variable name="time_lecture_end">1800</variable>
 <variable name="time_t_lecture_start">1600</variable>

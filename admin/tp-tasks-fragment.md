@@ -644,9 +644,11 @@ Use this week extra week to finish up any leftover work from the previous week.
 
 <box type="tip" seamless>Mentorship within the team is highly-encouraged and rewarded. Besides, it is in your interest to help team members level up before the tP coding begins, and also, a good early opportunity to build team spirit.</box>
 
+<!--
 * #r#**Submission:**## via Canvas. Submission will open Friday evening, after team forming is complete for all tutorials. We'll let you know when it is open.<br>
   After completing this task (i.e., after asking all team members if they need help for the iP, and coming up with a plan to help those who asked for help), one member should submit a brief summary of the status of this task.<br>
    e.g., `One member is slightly behind and one significantly behind. We plan to have a code-together session on Sunday so that we can help them if they encounter problems.`
+-->
 </div>
 {#====================================================================================================================#}
 <span id="heading_start_weekly_meetings">{{ icon_team }} Start weekly project meetings</span>
@@ -1807,7 +1809,7 @@ This week, we would like you to smoke-test the CATcher app **to ensure it can wo
 4. **Report bugs** you found, and ==even suggestions for improvements==.
    * If in doubt, report anyway.
    * ==Apply the `alpha-bug` label== to the bug report, as our grading scripts will look for it when assessing your contribution level for this task.
-   * {{ icon_important_big_red }} For this individual tP tasks to be marked as done, you need to submit at least 5 issues labelled `alpha-bug`.
+   * {{ icon_important_big_red }} For this individual tP tasks to be marked as done, you need to submit at least 5 issues labelled `alpha-bug` %%i.e., If someone submit 5 alpha bugs, it is marked as 'done' for that person (irrespective of how many alpha-bugs other team members submit)%%.
 
 <box type="tip" seamless>
 
@@ -2367,14 +2369,14 @@ Reminder: double-check to ensure the code attributed to you by RepoSense is corr
 <p/>
 {{ embed_topic("tp-pe-fragment.md#pe-preparation", "Admin " + icon_embedding + " tP → **PE Preparation, Restrictions**", "3", indent="2", type="success") }}
 
-* After reading the above 2, we ==strongly recommend you read ahead the info given in the item {{ thumb_small("5" if cs2103 else "6")}} below== as well, to know in advance what will happen during the PE itself.
+* After reading the above 2, we ==strongly recommend you read ahead the info given in the item {{ thumb_small("5" if cs2103 else "5")}} below== as well, to know in advance what will happen during the PE itself.
 </div>
 {#====================================================================================================================#}
 <span id="heading_attend_the_PE">{{ icon_individual }} Attend the practical exam</span>
 <div id="desc_attend_the_PE">
 
-* Ensure you read the instructions on **PE Preparation** (given in item {{ thumb_small("5" if cs2103 else "5")}} above)
-* Attend the practical test, to be done during the {{ lecture_name }}.
+* Ensure you read the instructions on **PE Preparation** (given in item {{ thumb_small("5" if cs2103 else "4")}} above)
+* Attend the practical test ~~, to be done during the {{ lecture_name }}~~. See details below.
 
 {{ embed_topic("tp-pe-fragment.md#pe-phases", "Admin " + icon_embedding + " tP → **PE Phases**", "3", indent="1", type="success") }}
 </div>

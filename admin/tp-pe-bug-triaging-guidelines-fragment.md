@@ -2,8 +2,27 @@
 
 ##### General:
 
+* **Don't freak out if there are a lot of bug reports.** Many can be duplicates and some can be _false positives_. In any case, we anticipate that all of these products will have some bugs and our penalty for bugs is not harsh. Furthermore, it depends on the severity of the bug. Some bug may not even be penalized.
+* **Nit-picking is a good sign**: If you receive a lot of nit-picking type of bugs that make you roll your eyes, it means testers were unable to find more serious bugs. That's a good thing.
+* **Not exactly zero-sum**: As mentioned earlier, the penalty for having a specific bug is not the same as the reward for reporting that bug (it's not a _zero-sum_ game). For example, the reward for testers will be higher (because we don't expect the products to have that many bugs after they have gone through so much prior testing)
+
+<box type="info" seamless>
+
+**Penalty for a minor bug (e.g., <tooltip content="an indicative value only; the actual value depends on the severity, type, and the number of assignees">-0.15</tooltip>) is unlikely to make a difference in your final grade**, especially given that the penalty applies only if you have more than a certain amount of bugs.<br>
+
+For example, in a typical case a developer might be assigned 5+ `severity.VeryLow` bugs before the penalty even starts affecting their marks.
+
+Accordingly, we hope you'll **accept bug reports graciously** (rather than fight tooth-and-nail to reject _every_ bug report received) if you think the bug is within the ballpark of 'reasonable'. Those minor bugs are really not worth stressing/fighting over.
+</box>
+
+* **If you cannot reproduce the bug based on the info given by the tester** you are still expected to make a _reasonable attempt_ to go beyond the information provided by the tester to reproduce the bug, if there is clear evidence of something wrong.<br>
+  For example, the screenshot in the bug report clearly shows an error message that should not appear, but you can't reproduce the error message based on the info given by the tester. Perhaps the error was caused by something else the tester did although the tester didn't realize it is connected to the error. In this case, based on the error message, you might be in a better position to figure out the real cause of the error. If you don't, the decision can go against you in a later phase if either the tester or the moderator figures out how to reproduce the error and the moderator decides that it is something you should have been able to figure out yourself.
+* **If you need the teaching team's inputs when deciding on a bug** %%(e.g., if you are not sure if the UML notation is correct)%%, post in the [forum]({{ url_forum }}). Remember to ==give the URL of the issue== in your post.<br/>
+  Keep in mind that the bug triaging accuracy affects your marks, and therefore, the teaching team prefers not to dictate a specific response, type, or severity for a particular bug report (i.e., that decision should be yours). Nevertheless, we can provide some general comments relevant to the issue at hand. Additionally, we encourage other students to chime in with their opinions, as such discussions have learning value.
+
+
 * **If a bug report contains multiple bugs** (i.e., despite instructions to the contrary, a tester included multiple bugs in a single bug report), you have to choose one bug and ignore the others. If there are valid bugs, choose from valid bugs. Among the choices available, choose the one with the highest severity (in your opinion). In your response, mention which bug you chose.
-* **If a bug report has broken image links**, check with the prof instead of rejecting them outright using the missing image as an excuse -- the missing image may be due to a technical problem of CATcher.
+* **If a bug report has broken image links**, check with the prof instead of rejecting them outright using the missing image as an excuse. The missing image may be due to a technical problem in the PE issue transfer script.
 * **What bugs can be considered duplicates?** It is up to the dev team to prove conclusively that a bug is a duplicate. If the proof is not convincing enough, they will be considered as 'not duplicates'. Only the following cases can be considered duplicates:<br>
   (a) The exact same bug reported multiple times.<br>
   (b) Multiple buggy behaviors that are actually caused by the same defect and ==cannot be fixed independently== (i.e., fixing one fixes the others automatically).<br>
@@ -28,7 +47,7 @@
 
 * **Even bugs inherited from AB3 are counted**. As the current development team, you are responsible for all bugs in the product, irrespective of when it was created.
 
-* **Listing something as a known issue** in the DG can reduce the severity of the issue %%(because informing users about the issues, possibly how to avoid/circumvent the issue reduces the impact of the issue to some extent)%5 but that does not mean it is totally immune from being considered a bug.
+* **Listing something as a known issue** in the DG can reduce the severity of the issue %%(because informing users about the issues, possibly how to avoid/circumvent the issue reduces the impact of the issue to some extent)%% but that does not mean it is totally immune from being considered a bug.
 
 <div id="triaging-functionality-bugs">
 
@@ -86,7 +105,7 @@ However, if it is possible for a user mistake to cause such inputs %%(e.g., the 
 * **UML notation variations** caused by the diagramming tool: Can be rejected if not contradicting the standard notation (as given by the textbook) i.e., extra decorations that are not misleading.<br>
   Omitting optional notations is not a bug as long it doesn't hinder understanding.
 * **UML notation errors** %%(e.g., using dashed line where a solid line should be used)%%:<br>
-  When deciding the severity, consider how much the notation error hinders the reader, but also keep in mind that notation errors hurt the credibility of the diagram (i.e., if even the notation is incorrect, how much can be trust this diagram :thinking:?). The latter pushes up the severity further than otherwise. So, the severity can be `Low` or higher.
+  When deciding the severity, consider how much the notation error hinders the reader, but also keep in mind that notation errors hurt the credibility of the diagram (i.e., if even the notation is incorrect, how much can we trust this diagram :thinking:?). The latter pushes up the severity further than otherwise. So, the severity can be `Low` or higher.
 * **Details missing from a diagram**: In a similar vein to the above, omitting details from a diagram is OK if it does not mislead/hinder the reader.<br>
   Forgetting to include something is not the same as a deliberate decision to omit something in order to simplify the diagram %%e.g., the latter could accompany a note to the reader to mention which/some parts have been omitted, _if_ it is worthwhile for the reader to know the omission.%%<br>
  While many UML notations are optional, haphazard omissions without a good reason can affect consistency which affects readability e.g., it can be considered a minor bug if a sequence diagram omits an activation bars in some places but not in other places and yet the omission doesn't make the diagram any easier to read.

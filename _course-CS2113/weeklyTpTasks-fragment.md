@@ -35,7 +35,6 @@ week9: [
 week10: [
   {id: 'start_on_the_penultimate_version'},
   {id: 'update_dg_with_design_details', deadline: 'IMPORTANT'},
-  {id: 'smoke_test_catcher', deadline: 'IMPORTANT', graded: true},
   {id: 'make_code_reposense_compatible'}
 ],
 week11: [
@@ -43,7 +42,7 @@ week11: [
   {id: 'review_others_dg', deadline: 'during the tutorial', graded: true},
   {id: 'deliver_penultimate_version', deadline: get_date(date_w11_start, 3, time="23:59")},
   {id: 'draft_the_ppp'},
-  {id: 'attend_the_PED', deadline: 'During the lecture on ' + get_date(date_w11_start, 4, time=""), graded: true}
+  {id: 'attend_the_PED', deadline: get_date(date_w11_start, 4, time="16:00-18:00"), graded: true}
 ] if pe_schedule_ideal else [
   {id: 'update_ug_dg'},
   {id: 'review_others_dg', deadline: 'during the tutorial', graded: true},
@@ -55,7 +54,8 @@ week12: [
   {id: 'submit_final_deliverables', deadline: get_date(date_final_submission, time=time_final_submission)},
   {id: 'demo_the_product'},
   {id: 'prepare_for_PE'},
-  {id: 'attend_the_PE', deadline: 'during the lecture on ' + get_date(date_w12_start, 4, time="")}
+  {id: 'attend_the_PE', deadline: 'Recommended: ' + get_date(date_w12_start, 4, time="16:00-18:00")},
+  {id: 'attend_the_makeup_PE', deadline: get_date(date_w12_start, 6, time="16:00-18:00")}
 ] if pe_schedule_ideal else [
   {id: 'finish_remaining_tasks'},
   {id: 'attend_the_PED', deadline: 'During the lecture on ' + get_date(date_w12_start, 4, time=""), graded: true}

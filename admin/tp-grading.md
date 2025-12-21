@@ -4,8 +4,7 @@
 {% call show_admin_page("tp-grading") %}
 <div id="main">
 
-Note that project grading is ==not competitive (not bell curved)==.<span tags="m--cs2113 m--cs2103">
-{{ course }}T projects will be assessed separately from {{ course }} projects.</span> Given below is the marking scheme.
+Note that project grading is ==not competitive (not bell curved)==. Given below is the marking scheme.
 
 ****Total****: {{ marks_tp }} marks ({{ icon_individual }} {{ marks_tp_individual }} individual marks + {{ icon_team }} {{ marks_tp_team }} team marks)
 

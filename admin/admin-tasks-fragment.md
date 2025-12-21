@@ -123,7 +123,7 @@ Installing and configuring Git is covered in [this lesson]({{ baseUrl }}/book/gi
 {{ lecture_name }})%%{% endif %}.
 </div>
 {#====================================================================================================================#}
-<span id="heading_form_teams">[{{ course }} students only] Form teams during the tutorial</span>
+<span id="heading_form_teams"> Form teams during the tutorial</span>
 <div id="desc_form_teams">
 
 * See the [{{ show_as_tab("Tutorial", icon_tutorial) }}](../schedule/week3/tutorial.html) tab for more info.
