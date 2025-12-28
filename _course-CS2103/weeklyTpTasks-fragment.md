@@ -1,5 +1,46 @@
 {% from "common/macros.njk" import get_date with context %}
 
+{% if ped_week == '12' %}
+  {% set week12_tasks = [
+    {id: 'finish_remaining_tasks'},
+    {id: 'attend_the_PED', deadline: get_date(date_w12_start, 4, time="1600-1800"), graded: true}
+  ]%}
+{% elseif pe_week == '12' %}
+  {% set week12_tasks = [
+    {id: 'start_fixing_PED_bugs'},
+    {id: 'submit_final_deliverables', deadline: get_date(date_final_submission, time=time_final_submission)},
+    {id: 'prepare_for_PE'},
+    {id: 'attend_the_PE', deadline: (get_date(date_w12_start, 4, format=format_normal, time="12 noon") + " to " + get_date(date_w12_start, 5, format=format_normal, time="12 noon")), deadline_type: 'warning'}
+  ]%}
+{% else %}
+  {% set week12_tasks = [
+    {id: 'release_as_a_jar_file', deadline: get_date(date_w12_start, 3, time="23:59")},
+    {id: 'attend_the_PED', deadline: get_date(date_w12_start, 4, time="1200-1800"), graded: true}
+  ]%}
+{% endif %}
+
+{% if ped_week == '12' and pe_week == '13' %}
+  {% set week13_tasks = [
+    {id: 'start_fixing_PED_bugs'},
+    {id: 'submit_final_deliverables', deadline: get_date(date_final_submission, time=time_final_submission)},
+    {id: 'prepare_for_PE'},
+    {id: 'make_code_reposense_compatible'},
+    {id: 'attend_the_PE', deadline: get_date(date_w13_start, 4, format=format_normal, time="1200 (till Sat noon)"), deadline_type: 'warning'}
+  ]%}
+{% elseif ped_week == '11' and pe_week == '13' %}
+  {% set week13_tasks = [
+    {id: 'submit_final_deliverables', deadline: get_date(date_final_submission, time=time_final_submission)},
+    {id: 'prepare_for_PE'},
+    {id: 'make_code_reposense_compatible'},
+    {id: 'attend_the_PE', deadline: get_date(date_w13_start, 4, format=format_normal, time="1200 (till Sat noon)"), deadline_type: 'warning'}
+  ]%}
+{% else %}
+  {% set week13_tasks = [
+    {id: 'do_post_release_tasks'}
+  ]%}
+{% endif %}
+
+
 {% set weekly_tp_tasks = {
 week3: [
   {id: 'get_familiar_with_ab3', deadline: get_date(date_w3_start, 5, time="23:59")},
@@ -49,27 +90,17 @@ week11: [
   {id: 'settle_code_authorship'},
   {id: 'release_as_a_jar_file', deadline: get_date(date_w11_start, 3, time="23:59")},
   {id: 'attend_the_PED', deadline: get_date(date_w11_start, 4, time="1200-1800"), graded: true}
+] if ped_week == '11' else [
+  {id: 'alpha_test_product'},
+  {id: 'fix_alpha_test_bugs'},
+  {id: 'update_ug_dg'},
+  {id: 'settle_code_authorship'}
 ],
-week12: [
-  {id: 'finish_remaining_tasks'},
-  {id: 'attend_the_PED', deadline: get_date(date_w12_start, 4, time="1600-1800"), graded: true}
-] if pe_schedule_late else [
-  {id: 'start_fixing_PED_bugs'},
-  {id: 'submit_final_deliverables', deadline: get_date(date_final_submission, time=time_final_submission)},
-  {id: 'prepare_for_PE'},
-  {id: 'attend_the_PE', deadline: (get_date(date_w12_start, 4, format=format_normal, time="12 noon") + " to " + get_date(date_w12_start, 5, format=format_normal, time="12 noon")), deadline_type: 'warning'}
-],
-week13: [
-  {id: 'start_fixing_PED_bugs'},
-  {id: 'submit_final_deliverables', deadline: get_date(date_final_submission, time=time_final_submission)},
-  {id: 'prepare_for_PE'},
-  {id: 'make_code_reposense_compatible'},
-  {id: 'attend_the_PE', deadline: get_date(date_w13_start, 4, format=format_normal, time="1600-1800"), deadline_type: 'warning'},
-  {id: 'attend_the_makeup_PE', deadline: get_date(date_w13_start, 6, format=format_normal, time="1400-1600"), deadline_type: 'secondary'}
-] if pe_schedule_late else [
-  {id: 'do_post_release_tasks'}
-]
+week12: week12_tasks,
+week13: week13_tasks
 } %}
+
+
 
 {% set weekly_tp_themes = {
   w3: {name: "Kickoff"},

@@ -25,8 +25,8 @@
 <variable name="time_lecture_end">1800</variable>
 <variable name="time_t_lecture_start">1600</variable>
 <variable name="time_t_lecture_end">1800</variable>
-<variable name="ped_week">11</variable>
-<variable name="pe_week">12</variable>
+<variable name="ped_week">12</variable>
+<variable name="pe_week">13</variable>
 <variable name="show_feature_freeze_dashboards">yes</variable>
 <variable name="catcher_load_testing"></variable> <!-- keep empty if load testing falls on a holiday -->
 

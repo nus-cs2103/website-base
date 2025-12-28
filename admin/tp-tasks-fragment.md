@@ -2076,7 +2076,7 @@ Also see:
 * Use this extra week to finish any leftover tasks from the previous week.
 </div>
 {#====================================================================================================================#}
-<span id="heading_attend_the_PED">{{ icon_individual }} Take part in the practical exam dry run</span>
+<span id="heading_attend_the_PED">{{ icon_individual }} Take part in the practical exam dry run (PE-D)</span>
 <div id="desc_attend_the_PED">
 
 * The practical exam dry run (PE-D) will be held in this {{ lecture_name }}. It is ==graded==. See the panel below for more info.
@@ -2413,7 +2413,7 @@ Reminder: double-check to ensure the code attributed to you by RepoSense is corr
 * After reading the above 2, we ==strongly recommend you read ahead the info given in the item {{ thumb_small("5" if cs2103 else "6")}} below== as well, to know in advance what will happen during the PE itself.
 </div>
 {#====================================================================================================================#}
-<span id="heading_attend_the_PE">{{ icon_individual }} Take part in the practical exam</span>
+<span id="heading_attend_the_PE">{{ icon_individual }} Take part in the practical exam (PE)</span>
 <div id="desc_attend_the_PE">
 
 * Ensure you read the instructions on **PE Preparation** (given in item {{ thumb_small("5" if cs2103 else "5")}} above)
