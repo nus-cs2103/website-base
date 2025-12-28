@@ -1,6 +1,16 @@
 {% from "common/topics.njk" import panopto, slugify, topic_followup, topic_preamble with context %}
 {% from "common/macros.njk" import embed_topic with context %}
 <!-- ==================================================================================================== -->
+                                         Misc
+<!-- ==================================================================================================== -->
+<div id="git-mastery-preamble">
+
+To learn Git and GitHub topics, we'll be using the [Git-Mastery site](https://git-mastery.github.io), a learning resource and a companion app that helps you not only the topics, but also provided auto-graded exercises to self-test your knowledge. Git-Mastery is a project based in NUS.
+
+{{ icon_important_big_red }} **The Git-Mastery site is relatively new, and is under active development — teething issues are expected!** Please help us improve it by reporting any issues, bugs, unclear parts, suggestions — even minor/cosmetic ones — in the {{ link_forum }}. You can earn bonus participation points by doing so too.
+</div>
+
+<!-- ==================================================================================================== -->
                                          Software Engineering
 <!-- ==================================================================================================== -->
 <div id="{{ slugify("SE: Intro") }}">

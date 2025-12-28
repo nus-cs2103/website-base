@@ -8,8 +8,7 @@
 {{ topic_preamble("Java: Control Flow") }}
 {% call topic_preamble("RCS: Getting Started with Git", reuse=false) %}
 
-<include src="{{ baseUrl }}/book/gitAndGithub/trail/text.md#trail-intro" />
-<p/>
+<include src="../../admin/common-commentary-fragment.md#git-mastery-preamble" />
 
 This week, we start with first three tours, to get started with Git and GitHub.
 

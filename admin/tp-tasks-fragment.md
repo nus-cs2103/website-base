@@ -1,5 +1,5 @@
 {% from "common/admin.njk" import show_admin_page with context %}
-{% from "common/macros.njk" import as_tag, button, embed_topic, get_date, show_as_tab, show_as_rounded_tab, show_faq, show_tp_goals, show_tp_week_intro, show_tp_week_outro, show_tp_iterations_gantt, thumb, thumb_small, timing_badge with context %}
+{% from "common/macros.njk" import as_tag, button, embed_topic, get_date, show_as_tab, show_as_rounded_tab, show_faq, show_gm_lesson_link, show_tp_goals, show_tp_week_intro, show_tp_week_outro, show_tp_iterations_gantt, thumb, thumb_small, timing_badge with context %}
 {% from "admin/ip-tasks-fragment.md" import show_xp_page  with context %}
 {% from "_course-" + course + "/weeklyTpTasks-fragment.md" import weekly_tp_tasks  with context %}
 {% from "_course-" + course + "/studentData-fragment.md" import tp_dg_review_allocation with context %}
@@ -1139,10 +1139,8 @@ Furthermore, these sections will be graded at the final project evaluation, and 
 <span id="heading_practice_workflow_with_sample_repo">{{ icon_team }} Practice the workflow with a sample repo</span>
 <div id="desc_practice_workflow_with_sample_repo">
 
-* We recommend that you practice the forking workflow with your team members as described in the textbook section given in the panel below.<br>
+* We recommend that you practice the workflow we have prescribed for the tP (given in {{ show_gm_lesson_link("forkingWorkflow", "T10L2. Forking Workflow (with Branching)") }}) with your team members as described in the textbook section given in the panel below.<br>
   {{ icon_tip }} You can use your tP GitHub org for this exercise too.
-
-{{ embed_topic("../book/gitAndGithub/forkingWorkflow/text.md#body", "Textbook " + icon_embedding + " Git & GitHub → **The forking workflow**", "1", indent=2) }}
 
 </div>
 {#====================================================================================================================#}

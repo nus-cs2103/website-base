@@ -1,6 +1,6 @@
 {% from "common/admin.njk" import show_admin_page, show_project_summary_lead with context %}
 {% from "common/topics.njk" import panopto, topic_preamble with context %}
-{% from "common/macros.njk" import as_tag, button, embed_topic, get_date, show_faq, show_troubleshooting, step, thumb, timing_badge with context %}
+{% from "common/macros.njk" import as_tag, button, embed_topic, get_date, show_faq, show_gm_lesson_link, show_troubleshooting, step, thumb, timing_badge with context %}
 {% from "_course-" + course + "/weeklyIpTasks-fragment.md" import weekly_ip_tasks with context %}
 
 {#====================================================================================================================
@@ -35,7 +35,7 @@
 
 * From this point onward, after completing each increment,
   * **`git tag` the commit that _completed_ the increment with the exact increment ID** e.g., {{ as_tag('Level-2') }}, {{ as_tag('A-TextUiTesting') }}
-    <box type="warning" seamless><md>[Git tags](../book/gitAndGithub/tag/) are not the same as [Git commit messages](../book/gitAndGithub/commit/).</md></box>
+    <box type="warning" seamless><md>[Git tags](https://git-mastery.github.io/lessons/tag/) are not the same as [Git commit messages](https://git-mastery.github.io/lessons/commit/).</md></box>
     <mermaid>
     {{ "%%{init: { 'theme': 'default', 'gitGraph': {'mainBranchName': 'master'}} }%%" }}
     gitGraph
@@ -48,13 +48,13 @@
       commit id: "Add support for bye"
     </mermaid>
   * **`git push` the code to your fork**
-    <box type="warning" seamless><md>Git doesn't push tags unless you [specifically ask it to](../book/gitAndGithub/push/).
+    <box type="warning" seamless><md>Git doesn't push tags unless you [specifically ask it to](https://git-mastery.github.io/lessons/push/).
     After pushing a tag to your fork, you should be able to see that tag by visiting `https://github.com/YOUR_USER_NAME/REPO_NAME/tags` e.g., https://github.com/se-edu/addressbook-level3/tags</md></box>
     <box type="tip" seamless><md>If you encounter issues connecting Sourcetree with your GitHub account, refer to this [Sourcetree Tutorial](https://se-education.org/guides/tutorials/sourcetree.html).</md></box>
 * The relevant textbook topics are:
-   {{ embed_topic("../book/gitAndGithub/commit/text.md#body", "Textbook " + icon_embedding + " Git & GitHub → **Committing**", "1", indent=1) }}
-   {{ embed_topic("../book/gitAndGithub/tag/text.md#body", "Textbook " + icon_embedding + " Git & GitHub → **Tagging**", "1", indent=1) }}
-   {{ embed_topic("../book/gitAndGithub/push/text.md#body", "Textbook " + icon_embedding + " Git & GitHub → **Pushing**", "1", indent=1) }}
+  * {{ show_gm_lesson_link("commit", "T1L5. Saving a Snapshot") }}
+  * {{ show_gm_lesson_link("push", "T2L5. Updating the Remote Repo") }}
+  * {{ show_gm_lesson_link("tag", "T4L2. Tagging Commits") }}
 </div>
 <div id="take-note-of-plagiarism" >
 
@@ -332,9 +332,7 @@ Due to the above learning goals, this iP task is a bit complicated. Pay attentio
 {% endcall %}
 <br/>
 
-* **Note how to merge PRs**:
-
-{{ embed_topic("../book/gitAndGithub/managePRs/text.md#body", "Textbook " + icon_embedding + " Git & GitHub → **Merging PRs**", "1", indent=1) }}
+* **Note how to merge PRs**: {{ show_gm_lesson_link("prsMerge", "T9L3. Merging Pull Requests") }}
 
 * **Practice using parallel git branches _and_ PRs**, as explained below:
 1. First, do each increment as a parallel branch (follow the branch naming convention you followed earlier `branch-Level-8` etc.), but do not merge any.
@@ -358,9 +356,8 @@ Due to the above learning goals, this iP task is a bit complicated. Pay attentio
    checkout master
    </mermaid>
 
-1. Then, push each branch to your fork, and create a PR !!within your fork!! (i.e., from the increment branch to the `master` branch). ==Be careful not to create a PR to [the upstream repo]({{ url_course_org }}/ip).== %%If you did create such a PR by mistake, no worries, just close it yourself.%%
+1. Then, push each branch to your fork, and [create a PR](https://git-mastery.github.io/lessons/prsCreate/) !!within your fork!! (i.e., from the increment branch to the `master` branch). ==Be careful not to create a PR to [the upstream repo]({{ url_course_org }}/ip).== %%If you did create such a PR by mistake, no worries, just close it yourself.%%<br>
 
-{{ embed_topic("../book/gitAndGithub/createPRs/text.md#body", "Textbook " + icon_embedding + " Git & GitHub → **Creating PRs**", "1", indent=1) }}
 
 <box type="tip" seamless>
 
@@ -553,9 +550,7 @@ commit id: "m6"
 <panel type="seamless" >
 <span slot="header" class="card-title"><markdown>{{ icon_tip}} **How do I fetch the `add-gradle-support` branch from my fork?**{.text-success}</markdown></span>
 
-General instructions for fetching a new branch from a remote can be found in the panel below:
-
-   {{ embed_topic("../book/gitAndGithub/remoteBranches/text.md#pulling-a-new-branch", "Textbook " + icon_embedding + " Git&Github → **Remote branches** (extract)", "2", status="expanded") }}
+General instructions for fetching a new branch from a remote can be found in {{ show_gm_lesson_link("remoteBranchPull", "T8L2. Pulling Branches from a Remote") }}.
 
 </panel>
 
@@ -565,14 +560,10 @@ General instructions for fetching a new branch from a remote can be found in the
 If your fork doesn't have the `add-gradle-support` branch (i.e., you did not copy all the branches when you forked), here are the steps for fetching the `add-gradle-support` branch from the upstream repo:<br>
 
 1. Add the upstream repo `{{ url_course_org }}/{{ ip_repo_name }}.git` as a remote, and give it the name `upstream`.<br>
-   General instructions for adding a remote to your repo can be found in the panel below:
-
-   {{ embed_topic("../book/gitAndGithub/setRemote/text.md", "Textbook " + icon_embedding + " Git&Github → Linking a Local Repo With a Remote Repo", "2", indent="1") }}
+   General instructions for adding a remote to your repo can be found in {{ show_gm_lesson_link("setRemote", "T2L4. Linking a Local Repo With a Remote Repo") }}.
 
 2. fetch the `add-gradle-support` from the remote `upstream`.<br>
-   General instructions for fetching a new branch from a remote can be found in the panel below:
-
-   {{ embed_topic("../book/gitAndGithub/remoteBranches/text.md#pulling-a-new-branch", "Textbook " + icon_embedding + " Git&Github → **Remote branches** (extract)", "2", indent="1") }}
+   General instructions for fetching a new branch from a remote can be found in {{ show_gm_lesson_link("remoteBranchPull", "T8L2. Pulling Branches from a Remote") }}.
 </panel>
 <p/>
 </div>
@@ -684,9 +675,7 @@ Read through this week's topics before starting the project.<br>
     %%Note that the PR name will be publicly visible.%%<br>
     You may leave the description empty.
   * If you created the PR correctly, it should appear in the list of PRs [here]({{ url_course_org }}/{{ ip_repo_name }}/pulls).
-  * Steps for creating a PR is given in this textbook topic (==steps 5 onwards==):
-
-{{ embed_topic("../book/gitAndGithub/createPRs/text.md#body", "Textbook " + icon_embedding + " Git & GitHub → **Creating PRs**", "1", indent=2) }}
+  * Steps for creating a PR is given in {{ show_gm_lesson_link("prsCreate", "T9L1. Creating Pull Requests") }} (==step 5 onwards==):
 
 <div class="indented-level2">
 
@@ -716,10 +705,7 @@ If you can spare some time, start learning JavaFX by following the [_JavaFX tuto
 <div id="desc_prepare_for_pr_reviews">
 
 * **Do the following to prepare for the PR review exercise** you will be doing in the coming tutorial.
-  * Learn how to review PRs:
-
-{{ embed_topic("../book/gitAndGithub/reviewPRs/text.md#body", "Textbook " + icon_embedding + " Git & GitHub → **Reviewing PRs**", "1", indent=2) }}
-
+  * Recall how to review PRs (related lesson: {{ show_gm_lesson_link("prsReview", "T9L2. Reviewing Pull Requests") }}).
   * Read the [_Best practices for reviewing PRs_ @SE-EDU/guides](https://se-education.org/guides/guidelines/PRs-reviewing.html). You are ==expected to follow all of them==.
 </div>
 {#====================================================================================================================#}
@@ -801,11 +787,9 @@ If you wish, **you _may_ write the PR description to be very similar to the exam
 This task is worth `2x2=4` participation points.
 </box>
 
-* **Learn _how_ you should review PRs in this task**:
+* **Learn _how_ you should review PRs in this task** (related lesson: {{ show_gm_lesson_link("prsReview", "T9L2. Reviewing Pull Requests") }}):
 
 {{ '' if cs2113 else panopto('c001244c-01b5-4471-ab9d-ac1b0098110a') }}
-
-{{ embed_topic("../book/gitAndGithub/reviewPRs/text.md#body", "Textbook " + icon_embedding + " Git & GitHub → **Reviewing PRs**", "1", indent=1) }}
 
 * {{ step(1) }} **Note these additional guidelines**:
   * Read the [_Best practices for reviewing PRs_ @SE-EDU/guides](https://se-education.org/guides/guidelines/PRs-reviewing.html). You are ==expected to follow all of them==.

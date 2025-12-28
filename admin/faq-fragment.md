@@ -238,7 +238,7 @@ Not to worry. Here are the steps to fix:
 1. Pull from your fork. Notes:
    * Because the URL of the previous fork is the same as the new fork, this will now pull from the new fork.
    * Pulling from the new fork is possible because your clone and both the old and the new fork have a shared ancestry (i.e., they all originated from the [same duke repo](https://github.com/se-edu/duke)).
-1. If the new fork has commits that were not present in your old fork, the above pull operation will result in a merge conflict. [Resolve it]({{ baseUrl }}/book/gitAndGithub/mergeConflicts/) and commit.
+1. If the new fork has commits that were not present in your old fork, the above pull operation will result in a merge conflict. [Resolve it](https://git-mastery.github.io/lessons/mergeConflicts/) and commit.
 1. Push to the fork. This will push your new commits to your new fork.
 </div>
 <!-- =============================================================== -->

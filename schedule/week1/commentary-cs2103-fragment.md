@@ -15,10 +15,7 @@ Let's start with the prereq topics.
 
 Now it's time to move to the second section of this week's topics:
 
-To learn Git and GitHub topics, we'll be using the [Git-Mastery site](), a learning resource and a companion app that helps you not only the topics, but also provided auto-graded exercises to self-test your knowledge.
-
-{{ icon_important_big_red }} **The Git-Mastery site is relatively new, and is under active development — teething issues are expected!** Please help us improve it by reporting any issues, bugs, unclear parts, suggestions — even minor/cosmetic ones — in the {{ link_forum }}. You can earn bonus participation points by doing so too.
-
+<include src="../../admin/common-commentary-fragment.md#git-mastery-preamble" />
 
 This week, we start with tour 1.
 
