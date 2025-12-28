@@ -573,8 +573,9 @@ We are still in iteration `{{ version_penultimate }}`, due to this iteration bei
 ++**Things to note:**++{.text-info}
 
 * **Aim to reach the final version in this iteration itself**: ==After this iteration is over, you get a chance to fix your tP bugs (in the project, as well as documentation) without any penalty.== What's more, others will help you find those bugs (via tutorial activities and the PE Dry Run happening at the end of this iteration).<br>
-  To take advantage of the above, try to make your {{ version_penultimate }} (product, DG, and UG) as close to what you intend to submit as your final version (i.e., {{ version_final }}).{% if pe_schedule_late %}
-* **You have two weeks to finish tP tasks listed under this week** due to the extra week added on account of holidays.{% endif %}
+  To take advantage of the above, try to make your {{ version_penultimate }} (product, DG, and UG) as close to what you intend to submit as your final version (i.e., {{ version_final }}).{% if ped_week == '12' %}
+* **You have two weeks to finish tP tasks listed under this week** due to the extra week added on account of holidays.<br>
+  **We have kept the original {{ version_penultimate }} deadlines in the schedule**, to signal that no extra work is need on account of the extra week given. You can **use the extra week as a penalty-free grace period** to finish up any leftover work from the iteration.{% endif %}
 
 {% endcall %}
 {#====================================================================================================================#}
@@ -1942,15 +1943,23 @@ The panel below contains guidelines your peers will use when determining bugs in
 <include src="tp-tasks-fragment.md#level-up-coverage" />
 </div>
 
-* **Do a release on GitHub and upload the following files**, ==each as a separate asset==. <span class="text-danger">Do this before the deadline as PE-D testers will start downloading these files ahead of time.</span>:
-  1. {{ version_penultimate }} JAR file
-  1. UG PDF file
-  1. DG PDF file
+* {{ icon_important_big_red }} **Do a <tooltip content="resulting in a jar file on GitHub that can be downloaded by potential users">proper product release</tooltip>** [as described in the Developer Guide]({{ url_ab3_fork_website }}/DevOps.html#making-a-release). Do the release by the given deadline. <br>
+  ==Do a smoke-test to ensure the jar file works== (if the released jar file is broken, it will be omitted from the PE-D).<br>
+  * Include the following files in the release (as separate assets):
+    1. **JAR** file
+    1. **UG** (PDF file) -- uploaded as an 'asset' (similar to the JAR file), not embedded in the release note.
+    1. **DG** (PDF file) -- similar to the UG
+  * You may choose any suitable filename, but recommended not to have spaces or special characters in the JAR file name.
+  * It is optional to write detailed release notes for this version.
+* **You can do an _additional_ release before the [PE dry run (PE-D)](tp-ped.html)** if you wish, as long as you do it <span class="text-danger">before 10am of the PE-D day</span>. {% if cs2103 %}That additional release is still considered part of {{ version_penultimate }} and therefore, not subjected to the feature freeze.{% endif %} When doing this additional release, do not delete the previous release %%(reason: it is good to preserve the release history)%% -- testers are expected to test the latest release file anyway. You may use any suitable version number for this JAR file e.g., `{{ version_penultimate }}.1`.<br>
+  Waiting till Friday 10am to release the `{{ version_penultimate }}` is strongly discouraged because if you miss that deadline, your team will not be able to benefit from the PE-D at all. It is better to have an earlier release to fall back on in case that happens.
+
 * ==IMPORTANT: ensure your jar file was generated using Java 17 and can work on all major OS'es using JDK 17.==
 
 {{ embed_topic("tp-constraints.md#Constraint-Java-Version", "Admin " + icon_embedding + " tP Constraints → Constraint-Java-Version", "2", indent="1") }}
 
-* Wrap up the milestone on GitHub.
+* As before, wrap up the milestone %%(i.e., reschedule/close any remaining issues/PRs and close the milestone).%%
+
 </div>
 {#====================================================================================================================#}
 
@@ -2074,6 +2083,12 @@ Also see:
 <div id="desc_finish_remaining_tasks">
 
 * Use this extra week to finish any leftover tasks from the previous week.
+</div>
+{#====================================================================================================================#}
+<span id="heading_use_this_week_as_a_buffer">Use this week as a buffer</span>
+<div id="desc_use_this_week_as_a_buffer">
+
+* There are no project tasks allocated to this week, as this is an extra week inserted to the project schedule on account of public holidays. You may use this extra week as a buffer to finish any leftover tasks from the previous week.
 </div>
 {#====================================================================================================================#}
 <span id="heading_attend_the_PED">{{ icon_individual }} Take part in the practical exam dry run (PE-D)</span>

@@ -14,8 +14,7 @@
   ]%}
 {% else %}
   {% set week12_tasks = [
-    {id: 'release_as_a_jar_file', deadline: get_date(date_w12_start, 3, time="23:59")},
-    {id: 'attend_the_PED', deadline: get_date(date_w12_start, 4, time="1200-1800"), graded: true}
+    {id: 'use this week as a buffer'},
   ]%}
 {% endif %}
 
@@ -25,14 +24,14 @@
     {id: 'submit_final_deliverables', deadline: get_date(date_final_submission, time=time_final_submission)},
     {id: 'prepare_for_PE'},
     {id: 'make_code_reposense_compatible'},
-    {id: 'attend_the_PE', deadline: get_date(date_w13_start, 4, format=format_normal, time="1200 (till Sat noon)"), deadline_type: 'warning'}
+    {id: 'attend_the_PE', deadline: (get_date(date_w13_start, 4, format=format_normal, time="12 noon") + " to " + get_date(date_w13_start, 5, format=format_normal, time="12 noon")), deadline_type: 'warning'}
   ]%}
 {% elseif ped_week == '11' and pe_week == '13' %}
   {% set week13_tasks = [
     {id: 'submit_final_deliverables', deadline: get_date(date_final_submission, time=time_final_submission)},
     {id: 'prepare_for_PE'},
     {id: 'make_code_reposense_compatible'},
-    {id: 'attend_the_PE', deadline: get_date(date_w13_start, 4, format=format_normal, time="1200 (till Sat noon)"), deadline_type: 'warning'}
+    {id: 'attend_the_PE', deadline: (get_date(date_w13_start, 4, format=format_normal, time="12 noon") + " to " + get_date(date_w13_start, 5, format=format_normal, time="12 noon")), deadline_type: 'warning'}
   ]%}
 {% else %}
   {% set week13_tasks = [
@@ -94,7 +93,8 @@ week11: [
   {id: 'alpha_test_product'},
   {id: 'fix_alpha_test_bugs'},
   {id: 'update_ug_dg'},
-  {id: 'settle_code_authorship'}
+  {id: 'settle_code_authorship'},
+  {id: 'release_as_a_jar_file', deadline: get_date(date_w11_start, 3, time="23:59")},
 ],
 week12: week12_tasks,
 week13: week13_tasks
