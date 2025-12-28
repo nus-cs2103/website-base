@@ -1995,7 +1995,7 @@ The panel below contains guidelines your peers will use when determining bugs in
 {%- endmacro %}
 
 {% macro get_pr_link(team_id) -%}
-<a href="https://github.com/nus-{{ course | lower}}-{{ semester }}/{{ tp_repo_name }}/pulls?q=is%3Aopen+is%3Apr+{{ team_id }}+" class="badge bg-primary">PR</a>
+<a href="https://github.com/{{ course_org }}/{{ tp_repo_name }}/pulls?q=is%3Aopen+is%3Apr+{{ team_id }}+" class="badge bg-primary">PR</a>
 {%- endmacro  %}
 
 {% macro get_dg_link(team_id) -%}

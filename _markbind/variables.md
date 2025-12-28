@@ -117,8 +117,8 @@
 <variable name="date_w13_start">{{ date_w12_start | date("YYYY-MM-DD", 7) }}</variable>
 <variable name="date_w14_start">{{ date_w13_start | date("YYYY-MM-DD", 7) }}</variable>
 
-<variable name="course_email">{{ course | lower }}@comp.nus.edu.sg</variable>
-<variable name="course_org">nus-{{ course | lower }}-{{ period if tic2002 or tee3201 else semester }}</variable>
+<variable name="course_email">{{ course | lower }}@nus.edu.sg</variable>
+<variable name="course_org">NUS-{{ course }}-{{ semester | replace('S', '-S') }}</variable>
 <variable name="url_course_org">https://github.com/{{ course_org }}</variable>
 <variable name="url_course_gihub_io">https://{{ course_org | lower }}.github.io</variable>
 
