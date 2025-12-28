@@ -275,8 +275,6 @@
     {heading: "Project Mgt: Workflows", panopto: "050c0949-853c-4b7d-b1fb-ac3700d88202", questions:"y"},
       {location: ["gitAndGithub", "drcsVsCrcs"]},
       {location: ["gitAndGithub", "forkingWorkflow"]},
-      {location: ["gitAndGithub", "featureBranchFlow"]},
-      {location: ["gitAndGithub", "centralizedFlow"]},
 {week: "8"},
   {name: "Design"},
     {heading: "%%[Revisiting] Drawing Class/Object Diagrams - Basics%%", panopto: "03c5a0f1-9354-4d83-8229-acbf00b4b3dc"},

@@ -1,4 +1,4 @@
-{% from "common/macros.njk" import embed_topic, show_faq, step, thumb, timing_badge with context %}
+{% from "common/macros.njk" import embed_topic, show_faq, show_gm_lesson_link, step, thumb, timing_badge with context %}
 
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="form-teams">
@@ -186,14 +186,10 @@ During the tutorial, **demo your ability to do debugging using an IDE** by perfo
 
 **In this activity you will be using the forking workflow to do some simple updates to the codebase** while working in parallel. The objective is to ensure you know how to follow the expected working in the tP. The steps are given below:
 
-**First, ensure that you know how the _forking workflow_ works.**
+**First, ensure that you know how the _forking workflow_ works.** See {{ show_gm_lesson_link("forkingWorkflow", "T10L2. Forking Workflow (with Branching)") }} for more details.
 
-{{ embed_topic("../book/gitAndGithub/forkingWorkflow/text.md#body", "Textbook " + icon_embedding + " Revision Control → **Forking Workflow**", "1", indent=2) }}
-
-**Next, add the `upstream` as a remote**: The forking workflow requires you to pull from the team repo and push to your own fork. To be able to do the former, you need to **add the team repo as a _remote_ of your clone**. Follow the instructions in the panel below to add a new remote with the _Remote name_ `upstream` (can be anything, but `upstream` is a common choice) and _URL / Path_ pointing to the team repo<br>
+**Next, add the `upstream` as a remote**: The forking workflow requires you to pull from the team repo and push to your own fork. To be able to do the former, you need to **add the team repo as a _remote_ of your clone** (if you don't remember how to add a remote to a repo, see {{ show_gm_lesson_link("setRemote", "T2L4. Linking a Local Repo With a Remote Repo") }}. Add a new remote with the _Remote name_ `upstream` (can be anything, but `upstream` is a common choice) and _URL / Path_ pointing to the team repo<br>
     e.g., `https://github.com/{{ semester }}-{{ example_team_id }}/{{ tp_repo_name }}.git` (==note the `.git` at the end==)
-
-{{ embed_topic("../book/gitAndGithub/setRemote/text.md", "Textbook " + icon_embedding + " Git & GitHub → Remotes", "2", indent=2) }}
 
 **Now, follow these steps to update the code using the forking workflow** e.g., each person can add their details to the `docs/AboutUs.md` page:
 * {{ step(1) }} Decide which update each person will do.
@@ -205,9 +201,7 @@ During the tutorial, **demo your ability to do debugging using an IDE** by perfo
 * {{ step(3) }} Work as a team to merge one PR at a time.
   * If a PR cannot be merged due to conflicts, resolve conflicts as you go (PR conflict resolution was covered in the week 6 lecture activity).
   * <span class="text-danger">Do not send PRs from team repo to individual repos</span> as that goes against the forking workflow. PRs should only go from forks to the team repo.
-  * For reference, PR merging instructions are in the following textbook section:
-
-{{ embed_topic("../book/gitAndGithub/managePRs/text.md#body", "Textbook " + icon_embedding + " Git & GitHub → **Merging PRs**", "1", indent=4) }}
+  * For reference, PR merging instructions are in {{ show_gm_lesson_link("prsMerge", "T9L3. Merging Pull Requests") }}:
 
 * {{ step(4) }} Everyone sync their local repo and the fork with the team repo (see the last paragraph in the panel above)
 </div>

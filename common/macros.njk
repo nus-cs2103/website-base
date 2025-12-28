@@ -213,3 +213,6 @@
 </panel>
 <p/>
 {% endmacro %}
+
+
+{% macro show_gm_lesson_link(lesson_id, lesson_name)%}<md>++<span style="background-color: #e6f4ea;" class="badge rounded-pill text-success">:octicon-git-branch: Git-Mastery → <a href="https://git-mastery.github.io/lessons/{{ lesson_id }}/" target="_blank">**Lesson: {{ lesson_name }}**</a></span>++</md>{% endmacro %}

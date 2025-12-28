@@ -1,4 +1,4 @@
-{% from "common/macros.njk" import embed_topic with context %}
+{% from "common/macros.njk" import embed_topic, show_gm_lesson_link with context %}
 
 {% from "common/admin.njk" import show_admin_page with context %}
 
@@ -40,7 +40,7 @@ Create a GitHub account (if you don't have one yet), as explained in the panel b
 
 ## Tool: Git (for revision control)
 
-**You are _required to_ use Git.** Installing and configuring Git is covered in [this lesson]({{ baseUrl }}/book/gitAndGithub/gitPrep/index.html) of the [Git Learning Trail]({{ baseUrl }}/se-book-adapted/git-trail/index.html).
+**You are _required to_ use Git.** Installing and configuring Git is covered in {{ show_gm_lesson_link("gitPrep", "T1L2. Preparing to Use Git") }}. No action required until the course schedule reaches that lesson.
 
 </div><!-- ----------------------------------------------------------------------------------------------------- -->
 

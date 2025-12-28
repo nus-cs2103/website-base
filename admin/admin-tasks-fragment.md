@@ -1,5 +1,5 @@
 {% from "common/admin.njk" import policies, show_admin_summary, topics with context %}
-{% from "common/macros.njk" import embed_topic, get_date, show_admin_sections_to_read, show_as_tab, show_faq, thumb, timing_badge with context %}
+{% from "common/macros.njk" import embed_topic, get_date, show_admin_sections_to_read, show_as_tab, show_faq, show_gm_lesson_link, thumb, timing_badge with context %}
 {% from "admin/ip-tasks-fragment.md" import show_xp_page  with context %}
 {% from "_course-" + course + "/weeklyAdminTopics-fragment.md" import weekly_admin_topics with context %}
 {% from "_course-" + course + "/weeklyAdminTasks-fragment.md" import weekly_admin_tasks with context %}
@@ -31,7 +31,7 @@
 <div class="indented-level1">
 <panel header="**Tools - Git {{ s }}{{ s }}**" minimized>
 
-Installing and configuring Git is covered in [this lesson]({{ baseUrl }}/book/gitAndGithub/gitPrep/index.html). No action required until you come to that lesson.
+Installing and configuring Git is covered in {{ show_gm_lesson_link("gitPrep", "T1L2. Preparing to Use Git") }}. No action required until the course schedule reaches that lesson.
 </panel>
 </div>
 
