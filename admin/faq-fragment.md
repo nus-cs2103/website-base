@@ -454,7 +454,7 @@ Zoom is still needed for the following reasons:
 
 By default, no.<br>
 Reason: it goes against the purpose of F2F tutorials (i.e., to get the whole team to meet physically) and the NUS directive to move all small classes to F2F mode.<br>
-However, you can request (by emailing `{{ course | lower }}@comp.nus.edu.sg`) to attend the tutorial of a specific week via Zoom, if you have a valid reason (e.g., MC, taking part in an NUS-related event).
+However, you can request (by emailing `{{ course_email }}`) to attend the tutorial of a specific week via Zoom, if you have a valid reason (e.g., MC, taking part in an NUS-related event).
 </div>
 <!-- =============================================================== -->
 <div id="faq-tutorialZoomWithoutPermission-Q">What happens if I join a tutorial via Zoom, without getting permission to do so?</div>
@@ -539,7 +539,7 @@ Therefore, decide based on how the inclusion/exclusion affects that target audie
 <div id="faq-tpChangeDirectionLater-Q">Can we change the product name, the target user, and the value proposition later in the project?</div>
 <div id="faq-tpChangeDirectionLater-A">
 
-Yes. If the project direction submission deadline (in week 6) is not over yet, use the same link to update the submission. If the submission deadline is over, email the updated name, target user, value proposition to `{{ course | lower }}@comp.nus.edu.sg`.
+Yes. If the project direction submission deadline (in week 6) is not over yet, use the same link to update the submission. If the submission deadline is over, email the updated name, target user, value proposition to `{{ course_email }}`.
 </div>
 <!-- =============================================================== -->
 <div id="faq-dgAddNewUml-Q">Is it enough to update existing UML content/diagrams or must we add new content/diagrams?</div>

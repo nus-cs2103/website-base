@@ -29,7 +29,7 @@ We will be using a tool called [RepoSense](http://reposense.org) to make it **ea
   * **Reason 3:** Some commits should not be included in the authorship analysis %%e.g., you committed the code of a third party library by mistake%%.<br>
     **Remedy:** Let us know the hashes of the commits that need to be omitted from the analysis.
 
-If none of the above works, please please post in the [forum]({{ url_forum }}) or contact us via `{{ course | lower }}@comp.nus.edu.sg` so that we can advise you what to do.
+If none of the above works, please post in the [forum]({{ url_forum }}) or contact us via `{{ course_email }}` so that we can advise you what to do.
 
 
 ==**We recommend you ensure your code is RepoSense-compatible by {{ version_penultimate }}**==

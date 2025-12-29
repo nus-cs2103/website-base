@@ -1,7 +1,7 @@
 {% from "common/macros.njk" import embed_topic, show_faq with context %}
 <div id="policy-adminQuestions" tags="m--cs2103" >
 
-**All admin questions should be sent to the course email `{{ course | lower }}@comp.nus.edu.sg` or posted in the [forum]({{ url_forum }}).** This way, the person in charge of that admin detail will answer you.
+**All admin questions should be sent to the course email `{{ course_email }}` or posted in the [forum]({{ url_forum }}).** This way, the person in charge of that admin detail will answer you.
 
 ==#r#Do not ask admin questions from tutors##== (in person or via other means) as **tutors are prohibited from answering admin questions**.
 

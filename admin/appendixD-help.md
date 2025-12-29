@@ -44,7 +44,7 @@
 
   **Some problems might not get resolved at all**; while waiting for a solution, explore alternatives and workarounds.
 
-  **==If your problem remains unsolved 24 hours after posting in the forum==**, please alert `{{ course | lower }}@comp.nus.edu.sg` so that the teaching team can look into it.
+  **==If your problem remains unsolved 24 hours after posting in the forum==**, please alert `{{ course_email }}` so that the teaching team can look into it.
   </box>
 
   * **Give full details of the problem** Conversations via online forums take time. If you post everything that is relevant to your problem, your chances of getting an answer in the first try is higher. If others have to ask you more questions before they can help you, it will take longer. But this doesn't mean you dump too much information into the thread either.

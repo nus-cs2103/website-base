@@ -240,8 +240,8 @@ If you face difficulties/doubts while learning the weekly topics, doing weekly e
 1. **[Preferred] Post in [MS Teams ==channel for the class==]({{ url_ms_teams_class }})**:
    * If there is any chance that the question can be relevant to other classmates, post in the `General` channel.
    * Otherwise, post in the `YOUR_NAME - Help Channel` private channel we have created for each of you.
-   * If there is no response from us after 24 hours (in which case it is likely that we didn't get the MS Teams notification), feel free to remind us by emailing `{{ course | lower }}@comp.nus.edu.sg`.
-1. **Email `{{ course | lower }}@comp.nus.edu.sg`**. These emails will be answered by the prof or forwarded to the TA for follow up.
+   * If there is no response from us after 24 hours (in which case it is likely that we didn't get the MS Teams notification), feel free to remind us by emailing `{{ course_email }}`.
+1. **Email `{{ course_email }}`**. These emails will be answered by the prof or forwarded to the TA for follow up.
 1. You may also post in the [Canvas forum]({{ url_forum }}) or [Coursemology forum]({{ url_coursemology_classroom }}/forums).
 
 </span>

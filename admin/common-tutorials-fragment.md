@@ -468,7 +468,7 @@ This tutorial is used for tP project demos. Demo instructions are repeated below
 
 {% if cs2103 %}* **Recording of past tutorials** should now be available in the `Recordings.docx` of your tutorial's MS Teams. If not, remind your tutor to update that document with the recording links.{% endif %}
 * **If you have questions related to past tutorials**, you can post them in your tutorial's MS Teams channel, and tag the tutor. If there is no reply within a reasonable time (e.g., 24 hours), remind the tutor via another means (e.g., via his/her email, given [here](instructors.md)).
-* **Any queries regarding admin matters** should be sent to the course email (`cs2103@comp.nus.edu.sg`) or posted in the [course forum]({{ url_forum }}) (do not send them to the tutor).
+* **Any queries regarding admin matters** should be sent to the course email (`cs2103@nus.edu.sg`) or posted in the [course forum]({{ url_forum }}) (do not send them to the tutor).
 </box>
 
 </div>

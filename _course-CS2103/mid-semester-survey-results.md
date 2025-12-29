@@ -551,7 +551,7 @@ However, I do find the tutorial sessions *a bit* too artificial/orchestrated/con
 <td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
 <markdown>Im not sure why but my ip progress does not accurately track the completion of tasks.</markdown>
 
-<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Please seek help by posting in the forum or emailing cs2103@comp.nus.edu.sg </markdown>
+<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Please seek help by posting in the forum or emailing cs2103@nus.edu.sg </markdown>
 </span></box>
 </td>
 </tr>
