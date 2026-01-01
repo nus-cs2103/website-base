@@ -20,6 +20,11 @@ Due to the Good Friday holiday, the [team project practical exam](../../admin/tp
 </box>
 -->
 {% endif %}
+{% if cs2103 %}
+
+{{ embed_topic(baseUrl+"/admin/gradeBreakdown.md#marks-for-peer-support", "Admin " + icon_embedding + " Grade Breakdown → Extract", "2", indent="0", status="peek", type="danger") }}
+
+{% endif %}
 
 <panel type="info" header="##### ==[MUST-WATCH]== Course Briefing Videos" expanded >
 

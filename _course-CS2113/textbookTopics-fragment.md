@@ -324,6 +324,7 @@
               {name: "addingMoreInfo", heading: "Adding More Info to UML Models", priority: "3"},
               {name: "classDiagramsIntermediate", heading: "Class Diagrams - Intermediate", priority: "2"},
               {name: "classDiagramsAdvanced", heading: "Class Diagrams - Advanced", priority: "3"},
+              {name: "customisingUml", heading: "Customising UML Elements", priority: "3"},
               {name: "objectDiagrams", heading: "Object Diagrams", priority: "1"},
               {name: "objectOrientedDomainModels", heading: "Conceptual Class Diagrams (aka OODMs)", priority: "4"},
               {name: "deploymentDiagrams", heading: "Deployment Diagrams", priority: "4"},
@@ -1597,6 +1598,17 @@
             level_three_topics: [
               {name: "notes", heading: "Notes", priority: "3"},
               {name: "constraints", heading: "Constraints", priority: "-1"}
+            ]
+          }
+        ]
+      },
+      {
+        name: "stereotypes",
+        level_two_topics: [
+          {
+            name: "",
+            level_three_topics: [
+              {name: "what", heading: "Stereotypes", priority: "3"}
             ]
           }
         ]

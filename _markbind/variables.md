@@ -5,10 +5,10 @@
 <variable name="course_name">Software Engineering</variable>
 <variable name="course_color">success</variable>
 
-<variable name="S">1</variable>
-<variable name="semester">AY2021S{{ S }}</variable>
-<variable name="period">2020 Aug-Dec</variable>
-<variable name="current_week">-1</variable>
+<variable name="S">2</variable>
+<variable name="semester">AY2526S{{ S }}</variable>
+<variable name="period">2026 Jan-Apr</variable>
+<variable name="current_week">-1</variable> <!-- after semester ends, set this to 15 and enable built-in search in site.json -->
 
 <variable name="algolia">no</variable>
 

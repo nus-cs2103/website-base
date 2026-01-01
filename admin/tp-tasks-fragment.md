@@ -843,9 +843,9 @@ As we are still at the early stages of identifying a problem to solve, do not th
 
 See [here](https://se-education.org/guides/tutorials/ab3TracingCode.html) for details.
 
-We recommend that you put in a sincere effort into this tutorial because tracing through the code of an unfamiliar codebase is an important skill that you can learn by doing so; you will not be able to learn/practice later in the project as the code will no longer be 'unfamiliar' to you later.
+Put in a sincere effort into this tutorial because tracing through the code of an unfamiliar codebase is an important skill that you can learn by doing so; you will not be able to learn/practice later in the project as the code will no longer be 'unfamiliar' to you later.
 
-**Submission** [optional]: Post an issue in your team's repo with the title `Tutorial: tracing code`. In the description, add a 2-3 screenshots you took while at various points of the tutorial. You may close the issue soon after.
+**Submission**: Post an issue in your team's repo with the title `Tutorial: tracing code`. In the description, add a 2-3 screenshots you took while at various points of the tutorial. You may close the issue soon after.
 </panel>
 <panel type="info" header="Tutorial 2 - Adding a new Command" expanded>
 
@@ -861,7 +861,7 @@ If you are an experienced programmer, you can add a different command than the o
 
 See [here](https://se-education.org/guides/tutorials/ab3RemovingFields.html) for details.
 
-This tutorial is optional to do, but **at least give it a quick read**.
+This tutorial is optional, but **at least give it a quick read**.
 
 Submission: not required.
 </panel>

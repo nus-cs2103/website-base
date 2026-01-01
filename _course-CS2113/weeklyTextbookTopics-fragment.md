@@ -291,6 +291,7 @@
   {name: "Documentation"},
     {heading: "Class Diagrams: Intermediate-Level"},
       {location: ["modeling", "modelingStructures", "classDiagramsIntermediate"]},
+      {location: ["uml", "stereotypes", "what"]},
   {name: "Implementation"},
     {heading: "Logging"},
       {location: ["errorHandling", "logging", "what"]},
