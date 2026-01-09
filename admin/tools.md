@@ -65,7 +65,7 @@ Create a GitHub account (if you don't have one yet), as explained in the panel b
 
 ##### :fas-envelope: Course email %%(for course related queries, etc.)%%
 
-* **Send all course-related emails to `{{ course | lower }}[at]comp.nus.edu.sg`**.{% if cs2103 %}<br>
+* **Send all course-related emails to `{{ course | lower }}[at]nus.edu.sg`**.{% if cs2103 %}<br>
   Even if your course code is `CS2103T`, the email to use is `cs2103@...` (i.e., not `cs2103t@...`).
 {% endif %}
 

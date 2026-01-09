@@ -11,7 +11,6 @@
 
 This course requires you to write Java code almost every week, starting from the very first week. If your Java skills are rusty, do brush up your Java programming skills.
 
-In particular, you may want to **have a look at the new Java features** such as _streams_, _lambdas_, _Optionals_, that may not have been covered in previous Java courses.
 </div>
 
 ## Workload

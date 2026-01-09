@@ -15,10 +15,8 @@
 
 This course is supported by a number of software tools developed by our students:
 
-* [**CATcher** dev team](https://github.com/CATcher-org/CATcher#current-dev-team)
-* [**Git-Mastery** dev team](https://git-mastery.github.io/team/)
+* [**Git-Mastery** dev team](https://git-mastery.org/about/)
 * [**MarkBind** dev team](https://markbind.org/about.html)
-* [**PowerPointLabs** dev team](https://www.comp.nus.edu.sg/~pptlabs/contact.html)
 * [**RepoSense** dev team](https://reposense.org/about.html)
 * [**SE-EDU** dev team](https://se-education.org/docs/team.html)
 * [**TEAMMATES** dev team](https://teammatesv4.appspot.com/web/front/about)

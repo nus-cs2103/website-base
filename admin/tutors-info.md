@@ -13,14 +13,14 @@
 ### **Damith** Chatura RAJAPAKSE
 
 **Course Coordinator**<br>
-%%:fas-envelope:%% `damith`[at]`comp.nus.edu.sg`<br>
+%%:fas-envelope:%% `damith`[at]`nus.edu.sg`<br>
 %%:fas-map-marker-alt:%% COM2-02-57 | %%:fas-phone-square:%% 6516 4359<br>
 %%:fas-home:%% https://www.comp.nus.edu.sg/~damithch | %%:fab-github:%% [@damithc](https://github.com/damithc)
     </div>
   </div>
 </div>
 
-
+<!--
 <div id="Michael" class="container">
   <div class="row bt-2">
     <div class="col-3">
@@ -42,6 +42,7 @@
 
 -----------------------------
 
+
 <div id="Prabhu" class="container">
   <div class="row bt-2">
     <div class="col-3">
@@ -61,8 +62,9 @@
 </div>
 </div>
 
-<!--
+
 -----------------------------
+-->
 
 <div id="Ganesh" class="container">
   <div class="row bt-2">
@@ -85,7 +87,7 @@
 </div>
 
 -----------------------------
-
+<!--
 <div id="Eric" class="container">
 <div class="row bt-2">
 <div class="col-3">

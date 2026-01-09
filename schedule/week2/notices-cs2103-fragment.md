@@ -9,7 +9,7 @@
 
 <box type="tip" seamless>
 
-**Noticed any issues (==even minor typos==) in the course website (or in [se-edu/guides](https://se-education.org/guides/))?** Have suggestions for improvements? Noticed a part that wasn't clear?<br>
+**Noticed any issues (==even minor typos==) in the course website (or in [se-edu/guides](https://se-education.org/guides/) or in [git-mastery.org](https://git-mastery.org))?** Have suggestions for improvements? Noticed a part that wasn't clear?<br>
 **You can earn [bonus participation points](../../admin/participation.md)** by reporting them in the [forum]({{ url_forum }}).<br>
 </box>
 

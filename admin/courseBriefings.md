@@ -29,7 +29,7 @@ When watching a briefing video for the first time, avoid <tooltip content="dragg
 </box>
 
 ****1. Welcome to the Course****:{.text-info}
-{{ panopto(desc="1 min", "adcfd3ba-b3f4-4633-b288-b33300f77955", start_week="0") }}
+{{ panopto(desc="1 min", "edb318e2-ebe4-4985-9916-b3cd005e664b", start_week="0") }}
 
 <span class="text-info">****2. Course Goals****</span>: How the goals of this course shape its structure (possibly different from other courses), and how it should be approached by students.
 {{ panopto(desc="9 mins", "a4d6f92e-b12f-4046-853b-b0fb01058143", start_week="0") }}
@@ -37,7 +37,7 @@ When watching a briefing video for the first time, avoid <tooltip content="dragg
 
 <span class="text-info">****3. Week 1 Briefing****</span>: As this is the first weekly briefing, **it also covers some general points relevant to all future weeks**.
 
-{{ panopto(desc="4 mins", "e301acdf-c47a-4c62-9ffd-b3330113f593", start_week="0") }}
+{{ panopto(desc="4 mins", "a0a9e4fd-366d-4c03-8385-b3cd005e1e61", start_week="0") }}
 </div>
 </panel>
 
