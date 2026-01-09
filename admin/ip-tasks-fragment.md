@@ -35,7 +35,7 @@
 
 * From this point onward, after completing each increment,
   * **`git tag` the commit that _completed_ the increment with the exact increment ID** e.g., {{ as_tag('Level-2') }}, {{ as_tag('A-TextUiTesting') }}
-    <box type="warning" seamless><md>[Git tags](https://git-mastery.github.io/lessons/tag/) are not the same as [Git commit messages](https://git-mastery.github.io/lessons/commit/).</md></box>
+    <box type="warning" seamless><md>[Git tags](https://git-mastery.org/lessons/tag/) are not the same as [Git commit messages](https://git-mastery.org/lessons/commit/).</md></box>
     <mermaid>
     {{ "%%{init: { 'theme': 'default', 'gitGraph': {'mainBranchName': 'master'}} }%%" }}
     gitGraph
@@ -48,7 +48,7 @@
       commit id: "Add support for bye"
     </mermaid>
   * **`git push` the code to your fork**
-    <box type="warning" seamless><md>Git doesn't push tags unless you [specifically ask it to](https://git-mastery.github.io/lessons/push/).
+    <box type="warning" seamless><md>Git doesn't push tags unless you [specifically ask it to](https://git-mastery.org/lessons/push/).
     After pushing a tag to your fork, you should be able to see that tag by visiting `https://github.com/YOUR_USER_NAME/REPO_NAME/tags` e.g., https://github.com/se-edu/addressbook-level3/tags</md></box>
     <box type="tip" seamless><md>If you encounter issues connecting Sourcetree with your GitHub account, refer to this [Sourcetree Tutorial](https://se-education.org/guides/tutorials/sourcetree.html).</md></box>
 * The relevant textbook topics are:
@@ -356,7 +356,7 @@ Due to the above learning goals, this iP task is a bit complicated. Pay attentio
    checkout master
    </mermaid>
 
-1. Then, push each branch to your fork, and [create a PR](https://git-mastery.github.io/lessons/prsCreate/) !!within your fork!! (i.e., from the increment branch to the `master` branch). ==Be careful not to create a PR to [the upstream repo]({{ url_course_org }}/ip).== %%If you did create such a PR by mistake, no worries, just close it yourself.%%<br>
+1. Then, push each branch to your fork, and [create a PR](https://git-mastery.org/lessons/prsCreate/) !!within your fork!! (i.e., from the increment branch to the `master` branch). ==Be careful not to create a PR to [the upstream repo]({{ url_course_org }}/ip).== %%If you did create such a PR by mistake, no worries, just close it yourself.%%<br>
 
 
 <box type="tip" seamless>

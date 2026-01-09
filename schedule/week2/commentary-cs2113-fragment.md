@@ -14,5 +14,11 @@ This week, we start with first three tours, to get started with Git and GitHub.
 
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
+{% call topic_preamble("RCS: Getting Started with Git and GitHub", reuse=false) %}
+
+<include src="../../admin/common-commentary-fragment.md#git-mastery-preamble" />
+
+{% endcall %}
+<!-- ---------------------------------------------------------------------------- -->
 {{ topic_preamble("IDEs: Basic Features") }}
 {{ topic_preamble("Code Quality: Coding Standards") }}

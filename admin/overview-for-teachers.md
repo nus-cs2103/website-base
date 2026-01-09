@@ -316,7 +316,7 @@ This course makes numerous 'unpopular' choices, some of which are given below:
 1. **Our approach: Many deliverables, every week.** This [Summary of the Course Timeline](../schedule/timeline.html) page shows how many project and admin tasks are due in each week. In addition, most weeks have optional in-lecture and in-video quizzes, not forgetting the tutorial tasks ([example](../schedule/week7/tutorial.html)).<br>
    Rationale: To ensure students learn and apply the topics in a timely manner, rather than try to do everything near the end of the semester.
 
-1. **Our approach: Require students to use an existing codebase** for the team project, and a pre-selected tool stack, and follow a prescribed workflow in the project (e.g., follow a [forking workflow](https://git-mastery.github.io/lessons/forkingWorkflow/)).<br>
+1. **Our approach: Require students to use an existing codebase** for the team project, and a pre-selected tool stack, and follow a prescribed workflow in the project (e.g., follow a [forking workflow](https://git-mastery.org/lessons/forkingWorkflow/)).<br>
    Rationale: To train students to work with legacy code, and follow workflows used in the industry.<br>
    Students prefer: Full freedom to build whatever product they want, using their preferred tool stack, using simpler worflows (e.g., everyone commits to  the master branch).
 

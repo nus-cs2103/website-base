@@ -5,7 +5,8 @@
 <!-- ==================================================================================================== -->
 <div id="git-mastery-preamble">
 
-To learn Git and GitHub topics, we'll be using the [Git-Mastery site](https://git-mastery.github.io), a learning resource and a companion app that helps you not only the topics, but also provided auto-graded exercises to self-test your knowledge. Git-Mastery is a project based in NUS.
+**To learn Git and GitHub topics, we'll be using [Git-Mastery](https://git-mastery.org)**, a learning resource and a companion app that helps you not only the topics, but also provided auto-graded exercises to self-test your knowledge. Git-Mastery is a project based in NUS.<br>
+We hope the **additional value Git-Mastery provides outweighs the inconvenience of having to navigate to a separate website** to learn some topics.
 
 {{ icon_important_big_red }} **The Git-Mastery site is relatively new, and is under active development — teething issues are expected!** Please help us improve it by reporting any issues, bugs, unclear parts, suggestions — even minor/cosmetic ones — in the {{ link_forum }}. You can earn bonus participation points by doing so too.
 </div>
