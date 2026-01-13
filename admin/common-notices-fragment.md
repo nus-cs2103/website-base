@@ -25,8 +25,10 @@
 * **Our tutorials start on week 3.**
 * **If you are bookmarking the course website in your browser**, bookmark the URL `{{ url_course_website }}` (i.e., the base URL, without pointing to any specific page).<br>
    Reason: This base URL will take you to the schedule page of the current week automatically.{% if cs2103 %}
-* **[{{ course }}T Students]**: Of the many weekly sessions that appear under {{ course }}T, only two actually belong to {{ course }}T. Those are, the lecture slot on {{ day_lecture }} {{ time_t_lecture_start }}-{{ time_t_lecture_end }}, and the 1-hour tutorial slot. The other 3-hour slots belong to the CS2101 course.<br>
-  ==All CS2101 sessions start in week 1==.{% endif %}
+* **[{{ course }}==T== Students]** (not applicable to CS2103):
+  * Of the many weekly sessions that appear under {{ course }}T, only two actually belong to {{ course }}T. Those are, the lecture slot on {{ day_lecture }} {{ time_t_lecture_start }}-{{ time_t_lecture_end }}, and the 1-hour tutorial slot. The other 3-hour slots belong to the CS2101 course.<br>
+    ==All CS2101 sessions start in week 1==.
+  * **There is no need for you to bid for a CS2103T tutorial slot** in the upcoming tutorial selection exercise -- the 1-hour CS2103T slot (mis-labelled as 'lecture') in your timetable _is_ your tutorial slot.{% endif %}
 </box><p/>
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->

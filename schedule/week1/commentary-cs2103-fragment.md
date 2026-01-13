@@ -17,7 +17,11 @@ Now it's time to move to the second section of this week's topics:
 
 <include src="../../admin/common-commentary-fragment.md#git-mastery-preamble" />
 
-This week, we start with tour 1.
+<box type="important" seamless>
 
+Unless you are an experienced Git user, **you are strongly encouraged to do the Git-Mastery exercises, and enable online tracking of progress via the companion app** so that we can recognise your Git-Mastery progress as an optional [participation]({{ baseUrl }}/admin/participation.md) activity.
+</box>
+
+This week, we start with tour 1.
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
