@@ -20,6 +20,7 @@
   </div>
 </div>
 
+-----------------------------
 <!--
 <div id="Michael" class="container">
   <div class="row bt-2">
@@ -86,8 +87,8 @@
 </div>
 </div>
 
------------------------------
 <!--
+-----------------------------
 <div id="Eric" class="container">
 <div class="row bt-2">
 <div class="col-3">
@@ -121,7 +122,7 @@
     <div class="col">
 
 ### Ng **Tzer Bin**
-
+{{ url_course_gihub_io }}/tutor-photos/tzerbin.png
 **Head TA**<br>
 %%:fas-envelope:%% `dcsnt`[at]`nus.edu.sg`<br>
 %%:fab-github:%% [@tzerbin](https://github.com/tzerbin)
