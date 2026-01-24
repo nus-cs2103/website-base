@@ -1,5 +1,7 @@
 {% from "_course-" + course + "/studentData-fragment.md" import tutors with context %}
 
+{% macro show_role(role) %}<div class="position-relative" style="top: -12px;"><md>**%%{{ role }}%%**</md></div><br>{% endmacro %}
+
 ## Staff
 
 <div id="Damith" class="container">
@@ -12,7 +14,9 @@
 
 ### **Damith** Chatura RAJAPAKSE
 
-**Course Coordinator**<br>
+{{ show_role("Course Coordinator") }}
+
+Associate Professor (Education)<br>
 %%:fas-envelope:%% `damith`[at]`nus.edu.sg`<br>
 %%:fas-map-marker-alt:%% COM2-02-57 | %%:fas-phone-square:%% 6516 4359<br>
 %%:fas-home:%% https://www.comp.nus.edu.sg/~damithch | %%:fab-github:%% [@damithc](https://github.com/damithc)
@@ -78,7 +82,9 @@
 
 ### **Ganesh** Neelakanta Iyer
 
-**Lecturer**<br>
+{{ show_role("Co-Lecturer") }}
+
+Senior Lecturer<br>
 %%:fas-envelope:%% `gni`[at]`nus.edu.sg`<br>
 %%:fas-map-marker-alt:%% COM2-03-55 | %%:fas-phone-square:%% 6601 7601<br>
 %%:fab-github:%% [@ganeshniyer](https://github.com/ganeshniyer)
@@ -122,8 +128,10 @@
     <div class="col">
 
 ### Ng **Tzer Bin**
-{{ url_course_gihub_io }}/tutor-photos/tzerbin.png
-**Head TA**<br>
+
+{{ show_role("Head TA") }}
+
+Teaching Assistant<br>
 %%:fas-envelope:%% `dcsnt`[at]`nus.edu.sg`<br>
 %%:fab-github:%% [@tzerbin](https://github.com/tzerbin)
     </div>
@@ -142,7 +150,10 @@
 
 ### Tan **Yugin**
 
-**Graduate TA**<br>
+{{ show_role("Gradute Tutor") }}
+
+
+PhD Candidate<br>
 %%:fas-envelope:%% `tanyugin`[at]`nus.edu.sg`<br>
 %%:fab-github:%% [@lumos309](https://github.com/lumos309)
     </div>

@@ -553,8 +553,8 @@ However, ==if the dev team's argument is not too far from 'reasonable', it may b
 
     I think the team responded unprofessionally because ...
     ```
-    {{ icon_important_big_red }} Use this option sparingly. Complaining about trivial things is unprofessional too. If the teaching team deems either part is acting unprofessionally, a penalty will be applied.<br>
-    Don't use this route to flag out weak justifications or the absence of a suitable justification, as those are automatically penalised by ruling the corresponding dispute in favour of the tester.
+    {{ icon_important_big_red }} Use this option sparingly. Complaining about trivial things is unprofessional too. If the teaching team deems either party is acting unprofessionally, a penalty will be applied.<br>
+    Don't use this route to flag out a weak/missing justification from the dev team -- reason: there is no need to do so as weak/missing justifications are already penalised by ruling the corresponding dispute in favour of the tester.
   * **You need to submit ==one comment per each aspect== you object to.** #r#Do not combine multiple objections into one comment##.<br>
     * {{ good }}:
       ```

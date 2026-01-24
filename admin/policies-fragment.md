@@ -18,7 +18,7 @@ Examples of admin questions:
 
 <div id="policy-teamSize">
 
-As most of the work is graded individually, team sizes of 4/5/6 are not expected to affect your grade. For example, while managing larger teams is harder, larger teams have more collective know-how, which can cancel each other. However, we give some special consideration when grading 3-person teams.
+As most of the work is graded individually, team sizes of 4/5/6 are not expected to affect your grade. For example, while managing larger teams is harder, larger teams have more collective know-how, which can cancel each other out. However, we give some special consideration when grading 3-person teams.
 
 </div>
 

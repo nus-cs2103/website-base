@@ -48,7 +48,7 @@
       commit id: "Add support for bye"
     </mermaid>
   * **`git push` the code to your fork**
-    <box type="warning" seamless><md>Git doesn't push tags unless you [specifically ask it to](https://git-mastery.org/lessons/push/).
+    <box type="warning" seamless><md>Git doesn't push tags unless you [specifically ask it to](https://git-mastery.org/lessons/tag/?cv-highlight=W3sidCI6IlAiLCJpIjo0MSwicCI6Im1haW4iLCJzIjoiUHVzaGluZyBjb21taXRzIHRvIGEgcmVtb3RlIGRvZXMiLCJoIjotMzYxMjczNDgzLCJpZCI6IiJ9XQ%3D%3D).
     After pushing a tag to your fork, you should be able to see that tag by visiting `https://github.com/YOUR_USER_NAME/REPO_NAME/tags` e.g., https://github.com/se-edu/addressbook-level3/tags</md></box>
     <box type="tip" seamless><md>If you encounter issues connecting Sourcetree with your GitHub account, refer to this [Sourcetree Tutorial](https://se-education.org/guides/tutorials/sourcetree.html).</md></box>
 * The relevant textbook topics are:
@@ -648,7 +648,7 @@ Read through this week's topics before starting the project.<br>
 </div>
 
 1. **Fork** [{{ url_course_org }}/{{ ip_repo_name }}]({{ url_course_org }}/{{ ip_repo_name }}), while noting the points below:<br>
-   <box type="important" seamless><md>==**Keep the fork name as `{{ ip_repo_name }}`**== or else our grading scripts will not be able to detect it. You can change the fork name to something else after the semester (and the grading) is over e.g., after receiving your grade for the course.</md></box>
+   <box type="important" seamless><md>==**Keep the fork name as `{{ ip_repo_name }}`**== or else our grading scripts will not be able to detect it. You can change the fork name to something else after the semester (and the grading) is over e.g., after receiving your grade for the course.<br>==**Keep the default branch name as `master`**==. While Git-Mastery uses `main` as the default branch name, iP and tP uses `master`. As both these are used widely in the industry, it is good for you to be comfortable using both.</md></box>
    <box type="tip" seamless><md>**Untick the `[ ] Copy the master branch only` option** so that you get a copy of the full repo.</md></box>
 1. ==**Enable the issue tracker** of your fork== (Go to `Settings` of your fork, scroll to the `Features` section, and tick the `Issues` checkbox). %%Reason: at times we post feedback on your issue tracker.%%<br>
    <box type="tip" seamless><md> If the issue tracker is enabled, you should be able to visit the following URL `https://github.com/{your_user_name}/{{ ip_repo_name }}/issues/new`<br> e.g., `https://github.com/johnDoe/{{ ip_repo_name }}/issues/new`</md></box>
@@ -675,7 +675,7 @@ Read through this week's topics before starting the project.<br>
     %%Note that the PR name will be publicly visible.%%<br>
     You may leave the description empty.
   * If you created the PR correctly, it should appear in the list of PRs [here]({{ url_course_org }}/{{ ip_repo_name }}/pulls).
-  * Steps for creating a PR is given in {{ show_gm_lesson_link("prsCreate", "T9L1. Creating Pull Requests") }} (==step 5 onwards==):
+  * Steps for creating a PR is given in {{ show_gm_lesson_link("prsCreate", "T9L1. Creating Pull Requests") }} (==omit the 'preparation' step==):
 
 <div class="indented-level2">
 

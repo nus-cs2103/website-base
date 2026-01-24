@@ -57,7 +57,8 @@
     {level: 2, id: "appendixD-help", title: "Apdx D: Getting Help", link: "appendixD-help.html", priority: 2},
     {level: 2, id: "appendixE-gitHub", title: "Apdx E: Using GitHub", link: "appendixE-gitHub.html", priority: 1},
     {level: 2, id: "appendixF-teamworkIssues", title: "Apdx F: Handling Team Issues", link: "appendixF-teamworkIssues.html", priority: 4},
-    {level: 2, id: "appendixG-troubleshooting", title: "Apdx G: Troubleshooting Tips", link: "appendixG-troubleshooting.html", priority: 4}
+    {level: 2, id: "appendixG-troubleshooting", title: "Apdx G: Troubleshooting Tips", link: "appendixG-troubleshooting.html", priority: 4},
+    {level: 2, id: "appendixH-tipsFromStudents", title: "Apdx H: Tips from Past Students", link: "appendixH-tipsFromStudents.html", priority: 4}
 ]%}
 
 {% set weekly_admin_topics = {

@@ -28,7 +28,7 @@ That is, you either get full marks, or less than half the marks for each aspect.
 
 ##### :fas-trophy: Implementation [`{{ marks_ip_implementation }}` marks]{.text-info}
 
-* **More than 90% of all deliverables** completed.<br>
+* **More than 90% of all deliverables** have been completed in the final version of the iP submitted.<br>
     Requirements marked as <span class="badge rounded-pill bg-secondary">optional</span> or <span class="badge rounded-pill bg-secondary">if-applicable</span> are not counted when calculating the percentage of deliverables.<br>
     When a requirement specifies a `minimal` version of it, simply reaching that minimal version of the requirement is enough for it to be counted for grading -- however, we recommend you to go beyond the minimal; the farther you go, the more practice you will get.{% if cs2103 %}
 * **Has a GUI** that is at least as good as the one reached by the JavaFx tutorial !!part 4!! (i.e., no need to have features covered in part 5) and <tooltip content="i.e., a user can use the chatbot via the GUI">fit-for-purpose</tooltip>.{% endif %}
@@ -61,6 +61,8 @@ The product Website and the user guide:
 * **No major formatting errors** in the published view.
 </box>
 </div>
+
+**Grading is mostly based on a manual check of your final submission.** Automated checks done along the way are mostly to help you self-monitor your progress.
 
 <box type="tip" seamless>
 

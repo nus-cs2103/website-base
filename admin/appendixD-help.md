@@ -7,7 +7,7 @@
 {% set negative_icon = '{icon="fas-thumbs-down" i-class="text-white badge rounded-pill bg-danger" i-size="12px"}' %}
 {% set positive_icon = '{icon="fas-thumbs-up" i-class="text-white badge rounded-pill bg-success" i-size="12px"}' %}
 
-%%{{ icon_info }} This guide is mostly about getting tech help, but it also applies to getting clarifications on course topics too. e.g., what is the difference between_refactoring_and_rewriting_?%%
+%%{{ icon_info }} This guide is mostly about getting tech help, but it also applies to getting clarifications on course topics too. e.g., what is the difference between _refactoring_ and _rewriting_ ?%%
 
 <span class="float-end">
 
@@ -29,7 +29,7 @@
 
 * **Double-check the given instructions**: Often, technical problems arise due to deviations in how you perform a step or a difference in your environment.{{ positive_icon }}
 
-* **Get your team to meet for a weekly work-together session**. When you do course tasks together, it is easy to compare with each other and figure out what deviation is causing the problem. That is, crowd-source your team first.
+* **Get your team to meet for a weekly work-together session**. When you do course tasks together, it is easy to compare with each other and figure out what deviation is causing the problem. That is, crowdsource your team first.
 
 * **Search**: It is very likely the answer already exists somewhere in the cyberspace. Almost every programming-related question has been answered in places like [stackoverflow](http://stackoverflow.com/). Don't give an opportunity for someone to ask you to [STFW](http://www.jibble.org/stfw/).
   Pay attention to the error message you encounter. Sometimes it also contains hints as to how to fix the problem. Even if not, a web search on the error message is a good starting point.<br>
@@ -97,14 +97,6 @@ _Rubber duck debugging_ is an informal term used in software engineering to refe
 [for more, see [wikipedia entry](https://en.wikipedia.org/wiki/Rubber_duck_debugging)]
 </modal>
 
-
-* **Ask the world** using programming forums such as stackoverflow.{{ positive_icon }}
-  * PLEASE search for existing answers before you post your question in those public forums; You don't want to appear as a 'clueless' or 'too lazy to do your research' person in a public forum.
-    <box>
-
-    {{ icon_tip }} Know what these stand for: **RTFM**, **STFW**, **GIYF**, **LMGTFY**
-
-    </box>
 
   <div id="questions-for-tutors">
 

@@ -255,6 +255,9 @@
 
 <!-- ===========================  misc aliases =========================================== -->
 
+<variable id="numbers_abcd">\{texts="['a)', 'b)', 'c)', 'd)', 'e)', 'f)', 'g)', 'h)']"\}</variable>
+<variable id="numbers_roman">\{texts="['i.', 'ii.', 'iii.', 'iv.', 'v.', 'vi.', 'vii.']"\}</variable>
+
 <variable name="line_dashed"><hr style="border-top: dashed 1px; border-color:grey" /></variable>
 <variable name="line_dotted"><hr style="border-width: 1px; border-color: #f3ccff; border-style: dotted"></variable>
 <variable name="line_double"><hr style="border-top: 3px double #c5c5c5;"></variable>

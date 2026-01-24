@@ -10,13 +10,15 @@
 
 <pic eager src="{{baseUrl}}/images/growingPlant.png" width="700"></pic>
 
-<p class="lead"><md>{{ course_pair }} is an introductory Software Engineering course with **an equal emphasis on core SE theory and practical skills** needed for industry internships or <tooltip content="e.g., CS3213, CS3216/7, CS3219, CS3281&2, etc.">higher-level project courses</tooltip>. It adopts an <tooltip content="going through SE topics several times while increasing depth, as opposed to going through topics sequentially">**iterative approach**</tooltip> to covering topics and is one of the few SE courses that includes both a <tooltip content="i.e., working in an existing project">**brownfield** project</tooltip> and a <tooltip content="i.e., a project that is started from scratch">**greenfield** project</tooltip>.</md></p>
+<div id="overview">
 
+<p class="lead"><md>{{ course_pair }} is an introductory Software Engineering course with **an equal emphasis on core SE theory and practical skills** needed for industry internships or <tooltip content="e.g., CS3213, CS3216/7, CS3219, CS3281&2, etc.">higher-level project courses</tooltip>. It adopts an <tooltip content="going through SE topics several times while increasing depth, as opposed to going through topics sequentially">**iterative approach**</tooltip> to covering topics and is one of the few SE courses that includes both a <tooltip content="i.e., working in an existing project">**brownfield** project</tooltip> and a <tooltip content="i.e., a project that is started from scratch">**greenfield** project</tooltip>.</md></p>
 
 * **On the theory side,** this course is supported by a customized online textbook [_Software Engineering for Self-Directed Learners_](../se-book-adapted/index.html), integrated into this course website.
 
 * **On the practice side,** you will first ramp up your technical skills by doing a small individual project (greenfield) in which you will develop a personal assistant chatbot called [Duke](../se-book-adapted/projectDuke/index.html). Then, you will move to a team project (brownfield) in which you will take over an existing project [AddressBook-Level3 (AB3)](https://se-edu.github.io/addressbook-level3/) -- a relatively small yet non-trivial (6 <tooltip content="LoC = Lines of Code">KLoC</tooltip>) generic product -- and enhance it into a better product.
 
+</div>
 <div id="meaning-of-iterative-topics">
 
 <box>
