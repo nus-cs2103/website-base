@@ -201,6 +201,11 @@ This alternative is only suitable for those who are already good at hand-coding.
 </box>
 </div>
 </div>
+<div id="pre_Level-1">
+<div tags="m--cs2113">
+<include src="ip-tasks-fragment.md#tag-push" />
+</div>
+</div>
 
 <div id="post_A-Enums">
 <div tags="m--cs2103">
