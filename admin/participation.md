@@ -61,7 +61,7 @@
 
 <div class="indented">
 
-* **-1 mark if participated in fewer than 7 tutorials.** To consider as 'participated' in a tutorial, you need to show a sufficient level of participation (just attending is not enough).
+* **-1 mark if participated in fewer than 7 tutorials** (-2 if fewer than 5 tutorials, -3 if fewer than 3 tutorials): To consider as 'participated' in a tutorial, you need to show a sufficient level of participation (just attending is not enough). {% if cs2103 %} F2F tutorials that you attend via Zoom only are not counted for participation.{% endif %}
 </div>
 
 <panel type="info" header="**+ Bonus Marks**" expanded no-close no-switch >

@@ -673,7 +673,8 @@ Read through this week's topics before starting the project.<br>
   * Set the PR name as `[{Your full/partial name or your GitHub username}] iP`<br>
     e.g., `[Richard Mathews Chee] iP` or `[Rich ... hee] iP` or `[TheRichMat] iP`<br>
     %%Note that the PR name will be publicly visible.%%<br>
-    You may leave the description empty.
+    You may leave the description empty.<br>
+    You may leave the `Allow edits by maintainers` box unchecked. %%If checked, maintainers of the upstream repo can push small fixes to your PR (for example, to resolve minor issues before merging).%%
   * If you created the PR correctly, it should appear in the list of PRs [here]({{ url_course_org }}/{{ ip_repo_name }}/pulls).
   * Steps for creating a PR is given in {{ show_gm_lesson_link("prsCreate", "T9L1. Creating Pull Requests") }} (==omit the 'preparation' step==):
 
