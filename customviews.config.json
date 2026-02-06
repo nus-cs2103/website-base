@@ -1,0 +1,13 @@
+{
+  "config": {
+    "placeholders": [
+      { "name": "username", "settingsLabel": "Your GitHub Username", "settingsHint": "e.g., JohnDoe" }
+    ]
+  },
+  "storageKey": "cs21_3-website",
+  "baseUrl": "/website",
+  "settings": {
+    "enabled": false
+  },
+  "showUrl": false
+}
