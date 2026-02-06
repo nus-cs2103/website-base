@@ -47,6 +47,7 @@ The product needs to be developed in a breadth-first incremental manner over the
 
 {% call show_constraint("Constraint-Human-Editable-File") -%}
 The data should be stored locally and should be in a human editable text file.<br/>
+{% if cs2103 %}Furthermore, the level of support for editing the data file should be **at least [that of AB3](https://se-education.org/addressbook-level3/UserGuide.html#editing-the-data-file)**.<br>{% endif %}
 %%**Reason:** To allow advanced users to manipulate the data by editing the data file.%%
 
 {{ show_faq("tpEncryptDataFile") }}

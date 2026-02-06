@@ -161,7 +161,7 @@
   },
   beware_of_unforeseen_challenges: {
     header: "Beware of unforeseen challenges",
-    tags: ['AY2425S1', 'scheduling', 'grade'],
+    tags: ['AY2425S1', 'schedule', 'grade'],
     body: "Do not push your work to the deadline, and start work on the deliverables early. There are often a lot of unforeseen challenges and it can be really stressful trying to resolve them nearing deadlines."
   },
   do_weekly_readings: {
@@ -193,6 +193,11 @@
     header: "Read textbook incrementally",
     tags: ['AY2425S1', 'grade', 'exam', 'learning', 'schedule'],
     body: "Read the textbook content bit by bit everyday before final exams. That way every knowledge can sink in."
+  },
+  link_to_internships: {
+    header: "Helped in my internship",
+    tags: ['AY2425S1', 'iP', 'tP', 'learning'],
+    body: "I also feel that I now appreciate the experience of writing and receiving code reviews in CS2103T a lot. It matched well with the code review experience in my internship (choice of tone, wording, nits, common terminology, etc). Another positive experience is the use of debuggers. The Java debugger available to me in my internship was sufficiently similar to the IntelliJ debugger and I was able to use it to explain some unexpected test results that we encountered."
   }
 }%}
 
@@ -205,6 +210,23 @@
 
 {% macro show_tips_list() %}
 <cardstack searchable blocks="2">
+  <tags>
+    <tag name="iP" color="primary" />
+    <tag name="tP" color="success" />
+    <tag name="PE" color="success" />
+    <tag name="workload" color="warning" />
+    <tag name="schedule" color="warning" />
+    <tag name="lectures" color="#6f42c1" />
+    <tag name="tutorials" color="#6f42c1" />
+    <tag name="exam" color="danger" />
+    <tag name="grade" color="danger" />
+    <tag name="learning" color="dark" />
+    <tag name="AI" color="dark" />
+    <tag name="misc" color="dark" />
+    <tag name="AY2425S1" color="light" />
+    <tag name="AY2425S2" color="light" />
+    <tag name="AY2526S1" color="light" />
+  </tags>
   {% for tip_id, tip in tips %}
 {{ show_tip_card(tip) }}
   {% endfor %}

@@ -124,6 +124,12 @@
 {{ show_expanded_faq("tpPrPassCiButFailedAfterMerging") }}
 {{ show_expanded_faq("tpWorksLocallyFailsCi") }}
 
+
+### FAQs on: tP Peer Evaluations
+
+{{ show_expanded_faq("tpPeerEvalsInGrading") }}
+{{ show_expanded_faq("tpPeerEvalsRebuttalUsage") }}
+
 ### FAQs on: tP PE
 
 {{ show_expanded_faq("peTooLong") }}

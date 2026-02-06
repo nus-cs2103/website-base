@@ -1,5 +1,5 @@
 {% from "common/admin.njk" import show_admin_page with context %}
-{% from "common/macros.njk" import as_tag, button, embed_topic, get_date, show_as_tab, show_as_rounded_tab, show_faq, show_gm_lesson_link, show_tp_goals, show_tp_week_intro, show_tp_week_outro, show_tp_iterations_gantt, thumb, thumb_small, timing_badge with context %}
+{% from "common/macros.njk" import as_tag, button, embed_topic, get_date, show_as_tab, show_as_rounded_tab, show_caution, show_faq, show_gm_lesson_link, show_tp_goals, show_tp_week_intro, show_tp_week_outro, show_tp_iterations_gantt, thumb, thumb_small, timing_badge with context %}
 {% from "admin/ip-tasks-fragment.md" import show_xp_page  with context %}
 {% from "_course-" + course + "/weeklyTpTasks-fragment.md" import weekly_tp_tasks  with context %}
 {% from "_course-" + course + "/studentData-fragment.md" import tp_dg_review_allocation with context %}
@@ -805,9 +805,9 @@ As we are still at the early stages of identifying a problem to solve, do not th
   1. **Second stage**:
      * All members discuss the remaining user stories (i.e., the ones not discarded in the first stage), and try to trim the list further.
 
-{{ show_faq("tpNotEnoughWorkToDivide") }}
-{{ show_faq("tpShouldWeStartCoding") }}
-{{ show_faq("tpOmitStoriesInAb3") if cs2103 }}
+{{ show_faq("tpNotEnoughWorkToDivide", is_compact=1) }}
+{{ show_faq("tpShouldWeStartCoding", is_compact=1) }}
+{{ show_faq("tpOmitStoriesInAb3", is_compact=1) if cs2103 }}
 {{ show_faq("tpAllStoriesInAb3") if cs2103 }}
 </div>
 {#====================================================================================================================#}
@@ -957,6 +957,11 @@ For example, it is fine to restrict the person name to a certain length and a ch
 * **Ensure feature-fit**: While doing this, ensure the features written by each member fit together to form a cohesive product, and meet other grading criteria of the _product design_ aspect. This might require several rounds of refinement. You are encouraged to peer-review feature details written by other team members and refine the overall product design together.
 
 {{ embed_topic("tp-grading.md#criteria-productDesign", "Admin " + icon_embedding + " **tP: Grading → Product Design**", "3", indent="1") }}
+
+{% if cs2103 %}{% call show_caution("Giving internal deatails in the feature specification.", label="Common Error") %}
+This feature specification should specify external behaviour only. We have not yet come to the stage of deciding internal implementation details.
+{% endcall %}{% endif %}
+<p/>
 
 * {{ icon_important_big_red }} **Submission** [one person per team]: Save the file as a PDF file, name it `{team-id}.pdf` e.g., `{{ example_team_id }}.pdf`, and upload to Canvas.
 * **Grading criteria**: to be considered 'done', the feature spec. should meet all the following criteria:
@@ -1487,9 +1492,20 @@ Note that the product you deliver at the end of this iteration must be working a
 
 <box type="important" seamless>
 
-#r#**Finishing the iteration on time is no longer 'optional'!**## From {{ version_mvp }} iteration, the {{ as_tag( 'v1._ on time', tag_style='dark') }} item in the [tP dashboard]({{ url_tp_progress_dashboard_team }}) will turn red and remain red if the iteration wasn't wrapped up properly by the deadline (i.e., Thu 23:59).<br>
+**Finishing the iteration on time is no longer 'optional'!**{.text-danger}
+
+From {{ version_mvp }} iteration, the {{ as_tag( 'v1._ on time', tag_style='dark') }} item in the [tP dashboard]({{ url_tp_progress_dashboard_team }}) will turn red and remain red if the iteration wasn't wrapped up properly by the deadline (i.e., Thu 23:59).<br>
  %%Reason: Learning to meet project deadlines is an intended learning outcome. As this is the third tP iteration, you should be able to finish iterations on time by now.%%
 </box>
+
+{% if cs2103 %}{% call show_caution("Avoid drastic changes to `build.gradle`.") %}
+The `build.gradle` that is in the AB3 repo is battle-tested. Other than minor changes and adding new dependencies, it does not require any drastic changes. If you are doing such drastic changes, it is likely you are going down the wrong path, possibly mislead by AI coding tools.
+{% endcall %}{% endif %}
+
+{% if cs2103 %}{% call show_caution("Don't use `javax.web` library just to show user guide as a web page.") %}
+If you use `javax.web` library simply to display the user guide as a web page, you will end up violating [Constraint-File-Size](tp-constraints.html#constraint-file-size)
+{% endcall %}{% endif %}
+<p/>
 
 * {{ icon_team }} **Manage the iteration** `{{ version_mvp }}`, and reach the milestone `{{ version_mvp }}` (which delivers product version `{{ version_mvp }}`)
 * {{ icon_team }} **Aim to deliver on time**, as that is linked to our tP learning outcome of this iteration. This means you need to monitor progress, and course-correct as you go.
@@ -1621,6 +1637,11 @@ This is a good time to get familiar with the diagramming tools used by the tP.
 {#====================================================================================================================#}
 <span id="heading_deliver_the_alpha_version">{{ icon_team }} Deliver the alpha version (`{{ version_alpha }}`)</span>
 <div id="desc_deliver_the_alpha_version">
+
+{% if cs2103 %}{% call show_caution("Be vary of auto-sizing app windows.") %}
+If you set the app to auto-size to a specific size at launch, it can go out of screen in smaller screens or at lower resolution, with no way to close or resize it, rendering it unusable.
+{% endcall %}{% endif %}
+
 
 * **Follow the iteration plan** you devised above,  to deliver the features.<br>
 Resist the temptation to try to deliver each of those features/enhancements in one PR. It is better to deliver a minimal version first, and improve it through subsequent PRs.

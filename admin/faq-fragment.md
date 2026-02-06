@@ -1063,6 +1063,21 @@ It is possible that the `master` branch has received new commits after your PR p
 </div>
 <!-- =============================================================== -->
 
+<div id="faq-tpPeerEvalsInGrading-Q">How are peer contribution ratings used in calculating marks?</div>
+<div id="faq-tpPeerEvalsInGrading-A">
+
+{{ embed_topic("peerEvaluations.md#how-peer-evaluations-used", "Admin " + icon_embedding + " **Peer Evaluations (Extract)**", indent="1", status="expanded") }}
+
+</div>
+<!-- =============================================================== -->
+
+<div id="faq-tpPeerEvalsRebuttalUsage-Q">How are rebuttals (to peer evaluations) used?</div>
+<div id="faq-tpPeerEvalsRebuttalUsage-A">
+
+A rebuttal triggers a review of the aspect being rebutted, to see if marks need to be adjusted further.
+</div>
+<!-- =============================================================== -->
+
 <div id="faq-tpRenameAbReferences-Q">Do we need to change all class/package names that refer to AB3?</div>
 <div id="faq-tpRenameAbReferences-A">
 

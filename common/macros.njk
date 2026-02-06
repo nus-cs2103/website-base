@@ -215,4 +215,16 @@
 {% endmacro %}
 
 
+{% macro show_caution(subject, label='') %}
+<panel type="seamless" >
+<span slot="header" class="card-title"><span class="badge rounded-pill bg-warning text-dark"><md>**:fas-skull-crossbones: {{ label if label else "Caution" }}:**</md></span> <md>**{{ subject }}**</md></span>
+<box type="secondary" seamless>
+
+{{ caller() }}
+
+</box>
+</panel>
+{% endmacro %}
+
+
 {% macro show_gm_lesson_link(lesson_id, lesson_name)%}<md>++<span style="background-color: #e6f4ea;" class="badge rounded-pill text-success">:octicon-git-branch: Git-Mastery → <a href="https://git-mastery.org/lessons/{{ lesson_id }}/" target="_blank">**Lesson: {{ lesson_name }}**</a></span>++</md>{% endmacro %}
