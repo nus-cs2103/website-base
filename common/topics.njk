@@ -79,8 +79,8 @@
 
 
 {% macro apply_to(filter_property, filter_value, entries, op, params={})%}
-{% set start = get_start_index(filter_property, filter_value, entries) %}
-{% set end = get_end_index(filter_property, filter_value, start, entries) %}
+{% set start = get_start_index(filter_property, filter_value, entries) %}
+{% set end = get_end_index(filter_property, filter_value, start, entries) %}
 {{ op(entries.slice(start, end), params) }}
 {% endmacro %}
 
@@ -133,16 +133,16 @@
 
 
 {% macro get_collective_priority(entries)%}
-{% set priority = 5 %}
-{% for entry in entries %}
-  {% set entry_priority = get_unit_priority(entry) | trim | int %}
+{% set priority = 5 %}
+{% for entry in entries %}
+  {% set entry_priority = get_unit_priority(entry) | trim | int %}
   {% if entry_priority not in [0, -1] and entry_priority < priority %}
-    {% set priority = entry_priority %}
+    {% set priority = entry_priority %}
   {% endif %}
 {% endfor %}
 {% if priority == 5 %}
   {# none of the entries have priorities 1-4 #}
-  {% set priority = 0 %}
+  {% set priority = 0 %}
 {% endif %}
 {{ priority }}
 {% endmacro %}
@@ -162,19 +162,19 @@
 {% else %}
   {% set priority = params.topic.priority %}
 {% endif %}
-{% set  prefix = "W" + params.week_num + "." + params.starting_index%}
-{% set  anchor = make_anchor(prefix) %}
+{% set prefix = "W" + params.week_num + "." + params.starting_index%}
+{% set anchor = make_anchor(prefix) %}
 {% set letters = "abcdefghijklmnopqrstuvwxyzABCDEFGH" | list %}
 {% set letter_index = 0 %}
-{% set panel_decorations = "expanded no-switch" if params.is_flat else "" %}
-{% set panel_expandable = "false" if params.is_flat else "true" %}
+{% set panel_decorations = "expanded no-switch" if params.is_flat else "" %}
+{% set panel_expandable = "false" if params.is_flat else "true" %}
 {% if params.is_toc %}
 * [[{{ prefix | trim }}](topics.html#{{ make_anchor(prefix) }})] **{{ params.topic.heading }}** {{ show_stars(priority) }}
 {% if not params.is_flat %}
 <div class="indented-level2">
 <small>
 
-{% for entry in entries  %}
+{% for entry in entries %}
   {% if entry.location %}
 {{ show_unit(params.week_num, prefix + letters[letter_index], entry, params.path_displacement, params.is_flat, true) }}
     {% set letter_index = letter_index + 1 %}
@@ -194,7 +194,7 @@
 <span slot="header" class="card-title"><markdown>## %%[{{ prefix | trim }}]%% **{{ params.topic.heading }}** <small><small>{{ show_stars(priority) }}</small></small></markdown> </span>
 {{ panopto(params.topic.panopto, questions=params.topic.questions) if params.topic.panopto  and (params.week_num | int) <= (current_week | int) + 13 }}
 <div class="indented-level1">
-{% for entry in entries  %}
+{% for entry in entries %}
   {% if entry.location %}
 {{ show_unit(params.week_num, prefix + letters[letter_index], entry, params.path_displacement, params.is_flat) }}
     {% set letter_index = letter_index + 1 %}
@@ -211,11 +211,11 @@
 
 
 {% macro show_topic_group(entries, params={name: "n/a", week_num: "n/a", starting_index: "n/a", is_flat: false, is_toc: false}) %}
-{% set  topic_number = params.starting_index | int %}
-{% for entry in entries  %}
+{% set topic_number = params.starting_index | int %}
+{% for entry in entries %}
   {% if entry.heading %}
 {{ apply_to("heading", entry.heading, entries, show_topic, {week_num: params.week_num, starting_index: topic_number , topic: entry, path_displacement: params.path_displacement, is_flat: params.is_flat, is_toc: params.is_toc}) }}
-{% set  topic_number = topic_number + 1 %}
+{% set topic_number = topic_number + 1 %}
   {% endif %}
 {% endfor %}
 <p/>
@@ -224,7 +224,7 @@
 
 {% macro show_week(entries, params={week_num: "n/a", is_flat: false, is_toc: false}) %}
 {% set i = 1 %}
-{% for entry in entries  %}
+{% for entry in entries %}
   {% if entry.name %}
 {{ apply_to("name", entry.name, entries, show_topic_group, {name: entry.name, week_num: params.week_num, starting_index: i, path_displacement: params.path_displacement, is_flat: params.is_flat, is_toc: params.is_toc}) }}
   {% set i = i + apply_to("name", entry.name, entries, count_topics) | trim | int %}
@@ -234,10 +234,10 @@
 
 
 {% macro count_topics(entries, params={})%}
-{% set count = 0 %}
-{% for entry in entries %}
+{% set count = 0 %}
+{% for entry in entries %}
   {% if entry.heading %}
-    {% set count = count + 1 %}
+    {% set count = count + 1 %}
   {% endif %}
 {% endfor %}
 {{ count }}
