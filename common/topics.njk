@@ -102,6 +102,7 @@
 <span id="{{ make_anchor(id_prefix) }}" />
 
 {{ commentary(slugify(full_path)) }}
+<div id="topic-{{ id_prefix }}">
 
 <panel type="seamless" {{ expanded }} popup-url="{{ baseUrl }}/book/{{  full_path }}">
 <div slot="header" class="card-title">
@@ -112,6 +113,7 @@
   {{ panopto(unit.panopto, questions=unit.questions) if unit.panopto  and (week_num | int) <= (current_week | int) + 13 }}
   <include src="{{ path_displacement }}../../book/{{  full_path }}/unit-inElsewhere-asPanelBody.md" boilerplate />
 </panel>
+</div>
 {{ followup(slugify(full_path)) }}
 {% else %}
 * %%[[{{ id_prefix }}](topics.html#{{ make_anchor(id_prefix) }})] <include src="{{ path_displacement }}../../book/{{  full_path }}/../path.md" inline />%% <include src="{{ path_displacement }}../../book/{{  full_path }}/text.md#title" inline /> {{ show_stars(priority) }}
@@ -190,6 +192,7 @@
 
 {{ commentary(slugify(params.topic.heading)) }}
 
+<div id="topic-{{ prefix }}">
 <panel type="seamless" no-close {{ panel_decorations }} expandable="{{ panel_expandable }}" {{ "" if params.topic.collapsed else "expanded" }} >
 <span slot="header" class="card-title"><markdown>## %%[{{ prefix | trim }}]%% **{{ params.topic.heading }}** <small><small>{{ show_stars(priority) }}</small></small></markdown> </span>
 {{ panopto(params.topic.panopto, questions=params.topic.questions) if params.topic.panopto  and (params.week_num | int) <= (current_week | int) + 13 }}
@@ -205,6 +208,7 @@
 {% endfor %}
 </div>
 </panel>
+</div>
 {{ followup(slugify(params.topic.heading)) }}
 {% endif %} {# if params.is_toc #}
 {% endmacro %}
