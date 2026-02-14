@@ -38,11 +38,14 @@ As most of the work is graded individually, it is OK to do less or more than equ
 
 <div id="policy-validAbsences">
 
-* **An occasional absence or two will not affect your marks**, as the marking scheme already has built-in buffers to absorb such occasional absences/lapses. If you miss a {{ lecture_name_short }}/tutorial/task for a valid reason (e.g., MC, LOA, official university event, officially representing NUS in a competition), just do your best to catch up.{texts="['a)', 'b)', 'c)']"}
+* **An occasional absence or two will not affect your marks**, as the marking scheme already has built-in buffers to absorb such occasional absences/lapses. If you miss a {{ lecture_name_short }}/tutorial/task for a valid reason (e.g., MC, LOA, official university event, officially representing NUS in a competition), just do your best to catch up.{{ numbers_abcd }}
 * **Let us know only if you failed to earn full marks for participation due to such a reason** (or if you feel you are at risk of not earning full marks), in which case we will consider giving an alternative avenue to earn marks missed due to the absences.<br>
  Detail of participation marks calculation is [here]({{ baseUrl }}/admin/participation.html).
 * **Normally, there is no need to inform us** (e.g., the tutor) of such absences or the reason, although you are welcome to.<br>
-  **No need to send us your MC** (it is best not to share your health information with others, unless necessary), but keep a copy  of it safely, in case we ask for it later, in relation to (b) given above.
+  **No need to send us your MC** (it is best not to share your health information with others, unless necessary), but keep a copy  of it safely, in case we ask for it later, in relation to (b) given above.{% if cs2103 %}
+* **If you are unable to attend the tutorial in the scheduled time slot due to a valid reason** in a specific week, you may request permission to attend another slot by writing to `{{ course_email }}` (do not send such requests to the tutor, as tutors do not handle admin matters).
+* **If you are covered by an MC during a F2F tutorial but you are well enough to attend it via Zoom**, you may request to attend the tutorial via Zoom only, by writing to `{{ course_email }}` -- in such cases, Zoom-only attendance can be counted for participation (in contrast, Zoom-only attendance of F2F tutorials is not counted for participation under normal circumstances).
+ {% endif %}
 </div>
 
 <div id="policy-responseTime">
