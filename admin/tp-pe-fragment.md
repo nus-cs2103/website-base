@@ -266,6 +266,10 @@ You will receive bonus marks if a high percentage (e.g., some bonus if >50%, a s
    * {{ faq }} What if I closed a bug that I intended to keep? You can reopen it.
    * {{ faq }} What if I keep more than {{ tp_pe_bug_count }} bugs open? In that case, we take the {{ tp_pe_bug_count }} bugs with the highest severity. When choosing between two bugs with same severity, we take the bug that was created earlier (i.e., the one with a lower issue number).
    * {{ faq }} Do the 'excess' bugs (i.e., the ones not sent to the dev team) still affect our marks? No. They are ignored entirely when grading.
+1. **Justify severity of !!selected!! bugs**. For each selected bug, update the bug description (#r#do not add a new comment##) explaining why you chose that severity.
+   * {{ icon_important_big_red }} Reminder: Aim to choose the correct severity. If in doubt, go lower.<br>
+     Reason: If the dev team objects to the severity you chose, and the teaching team agrees with the tester, your accuracy marks will be affected.
+   * {{ faq }} What if I don't justify the severity of a selected bug? Not giving a justification will work against you if the dev team objects to your severity and the teaching team has to make the final decision.
 
 ------------------------------------------------------------------------------------ {.thick-2 .border-success}
 
@@ -333,10 +337,14 @@ Note that `response.NotInScope` bugs earn a small amount of credit for the teste
 ****How to respond to bug reports:****{ .text-info }
 
 * **Stray bugs:**{ .text-info } **If a bug seems to be for a different product** (i.e., wrongly assigned to your team), let us know ASAP.
-* **Assignee(s):**{ .text-info } **Assign to the issue team member(s) responsible for the bug.** If no one is assigned, we consider the whole team as responsible for it.
+* **Assignee(s):**{ .text-info } **Assign to the issue team member(s) responsible for the bug.**
+  * If no one is assigned, the penalty will be divided equally among team members.
+  * {{ icon_important_big_red }} ==No more than 50% of the bugs are allowed to remain 'unassigned'== (_unassigned_ here means there is no assignee or is allocated to _all_ members of the team). Any excess unassigned bugs will incur a 20% 'tax' on the total penalty, divided among all members.<br>
+     Reasons:
+     * Pedagogical: Not being able to decide assignees for a bug shows a lack of clear division of responsibilities in the team.
+     * Administrative: Leaving too many bugs unassigned increases the burden on diligent team members who will then have to spend time responding to _all_ those bugs (in contrast, if all bugs are assigned, each member has to respond to 5-6 bugs on average).
   * There is no need to actually fix the bug though. It's simply an indication/acceptance of responsibility. The penalty for the bug (if any) will be divided among the assignees %%e.g., if the penalty is -0.4 and there are 2 assignees, each member will be penalized -0.2%%.
   * If it is not easy to decide the assignee(s), we recommend (but not enforce) that the feature owner should be assigned bugs related to the feature, Reason: The feature owner should have defended the feature against bugs using automated tests and defensive coding techniques.
-  * It is also fine to not assign a bug to anyone, in which case the penalty will be divided equally among team members.
   * You may need to type the GitHub username of a member for it to appear in the assignee list.<br>
    <img width="347" src="../images/peAssignMemberDropdown.png" />
 * **Acceptance status:**{ .text-info } **Apply exactly one `response.*` label** (if missing, or if there are multiple such labels, we assign: `response.Accepted`)
@@ -405,8 +413,18 @@ Only the `response.Accepted` bugs are counted against the dev team. While `respo
    *  {{ icon_important_big_red }} Keep it short and to the point. #r#No more than 500 words.##
    *  {{ icon_important_big_red }} Do not cross-reference (e.g., `see #21`) other issues in your comment (such references will not work after the comment is transferred back to the tester's issue tracker).
    *  {{ icon_important_big_red }} If you don't provide a justification and the tester disagrees with your response to the bug, the teaching team will have no choice but to rule in favor of the tester.
- * **You may use issue comments to discuss the bug with team members.**<br>
-     If there are multiple comments in the issue thread, we will take the latest comment that starts with `# T` as the team's response. ~~If there aren't any comments starting with `# T`, we will take the latest comment as the team's response~~.
+* **If the content of the bug report is unprofessional** (e.g., written in an impolite or condescending way) you may complain to the teaching team using a !!separate!! comment starting with the line `# U` e.g.,
+  ```markdown
+  # U
+
+  I think this bug report is unprofessional because ...
+  ```
+  {{ icon_important_big_red }} Use this option sparingly. Complaining about trivial things is unprofessional too. If the teaching team deems either party is acting unprofessionally, a penalty will be applied.<br>
+  Don't use this route to flag out weak/incorrect/incomplete bug reports -- reason: such bug reports are more likely attributable to incompetence than unprofessional behaviour.
+
+* **You may use issue comments to discuss the bug with team members.**<br>
+     If there are multiple comments in the issue thread, we will take the latest comment that starts with `# T` as the team's response.<br>
+     #r#If there aren't any comments starting with `# T`, we assume the team has not submitted a response##, even if there are other comments in the issue thread.
 
 {{ show_faq("tpJustifyBugsAcceptedAsIs", is_compact=0) }}
 
@@ -593,18 +611,19 @@ However, ==if the dev team's argument is not too far from 'reasonable', it may b
 
 {{ embed_topic("tp-grading-bugs-fragment.md#bugCalculationNotes", "Admin " + icon_embedding + " tP Grading → Grading bugs found in the PE", "pe-gradingBugsFoundInPe", indent=1) }}
 
-* If the dev team disagreed with an aspect (i.e., <tooltip content="`type.*` is not considered for the accuracy bonus">~~type~~</tooltip>/severity/<tooltip content="i.e., accept vs not accept">validity</tooltip>) and you now agree with the dev team's position, it will not hurt your accuracy rating. Here are some examples (for the `severity.*`):
+* If the dev team disagreed with the <tooltip content="i.e., accept vs not accept">validity</tooltip> of the bug and you now agree with the dev team's position, it will not hurt your accuracy rating. This amnesty #r#does not apply to `severity.*` downgrades##.<br>
+Here are the possibilities:
 
 {% set up %}<span class="text-success">:fas-arrow-up:</span>{% endset %}
 {% set down %}<span class="text-danger">:fas-arrow-down:</span>{% endset %}
 <div class="indented-level1">
 
-Tester choice | Dev choice | Tester reaction | Teacher decision | Dev accuracy  | Tester accuracy
-----------|-----------------|---------------|---------------------|--------------------|--------------------
-`High`    | agreed          |               |                     | {{ up }}           | {{ up }}
-`High`    | `Low`           | agreed        |                     | {{ up }}           | no effect
-`High`    | `Low`           | disagreed     | `High`              | {{ down }}         | {{ up }}
-`High`    | `Low`           | disagreed     | `Low `              | {{ up }}           | {{ down }}
+ Dev choice | Tester reaction | Teacher decision | Dev accuracy  | Tester accuracy
+------------|---------------|---------------------|--------------------|--------------------
+Accepted    |               |                     | {{ up }}           | {{ up }}
+Not accepted| agreed        |                     | {{ up }}           | no effect
+Not accepted| disagreed     | Accepted            | {{ down }}         | {{ up }}
+Not accepted| disagreed     | Not accepted        | {{ up }}           | {{ down }}
 
 {{ icon_info }} Dev accuracy is calculated individually (not per team), based on assignees.
 </div>

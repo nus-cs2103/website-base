@@ -101,7 +101,7 @@ These two often happens together, but it is possible we see an arrowhead shape t
 
 
 
-#### {{ thumb(3) }} Prioritize tP user stories
+#### {{ thumb(3) }} <span class="badge bg-secondary">time permitting</span> Prioritize tP user stories
 
 1. If you haven't done so already, brainstorm for user stories.
 
@@ -116,7 +116,7 @@ These two often happens together, but it is possible we see an arrowhead shape t
 
 #### {{ thumb(4) }} <span class="badge bg-secondary">time permitting</span> Create a _feature list_ for the MVP version
 
-* If there is time left, do the following tP task that is scheduled for the following week.
+* Next, do the following tP task that is scheduled for the following week.
 
 <div class="indented-level1">
 

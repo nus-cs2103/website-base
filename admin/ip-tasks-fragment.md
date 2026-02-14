@@ -179,7 +179,8 @@ But ==as there are no tutorials this week, you have until the next lecture== to 
 <include src="ip-tasks-fragment.md#tag-push" />
 <include src="ip-tasks-fragment.md#take-note-of-plagiarism" />
 </box>
-<box type="tip" light>
+
+<box type="tip" id="ip-ai-box" light>
 
 ##### iP feels like 'same same' ...?{.text-success}
 
@@ -653,7 +654,7 @@ Read through this week's topics before starting the project.<br>
 </div>
 
 1. **Fork** [{{ url_course_org }}/{{ ip_repo_name }}]({{ url_course_org }}/{{ ip_repo_name }}), while noting the points below:<br>
-   <box type="important" seamless><md>==**Keep the fork name as `{{ ip_repo_name }}`**== or else our grading scripts will not be able to detect it. You can change the fork name to something else after the semester (and the grading) is over e.g., after receiving your grade for the course.<br>==**Keep the default branch name as `master`**==. While Git-Mastery uses `main` as the default branch name, iP and tP uses `master`. As both these are used widely in the industry, it is good for you to be comfortable using both.</md></box>
+   <box type="important" seamless><md>==**Keep the fork name as `{{ ip_repo_name }}`**== or else our grading scripts will not be able to detect it. You can change the fork name to something else after the semester (and the grading) is over e.g., after receiving your grade for the course.<br>==**Keep the default branch name as `master`**==. While Git-Mastery uses `main` as the default branch name, iP and tP uses `master`. As both these are used widely in the industry, it is good for you to be comfortable using both.<br>==**Keep the source location as `[project root]/src`**==. Our grading scripts look for code in this folder.</md></box>
    <box type="tip" seamless><md>**Untick the `[ ] Copy the master branch only` option** so that you get a copy of the full repo.</md></box>
 1. ==**Enable the issue tracker** of your fork== (Go to `Settings` of your fork, scroll to the `Features` section, and tick the `Issues` checkbox). %%Reason: at times we post feedback on your issue tracker.%%<br>
    <box type="tip" seamless><md> If the issue tracker is enabled, you should be able to visit the following URL `https://github.com/{your_user_name}/{{ ip_repo_name }}/issues/new`<br> e.g., `https://github.com/johnDoe/{{ ip_repo_name }}/issues/new`</md></box>
@@ -887,7 +888,7 @@ This activity is worth `2x2=4` participation points.
 
 * Generate a new JAR file using Gradle %%(Gradle can bundle the JavaFX third-party library into the jar file. If you do not bundle JavaFX with the JAR file, the application will not work in computers that don't have JavaFX installed)%%. Refer to the [_Gradle tutorial_ @SE-EDU/guides](https://se-education.org/guides/tutorials/gradle.html#creating-jar-files) to find how.<br>
 ==If the `.jar`  file is smaller than 5MB==, most likely JavaFX libraries are not inside it.
-* There is no need to create a release in GitHub with this jar file (although you are welcome to).
+* There is no need to create a [_release_ in GitHub](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository) with this JAR file (although you are welcome to).
 </div>
 {#====================================================================================================================#}
 <span id="heading_write_full_commit_messages">Write some full commit messages</span>
@@ -960,7 +961,7 @@ If you added the `Ui.png` correctly and set up the product website correctly, ==
 <div id="desc_submit_the_final_version">
 
 1. **Double-check to confirm your iP meets the criteria for full marks**, as given in the panel below.<br>
-   For example, ensure your {{ as_tag("Git Standard", tag_style="success") }} tag is green in the [iP progress dashboard]({{ url_ip_progress_dashboard }}), as it relates to a condition you need to satisfy to receive full marks.
+   For example, ensure your {{ as_tag("Git Standard", tag_style="success") }} tag is green in the [iP progress dashboard]({{ url_ip_progress_dashboard }}), as it is a necessary condition for you to receive full marks.
   {{ embed_topic(baseUrl+"/admin/ip-grading.md#main", "Admin " + icon_embedding + " **iP - Grading**", "1", indent="1") }}
 2. **Create a new jar file**
    * Create the JAR file {% if cs2103%}[using Gradle](https://se-education.org/guides/tutorials/gradle.html) -- this needs to be a [fat JAR file](https://se-education.org/guides/tutorials/jar.html#fat-jar-files:~:text=given%20here.-,Fat%20JAR%20files,-A%20normal%20JAR) (hence, it's best created [using Gradle's shadow plugin](https://se-education.org/guides/tutorials/jar.html#:~:text=Creating-,JAR%20files,With%20Gradle,-With%20IntelliJ%20IDEA)).{% else %}in one of these ways:
@@ -972,7 +973,7 @@ If you added the `Ui.png` correctly and set up the product website correctly, ==
       1. Run the `./gradlew clean shadowJar` command to create the JAR file.
 3. **Do the following [_smoke tests_](https://en.wikipedia.org/wiki/Smoke_testing_(software))** to ensure the jar file works %%(reason: a similar flow will be used when grading your iP)%%.<br>
    1. Copy the jar file to an empty folder and test it from there. This should surface issues with hard-coded file paths.<br>
-      When running the jar file for smoke testing, instead of double-clicking the jar file, do the following: open a terminal -> navigate to the jar location -> run the `java -jar "JAR_FILE_NAME"` command.
+      When running the jar file for smoke testing, instead of double-clicking the jar file, do the following: open a terminal → navigate to the jar location → run the `java -jar "JAR_FILE_NAME"` command.
    1. Pass the jar file to team members and ask them to do a test drive. Assuming some of your team members' OS differ from yours, this should verify if the app is cross-platform.<br>
       {{ icon_tip }} If you don't have ready access to a specific OS, you can ask others' help to smoke-test it by [posting a smoke-testing request in the forum]({{ url_forum }}/new?template=smoke.md) -- some of them will even appreciate the opportunity to help a classmate.<br>
      {{ icon_info }} Note that concepts you encounter while doing course project tasks (e.g., _smoke testing_) are in the [scope of the final exam](exams.html#:~:text=you%20are%20expected%20to%20be%20aware%20of%20SE%2Drelated%20things%20(i.e.%2C%20tools%2C%20techniques%2C%20concepts)%20encountered%20while%20dong%20the%20iP%20and%20the%20tP).

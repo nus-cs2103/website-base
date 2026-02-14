@@ -947,7 +947,9 @@ If you keep them in the DG, update them to match the current version of the prod
 <div id="faq-tpCountingSimilarPlannedEnhancements-Q">When listing 'Planned Enhancements' in the DG, if enhancement X and Y are very similar, can we count them as one?</div>
 <div id="faq-tpCountingSimilarPlannedEnhancements-A">
 
-Only if adding one automatically adds the other. If one can be added without the other, they are counted as two enhancements.
+Only if adding one automatically adds the other (if it is indeed the case but it may not be obvious to an outsider, you need to explain how it is so). If one can be added without the other, they are counted as two enhancements.
+
+Note that what matters is not if an enhancement *can* be done independently of another, but if it reasonably *should* be. %%For example, detecting extra spaces at the start of a command _can_ be implemented for just one command but the reasonable thing to do is to implement it for all commands at once in a central location. In that case, they are counted as one enhancement.%%
 </div>
 <!-- =============================================================== -->
 

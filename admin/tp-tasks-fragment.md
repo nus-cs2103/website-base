@@ -196,7 +196,7 @@ In addition, you can mitigate the impact of such bugs and thus lower its severit
 * **Instead, our approach is  to ==assume the current iteration is the last iteration.==**<br>
   Then, we aim to deliver the best possible product at the current iteration, based on available time.<br>
   We execute the iteration accordingly, and even tweak the plan further along the way, as needed.<br>
-  After the iteration is over, we plan the next iteration as if _it's_ the last iteration. But that time, we can factor in the experience from the previous iteration to do a better job of planning.<br>
+  After the iteration is over, we plan the next iteration as if _it's_ the last iteration. By that time, we can factor in the experience from the previous iteration to do a better job of planning.<br>
  **How is that better?**
   * **More practical**: Shorter-term plans have a better chance of being accurate and doable.{{ bullet_tick_green }}
   * **Planning improves over time**: You get multiple 'clean shots' at project planning. Each try can learn from the previous tries. Hence, more learning.
@@ -693,10 +693,14 @@ As we are still at the early stages of identifying a problem to solve, do not th
     1. **Product name** (plain text only) %%e.g., ClientContactsPro%%<br>
        {{ icon_important_big_red }} Recommended to use **English characters only**. Using special characters, accented characters (e.g., è) etc. might feel 'cute' now, but you will regret it later when you need to involve the product name in submission file names etc.
     1. **Target user** profile (plain text only) %%e.g., freelance event photographers%%<br>
-       This is a general description of the target user, <span class="text-danger">not the 'persona' you defined</span> (the latter serves as a concrete representation of the target user, for your internal use only).
-    1. **Value proposition** i.e., what problem does the product solve? (plain text paragraph, <span class="text-danger">no more than 50 words</span>) %%e.g., provide fast access to client contact details, optimized for users who prefer a CLI%%<br>
-       This is ==not a list of features== -- you should not think about exact features yet.
-    1. **Link to the project notes document**: This should be an online document/page (not a folder) -- e.g., a GoogleDoc (not a Google Drive location) -- that is publicly accessible. If your project notes are in multiple locations/files, this one document should contain the link to the other documents with guidance on which link is for what.
+       This is a general description of the target user, #r#not the 'persona' you defined## (the latter serves as a concrete representation of the target user, for your internal use only).<br>
+       No need to mention 'who prefer a CLI' here, as that is given.
+    1. **Value proposition** i.e., what problem does the product solve? (plain text paragraph, #r#no more than 50 words##) %%e.g., provide fast access to client contact details, optimized for users who prefer a CLI%%<br>
+       This is ==not a list of features== -- you should not think about exact features yet.<br>
+       No need to explain why this app is better than other similar apps -- just explain on what it does for the target user.
+    1. **Link to the project notes document**: <br>
+       This should be an online document/page (#r#not a folder##) -- e.g., a GoogleDoc (not a Google Drive location) -- that is publicly accessible. If your project notes are in multiple locations/files, this one document should contain the link to the other documents with guidance on which link is for what.<br>
+       This should be a link with 'view' permissions only, #r#not an 'edit' link##. %%(reason: if the latter, anybody will be able to edit your project notes after we publish the link in the course website)%%
   * You'll receive an email from TEAMMATES with the submission link. ==Only one member needs to submit== on behalf of the team. All members can view/update the submission.{% if cs2103 %}
   * {{ icon_info }} Submission link will be sent to you by {{ date_w4_start | date(format_normal, 3) }} %%(reason: we need a few days to set up the submission system _after_ teams have been finalized)%%.<br>{% endif %}{{ icon_info }} If you can't find the submission link, you can go to [TEAMMATES link recovery page](https://teammatesv4.appspot.com/web/front/help/session-links-recovery) and enter your NUSNET email account `e_______@u.nus.edu` to get TEAMMATES to resend the link.
 
@@ -958,7 +962,7 @@ For example, it is fine to restrict the person name to a certain length and a ch
 
 {{ embed_topic("tp-grading.md#criteria-productDesign", "Admin " + icon_embedding + " **tP: Grading → Product Design**", "3", indent="1") }}
 
-{% if cs2103 %}{% call show_caution("Giving internal deatails in the feature specification.", label="Common Error") %}
+{% if cs2103 %}{% call show_caution("Giving internal details in the feature specification.", label="Common Error") %}
 This feature specification should specify external behaviour only. We have not yet come to the stage of deciding internal implementation details.
 {% endcall %}{% endif %}
 <p/>
@@ -1826,8 +1830,13 @@ This week, we would like you to smoke-test the CATcher app **to ensure it can wo
   * {% if cs2103 %}Remove mentions of any features not implemented yet, if any. As you are not allowed to change features during the iteration {{ version_final }}, there is no point keeping those in the UG.<br>
   Alternatively, clearly{% else %}Clearly{% endif %} indicate which features are not implemented yet %%e.g. tag those features with a `Coming soon`%%.
   * For those features already implemented, ensure their descriptions match the exact behavior of the product %%e.g. replace mockups with actual screenshots%%
+  * {{ icon_tip }} Some things not addressed in the AB3 UG that you might want to consider addressing in your UG (if applicable):
+    * Double-clicking the jar might not work on some systems.
+    * The app will not work properly if it is placed in a write-protected folder.
+    * Mac users using the fullscreen mode for secondary dialogs (e.g., the help dialog) might encounter unexpected behaviours.
 
 {{ embed_topic("tp-deliverables.md#tp-deliverables-ug", "Admin " + icon_embedding + " tP → Deliverables → **User Guide**", "3", indent="1") }}
+{{ embed_topic("tp-grading-bugs-fragment.md#ugBugs", "Admin " + icon_embedding + " tP Grading → **Possible UG Bugs**", "3", indent="1") }}
 
 
 * **Save the UG as a PDF file** ==using [this technique](https://se-education.org/guides/tutorials/savingPdf.html) exactly==. You'll need this file later when you create a product release. There is no specific file name convention for this version of the UG, but do use a reasonable file name: e.g., `Contacts-Pro-User-Guide.pdf`.

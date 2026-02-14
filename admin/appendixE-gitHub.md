@@ -187,6 +187,7 @@ We recommend you configure the issue tracker of the tP team repo as follows:
 * `severity.Medium` : A flaw that causes occasional inconvenience to some users, but they can continue to use the product.
 * `severity.High` : A flaw that affects most users and causes major problems for users. i.e., only problems that make the product ==almost unusable for most users== should have this label.
 
+{{ icon_info }} **You may consider the impact on product's credibility**, in addition to the impact on the user, when deciding the severity level %%e.g., obvious and visible bugs hurt the product's credibility more%%.<br>
 {{ icon_info }} **When determining severity documentation bugs**, replace _user_ with _reader_ %%e.g., when deciding severity of DG bugs, consider the impact of the bug on developers reading the DG%%.
 
 </box>
