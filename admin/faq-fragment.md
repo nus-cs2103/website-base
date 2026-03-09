@@ -444,7 +444,7 @@ Zoom is still needed for the following reasons:
 * Screen-sharing the slides. {texts="['(a)', '(b)', '(c)']"}
 * Collecting answers via PM or polls.<br>
   **Why insist on answering via PM?** This gives everyone a chance to think about the question and come up with their own answer, without being influenced by others' answers, and without being embarrassed for giving the wrong answer. Research has shown that this _attempt_ at answering increases retention of the correct answer received subsequently, irrespective of the correctness of the answer the student initially came up with.<br>
-  As a bonus, this tutorial structure will also give you a good training for the final exam.
+  As a bonus, this tutorial structure serves as a good training for the final exam.
 * Recording the tutorial for your future reference.<br>
   These recordings also help in improving tutorial quality (e.g., profs can review recordings of tutors and give feedback on how to improve).
 </div>

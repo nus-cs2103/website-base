@@ -273,7 +273,7 @@
       {location: ["projectPlanning", "ganttCharts"]},
       {location: ["projectPlanning", "pertCharts"]},
       {location: ["teamwork", "teamStructures"]},
-    {heading: "Project Mgt: Workflows", panopto: "050c0949-853c-4b7d-b1fb-ac3700d88202", questions:"y"},
+    {heading: "Project Mgt: Workflows"},
       {location: ["gitAndGithub", "drcsVsCrcs"]},
       {location: ["gitAndGithub", "forkingWorkflow"]},
 {week: "8"},

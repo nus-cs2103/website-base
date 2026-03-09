@@ -1000,12 +1000,12 @@ This feature specification should specify external behaviour only. We have not y
 
 </div>
 {#====================================================================================================================#}
-<span id="heading_update_website_aboutus_readme">{{ icon_team }} Update the project website</span>
+<span id="heading_update_website_aboutus_readme">{{ icon_team }} Update the README.md and site-wide settings</span>
 <div id="desc_update_website_aboutus_readme">
 
 <div class="indented-level1">
 
-Now that you have learned the tP workflow, you can proceed to updating a few more tP documents, as per tasks ****A**** and ****B**** below, following the same workflow (optional to do parallel PRs though).
+Now that you have learned the tP workflow, you can proceed to updating a few more documents in the tP repo, as per tasks ****A**** and ****B**** below, following the same workflow (optional to do parallel PRs though).
 
 <box type="info" light>
 
@@ -1038,7 +1038,7 @@ Now that you have learned the tP workflow, you can proceed to updating a few mor
 </div>
 
 
-****A: Update README page to match your project:****
+****A: Update the `README.md` to match your project:****
 
 * Add a UI mockup of your intended final product.
     Note that the ==image of the UI should be `docs/images/Ui.png`== so that it can be downloaded by our scripts. Limit the file to contain one screenshot/mockup only and ensure the new image is roughly the same `height x width` proportions as the original one. %%Reason: when we compile these images from all teams into one page ([example]({{ url_team_list }})), yours should not look out of place.%%<br>
@@ -1047,7 +1047,7 @@ Now that you have learned the tP workflow, you can proceed to updating a few mor
 * Update the link of the GitHub Actions _build status badge_ (<img src="https://github.com/se-edu/addressbook-level3/workflows/Java%20CI/badge.svg" alt="Build Status">) so that it reflects the build status of your team repo.
 * Acknowledge the original source of the code e.g.,<br>
     `This project is based on the AddressBook-Level3 project created by the [SE-EDU initiative](https://se-education.org).`
-* Update all remaining contents of the page to match your own project.
+* Update all remaining contents of the page to match your own project (i.e., it should read like a README.md of an actual project, not as a sample project given to students).
 
 <box type="tip" seamless>
 
@@ -1201,7 +1201,12 @@ Furthermore, these sections will be graded at the final project evaluation, and 
     `docs/images/github_username_in_lower_case.png`<br>
     Note the need for ==lower case== (<popover content="GitHub usernames are not case sensitive, but URLs in GitHub-pages are -- to avoid any mismatches, we have fixed the file name here to be lower case">%%why lowercase?%%</popover>) %%e.g. `JohnDoe123` -> `docs/images/johndoe123.png` not `docs/images/JohnDoe123.png`%%.<br>
     If your photo is in jpg format, ==name the file as `.png`== anyway.
+  * At the same time, you can update the following links given below the photo:
+    * `[homepage]`: Link it to your home page, if you have one. Otherwise, you can remove it.
+    * `[github]`: Link it to your GitHub profile page.
+    * `[portfolio]`: This link is to be used for [an optional deliverable called the _Project Portfolio Page_](tp-deliverables.html?cv-highlight=tp-deliverables-ppp) that will come later. You can remove it for now, and put it back if you decide to opt-in for that deliverable at the end of the tP.
 </box>
+
 </div>
 
 <modal large header="Admin {{ icon_embedding }} Choosing a profile photo" id="modal:mid-v12-photo">

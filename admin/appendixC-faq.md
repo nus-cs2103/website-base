@@ -57,6 +57,7 @@
 {{ show_expanded_faq("tutorialWhatIfMissedDueToOtherReason") }}
 {{ show_expanded_faq("tutorialLength") }}
 {{ show_expanded_faq("tutorialWhyF2f") }}
+{{ show_expanded_faq("tutorialWhyZoomInF2f") }}
 {{ show_expanded_faq("tutorialCannotReachInTime") }}
 {{ show_expanded_faq("warmUpTaskRushed") }}
 

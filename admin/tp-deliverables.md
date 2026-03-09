@@ -16,40 +16,54 @@ Here is a list of main deliverables of the project; their details are given in t
 * [Product Demo](#deliverable-demo)
 
 
-### <div class="text-white bg-info p-1">Deliverable: Executable</div>
-<span id="tp-deliverables-executable">
+<div id="tp-deliverables-executable">
+<h3 class="d-block text-white bg-info p-1 ps-2 mt-4 mb-3">Deliverable: Executable</h3>
+
+
 <include src="tp-deliverables-executable-fragment.md" />
-</span>
+</div>
 
-### <div class="text-white bg-info p-1">Deliverable: Source code</div>
-<span id="tp-deliverables-sourcecode">
+<div id="tp-deliverables-sourcecode">
+
+<h3 class="d-block text-white bg-info p-1 ps-2 mt-4 mb-3">Deliverable: Source code</h3>
+
 <include src="tp-deliverables-sourcecode-fragment.md" />
-</span>
+</div>
 
-### <div class="text-white bg-info p-1">Deliverable: User Guide (UG)</div>
-<span id="tp-deliverables-ug">
+<div id="tp-deliverables-ug">
+
+<h3 class="d-block text-white bg-info p-1 ps-2 mt-4 mb-3">Deliverable: User Guide (UG)</h3>
+
 <include src="tp-deliverables-ug-fragment.md" />
-</span>
+</div>
 
-### <div class="text-white bg-info p-1">Deliverable: Developer Guide (DG)</div>
-<span id="tp-deliverables-dg">
+<div id="tp-deliverables-dg">
+
+<h3 class="d-block text-white bg-info p-1 ps-2 mt-4 mb-3">Deliverable: Developer Guide (DG)</h3>
+
 <include src="tp-deliverables-dg-fragment.md" />
-</span>
+</div>
 
-### <div class="text-white bg-info p-1">Deliverable: Product Website</div>
-<span id="tp-deliverables-website">
+<div id="tp-deliverables-website">
+
+<h3 class="d-block text-white bg-info p-1 ps-2 mt-4 mb-3">Deliverable: Product Website</h3>
+
 <include src="tp-deliverables-website-fragment.md" />
-</span>
+</div>
 
-### <div class="text-white bg-info p-1">Deliverable: Project Portfolio Page (PPP)</div>
-<span id="tp-deliverables-ppp">
+<div id="tp-deliverables-ppp">
+
+<h3 class="d-block text-white bg-info p-1 ps-2 mt-4 mb-3">Deliverable: Project Portfolio Page (PPP)</h3>
+
 <include src="tp-deliverables-ppp-fragment.md" />
-</span>
+</div>
 
-### <div class="text-white bg-info p-1">Deliverable: Demo</div>
-<span id="tp-deliverables-demo">
+<div id="tp-deliverables-demo">
+
+<h3 class="d-block text-white bg-info p-1 ps-2 mt-4 mb-3">Deliverable: Demo</h3>
+
 <include src="tp-deliverables-demo-fragment.md" />
-</span>
+</div>
 
 </div>
 

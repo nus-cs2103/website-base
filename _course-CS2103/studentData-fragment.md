@@ -499,7 +499,7 @@
 
 
 {% set org_replacements = {
-
+ 'AY2526S2-CS2103-F08-1': 'AY2526S2-CS2103-F08-1a'
 }%}
 
 {% set teams = {
@@ -636,7 +636,7 @@
  'CS2103T-T10-4': 'SoContact',
  'CS2103T-T12-1': 'RosterBolt',
  'CS2103T-T12-2': 'ClientEase',
- 'CS2103T-T12-3': 'ClubHub',
+ 'CS2103T-T12-3': 'InternLink',
  'CS2103T-T12-4': 'Food Bridge',
  'CS2103T-T13-1': 'HRmanager',
  'CS2103T-T13-2': 'CLI-Tacts',
@@ -727,7 +727,7 @@
  'CS2103T-T10-4': 'NUS SoC students (including TAs)',
  'CS2103T-T12-1': 'This product is for volunteer managers who want a fast contact manager for volunteers',
  'CS2103T-T12-2': 'Tech-savvy home-based online business owners who manage a small to medium customer base, perform frequent daily updates to customer contact information, and prefer fast, command-line–style text input over GUI-driven interactions for efficiency.',
- 'CS2103T-T12-3': 'This product is for users who prefer CLI over GUI, especially CCA/interest group (IG) heads who need to keep track of a lot of people including their own members and captains of other CCA/IGs.',
+ 'CS2103T-T12-3': 'students looking for internships (and early career opportunities)',
  'CS2103T-T12-4': 'This product is for delivery workers of a restaurant in Central Singapore.',
  'CS2103T-T13-1': 'Human Resource Manager',
  'CS2103T-T13-2': 'University Student Teaching Assistants in CS2040s who manage multiple tutorial groups and prefer CLI efficiency. They need to rapidly track attendance, and categorize students by lab sessions, finding traditional GUI-based grading portals too slow for real-time classroom use.',
@@ -769,7 +769,7 @@
  'CS2103T-W13-2': 'This product is for tech-savvy undergraduates in Singapore, who prefer CLI over GUI, applying to multiple internships and scholarships concurrently and needs to keep track of them.',
  'CS2103T-W13-3': 'This product is for the secretary of NUSSU',
  'CS2103T-W13-4': 'Teaching assistants or tutors at university managing one or more tutorial groups and recurring weekly assessments.',
- 'CS2103T-W14-1': 'Independent pet shop owners / operators and small-scale animal care operators who manage multiple animals daily, and prefer fast, keyboard-driven workflows over mouse-based systems.',
+ 'CS2103T-W14-1': 'Independent pet day care and/or boarding service managers who work with multiple pet owners and manage multiple pets daily, and prefer fast, keyboard-driven workflows over mouse-based systems.',
  'CS2103T-W14-2': 'Tingkat delivery management staff, specifically those that handle the planning and administration of catering food to homes.',
  'CS2103T-W14-3': 'Backpackers and travellers who want to organise their destinations, sightseeing attractions and food places. Targeting tech-savvy independent travellers who prefer high-efficiency, keyboard-driven tools for itinerary management.',
  'CS2103T-W14-4': 'Running coaches and track instructors who manage multiple athletes, often in school teams, clubs, academies, or private coaching, similar to how people use Strava to log and review training progress. They care about consistent tracking, quick comparisons over time, and simple ways to spot improvement.'
@@ -818,7 +818,7 @@
  'CS2103T-T10-4': 'This product aims to streamline communication between students (and TAs) by organizing contacts into tutorial groups, shared teams, and tags. It supports custom contact categories (e.g. Telegram handles), and more searching functionality (e.g. by groups). It also makes contacts storing more flexible by only making names mandatory.',
  'CS2103T-T12-1': 'The contact app will be fast and allows for bulk operations such as deleting or modifying multiple contacts at once',
  'CS2103T-T12-2': 'Enables home-based business owners to efficiently manage repeat customer contact information through fast, keyboard-driven commands, minimizing administrative overhead and keeping customer records organized and up to date without the complexity or overhead of full-scale business management systems.',
- 'CS2103T-T12-3': "Problem: CCA/IG heads might have trouble remembering people's roles (e.g. member, other captains) and who to contact for various matters (e.g. financing). Solution: Our program allows multi-tagging and filtering by tags. Detailed information like phone number and email are also kept so the CCA/IG heads can contact them easily.",
+ 'CS2103T-T12-3': 'InternLink helps students manage professional relationships. Interns want to network with potential hirers companies during career fair, but they often forget the people as well as the networking context. Students also often apply in mass, and forget to track application and interaction status – they might not be able to remember which recruiters have gotten back to them and who has ghosted. Our program allows multi-tagging and easy filtering by tags. Detailed information about each person li...',
  'CS2103T-T12-4': 'Our platform streamlines logistics by tagging orders by region for efficient batch lookups, while providing visual analytics for trending items. While the app identifies customers within the same area for convenience, it does not provide specific route planning for delivery workers.',
  'CS2103T-T13-1': 'HRmanager keeps track of both potential recruits and existing employees. HRmanager provides fast access to employee details, with sorting options for further clarity (e.g. Categorise according to departments, seniority). HRmanager helps them to view job applicants details at a glance and decide whether to proceed with interviews and hiring.',
  'CS2103T-T13-2': 'Our app helps university Teaching Assistants efficiently manage and sustain academic interactions with students across their multiple tutorial and lab groups through CLI. By centralising student details, attendance records, instead of using fragmented spreadsheets, the app enables Teaching Assistants to quickly perform administrative tasks without disrupting real-time teaching.',
@@ -860,7 +860,7 @@
  'CS2103T-W13-2': 'Helps fast-typing internship/scholarship applicants capture, update, and retrieve key application details in seconds, reducing missed deadlines and mental overhead while managing many simultaneous opportunities in one lightweight offline desktop tool.',
  'CS2103T-W13-3': 'The app will manage contact details of a considerable number of leaders from various university committees. Ideally, the secretary can view who has meetings or events within specific time periods to reduce time spent searching through scattered contacts, improving coordination across student leadership bodies, amidst his busy schedule.',
  'CS2103T-W13-4': 'A single hub that reduces teaching admin overhead by keeping student group organization, grading progress, and participation records in one place, so TAs can run sessions consistently and grade faster.',
- 'CS2103T-W14-1': 'PetLog helps pet shop owners efficiently track and manage animals under their care, enabling quick retrieval of critical information and helpful visualisations through a typing-first interface during day-to-day operations.',
+ 'CS2103T-W14-1': 'PetLog helps pet day care and/or boarding service managers efficiently track contacts of pet owners that they work with and manage their pets by organizing records, enabling quick retrieval of critical information through a typing-first interface during day-to-day operations.',
  'CS2103T-W14-2': 'Provides fast and organised solution for tingkat caterers to manage their customer contacts for delivery planning, and optimised for administrative staff who prefer a CLI.',
  'CS2103T-W14-3': 'This serves as a catalogue for a user to personally list the places (by contacts and address) they are interested in, for overseas trips, for leisure or for a social visit (e.g. to their hometown). It allows for easy searching by type of destination as well as planning routes between points.',
  'CS2103T-W14-4': 'Pacebook builds on AB3’s structured contact management system to help running coaches better organise athlete information and monitor performance over time. By turning athlete records into performance trends, the platform supports informed coaching decisions, improves training effectiveness, and reduces administrative workload, allowing coaches to focus on athlete growth.'

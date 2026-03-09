@@ -233,7 +233,7 @@ This version (i.e., {{ version_penultimate }}) will undergo a limited beta testi
 </box>
 
 
-#### {{ badge("W" + (tfw + 9 if pe_schedule_ideal else 10))}} Iter.6 %%[ --{{ weekly_tp_themes.w12.name if pe_schedule_ideal else weekly_tp_themes.w13.name }}-- ]%%
+#### {{ badge("W" + (tfw + (9 if pe_schedule_ideal else 10)))}} Iter.6 %%[ --{{ weekly_tp_themes.w12.name if pe_schedule_ideal else weekly_tp_themes.w13.name }}-- ]%%
 
 <div id="v16-goals" class="indented">
 

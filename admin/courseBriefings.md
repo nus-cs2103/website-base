@@ -117,7 +117,7 @@ In these two videos, we used an ==AI-driven text-to-speech tool== to create some
 
 ****tP Briefing (Part 2b -- v1.2-v1.6, PE, Grading, Workload)****{.text-info}
 
-{{ panopto(desc="6 mins", "5e992213-329f-41ce-9bc5-b28400ebe92c", start_week="6") }}
+{{ panopto(desc="6 mins", "b7750694-17a9-42a9-b975-b1ee00ae4e9a", start_week="6") }}
 
 </div>
 </panel>

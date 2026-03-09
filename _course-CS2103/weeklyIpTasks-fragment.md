@@ -76,6 +76,7 @@ week6: [
   {id: 'submit_the_final_version', deadline: get_date(date_w6_start, 4)}
 ],
 week7: [
+  {id: 'add_ai_features_to_the_ip'},
   {id: 'get_more_out_of_the_ip'}
 ],
 week8: [

@@ -425,7 +425,6 @@ When you are doing the next step, you can run into merge conflicts. In some case
    merge master
    </mermaid>
    * Push the updated branches to your fork. The PRs will update automatically to reflect the updated branch.{ texts="['3.4)','3.5)']" }
-   * As before, tag the merge commit in the master branch and push the tag to your fork.
 1. Merge the remaining PRs using a procedure similar to the above. The diagram below shows the situation after merging the `A-CodeQuality` PR and syncing the local `branch-A-Streams` with the updated `master` branch.
    <mermaid>
    {{ "%%{init: { 'theme': 'default', 'gitGraph': {'mainBranchName': 'master'}} }%%" }}
@@ -606,7 +605,7 @@ If your fork doesn't have the `add-gradle-support` branch (i.e., you did not cop
 <div id="pre_A-BetterGui">
 <div tags="m--cs2103">
 
-* As before, we recommend (but not require) that each increment is done as a separate branch and merged to the `master` branch when ready fully done.
+* As before, we recommend (but not require) that each increment is done as a separate branch and merged to the `master` branch when fully done.
 </div>
 </div>
 {#====================================================================================================================#}
@@ -920,6 +919,12 @@ This activity is worth `2x2=4` participation points.
 <span id="heading_set_up_website">Set up a product website</span>
 <div id="desc_set_up_website">
 
+<box class="d-print-none" seamless>
+
+Your GitHub username : <cv-placeholder-input name="username" appearance="underline" layout="inline"></cv-placeholder-input><br>
+%%<small>Note: Type your GitHub username in the blank above so that we can customise sample commands to fit you.</small>%%
+</box>
+
 <div  tags="m--cs2103" id="ip-ui-png">
 
 * **Add a representative screenshot** of the product to the `docs` folder.
@@ -933,17 +938,6 @@ This activity is worth `2x2=4` participation points.
 {{ embed_topic("tp-deliverables-website-fragment.md#tips-for-product-screenshot", "Admin " + icon_embedding + " Team Project (tP) → Tips for Product Screenshots", "3", indent="2") }}
 </div>
 
-<div  tags="m--cs2103" id="ip-ui-png-test">
-
-<box type="tip" seamless>
-
-If you added the `Ui.png` correctly and set up the product website correctly, ==you should be able to **see your screenshot in the [iP Showcase](ip-showcase.html) page**== %%(a link to the iP Showcase page is also available in the top navigation menu → Links)%% and you should be able to access the image using the link `https://{your username}.github.io/{repo name}/Ui.png` (e.g., `https://johndoe.github.io/ip/Ui.png`).
-
-{{ show_troubleshooting("uiPngRed", is_compact=1) }}
-</box>
-</div>
-
-
 * **Add a brief User Guide (UG)**
 
 <div class="indented">
@@ -952,13 +946,24 @@ If you added the `Ui.png` correctly and set up the product website correctly, ==
 </div>
 <p/>
 
-
 {{ show_troubleshooting("markdownTablesNotRendering", is_compact=1) }}
+
+<div  tags="m--cs2103" id="ip-ui-png-test">
+
+<box type="tip" seamless>
+
+If you added the `Ui.png` correctly and set up the product website correctly, ==you should be able to **see your screenshot in the [iP Showcase](ip-showcase.html) page**== %%(a link to the iP Showcase page is also available in the top navigation menu → Links)%% and you should be able to access the image using the link `https://{your username}.github.io/{repo name}/Ui.png` (e.g., <a href="https://[[username: JohnDoe]].github.io/ip/Ui.png" class="cv-bind">https://[[username: JohnDoe]].github.io/ip/Ui.png</a>).
+
+{{ show_troubleshooting("uiPngRed", is_compact=1) }}
+</box>
+</div>
+
 
 </div>
 {#====================================================================================================================#}
 <span id="heading_submit_the_final_version">Submit the final version</span>
 <div id="desc_submit_the_final_version">
+
 
 1. **Double-check to confirm your iP meets the criteria for full marks**, as given in the panel below.<br>
    For example, ensure your {{ as_tag("Git Standard", tag_style="success") }} tag is green in the [iP progress dashboard]({{ url_ip_progress_dashboard }}), as it is a necessary condition for you to receive full marks.
@@ -968,13 +973,13 @@ If you added the `Ui.png` correctly and set up the product website correctly, ==
      * If you have added a GUI or using third-party libraries: [use Gradle](https://se-education.org/guides/tutorials/gradle.html).
      * Else: you can use IntelliJ.{% endif %}
    * The JAR file should be ==cross-platform and should work in a computer that has Java 17==. To avoid version compatibility issues, we strongly recommend the following approach:
-      1. Open a terminal window, and navigate to the root of your project folder.
-      1. Run the `java -version` command to confirm the terminal is using Java 17.
-      1. Run the `./gradlew clean shadowJar` command to create the JAR file.
+      * Open a terminal window, and navigate to the root of your project folder. {{ numbers_roman }}
+      * Run the `java -version` command to confirm the terminal is using Java 17.
+      * Run the `./gradlew clean shadowJar` command to create the JAR file.
 3. **Do the following [_smoke tests_](https://en.wikipedia.org/wiki/Smoke_testing_(software))** to ensure the jar file works %%(reason: a similar flow will be used when grading your iP)%%.<br>
-   1. Copy the jar file to an empty folder and test it from there. This should surface issues with hard-coded file paths.<br>
-      When running the jar file for smoke testing, instead of double-clicking the jar file, do the following: open a terminal → navigate to the jar location → run the `java -jar "JAR_FILE_NAME"` command.
-   1. Pass the jar file to team members and ask them to do a test drive. Assuming some of your team members' OS differ from yours, this should verify if the app is cross-platform.<br>
+   * Copy the jar file to an empty folder and test it from there. This should surface issues with hard-coded file paths.<br>
+      When running the jar file for smoke testing, instead of double-clicking the jar file, do the following: open a terminal → navigate to the jar location → run the `java -jar "JAR_FILE_NAME"` command. {{ numbers_roman }}
+   * Pass the jar file to team members and ask them to do a test drive. Assuming some of your team members' OS differ from yours, this should verify if the app is cross-platform.<br>
       {{ icon_tip }} If you don't have ready access to a specific OS, you can ask others' help to smoke-test it by [posting a smoke-testing request in the forum]({{ url_forum }}/new?template=smoke.md) -- some of them will even appreciate the opportunity to help a classmate.<br>
      {{ icon_info }} Note that concepts you encounter while doing course project tasks (e.g., _smoke testing_) are in the [scope of the final exam](exams.html#:~:text=you%20are%20expected%20to%20be%20aware%20of%20SE%2Drelated%20things%20(i.e.%2C%20tools%2C%20techniques%2C%20concepts)%20encountered%20while%20dong%20the%20iP%20and%20the%20tP).
 
@@ -983,8 +988,19 @@ If you added the `Ui.png` correctly and set up the product website correctly, ==
 {{ show_troubleshooting("pipelineNotFound", is_compact=1) }}
 {{ show_troubleshooting("moreRecentJavaVersion") }}
 
-4. **Create a new release on GitHub** (e.g., `v0.2`) and upload the JAR file.
-   * Recommended to refrain from uploading multiple JAR files as this can cause extra work for the evaluators.
+4. **Create a new release on GitHub (e.g., `v0.2`) and upload the JAR file.**
+
+   <box class="d-print-none" seamless>
+
+   Your GitHub username : <cv-placeholder-input name="username" appearance="underline" layout="inline"></cv-placeholder-input><br>
+%%<small>Note: Type your GitHub username in the blank above so that we can customise sample commands to fit you.</small>%%
+   </box>
+
+   * There is no need for the release to be tagged `A-Release` specifically.
+   * Ensure your release appears at <a href="https://github.com/[[username: JohnDoe]]/ip/releases" target="_blank" class="cv-bind">https://github.com/[[username: JohnDoe]]/ip/releases</a>. Use an incognito browser window when checking this URL, to ensure the release is visible to the public.
+   * The JAR file should be uploaded as an 'asset', with the `.jar` extension. Do not put it insdie a zip file.
+   * Refrain from uploading multiple JAR files into this release as this can cause extra work for the evaluators. Upload only the JAR file you want to be evaluated as your iP.
+   * If you have multiple iP releases on GitHub, we take the JAR file from the latest release, irrespective of the release name or the tag used. So, feel free to create more releases if you happen to update the code _after_ creating the initial release.
 
 <div class="indented">
 
@@ -992,7 +1008,33 @@ If you added the `Ui.png` correctly and set up the product website correctly, ==
 </div>
 <p/>
 
+<box type="info" seamless>
+
+**The JAR, User Guide, and the code released via GitHub constitute the iP final submission**; there is no separate submission on Canvas.
+
+</box>
+
+
 {{ show_faq("ipDeadlineExtensions") }}
+</div>
+{#====================================================================================================================#}
+<span id="heading_add_ai_features_to_the_ip">[Optional] Add AI features to the iP</span>
+<div id="desc_add_ai_features_to_the_ip">
+<div class="indented">
+
+**Interested to add AI features to the iP?** Example:
+
+```
+User: @ai is there a command to add priorities to tasks?
+
+App: Currently, there is no in-built command to add priorities to tasks.
+```
+
+ You can follow [SE-EDU guide _Adding AI Features to a Java App_](https://se-education.org/guides/tutorials/addingAiToJavaApp.html) to learn how to do that.
+
+Recommended: Add this feature in a separate branch, just to explore how far you can go. If you reach a version of this feature good enough for users (e.g., if the user does not have an API key for the LLM, the app can be used even without the AI feature), feel free to merge the feature and release a new JAR for the iP. In that case, remember to update the user guide on how to configure and use this feature.
+
+</div>
 </div>
 {#====================================================================================================================#}
 <span id="heading_get_more_out_of_the_ip">[Optional] Get more out of the iP</span>
@@ -1007,9 +1049,7 @@ If you added the `Ui.png` correctly and set up the product website correctly, ==
 
 {{ icon_tip }} On a somewhat related note, you can also **create similar product websites for your other projects** (projects from other courses, pet projects).
 
-
 </div>
-
 </div>
 {#====================================================================================================================#}
 <span id="heading_add_an_extension">Add an extension</span>
@@ -1061,6 +1101,8 @@ Irrespective of the exact extension you did, the tag name should be `BCD-Extensi
 
 {% macro show_xp_step(number, step, tasks_file) %}
 
+<div id="{{ step.id }}">
+
 #### {{ thumb(number) }} {{ get_xp_step_heading(step, tasks_file) | trim }}
 
 {% if step.id == 'add_increments' %}
@@ -1078,6 +1120,7 @@ Irrespective of the exact extension you did, the tag name should be `BCD-Extensi
 <include src="{{ tasks_file }}#desc_{{ step.id }}" />
 {% endif %}
 <p/>
+</div>
 {% endmacro %}
 
 {#====================================================================================================================#}
