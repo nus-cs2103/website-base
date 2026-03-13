@@ -1,0 +1,35 @@
+{
+  "config": {
+    "placeholders": [
+      { "name": "username", "settingsLabel": "Your GitHub Username", "settingsHint": "e.g., JohnDoe" },
+      { "name": "studentIdSuffix", "settingsLabel": "Last five characters of your student ID", "settingsHint": "e.g., 4567X" },
+      { "name": "tutorialId", "settingsLabel": "Your Tutorial ID", "settingsHint": "e.g., CS2103T-W15" },
+      { "name": "teamId", "settingsLabel": "Your Team ID", "settingsHint": "e.g., CS2103T-W15-1"},
+      { "name": "productName", "settingsLabel": "Name of your tP product", "settingsHint": "e.g., ContactsPro"}
+    ]
+  },
+  "storageKey": "cs21_3-website",
+  "baseUrl": "/website",
+  "settings": {
+    "enabled": true,
+    "panel": {
+      "title": "Customise your view of this course site",
+      "description": "e.g., customise instructions to match your GitHub username or team ID"
+    },
+    "callout": {
+      "show": true,
+      "enablePulse": true,
+      "message": "You can customise your view of the course site by clicking this button.",
+      "backgroundColor": "yellow",
+      "textColor": "black"
+    },
+    "icon": {
+      "position": "middle-left",
+      "color": "white",
+      "backgroundColor": "#198754",
+      "opacity": 0.5,
+      "scale": 1.1
+    }
+  },
+  "showUrl": false
+}

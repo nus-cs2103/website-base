@@ -2,13 +2,13 @@
 {% from "common/admin.njk" import get_admin_menu_items with context %}
 
 {% macro ip_dashboard_links() %}
-<li><a href="{{ url_ip_progress_dashboard }}" target="_blank" class="dropdown-item text-success"><md>:fas-tasks: iP Progress Dashboard</md></a></li>
+<li><a href="{{ url_ip_progress_dashboard }}?cv-highlight=[[studentIdSuffix]]" target="_blank" class="dropdown-item text-success cv-bind"><md>:fas-tasks: iP Progress Dashboard</md></a></li>
 <li><a href="{{ url_course_gihub_io }}/dashboards/contents/ip-comments.html" target="_blank" class="dropdown-item"><md>:octicon-comment: iP Comments dashboard</md></a></li>
 <li><a href="{{ url_ip_dashboard }}" target="_blank" class="dropdown-item"><md>:fas-chart-area: iP Code Dashboard</md></a></li>
 {% endmacro %}
 
 {% macro tp_dashboard_links() %}
-<li><a href="{{url_tp_progress_dashboard}}" target="_blank" class="dropdown-item text-success"><md>:fas-tasks: tP Progress Dashboard</md></a></li>
+<li><a href="{{url_tp_progress_dashboard}}?cv-highlight=[[studentIdSuffix]]" target="_blank" class="dropdown-item text-success cv-bind"><md>:fas-tasks: tP Progress Dashboard</md></a></li>
 <li><a href="{{ url_course_gihub_io }}/dashboards/contents/tp-comments.html" target="_blank" class="dropdown-item"><md>:octicon-comment: tP Comments Dashboard</md></a></li>
 <li><a href="{{ url_tp_dashboard }}" target="_blank" class="dropdown-item"><md>:fas-chart-area: tP Code Dashboard</md></a></li>{% if show_feature_freeze_dashboards %}
 <li><a href="{{ url_tp_dashboard_fc_only }}" target="_blank" class="dropdown-item"><md>:fas-chart-area: tP Code Dashboard (Functional Code Only)</md></a></li>

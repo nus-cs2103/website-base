@@ -967,7 +967,7 @@ This feature specification should specify external behaviour only. We have not y
 {% endcall %}{% endif %}
 <p/>
 
-* {{ icon_important_big_red }} **Submission** [one person per team]: Save the file as a PDF file, name it `{team-id}.pdf` e.g., `{{ example_team_id }}.pdf`, and upload to Canvas.
+* {{ icon_important_big_red }} **Submission** [one person per team]: Save the file as a PDF file, name it `{team-id}.pdf` e.g., `[[ teamId : {{ example_team_id }} ]].pdf`, and upload to Canvas.
 * **Grading criteria**: to be considered 'done', the feature spec. should meet all the following criteria:
   * Covers all features in the smallest set of features the product cannot do without.
   * Contains all details mentioned above for each of those features
@@ -2376,7 +2376,7 @@ Not applicable this semester
     Writing detailed release notes is optional.<br>
     No need to include UG/DG pdf files in the release.{% endif %}
   * Upload the jar file to Canvas.<br>
-    File name: `[team ID][ProductName].jar` %%e.g. [{{ example_team_id }}][ContactsPlus].jar%%<br>
+    File name: `[team ID][ProductName].jar` %%e.g. [[[teamId: {{ example_team_id }}]]][[[productName: ContactsPro]]].jar%%<br>
     {{ icon_important }} Recommended to <span class="text-danger">avoid spaces and special characters in the product name</span> as it can cause problems when running the JAR file using the command line.<br>
     %%{{ icon_info }} This name requirement is for the JAR file you upload to Canvas only. You may name the JAR file you upload to GitHub in any reasonable way.%%
 
@@ -2396,13 +2396,13 @@ Reminder: double-check to ensure the code attributed to you by RepoSense is corr
 
 * **User Guide**:{icon="fas-users"}
   * Convert to pdf and upload to Canvas.
-  * File name: `[TEAM_ID][ProductName]UG.pdf`  %%e.g., [{{ example_team_id }}][ContactsPlus]UG.pdf%%
+  * File name: `[TEAM_ID][ProductName]UG.pdf`  %%e.g., [[[teamId: {{ example_team_id }}]]][[[productName: ContactsPro]]]UG.pdf%%
 
 {{ embed_topic("tp-deliverables.md#tp-deliverables-ug", "Admin " + icon_embedding + " tP → Deliverables → User Guide", "3", indent="2") }}
 
 * **Developer Guide**:{icon="fas-users"}
   * submission is similar to the UG
-  * File name: `[TEAM_ID][ProductName]DG.pdf` %%e.g. [{{ example_team_id }}][ContactsPlus]DG.pdf%%
+  * File name: `[TEAM_ID][ProductName]DG.pdf` %%e.g. [[[teamId: {{ example_team_id }}]]][[[productName: ContactsPro]]]DG.pdf%%
 
 {{ embed_topic("tp-deliverables.md#tp-deliverables-dg", "Admin " + icon_embedding + " tP → Deliverables → Developer Guide", "3", indent="2") }}
 
@@ -2410,7 +2410,7 @@ Reminder: double-check to ensure the code attributed to you by RepoSense is corr
 * **{% if cs2103 %}[Optional] {% endif %}Project Portfolio Page (PPP)**:{icon="fas-user"}
   * HTML version: make available on `github.io`{% if cs2113 %}
   * PDF file: submission is similar to the UG<br>
-    File name: `[TEAM_ID][Your full Name as Given in Canvas]PPP.pdf` %%e.g., [{{ example_team_id }}][Leow Wai Kit, John]PPP.pdf%%<br>
+    File name: `[TEAM_ID][Your full Name as Given in Canvas]PPP.pdf` %%e.g., [[[teamId: {{ example_team_id }}]]][Leow Wai Kit, John]PPP.pdf%%<br>
     {{ icon_info }} Use `-` in place of `/` if your name has it e.g., `Ravi s/o Veegan` → `Ravi s-o Veegan` (reason: Windows does not allow `/` in file names){% else %}
   * See the panel below to learn when you should opt for this submission.{% endif %}
 
