@@ -998,7 +998,7 @@ If you added the `Ui.png` correctly and set up the product website correctly, ==
 
    * There is no need for the release to be tagged `A-Release` specifically.
    * Ensure your release appears at <a href="https://github.com/[[username: JohnDoe]]/ip/releases" target="_blank" class="cv-bind">https://github.com/[[username: JohnDoe]]/ip/releases</a>. Use an incognito browser window when checking this URL, to ensure the release is visible to the public.
-   * The JAR file should be uploaded as an 'asset', with the `.jar` extension. Do not put it insdie a zip file.
+   * The JAR file should be uploaded as an 'asset', with the `.jar` extension. Do not put it inside a zip file.
    * Refrain from uploading multiple JAR files into this release as this can cause extra work for the evaluators. Upload only the JAR file you want to be evaluated as your iP.
    * If you have multiple iP releases on GitHub, we take the JAR file from the latest release, irrespective of the release name or the tag used. So, feel free to create more releases if you happen to update the code _after_ creating the initial release.
 

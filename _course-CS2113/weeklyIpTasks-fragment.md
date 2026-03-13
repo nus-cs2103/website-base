@@ -59,6 +59,6 @@ week7: [
   {id: 'submit_the_final_version', deadline:  get_date(date_w7_start, 4)}
 ],
 week8: [
-  {id: 'evaluate_peer_ips', deadline: get_date(date_w7_start, 11), graded: true}
+  {id: 'evaluate_peer_ips', deadline: get_date(date_w7_start, 12), graded: true}
 ]
 } %}

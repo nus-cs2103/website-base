@@ -702,7 +702,7 @@
  'CS2103-F13-3': 'Condominium or HDB estate manager managing multiple contractors, vendors, and maintenance appointments.',
  'CS2103-F13-4': 'Teaching positions in university like tutorial assistants and professors',
  'CS2103-T11-1': 'NUS SOC students who collect many professional contacts (e.g. peers, seniors, alumni) and are comfortable using command-line interfaces to manage contacts.',
- 'CS2103-T11-2': 'Student care supervisor',
+ 'CS2103-T11-2': 'Student care supervisor who has a need to manage a significant number of contacts, can type fast, prefers typing to mouse interactions and prefers a CLI to GUI.',
  'CS2103-T11-3': 'This product is for users who work in a clinic and prefer CLI over GUI. They have to manage several types of contact, including patients, suppliers, external services, etc, and look for / add the contact very frequently',
  'CS2103-T11-4': "This product is for Dormitory RAs who need to quickly and easily look up resident's information.",
  'CS2103T-F10-1': 'Our target user profile are doctors, specifically private specialists who would prefer CLI due to a high interaction demand from patients.',
