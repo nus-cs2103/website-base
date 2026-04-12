@@ -76,12 +76,9 @@ However, if it is possible for a user mistake to cause such inputs %%(e.g., the 
 
 ##### Feature flaws
 
-<modal large id="modal:bugTriaging-whenOutOfScope">
-<include src="tp-pe-bug-triaging-guidelines-fragment.md#how-to-prove-out-of-scope"/>
-</modal>
 
 * Missing features and problems in how a feature is designed are considered feature flaws i.e., `type.FeatureFlaw`.
-* **Feature flaws can be claimed as `NotInScope`**, if they qualify as per <trigger trigger="click" for="modal:bugTriaging-whenOutOfScope">rules explained above</trigger>, except for these cases:
+* **Feature flaws can be claimed as `NotInScope`**, if they qualify as per rules explained earlier, except for these cases:
   * if fixing the feature flaw is essential for the app to be reasonably useful
   * if the feature is implemented to work in a certain way but it could have been implemented to work in a better way (from the end-user's point of view) without much additional effort
 * **Bugs related to duplicate detection**: Duplicate detection (e.g., detecting if two persons in the address book are the same) is not trivial; often, detecting only the exact string/value matches is not enough. For example, `John Doe` and `john  doe` are likely to be the same person. Similarly, extra white space %%(e.g., the user typed an extra space between the two names)%% is unlikely to mean they are two different persons. Typically, it is best if you can give a warning in such _near match_ cases so that the user can make the final decision. <br>

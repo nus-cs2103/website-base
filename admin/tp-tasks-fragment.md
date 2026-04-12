@@ -456,7 +456,18 @@ At the same time, the UG and the DG needs to be updated, as given in task {{ thu
 **Remind yourself of the project grading criteria**:
 
 {{ embed_topic("tp-grading.md#main", "Admin " + icon_embedding + " **tP → Grading**", "1") }}
+
 </box>
+
+{% if ped_week != "11" %}
+<div id="week_11_buffer">
+<box type="important" seamless>
+
+**There is a buffer of seven days** for `{{ version_penultimate }}` i.e., you may take up to {{ get_date(date_w11_start, 10, time="23:59")}}. This buffer has been added due to clashes between university/public holidays and important events in the iP timeline. We recommend you do only one week worth of tP work although there are two weeks to do it in, as this buffer is 'extra' time not usually in the tP timeline (i.e., we do not expect extra work for this extra time given).
+
+</box>
+</div>
+{% endif %}
 
 {% endcall %}
 
@@ -1126,6 +1137,15 @@ Furthermore, these sections will be graded at the final project evaluation, and 
 <include src="tp-grading-bugs-fragment.md#nfrBugs" />
 <include src="tp-grading-bugs-fragment.md#glossaryBugs" />
 </panel>
+</box>
+
+<box type="warning" seamless>
+
+**Add your DG content into the `docs/DeveloperGuide.md`** (i.e., #r#do not split that file further into multiple files##), as only that file will be checked when our grading scripts look for your content contributions to the DG. Besides, you need all your DG content on one page because you need to submit the DG as a single PDF file during the final submission.
+
+**A similar restriction applies for the UG** i.e., add your contents to the `docs/UserGuide.md` (do not split that file to multiple pages).
+
+Relevant: the tP constraint [Constraint-PDF-Friendly]({{ url_website }}/admin/tp-constraints.html?cv-highlight=Constraint-PDF-Friendly).
 </box>
 
 <modal large header="Textbook {{ icon_embedding }} Specifying Requirements → Use Cases" id="modal:v10-usecases">
@@ -1829,7 +1849,11 @@ This week, we would like you to smoke-test the CATcher app **to ensure it can wo
 {#====================================================================================================================#}
 <span id="heading_update_ug_dg">{{ icon_individual }} Update UG and DG</span>
 <div id="desc_update_ug_dg">
-<include src="tp-tasks-fragment.md#alert-time-sensitive" />
+<include src="tp-tasks-fragment.md#week_11_buffer" />
+<box type="important" icon=":fas-hourglass-half:" seamless>
+
+<span class="text-danger">**This task is time-sensitive.**</span> If done later than the iteration deadline given above, it will not be counted as 'done'.
+</box>
 
 * {{ icon_important_big_red }} **Update the User Guide** to match the current version of the product. %%Reason: testers will need to refer to the UG during the practical exam dry run%%.
   * {% if cs2103 %}Remove mentions of any features not implemented yet, if any. As you are not allowed to change features during the iteration {{ version_final }}, there is no point keeping those in the UG.<br>
@@ -2001,13 +2025,7 @@ The panel below contains guidelines your peers will use when determining bugs in
 <span id="heading_release_as_a_jar_file">{{ icon_team }} Release {{ version_penultimate }}</span>
 <div id="desc_release_as_a_jar_file">
 
-{% if ped_week != "11" %}
-<box type="important" seamless>
-
-**There is a buffer of seven days** for `{{ version_penultimate }}` i.e., you may take up to {{ get_date(date_w11_start, 10, time="23:59")}}. This buffer has been added due to clashes between university/public holidays and important events in the iP timeline. We recommend you do only one week worth of tP work although there are two weeks to do it in, as this buffer is 'extra' time not usually in the tP timeline (we do not expect extra work for this extra time given).
-
-</box>
-{% endif %}
+<include src="tp-tasks-fragment.md#week_11_buffer" />
 
 * {{ icon_important_big_red }} **Do a <tooltip content="resulting in a jar file on GitHub that can be downloaded by potential users">proper product release</tooltip>** [as described in the Developer Guide]({{ url_ab3_fork_website }}/DevOps.html#making-a-release). Do the release by the given deadline. <br>
   ==Do a smoke-test to ensure the jar file works== (if the released jar file is broken, it will be omitted from the PE-D).<br>
@@ -2153,7 +2171,9 @@ Test the product yourself (test each other's features) using the JAR file, repor
 {% if cs2103 %}
 1. ****Note the following details of the _feature freeze_ enforced in this iteration****:
 
+<div id="feature-freeze-details">
 <include src="tp-tasks-fragment.md#feature-freeze-details" />
+</div>
 {% endif %}
 
 {{ '2' if cs2103 else '1' }}. ****Triage bugs you received in the PE-D****, by following the procedure given below:
@@ -2328,8 +2348,8 @@ Not applicable this semester
   Canvas might automatically add a file name suffix (e.g., `*-1.pdf`, `*-2.pdf`, ...) if you upload a file multiple times. You can safely ignore that suffix.
 * **Do not update the code during the 14 days after the deadline.** Get our permission first if you need to update the code in the repo during that _code-freeze_ period.
   * You can update issues/milestones/PRs even during the _code-freeze_ period.{% if cs2113 or cs2103 %}
-  * [{{ course }}T only] You can update the source code of the docs (but not functional/test code) if your CS2101 submission deadline is later than our submission deadline. However, a code-freeze period of 1-2 days is still recommended, so that there is a clear gap between the tP submission and subsequent docs updates.<br>
-   On a related note, there is no need to additional stylistic 'beautifications' to the docs before submitting to CS2101 side. The two teaching teams have agreed that there will be no extra credit for such additional  beautifications.{% endif %}
+  * [{{ course }}T only] You can update the source code of the docs (but not functional/test code) if your CS2101 submission deadline is later than our submission deadline.<br>
+   On a related note, there is no need to additional stylistic 'beautification' to the docs before submitting to CS2101 side. The two teaching teams have agreed that there will be no extra credit for such additional  beautification.{% endif %}
   * You can update the code during the code-freeze period if the change is related to a late submission approved by us.
   * You can continue to evolve your repo after the code-freeze period.
 
@@ -2378,6 +2398,13 @@ Not applicable this semester
 
 </box>
 </div>
+
+<box class="d-print-none" seamless>
+
+Your team ID : <cv-placeholder-input name="teamId" appearance="underline" layout="inline"></cv-placeholder-input><br>
+Your product name : <cv-placeholder-input name="productName" appearance="underline" layout="inline"></cv-placeholder-input><br>
+%%<small>Note: Type your team ID and product name in the fields above so that we can customise the content below to fit you.</small>%%
+</box>
 
 * **Product**:{icon="fas-users"}
   * Do a release on GitHub, tagged appropriately e.g., `{{ version_final }}` or `{{ version_final }}b`.{% if cs2103 %}<br>

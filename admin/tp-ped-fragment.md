@@ -87,7 +87,7 @@ A few hours before the PE-D starts, you will be notified via email which team yo
 
 {{ icon_important_big_red }} #r#You are not allowed to##,
 
-* reveal the team you are testing in the PE-D/PE to anyone## or put that information in a place where others can see it. {{ bullet_x_red }}
+* reveal the team you are testing in the PE-D/PE to anyone or put that information in a place where others can see it. {{ bullet_x_red }}
 * to share your PE-D/PE bug reports with anyone.
 * to involve anyone else in your PE-D or PE tasks -- both are individual assignments, to be done by yourself.
 
@@ -122,7 +122,7 @@ Do the following steps ==#r#after 12 noon on the PE-D day -- get started at leas
   {{ icon_info }} You may visit the team's _releases_ page on GitHub if they have provided some extra files you need to download.
 1. Launch the jar file ==using the `java -jar` command== rather than double-clicking %%(reason: to ensure the jar file is using the same java version that you verified above)%%. Use double-clicking as a last resort.<br>
   {{ icon_info }} We strongly recommend surrounding the jar filename with double quotes, in case special characters in the filename causes the `java -jar` command to break.<br>
-  e.g., `java -jar "[[[teamId]]][[[productName]]].jar"`<br>
+  e.g., `java -jar "[team_id][product_name].jar"`<br>
   :fab-windows: Windows users: use the DOS prompt or the PowerShell (not the WSL terminal) to run the JAR file.{% if cs2103 %}<br>
   :fab-linux: Linux users: If the JAR fails with an error labelled `Gdk-CRITICAL` (happens in Wayland display servers), try running it using `GDK_BACKEND=x11 java -jar jar_file_name.jar` command instead.{% endif %}
 </box>
@@ -212,7 +212,7 @@ Do the following steps ==#r#after 12 noon on the PE-D day -- get started at leas
 * **When reporting similar bugs, it is safer to report them as separate bugs** because there is no penalty for reporting duplicates. But as submitting multiple bug reports take extra time, if you are quite sure they will be considered as _duplicates_ by the dev team later, you can report them together, to save time.
 * **The whole description of the bug should be in the issue description** i.e., ==do not add comments to the issue==. Any such comments will be ignored by our scripts.
 
-* **Assign exactly one `*.severity` label.**<br>
+* **Assign exactly one `severity.*` label.**<br>
   If multiple `severity.*` labels are assigned, we'll pick the one with the lowest severity.<br>
   If no `severity.*` labels is assigned, we'll pick `severity.Low` as the default.
 

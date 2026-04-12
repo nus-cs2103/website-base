@@ -26,7 +26,7 @@
 * **The PE is divided into four phases, and is of the form 'take-home assignment'**:
   * ****Phase 1: Bug Reporting****{.text-success}: <span id="pe-p1-desc">In this phase, you will test the allocated product, report bugs, and ==select upto 6 bugs to send to the dev team==.<br>
     This phase is divided further into parts I, II, III, and IV.<br>
-    the recommended order and the recommended duration of each part is given below. you will be given about **24 hours (friday 12 noon to saturday 12 noon) to finish this phase**.<br>
+    the recommended order and the recommended duration of each part is given below. you will be given about **24 hours (Friday 12 noon to Saturday 12 noon) to finish this phase**.<br>
     **We recommend that you ==do the bulk of the PE during the lecture slot, or earlier==** (Reason: Support from the teaching team will be available only during that time).<br>
     **We recommend that you ==aim to finish this phase by Friday 23:59==**, and use Saturday portion as a buffer only (Reason: We'll send you a status report of your PE bug reports at the end of Friday, alerting you to any problems in the bug reports you have filed -- if there are any such issues, you can use the Saturday portion to fix those problems).</span>
     * <span class="badge bg-success">Phase 1 - part I</span> **Product Testing** [60 minutes] -- to focus on reporting bugs in the product (but can report documentation bugs too)
@@ -270,6 +270,11 @@ You will receive bonus marks if a high percentage (e.g., some bonus if >50%, a s
    * {{ icon_important_big_red }} Reminder: Aim to choose the correct severity. If in doubt, go lower.<br>
      Reason: If the dev team objects to the severity you chose, and the teaching team agrees with the tester, your accuracy marks will be affected.
    * {{ faq }} What if I don't justify the severity of a selected bug? Not giving a justification will work against you if the dev team objects to your severity and the teaching team has to make the final decision.
+   * What details to give in the severity justification? You can explain how the current severity matches the description of that severity (given below, for your easy reference). It might help if you also explain why the bug doesn't match the description of the next lower severity (and hence, you have no choice but to choose the current higher level).
+
+<div class="indented-level2">
+<include src="appendixE-gitHub.md#bug-severity" />
+</div>
 
 ------------------------------------------------------------------------------------ {.thick-2 .border-success}
 
@@ -475,7 +480,7 @@ Duplicate2 <-- Duplicate3: "sub-issue of"
     <pic src="duplicates-cluster-one-level.png"></pic> | <pic src="duplicates-cluster-multi-level.png"></pic>
   * **No need to set labels/assignees for duplicate bugs.** When you designate a bug as a duplicate of another, ==the `type.*`, `severity.*`, `response.*` and assignees of the _original_ issue are inherited by (and override) those of the duplicate== -- i.e., the duplicate's own different labels/assignees (if any) are ignored.
   * **Use the duplicate's team comment to explain why it is a duplicate of the original.** When a duplicate bug is shown to the tester, the justification (i.e., the team comment) of the _original_ bug will be shown together with the justification of the duplicate. Therefore, you need not repeat the details in the original's justification in the duplicate's justification.<br>
-    {{ icon_important_big_red }} **CAUTION: If the duplicate bug currently has a lower severity than the _original_ bug**, the duplicate bug is effectively getting a severity downgrade (when it inherits the severity from the _original_ bug). This downgrade can be contested by the tester of the duplicate bug. Hence, you need to either,<br>
+    {{ icon_important_big_red }} **CAUTION: If the duplicate bug currently has a higher severity than the _original_ bug**, the duplicate bug is effectively getting a severity downgrade (when it inherits the severity from the _original_ bug). This downgrade can be contested by the tester of the duplicate bug. Hence, you need to either,<br>
      → a) justify the downgrade in the team comment of the duplicate (e.g., `We downgrade the severity to from X to Y because ...`), or,<br>
      → b) justify the current severity level of the _original_ bug in its team comment (e.g., `We think the severity for this bug is Y because ...`).<br>
     {{ icon_important_big_red }} **Remember not to cross-refer the issue number of the _original_** (`e.g., this is same as #23`) in the justification of the duplicate bug -- use the issue title instead (e.g., `This is a duplicate of the bug 'UG formatting is wrong' because ...`).

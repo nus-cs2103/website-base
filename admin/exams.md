@@ -229,8 +229,8 @@ The following exam resources will be **available from the start of week 13**.
         you attempt the practice exam, to get its full benefit.<br>
       * Do the mock exam (to get used to the software and question structure) before the practice exam.
   * Where to find it: on Examplify.
-    * Part 1: Password `Hello123`  (Resume code: `68B783`)
-    * Part 2: Password `Hello123`  (Resume code: `81BB06`)
+    * Part 1: Password `Hello123`  (Resume code: `FF2A0A`)
+    * Part 2: Password `Hello123`  (Resume code: `57DDA2`)
   * Model answers are available on {{ handouts_link }}.
 
 <box type="warning" header="CAVEAT about difficulty level of the practice exam" seamless>

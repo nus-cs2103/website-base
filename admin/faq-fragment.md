@@ -526,6 +526,13 @@ The size of the target market is not a grading criterion. You can make it as nar
 <div id="faq-dgDetailsLevel-Q">How detailed the DG should be? Do we have to describe every feature/component?</div>
 <div id="faq-dgDetailsLevel-A">
 
+<box type="info" seamless>
+
+**Project documentation has a cost** e.g., the effort required to create, and more importantly, to _maintain_ them. Therefore, **too much documentation is as bad as too little documentation**. Hence, aim for _minimal yet sufficient_ documentation.<br>
+What is minimal yet sufficient? This is **a subjective case-by-case decision you need to make yourself** based on the target audience and the purpose of the document, and is a graded project deliverable itself.<br>
+That said, such judgment calls are not easy, especially for inexperienced developers. So, while the teaching team will not answer specific questions about it, you are still welcome to discuss them with others e.g., post in the course forum to seek inputs from others).
+</box>
+
 The DG is primarily meant to help current/future developers. In general, the DG is expected to provide minimal yet sufficient guidance  for developers, serving them in the following ways:
 
 * It act as a starting point for developers, before they can dive into the code itself %%e.g., by providing an architecture-level overview of the system%%
@@ -680,6 +687,11 @@ There is no such guarantee, for two reasons:
 
 1. Your implementation effort is graded based on how much functionality your team produced (based on peer-testers' and tutors' estimates) and how much of that work was contributed by you (based on team members' estimates). For example, simply copy-pasting 400+ LoC with only minor modifications is unlikely to meet this bar as it is less than an effort _equivalent_ to writing a typical 300-400 LoC (or half of a typical iP effort).
 1. Implementation marks are based on both effort and quality, the latter being the primary driver (more info <trigger trigger="click" for="modal:tPexpectations-implementationGrading">here</trigger>). So, meeting the effort bar doesn't guarantee full marks for implementation.
+
+<modal large header="tP: Grading [extract] → " id="modal:tPexpectations-implementationGrading">
+  <include src="tp-grading.md#grading-implementation"/>
+</modal>
+
 </div>
 <!-- =============================================================== -->
 <div id="faq-tpIsLocGraded-Q">Is LoC graded in the tP?</div>

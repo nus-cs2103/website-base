@@ -38,9 +38,6 @@ Furthermore, we estimate that the above-mentioned bar is roughly _equivalent_ to
 <p/>
 </div>
 
-<modal large header="tP: Grading [extract] → " id="modal:tPexpectations-implementationGrading">
-  <include src="tp-grading.md#grading-implementation"/>
-</modal>
 
 <box type="important" tags="m--cs2113" seamless>
 

@@ -80,7 +80,7 @@
     <li tags="m--cs2113 m--cs2103"><a href="{{baseUrl}}/admin/tutorials.html" class="dropdown-item"><md>:glyphicon-calendar: Tutorial Schedule</md></a></li>
     <li tags="m--tic2002 m--tee3201"><a href="{{baseUrl}}/admin/index.html#project" class="dropdown-item"><md>{{ icon_project }} Project Info</md></a></li>
     <li tags="m--cs2113 m--tic2002 m--tee3201"><a href="{{url_coursemology_classroom}}" target="_blank" class="dropdown-item"><md>{{ icon_exercise }} Coursemology link</md></a></li>
-    <li tags="m--cs2103 m--cs2113"><a href="https://git-mastery.org" class="dropdown-item" target="_blank"><md>:fas-route: Git-Mastery Website</md></a></li>
+    <li tags="m--cs2103 m--cs2113"><a highlight-on="none" href="https://git-mastery.org" class="dropdown-item" target="_blank"><md>:fas-route: Git-Mastery Website</md></a></li>
     <li tags="m--tic2002"><a href="{{ url_participation_dashboard }}" class="dropdown-item text-success" target="_blank"><md>:fas-trophy: **Participation** dashboard</md></a></li>
     <li tags="m--cs2103 m--cs2113 m--tic2002"><a href="{{url_java_coding_standard}}" target="_blank" class="dropdown-item"><md>:fas-code: Java Coding Standard</md></a></li>
     <li tags="m--cs2103 m--cs2113"><a href="{{url_git_conventions}}" target="_blank" class="dropdown-item"><md>:fab-git-square: Git Conventions</md></a></li>
@@ -89,6 +89,7 @@
     <li tags="m--tic2002"><a href="{{url_ip_dashboard}}" target="_blank" class="dropdown-item"><md>:fas-chart-area: Code Dashboard</md></a></li>
     <li tags="m--tic2002"><a href="{{url_course_org}}/{{ ip_repo_name }}" target="_blank" class="dropdown-item"><md>{{ icon_repo }} Duke repo</md></a></li>
   </dropdown>
+  <li ><a highlight-on="none" href="#cv-share" class="nav-link"><md><tooltip content="share a focused view of the current page"  placement="bottom">:fas-share-square:</tooltip></md></a></li>
   <li slot="right" class="nav-link">
     <form class="navbar-form">
       {% if algolia == "no" %}<searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right ></searchbar>{% else %}<searchbar placeholder="Search" algolia menu-align-right></searchbar>{% endif %}

@@ -919,11 +919,18 @@ This activity is worth `2x2=4` participation points.
 <span id="heading_set_up_website">Set up a product website</span>
 <div id="desc_set_up_website">
 
+<div id="enter-username">
+
 <box class="d-print-none" seamless>
 
-Your GitHub username : <cv-placeholder-input name="username" appearance="underline" layout="inline"></cv-placeholder-input><br>
+Your GitHub username : <cv-placeholder-input name="username" appearance="underline" layout="inline"></cv-placeholder-input>&nbsp;<img src="https://github.com/[[username : github ]].png"
+  style="height: 1.8rem; vertical-align: middle; border-radius: 50%; margin-left: 0.5rem;"
+  class="cv-bind"
+  alt="GitHub Avatar"
+/><br>
 %%<small>Note: Type your GitHub username in the blank above so that we can customise sample commands to fit you.</small>%%
 </box>
+</div>
 
 <div  tags="m--cs2103" id="ip-ui-png">
 
@@ -990,11 +997,7 @@ If you added the `Ui.png` correctly and set up the product website correctly, ==
 
 4. **Create a new release on GitHub (e.g., `v0.2`) and upload the JAR file.**
 
-   <box class="d-print-none" seamless>
-
-   Your GitHub username : <cv-placeholder-input name="username" appearance="underline" layout="inline"></cv-placeholder-input><br>
-%%<small>Note: Type your GitHub username in the blank above so that we can customise sample commands to fit you.</small>%%
-   </box>
+   <include src="ip-tasks-fragment.md#enter-username" />
 
    * There is no need for the release to be tagged `A-Release` specifically.
    * Ensure your release appears at <a href="https://github.com/[[username: JohnDoe]]/ip/releases" target="_blank" class="cv-bind">https://github.com/[[username: JohnDoe]]/ip/releases</a>. Use an incognito browser window when checking this URL, to ensure the release is visible to the public.
