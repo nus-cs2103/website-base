@@ -122,7 +122,8 @@ Do the following steps ==#r#after 12 noon on the PE-D day -- get started at leas
   {{ icon_info }} You may visit the team's _releases_ page on GitHub if they have provided some extra files you need to download.
 1. Launch the jar file ==using the `java -jar` command== rather than double-clicking %%(reason: to ensure the jar file is using the same java version that you verified above)%%. Use double-clicking as a last resort.<br>
   {{ icon_info }} We strongly recommend surrounding the jar filename with double quotes, in case special characters in the filename causes the `java -jar` command to break.<br>
-  e.g., `java -jar "[team_id][product_name].jar"`<br>
+  e.g., `java -jar "jar_file_name.jar"`<br>
+  {{ icon_info }} Note that the name of the JAR filename inside the zip file can be different from the one given in their UG. This is because our scripts rename the JAR file in a different format before distribution. So, adapt your `java -jar` command accordingly, to match the actual JAR file name<br>
   :fab-windows: Windows users: use the DOS prompt or the PowerShell (not the WSL terminal) to run the JAR file.{% if cs2103 %}<br>
   :fab-linux: Linux users: If the JAR fails with an error labelled `Gdk-CRITICAL` (happens in Wayland display servers), try running it using `GDK_BACKEND=x11 java -jar jar_file_name.jar` command instead.{% endif %}
 </box>

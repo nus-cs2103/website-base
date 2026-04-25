@@ -62,6 +62,12 @@ So, **deleting lines does not count as a change** (only editing and adding are c
   <pic src="images/tpCodeDashboardLoc.png" />
 1. [**tP Code Dashboard (Feature Freeze Period Only)**]({{ url_tp_feature_freeze_dashboard }}) -- this shows changes to functional code during the feature freeze period only. You can use this LoC number against the number you found in (1) above to estimate the percentage of LoC that you touched during the feature freeze period.
 
+<box type="warning" seamless>
+
+**If you use `@@author` tags to override auto-detected code authorship**, such code can interfere with the [feature freeze code dashboard]({{ url_tp_feature_freeze_dashboard }}) %%e.g., the code can appear in the dashboard even if it was not modified during the feature freeze period.%%<br>
+  Not  to worry though; we'll be doing a manual sanity check before applying the penalty for not complying with the feature freeze -- so, such false-positive code changes will be excluded accordingly.
+</box>
+
 The above two dashboard links are also available in the top navigation menu of the course website (see under `Project Links`).
 
 Both code dashboards are currently set to auto-update every three hours.

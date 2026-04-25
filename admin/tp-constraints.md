@@ -126,7 +126,7 @@ If you are unable to package everything into a JAR file, package the JAR file an
 The file sizes of the deliverables should be reasonable and not exceed the limits given below. <br>
 <div tags="m--cs2113 m--cs2103">
 
-%%**Reason:** It is hard to download big files during the practical exam due to limited Wi-Fi bandwidth at the venue. Plus, there is no reason to use space/bandwidth without a proportional benefit.%%</div>
+%%**Reason:** Big files can clog up the bandwidth and cloud service used for sharing PE files -- there is no reason to use space/bandwidth without a proportional benefit.%%</div>
 
 * <span class="text-danger">Product (i.e., the JAR/ZIP file): 100MB</span> (Some third-party software -- e.g., Stanford NLP library, certain graphics libraries -- can cause you to exceed this limit)
 

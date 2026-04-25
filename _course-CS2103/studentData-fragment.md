@@ -655,7 +655,7 @@
  'CS2103T-T16-3': 'CatPals',
  'CS2103T-T16-4': 'CrimeWatch',
  'CS2103T-T17-1': 'GymOps',
- 'CS2103T-T17-2': 'TaskNest',
+ 'CS2103T-T17-2': 'PingBook',
  'CS2103T-T17-3': 'OnlyTutors',
  'CS2103T-T17-4': 'Talently',
  'CS2103T-W08-1': 'Bivago',

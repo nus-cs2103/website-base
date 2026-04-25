@@ -42,19 +42,48 @@ Less important info
 
 <span id="tip-about-popup-url">You can use the <span class="btn btn-light ps-1 pe-1 pb-0 pt-0 border"><small>:glyphicon-new-window:</small></span> button in a panel to open it as a new tab (it can be expanded in-place too). This feature is available only for panels containing another _full_ page of the website (i.e., not available if the panel contains an _extract_ of a page).</span> e.g.,
 
-<panel header="A panel that can be opened as another tab" popup-url="{{ baseUrl }}/admin/acknowledgements.html">
-
+<panel header="A panel that can be opened as another tab" popup-url="acknowledgements.html">
 <include src="acknowledgements.md" />
 </panel>
 <p/>
+</div>
 
+**{{ icon_layers }} Tabs indicate _alternative_ content** (e.g., video vs text). You can choose the one you like and ignore the other tabs.
 
-**:fas-layer-group: the ==_topic levels_ system== indicates the progression of contents** from basic/relevant topics to advanced/less-relevant topics. Open the panel below to see more details of that system.
+<div class="indented-level2">
+<box>
 
-{{ embed_topic("courseExpectations.md#topicLevels", "Admin " + icon_embedding + " Course Expectations → Topic Levels", "usingThisWebsite-topicLevels", indent="1") }}
-<p/>
+<tabs>
+<tab header="{{ icon_text }}">
+
+Some textual description of X
+
+</tab>
+<tab header="{{ icon_video }}">
+
+Video describing X
+
+</tab>
+</tabs>
+
+</box>
+</div>
+
+**{{ icon_layers }} Dotted underlines indicate <popover content="some additional info">tool tips</popover>** (activated by hovering over it) and **dashed underlines indicate <trigger for="modal:modal-example" trigger="click">modal windows</trigger>** (activated by clicking) containing additional information.
+
+<popover id="pop:tooltip-example" header="Tooltip Example" placement="top">
+<div slot="content">
+Additional information
+</div>
+</popover>
+
+<modal header="Modal Example" id="modal:modal-example">
+Additional information
+</modal>
 
 </div>
+<div id="conventions">
+
 <div id="more">
 
 <include src="../book/about/usage.md#conventions" name="Conventions Used" />

@@ -285,6 +285,12 @@ You will receive bonus marks if a high percentage (e.g., some bonus if >50%, a s
 ==**Deadline:** {{ get_date(date_w13_start if pe_week == "13" else date_w12_start, 8 if S == 2 else 8, time="23:59") }}==<br>
 ==**Aim to finish by Mon 23:59**== and keep Tuesday as a buffer. Reason: We'll send you a status update at the end of Monday, so that you can fix any problems with your responses during Tuesday.
 
+{% if pe_week == "13" %}
+<box type="info" seamless>
+
+**Why this is in the reading week?** Normally, the PE starts on Week 12 Friday and ends before the reading week begins. This semester, we had to move it to Week 13 Friday (which results in some of it spilling over to the reading week) due to university/public holidays interfering with the tail end of the tP schedule.
+</box>
+{% endif %}
 <box type="important" >
 
 ****Yes, that can be better!**** For each bug report you receive, if you think a software engineer who takes pride in their own work would say "yes, that can be better!", accept it graciously, even if you can come up with _some_ BS argument to justify the current behavior. <br>
@@ -328,7 +334,7 @@ Note that `response.NotInScope` bugs earn a small amount of credit for the teste
 
 ****Where to find the bug reports****:{ .text-info }
 
-* We will create a private repo `pe-{your team ID}` in the [course's GitHub org]({{ url_course_org }}) and transfer there all bugs your team received. Only your team members will be able to access it. We'll let you know when it is ready.
+* We will create a private repo `pe-{your team ID}` in the [course's GitHub org]({{ url_course_org }}) containing all bug reports your team received. Only your team members will be able to access it. We'll let you know (via a Canvas announcement) when it is ready.
 * The issue tracker will already contain the necessary labels.
   * #r#Do not change the text/colour of labels## that we have provided.
   * #g#You may add more labels.## We will ignore those extra labels.<br>
@@ -344,10 +350,13 @@ Note that `response.NotInScope` bugs earn a small amount of credit for the teste
 * **Stray bugs:**{ .text-info } **If a bug seems to be for a different product** (i.e., wrongly assigned to your team), let us know ASAP.
 * **Assignee(s):**{ .text-info } **Assign to the issue team member(s) responsible for the bug.**
   * If no one is assigned, the penalty will be divided equally among team members.
-  * {{ icon_important_big_red }} ==No more than 50% of the bugs are allowed to remain 'unassigned'== (_unassigned_ here means there is no assignee or is allocated to _all_ members of the team). Any excess unassigned bugs will incur a 20% 'tax' on the total penalty, divided among all members.<br>
-     Reasons:
-     * Pedagogical: Not being able to decide assignees for a bug shows a lack of clear division of responsibilities in the team.
-     * Administrative: Leaving too many bugs unassigned increases the burden on diligent team members who will then have to spend time responding to _all_ those bugs (in contrast, if all bugs are assigned, each member has to respond to 5-6 bugs on average).
+  * {{ icon_important_big_red }} ==No more than <popover content="i.e., 50% of all bugs your team received, irrespective of the `response.*` assigned to them">50% of the bugs</popover> are allowed to remain 'unassigned'== (_unassigned_ here means there is no assignee or is allocated to _all_ members of the team).
+    * Any excess unassigned bugs will incur a <popover content="e.g., if a team member M's penalty is `-5`, it will be increased to `(-5)*120% = (-6)`">20% 'tax' on the total penalty each member received.</popover><br>
+      Reasons:<br>
+      → Pedagogical: Not being able to decide assignees for a bug shows a lack of clear division of responsibilities in the team.<br>
+      → Administrative: Leaving too many bugs unassigned increases the burden on diligent team members who will then have to spend time responding to _all_ those bugs (in contrast, if all bugs are assigned, each member has to respond to 5-6 bugs on average).
+    * For this purpose, bugs flagged as duplicate are considered 'assigned' if the parent bug is assigned. Furthermore, each bug report is counted separately even if it is a duplicate of another bug report %%e.g., if bugs `B` and `C` are duplicates of bug `A` which has assignees, they are counted as three bugs with assignees%%.
+    * Reminder: for this purpose, bug reports assigned to _all_ team members are counted as 'unassigned'.
   * There is no need to actually fix the bug though. It's simply an indication/acceptance of responsibility. The penalty for the bug (if any) will be divided among the assignees %%e.g., if the penalty is -0.4 and there are 2 assignees, each member will be penalized -0.2%%.
   * If it is not easy to decide the assignee(s), we recommend (but not enforce) that the feature owner should be assigned bugs related to the feature, Reason: The feature owner should have defended the feature against bugs using automated tests and defensive coding techniques.
   * You may need to type the GitHub username of a member for it to appear in the assignee list.<br>
@@ -600,7 +609,8 @@ However, ==if the dev team's argument is not too far from 'reasonable', it may b
   * **If the team's `response.*` is not listed among aspects you can object to**, that means the bug was accepted by the team (hence, no need to object).<br>
     **If a severity downgrade is not listed among aspects you can object to**, that means the team gave the same (or a higher) severity to the bug.
   * **If you wish to update your objections later** (i.e., before the deadline is over), you may edit the one you previously added (rather than add another comment).
-  * **If you do not object to an aspect you are allowed to object to**, we'll assume that you agree with the dev team on that aspect.
+  * **If you do not object to an aspect you are allowed to object to**, we'll assume that you agree with the dev team on that aspect.<br>
+    You are also welcome to (but not required to) formally indicate your agreement by ticking the `[ ] - I agree with the dev team's position ...` checkbox, for each aspect.
 * #r#Do not##,
    * #r#change the subject, labels, or the description## of the original issue.
    * #r#edit the labels text/colour of the labels that we have provided,<br>
@@ -609,7 +619,7 @@ However, ==if the dev team's argument is not too far from 'reasonable', it may b
    * #r#close bug reports##.
      If you accidentally closed a bug during this phase, simply reopen it and it will be fine.
 * **If the team gave `response.Rejected`, but you think it should be `NotInScope`**, you can disagree with their `response.Rejected` and give your reasoning why it should be `NotInScope`.
-* **If the bug is either `response.Rejected` or `response.CannotReproduce` and you agree with that response**, you will not earn marks for that bug -- hence, there is no point objecting to a severity downgrade (if any) or duplicate status (if any).
+* **If the bug is either `response.Rejected` or `response.CannotReproduce` or `response.IssueUnclear`, and you agree with that response**, you will not earn marks for that bug -- hence, there is no point objecting to a severity downgrade (if any) or duplicate status (if any).
 * You can also refer to the below guidelines, mentioned during the previous phase as well:
 
 {{ embed_topic("tp-pe-fragment.md#additionalGuidelinesForBugTriaging", "Admin " + icon_embedding + " PE → Phase 2 → Additional Guidelines for Bug Triaging", "pe-additionalGuidelinesForBugTriaging", indent=1) }}
@@ -630,8 +640,13 @@ Not accepted| agreed        |                     | {{ up }}           | no effe
 Not accepted| disagreed     | Accepted            | {{ down }}         | {{ up }}
 Not accepted| disagreed     | Not accepted        | {{ up }}           | {{ down }}
 
+ <span class="badge rounded-pill bg-warning text-dark">Caution:</span> **Don't be tempted to contest every severity downgrade, thinking that there is 'no harm trying'** to overturn the downgrade because there is no additional penalty for trying to do so. If the teaching team feels that a tester is contesting a severity without a good basis, there will be an additional heavy penalty for the 'unreasonable' behaviour. So if you feel the dev team's justification for the severity downgrade is somewhat reasonable, it is in your interest to agree rather than to contest.
+
 {{ icon_info }} Dev accuracy is calculated individually (not per team), based on assignees.
 </div>
+
+* **To <tooltip content="i.e., previously you raised an objection but now you wish to agree with the dev team.">retract</tooltip> an objection**, either delete the <popover content="i.e., your comment stating the objection -- the one starting with `# R`, `# S`, `# D`">objection-comment</popover>, or remove the <tooltip content="i.e., `# R`, `# S`, `# D`">special heading</tooltip> that marks it as an objection-heading.<br>
+  #r#Simply 'hiding' an objection-comment will not be interpreted as a retraction.## Ticking the `I agree ...` checkbox will also not retract the objection, as we prioritise the objection-comment over the checkbox.
 
 
 {{ show_faq("tpPeAccuracyForNotInScope", is_compact=1) }}
