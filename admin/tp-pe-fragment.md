@@ -573,6 +573,10 @@ However, ==if the dev team's argument is not too far from 'reasonable', it may b
 
     I don't agree that this bug should be rejected. It should at least be NotInScope because ...
     ```
+    <box type="tip" seamless>
+
+    If you think the bug should be `response.NotInScope`, clearly state that in the text of your objection. If there is no such indication, we assume you are arguing for `response.Accepted` (which has a lower success rate).
+    </box>
   * **If the team has indicated the bug as a duplicate of another**, but you disagree, explain your objections in a separate comment starting with the line `# D` e.g.,
     ```markdown
     # D
