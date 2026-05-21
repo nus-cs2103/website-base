@@ -1,4 +1,4 @@
-{% set staff = [] %}
+{% set staff = ['Damith', 'Ganesh', 'Tzer-Bin', 'Yugin'] %}
 {% set tutors = [
 
 ]%}
