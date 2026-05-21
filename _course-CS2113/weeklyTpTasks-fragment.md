@@ -77,7 +77,6 @@ week9: [
 week10: [
   {id: 'start_on_the_penultimate_version'},
   {id: 'update_dg_with_design_details', deadline: 'IMPORTANT'},
-  {id: 'smoke_test_catcher', deadline: 'IMPORTANT', graded: true},
   {id: 'make_code_reposense_compatible'}
 ],
 week11: [

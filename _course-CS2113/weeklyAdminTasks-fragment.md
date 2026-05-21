@@ -51,6 +51,6 @@ week12: [
   {id: 'submit_post_lecture_quiz', graded: true}
 ],
 week13: [
-  {id: 'submit_final_peer_evaluations', graded: true, deadline: get_date(date_w12_start, 3)}
+  {id: 'submit_final_peer_evaluations', graded: true, deadline: get_date(date_w13_start, 3)}
 ] if pe_week == '13' else []
 } %}
