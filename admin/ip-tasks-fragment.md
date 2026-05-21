@@ -972,8 +972,8 @@ If you added the `Ui.png` correctly and set up the product website correctly, ==
 <div id="desc_submit_the_final_version">
 
 
-1. **Double-check to confirm your iP meets the criteria for full marks**, as given in the panel below.<br>
-   For example, ensure your {{ as_tag("Git Standard", tag_style="success") }} tag is green in the [iP progress dashboard]({{ url_ip_progress_dashboard }}), as it is a necessary condition for you to receive full marks.
+1. **Double-check to confirm your iP meets the criteria for full marks**, as given in the panel below.{% if cs2103 %}<br>
+   For example, ensure your {{ as_tag("Git Standard", tag_style="success") }} tag is green in the [iP progress dashboard]({{ url_ip_progress_dashboard }}), as it is a necessary condition for you to receive full marks.{% endif %}
   {{ embed_topic(baseUrl+"/admin/ip-grading.md#main", "Admin " + icon_embedding + " **iP - Grading**", "1", indent="1") }}
 2. **Create a new jar file**
    * Create the JAR file {% if cs2103%}[using Gradle](https://se-education.org/guides/tutorials/gradle.html) -- this needs to be a [fat JAR file](https://se-education.org/guides/tutorials/jar.html#fat-jar-files:~:text=given%20here.-,Fat%20JAR%20files,-A%20normal%20JAR) (hence, it's best created [using Gradle's shadow plugin](https://se-education.org/guides/tutorials/jar.html#:~:text=Creating-,JAR%20files,With%20Gradle,-With%20IntelliJ%20IDEA)).{% else %}in one of these ways:

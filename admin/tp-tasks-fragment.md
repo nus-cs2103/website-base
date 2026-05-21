@@ -2008,7 +2008,7 @@ The panel below contains guidelines your peers will use when determining bugs in
 <include src="tp-tasks-fragment.md#level-up-coverage" />
 </div>
 
-* {{ icon_important_big_red }} **Do a <tooltip content="resulting in a jar file on GitHub that can be downloaded by potential users">proper product release</tooltip>** [as described in the Developer Guide]({{ url_ab3_fork_website }}/DevOps.html#making-a-release). Do the release by the given deadline. <br>
+* {{ icon_important_big_red }} **Do a <tooltip content="resulting in a jar file on GitHub that can be downloaded by potential users">proper product release</tooltip>**{% if cs2103 %} [as described in the Developer Guide]({{ url_ab3_fork_website }}/DevOps.html#making-a-release){% endif %}. Do the release by the given deadline. <br>
   ==Do a smoke-test to ensure the jar file works== (if the released jar file is broken, it will be omitted from the PE-D).<br>
   * Include the following files in the release (as separate assets):
     1. **JAR** file
@@ -2098,7 +2098,7 @@ Your GitHub  | First choice | Second choice | Third choice
 * **Decide which of the given team(s) to review**:
   * Open the <span class="badge bg-primary">DG</span> link of the team allocated as 'First choice'.
   * Confirm that the DG has significant updates, to the diagrams in particular. If it doesn't, you can try the DG of the 'Second choice' team, and failing that, 'Third choice' team.
-  * If neither _one_ of the three has enough updates but collectively they have enough updates, you can also review all of them.
+  * If _none_ of the three has enough updates, but collectively they have enough updates, you can also review _all_ of them.
   * Failing all above, you can pick any other team(s) to review.
   * Try to give at least 4 comments in total.
   * If the PR already has reviews, you can give your own input of the existing review comments too.
