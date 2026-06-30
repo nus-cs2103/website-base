@@ -1,5 +1,6 @@
 .idea/*
 _site/
+_temp/
 .temp/
 node_modules/
 *.iml
@@ -8,3 +9,5 @@ pullall.sh
 pullallmods.sh
 pushall.sh
 debug.log
+AGENTS.md
+CLAUDE.md
