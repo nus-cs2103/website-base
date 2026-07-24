@@ -380,7 +380,9 @@
           {
             name: "",
             level_three_topics: [
-              {name: "what", heading: "What", priority: "1"}
+              {name: "what", heading: "What", priority: "1"},
+              {name: "why", heading: "Why architecture matters", priority: "1"},
+              {name: "components", heading: "Components, Interfaces, and Dependencies", priority: "1"}
             ]
           }
         ]
@@ -391,8 +393,9 @@
           {
             name: "",
             level_three_topics: [
-              {name: "reading", heading: "Reading", priority: "1"},
-              {name: "drawing", heading: "Drawing", priority: "1"}
+              {name: "reading", heading: "Reading Architecture Diagrams", priority: "1"},
+              {name: "views", heading: "Different Views of a System", priority: "1"},
+              {name: "drawing", heading: "Drawing Architecture Diagrams", priority: "1"}
             ]
           }
         ]
@@ -409,23 +412,11 @@
           {
             name: "nTier",
             level_three_topics: [
-              {name: "what", heading: "What", priority: "2"}
-            ]
-          },
-          {
-            name: "clientServer",
-            level_three_topics: [
               {name: "what", heading: "What", priority: "3"}
             ]
           },
           {
-            name: "transactionProcessing",
-            level_three_topics: [
-              {name: "what", heading: "What", priority: "3"}
-            ]
-          },
-          {
-            name: "serviceOriented",
+            name: "monolith",
             level_three_topics: [
               {name: "what", heading: "What", priority: "3"}
             ]
@@ -437,10 +428,22 @@
             ]
           },
           {
+            name: "clientServer",
+            level_three_topics: [
+              {name: "what", heading: "What", priority: "3"}
+            ]
+          },
+          {
+            name: "serviceOriented",
+            level_three_topics: [
+              {name: "what", heading: "What", priority: "3"}
+            ]
+          },
+          {
             name: "more",
             level_three_topics: [
-              {name: "moreStyles", heading: "More Styles", priority: "4"},
-              {name: "usingStyles", heading: "Using Styles", priority: "3"}
+              {name: "moreStyles", heading: "Other Styles", priority: "4"},
+              {name: "usingStyles", heading: "Using and Combining Styles", priority: "3"}
             ]
           }
         ]
@@ -1344,6 +1347,29 @@
               {name: "issueTrackers", heading: "Issue Trackers", priority: "2"},
               {name: "ganttCharts", heading: "GANTT Charts", priority: "3"},
               {name: "pertCharts", heading: "PERT Charts", priority: "4"}
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  security : {
+    name: "security",
+    heading: "Secure Software Engineering",
+    level_one_topics: [
+      {
+        name: "",
+        level_two_topics: [
+          {
+            name: "",
+            level_three_topics: [
+              {name: "intro", heading: "Introduction", priority: "2"},
+              {name: "what", heading: "What", priority: "2"},
+              {name: "why", heading: "Why", priority: "2"},
+              {name: "when", heading: "When", priority: "3"},
+              {name: "how", heading: "How", priority: "2"},
+              {name: "ai", heading: "Securing AI-Assisted Code", priority: "3"},
+              {name: "wrapUp", heading: "Wrap Up", priority: "4"}
             ]
           }
         ]
