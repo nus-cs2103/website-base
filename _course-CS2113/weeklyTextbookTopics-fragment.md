@@ -352,7 +352,7 @@
         {location: ["architecture", "architectureDiagrams", "reading"]},
       {subheading: "Architectural Styles"},
         {location: ["architecture", "architecturalStyles", "introduction", "what"]},
-        {location: ["architecture", "architecturalStyles", "nTier", "what"]},
+        {location: ["architecture", "architecturalStyles", "layered", "what"]},
         {location: ["architecture", "architecturalStyles", "clientServer", "what"]},
   {name: "Quality Assurance"},
     {heading: "Types of Testing"},

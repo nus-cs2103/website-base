@@ -1637,12 +1637,10 @@ This is a good time to get familiar with the diagramming tools used by the tP.
 
 <box type="tip" seamless>
 
-**Like to try a new Git workflow?** If you are now comfortable with the forking workflow and would like to practice another one, your team can choose to follow the <trigger trigger="click" for="modal:postmortemTip-featurebranchworkflow">feature branch workflow</trigger> from now on.
+**Wish to simplify the PR workflow?** If you are now comfortable with the forking workflow and would like to practice a simpler one, you can bypass your fork and push branches to the team repo from now on. You should still create PRs from those branches before merging them though.
 </box>
 
-<modal large header="TextBook {{ icon_embedding }}" id="modal:postmortemTip-featurebranchworkflow">
-<include src="../book/gitAndGithub/featureBranchFlow/unit-inElsewhere-asFlat.md" boilerplate/>
-</modal>
+
 </div>
 {#====================================================================================================================#}
 <span id="heading_plan_the_alpha_version">{{ icon_team }} Plan the alpha version (`{{ version_alpha }}`)</span>

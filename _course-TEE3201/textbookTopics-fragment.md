@@ -413,19 +413,13 @@
             ]
           },
           {
-            name: "nTier",
+            name: "layered",
             level_three_topics: [
               {name: "what", heading: "What", priority: "2"}
             ]
           },
           {
             name: "clientServer",
-            level_three_topics: [
-              {name: "what", heading: "What", priority: "3"}
-            ]
-          },
-          {
-            name: "transactionProcessing",
             level_three_topics: [
               {name: "what", heading: "What", priority: "3"}
             ]

@@ -408,7 +408,7 @@
             ]
           },
           {
-            name: "nTier",
+            name: "layered",
             level_three_topics: [
               {name: "what", heading: "What", priority: "3"}
             ]
@@ -418,14 +418,7 @@
             level_three_topics: [
               {name: "what", heading: "What", priority: "3"}
             ]
-          },
-          {
-            name: "transactionProcessing",
-            priority: "4",
-            level_three_topics: [
-              {name: "what", heading: "What", priority: "4"}
-            ]
-          },
+          }
           {
             name: "serviceOriented",
             priority: "4",
