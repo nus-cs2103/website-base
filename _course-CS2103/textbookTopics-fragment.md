@@ -621,9 +621,9 @@
             level_three_topics: [
               {name: "what", heading: "What", priority: "1"},
               {name: "how", heading: "How", priority: "2"},
-              {name: "fixing", heading: "Fixing Bugs Found", priority: "3"},
-              {name: "tools", heading: "Tools Used in Debugging", priority: "3"},
-              {name: "advanced", heading: "Beyond the Basics", priority: "4"}
+              {name: "fixing", heading: "Fixing", priority: "3"},
+              {name: "tools", heading: "Tools", priority: "3"},
+              {name: "advanced", heading: "Advanced", priority: "4"}
             ]
           }
         ]
