@@ -1363,13 +1363,12 @@
           {
             name: "",
             level_three_topics: [
-              {name: "intro", heading: "Introduction", priority: "2"},
               {name: "what", heading: "What", priority: "2"},
               {name: "why", heading: "Why", priority: "2"},
-              {name: "when", heading: "When", priority: "3"},
-              {name: "how", heading: "How", priority: "2"},
-              {name: "ai", heading: "Securing AI-Assisted Code", priority: "3"},
-              {name: "wrapUp", heading: "Wrap Up", priority: "4"}
+              {name: "how", heading: "How", priority: "4"},
+              {name: "when", heading: "When", priority: "4"},
+              {name: "ai", heading: "Securing AI-Assisted Code", priority: "4"},
+              {name: "wrapUp", heading: "Wrap-Up", priority: "4"}
             ]
           }
         ]
