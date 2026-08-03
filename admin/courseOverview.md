@@ -12,7 +12,7 @@
 
 <div id="overview">
 
-<p class="lead"><md>{{ course_pair }} is an introductory Software Engineering course with **an equal emphasis on core SE theory and practical skills** needed for industry internships or <tooltip content="e.g., CS3213, CS3216/7, CS3219, CS3281&2, etc.">higher-level project courses</tooltip>. It adopts an <tooltip content="going through SE topics several times while increasing depth, as opposed to going through topics sequentially">**iterative approach**</tooltip> to covering topics and is one of the few SE courses that include both a <tooltip content="i.e., working in an existing project">**brownfield** project</tooltip> and a <tooltip content="i.e., a project that is started from scratch">**greenfield** project</tooltip>.</md></p>
+<p class="lead"><md>{{ course_pair }} is an introductory Software Engineering course with **an equal emphasis on core SE theory and practical skills** needed for industry internships or <tooltip content="e.g., CS3213, CS3216/7, CS3219, CS3227, CS3281&2, etc.">higher-level project courses</tooltip>. It adopts an <tooltip content="going through SE topics several times while increasing depth, as opposed to going through topics sequentially">**iterative approach**</tooltip> to covering topics and is one of the few SE courses that include both a <tooltip content="i.e., working in an existing project">**brownfield** project</tooltip> and a <tooltip content="i.e., a project that is started from scratch">**greenfield** project</tooltip>.</md></p>
 
 * **On the theory side,** this course is supported by a customized online textbook, [_Software Engineering for Self-Directed Learners_](../se-book-adapted/index.html), integrated into this course website.
 

@@ -60,7 +60,7 @@ Installing and configuring Git is covered in {{ show_gm_lesson_link("gitPrep", "
 * Read the following admin info about the course.
 
 {{ embed_topic("usingThisWebsite.md#essential", "Admin " + icon_embedding + " **Using this website [essential info]**", "1", indent="1", type="danger", status="collapsed") }}
-{{ embed_topic(baseUrl+"/admin/courseExpectations.md#main", "Admin " + icon_embedding + " **Course expectations and ==topic levels==**", "1", indent="1", type="danger") }}
+{{ embed_topic(baseUrl+"/admin/courseExpectations.md#main", "Admin " + icon_embedding + " **Course expectations and !!topic levels!!**", "1", indent="1", type="danger") }}
 {{ embed_topic("usingThisWebsite.md#more", "Admin " + icon_embedding + " **Using this website [more info]**", "3", indent="1", type="info", status="collapsed") }}
 {{ embed_topic(baseUrl+"/admin/weeklySchedule.md#main", "Admin " + icon_embedding + " **Weekly schedule**", "2", indent="1", type="warning") }}
 
@@ -77,7 +77,7 @@ Installing and configuring Git is covered in {{ show_gm_lesson_link("gitPrep", "
 
 </div>
 {#====================================================================================================================#}
-<span id="heading_follow_the_git_learning_trail">Get started on the Git learning trail</span>
+<span id="heading_follow_the_git_learning_trail">Get started on learning Git</span>
 <div id="desc_follow_the_git_learning_trail">
 
 * Get started on learning Git and GitHub (used a lot in this course). The relevant lessons are in the [{{ show_as_tab('Topics', icon_tab_topics) }}](../schedule/week1/topics.html#w1-6-rcs-getting-started-with-git) tab.

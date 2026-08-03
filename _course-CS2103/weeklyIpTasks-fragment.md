@@ -14,7 +14,7 @@ week2: [
     {id: 'A-TextUiTesting', title: 'Automated Text UI Testing'},
     {id: 'Level-5', title: 'Handle Errors'},
     {id: 'Level-6', title: 'Delete'},
-    {id: 'A-Enums', title: 'Use Enums', tag: 'if applicable'}
+    {id: 'A-Enums', title: 'Use Enums', tag: 'if-applicable'}
   ]}
 ],
 week3: [

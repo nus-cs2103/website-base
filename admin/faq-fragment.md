@@ -164,8 +164,8 @@ In addition, spreading the work across the semester aligns with the <tooltip con
 {{ course }}T communication requirements are limited to a very narrow scope (i.e., communicate about the product to users and developers). CS2101 aims to teach you technical communication in a much wider context. While you may be able to reuse some of the stuff across the two courses, submission requirements are not intended to be exactly the same.
 </div>
 <!-- =============================================================== -->
-<div id="faq-java21-Q">Why not move to a newer Java version (e.g., 21)?</div>
-<div id="faq-java21-A">
+<div id="faq-java-version-Q">Why not move to a newer Java version (e.g., 21)?</div>
+<div id="faq-java-version-A">
 
 While we are aware that Java 21 is a more recent <tooltip content="Long-Term Support">LTS</tooltip> version of Java, we are sticking with Java 17 for the time being. We plan to move to Java 21 in a future semester when its adoption is sufficiently high.<br>
 Related: The industry is slow to move to new Java versions. It is likely the legacy Java systems you'll encounter in your internships/jobs are even older than Java 17.

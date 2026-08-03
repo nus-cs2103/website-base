@@ -9,14 +9,14 @@
 
    %%{{ icon_info }} Question adapted from a past exam paper.%%
 
-   <span class="text-monospace">Pull Request Tracker (PRT) is a desktop application meant to help tutors of a Software Engineering course deal with GitHub PRs more efficiently (compared to the GitHub Web interface). For example, it will help tutors find and review PRs from their _mentees_ easily. It will help the _managers_ of the course (e.g., professor, head TA) to easily keep track of how tutors are dealing with mentee PRs. PRT will communicate with GitHub using the GitHub API.</span>
+   <span class="font-monospace small">Pull Request Tracker (PRT) is a desktop application meant to help tutors of a Software Engineering course deal with GitHub PRs more efficiently (compared to the GitHub Web interface). For example, it will help tutors find and review PRs from their _mentees_ easily. It will help the _managers_ of the course (e.g., professor, head TA) to easily keep track of how tutors are dealing with mentee PRs. PRT will communicate with GitHub using the GitHub API.</span>
 
    1. Write 1 must-have and 1 nice-to-have user stories, covering user types `tutor` and `manager`.
    1. Write at least 1 <tooltip content="Non-Functional Requirements">NFRs</tooltip>, related to performance/scalability and/or usability.
    1. Give at least 1 terms worth recording in the glossary.
    1. Complete the following use case. Give at least one extension. Note that the tutor should give comments in the order of PR size (i.e., give comments to smaller PRs first). Assume the following use cases exists already: `U1. Sort PRs by a criterion`, `U2. Add comments to a PR`
 
-   <div class="indented-level2 text-monospace"><blockquote>
+   <div class="indented-level2 font-monospace small"><blockquote>
 
 
    System: PRT<br>

@@ -5,7 +5,7 @@
 {% set constraint_icon = ":far-thumbs-up:" if recommendation else ":fas-ban:" %}
 <div id="{{ constraint_id }}">
 
-#### <span class="badge bg-{{ constraint_style }} text-monospace">{{ constraint_icon }} {{ constraint_id }}</span>
+#### <span class="badge bg-{{ constraint_style }} font-monospace small">{{ constraint_icon }} {{ constraint_id }}</span>
 <div class="indented-level2">
 
 {{ caller() }}

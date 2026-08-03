@@ -1047,7 +1047,7 @@ App: Currently, there is no built-in command to add priorities to tasks.
 **If you want to cite the iP on your resume**, you can make it more compelling to potential employers. These improvements are not considered for grading and can be done after the semester ends. Some ideas:
 * **Improve the GUI**: Make the UI look nicer, more distinctive, and memorable. You can get inspiration from [what others have done](ip-showcase.html) (but remember to give credit if you reuse any code from them).
 * **Add a demo** video or an animated GIF to your user guide to show how the app works.
-* **Improve code quality**: The iP is the right size to cite as an example of your code quality. You can use the RepoSense link (<span class="badge rounded-pill bg-light text-dark text-monospace">**&lt;/>**</span>) in the [iP Showcase page](ip-showcase.html) to point to your iP code.
+* **Improve code quality**: The iP is the right size to cite as an example of your code quality. You can use the RepoSense link (<span class="badge rounded-pill bg-light text-dark font-monospace small">**&lt;/>**</span>) in the [iP Showcase page](ip-showcase.html) to point to your iP code.
 * **Add more features.**
 
 {{ icon_tip }} On a somewhat related note, you can also **create similar product websites for your other projects**, such as those from other courses or pet projects.
