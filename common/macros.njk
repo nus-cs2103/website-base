@@ -227,6 +227,62 @@
 </box>
 </panel>
 {% endmacro %}
+<!-- ============================================================ -->
+
+{% macro show_ai_guidance(subject)%}
+<panel type="warning" expanded >
+<div slot="header"><md>[:fas-robot: AI Guidance] **{{ subject }}**</md></div>
+
+{{ caller() }}
+</panel>
+<p/>
+{% endmacro %}
+<!-- ============================================================ -->
+
+{% macro show_prompt_part1(requirements, sample_output)%}
+
+First part of a possible prompt:
+
+````{ heading="sample prompt - part 1"}
+The requirement given to me:
+
+{{ req_start }}
+{{ requirements | trim }}
+{{ req_end }}
+
+An example output:
+
+{{ sample_output | trim }}
+````
+{% endmacro %}
+<!-- ============================================================ -->
+
+{% macro show_prompt_part2()%}
+Second part of a possible prompt:
+
+<tabs>
+  <tab header="Sample prompt - part 2 (less AI)">
+
+```
+{{ review_prompt }}
+```
+  </tab>
+  <tab header="Sample prompt - part 2 (more AI)">
+
+```
+{{ update_prompt }}
+```
+</tab>
+</tabs>
+{% endmacro %}
+<!-- ============================================================ -->
 
 
 {% macro show_gm_lesson_link(lesson_id, lesson_name)%}<md>++<span style="background-color: #e6f4ea;" class="badge rounded-pill text-success">:octicon-git-branch: Git-Mastery → <a href="https://git-mastery.org/lessons/{{ lesson_id }}/#/{{ course | lower }}" target="_blank">**Lesson: {{ lesson_name }}**</a></span>++</md>{% endmacro %}
+<!-- ============================================================ -->
+
+{% macro ask_chatgpt(visible_text, prompt) %}<span class="badge bg-light rounded-pill text-dark fw-normal d-print-none"><a href="https://chatgpt.com/?q={{ (prompt if prompt else visible_text) | urlencode }}" target="_blank">{{ visible_text }}</a> %%:bi-openai:%%</span>{% endmacro %}
+<!-- ============================================================ -->
+
+{% macro ask_chatgpt_for_three_os(visible_text, prompt) %}<small>{{ visible_text }}</small> {{ ask_chatgpt(":fab-windows: Windows", prompt + " I'm using Windows") }} | {{ ask_chatgpt(":fab-apple: macOS", prompt + " I'm using macOS")  }} | {{ ask_chatgpt(":fab-linux: Linux", prompt + " I'm using Linux") }}{% endmacro %}
+<!-- ============================================================ -->

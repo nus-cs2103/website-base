@@ -273,3 +273,10 @@ Course                 | Venue    | Time
 Course | Venue | Time | ~~%%Tutorial ID<br>in Canvas%%~~<br>==(don't use this!)== | **Our Tutorial ID**<br>==(use this!)== | Tutor<br>of teams 1,2 | Tutor<br>of teams 3,4
 -------|-------|------|------------------------------------------------------------|----------------------------------------|-------|----
 </variable>
+
+<variable name="req_start">[============================</variable>
+<variable name="req_end">============================]</variable>
+<variable name="review_prompt">Your task:
+I have updated the code to match the requirements.
+Review my changes and suggest possible issues and areas to improve.</variable>
+<variable name="update_prompt">Your task: Update the code to meet the above requirements.</variable>

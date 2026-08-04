@@ -1,4 +1,5 @@
-{% from "common/admin.njk" import show_ai_guidance with context %}
+{% from "common/macros.njk" import show_ai_guidance with context %}
+
 
 <include boilerplate src="level_thumb.md" var-text=":fas-grin-hearts:" inline />
 
@@ -24,12 +25,14 @@
 1. Try the following prompt.
    ```
    I wish to change the chatbot name from duke to [NEW NAME].
-   **Which files** need to be changed in what way?
+   Which files need to be changed in what way?
    ```
  1. If you are happy with reply, you can follow up with a `Go ahead and make those changes`.<br>
     <box type="tip" seamless>
 
-    Recommended: Start with a cheaper model (e.g., `Luna` at `High` or `Extra High` setting). Use more expensive models only when cheaper ones fail to meet expectations or you think the task is worth a higher cost of tokens.
+    **To economize the use of tokens, start with a cheaper model** (e.g., `Luna` at `High` or `Extra High` setting). Use more expensive models only when cheaper ones fail to meet expectations or you think the task is worth a higher cost of tokens.
+
+    **Set the permission level to `Approve for me`**: Codex will still ask your permission when performing 'risky' actions but proceed with less risky actions without bothering you every time.
     </box>
  1. If Codex doesn't update the banner, you can ask it to do so.
     ```{ heading="sample prompt"}
@@ -40,10 +43,16 @@
 
 {% endcall %}
 
-**++(b) Update the initial code simply greet the user and exit.++**
-<br>
 
-{% set sample_output_greet_and_exit %}
+
+**++(b) Update the initial code simply greet the user and exit.++**
+
+
+{% set requirements_level_0 %}
+Update the initial code simply greet the user and exit.
+{% endset %}
+
+{% set sample_output_level_0 %}
 ```
 ____________________________________________________________
 [CHATBOT BANNER]
@@ -55,7 +64,7 @@ ____________________________________________________________
 ```
 {% endset %}
 Example:
-{{ sample_output_greet_and_exit }}
+{{ sample_output_level_0 }}
 * Horizontal lines are optional. So is the banner.
 * Change the wording to match the personality you wish to give your chatbot. The above is an example only.
 
@@ -63,21 +72,37 @@ Example:
 
 This change is simple enough that you can easily do it by hand. Doing it using AI can help you get used to working with the AI without losing much value on the hand-coding front (i.e., a way of taking 'baby steps'). Here are two sample prompts:
 
+<tabs>
+  <tab header="Sample prompt (less AI)">
+
 ````{ heading="sample prompt"}
 The requirement given to me:
 
-Update the code to simply greet the user and exit. Here is an example output:
+{{ req_start }}
+{{ requirements_level_0 | trim }}
+{{ req_end }}
 
-{{ sample_output_greet_and_exit | trim }}
+ Here is an example output:
+{{ sample_output_level_0 | trim }}
 
-I have updated the code accordingly. Review my changes and suggest possible issues and areas to improve.
+{{ review_prompt }}
 ````
+  </tab>
+  <tab header="Sample prompt (more AI)">
 
 ````{ heading="sample prompt"}
-Update the code to simply greet the user and exit. Here is an example output:
+{{ update_prompt }}
 
-{{ sample_output_greet_and_exit | trim }}
+{{ req_start }}
+{{ requirements_level_0 | trim }}
+{{ req_end }}
+
+Example output:
+
+{{ sample_output_level_0 | trim }}
 ````
+</tab>
+</tabs>
 
 {% endcall %}
 

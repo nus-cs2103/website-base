@@ -89,85 +89,14 @@ The project consists of the following _increments_:
 <div id="Level-0">
 
 <include src="Level-0-fragment.md" />
-</div><hr><!-- ================================================================================================ -->
+</div><hr>
 <div id="Level-1">
 
-<include boilerplate src="level_thumb.md" var-text=":fas-comments:" inline />
-
-### Level 1. Echo
-
-Improve the _skeletal_ version of Duke so that it echoes commands entered by the user, and exits when the user types the command `bye`.
-<br>
-Example:
-```{.no-line-numbers}
-    ____________________________________________________________
-     Hello! I'm [YOUR CHATBOT NAME]
-     What can I do for you?
-    ____________________________________________________________
-
-list
-    ____________________________________________________________
-     list
-    ____________________________________________________________
-
-blah
-    ____________________________________________________________
-     blah
-    ____________________________________________________________
-
-bye
-    ____________________________________________________________
-     Bye. Hope to see you again soon!
-    ____________________________________________________________
-
-```
-* The indentations are optional.
-
-<box type="tip" seamless>
-
-**You are strongly encouraged to customize the chatbot**: In addition to the command/display formats, you can even customize its personality to make your chatbot unique.
-</box>
-
-</div><hr><!-- ================================================================================================ -->
+<include src="Level-1-fragment.md" />
+</div><hr>
 <div id="Level-2">
 
-<include boilerplate src="level_thumb.md" var-text=":fas-list:" inline />
-
-### Level 2. Add, List
-
-Add the ability to store whatever text is entered by the user and display it back to the user when requested.
-
-Example:
-```{.no-line-numbers}
-    ____________________________________________________________
-     Hello! I'm [YOUR CHATBOT NAME]
-     What can I do for you?
-    ____________________________________________________________
-
-read book
-    ____________________________________________________________
-     added: read book
-    ____________________________________________________________
-
-return book
-    ____________________________________________________________
-     added: return book
-    ____________________________________________________________
-
-list
-    ____________________________________________________________
-     1. read book
-     2. return book
-    ____________________________________________________________
-bye
-    ____________________________________________________________
-     Bye. Hope to see you again soon!
-    ____________________________________________________________
-
-```
-
-* There is no need to save the data to the hard disk.
-* Assume there will be no more than 100 tasks. If you wish, you may use a fixed-size array (e.g., `String[100]`) to store the items.
+<include src="Level-2-fragment.md" />
 </div><hr><!-- ================================================================================================ -->
 <div id="Level-3">
 

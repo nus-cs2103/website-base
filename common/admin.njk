@@ -121,15 +121,6 @@ pageNav: 4
 </div>
 {% endmacro %}
 
-{% macro show_ai_guidance(subject)%}
-<panel type="warning" expanded >
-<div slot="header"><md>[:fas-robot: AI Guidance] **{{ subject }}**</md></div>
-
-{{ caller() }}
-</panel>
-<p/>
-{% endmacro %}
-
 
 {% macro get_admin_menu_items() %}
 {% set in_sub_menu = 0 %}
