@@ -16,7 +16,7 @@
 
 * **On the theory side,** this course is supported by a customized online textbook, [_Software Engineering for Self-Directed Learners_](../se-book-adapted/index.html), integrated into this course website.
 
-* **On the practice side,** you will first ramp up your technical skills by doing a small individual project (greenfield) in which you will develop a personal assistant chatbot called [Duke](../se-book-adapted/projectDuke/index.html). Then, you will move to a team project (brownfield) in which you will take over an existing project, [AddressBook-Level3 (AB3)](https://se-edu.github.io/addressbook-level3/) -- a relatively small yet non-trivial (6 <tooltip content="LoC = Lines of Code">KLoC</tooltip>) generic product -- and evolve it into a better product.
+* **On the practice side,** you will first ramp up your technical skills by doing a small individual project (greenfield) in which you will develop a personal assistant chatbot called [Duke](../projectDuke/index.html). Then, you will move to a team project (brownfield) in which you will take over an existing project, [AddressBook-Level3 (AB3)](https://se-edu.github.io/addressbook-level3/) -- a relatively small yet non-trivial (6 <tooltip content="LoC = Lines of Code">KLoC</tooltip>) generic product -- and evolve it into a better product.
 
 </div>
 <div id="meaning-of-iterative-topics">
@@ -72,7 +72,7 @@ Application domains | Cross-platform desktop applications | Web programming, Mob
 
 * **The theory side** of this course is supported by a customized online textbook, [_Software Engineering for Self-Directed Learners_](../se-book-adapted/index.html), integrated into this course website.
 
-* **On the practice side**, you will first ramp up your technical skills by doing a small individual project in which you will develop a personal assistant chatbot called [Duke](../se-book-adapted/projectDuke/index.html). Then, you will move to a team project in which you will build another small <tooltip content="Command Line Interface">CLI</tooltip> app while working as a team.
+* **On the practice side**, you will first ramp up your technical skills by doing a small individual project in which you will develop a personal assistant chatbot called [Duke](../projectDuke/index.html). Then, you will move to a team project in which you will build another small <tooltip content="Command Line Interface">CLI</tooltip> app while working as a team.
 
 <include src="courseOverview.md#meaning-of-iterative-topics" />
 

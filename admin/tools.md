@@ -59,6 +59,15 @@ Create a GitHub account (if you don't have one yet), as explained in the panel b
 </box>
 
 </div><!-- ----------------------------------------------------------------------------------------------------- -->
+<div id="ai">
+
+## AI Coding Tools
+
+You may use any AI coding tool. The instructions we provide are for Codex Desktop App.
+
+Follow the tutorial [_Using the Codex Desktop App_ at SE-EDU Guides](https://se-education.org/guides/tutorials/codexDesktop.html) to set up Codex in your computer.
+
+</div><!-- ----------------------------------------------------------------------------------------------------- -->
 <div id="communication">
 
 ## Tools: for communication

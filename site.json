@@ -23,6 +23,7 @@
     {"src": "index.md",
       "searchable": "no"},
     {"glob": "admin/*.md"},
+    {"glob": "projectDuke/*.md"},
     {"glob": "schedule/index.md",
       "searchable": "no"},
     {"glob": "schedule/timeline.md",

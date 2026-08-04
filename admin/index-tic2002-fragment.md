@@ -152,7 +152,7 @@ In some weeks, there will be some programming exercises for you to submit (on Co
 <div  id="project-info">
 
 * The project is to be done **individually**.
-* The project based on a [generic project called Duke](../se-book-adapted/projectDuke/index.html).
+* The project based on a [generic project called Duke](../projectDuke/index.html).
 * In the project, you will build a small chatbot, using Java.
 * The project is to be done in small increments. You will be given a schedule of what increments to be done in each week.
 * Some weekly increments will be common to all students, while some will vary from student to student. That means your final product will be unique in terms of total features, but some features will be common to other students in the class.

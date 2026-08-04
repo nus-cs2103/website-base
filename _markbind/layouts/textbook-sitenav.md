@@ -10,7 +10,6 @@
 * Supplementary
 {% if not tee3201 %}
   * [C++ to Java]({{ baseUrl }}/se-book-adapted/chapters/cppToJava.html)
-  * [Project Duke]({{ baseUrl }}/se-book-adapted/projectDuke/index.html)
 {% endif %}
 {% if cs2103 %}
   * [Combined Exercises]({{ baseUrl }}/se-book-adapted/common/exercises.html)

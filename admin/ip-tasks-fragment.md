@@ -63,18 +63,25 @@
 {{ embed_topic("policies-fragment.md#policy-reuse", "Admin " + icon_embedding + " Policies → **Reuse**", "1", indent=1, type="danger") }}
 
 </div>
+<div id="take-note-of-ai-tools-use" >
+
+* Be familiar with how this course expects to use AI tools:
+
+{{ embed_topic("courseExpectations.md#use-of-ai", "Admin " + icon_embedding + " Course Expectations → **Use of AI**", "1", indent=1, type="warning") }}
+
+</div>
 <div id="volatile-requirements">
 
 <box type="info">
 
-The individual project (iP) and the team project (tP) undergo changes after each semester. As such, teething issues are a possibility. If you encounter any problem while doing the iP/tP, please post in the [forum]({{ url_forum }}) so that we can take the necessary action.
+**If you encounter any problem while doing the project**, please post in the [forum]({{ url_forum }}) so that we can take the necessary action. We did significant changes to the individual project (iP) and the team project (tP) this semester. Hence, teething issues are a possibility.
 </box>
 </div>
 <div id="no-jumping-ahead">
 
 <box>
 
-{{ icon_important_big_red }} We discourage you from doing project tasks allocated to future weeks, although it is fine to stay ahead of the schedule a bit (but no more than a week ahead).<br>
+{{ icon_important_big_red }} **We discourage you from doing project tasks allocated to future weeks**, although it is fine to stay ahead of the schedule a bit (but no more than a week ahead).<br>
 Reasons: To help you gain <tooltip content="the ability to apply knowledge or do tasks effortlessly as if you have been doing them for a long time">_fluency_</tooltip> and better simulate real projects, **we want the project work to be <tooltip content="done in multiple sittings with gaps in between">_spaced_</tooltip> over a longer period**, rather than done as a short burst.
 
 Reminder: As stated in the iP grading criteria, _some_ increments need to be done each week. Clumping all the iP work into a short burst will not earn you full marks.
@@ -84,7 +91,7 @@ Reminder: As stated in the iP grading criteria, _some_ increments need to be don
 
 <box>
 
-{{ icon_important_big_red }} Please follow instructions carefully. Any deviations can cause our grading scripts to miss your work (and result in you not getting credit for it).
+{{ icon_important_big_red }} **Please follow instructions closely.** Any deviations can cause our grading scripts to miss your work (and result in you not getting credit for it).
 
 </box>
 </div>
@@ -177,29 +184,10 @@ But ==as there are no tutorials this week, you have until the next lecture== to 
 
 <include src="ip-tasks-fragment.md#commit" />
 <include src="ip-tasks-fragment.md#tag-push" />
+<include src="ip-tasks-fragment.md#take-note-of-ai-tools-use" />
 <include src="ip-tasks-fragment.md#take-note-of-plagiarism" />
 </box>
 
-<box type="tip" id="ip-ai-box" light>
-
-##### iP feels like 'same same' ...?{.text-success}
-
-**As you do the iP, if you feel like you are not learning enough new stuff** since you've done similar work before (at least on the Java/OOP side), there is an alternative approach you can take to the iP. See the panel below if you are interested.
-
-<panel type="seamless" header="****iP.AI****: an AI-assisted approach to the iP" minimized>
-
-**Goal**: In the iP.AI approach, your goal is to minimize hand-coding the iP, by getting generative AI tools (such as Co-Pilot) to write the code for you instead. The learning goal is to explore how to increase your coding productivity using AI tools.
-
-**Requirements:**
-
-1. You should follow the normal iP requirements/deadlines, except that you will try to replace handcoding with AI-assisted code generation, where possible. It is still fine to do some of the coding work manually.
-1. You may use any free or commercial AI tools, provided you declare which tool you used (how to declare? see next point).
-1. Add a file named `AI.md` at the root of project folder (same location where `CONTRIBUTORS.md` lives). Commit the file. Keep it updated with a record of your use of AI tools (e.g., which tool you used for which increment), and interesting observations (e.g., what worked? what didn't? overall, how much time did it save?). You can update this file periodically (e.g., once a week). The content format can be plaintext or Markdown. It need not be very detailed (e.g., even a 0.5 page is enough).
-
-**Caveat:** This alternative does not earn you extra credit, but it gives you an opportunity to learn more about AI tools related to SE, with the same (or even less) effort.<br>
-This alternative is only suitable for those who are already good at hand-coding. Reason: At the current state of the art of AI tools, only those who are already good at hand-coding can use those tools to increase productivity. So, you must become good at hand-coding before you venture into using AI tools for coding.
-</panel>
-</box>
 </div>
 </div>
 <div id="pre_Level-1">
@@ -636,6 +624,7 @@ If your fork doesn't have the `add-gradle-support` branch (i.e., you did not cop
 {{ embed_topic(baseUrl+"/admin/programmingLanguages.md#main", "Admin " + icon_embedding + " **Programming Language**", "2", indent="1") }}
 {{ embed_topic("tools.md#rcs", "Admin " + icon_embedding + " **Tools → Git**", "2", indent="1") }}
 {{ embed_topic("tools.md#github", "Admin " + icon_embedding + " Tools → **GitHub**", "2", indent="1") }}
+{{ embed_topic("tools.md#ai", "Admin " + icon_embedding + " Tools → **AI Coding Tools**", "2", indent="1") }}
 {{ embed_topic("tools.md#ide", "Admin " + icon_embedding + " Tools → **The IDE**", "2", indent="1") }}
 </div>
 {#====================================================================================================================#}
@@ -904,7 +893,7 @@ This activity is worth `2x2=4` participation points.
 <div id="desc_finalize_features">
 
 * **Ensure the product can handle common errors <tooltip content="should not crash the app or render it unusable; user should be notified of the problem">gracefully</tooltip>**, such as the user making an unintentional error in the command, or the data file not being found in the expected location.
-* {{ icon_important_big_red }} **Ensure that the product name is not `Duke`** (as required by [Level-0](../se-book-adapted/projectDuke/index.html#level-0-rename-greet-exit)){% if cs2103 %}<br>
+* {{ icon_important_big_red }} **Ensure that the product name is not `Duke`** (as required by [Level-0](../projectDuke/index.html#level-0-rename-greet-exit)){% if cs2103 %}<br>
    and the name is shown correctly everywhere it appears in the UI e.g., the title bar of the GUI{% endif %}.
   * Reminder: You may give the product any name, but do not rename the repo.
   * Reminder: You can give the chatbot any personality (there is no need to follow the exact command/response formats given).
@@ -1058,7 +1047,7 @@ App: Currently, there is no built-in command to add priorities to tasks.
 <span id="heading_add_an_extension">Add an extension</span>
 <div id="desc_add_an_extension">
 
-* Add at least one extension of your choice, selected from [category B, C, or D](../se-book-adapted/projectDuke/index.html#extensions-category-b) i.e., pick just one item from one category, not one from _each_ category, e.g., `B-DoWithinPeriodTasks` or `C-Sort` or `D-Places`
+* Add at least one extension of your choice, selected from [category B, C, or D](../projectDuke/index.html#extensions-category-b) i.e., pick just one item from one category, not one from _each_ category, e.g., `B-DoWithinPeriodTasks` or `C-Sort` or `D-Places`
 * We recommend adding the extension via a branch (branch name is up to you). You may add it via a PR.
 * Add a ==tag named `BCD-Extension`== to the corresponding commit.<br>
 Regardless of the exact extension you added, the tag name should be `BCD-Extension`.

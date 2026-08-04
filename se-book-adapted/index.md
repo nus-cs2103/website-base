@@ -41,7 +41,6 @@ layout: textbook-layout.md
 ++**Supplementary**++
 
 {{ show_chapter("dummy", config.chapters.cppToJava) }}
-* [Project Duke](projectDuke/index.html)
 * [List of Definitions](common/definitions.html){% endif %}
 
 </div>

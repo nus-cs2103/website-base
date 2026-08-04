@@ -12,6 +12,25 @@
 This course requires you to write Java code almost every week, starting from the very first week. If your Java skills are rusty, please brush up on them.
 
 </div>
+<div id="use-of-ai">
+
+## Use of AI
+
+This course aims to get you started on using SE-related AI tools well. We want you to learn how to use those AI tools and use them in a way that enhances (not compromises) learning of basic SE skills.
+
+When faced with a coding-related task (e.g., adding a feature), the level of AI use can vary as follows.
+
+* No AI use. Hand-code everything. Use AI as a 'smart search engine' to ask general questions.{texts="['AI-1)', 'AI-2)', 'AI-3)', 'AI-4)', 'AI-5)', 'AI-6)']"}
+* Hand-code first as if there is no AI. Ask AI to review. Refine based on AI's feedback.
+* Hand-code minimal version, just a proof-of-concept. Get AI to strengthen it to a full-fledged version e.g., handle edge cases, add tests.
+* Think of how you would do the task manually. Get AI to do it. Compare the solution you 'imagined' with the one AI produced.
+* Get AI to do the task. Review it yourself fully, including the code, tests, behavior etc.
+* Get AI to do the task, fully, including the review. Only review the outcome (e.g., the feature behavior).
+
+Higher levels saves more time but can reduce learning.
+
+Which level to use? Depends on how much you already know, and how much you want to learn.
+</div>
 
 ## Workload
 

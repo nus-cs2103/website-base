@@ -225,6 +225,8 @@
 <variable id="icon_team_rep"><md>:fas-user:%%/:fas-users:%%</md></variable>
 <variable name="icon_both">{{ icon_individual }}/{{ icon_team }}</variable>
 
+<variable id="indented_arrow">&nbsp;&nbsp;&nbsp;&nbsp; ++↳++</variable>
+
 <variable name="faq"><span class="badge rounded-pill bg-info"><md>:far-question: FAQ</md></span></variable>
 <variable name="ts"><span class="badge rounded-pill bg-warning text-dark"><md>:fas-wrench: ++Troubleshooting++</md></span></variable>
 <variable name="bad"><span style="color: red"><md>:fas-thumbs-down: Bad</md></span></variable>
