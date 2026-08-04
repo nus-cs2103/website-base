@@ -97,142 +97,17 @@ The project consists of the following _increments_:
 </div><hr>
 <div id="Level-3">
 <include src="Level-3-fragment.md" />
-</div><hr><!-- ================================================================================================ -->
+</div><hr>
 <div id="Level-4">
-
-<include boilerplate src="level_thumb.md" var-text=":fas-business-time:" inline />
-
-### Level 4. ToDos, Events, Deadlines
-
-Add support for tracking three types of tasks:
-<br>
-<br>
-
-1. **ToDos**: tasks without any date/time attached to them %%e.g., _visit new theme park_%%
-2. **Deadlines**: tasks that need to be done before a specific date/time %%e.g., _submit report by 11/10/2019 5pm_%%
-3. **Events**: tasks that start at a specific date/time and end at a specific date/time<br>
-   %%e.g., (a) _team project meeting 2/10/2019 2-4pm_ (b) _orientation week  4/10/2019 to 11/10/2019_%%
-
-Example:
-```{.no-line-numbers}
-todo borrow book
-    ____________________________________________________________
-     Got it. I've added this task:
-       [T][ ] borrow book
-     Now you have 5 tasks in the list.
-    ____________________________________________________________
-
-list
-    ____________________________________________________________
-     Here are the tasks in your list:
-     1.[T][X] read book
-     2.[D][ ] return book (by: June 6th)
-     3.[E][ ] project meeting (from: Aug 6th 2pm to: 4pm)
-     4.[T][X] join sports club
-     5.[T][ ] borrow book
-    ____________________________________________________________
-
-deadline return book /by Sunday
-    ____________________________________________________________
-     Got it. I've added this task:
-       [D][ ] return book (by: Sunday)
-     Now you have 6 tasks in the list.
-    ____________________________________________________________
-
-event project meeting /from Mon 2pm /to 4pm
-    ____________________________________________________________
-     Got it. I've added this task:
-       [E][ ] project meeting (from: Mon 2pm to: 4pm)
-     Now you have 7 tasks in the list.
-    ____________________________________________________________
-```
-
-At this point, dates/times can be treated as strings; there is no need to convert them to actual dates/times.
-
-Example:
-```{.no-line-numbers}
-
-deadline do homework /by no idea :-p
-    ____________________________________________________________
-     Got it. I've added this task:
-       [D][ ] do homework (by: no idea :-p)
-     Now you have 6 tasks in the list.
-    ____________________________________________________________
-```
-
-<include boilerplate src="dukeNestedFragment.md" var-target="A-Inheritance" var-name="Extension: `A-Inheritance`" />
-</div><hr><!-- ================================================================================================ -->
+<include src="Level-4-fragment.md" />
+</div><hr>
 <div id="Level-5">
-
-<include boilerplate src="level_thumb.md" var-text=":fas-exclamation-triangle:" inline />
-
-### Level 5. Handle Errors
-
-Teach the chatbot to deal with errors such as incorrect inputs entered by the user.
-<br>
-<br>
-
-Example:
-```{.no-line-numbers}
-todo
-    ____________________________________________________________
-     OOPS!!! The description of a todo cannot be empty.
-    ____________________________________________________________
-
-blah
-    ____________________________________________________________
-     OOPS!!! I'm sorry, but I don't know what that means :-(
-    ____________________________________________________________
-```
-
-<box type="important" seamless>
-
-You are strongly encouraged to use your own wording for the error messages, rather than use the error message given in the example above.
-</box>
-
-<include boilerplate src="dukeNestedFragment.md" var-target="A-Exceptions" var-name="Extension: `A-Exceptions`" />
-<p/>
-
-* **Minimal**: Handle at least the two types of errors shown in the example above.
-* **Typical**:
-  * Handle all possible errors in the current version.
-  * As you evolve the chatbot, continue to handle errors related to the new features added.
-* **Stretch goals**:
-  * Make the error handling more error-specific e.g., give the user a clear/specific explanation of the error and how to correct it.
-
-</div><hr><!-- ================================================================================================ -->
+<include src="Level-5-fragment.md" />
+</div><hr>
 <div id="Level-6">
-
-<include boilerplate src="level_thumb.md" var-text=":fas-trash-alt:" inline />
-
-### Level 6. Delete
-
-Add support for deleting tasks from the list.
-<br>
-<br>
-
-Example:
-```{.no-line-numbers}
-list
-    ____________________________________________________________
-     Here are the tasks in your list:
-     1.[T][X] read book
-     2.[D][X] return book (by: June 6th)
-     3.[E][ ] project meeting (from: Aug 6th 2pm to: 4pm)
-     4.[T][X] join sports club
-     5.[T][ ] borrow book
-    ____________________________________________________________
-
-delete 3
-    ____________________________________________________________
-     Noted. I've removed this task:
-       [E][ ] project meeting (from: Aug 6th 2pm to: 4pm)
-     Now you have 4 tasks in the list.
-    ____________________________________________________________
-```
-
-<include boilerplate src="dukeNestedFragment.md" var-target="A-Collections" var-name="Extension: `A-Collections`" />
-</div><hr><!-- ================================================================================================ -->
+<include src="Level-6-fragment.md" />
+</div><hr>
+<!-- ================================================================================================ -->
 <div id="Level-7">
 
 <include boilerplate src="level_thumb.md" var-text=":fas-save:" inline />

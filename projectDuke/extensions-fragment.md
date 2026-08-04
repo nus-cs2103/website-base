@@ -388,10 +388,11 @@ Also note that pushing a GitHub Actions-related file to GitHub requires you to a
 
 </div><hr>
 <div id="A-Enums">
-<include boilerplate src="dukeExtensionTitle.md" var-extId="A-Enums"
-         var-extHeading="Use Enumerations"/>
+<markdown>
 
-Use Java `enum`s, if applicable.
+<include src="A-Enums-fragment.md" />
+
+</markdown>
 </div><hr>
 <div id="A-Varargs">
 <include boilerplate src="dukeExtensionTitle.md" var-extId="A-Varargs"

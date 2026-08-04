@@ -1,4 +1,5 @@
-{% from "common/admin.njk" import  show_admin_page, show_ai_guidance with context %}
+{% from "common/admin.njk" import  show_admin_page  with context %}
+{% from "common/macros.njk" import  show_ai_guidance with context %}
 
 {% call show_admin_page("ip-overview") %}
 <div id="main">
