@@ -286,3 +286,16 @@ Second part of a possible prompt:
 
 {% macro ask_chatgpt_for_three_os(visible_text, prompt) %}<small>{{ visible_text }}</small> {{ ask_chatgpt(":fab-windows: Windows", prompt + " I'm using Windows") }} | {{ ask_chatgpt(":fab-apple: macOS", prompt + " I'm using macOS")  }} | {{ ask_chatgpt(":fab-linux: Linux", prompt + " I'm using Linux") }}{% endmacro %}
 <!-- ============================================================ -->
+
+{% macro show_example() %}
+<cv-toggle xtoggle-id="examples">
+<div class="indented-level1 example">
+
+<box type="info" theme="light" seamless no-icon>
+
+  <span style="position: relative; left: -32px; margin-right: -25px; background-color: var(--bs-light-border-subtle);" class="badge rounded-pill fs-6 fw-normal"><md><small>%%:fas-cube: Example%%</small></md></span> {{ caller() | trim }}
+</box>
+</div>
+</cv-toggle>
+{% endmacro %}
+<!-- ============================================================ -->

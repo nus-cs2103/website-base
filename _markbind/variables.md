@@ -225,6 +225,10 @@
 <variable id="icon_team_rep"><md>:fas-user:%%/:fas-users:%%</md></variable>
 <variable name="icon_both">{{ icon_individual }}/{{ icon_team }}</variable>
 
+<variable id="label_example"><span class="badge bg-light text-secondary">{{ icon_example }} Example </span></variable>
+<variable id="label_examples"><span class="badge bg-light text-secondary">{{ icon_example }} Examples </span></variable>
+
+
 <variable id="indented_arrow">&nbsp;&nbsp;&nbsp;&nbsp; ++↳++</variable>
 
 <variable name="faq"><span class="badge rounded-pill bg-info"><md>:far-question: FAQ</md></span></variable>

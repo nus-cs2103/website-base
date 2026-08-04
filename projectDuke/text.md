@@ -87,49 +87,16 @@ The project consists of the following _increments_:
 
 ## <div class="text-white bg-dark p-1">Levels</div>
 <div id="Level-0">
-
 <include src="Level-0-fragment.md" />
 </div><hr>
 <div id="Level-1">
-
 <include src="Level-1-fragment.md" />
 </div><hr>
 <div id="Level-2">
-
 <include src="Level-2-fragment.md" />
-</div><hr><!-- ================================================================================================ -->
+</div><hr>
 <div id="Level-3">
-
-<include boilerplate src="level_thumb.md" var-text=":fas-check:" inline />
-
-### Level 3. Mark as Done
-
-Add the ability to mark tasks as _done_. Optionally, add the ability to change the status back to _not done_.<br><br>
-
-```{.no-line-numbers}
-list
-    ____________________________________________________________
-     Here are the tasks in your list:
-     1.[X] read book
-     2.[ ] return book
-     3.[ ] buy bread
-    ____________________________________________________________
-
-mark 2
-    ____________________________________________________________
-     Nice! I've marked this task as done:
-       [X] return book
-    ____________________________________________________________
-
-unmark 2
-    ____________________________________________________________
-     OK, I've marked this task as not done yet:
-       [ ] return book
-    ____________________________________________________________
-```
-
-<include boilerplate src="dukeNestedFragment.md" var-target="A-Classes" var-name="Extension: `A-Classes`" />
-
+<include src="Level-3-fragment.md" />
 </div><hr><!-- ================================================================================================ -->
 <div id="Level-4">
 
