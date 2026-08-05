@@ -1,8 +1,6 @@
-{% from "common/macros.njk" import ask_chatgpt, show_ai_guidance with context %}
+{% from "common/macros.njk" import ask_chatgpt, show_ai_guidance, show_duke_extension_title with context %}
 
-<include boilerplate src="dukeExtensionTitle.md" var-extId="A-Enums"
-         var-extHeading="Use Enumerations"/>
-<markdown>
+{{ show_duke_extension_title("A-Enums", "Use Enumerations", "primary") }}
 
 Use Java `enum`s, if applicable.
 
@@ -10,4 +8,3 @@ Use Java `enum`s, if applicable.
 
 Here's useful experiment: First, look through the code and see if you can identify any variables that can be represented as an `enum`. Then, ask AI to suggest a list of `enum`s that can be used in the code.
 {% endcall %}
-</markdown>

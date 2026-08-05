@@ -108,38 +108,11 @@ The project consists of the following _increments_:
 <div id="Level-6">
 <include src="Level-6-fragment.md" />
 </div><hr>
-<!-- ================================================================================================ -->
 <div id="Level-7">
+<include src="Level-7-fragment.md" />
+</div><hr>
 
-<include boilerplate src="level_thumb.md" var-text=":fas-save:" inline />
-
-### Level 7. Save
-
-Save the tasks on the hard disk automatically whenever the task list changes. Load the data from the hard disk when the chatbot starts up. You may hard-code the file name and relative path from the project root %%e.g., `./data/duke.txt`%%
-
-The format of the file is up to you. Example:
-```{.no-line-numbers}
-T | 1 | read book
-D | 0 | return book | June 6th
-E | 0 | project meeting | Aug 6th 2-4pm
-T | 1 | join sports club
-```
-
-<box type="tip" seamless>
-
-**If you use file paths in your code,**
-* remember to use relative paths rather than absolute paths such as `C:\data`. If not, your app can cause unpredictable results when used on another computer.
-* remember to [specify file paths in an OS-independent way](https://www.sghill.net/how-do-i-make-cross-platform-file-paths-in-java.html). If not, your app might not work when used on a different OS.
-</box>
-
-<box type="important" seamless>
-
-**Your code must <tooltip content="i.e., if the file is missing, your code must create it">handle</tooltip> the case where the data file doesn't exist at the start.** Reason: when someone else takes your chatbot and runs it for the first time, the required file will not exist on their computer. Similarly, if you expect the data file to be in a specific folder (e.g., `./data/`), you must also handle the folder-does-not-exist-yet case.
-</box>
-
-**Stretch goal**: Handle the situation of the data file being corrupted (i.e., content not in the expected format).
-
-</div><hr><!-- ================================================================================================ -->
+<!-- ================================================================================================ -->
 <div id="Level-8">
 
 <include boilerplate src="level_thumb.md" var-text=":fas-clock:" inline />

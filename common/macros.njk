@@ -245,6 +245,13 @@ Your GitHub username : <cv-placeholder-input name="username" appearance="underli
 {% endmacro %}
 <!-- ============================================================ -->
 
+{% macro show_duke_extension_title(extId, extHeading, extStyle) %}
+### <span class="badge rounded-pill bg-{{ extStyle }}">{{ extId }}</span>
+{{ indented_arrow | safe }} **{{ extHeading }}**
+
+{% endmacro %}
+<!-- ============================================================ -->
+
 {% macro show_ai_guidance(subject)%}
 <panel type="codex" expanded >
 <div slot="header"><md>[:fas-robot: AI Guidance] **{{ subject }}**</md></div>
