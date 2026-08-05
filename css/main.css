@@ -260,4 +260,285 @@ mark {
     background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity));
 }
 
+/* =========================================================
+   Custom panel types: purple, teal, pink, claude, codex
+
+   MarkBind interpolates <panel type="x"> straight into the class
+   names `text-bg-x`, `border-x` and `btn-outline-x`, so defining
+   those classes is enough to register a new panel type.
+
+   To add a type: copy one colour block below and add its three
+   class names to the grouped rules that follow.
+   ========================================================= */
+
+/* ---------- Colour blocks ----------
+   Header colours are deliberately identical in light and dark mode, which is
+   how the standard types behave. Only the body tint flips. Text colour is
+   picked the way Bootstrap does it: black unless white gives better contrast. */
+
+.text-bg-purple,
+.border-purple,
+.btn-outline-purple {
+    --mb-type: var(--bs-purple);         /* #6f42c1, white text at 6.5:1 */
+    --mb-type-rgb: 111, 66, 193;
+    --mb-type-fg: #fff;
+    --mb-type-body-bg: #f3eefc;
+    --mb-type-body-fg: #2a1a4a;
+}
+
+.text-bg-teal,
+.border-teal,
+.btn-outline-teal {
+    --mb-type: var(--bs-teal);           /* #20c997, black text at 9.9:1 */
+    --mb-type-rgb: 32, 201, 151;
+    --mb-type-fg: #000;                  /* light background, as with info/warning */
+    --mb-type-body-bg: #e8f9f3;
+    --mb-type-body-fg: #103b31;
+}
+
+.text-bg-pink,
+.border-pink,
+.btn-outline-pink {
+    --mb-type: #bd2a6b;                  /* deeper than --bs-pink (#d63384), which
+                                            leaves white text at exactly 4.50:1 */
+    --mb-type-rgb: 189, 42, 107;
+    --mb-type-fg: #fff;
+    --mb-type-body-bg: #fdeef5;
+    --mb-type-body-fg: #45102a;
+}
+
+.text-bg-claude,
+.border-claude,
+.btn-outline-claude {
+    --mb-type: #d97757;                  /* Claude orange, black text at 6.7:1 */
+    --mb-type-rgb: 217, 119, 87;
+    --mb-type-fg: #000;
+    --mb-type-body-bg: #f0eee6;          /* Anthropic cream */
+    --mb-type-body-fg: #3d2a1f;
+}
+
+/* Codex is the only gradient type, matching the blue-violet logo. The gradient
+   is clipped at #5e6ef4 rather than running to the logo's deepest blue so that
+   black header text clears 4.5:1 across the whole sweep (8.8:1 to 5.0:1). */
+.text-bg-codex,
+.border-codex,
+.btn-outline-codex {
+    --mb-type: #424bc5;                  /* was #6a7bf8 — borders and hover fill */
+    --mb-type-rgb: 66, 75, 197;          /* was 106, 123, 248 */
+    --mb-type-fg: #fff;                  /* was #000  ← the line you asked about */
+    --mb-type-grad-a: #5b63d6;           /* was #9aa0fb */
+    --mb-type-grad-b: #2a34b5;           /* was #5e6ef4 */
+    --mb-type-body-bg: #eef0ff;          /* unchanged */
+    --mb-type-body-fg: #1b1f4d;          /* unchanged */
+}
+
+
+[data-bs-theme="dark"] .text-bg-purple,
+[data-bs-theme="dark"] .border-purple,
+[data-bs-theme="dark"] .btn-outline-purple {
+    --mb-type-body-bg: #241b38;
+    --mb-type-body-fg: #e6e0f5;
+}
+
+[data-bs-theme="dark"] .text-bg-teal,
+[data-bs-theme="dark"] .border-teal,
+[data-bs-theme="dark"] .btn-outline-teal {
+    --mb-type-body-bg: #102b26;
+    --mb-type-body-fg: #d5f2e9;
+}
+
+[data-bs-theme="dark"] .text-bg-pink,
+[data-bs-theme="dark"] .border-pink,
+[data-bs-theme="dark"] .btn-outline-pink {
+    --mb-type-body-bg: #33121f;
+    --mb-type-body-fg: #f7dde9;
+}
+
+[data-bs-theme="dark"] .text-bg-claude,
+[data-bs-theme="dark"] .border-claude,
+[data-bs-theme="dark"] .btn-outline-claude {
+    --mb-type-body-bg: #2e1f17;
+    --mb-type-body-fg: #f5e6dc;
+}
+
+[data-bs-theme="dark"] .text-bg-codex,
+[data-bs-theme="dark"] .border-codex,
+[data-bs-theme="dark"] .btn-outline-codex {
+    --mb-type-btn: #9aa0fb;              /* #4a5cf0 is too dark on a dark page */
+    --mb-type-body-bg: #171a33;
+    --mb-type-body-fg: #dfe3ff;
+}
+
+/* ---------- Shared rules ---------- */
+
+/* Panel header (and its inner header-wrapper).
+   Bootstrap's own text-bg-* use !important, so these must too. */
+.text-bg-purple,
+.text-bg-teal,
+.text-bg-pink,
+.text-bg-claude,
+.text-bg-codex {
+    background-color: var(--mb-type) !important;
+    color: var(--mb-type-fg) !important;
+}
+
+/* Gradient header. MarkBind puts `text-bg-*` on BOTH the card header and its
+   inner header-wrapper, so painting the gradient on both would render two
+   independently-sized gradients and show a seam. Paint the outer header only
+   and let the wrapper show through. */
+.card-header.text-bg-codex {
+    background-image: linear-gradient(135deg,
+                                      var(--mb-type-grad-a),
+                                      var(--mb-type-grad-b));
+}
+
+.header-wrapper.text-bg-codex {
+    background-color: transparent !important;
+    background-image: none;
+}
+
+/* Card and header borders. */
+.border-purple,
+.border-teal,
+.border-pink,
+.border-claude,
+.border-codex {
+    border-color: var(--mb-type) !important;
+}
+
+/* Panel body. `border-*` sits on the .card element itself, so this selects
+   only panels of this type. Going through --bs-card-bg rather than styling
+   .card-body keeps the card's rounded bottom corners intact. */
+.card.border-purple,
+.card.border-teal,
+.card.border-pink,
+.card.border-claude,
+.card.border-codex {
+    --bs-card-bg: var(--mb-type-body-bg);
+    --bs-card-color: var(--mb-type-body-fg);
+}
+
+/* `peek` fades content out towards --bs-body-bg; match the body tint. */
+.card.border-purple .card-peek-collapsed::after,
+.card.border-teal .card-peek-collapsed::after,
+.card.border-pink .card-peek-collapsed::after,
+.card.border-claude .card-peek-collapsed::after,
+.card.border-codex .card-peek-collapsed::after {
+    background-image: linear-gradient(180deg, transparent, var(--mb-type-body-bg) 90%);
+}
+
+/* Minimized panels render as an outline button rather than a card. The button
+   draws its colour on the page background rather than on a filled header, so
+   a type whose header colour is too dark to read there can override just the
+   resting state via --mb-type-btn. Hover/active fill still uses --mb-type. */
+.btn-outline-purple,
+.btn-outline-teal,
+.btn-outline-pink,
+.btn-outline-claude,
+.btn-outline-codex {
+    --bs-btn-color: var(--mb-type-btn, var(--mb-type));
+    --bs-btn-border-color: var(--mb-type-btn, var(--mb-type));
+    --bs-btn-hover-color: var(--mb-type-fg);
+    --bs-btn-hover-bg: var(--mb-type);
+    --bs-btn-hover-border-color: var(--mb-type);
+    --bs-btn-focus-shadow-rgb: var(--mb-type-rgb);
+    --bs-btn-active-color: var(--mb-type-fg);
+    --bs-btn-active-bg: var(--mb-type);
+    --bs-btn-active-border-color: var(--mb-type);
+    --bs-btn-disabled-color: var(--mb-type-btn, var(--mb-type));
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: var(--mb-type-btn, var(--mb-type));
+}
+
+/* =========================================================
+   mdblock: rendered Markdown in a bordered, tinted box with a
+   'Copy as Markdown' button. Set in monospace so it reads as
+   "code with fancy formatting".
+
+   Colours reuse the Claude tokens defined for <panel type="claude">
+   above, so the two stay in step.
+   ========================================================= */
+
+.mdblock {
+    --mdblock-accent: #d97757;           /* Claude orange */
+    --mdblock-bg: #fcf5f2;               /* subtle tint of the accent */
+    --mdblock-fg: #3d2a1f;
+    --mdblock-border: rgba(217, 119, 87, 0.3);
+
+    position: relative;
+    font-family: var(--bs-font-monospace, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace);
+    font-size: 0.9rem;
+    line-height: 1.55;
+    background-color: var(--mdblock-bg);
+    color: var(--mdblock-fg);
+    border: 1px solid var(--mdblock-border);
+    border-left: 3px solid var(--mdblock-accent);
+    border-radius: 6px;
+    padding: 1rem 1rem 0.25rem;
+    margin: 1rem 0;
+}
+
+[data-bs-theme="dark"] .mdblock {
+    --mdblock-bg: #2e1f17;               /* matches the claude panel body */
+    --mdblock-fg: #f5e6dc;
+    --mdblock-border: rgba(217, 119, 87, 0.45);
+}
+
+.mdblock > *:last-child {
+    margin-bottom: 0.75rem;
+}
+
+/* Headings inside stay monospace too, just heavier -- otherwise they snap
+   back to the body font and break the "it's all code" illusion. */
+.mdblock :is(h1, h2, h3, h4, h5, h6) {
+    font-family: inherit;
+    font-weight: 700;
+}
+
+/* Inline code sits on the tint rather than the page bg, so give it its own
+   slightly deeper shade instead of the site's default dark chip -- a dark
+   chip reads as a hole punched in the box. */
+.mdblock code.hljs.inline {
+    background-color: rgba(217, 119, 87, 0.14);
+    color: inherit;
+    font-size: 0.95em;
+}
+
+/* Fenced blocks keep MarkBind's own highlight.js styling untouched. That
+   theme is a DARK one: overriding the background to a light tint leaves
+   light-on-dark token colours stranded and the code becomes unreadable. */
+.mdblock pre {
+    margin-bottom: 1rem;
+}
+
+.mdblock blockquote {
+    border-left-color: var(--mdblock-border);
+}
+
+.mdblock-copy {
+    position: absolute;
+    top: 0.4rem;
+    right: 0.4rem;
+    font-family: var(--bs-font-sans-serif, system-ui, sans-serif);
+    font-size: 0.75rem;
+    line-height: 1;
+    padding: 0.3rem 0.55rem;
+    border: 1px solid var(--mdblock-border);
+    border-radius: 4px;
+    background: var(--mdblock-bg);
+    color: var(--mdblock-accent);
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.15s;
+}
+
+.mdblock:hover .mdblock-copy,
+.mdblock-copy:focus {
+    opacity: 1;
+}
+
+.mdblock-copy:hover {
+    background: var(--mdblock-accent);
+    color: #fff;
+}
 

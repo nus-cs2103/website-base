@@ -278,8 +278,12 @@ Course | Venue | Time | ~~%%Tutorial ID<br>in Canvas%%~~<br>==(don't use this!)=
 -------|-------|------|------------------------------------------------------------|----------------------------------------|-------|----
 </variable>
 
-<variable name="req_start">[============================</variable>
-<variable name="req_end">============================]</variable>
+<variable name="req_start">[=====
+
+</variable>
+<variable name="req_end">
+
+=====]</variable>
 <variable name="review_prompt">Your task:
 I have updated the code to match the requirements.
 Review my changes and suggest possible issues and areas to improve.</variable>

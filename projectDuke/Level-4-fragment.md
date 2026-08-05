@@ -1,4 +1,4 @@
-{% from "common/macros.njk" import ask_chatgpt, show_ai_guidance, show_example, show_prompt_part1, show_prompt_part2 with context %}
+{% from "common/macros.njk" import ask_chatgpt, mdblock, show_ai_guidance, show_example, show_prompt_part1, show_prompt_part2 with context %}
 
 <include boilerplate src="level_thumb.md" var-text=":fas-business-time:" inline />
 
@@ -74,7 +74,8 @@ Recent AI coding harnesses already do some checking of its own work. However, it
 
 **Create a `test-ui` skill** that you (and Codex) can use to test the code. Here's a sample prompt:
 
-```{heading="sample prompt"}
+{% call mdblock() %}
+
 Create a project-specific skill named `test-ui`, as follows.
 * The skill should run the program and test it with a set of commands, and check if the output matches the expected output.
 * The skill should take as input a list of commands and a list of expected outputs, and run the program with each command, checking if the output matches the expected output.
@@ -82,17 +83,18 @@ Create a project-specific skill named `test-ui`, as follows.
 * Each test case should specify the aim of the test case, inputs, and the expected output.
 * After testing, show a record of console inputs/outputs, so that we can see how the test session looked like.
 * If a test case failed, terminate the test session immediately, and report the actual and expected outputs.
-```
+{% endcall %}
 
 After the skill is created, invoke it. If the behavior is not to your satisfaction, you can ask the AI to improve the skill.
 
 To ensure the skill is used after each code update, you can issue a prompt such as the following:
 
-```{heading="sample prompt"}
+{% call mdblock() %}
 Update relevant agent files to ensure that after each code update,
 1. the `test/ui-test-plan.md` is updated (if needed), and,
 2. the `test-ui` skill is invoked.
-```
+{% endcall %}
+
 It is likely this will result in an update to the `AGENTS.md` file.
 
 Commit the changes to the Codex files.

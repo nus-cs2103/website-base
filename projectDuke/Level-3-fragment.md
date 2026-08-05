@@ -1,4 +1,4 @@
-{% from "common/macros.njk" import ask_chatgpt, show_ai_guidance, show_example, show_prompt_part1, show_prompt_part2 with context %}
+{% from "common/macros.njk" import ask_chatgpt, mdblock, show_ai_guidance, show_example, show_prompt_part1, show_prompt_part2 with context %}
 
 <include boilerplate src="level_thumb.md" var-text=":fas-check:" inline />
 
@@ -75,16 +75,16 @@ When doing a project like the iP, we can create a skill to generate a webpage th
 
 1. To create a skill, you can simply ask the AI to create the skill from scratch. But we have already created a skill named `present-changes-visually` and shared it at https://github.com/se-edu/skill-present-changes-visually<br>
    So, you don't have to create it from scratch. Instead, give the following prompt to Codex.
-   ```
+   {% call mdblock() %}
    Create a project-specific skill named `present-changes-visually`.
    Use the repo https://github.com/se-edu/skill-present-changes-visually as the basis.
    Ask for my permission if you run into any permission issues.
-   ```
+   {% endcall %}
 1. After the skill is created, restart Codex so that it recognizes the new skill.
 1. To test the skill, you can give this by give the following prompt.
-   ```
+   {% call mdblock() %}
    Use the /present-changes-visually skill
-   ```
+   {% endcall %}
    This will create a webpage comparing the current uncommitted changes to the last committed version of the code. The file will be created as `_temp/visual-diff.html`.<br>
    The format of the page should look similar to the screenshot below:
 
@@ -96,10 +96,10 @@ When doing a project like the iP, we can create a skill to generate a webpage th
 </div>
 
 4. You can be more specific when invoking this skill. Here is an example:
-   ```
+   {% call mdblock() %}
    Use the /present-changes-visually skill to compare the most recent commit with the one before it.
    Save the file as `_temp/with-and-without-tasks-class.html`.
-   ```
+    {% endcall %}
 1. Commit the new skill (it will be inside a folder `.codex/skills/present-changes-visually`) to the repo so that it is available for future use. Alternatively, you can add it to the `.gitignore` file so that the skill remains in the local repo but not pushed to the remote repo.
 {% endcall %}
 
@@ -107,7 +107,8 @@ When doing a project like the iP, we can create a skill to generate a webpage th
 
 **Step 1: Implement the `mark` command to update task status, without using additional classes**
 
-````{ heading="sample prompt"}
+{% call mdblock() %}
+
 Implement the following requirement.
 
 {{ req_start }}
@@ -140,13 +141,14 @@ list
     ____________________________________________________________
 
 ```
-````
+{% endcall %}
 
 Examine the new code using your code editor. Commit the changes.
 
 **Step 2: Implement the `unmark` command to update task status, without using additional classes**
 
-````{ heading="sample prompt"}
+{% call mdblock() %}
+
 Implement the following requirement.
 {{ req_start }}
 Add the ability to reverse the _done_ status of tasks.
@@ -178,13 +180,16 @@ list
     ____________________________________________________________
 
 ```
-````
+{% endcall %}
 As before, examine the code, and commit.
 
 **Step 3: Implement the `A-Classes` extension.**
 
-````{ heading="sample prompt"}
+{% call mdblock() %}
+
 Implement the following requirement.
+
+
 {{ req_start }}
 Add a `Task` class to represent tasks.
 Put that class in a separate file.
@@ -213,7 +218,7 @@ Elsewhere in the code:
 Task t = new Task("read book");
 t.markAsDone();
 ```
-````
+{% endcall %}
 
 Now that we have multiple files being updated, it is good time to put the `present-changes-visually` skill to use. Invoke the skill and use the generated file to examine how introducing a separate `Task` class changes to code structure.
 

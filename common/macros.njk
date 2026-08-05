@@ -246,7 +246,7 @@ Your GitHub username : <cv-placeholder-input name="username" appearance="underli
 <!-- ============================================================ -->
 
 {% macro show_ai_guidance(subject)%}
-<panel type="warning" expanded >
+<panel type="codex" expanded >
 <div slot="header"><md>[:fas-robot: AI Guidance] **{{ subject }}**</md></div>
 
 {{ caller() }}
@@ -255,11 +255,40 @@ Your GitHub username : <cv-placeholder-input name="username" appearance="underli
 {% endmacro %}
 <!-- ============================================================ -->
 
+{#
+  mdblock -- renders a block of Markdown inside a bordered box, with a
+  'Copy as Markdown' button that puts the original Markdown on the clipboard.
+
+  Usage:
+    {% call mdblock() %}
+    * **Add more test cases** to cover edge cases and incorrect inputs.
+    {% endcall %}
+
+  The `urlencode` is load-bearing, for two reasons:
+    1. It strips newlines, keeping the whole opening tag on one physical line.
+       Otherwise a blank line inside the attribute terminates the HTML block
+       and markdown-it parses the rest of the attribute as page content.
+    2. It removes quotes and ampersands, which MarkBind's HTML serializer
+       decodes back to literal characters -- a literal `"` would close the
+       attribute early and silently truncate the copied Markdown.
+  The button's JS calls decodeURIComponent() to undo it.
+#}
+{% macro mdblock(label="Copy as Markdown") %}
+<div class="mdblock" data-md="{{ (caller() + "") | trim | urlencode }}">
+<button class="mdblock-copy" type="button" data-label="{{ label }}" onclick="mdblockCopy(this)">{{ label }}</button>
+
+{{ caller() }}
+
+</div>
+{% endmacro %}
+<!-- ============================================================ -->
+
 {% macro show_prompt_part1(requirements, sample_output)%}
 
 First part of a possible prompt:
 
-````{ heading="sample prompt - part 1"}
+{% call mdblock() %}
+
 The requirement given to me:
 
 {{ req_start }}
@@ -269,7 +298,8 @@ The requirement given to me:
 An example output:
 
 {{ sample_output | trim }}
-````
+{% endcall %}
+
 {% endmacro %}
 <!-- ============================================================ -->
 
@@ -279,20 +309,22 @@ Second part of a possible prompt:
 <tabs>
   <tab header="Sample prompt - part 2 (less AI)">
 
-```
+{% call mdblock() %}
+
 {{ review_prompt }}
-```
+{% endcall %}
   </tab>
   <tab header="Sample prompt - part 2 (more AI)">
 
-```
+{% call mdblock() %}
+
 {{ update_prompt }}
-```
+{% endcall %}
 </tab>
 </tabs>
 {% endmacro %}
-<!-- ============================================================ -->
 
+<!-- ============================================================ -->
 
 {% macro show_gm_lesson_link(lesson_id, lesson_name)%}<md>++<span style="background-color: #e6f4ea;" class="badge rounded-pill text-success">:octicon-git-branch: Git-Mastery → <a href="https://git-mastery.org/lessons/{{ lesson_id }}/#/{{ course | lower }}" target="_blank">**Lesson: {{ lesson_name }}**</a></span>++</md>{% endmacro %}
 <!-- ============================================================ -->

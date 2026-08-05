@@ -1,4 +1,4 @@
-## <div class="text-white bg-primary p-1">Extensions: Category A</div>
+## <span class="text-white bg-primary badge rounded-pill">Category A</span> Extensions
 
 <div id="A-Classes">
 <include boilerplate src="dukeExtensionTitle.md" var-extId="A-Classes"
@@ -521,7 +521,8 @@ You can refer to the [se-edu guide on AI-Assisted Coding](https://se-education.o
 
 <!-- ======================================================================================================= -->
 
-## <div class="text-white bg-info p-1">Extensions: Category B</div>
+## <span class="text-white bg-info badge rounded-pill">Category B</span> Extensions
+
 
 <div id="B-TentativeScheduling">
 <include boilerplate src="dukeExtensionTitle.md" var-extId="B-TentativeScheduling" var-extStyle="info"
@@ -586,7 +587,7 @@ Deal with schedule anomalies %%e.g., detect if a task being added clashes with a
 
 <!-- ======================================================================================================= -->
 
-## <div class="text-white bg-success p-1">Extensions: Category C</div>
+## <span class="text-white bg-success badge rounded-pill">Category C</span> Extensions
 
 <div id="C-DetectDuplicates">
 <include boilerplate src="dukeExtensionTitle.md" var-extId="C-DetectDuplicates" var-extStyle="success"
@@ -695,7 +696,8 @@ Other ideas:
 
 <!-- ======================================================================================================= -->
 
-## <div class="text-white bg-danger p-1">Extensions: Category D</div>
+## <span class="text-white bg-danger badge rounded-pill">Category D</span> Extensions
+
 
 <div id="D-Contacts">
 <include boilerplate src="dukeExtensionTitle.md" var-extId="D-Contacts" var-extStyle="danger"

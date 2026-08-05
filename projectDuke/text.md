@@ -85,7 +85,8 @@ The project consists of the following _increments_:
 </div>
 </div>
 
-## <div class="text-white bg-dark p-1">Levels</div>
+## <span class="text-white bg-dark p-1">Levels</span>
+
 <div id="Level-0">
 <include src="Level-0-fragment.md" />
 </div><hr>

@@ -1,4 +1,4 @@
-{% from "common/macros.njk" import show_ai_guidance with context %}
+{% from "common/macros.njk" import mdblock, show_ai_guidance with context %}
 
 
 <include boilerplate src="level_thumb.md" var-text=":fas-grin-hearts:" inline />
@@ -23,26 +23,25 @@
 1. Start a new chat/project in Codex (i.e., ChatGPT app in Codex mode). Set your iP folder as the folder of that chat.<br>
    Refer to the tutorial [_Using the Codex Desktop App_ at SE-EDU Guides](https://se-education.org/guides/tutorials/codexDesktop.html) for more info.
 1. Try the following prompt.
-   ```
-   I wish to change the chatbot name from duke to [NEW NAME].
-   Which files need to be changed in what way?
-   ```
- 1. If you are happy with reply, you can follow up with a `Go ahead and make those changes`.<br>
-    <box type="tip" seamless>
+  {% call mdblock() %}
+  I wish to change the chatbot name from duke to [NEW NAME].
+  Which files need to be changed in what way?
+  {% endcall %}
+1. If you are happy with reply, you can follow up with a `Go ahead and make those changes`.<br>
+   <box type="tip" seamless>
 
-    **To economize the use of tokens, start with a cheaper model** (e.g., `Luna` at `High` or `Extra High` setting). Use more expensive models only when cheaper ones fail to meet expectations or you think the task is worth a higher cost of tokens.
+   **To economize the use of tokens, start with a cheaper model** (e.g., `Luna` at `High` or `Extra High` setting). Use more expensive models only when cheaper ones fail to meet expectations or you think the task is worth a higher cost of tokens.
 
     **Set the permission level to `Approve for me`**: Codex will still ask your permission when performing 'risky' actions but proceed with less risky actions without bothering you every time.
-    </box>
- 1. If Codex doesn't update the banner, you can ask it to do so.
-    ```{ heading="sample prompt"}
-    Generate an ASCII-art banner for the word [NEW NAME] (case-sensitive).
-    Give me a few variations.
-    ```
- 1. Examine and test the updated code. If you are happy with it, commit the changes. %%Yes, you can ask Codex to create the commit but if you are new to Git, it is better to do the commits yourself before you start delegating it to AI. Besides, hand-committing can even be faster, and saves tokens.%%
+   </box>
+1. If Codex doesn't update the banner, you can ask it to do so.
+   {% call mdblock() %}
+   Generate an ASCII-art banner for the word [NEW NAME] (case-sensitive).
+   Give me a few variations.
+   {% endcall %}
+1. Examine and test the updated code. If you are happy with it, commit the changes. %%Yes, you can ask Codex to create the commit but if you are new to Git, it is better to do the commits yourself before you start delegating it to AI. Besides, hand-committing can even be faster, and saves tokens.%%
 
 {% endcall %}
-
 
 
 **++(b) Update the initial code simply greet the user and exit.++**
