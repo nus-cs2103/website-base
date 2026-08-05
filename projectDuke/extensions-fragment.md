@@ -115,66 +115,10 @@ Use Java Collections classes for storing data. For example, you can use an [`Arr
 <include src="A-MoreOOP-fragment.md" />
 </div><hr>
 <div id="A-JUnit">
-<include boilerplate src="dukeExtensionTitle.md" var-extId="A-JUnit"
-         var-extHeading="Add JUnit tests"/>
-
-Add JUnit tests to test the behavior of the code.
-
-* **Minimal**: Use JUnit to test ==at least two non-trivial methods==, from two different classes (if you have multiple classes),<br>
-  and ensure they are ==tested reasonably well== (i.e., the test code should try to catch most potential bugs in the target methods).
-* **Stretch goal**: Use JUnit to test all non-trivial public methods of all classes.
-
-Refer to the [_JUnit tutorial_ @se-edu/guides](https://se-education.org/guides/tutorials/junit.html) to find how to use JUnit (in the context of this project).
-
-</tab>
-</tabs>
-
-
+<include src="A-JUnit-fragment.md" />
 </div><hr>
 <div id="A-Packages">
-<include boilerplate src="dukeExtensionTitle.md" var-extId="A-Packages"
-         var-extHeading="Divide classes into packages"/>
-
-Organize the classes into suitable Java packages.
-
-<box type="warning" seamless>
-
-Note that `src/main/java` should be kept as the <tooltip content="root folder for Java source code">source root</tooltip> folder, as some tools we'll be using later will look for the Java source code in that folder by default.
-
-For example, suppose you have the following structure now, and you wish to move `Duke.java` into a package `duke.ui`.
-
-<tree>
-:far-folder: [project root] %%e.g., C:\courses\project\\%%
-  :far-folder: #g#src##\
-    :far-folder: #g#main##\
-      #g#:fas-folder: java##\ #g#[source root]##
-        :far-file: Duke.java (not in a package)
-</tree>
-
-The correct way to do so is:
-
-<tree>
-:far-folder: [project root] %%e.g., C:\courses\project\\%%
-  :far-folder: #g#src##\
-    :far-folder: #g#main##\
-       #g#:fas-folder: java##\ #g#[source root]##
-        :far-folder: ==duke==\
-          :far-folder: ==ui==\
-            :far-file: Duke.java (in package `duke.ui`)
-</tree>
-
-Do not convert `src`, `main`, `java` into packages. For example, the following is #r#incorrect##:
-<tree>
-:far-folder: [project root] #r#[source root]##
-  :far-folder: #g#src##\
-    :far-folder: #g#main##\
-      :far-folder: #g#java##\
-        :far-file: Duke.java (in package `src.main.java`)
-</tree>
-</box>
-
-* **Minimal**: put all classes in one package e.g., `duke`
-* **Stretch goal**: divide into multiple packages as the number of classes increases e.g., `duke.task`, `duke.command`
+<include src="A-Packages-fragment.md" />
 </div><hr>
 <div id="A-JavaDoc">
 <include boilerplate src="dukeExtensionTitle.md" var-extId="A-JavaDoc"
