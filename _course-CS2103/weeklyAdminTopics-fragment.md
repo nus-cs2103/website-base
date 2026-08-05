@@ -96,8 +96,7 @@ week5: [
   {faq_id: "beanCounting"}],
 week6: [
   {topic_id: "appendixF-teamworkIssues"},
-  {faq_id: "manySubmissions"},
-  {faq_id: "cs2101Difference"}],
+  {faq_id: "manySubmissions"}],
 week7: [],
 week8: [],
 week9: [],

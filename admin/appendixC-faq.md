@@ -19,7 +19,7 @@
 {{ show_expanded_faq("narrowProjectScope") }}
 {{ show_expanded_faq("favoriteTool") }}
 {{ show_expanded_faq("manySubmissions") }}
-{{ show_expanded_faq("cs2101Difference") if cs2103  }}
+{{ show_expanded_faq("useAiCode") }}
 
 ## FAQs on: Participation
 

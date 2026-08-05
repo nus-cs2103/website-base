@@ -231,7 +231,6 @@ Please upload items 2, 3, 4 as three separate files, using the three Canvas assi
 
 <include src="policies-fragment.md#cite-reuse-immediately" />
 
-<include src="policies-fragment.md#using-tool-generated-code" />
 </div>
 </div>
 

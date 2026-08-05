@@ -1,6 +1,6 @@
 {% from "common/admin.njk" import show_admin_page, show_project_summary_lead with context %}
 {% from "common/topics.njk" import panopto, topic_preamble with context %}
-{% from "common/macros.njk" import as_tag, button, embed_topic, get_date, show_faq, show_gm_lesson_link, show_troubleshooting, step, thumb, timing_badge with context %}
+{% from "common/macros.njk" import as_tag, button, embed_topic, get_date, show_faq, show_github_username_entry, show_gm_lesson_link, show_troubleshooting, step, thumb, timing_badge with context %}
 {% from "_course-" + course + "/weeklyIpTasks-fragment.md" import weekly_ip_tasks with context %}
 
 {#====================================================================================================================
@@ -34,7 +34,7 @@
 <div id="tag-push">
 
 * From this point onward, after completing each increment,
-  * **`git tag` the commit that _completed_ the increment with the exact increment ID** e.g., {{ as_tag('Level-2') }}, {{ as_tag('A-TextUiTesting') }}
+  * **`git tag` the commit that _completed_ the increment with the exact increment ID** e.g., {{ as_tag('Level-2') }}, {{ as_tag('A-Classes') }}
     <box type="warning" seamless><md>[Git tags](https://git-mastery.org/lessons/tag/) are not the same as [Git commit messages](https://git-mastery.org/lessons/commit/).</md></box>
     <mermaid>
     {{ "%%{init: { 'theme': 'default', 'gitGraph': {'mainBranchName': 'master'}} }%%" }}
@@ -49,7 +49,7 @@
     </mermaid>
   * **`git push` the code to your fork**
     <box type="warning" seamless><md>Git doesn't push tags unless you [specifically ask it to](https://git-mastery.org/lessons/tag/?cv-highlight=W3sidCI6IlAiLCJpIjo0MSwicCI6Im1haW4iLCJzIjoiUHVzaGluZyBjb21taXRzIHRvIGEgcmVtb3RlIGRvZXMiLCJoIjotMzYxMjczNDgzLCJpZCI6IiJ9XQ%3D%3D).
-    After pushing a tag to your fork, you should be able to see that tag by visiting `https://github.com/YOUR_USER_NAME/REPO_NAME/tags` e.g., https://github.com/se-edu/addressbook-level3/tags</md></box>
+    After pushing a tag to your fork, you should be able to see that tag by visiting `https://github.com/YOUR_USER_NAME/REPO_NAME/tags` e.g., <a href="https://github.com/[[username: JohnDoe]]/ip/tags" target="_blank" class="cv-bind">https://github.com/[[username: JohnDoe]]/ip/tags</a></md></box>
     <box type="tip" seamless><md>If you encounter issues connecting Sourcetree with your GitHub account, refer to this [Sourcetree Tutorial](https://se-education.org/guides/tutorials/sourcetree.html).</md></box>
 * The relevant textbook topics are:
   * {{ show_gm_lesson_link("commit", "T1L5. Saving a Snapshot") }}
@@ -579,7 +579,7 @@ If your fork doesn't have the `add-gradle-support` branch (i.e., you did not cop
 
 * **Follow the sample [build.gradle given in the JavaFX tutorial](https://se-education.org/guides/tutorials/javaFxPart1.html#setting-up-java-fx)** closely, instead of following suggestions from AI tools.<br>
   %%Reason: As there are different ways of achieving this, following advice from AI tools can result in a 'Frankenstein' solution (i.e., a mixture of different approaches) that might work on your computer but might not work on other OSes.%% {{ bullet_important_red }}
-* **You no longer need to keep the text-based UI** after adding a GUI (although you are welcome to). Similarly, there is no need to keep the I/O redirection style automated testing added via `A-TextUiTesting` anymore -- that technique is suited for text UIs only.{{ bullet_info }}
+* **You no longer need to keep the text-based UI** after adding a GUI (although you are welcome to).{{ bullet_info }}
 * **Is the `bye` command still needed**, now that the GUI can be closed in other ways?<br>
   Yes, we recommend keeping it. Reason: Being able to close the app by typing a command is consistent with the app's CLI-style <tooltip content="i.e., User Experience">UX</tooltip>.{{ bullet_Q }}
 </div>
@@ -641,15 +641,20 @@ Read through this week's topics before starting the project.<br>
 </box>
 </div>
 
+{{ show_github_username_entry() }}
+
+
+
 1. **Fork** [{{ url_course_org }}/{{ ip_repo_name }}]({{ url_course_org }}/{{ ip_repo_name }}), while noting the points below:<br>
    <box type="important" seamless><md>==**Keep the fork name as `{{ ip_repo_name }}`**== or else our grading scripts will not be able to detect it. You can change the fork name to something else after the semester (and the grading) is over e.g., after receiving your grade for the course.<br>==**Keep the default branch name as `master`**==. While Git-Mastery uses `main` as the default branch name, iP and tP use `master`. As both these are used widely in the industry, it is good for you to be comfortable using both.<br>==**Keep the source location as `[project root]/src`**==. Our grading scripts look for code in this folder.</md></box>
    <box type="tip" seamless><md>**Uncheck the `[ ] Copy the master branch only` option** so that you get a copy of the full repo.</md></box>
 1. ==**Enable the issue tracker** of your fork== (Go to `Settings`, scroll to the `Features` section, and select the `Issues` checkbox). %%Reason: At times we post feedback on your issue tracker.%%<br>
-   <box type="tip" seamless><md> If the issue tracker is enabled, you should be able to visit the following URL: `https://github.com/{your_user_name}/{{ ip_repo_name }}/issues/new`<br> e.g., `https://github.com/johnDoe/{{ ip_repo_name }}/issues/new`</md></box>
+   <box type="tip" seamless><md> If the issue tracker is enabled, you should be able to visit the following URL: `https://github.com/{your_user_name}/{{ ip_repo_name }}/issues/new`<br> e.g., <a href="https://github.com/[[username: JohnDoe]]/ip/issues/new" target="_blank" class="cv-bind">https://github.com/[[username: JohnDoe]]/ip/issues/new</a></md></box>
 1. **Clone the fork** onto your computer.
    <box type="warning" seamless><md>**Avoid putting Git-controlled files inside cloud-synced (e.g., OneDrive, Dropbox) folders.** Reason: Multiple tools trying to detect/sync changes in the same folder can cause conflicts and unexpected behavior.<br> If you want to access project files from multiple computers, use Git to do that (rather than cloud-syncing tools).</md></box>
 1. **Set up the project in your IDE** as explained in [the README file]({{ url_course_org }}/{{ ip_repo_name }}/blob/master/README.md), if you plan to use an IDE for the project.
    <box type="tip" seamless><md>**Not willing to lose Vim power?** If you are worried about losing access to powerful Vim features when using an IDE for the project, note that most IDEs have a Vim plugin (e.g., [IdeaVim plugin](https://github.com/JetBrains/ideavim)) for using Vim features within the IDE. In other words, it is possible to access both IDE features and Vim features at the same time!</md></box>
+1. **Run `Duke.java`** to verify that your project setup works.
 
 </div>
 {#====================================================================================================================#}
@@ -908,19 +913,6 @@ This activity is worth `2x2=4` participation points.
 <span id="heading_set_up_website">Set up a product website</span>
 <div id="desc_set_up_website">
 
-<div id="enter-username">
-
-<box class="d-print-none" seamless>
-
-Your GitHub username : <cv-placeholder-input name="username" appearance="underline" layout="inline"></cv-placeholder-input>&nbsp;<img src="https://github.com/[[username : github ]].png"
-  style="height: 1.8rem; vertical-align: middle; border-radius: 50%; margin-left: 0.5rem;"
-  class="cv-bind"
-  alt="GitHub Avatar"
-/><br>
-%%<small>Note: Type your GitHub username in the blank above so that we can customize sample commands to fit you.</small>%%
-</box>
-</div>
-
 <div  tags="m--cs2103" id="ip-ui-png">
 
 * **Add a representative screenshot** of the product to the `docs` folder.
@@ -986,7 +978,7 @@ If you added the `Ui.png` correctly and set up the product website correctly, ==
 
 4. **Create a new release on GitHub (e.g., `v0.2`) and upload the JAR file.**
 
-   <include src="ip-tasks-fragment.md#enter-username" />
+   {{ show_github_username_entry() }}
 
    * There is no need for the release to be tagged `A-Release` specifically.
    * Ensure your release appears at <a href="https://github.com/[[username: JohnDoe]]/ip/releases" target="_blank" class="cv-bind">https://github.com/[[username: JohnDoe]]/ip/releases</a>. Use an incognito browser window when checking this URL, to ensure the release is visible to the public.

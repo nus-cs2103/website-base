@@ -31,27 +31,10 @@ delete 3
 
 <include boilerplate src="dukeNestedFragment.md" var-target="A-Collections" var-name="Extension: `A-Collections`" />
 
-{% call show_ai_guidance("Level 5. Handle Errors") %}
+{% call show_ai_guidance("General: Get AI to review tests") %}
 
-As before, you can proceed in small steps. Ensure AI runs the `test-ui` skill after each code update.
-{% endcall %}
-
-{% call show_ai_guidance("General: Keep updating AI files") %}
-
-As the project progresses, observe where AI falters or overlooks things, and update the AI files accordingly.
-
-For example, you can force AI to improve the quality of testing with a prompt like this:
-```{heading="sample prompt"}
-Add more test cases to cover edge cases and incorrect inputs.
-Interleave positive and negative test cases to detect incorrect inputs affecting the correctness of the internal states.
-```
-Then, you can introduce temporary bugs into the code and see if the `test-ui` skill can detect them. If it cannot, you can ask AI to improve the skill to cover such cases.
-
-**{{ icon_tip }} Get AI to review tests:**
 * You can also ask different Codex models to review the `ui-test-plan.md` and suggest ways to improve it. Something overlooked by one model can be detected by another.
 * This is also a good place to use more powerful models. Crafting good test cases has long-term benefits, and is worth the extra token cost.
 * You can go one step further and get other AI tools (Claude, Gemini, etc.) to review the test cases file too.
 
 {% endcall %}
-
-

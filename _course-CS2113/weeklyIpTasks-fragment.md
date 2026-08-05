@@ -22,7 +22,6 @@ week4: [
   {id: 'create_pr_to_upstream', deadline: get_date(date_w4_start, 0)},
   {id: 'add_increments', suffix: '', increments: [
     {id: 'Level-4', title: 'ToDo, Event, Deadline'},
-    {id: 'A-TextUiTesting', title: 'Automated Text UI Testing', tag: 'optional'},
     {id: 'A-CodeQuality', title: 'Improve Code Quality'}
   ]},
   {id: 'prepare_for_pr_reviews', deadline: 'before the tutorial'},

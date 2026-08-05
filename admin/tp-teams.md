@@ -10,8 +10,7 @@
 
 #### When to form teams
 {% set session = "tutorial" %}
-{% if cs2103 %}* {{ course }}T: Your team will be formed by the CS2101 side.{% endif %}
-* {{ course  }}: Teams will be formed at the _start_ of the week 3 {{ session }}. If you are not there at that time and others in the class do not know which team you wanted to be in, we'll have to put you into a team randomly.
+Teams will be formed around week 3. We'll let you know more details closer to the time.
 
 #### Team size
 

@@ -78,14 +78,24 @@ When doing a project like the iP, we can create a skill to generate a webpage th
    ```
    Create a project-specific skill named `present-changes-visually`.
    Use the repo https://github.com/se-edu/skill-present-changes-visually as the basis.
+   Ask for my permission if you run into any permission issues.
    ```
 1. After the skill is created, restart Codex so that it recognizes the new skill.
 1. To test the skill, you can give this by give the following prompt.
    ```
    Use the /present-changes-visually skill
    ```
-   This will create a webpage comparing the current uncommitted changes to the last committed version of the code. The file will be created as `_temp/visual-diff.html`.
-1. You can be more specific when invoking this skill. Here is an example:
+   This will create a webpage comparing the current uncommitted changes to the last committed version of the code. The file will be created as `_temp/visual-diff.html`.<br>
+   The format of the page should look similar to the screenshot below:
+
+<div class="indented-level1">
+
+<panel type="seamless" header="Example result of running the present-changes-visually skill" peek>
+<pic src="images/present-changes-visually-example.png" />
+</panel>
+</div>
+
+4. You can be more specific when invoking this skill. Here is an example:
    ```
    Use the /present-changes-visually skill to compare the most recent commit with the one before it.
    Save the file as `_temp/with-and-without-tasks-class.html`.

@@ -1,5 +1,5 @@
 {% from "common/admin.njk" import show_admin_page with context %}
-{% from "common/macros.njk" import show_faq with context %}
+{% from "common/macros.njk" import ask_chatgpt, show_faq with context %}
 
 {% call show_admin_page("programmingLanguages") %}
 <div id="main">
@@ -31,7 +31,7 @@ The exam expects Java knowledge you would normally gain from using it in the cou
 
 <span style="color:purple">**:fas-hard-hat: Preparation:**</span>
 
-We require you to use **Java {{ java_version }}** (the [Oracle version](https://www.oracle.com/java/technologies/downloads/#java{{ java_version }}) or an alternative such as OpenJDK) for all coursework. It is your responsibility to ensure the code you write (and executables you produce) is compatible with that version of Java. ==Any incompatibilities will be considered bugs==.
+We require you to use **Java {{ java_version }}** and JDK {{ java_version }} (the [Oracle version](https://www.oracle.com/java/technologies/downloads/#java{{ java_version }}) or an alternative such as OpenJDK) for all coursework. {{ ask_chatgpt("What is JDK?", "What is the JDK? How is it related to SDKs? Answer briefly")}} It is your responsibility to ensure the code you write (and executables you produce) is compatible with that version of Java. ==Any incompatibilities will be considered bugs==.
 
 **You are strongly discouraged from using a Java version other than {{ java_version }}.** If you need to use a different version for another course, use this as an opportunity to learn how to manage multiple Java versions on your computer.
 

@@ -7,7 +7,7 @@
 
 {{ icon_project }} **Project:**
 1. Create a Pull Request {{ timing_badge("during/after the lecture", "info") }}
-1. Implement project increments `Level-3`, `A-TextUiTesting` <span class="badge rounded-pill bg-secondary">optional</span>
+1. Implement project increments `Level-3`
 {% endcall %}
 
 #### {{ thumb(1) }} Submit weekly exercises
@@ -31,14 +31,13 @@
 {{ embed_topic("../../book/gitAndGithub/createPRs/text.md#body", "Textbook " + icon_embedding + " Git & GitHub → **Creating PRs**", "1", indent=2) }}
 <!-- ------------------------------------------------------------------------------------------------------ -->
 
-#### {{ thumb(2) }} Implement project increments `Level-3`, `A-TextUiTesting` <span class="badge rounded-pill bg-secondary">optional</span>
+#### {{ thumb(2) }} Implement project increments `Level-3`
 
 * **As before, implement these increments** while committing at regular intervals, and tag + push to your fork when an increment is done. Your PR will update automatically to reflect the new commits. ==Follow the same procedure for future Duke increments too.==
 
 <div class="indented">
 
 <include src="dukeFragment.md" boilerplate var-displacement="../.." var-header="**`Level-3`: Mark as Done**" var-fragment="text.md#Level-3" />
-<include src="dukeFragment.md" boilerplate var-displacement="../.." var-header="**`A-TextUiTesting`: Text UI Testing**" var-tag="optional" var-fragment="extensions-fragment.md#A-TextUiTesting" />
 
 </div>
 </div>

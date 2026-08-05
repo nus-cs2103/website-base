@@ -1,4 +1,5 @@
 {% from "common/admin.njk" import show_admin_page with context %}
+{% from "common/macros.njk" import show_faq with context %}
 
 {% call show_admin_page("courseExpectations") %}
 <div id="main">
@@ -30,6 +31,9 @@ When faced with a coding-related task (e.g., adding a feature), the level of AI 
 Higher levels saves more time but can reduce learning.
 
 Which level to use? Depends on how much you already know, and how much you want to learn.
+
+{{ show_faq("useAiCode") }}
+
 </div>
 
 ## Workload

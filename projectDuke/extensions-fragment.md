@@ -83,7 +83,7 @@ Make the `Task` class an abstract class. If applicable, use abstract methods as 
 <include boilerplate src="dukeExtensionTitle.md" var-extId="A-Exceptions"
          var-extHeading="Use Exceptions to handle errors"/>
 
-Use exceptions to handle errors. For example, define a class `DukeException` to represent exceptions specific to Duke.
+Use exceptions to handle errors. For example, define a custom exception class %%(e.g., `DukeException` -- name it to match your chatbot's name)%% to represent exceptions specific to Duke.
 
 </div><hr>
 

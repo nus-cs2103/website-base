@@ -11,7 +11,6 @@ week2: [
     {id: 'Level-2', title: 'Add, List'},
     {id: 'Level-3', title: 'Mark as Done'},
     {id: 'Level-4', title: 'ToDos, Events, Deadlines'},
-    {id: 'A-TextUiTesting', title: 'Automated Text UI Testing'},
     {id: 'Level-5', title: 'Handle Errors'},
     {id: 'Level-6', title: 'Delete'},
     {id: 'A-Enums', title: 'Use Enums', tag: 'if-applicable'}

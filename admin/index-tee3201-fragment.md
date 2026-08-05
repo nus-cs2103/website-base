@@ -204,7 +204,6 @@ In some weeks, there will be some programming exercises for you to submit (on Co
 
 <include src="policies-fragment.md#cite-reuse-immediately" />
 
-<include src="policies-fragment.md#using-tool-generated-code" />
 </div>
 
 <!-- .......................................................................................... --> {{ line_dotted }}

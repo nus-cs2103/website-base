@@ -227,6 +227,22 @@
 </box>
 </panel>
 {% endmacro %}
+
+
+<!-- ============================================================ -->
+
+{% macro show_github_username_entry()%}
+<box class="d-print-none" seamless>
+
+Your GitHub username : <cv-placeholder-input name="username" appearance="underline" layout="inline"></cv-placeholder-input>&nbsp;<img src="https://github.com/[[username : github ]].png"
+  style="height: 1.8rem; vertical-align: middle; border-radius: 50%; margin-left: 0.5rem;"
+  class="cv-bind"
+  alt="GitHub Avatar"
+/><br>
+%%<small>Note: Type your GitHub username in the blank above so that we can customize sample commands to fit you.</small>%%
+</box>
+<p/>
+{% endmacro %}
 <!-- ============================================================ -->
 
 {% macro show_ai_guidance(subject)%}
