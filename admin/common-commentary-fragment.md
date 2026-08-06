@@ -5,10 +5,8 @@
 <!-- ==================================================================================================== -->
 <div id="git-mastery-preamble">
 
-**To learn Git and GitHub topics, we'll be using [Git-Mastery](https://git-mastery.org)**, a learning resource and a companion app that helps you not only the topics, but also provided auto-graded exercises to self-test your knowledge. Git-Mastery is a project based in NUS.<br>
+**To learn Git and GitHub topics, we'll be using [Git-Mastery](https://git-mastery.org)**, a relatively new learning resource and a companion app that help you learn the topics and self-test your knowledge using auto-graded exercises. Git-Mastery is a project based in NUS.<br>
 We hope the **additional value Git-Mastery provides outweighs the inconvenience of having to navigate to a separate website** to learn some topics.
-
-{{ icon_important_big_red }} **The Git-Mastery site is relatively new, and is under active development — teething issues are expected!** Please help us improve it by reporting any issues, bugs, unclear parts, suggestions — even minor/cosmetic ones — in the {{ link_forum }}. You can earn bonus participation points by doing so too.
 </div>
 
 <!-- ==================================================================================================== -->
@@ -16,7 +14,7 @@ We hope the **additional value Git-Mastery provides outweighs the inconvenience 
 <!-- ==================================================================================================== -->
 <div id="{{ slugify("SE: Intro") }}">
 
-Given this is a first course in SE, tradition demands that we start by defining the subject. However, let's not spend a lot of time going through lengthy/formal definitions of SE. Instead, let's look at an extract from the very first chapter of a very famous SE book, with the aim of providing some inspiration, but also an appreciation of the challenges ahead.
+Given this is a first course in SE, tradition demands that we start by defining the subject. However, let's not spend a lot of time going through lengthy/formal definitions of SE. Instead, let's take a quick look at the past, the present, and the future of SE. No doubt **SE is a field in turmoil**, and it is in our best interest to reflect on how things are going and what the future holds.
 </div>
 <!-- ==================================================================================================== -->
                                              Requirements
