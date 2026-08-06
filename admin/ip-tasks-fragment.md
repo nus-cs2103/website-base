@@ -526,6 +526,13 @@ commit id: "m6"
 * The Java and Git standards to follow (for `A-CodingStandard`) are given on [this page](standardsAndConventions.html).
 * After finishing, assuming you encountered merge conflicts (and some were rather painful to resolve), think of how such conflicts could have been reduced %%(e.g., by changing the order of merging, or minimizing parallel branches when certain types of changes are being made to the code)%%.
 </div>
+<div>
+
+<box type="info" seamless>
+
+If your code already has Javadoc comments for all public methods, you can simply add the `A-JavaDoc` tag to the current commit and skip the `A-JavaDoc` increment.
+</box>
+</div>
 </div>
 {#====================================================================================================================#}
 <div id="post_A-CodingStandard">
@@ -699,6 +706,8 @@ Resources:
 <div id="desc_start_learning_javafx">
 
 If you can spare some time, start learning JavaFX by following the [_JavaFX tutorial_ @SE-EDU/guides](https://se-education.org/guides/tutorials/javaFx.html). Doing so will make your life easier in the following week.
+
+<include src="../projectDuke/Level-10-fragment.md#ai-guidance-javafx-tutorial" />
 </div>
 {#====================================================================================================================#}
 <span id="heading_prepare_for_pr_reviews">Get ready to review PRs</span>

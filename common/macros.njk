@@ -40,6 +40,8 @@
 &nbsp;<span class="badge rounded-pill bg-light text-dark"><span class="font-weight-bold text-{{ show_priority_style(priority) }}"><md>:glyphicon-flash:{{ priority }}</md></span></span>
 {%- endmacro %}
 
+{# also repeated in topics.njk #}
+{%- macro slugify(text) %}{{ text | lower | replace(r/[\'\s\/]/g, '-') | replace(r/[\(\)%:,&\`\[\]\+]/g, '') }}{% endmacro -%}
 
 {% macro show_admin_section_to_read(heading, priority, source, is_flat=false) %}
 {% set panel_title %} Admin {{ icon_embedding | safe }} {{ heading }} {{ show_stars(priority) }}{% endset %}
@@ -253,11 +255,14 @@ Your GitHub username : <cv-placeholder-input name="username" appearance="underli
 <!-- ============================================================ -->
 
 {% macro show_ai_guidance(subject)%}
+<div id="ai-guidance-{{ slugify(subject) }}">
+
 <panel type="codex" expanded >
 <div slot="header"><md>[:fas-robot: AI Guidance] **{{ subject }}**</md></div>
 
 {{ caller() }}
 </panel>
+</div>
 <p/>
 {% endmacro %}
 <!-- ============================================================ -->

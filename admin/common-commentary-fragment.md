@@ -1,5 +1,5 @@
-{% from "common/topics.njk" import panopto, slugify, topic_followup, topic_preamble with context %}
-{% from "common/macros.njk" import embed_topic with context %}
+{% from "common/topics.njk" import panopto, topic_followup, topic_preamble with context %}
+{% from "common/macros.njk" import embed_topic, slugify with context %}
 <!-- ==================================================================================================== -->
                                          Misc
 <!-- ==================================================================================================== -->

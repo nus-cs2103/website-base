@@ -174,7 +174,7 @@
       {subheading: "Supplementary Requirements"},
         {location: ["specifyingRequirements", "supplementaryRequirements", "what"]},
   {name: "Implementation"},
-    {heading: "Code Quality"},
+    {heading: "Code Quality: Readability, Unsafe Practices, Code Comments"},
       {subheading: "Readability", panopto: "c7eeb42d-4d9b-43c4-b178-ac2900e20610", questions:"y"},
         {location: ["codeQuality", "maximizeReadability", "introduction"]},
         {location: ["codeQuality", "maximizeReadability", "basic", "avoidLongMethods"]},

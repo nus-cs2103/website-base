@@ -114,9 +114,6 @@ Use Java Collections classes for storing data. For example, you can use an [`Arr
 <div id="A-MoreOOP">
 <include src="A-MoreOOP-fragment.md" />
 </div><hr>
-<div id="A-JUnit">
-<include src="A-JUnit-fragment.md" />
-</div><hr>
 <div id="A-Packages">
 <include src="A-Packages-fragment.md" />
 </div><hr>
@@ -129,117 +126,33 @@ Add JavaDoc comments to the code.
 * **Stretch goal**: Add header comments to all non-private classes/methods, and non-trivial private methods.
 </div><hr>
 <div id="A-CodingStandard">
-<include boilerplate src="dukeExtensionTitle.md" var-extId="A-CodingStandard"
-         var-extHeading="Tweak the code to comply with a coding standard"/>
-
-Tweak the code to comply with a given coding standard. From this point onward, ensure any new code added is compliant with the given coding standard.
-
-<box type="tip" seamless>
-
-SE-EDU guides on configuring the code style in IDEs: [Intellij IDEA](https://se-education.org/guides/tutorials/intellijCodeStyle.html) | [VS Code](https://se-education.org/guides/tutorials/vscCodeStyle.html)
-</box>
-
+<include src="A-CodingStandard-fragment.md" />
 </div><hr>
 <div id="A-CheckStyle">
-<include boilerplate src="dukeExtensionTitle.md" var-extId="A-CheckStyle"
-         var-extHeading="Use CheckStyle"/>
+<include boilerplate src="dukeExtensionTitle.md" var-extId="A-CheckStyle" var-extHeading="Use CheckStyle"/>
 
 Use Checkstyle to detect coding style violations.
 
 Refer to the tutorial [_Using Checkstyle_ @SE-EDU/guides](https://se-education.org/guides/tutorials/checkstyle.html) to learn how to use Checkstyle.
 <p/>
-
-
-
 </div><hr>
 <div id="A-CodeQuality">
-<include boilerplate src="dukeExtensionTitle.md" var-extId="A-CodeQuality"
-         var-extHeading="Improve code quality"/>
-
-Critically examine the code and refactor to improve the code quality where necessary.
-
-{{ icon_important_big_red }} When adding this increment, follow closely the 'Code Quality' topics you have learned so far, rather than merely follow your own intuition about code quality.
+<include src="A-CodeQuality-fragment.md" />
 </div><hr>
 <div id="A-Assertions">
-<include boilerplate src="dukeExtensionTitle.md" var-extId="A-Assertions"
-         var-extHeading="Use Assertions"/>
+<include boilerplate src="dukeExtensionTitle.md" var-extId="A-Assertions" var-extHeading="Use Assertions"/>
 
 Use the `assert` feature (not JUnit assertions) to document important assumptions that should hold at various points in the code.
-</div><hr>
-<div id="A-Jar">
-<include boilerplate src="dukeExtensionTitle.md" var-extId="A-Jar"
-         var-extHeading="Package the App as a JAR file"/>
-
-Package the app as an executable JAR file so that it can be distributed easily.
-
-You can assume **the user will run the JAR file in the following way only**:
-1. Copy the jar file into an empty folder.
-1. Open a command window in that folder.
-1. Run the command `java -jar "{filename}.jar"` e.g., `java -jar "Duke.jar"` (i.e., run the command in the same folder as the jar file).
-
-<box type="info" seamless>
-
-The double quotes around the filename in the `java -jar "{filename}.jar"` command are not normally needed, but they are needed if the filename contains special characters such as spaces or `[`.
-</box>
-
-<box type="info" icon=":fas-question:" seamless>
-
-FAQ: Can we double-click the jar file to run it?<br>
-A: Yes, that usually works too, but being able to do so is not a requirement here. Instead, the `java -jar` command is the recommended way to run the jar file.
-</box>
-
-Refer to the tutorial [_Working with JAR files_ @SE-EDU/guides](https://se-education.org/guides/tutorials/jar.html) to find how to create JAR files (in the context of this project).
-
-<box type="info" seamless>
-
-**If your project is being revision-controlled using Git/GitHub**,<br>
-
-* <span class="text-danger">do not commit the JAR file created</span>. Reason: We don't normally commit generated binary files into the repository.
-
-* Instead, you can make the JAR file available (via the GitHub release mechanism) in the following manner.
-
-  1. Go to your fork on GitHub and [create a new _release_](https://help.github.com/en/articles/creating-releases).
-  1. In the page where you supply the details of the release,
-     1. give an appropriate version number e.g., `v0.1`
-     1. attach the JAR file where it says `Attach binaries by dropping them ...`.
-</box>
 
 </div><hr>
 <div id="A-Gradle">
-<include boilerplate src="dukeExtensionTitle.md" var-extId="A-Gradle"
-         var-extHeading="Automate project builds using Gradle"/>
-
-Use Gradle to automate some of the build tasks of the project, as follows:
-
-* Gradle support is provided as a separate branch named `add-gradle-support` in the Duke repo. ==Merge that branch to your `master` branch==.{text="Step 1."}
-
-<mermaid>
-{{ "%%{init: { 'theme': 'default', 'gitGraph': {'mainBranchName': 'master'}} }%%" }}
-gitGraph
-commit id: "m1"
-branch add-gradle-support
-checkout add-gradle-support
-commit id: "b1"
-commit id: "b2"
-checkout master
-commit id: "m2"
-commit id: "m3"
-merge add-gradle-support id: "Merge branch ..."
-</mermaid>
-
-* Go to the [_Gradle tutorial_ @SE-EDU](https://se-education.org/guides/tutorials/gradle.html).{text="Step 2."}
-  * If you are new to Gradle, read the _Basics_ section to get an overview of Gradle.{texts="['2a.','2b.', '2c.']"}
-  * Next, follow [==_scenario 2_== of the _Adding Gradle to the project_ section](https://se-education.org/guides/tutorials/gradle.html#:~:text=click%20it.-,Scenario%202,-%3A%20You%20are), to add Gradle to your project.
-  * Read the rest of the tutorial to find how to use Gradle to build, run, test, etc.
-
-<p/>
-
-Requirements for this increment:
-
-* **Minimal**: Set up Gradle so that you can build and run Duke using Gradle.
-* **Recommended**: Be able to run JUnit tests using Gradle (this can only be done after you've reached the `A-JUnit` increment).
-* **Stretch goal**: Use Gradle to automate more things in your project, as you progress through the project.
-
+<include src="A-Gradle-fragment.md" />
+</div><hr>
+<div id="A-JUnit">
+<include src="A-JUnit-fragment.md" />
+</div><hr>
+<div id="A-Jar">
+<include src="A-Jar-fragment.md"/>
 </div><hr>
 <div id="A-CI">
 <include boilerplate src="dukeExtensionTitle.md" var-extId="A-CI"

@@ -74,7 +74,7 @@ This change is simple enough that you can easily do it by hand. Doing it using A
 <tabs>
   <tab header="Sample prompt (less AI)">
 
-````{ heading="sample prompt"}
+{% call mdblock() %}
 The requirement given to me:
 
 {{ req_start }}
@@ -85,11 +85,11 @@ The requirement given to me:
 {{ sample_output_level_0 | trim }}
 
 {{ review_prompt }}
-````
+{% endcall %}
   </tab>
   <tab header="Sample prompt (more AI)">
 
-````{ heading="sample prompt"}
+{% call mdblock() %}
 {{ update_prompt }}
 
 {{ req_start }}
@@ -99,7 +99,7 @@ The requirement given to me:
 Example output:
 
 {{ sample_output_level_0 | trim }}
-````
+{% endcall %}
 </tab>
 </tabs>
 

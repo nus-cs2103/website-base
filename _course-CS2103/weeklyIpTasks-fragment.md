@@ -31,7 +31,7 @@ week3: [
     {id: 'A-Jar', title: 'Create a JAR File'}
   ]},
   {id: 'add_increments', suffix: ' as parallel branches', increments:  [
-    {id: 'A-JavaDoc', title: 'JavaDoc'},
+    {id: 'A-JavaDoc', title: 'JavaDoc', tag: 'if-applicable'},
     {id: 'A-CodingStandard', title: 'Follow the Coding Standard'},
     {id: 'Level-9', title: 'Find'}
   ]},

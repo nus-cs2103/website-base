@@ -52,7 +52,7 @@ week7: [
     {id: 'add_increments', suffix: ' as PRs', increments:  [
     {id: 'Level-8', title: 'Dates and Times', tag: 'optional'},
     {id: 'Level-9', title: 'Find'},
-    {id: 'A-JavaDoc', title: 'JavaDoc'}
+    {id: 'A-JavaDoc', title: 'JavaDoc', tag: 'if-applicable'}
   ]},
   {id: 'set_up_website'},
   {id: 'submit_the_final_version', deadline:  get_date(date_w7_start, 4)}

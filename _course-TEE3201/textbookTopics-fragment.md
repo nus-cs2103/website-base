@@ -9,7 +9,7 @@
           {
             name: "",
             level_three_topics: [
-              {name: "prosAndCons", heading: "Pros and Cons", priority: "3"}
+              {name: "prosAndCons", heading: "Then, Now, and Next", priority: "3"}
             ]
           }
         ]
