@@ -187,7 +187,7 @@ pageNav: {{ categories[category].pagenav }}
 {% if week_num == "1" %}
 <box type="info">
 
-**This is the <span class="text-primary">{{ show_as_tab('Tasks', icon_tab_tasks) if tee3201 else show_as_tab('Admin', icon_tab_admin) }}</span> tab** of this week. It contains {{ 'tasks you need to do for this week' if tee3201 else 'admin info relevant to this week' }}.
+**This is the <span class="text-primary">{{ show_as_tab('Tasks', icon_tab_tasks) if tee3201 else show_as_tab('Admin', icon_tab_admin) }}</span> tab** for this week. It contains {{ 'tasks you need to do for this week' if tee3201 else 'admin info relevant to this week' }}.
 
 A label with the {{ icon_deadline }} icon indicates the deadline for that task %%(e.g., <span class="badge bg-secondary text-light">{{ icon_deadline }} Friday 2359</span>)%%.
 </box>
@@ -225,7 +225,7 @@ A label with the {{ icon_deadline }} icon indicates the deadline for that task %
 {% if week_num == "1" %}
 <box type="info">
 
-**This is the <span class="text-primary">{{ show_as_tab('Tutorial', icon_tab_tutorial) }}</span> tab** of this week. It contains information relevant to the week's tutorial (if any).
+**This is the <span class="text-primary">{{ show_as_tab('Tutorial', icon_tab_tutorial) }}</span> tab** for this week. It contains information relevant to the week's tutorial (if any).
 </box>
 {% endif %}
 <include src="tutorial-{{ course | lower }}-fragment.md" optional />
@@ -279,7 +279,7 @@ A label with the {{ icon_deadline }} icon indicates the deadline for that task %
 {% if week_num == 1 %}
 <box type="info">
 
-**This is the <span class="text-primary">{{ show_as_tab('Project', icon_tab_project) }}</span> tab** of this week. It contains project-related information relevant to this week.
+**This is the <span class="text-primary">{{ show_as_tab('Project', icon_tab_project) }}</span> tab** for this week. It contains project-related information relevant to this week.
 </box>
 {% endif %}
 {{ show_week_project_page_details(week_num) }}
