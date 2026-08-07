@@ -16,10 +16,6 @@
 **The expected level of _functionality_ is what you could achieve if each member puts in about ==50% of the implementation effort they put into the iP==** (reason for setting it much less than 100%: even after adding the extra overhead of doing the project as a team and working with an existing codebase, we don't want the tP to take more effort than the iP). This is the primary measure we will use when grading your tP implementation effort.<br>
 Furthermore, we estimate that this bar is roughly _equivalent_ to **writing about 300-400 lines of functional code** (excluding testing and documentation) per person. This is a secondary ballpark measure you can keep an eye on, alongside the primary measure mentioned above.
 
-<box type="important" seamless>
-
-  If you happen to look at tPs of past batches (2023 and before) to gauge the required effort, note that the above reflects a ==drastically lower bar than in those semesters==. For reference, the bar given to previous batches was 'same as iP effort' (not half), and the median amount of functional code written by a student was about 850 LoC.
-</box>
 </div>
 <div tags="m--cs2113">
 

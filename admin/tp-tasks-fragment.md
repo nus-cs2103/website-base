@@ -14,15 +14,15 @@
 <box type="warning" seamless>
 
 **The goal of freezing features in the pre-release iteration is to minimize latent bugs** by avoiding behavior changes unless they are strictly necessary.<br>
-In a real project, minor or critical changes might be allowed even near a deadline -- but in the tP, it is hard to enforce such a rule objectively. Instead, we use a quantitative limit that is easier to enforce: <span class="text-danger">**no more than 10% or 50 LoC (whichever is higher) of the functional code is allowed to be changed during iteration {{ version_final }}**</span>.<br>
+In a real project, minor or critical changes might be allowed even near a deadline -- but in the tP, it is hard to enforce such a rule objectively. Instead, we use a quantitative limit that is easier to enforce: <span class="text-danger">**no more than 15% or 100 LoC (whichever is higher) of the functional code is allowed to be changed during iteration {{ version_final }}**</span>.<br>
 Finer details of this limit are given below (**also see [Q0] and [Q1]** given under FAQs):
 
-* **The feature freeze ==starts at 10am on the PE-D day==.** Any code updated after that time is counted against the feature freeze.
+* **==The feature freeze starts at the `{{ version_penultimate }}` deadline== (Thu 23:59).** Any code updated after that time is counted against the feature freeze.
 * **The limit is applied per member**. That is, we compare the amount of code attributed to each member (as per the tP code dashboard) against the portion of that code that was changed during the feature freeze. Any penalty for violating the feature freeze will be applied to that member only.
 * **The limit applies to functional code only**. More specifically, it covers all changes (including blank lines and comments) to any code file inside the `src\main` folder and sub-folders. The feature freeze doesn't apply to test code, documentation, or non-code files (e.g., images).
 * **The calculation is based on the [tP code dashboard]({{ url_tp_dashboard }})**, computed as 'of the total functional LoC attributed to you at the end of `{{ version_final }}`, what percentage was edited by you during the feature freeze?'.
 * **The penalty for violating the feature freeze will be decided on a case-by-case basis**, but not smaller than `-2`.
-* **We will allow a 5% margin of error on top of the 10%** -- so, you will not be penalized if you exceed 10% by a tiny bit (i.e., up to 15%).
+* **We will allow a 5% margin of error on top of the 15%** -- so, you will not be penalized if you exceed 15% by a tiny bit (i.e., up to 20%).
 * **There is no limit on the nature of changes you can make** to functional code, but we **strongly recommend choosing based on:**<br>
   a) the **priority** (i.e., how important the change is), and<br>
   b) the **risk** (i.e., the chance of the change introducing new bugs).
@@ -42,12 +42,12 @@ Furthermore, it is based on 'in the final code, how many lines are attributed to
 
 Example (note: LoC numbers refer to lines of functional code only): Suppose you currently have `600 LoC` under your name. At the end of `{{ version_final }}` you ended up with,
 
-* `650 LoC` %%(you added some code, and edited some other code)%%:<br>
-  → Of that `650 LoC`, you could have added/edited up to `650 * 10% = 65 LoC` during the feature freeze.
-* `550 LoC` %%(lower than you started with because you deleted some code)%%:<br>
-  → Of that `550 LoC`, you could have added/edited up to `550 * 10% = 55 LoC` during the feature freeze.
-* `400 LoC` %%(because you deleted a lot of code)%%:<br>
-  → `400 * 10% = 40 LoC` is less than `50 LoC`. You could have added/edited up to `50 LoC` of that `400 LoC`.
+* `800 LoC` %%(you added some code, and edited some other code)%%:<br>
+  → Of that `800 LoC`, you could have added/edited up to `800 * 15% = 120 LoC` during the feature freeze.
+* `700 LoC` %%(lower than you started with because you deleted some code)%%:<br>
+  → Of that `700 LoC`, you could have added/edited up to `700 * 15% = 105 LoC` during the feature freeze.
+* `500 LoC` %%(because you deleted a lot of code)%%:<br>
+  → `500 * 15% = 75 LoC` is less than `100 LoC`. You could have added/edited up to `100 LoC` of that `500 LoC`.
 
 So, **deleting lines does not count as a change** (only editing and adding are counted as changes), but deleting lines reduces the number of LoC attributed to you, and hence reduces the number of lines you can change during the feature freeze.
 
@@ -448,7 +448,7 @@ Now that you have worked with the AB3 codebase for a while, if you have any sugg
 {{ show_tp_iterations_gantt("tpGanttChart-iterations.png", "", 65 if pe_schedule_ideal else 80, 80) }}
 {{ show_tp_goals(version_penultimate, "v15-goals") }}
 
-**This iteration focuses on applying internal quality control before the product is exposed to outsiders**. %%'Outsiders' here refers to other teams that will be testing your product during the practical exam dry run (PE-D).%%<br>
+**This iteration focuses on applying internal quality control before the product is exposed to outsiders**. %%For example, before beta testers start testing.%%<br>
 In {{ thumb_small("1")}}, you will do an alpha test of your own product, and record bugs, which can then be fixed during {{ thumb_small("2")}}.<br>
 Keeping in mind that this is your last chance to do _any_ feature enhancements (due to the _feature freeze_ in iteration {{ version_final }}), in task {{ thumb_small("3")}} you will decide which final touches you want to make, and proceed to implement them.<br>
 At the same time, the UG and the DG need to be updated, as given in task {{ thumb_small("4")}}.
@@ -1772,7 +1772,7 @@ In addition,
 
 <div id="midV13-repoSenseCompatible">
 
-* **Ensure your code is <tooltip content="i.e., RepoSense can detect your code as yours">RepoSense-compatible</tooltip>** and the **code RepoSense attributes to you is indeed the code written by you**, as explained below:
+* **Ensure your code is <tooltip content="i.e., RepoSense can detect your code as yours">RepoSense-compatible</tooltip>** and the **code RepoSense attributes to you is indeed the code written by you (including code you generated using AI)**, as explained below:
   * Go to the [tP Code Dashboard]({{ url_tp_dashboard }}). Click on the `</>` icon against your name and verify that the ==lines attributed to you (i.e., lines marked as green)== reflect your code contribution correctly. This is important because some aspects of your project grade (e.g., code quality) will be graded based on those lines.<br>
   &nbsp;&nbsp;&nbsp;&nbsp;<img src="images/greenLines.png" width="600">
   <p/>
@@ -1791,10 +1791,10 @@ In addition,
 
 <box type="important" seamless>
 
-#r#Do this before the feature freeze begins## (i.e., PE Dry Run day, 10am). Any changes done after that will be subject to the limits of the feature freeze.
+#r#Do this before the feature freeze begins## (i.e., Thu 23:59). Any changes done after that will be subject to the limits of the feature freeze.
 </box>
 
-* **Ensure your code is <tooltip content="i.e., RepoSense can detect your code as yours">RepoSense-compatible</tooltip>** and the **code RepoSense attributes to you is indeed the code written by you**, as explained below:
+* **Ensure your code is <tooltip content="i.e., RepoSense can detect your code as yours">RepoSense-compatible</tooltip>** and the **code RepoSense attributes to you is indeed the code written by you (including code you generated using AI)**, as explained below:
   * Go to the [tP Code Dashboard]({{ url_tp_dashboard }}). Click on the `</>` icon against your name and verify that the ==lines attributed to you (i.e., lines marked as green)== reflect your code contribution correctly. This is important because some aspects of your project grade (e.g., code quality) will be graded based on those lines.<br>
   &nbsp;&nbsp;&nbsp;&nbsp;<img src="images/greenLines.png" width="600">
   <p/>
@@ -1846,7 +1846,7 @@ This week, we would like you to smoke-test the CATcher app **to ensure it can wo
 {% if cs2103 and catcher_load_testing %}
 * **[Heads up] Load-testing CATcher will be done during the upcoming {{ lecture_name }}** ({{ get_date(date_w10_start, 4, time="") }}), during the first 15 minutes of
 {{ lecture_name_short }}. This is ==different from smoke-testing== you did above, and this will count for participation separately.<br>
-  Therefore, remember to ==attend the {{ lecture_name_short }} (via Zoom or F2F) at least for the first 15 minutes== (this activity cannot be done any other time).
+  Therefore, remember to ==attend the {{ lecture_name_short }} (via Zoom or F2F) at least for the first 55 minutes== (this activity cannot be done any other time).
 {% endif %}
 
 </div>
@@ -1872,13 +1872,7 @@ This week, we would like you to smoke-test the CATcher app **to ensure it can wo
 {{ embed_topic("tp-grading-bugs-fragment.md#ugBugs", "Admin " + icon_embedding + " tP Grading → **Possible UG Bugs**", "3", indent="1") }}
 
 
-* **Save the UG as a PDF file** ==using [this technique](https://se-education.org/guides/tutorials/savingPdf.html) exactly==. You'll need this file later when you create a product release. There is no specific file name convention for this version of the UG, but do use a reasonable file name, e.g., `Contacts-Pro-User-Guide.pdf`.
-
-{{ embed_topic("tp-tasks-fragment.md#caution-on-pdf-conversion", "Admin " + icon_embedding + " tP → **Caution on PDF conversions**", "3", indent="1") }}
-{{ embed_topic("tp-constraints.md#Constraint-PDF-Friendly", "Admin " + icon_embedding + " tP Constraints → **Constraint-PDF-Friendly**", "2", indent="1") }}
-{{ embed_topic("tp-constraints.md#Constraint-File-Size", "Admin " + icon_embedding + " tP Constraints → **Constraint-File-Size**", "2", indent="1") }}
-
-* **Similarly, update the Developer Guide (DG), and save it as a PDF file.**
+* **Similarly, update the Developer Guide (DG).**
 
 {{ embed_topic("tp-deliverables.md#tp-deliverables-dg", "Admin " + icon_embedding + " tP → Deliverables → **Developer Guide**", "3", indent="1") }}
 {{ embed_topic("tp-grading-bugs-fragment.md#dgBugs", "Admin " + icon_embedding + " tP Grading → **Possible DG Bugs**", "3", indent="1") }}
@@ -2014,10 +2008,8 @@ The panel below contains guidelines your peers will use when determining bugs in
     1. **DG** (PDF file) -- similar to the UG
   * You may choose any suitable file name, but avoid spaces or special characters in the JAR file name.
   * It is optional to write detailed release notes for this version.
-* **You can do an _additional_ release before the [PE dry run (PE-D)](tp-ped.html)** if you wish, as long as you do it <span class="text-danger">before 10am of the PE-D day</span>. {% if cs2103 %}That additional release is still considered part of {{ version_penultimate }} and therefore not subject to the feature freeze.{% endif %} When doing this additional release, do not delete the previous release %%(reason: it is good to preserve the release history)%% -- testers are expected to test the latest release file anyway. You may use any suitable version number for this JAR file, e.g., `{{ version_penultimate }}.1`.<br>
-  Waiting until Friday 10am to release `{{ version_penultimate }}` is strongly discouraged because if you miss that deadline, your team will not be able to benefit from the PE-D at all. It is better to have an earlier release to fall back on in case that happens.
 
-* ==IMPORTANT: ensure your jar file was generated using Java 17 and can work on all major OS'es using JDK 17.==
+* ==IMPORTANT: ensure your jar file was generated using Java {{ java_version}} and can work on all major OS'es using JDK {{ java_version }}.==
 
 {{ embed_topic("tp-constraints.md#Constraint-Java-Version", "Admin " + icon_embedding + " tP Constraints → Constraint-Java-Version", "2", indent="1") }}
 
@@ -2032,15 +2024,11 @@ The panel below contains guidelines your peers will use when determining bugs in
 <include src="tp-tasks-fragment.md#week_11_buffer" />
 
 * {{ icon_important_big_red }} **Do a <tooltip content="resulting in a jar file on GitHub that can be downloaded by potential users">proper product release</tooltip>** [as described in the Developer Guide]({{ url_ab3_fork_website }}/DevOps.html#making-a-release). Do the release by the given deadline. <br>
-  ==Do a smoke-test to ensure the jar file works== (if the released jar file is broken, it will be omitted from the PE-D).<br>
-  * Include the following files in the release (as separate assets):
-    1. **JAR** file
-    1. **UG** (PDF file) -- uploaded as an 'asset' (similar to the JAR file), not embedded in the release note.
-    1. **DG** (PDF file) -- similar to the UG
-  * You may choose any suitable file name, but avoid spaces or special characters in the JAR file name.
+  ==Do a smoke-test to ensure the jar file works==.<br>
+  * Deliverables:
+    1. **JAR** file (in GitHub releases) -- You may choose any suitable file name, but avoid spaces or special characters in the JAR file name.
+    1. **Product Website (including UG and DG)** (online version)
   * It is optional to write detailed release notes for this version.
-* **You can do an _additional_ release before the [PE dry run (PE-D)](tp-ped.html)** if you wish, as long as you do it <span class="text-danger">before 10am on the PE-D day</span>. {% if cs2103 %}That additional release is still considered part of {{ version_penultimate }} and therefore not subject to the feature freeze.{% endif %} When doing this additional release, do not delete the previous release %%(reason: it is good to preserve the release history)%% -- testers are expected to test the latest release file anyway. You may use any suitable version number for this JAR file, e.g., `{{ version_penultimate }}.1`.<br>
-  Waiting until Friday 10am to release `{{ version_penultimate }}` is strongly discouraged because if you miss that deadline, your team will not be able to benefit from the PE-D at all. It is better to have an earlier release to fall back on in case that happens.
 * As before, wrap up the milestone %%(i.e., reschedule/close any remaining issues/PRs and close the milestone).%%
 
 <modal large header="" id="modal:v13-jar-desc">
@@ -2170,8 +2158,11 @@ Also see:
 Test the product yourself (test each other's features) using the JAR file, report the bugs in the issue tracker, and fix them in due course.
 </div>
 {#====================================================================================================================#}
-<span id="heading_start_fixing_PED_bugs">{{ icon_team }} Fix PE-D bugs</span>
+<span id="heading_start_fixing_PED_bugs">{{ icon_team }} Fix any latent bugs</span>
 <div id="desc_start_fixing_PED_bugs">
+
+**Find any bugs that slipped through alpha testing.**
+
 {% if cs2103 %}
 1. ****Note the following details of the _feature freeze_ enforced in this iteration****:
 
@@ -2180,22 +2171,17 @@ Test the product yourself (test each other's features) using the JAR file, repor
 </div>
 {% endif %}
 
-{{ '2' if cs2103 else '1' }}. ****Triage bugs you received in the PE-D**** by following the procedure given below:
-
-{{ embed_topic("tp-ped-fragment.md#after-ped", "Admin " + icon_embedding + " tP → Deliverables → **After the PE-D**", "3", indent="1") }}
-
 {% if not cs2103 %}
-2. ****Do your own testing****. Don't rely on PE-D alone to find bugs. The panel below contains guidelines your peers will use when determining bugs in the final product -- knowing them might be useful in preventing such bugs in your product in the first place.
+2. The panel below contains guidelines your peers will use when determining bugs in the final product -- knowing them might be useful in preventing such bugs in your product in the first place.
 {{ embed_topic("tp-pe-bug-triaging-guidelines-fragment.md", "Admin " + icon_embedding + " Practical Exam → **Guidelines for determining bugs**", "3", indent="1") }}
 {{ embed_topic("tp-grading-bugs-fragment.md#ugBugs", "Admin " + icon_embedding + " tP Grading → **Possible UG Bugs**", "3", indent="1") }}
 {{ embed_topic("tp-grading-bugs-fragment.md#dgBugs", "Admin " + icon_embedding + " tP Grading → **Possible DG Bugs**", "3", indent="1") }}{% endif %}
 
-3. ****Fix bugs**** that you deem important enough to be fixed in {{ version_final }}. Also keep in mind that bug fixing can cause regressions, which you'll have to catch and fix.<br>
-   **Look for more bugs, and fix them too** (i.e., don't limit yourself to bugs found in the PE-D only).
+2. ****Fix bugs**** that you deem important enough to be fixed in {{ version_final }}. Also keep in mind that bug fixing can cause regressions, which you'll have to catch and fix.
 {% if cs2103 %}
 <box>
 
-****High-level workflow for deciding what to do for each PE-D bug****
+****High-level workflow for deciding which bugs to fix during feature freeze****
 
 1. **Is it something you think you'll never fix** even if you were to continue this project in the future?<br>
    If yes, you can leave it unfixed and reject it if the same bug is reported in the PE. Caution: If the PE tester disagrees and the teaching team agrees with the tester's justification, the bug might result in a penalty %%(why say '_might_ result ...'? Because bugs are penalized only when the bug density exceeds a certain bar)%%.<br>
@@ -2220,49 +2206,7 @@ Test the product yourself (test each other's features) using the JAR file, repor
 </modal>
 {% endif %}
 
-{% if cs2103 %}4. ****Submit peer evaluations for PE-D testers****: Submit your peer evaluation of PE-D testers to indicate how well they helped your team.<br>
-   Deadline: {{ timing_badge("by " + get_date(date_w13_start, 2), "danger") }}<br>
-   The submission is to be done via the TEAMMATES system.<br>
-   Only one team member needs to submit on behalf of the team, but discuss among team members first.<br>
-   Base the evaluation on the quality/usefulness of the bugs reported as well as the quantity.<br>
-   Here are the two questions you'll need to answer in the evaluation:
 
-<div class="indented-level2">
-<panel type="seamless" header="Q1: Performance of PE-D testers" minimized>
-
-In this context, a good bug report,
-
-* has a descriptive title,
-* has enough details,
-* has severity/type labels that are not too far off,
-* is written in a non-confrontational tone, and
-* points out a potentially problematic behavior (or a good way to improve the product)
-
-Rate each tester on the following scale:
-
-Poor | Below expectations | Meets expectations | Exceeds expectations | Greatly exceeds expectations
-----|---|---|---|---
-no bug reports from this tester | just a few bug reports, and none are good | 3-5 good bug reports | 6-8 good bug reports | 9 or more good bug reports
-
-</panel>
-<panel type="seamless" header="Q2: Rank PE-D testers" minimized>
-
-Rank the PE-D testers based on their performance (give rank 1 to the top-performing tester):
-
-`Tester A`: rank __<br>
-`Tester B`: rank __<br>
-...
-
-</panel><p/>
-</div>
-
-<div class="indented-level1">
-
-PE-D bug titles will be prefixed with the tester ID (e.g., `[PE-D][Tester A] UG does not load`) to make it easy for you to <tooltip content="using GitHub issue tracker's filters/search box">filter</tooltip> bugs reported by each tester.<br>
-</div>
-
-
-{% endif %}
 </div>
 {#====================================================================================================================#}
 <span id="heading_draft_the_ppp">{{ icon_individual }} {% if cs2103 %}[Optional] {% endif %}Draft the PPP</span>
@@ -2313,19 +2257,6 @@ Not applicable this semester
 {{ embed_topic("tp-tasks-fragment.md#midV13-repoSenseCompatible", "Admin " + icon_embedding + " tP → mid-" + version_final + " → Making the Code RepoSense-Compatible", "1", indent="1") }}
 </div>
 {#====================================================================================================================#}
-<span id="heading_try_pdf_conversion_early">{{ icon_team }} Try PDF conversions early</span>
-<div id="desc_try_pdf_conversion_early">
-
-* Take note of the following project constraint:
-
-{{ embed_topic("tp-constraints.md#Constraint-PDF-Friendly", "Admin " + icon_embedding + " tP Constraints → Constraint-PDF-Friendly", "2", indent="1") }}
-{{ embed_topic("tp-constraints.md#Constraint-File-Size", "Admin " + icon_embedding + " tP Constraints → Constraint-File-Size", "2", indent="1") }}
-
-* Take note of the following info about the PDF conversion, appearing in next week's project tasks. Particularly, note the suggestion to try PDF conversions early.
-
-{{ embed_topic("tp-tasks-fragment.md#caution-on-pdf-conversion", "Admin " + icon_embedding + " tP → " + version_final + " → Caution on PDF conversions", "3", indent="1") }}
-</div>
-{#====================================================================================================================#}
 <span id="heading_do_final_tweaks">{{ icon_individual }} Do final polish-ups</span>
 <div id="desc_do_final_tweaks">
 
@@ -2349,11 +2280,9 @@ Not applicable this semester
 * **Submit via the Canvas assignment we have set up**.
   {% if has_t %}{{ course}}T students: documents should be submitted to both courses. It's not enough to submit to the CS2101 side only.{% endif %}
 * {{ icon_important_big_red }} **Follow submission instructions closely**. ==Any non-compliance will be penalized== (e.g., wrong file name/format).<br>
-  Canvas might automatically add a file name suffix (e.g., `*-1.pdf`, `*-2.pdf`, ...) if you upload a file multiple times. You can safely ignore that suffix.
-* **Do not update the code during the 14 days after the deadline.** Get our permission first if you need to update the code in the repo during that _code-freeze_ period.
-  * You can update issues/milestones/PRs even during the _code-freeze_ period.{% if cs2113 or cs2103 %}
-  * [{{ course }}T only] You can update the source code of the docs (but not functional/test code) if your CS2101 submission deadline is later than our submission deadline.<br>
-   On a related note, there is no need for additional stylistic 'beautification' of the docs before submitting to the CS2101 side. The two teaching teams have agreed that there will be no extra credit for such additional beautification.{% endif %}
+  Canvas might automatically add a file name suffix (e.g., `*-1.jar`, `*-2.jar`, ...) if you upload a file multiple times. You can safely ignore that suffix.
+* **Do not update the code during the 30 days after the deadline.** Get our permission first if you need to update the code in the repo during that _code-freeze_ period.
+  * You can update issues/milestones/PRs even during the _code-freeze_ period.
   * You can update the code during the code-freeze period if the change is related to a late submission approved by us.
   * You can continue to evolve your repo after the code-freeze period.
 
@@ -2363,37 +2292,6 @@ Not applicable this semester
 </div>
 
 <div class="indented">
-<div id="tip-how-to-convert-to-pdf">
-
-<box id="caution-on-pdf-conversion" type="important" seamless>
-
-**Don't take PDF conversion lightly:**{.text-danger} **To convert the UG/DG{% if cs2113 %}/PPP{% endif %} into PDF format**, go to the generated page in your project's github.io site and use [this technique](https://se-education.org/guides/tutorials/savingPdf.html) to save as a PDF file. ==Using other techniques or not following the settings suggested in the given technique can result in issues== such as missing background colors, poor-quality resolution, and unnecessarily large files (the last two can be considered bugs).
-
-**The PDF versions of the UG/DG{% if cs2113 %}/PPP{% endif %} should be _usable_** by the target readers, even if not as neat/optimized as the Web versions. For example, margins and page breaks need not be optimized, but they should not hinder the reader either. Assume some will occasionally choose the PDF version over the Web version %%e.g., for printing, offline viewing, annotating etc.%%
-
-**The PE uses the PDF versions of UG/DG, not the Web versions!**{.text-danger} Any problems in those PDF files (e.g., broken links, messed up formatting) can be reported as bugs.
-
-**Ensure hyperlinks in the PDF files work**. ==Broken/non-working hyperlinks in the PDF files will be considered bugs==. Again, use the conversion technique given above to ensure the links work.
-
-**PDF files should**
-  * **be paginated** at a reasonable page size (e.g., A4). %%Reason: single-page PDF files don't work well in some PDF viewers, and are not suitable for printing either.%%
-  * **allow copying text** %%(e.g., a reader may want to copy an example command from the UG)%%.
-
-**Try the PDF conversion early**. If you do it at the last minute, you may not have time to fix any problems in the generated PDF files (such problems are more common than you think).
-</box>
-</div>
-
-<box type="tip" seamless>
-
-**Side benefits for early submissions:**{.text-success} Given that _using buffers to reduce the risk of deadline overruns_ is a learning outcome of this course, we strongly encourage setting an internal submission deadline a few hours earlier than the actual deadline. As an incentive, we plan to perform some checks on early submissions and inform you if we find issues with your submission %%(e.g., incorrect file name/format)%%, thus giving you a chance to fix them before the deadline and avoid a penalty.
-
-</box>
-
-<box type="tip" seamless>
-
-**You may use automated tools to improve documentation:**{.text-success} e.g., Grammarly can be used to improve the writing quality and find grammar errors.
-
-</box>
 
 <box type="info" seamless>
 

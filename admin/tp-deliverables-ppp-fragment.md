@@ -45,11 +45,6 @@ Keep in mind that evaluators will use the PPP to estimate your project effort. W
 * {{ icon_example }} Follow the [example in the AddressBook-Level3]({{ url_ab3_upstream_website }}/team/johndoe.html)
 {% if cs2113 %}* For the final submission of the PPP (at the end of the tP), you need to save your PPP as a PDF file. Therefore, ensure the PDF version of the PPP looks OK at least a few days before the final submission.
 
-<div class="indented-level2">
-
-<include src="tp-tasks-fragment.md#tip-how-to-convert-to-pdf" />
-</div>
-
 #### <span class="badge bg-info">PPP</span> <span class="text-info">Page Limit</span>
 
 <div class="indented-level2">

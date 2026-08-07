@@ -227,11 +227,6 @@ Note how the <span class="text-success">:fas-crosshairs: **Product goal**</span>
 
 </div>
 
-<box type="info" seamless>
-
-This version (i.e., {{ version_penultimate }}) will undergo limited beta testing (done by other teams), and you will receive the bug reports without any penalty.
-</box>
-
 
 #### {{ badge("W" + (tfw + (9 if pe_schedule_ideal else 10)))}} Iter.6 %%[ --{{ weekly_tp_themes.w12.name if pe_schedule_ideal else weekly_tp_themes.w13.name }}-- ]%%
 
@@ -245,7 +240,7 @@ This version (i.e., {{ version_penultimate }}) will undergo limited beta testing
 <box type="warning" seamless>
 
 * This iteration is <span class="text-danger">very short</span> (just a few days).<br>
-  ==**Even minor/cosmetic changes to features are not allowed** in this iteration== due to the _feature freeze_.
+  ==**Only a very limited amount of changes is allowed** in this iteration== due to the _feature freeze_.
 * This version will undergo intensive peer testing (the so-called [_practical exam_](tp-pe.html#tp-practical-exam-pe)).
   You will get credit for finding bugs in others' tP deliverables and be penalized for bugs found in your deliverables.
 </box>
