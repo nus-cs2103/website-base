@@ -5,7 +5,7 @@
 <!-- ==================================================================================================== -->
 <div id="git-mastery-preamble">
 
-**To learn Git and GitHub topics, we'll be using [Git-Mastery](https://git-mastery.org)**, a relatively new learning resource and a companion app that help you learn the topics and self-test your knowledge using auto-graded exercises. Git-Mastery is a project based in NUS.<br>
+**To learn Git and GitHub topics, we'll be using [Git-Mastery](https://git-mastery.org)**, a relatively new learning resource and a companion app that help you learn the topics and self-test your knowledge using auto-graded exercises. Git-Mastery is a project based at NUS.<br>
 We hope the **additional value Git-Mastery provides outweighs the inconvenience of having to navigate to a separate website** to learn some topics.
 </div>
 

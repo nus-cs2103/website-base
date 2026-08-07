@@ -22,7 +22,7 @@ Phew. We are done with the prereq topics. It's time to move to new topics for th
 <!-- ---------------------------------------------------------------------------- -->
 {% call topic_followup("softwareEngineering-introduction-prosAndCons", reuse=false) %}
 
-****Scanning a TLDR version of a topic:**** As mentioned in ['Using this Website' page](../../admin/usingThisWebsite.html#:~:text=using%20Chrome.-,Information%20layers,-This%20book%20tries), the more important layer of information is given in bold text. For example, **you can quickly scan the essential points of a topic by reading the bold text only** (this could be useful when you want to quickly recap a previous topic, or to get an idea of what a topic covers without reading all the details).
+****Scanning a TLDR version of a topic:**** As mentioned on the ['Using this Website' page](../../admin/usingThisWebsite.html#:~:text=using%20Chrome.-,Information%20layers,-This%20book%20tries), the more important layer of information is given in bold text. For example, **you can quickly scan the essential points of a topic by reading the bold text only** (this could be useful when you want to quickly recap a previous topic, or to get an idea of what a topic covers without reading all the details).
 
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
@@ -34,9 +34,9 @@ Next is the second of this week's topics:
 
 <box type="important" seamless>
 
-Unless you are an experienced Git user, **you are strongly encouraged to do the Git-Mastery exercises, and enable online tracking of progress via the companion app** so that we can recognise your Git-Mastery progress as an optional [participation]({{ baseUrl }}/admin/participation.md) activity.
+Unless you are an experienced Git user, **you are strongly encouraged to do the Git-Mastery exercises, and enable online tracking of progress via the companion app** so that we can recognize your Git-Mastery progress as an optional [participation]({{ baseUrl }}/admin/participation.md) activity.
 </box>
 
-This week, we start with tour 1.
+This week, we start with Tour 1.
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->

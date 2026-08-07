@@ -209,7 +209,7 @@ A label with the {{ icon_deadline }} icon indicates the deadline for that task %
 {% if week_num == "1" %}
 <box type="info">
 
-**This is the <span class="text-primary">{{ show_as_tab('Topics', icon_tab_topics) }}</span> tab** of this week. It contains topics allocated to this week.
+**This is the <span class="text-primary">{{ show_as_tab('Topics', icon_tab_topics) }}</span> tab** for this week. It contains topics allocated to this week.
 </box>
 {% endif %}
 <include src="topics.md#notices" optional />
