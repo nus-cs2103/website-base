@@ -1201,7 +1201,7 @@
             name: "",
             level_three_topics: [
               {name: "what", heading: "What", priority: "2"},
-              {name: "testingTextUis", heading: "Automated Testing of CLI Apps", priority: "2"},
+              {name: "testingTextUis", heading: "Automated Testing of CLI Apps", priority: "4"},
               {name: "usingTestDrivers", heading: "Test Automation Using Test Drivers", priority: "3"},
               {name: "tools", heading: "Test Automation Tools", priority: "3"},
               {name: "testingGuis", heading: "Automated Testing of GUIs", priority: "3"}
@@ -1418,6 +1418,7 @@
             level_three_topics: [
               {name: "xp", heading: "XP", priority: "3"},
               {name: "scrum", heading: "Scrum", priority: "3"},
+              {name: "choosing", heading: "Choosing a model", priority: "3"},
               {name: "unifiedProcess", heading: "Unified Process", priority: "4"}
             ]
           }

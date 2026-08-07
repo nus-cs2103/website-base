@@ -36,8 +36,7 @@
    </box>
 1. If Codex doesn't update the banner, you can ask it to do so.
    {% call mdblock() %}
-   Generate an ASCII-art banner for the word [NEW NAME] (case-sensitive).
-   Give me a few variations.
+   Generate an ASCII-art banner for the word [NEW NAME] (case-sensitive). Give me a few variations.
    {% endcall %}
 1. Examine and test the updated code. If you are happy with it, commit the changes. %%Yes, you can ask Codex to create the commit but if you are new to Git, it is better to do the commits yourself before you start delegating it to AI. Besides, hand-committing can even be faster, and saves tokens.%%
 

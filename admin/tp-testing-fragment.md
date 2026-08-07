@@ -21,20 +21,11 @@
 
 * **<span class="text-danger">Download the product to be tested</span>**.
 
-<tabs active="{{ pe_active_tab }}" add-class="ml-4">
-<tab header="PE Dry Run (at **{{ version_penultimate }}**)">
-
-* First, wait till you are notified which team to test (likely to be in the morning of PE-D day)<br>
-  Then, #r#wait until the start of the PE-D period## (i.e., 12 noon).<br>
-  After that, download the JAR file and the UG/DG PDF file from the team's latest release. Downloading the files any earlier runs the risk of you testing an outdated version of the product.
-
-</tab>
-<tab header="PE (at **{{ version_final }}**)">
 
 <div id="zip-download-unzip-info" >
-<box type="info" header="++Downloading and unzipping JAR/PDF files you will test in the PE++" icon=":fas-download:">
+<box type="info" header="++Downloading and unzipping JAR files you will test in the PE++" icon=":fas-download:">
 
-The files you need for the PE (i.e., `.jar` file, UG and DG `.pdf` files) will be **given to you as an encrypted zip file**. Here are the two steps involved in using it.
+The files you need for the PE (i.e., `.jar` file, and a README.txt file containing the URL of the product website) will be **given to you as an encrypted zip file**. Here are the two steps involved in using it.
 
 1. **Downloading the zip file**: After we inform you of the details (via email), go to the download location (a Dropbox folder), and download the zip file bearing your partial student number (e.g., `A---0000X.zip`).
    * The **Dropbox password needed to download this** file is `{{ course | lower }}`.
@@ -44,10 +35,6 @@ The files you need for the PE (i.e., `.jar` file, UG and DG `.pdf` files) will b
    * The first part of the password (common to all) will only be announced in Canvas at the start of the PE period.
 </box>
 </div>
-
-</tab>
-</tabs>
-<p/>
 
 <div class="indented">
 

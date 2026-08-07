@@ -27,7 +27,7 @@ Furthermore, we estimate that this bar is roughly _equivalent_ to **writing abou
 <div tags="m--cs2103">
 
 {{ show_faq("tpEnoughFeatures", is_compact=1) }}
-{{ show_faq("tpMustWrite300Loc", is_compact=1) }}
+{{ show_faq("tpMustWriteMinLoc", is_compact=1) }}
 {{ show_faq("tpIsBlankLinesCounted", is_compact=1) }}
 {{ show_faq("tpFullMarksFor300Loc", is_compact=1) }}
 {{ show_faq("tpIsLocGraded") }}

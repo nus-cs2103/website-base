@@ -670,23 +670,23 @@ Some options:
 Yes, if it requires each member to put in about 50% of the implementation effort they put into the iP.
 </div>
 <!-- =============================================================== -->
-<div id="faq-tpMustWrite300Loc-Q">Is it a must to write at least 300 LoC?</div>
-<div id="faq-tpMustWrite300Loc-A">
+<div id="faq-tpMustWriteMinLoc-Q">Is it a must to write at least {{ tp_min_loc }} LoC?</div>
+<div id="faq-tpMustWriteMinLoc-A">
 
-Note that 300 LoC is neither a target, nor a cap, nor a definitive measure. In fact, LoC is not a very reliable measure of effort. So, it is just a secondary indicator you can refer to. The primary indicator you should keep an eye on is your tP implementation effort, which is expected to be around 50% of the iP implementation effort.
+Note that {{ tp_min_loc }} LoC is neither a target, nor a cap, nor a definitive measure. In fact, LoC is not a very reliable measure of effort. So, it is just a secondary indicator you can refer to. The primary indicator you should keep an eye on is your tP implementation effort, which is expected to be around 50% of the iP implementation effort.
 
-So, the answer is "not necessarily". It depends on the effort required, which in turn depends on what the code does. It is quite possible for 100 LoC that implements feature X to take more effort than 300 LoC that implements feature Y (i.e., it depends on the feature). So, we measure the effort, not LoC (the LoC figure given is just a rough estimate of the _equivalent_ effort).
+So, the answer is "not necessarily". It depends on the effort required, which in turn depends on what the code does. It is quite possible for 100 LoC that implements feature X to take more effort than {{ tp_min_loc }} LoC that implements feature Y (i.e., it depends on the feature). So, we measure the effort, not LoC (the LoC figure given is just a rough estimate of the _equivalent_ effort).
 
 </div>
 <!-- =============================================================== -->
-<div id="faq-tpIsBlankLinesCounted-Q">300 LoC is with or without blank lines?</div>
+<div id="faq-tpIsBlankLinesCounted-Q">{{ tp_min_loc }} LoC is with or without blank lines?</div>
 <div id="faq-tpIsBlankLinesCounted-A">
 
 It does not matter. Peg your implementation effort to about 50% of the implementation effort of the iP. Let the LoC number fall where it may. We grade based on the effort, not the LoC count. The given LoC number is just a secondary indicator.
 
 </div>
 <!-- =============================================================== -->
-<div id="faq-tpFullMarksFor300Loc-Q">Still, if I write 300 LoC, I get full marks for implementation?</div>
+<div id="faq-tpFullMarksFor300Loc-Q">Still, if I write {{ tp_min_loc }} LoC, I get full marks for implementation?</div>
 <div id="faq-tpFullMarksFor300Loc-A">
 
 There is no such guarantee, for two reasons:
@@ -1108,20 +1108,20 @@ Caution: Mass renaming can disrupt authorship tracking. So, it is best to do any
 </div>
 <!-- =============================================================== -->
 
-<div id="faq-peTooLong-Q">Isn't it unreasonable to expect us to spend so many hours on the PE/PE-D?</div>
+<div id="faq-peTooLong-Q">Isn't it unreasonable to expect us to spend so many hours on the PE?</div>
 <div id="faq-peTooLong-A">
 
-The product testing part of the PE (and the PE-D) is expected to take no more than 2 hours. Typically, the bugs you can find within 2 hours should be enough to get full marks for the product testing component of the tP. The additional time is given as a buffer, and to reduce stress.
+The product testing part of the PE is expected to take no more than 2 hours. Typically, the bugs you can find within 2 hours should be enough to get full marks for the product testing component of the tP. The additional time is given as a buffer, and to reduce stress.
 
 Note that you can send no more than 6 bugs to the dev team anyway, and the product testing is only a small component of tP marks (i.e., 3-4 marks). So, there is not much value in spending too long on this.
 
 </div>
 <!-- =============================================================== -->
 
-<div id="faq-peOtherCommitments-Q">Isn't it unfair to students who have other commitments during the PE/PE-D period?</div>
+<div id="faq-peOtherCommitments-Q">Isn't it unfair to students who have other commitments during the PE period?</div>
 <div id="faq-peOtherCommitments-A">
 
-The product testing part of the PE (and the PE-D) is expected to take no more than 2 hours, and hence, can be done during the lecture slot of the course.
+The product testing part of the PE is expected to take no more than 2 hours, and hence, can be done during the lecture slot of the course.
 </div>
 <!-- =============================================================== -->
 
@@ -1142,7 +1142,7 @@ As each product is tested by 4-5 testers, after all PE bugs have been finalized,
 <div id="faq-tpNoBugsInTestedProduct-Q">What if the product I tested has hardly any bugs?</div>
 <div id="faq-tpNoBugsInTestedProduct-A">
 
-If the total bugs found (by _all_ testers) in a product is below a certain level, we compensate those testers by increasing the weightage given to PE-D performance, and their dev-testing results.
+If the total bugs found (by _all_ testers) in a product is below a certain level, we compensate those testers by increasing the weightage given to their dev-testing results.
 </div>
 <!-- =============================================================== -->
 
@@ -1156,9 +1156,7 @@ It is too much to expect you to first find _all_ bugs in the product (which coul
 <div id="faq-peCanTestersCombineBugs-Q">Can a tester combine multiple similar bugs into a single bug report?</div>
 <div id="faq-peCanTestersCombineBugs-A">
 
-**In the PE-D**, it is OK to do so.
-
-**In the PE**, report each bug as a separate bug report. If you include multiple bugs in one bug report, the dev team is allowed to pick one bug out of them and discard the rest.
+Report each bug as a separate bug report. If you include multiple bugs in one bug report, the dev team is allowed to pick one bug out of them and discard the rest.
 
 * Reasons:
   * It is hard to evaluate when multiple bugs are in the same report e.g., what if some of them are valid but others are not?
@@ -1208,10 +1206,10 @@ You should accept the bug but state that you disagree with the expected/suggeste
 </div>
 <!-- =============================================================== -->
 
-<div id="faq-tpBugRejectedWithReason-Q">What if the team rejected my bug report without giving a reason?</div>
+<div id="faq-tpBugRejectedWithReason-Q">What if the team did not accept my bug but did not give a reason?</div>
 <div id="faq-tpBugRejectedWithReason-A">
 
-You can disagree with the rejection, and the teaching team will likely rule in your favor in the next phase.
+You can disagree with their decision, and the teaching team will likely rule in your favor in the next phase.
 </div>
 <!-- =============================================================== -->
 

@@ -1147,11 +1147,9 @@ Furthermore, these sections will be graded at the final project evaluation, and 
 
 <box type="warning" seamless>
 
-**Add your DG content into the `docs/DeveloperGuide.md`** (i.e., #r#do not split that file further into multiple files##), as only that file will be checked when our grading scripts look for your content contributions to the DG. Besides, you need all your DG content on one page because the DG must be submitted as a single PDF file during the final submission.
+**Add your DG content into the `docs/DeveloperGuide.md`** (i.e., #r#do not split that file further into multiple files##), as only that file will be checked when our grading scripts look for your content contributions to the DG.
 
 **A similar restriction applies to the UG**, i.e., add your content to the `docs/UserGuide.md` (do not split that file into multiple pages).
-
-Relevant: the tP constraint [Constraint-PDF-Friendly]({{ url_website }}/admin/tp-constraints.html?cv-highlight=Constraint-PDF-Friendly).
 </box>
 
 <modal large header="Textbook {{ icon_embedding }} Specifying Requirements → Use Cases" id="modal:v10-usecases">
@@ -2001,12 +1999,11 @@ The panel below contains guidelines your peers will use when determining bugs in
 </div>
 
 * {{ icon_important_big_red }} **Do a <tooltip content="resulting in a jar file on GitHub that can be downloaded by potential users">proper product release</tooltip>**{% if cs2103 %} [as described in the Developer Guide]({{ url_ab3_fork_website }}/DevOps.html#making-a-release){% endif %}. Do the release by the given deadline. <br>
-  ==Do a smoke-test to ensure the jar file works== (if the released jar file is broken, it will be omitted from the PE-D).<br>
+  ==Do a smoke-test to ensure the jar file works==.<br>
   * Include the following files in the release (as separate assets):
-    1. **JAR** file
-    1. **UG** (PDF file) -- uploaded as an 'asset' (similar to the JAR file), not embedded in the release note.
-    1. **DG** (PDF file) -- similar to the UG
-  * You may choose any suitable file name, but avoid spaces or special characters in the JAR file name.
+    1. **JAR** file. You may choose any suitable file name, but avoid spaces or special characters in the JAR file name.
+    1. **UG** (in the product website) -- online and updated to match the prouduct.
+    1. **DG** -- similar to the UG
   * It is optional to write detailed release notes for this version.
 
 * ==IMPORTANT: ensure your jar file was generated using Java {{ java_version}} and can work on all major OS'es using JDK {{ java_version }}.==
@@ -2185,7 +2182,7 @@ Test the product yourself (test each other's features) using the JAR file, repor
 
 1. **Is it something you think you'll never fix** even if you were to continue this project in the future?<br>
    If yes, you can leave it unfixed and reject it if the same bug is reported in the PE. Caution: If the PE tester disagrees and the teaching team agrees with the tester's justification, the bug might result in a penalty %%(why say '_might_ result ...'? Because bugs are penalized only when the bug density exceeds a certain bar)%%.<br>
-   {{ icon_info }} How to decide if a PE bug can be rejected? Refer to <trigger trigger="click" for="modal:pedTriagingWorkflow-peBugTriagingGuidelines">PE Bug Triaging Guidelines</trigger> for details (you may skip the 'General' section).
+   {{ icon_info }} How to decide if a PE bug can be not-accepted? Refer to <trigger trigger="click" for="modal:pedTriagingWorkflow-peBugTriagingGuidelines">PE Bug Triaging Guidelines</trigger> for details (you may skip the 'General' section).
 1. **Else, is it something you may consider fixing in a future version** but that was not important enough to have been done in {{ version_penultimate }}?<br>
    If yes, you can expect to categorize it as `NotInScope` if the same bug is reported in the PE (<trigger trigger="click" for="modal:pedTriagingWorkflow-peNotInScope">eligibility criteria</trigger>).
 1. **Else, it is something you should have fixed in the current version.**
@@ -2310,8 +2307,7 @@ Your product name: <cv-placeholder-input name="productName" appearance="underlin
 
 * **Product**:{icon="fas-users"}
   * Do a release on GitHub, tagged appropriately e.g., `{{ version_final }}` or `{{ version_final }}b`.{% if cs2103 %}<br>
-    Writing detailed release notes is optional.<br>
-    No need to include UG/DG PDF files in the release.{% endif %}
+    Writing detailed release notes is optional.{% endif %}
   * Upload the JAR file to Canvas.<br>
     File name: `[TEAM_ID][ProductName].jar` %%e.g., [[[teamId: {{ example_team_id }}]]][[[productName: ContactsPro]]].jar%%<br>
     {{ icon_important }} Recommended to <span class="text-danger">avoid spaces and special characters in the product name</span> as they can cause problems when running the JAR file using the command line.<br>
@@ -2332,19 +2328,21 @@ Reminder: double-check to ensure the code attributed to you by RepoSense is corr
 </box>
 
 * **User Guide**:{icon="fas-users"}
-  * Convert to PDF and upload to Canvas.
-  * File name: `[TEAM_ID][ProductName]UG.pdf`  %%e.g., [[[teamId: {{ example_team_id }}]]][[[productName: ContactsPro]]]UG.pdf%%
+  * Ensure the updated version is available as part of your product website deployed on GitHub Pages.
 
 {{ embed_topic("tp-deliverables.md#tp-deliverables-ug", "Admin " + icon_embedding + " tP → Deliverables → User Guide", "3", indent="2") }}
 
 * **Developer Guide**:{icon="fas-users"}
   * submission is similar to that of the UG
-  * File name: `[TEAM_ID][ProductName]DG.pdf` %%e.g., [[[teamId: {{ example_team_id }}]]][[[productName: ContactsPro]]]DG.pdf%%
 
 {{ embed_topic("tp-deliverables.md#tp-deliverables-dg", "Admin " + icon_embedding + " tP → Deliverables → Developer Guide", "3", indent="2") }}
 
 
-* **{% if cs2103 %}[Optional] {% endif %}Project Portfolio Page (PPP)**:{icon="fas-user"}
+* **Product Website**: Update the website (home page<span tags="m--cs2103">, `Ui.png`</span>, `AboutUs.md` etc.) on GitHub. Ensure the website is auto-published.{icon="fas-users"}
+
+{{ embed_topic("tp-deliverables.md#tp-deliverables-website", "Admin " + icon_embedding + " tP → Deliverables → Product Website", "3", indent="2") }}
+
+* **{% if cs2103 %}{{ optional }} {% endif %}Project Portfolio Page (PPP)**:{icon="fas-user"}
   * HTML version: make available on `github.io`{% if cs2113 %}
   * PDF file: submission is similar to that of the UG<br>
     File name: `[TEAM_ID][Your full Name as Given in Canvas]PPP.pdf` %%e.g., [[[teamId: {{ example_team_id }}]]][Leow Wai Kit, John]PPP.pdf%%<br>
@@ -2353,10 +2351,6 @@ Reminder: double-check to ensure the code attributed to you by RepoSense is corr
 
 {{ embed_topic("tp-deliverables.md#tp-deliverables-ppp", "Admin " + icon_embedding + " tP → Deliverables → Project Portfolio Page", "3", indent="2", status=("peek" if cs2103 else "minimized")) }}
 
-
-* **Product Website**: Update the website (home page<span tags="m--cs2103">, `Ui.png`</span>, `AboutUs.md` etc.) on GitHub. Ensure the website is auto-published.{icon="fas-users"}
-
-{{ embed_topic("tp-deliverables.md#tp-deliverables-website", "Admin " + icon_embedding + " tP → Deliverables → Product Website", "3", indent="2") }}
 </div>
 {#====================================================================================================================#}
 <span id="heading_wrap_up_final_milestone">{{ icon_team }} Wrap up the milestone</span>
@@ -2419,7 +2413,7 @@ Reminder: double-check to ensure the code attributed to you by RepoSense is corr
 <span id="heading_do_post_release_tasks">{{ icon_team }}/{{ icon_individual }} Attend to post-release tasks</span>
 <div id="desc_do_post_release_tasks">
 
-This is the time to attend to post-release tasks (as `{{ version_final }}` was considered a public release). In this course, that means attending to the remaining phases of the PE.
+This is the time to attend to post-release tasks (as `{{ version_final }}` was considered a public release). In this course, that means attending the PE.
 
 </div>
 {#====================================================================================================================#}

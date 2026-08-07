@@ -42,7 +42,7 @@ Accordingly, we hope you'll **accept bug reports graciously** (rather than fight
 
 {{ icon_info }} If a bug qualifies for `response.NotInScope`, the dev team will not be penalized, but the bug reporter will earn a small amount of credit for reporting it.{% if cs2103 %}
 
-{{ icon_info }} If a bug matches an enhancement listed in the 'Appendix: Planned Enhancements' of the DG, that bug can be rejected (the tester should not have reported it at all).{% endif %}
+{{ icon_info }} If a bug matches an enhancement listed in the 'Appendix: Planned Enhancements' of the DG, that bug can be not-accepted (the tester should not have reported it at all).{% endif %}
 </div>
 </div>
 
@@ -103,7 +103,7 @@ However, if it is possible for a user mistake to cause such inputs %%(e.g., the 
 * **Broken/incorrect links**: Severity can be `Low` or `Medium` depending on how much inconvenience they cause to the reader.
 * **Extra white space** introduced by the PDF conversion: Not counted as bugs unless it hinders the reader. Cases such as a diagram being split between pages are considered bugs, because they hinder the reader.<br>
   {{ icon_info }} **'Hinder' the reader?** Don't interpret 'hinder' as 'impossible to read'. Even formatting issues such as too much/little padding, font size, alignment, inconsistencies, etc. can 'hinder' the reader in the sense they can slow down the reader or require the reader to put more effort than necessary. Those things that 'need to be fixed' are still bugs but of lower severities (depending on how much they hinder the reader -- most likely `severity.VeryLow` if the issue is purely cosmetic).
-* **UML notation variations** caused by the diagramming tool: Can be rejected if not contradicting the standard notation (as given by the textbook) i.e., extra decorations that are not misleading.<br>
+* **UML notation variations** caused by the diagramming tool: Can be not-accepted if not contradicting the standard notation (as given by the textbook) i.e., extra decorations that are not misleading.<br>
   Omitting optional notations is not a bug as long as it doesn't hinder understanding.
 * **UML notation errors** %%(e.g., using a dashed line where a solid line should be used)%%:<br>
   When deciding the severity, consider how much the notation error hinders the reader, but also keep in mind that notation errors hurt the credibility of the diagram (i.e., if even the notation is incorrect, how much can we trust this diagram :thinking:?). The latter pushes up the severity further than otherwise. So, the severity can be `Low` or higher.

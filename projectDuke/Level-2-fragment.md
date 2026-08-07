@@ -9,8 +9,7 @@ Add the ability to store whatever text is entered by the user and
 display it back to the user when requested.
 
 * There is no need to save the data to the hard disk.
-* Assume there will be no more than 100 tasks.
-  If you wish, you may use a fixed-size array (e.g., `String[100]`) to store the items.
+* Assume there will be no more than 100 tasks. If you wish, you may use a fixed-size array (e.g., `String[100]`) to store the items.
 {% endset %}
 {% set sample_output_level_2 %}
 ```

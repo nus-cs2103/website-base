@@ -90,6 +90,7 @@
 
 <variable name="tp_repo_name">tp</variable>
 <variable name="java_version">25</variable>
+<variable name="tp_min_loc">500</variable>
 
 <variable name="pe_schedule_ideal">{{ "yes" if (ped_week == "11" and pe_week == "12") else "" }}</variable>
 <variable name="pe_schedule_late">{{ "yes" if (ped_week == "12" and pe_week == "13") else "" }}</variable>

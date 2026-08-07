@@ -364,6 +364,7 @@
       {location: ["processModels", "exampleProcessModels", "scrum"]},
       {location: ["processModels", "exampleProcessModels", "xp"]},
       {location: ["processModels", "exampleProcessModels", "unifiedProcess"]},
+      {location: ["processModels", "exampleProcessModels", "choosing"]},
       {location: ["processModels", "more", "cmmi"]},
       {location: ["processModels", "summary", "recap"]},
   {name: "Documentation"},

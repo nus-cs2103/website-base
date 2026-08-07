@@ -6,11 +6,6 @@
 
 >In the section [_Implementation_]() given above ...
 
-<div tags="m--cs2103 m--cs2113">
-
-**{{ course }}T does not require you to indicate the author names of DG/UG sections**{% if cs2103%} (CS2101 requirements may differ){% endif %}. We recommend (but do not require) that you ensure the code dashboard reflects the authorship of doc files accurately.
-</div>
-
 </box>
 
 <div tags="m--cs2113">
@@ -26,9 +21,3 @@
 * **Refrain from overusing screenshots**. While it is good to have screenshots in the UG, note that they are hard to maintain. For example, if a future version changes the GUI slightly, it will require all your screenshots to be updated. Here are some tips:
   * In general, don't use more screenshots than necessary.
   * In some cases, you may want to crop the screenshot to show only the elements being discussed. That way, the screenshot doesn't need to be updated when other parts of the GUI are modified in a later version.
-  * Don't use a higher resolution than necessary as it can increase the UG file size.
-
-* Also note the following constraint:
-
-  {{ embed_topic("tp-constraints.md#Constraint-File-Size", "Admin " + icon_embedding + " tP Constraints → Constraint-File-Size", "2", indent="1") }}
-

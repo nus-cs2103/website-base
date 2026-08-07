@@ -31,17 +31,16 @@
   * **Inaccurate instructions will be considered bugs**.
 <div tags="m--cs2103">
 
-* {{ icon_important_big_red }} **We highly recommend adding an appendix named _Appendix: Effort_** that evaluators can use to estimate the total project effort.
+* {{ optional }} **You may add an appendix named _Appendix: Effort_** that evaluators can use to estimate the total project effort.
   * Keep it brief (~1 page)
   * Explain the difficulty level, challenges faced, effort required, and achievements of the project.
-  * If a significant part (e.g., more than 5%) of the effort was saved through reuse, mention what you reused and how it affected the effort %%e.g., the feature X is implemented using library Foo -- our work on adapting Foo to our product is contained in class `FooAdapter.java`%%.
   * Use AB3 as a reference point %%e.g., you can explain that while AB3 deals with only one entity type, your project was harder because it deals with multiple entity types%%.
 </div>
 <div tags="m--cs2103" id="planned-enhancements-info">
 
 * {{ icon_important_big_red }} **We highly recommend adding an appendix named _Planned Enhancements_**, listing fixes you propose to add in the near future, to counter known feature flaws that you are not allowed to fix in {{ version_final }}.<br>
   **Enhancements listed in this section will be immune from the PE bug reporting** i.e., they will not be penalized if reported as bugs during the PE.
-  * This can be added _after_ the PE-D is over (and PE-D bug reports have been received).
+  * This can be added _after_ the iteration `{{ version_penultimate }}` is over.
   * This section may contain up to `team_size x 2` enhancements %%e.g., a 5-person team can have up to 10 enhancements%%.
   * At the start of the section, clearly state the team size. While this information is not useful for a real DG, it will help PE testers easily see if you have exceeded the allowed planned enhancements count.<br>
     For a similar reason, structure this section as a numbered list, each item in the list describing exactly one planned enhancement.<br>

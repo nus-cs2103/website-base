@@ -28,7 +28,7 @@
     This phase is divided further into parts I, II, III, and IV.<br>
     The recommended order and duration of each part are given below. You will be given about **24 hours (Friday 12 noon to Saturday 12 noon) to finish this phase**.<br>
     **We recommend that you ==do the bulk of the PE during the lecture slot, or earlier==** (Reason: Support from the teaching team will be available only during that time).<br>
-    **We recommend that you ==aim to finish this phase by Friday 23:59==**, and use the Saturday portion as a buffer only (Reason: We'll send you a status report of your PE bug reports at the end of Friday, alerting you to any problems in the bug reports you have filed -- if there are any such issues, you can use the Saturday portion to fix those problems).</span>
+    **We recommend that you ==aim to finish this phase by Friday 23:59==**, and use the Saturday portion as a buffer only (Reason: We'll send you a status report of your PE bug reports at the end of Friday, alerting you to any problems in the bug reports you have filed. If there are any such issues, you can use the Saturday portion to fix those problems).<br></span>
     * <span class="badge bg-success">Phase 1 - part I</span> **Product Testing** [60 minutes] -- to focus on reporting bugs in the product (but can report documentation bugs too)
     * <span class="badge bg-success">Phase 1 - part II</span> **Evaluating Documents** [30 minutes] -- to focus on reporting bugs in the UG and DG (but can report product bugs too)
     * <span class="badge bg-success">Phase 1 - part III</span> **Overall Evaluation** [15 minutes] -- to give overall evaluation of the product, documentation, effort, etc.
@@ -63,7 +63,6 @@
 
 * **When**: ==Fri 1200 to Sat 1200 of week {{ pe_week }}== ({{ get_date(date_w13_start if pe_week == "13" else date_w12_start, 4, format=format_normal, time="") | trim }} noon to {{ get_date(date_w13_start if pe_week == "13" else date_w12_start, 5, format=format_normal, time="") | trim }} noon).
 
-* Bug reporting will be done mostly the same way as in the PE-D. See the panel below to learn how:
 <div class="indented-level1">
 
 <panel type="primary" header="PE Preparation" expanded>
@@ -109,7 +108,7 @@
 
 <box type="important" seamless>
 
-Unlike in the PE-D, you can send #r#no more than 6 bugs to the dev team## in the PE. So, if you encounter a lower severity bug when you have already recorded more than 6 higher severity bugs, there is little value in recording that new bug in the issue tracker (although you are welcome to).
+You can send #r#no more than 6 bugs to the dev team## in the PE. So, if you encounter a lower severity bug when you have already recorded more than 6 higher severity bugs, there is little value in recording that new bug in the issue tracker (although you are welcome to).
 </box>
 
 <include src="tp-ped-fragment.md#tp-pe-testing-instructions" var-pe_session="pe" var-pe_session_name="PE" var-pe_active_tab="1"/>
@@ -142,7 +141,7 @@ The above **applies to this and all remaining PE phases**.
 #### <span class="badge bg-success">&rarr; PE Phase 1 - Part II</span> <span class="text-success">Evaluating Documents [~30 minutes]</span>
 
 * **Use this slot mainly to report documentation bugs** (but you may report product bugs too). You may report bugs related to the UG and the DG.<br>
-  Only the content of the UG/DG PDF files (unless you had to resort to using the Web version because the PDF version was unusable) should be considered. Do not report bugs that are not contained within those two files (e.g., bugs in the `README.md`).
+  Only the content of the UG/DG pages should be considered. Do not report bugs that are not contained within those two pages (e.g., bugs in the `README.md`).
 * **For each bug reported, cite evidence and justify.** For example, if you think the explanation of a feature is too brief, explain what information is missing and why the omission hinders the reader.<br>
 
 
@@ -254,11 +253,11 @@ You will receive bonus marks if a high percentage (e.g., some bonus if >50%, a s
 
 ****Procedure:****
 
-1. **Decide which bugs should be sent to the dev team**. You may select ==no more than {{ tp_pe_bug_count }}==.<br>
+1. **Decide which bugs should be sent to the dev team**. You may select no more than {{ tp_pe_bug_count }}.<br>
    **Of these bugs, ==the highest scoring 5 bugs will be used for your tP grading==.** %%We allow you to select up to {{ tp_pe_bug_count }} bugs (instead of 5), to reduce your decision-stress (i.e., it provides a safety margin against wrong choices).%%
    * **Choose based on,**<br>
      * **severity** -- %%because higher severity will earn higher marks.%% {{ bullet_tick_green }}
-     * **confidence** level that it is indeed a bug %%-- if the bug is eventually rejected, it will not earn any marks.%%
+     * **confidence** level that it is indeed a bug %%-- if the bug is eventually not accepted, it will not earn any marks.%%
      * **but not bug type** -- for this purpose, consider all bug types as equal. {{ bullet_x_red }}
    * {{ faq }} Why limit the bug count? To reduce the number of bugs your team needs to deal with in phase 2, and to filter out low-value bug reports.
 1. **Close the remaining bug reports**.<br>
@@ -320,11 +319,11 @@ More importantly, this is not a negotiation between two parties; it's **an attem
 
 <box type="tip" seamless>
 
-==**Favor `response.NotInScope` over `response.Rejected`**=={.text-success}
+==**Favor `response.NotInScope` over `response.NotApplicable`**=={.text-success}
 
 If there is even the slightest chance that the change directly suggested (or indirectly hinted at) by a bug report is an improvement that you *might* consider doing in a future version of the product, choose `response.NotInScope`.<br/>
- Choose `response.Rejected` only for bug reports that are clearly incorrect (e.g., the tester misunderstood something).<br>
-Accordingly, it is typical for a team to have a lot more `response.NotInScope` bugs and very few `response.Rejected` bugs.
+ Choose `response.NotApplicable` only for bug reports that are clearly incorrect (e.g., the tester misunderstood something).<br>
+Accordingly, it is typical for a team to have a lot more `response.NotInScope` bugs and very few `response.NotApplicable` bugs.
 
 Note that `response.NotInScope` bugs earn a small amount of credit for the tester without any penalty for the dev team, unless there is an unusually high number of such bugs for a team.
 </box>
@@ -367,9 +366,9 @@ Note that `response.NotInScope` bugs earn a small amount of credit for the teste
 <box>
 
 **Response** Labels:
-* `response.Accepted`: You accept it as a valid bug.
+* `response.Accepted`: You accept it as a valid bug that !!should have been fixed in the current version!! even if you don't necessarily agree with the `severity.*` and `type.*` given.
 * `response.NotInScope`: It is a valid issue, but fixing it is less important than the work done in the current version of the product %%e.g., it was not related to features delivered in {{ version_final }} or lower priority than the work already done in {{ version_final }}%%.
-* `response.Rejected`: What the tester treated as a bug is in fact the _expected_ and _correct_ behavior (from the user's point of view), or the tester was mistaken in some other way. %%Note: Disagreement with the bug severity/type given by the tester is not a valid reason to reject the bug.%%
+* `response.NotApplicable`: What the tester treated as a bug is in fact the _expected_ and _correct_ behavior (from the user's point of view), or the tester was mistaken in some other way. %%Note: Disagreement with the bug severity/type given by the tester is not a valid reason to choose this response.%%
 * `response.CannotReproduce`: You are unable to reproduce the behavior reported in the bug after multiple tries.
 * `response.IssueUnclear`: The issue description is not clear. Don't post comments asking the tester to give more info. The tester will not be able to see those comments because the bug reports are anonymous.
 
@@ -495,7 +494,7 @@ Duplicate2 <-- Duplicate3: "sub-issue of"
     {{ icon_important_big_red }} **Remember not to cross-reference the issue number of the _original_** (`e.g., this is same as #23`) in the justification of the duplicate bug -- use the issue title instead (e.g., `This is a duplicate of the bug 'UG formatting is wrong' because ...`).
 
 
-* **As far as possible, ==choose the correct `type.*`, `severity.*`, `response.*`, assignees, and duplicate status even for bugs you are not accepting==**. Reason: your _non-acceptance_ may be rejected in a later phase, in which case we need to grade it as an accepted bug.<br>
+* **As far as possible, ==choose the correct `type.*`, `severity.*`, `response.*`, assignees, and duplicate status even for bugs you are not accepting==**. Reason: your _non-acceptance_ may be overturned in a later phase, in which case we need to grade it as an accepted bug.<br>
 **If a bug's 'duplicate' status was rejected later** %%(i.e., the tester says it is not really a duplicate and the teaching team agrees with the tester)%%, it will inherit the response/type/severity/assignees from the 'original' bug that it was claimed to be a duplicate of.
 
 ****Suggested workflow:****{ .text-info }
@@ -571,7 +570,7 @@ However, ==if the dev team's argument is not too far from 'reasonable', it may b
     ```markdown
     # R
 
-    I don't agree that this bug should be rejected. It should at least be NotInScope because ...
+    I disagree with the non-acceptance of this bug. It should at least be NotInScope because ...
     ```
     <box type="tip" seamless>
 
@@ -622,8 +621,8 @@ However, ==if the dev team's argument is not too far from 'reasonable', it may b
      delete labels in the repo##.
    * #r#close bug reports##.
      If you accidentally closed a bug during this phase, simply reopen it and it will be fine.
-* **If the team gave `response.Rejected`, but you think it should be `NotInScope`**, you can disagree with their `response.Rejected` and give your reasoning why it should be `NotInScope`.
-* **If the bug is either `response.Rejected` or `response.CannotReproduce` or `response.IssueUnclear`, and you agree with that response**, you will not earn marks for that bug -- hence, there is no point objecting to a severity downgrade (if any) or duplicate status (if any).
+* **If the team gave `response.NotApplicable`, but you think it should be `NotInScope`**, you can disagree with their `response.NotApplicable` and give your reasoning why it should be `NotInScope`.
+* **If the bug is either `response.NotApplicable` or `response.CannotReproduce` or `response.IssueUnclear`, and you agree with that response**, you will not earn marks for that bug -- hence, there is no point objecting to a severity downgrade (if any) or duplicate status (if any).
 * You can also refer to the guidelines below, mentioned during the previous phase as well:
 
 {{ embed_topic("tp-pe-fragment.md#additionalGuidelinesForBugTriaging", "Admin " + icon_embedding + " PE → Phase 2 → Additional Guidelines for Bug Triaging", "pe-additionalGuidelinesForBugTriaging", indent=1) }}

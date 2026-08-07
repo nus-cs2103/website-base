@@ -80,24 +80,6 @@ While PE and PE-D are primarily _manual_ testing sessions, **you may also use an
 
 ###### <div class="text-white bg-secondary p-1">a) Downloading and launching the JAR file</div>
 
-<tabs active="{{ pe_active_tab }}">
-<tab header="PE Dry Run (at **{{ version_penultimate }}**)">
-
-A few hours before the PE-D starts, you will be notified via email which team you will be testing in the PE-D. After sending out those emails, we'll also announce it in Canvas. %%FYI, team members will be given different teams to test, and the team you test in the PE-D is different from the team you test in the PE.%%
-
-{{ icon_important_big_red }} #r#You are not allowed to##:
-
-* reveal the team you are testing in the PE-D/PE to anyone or put that information in a place where others can see it. {{ bullet_x_red }}
-* share your PE-D/PE bug reports with anyone.
-* involve anyone else in your PE-D or PE tasks -- both are individual assignments, to be done by yourself.
-
-Do the following steps ==#r#after 12 noon on the PE-D day -- get started by 4pm at the latest##==.
-* First, download the _latest_ `.jar` file and UG/DG `.pdf` files from the team's releases page, if you haven't done this already.
-* Then, you can start testing it and reporting bugs.
-
-</tab>
-<tab header="PE (at **{{ version_final }}**)">
-
 * Download the zip file from the given location (to be given to you at least a few hours before the PE), if you haven't done that already.
 * The file is zipped using a two-part password.
   * We will email you the second part in advance (it's unique to each student). Keep it safe, and have it ready at the start of the PE.
@@ -107,9 +89,6 @@ Do the following steps ==#r#after 12 noon on the PE-D day -- get started by 4pm 
     :fab-apple: Some macOS versions will automatically unzip the inner zip file after you unzip the outer zip file using the password.
   * {{ icon_tip }} Strongly recommended: Try the above steps using [this sample zip file](https://github.com/nus-cs2103/website-base/files/14849276/JohnDoe.zip) if you wish (first part of the password: `password1-`, second part: `password2` i.e., you should use `password1-password2` to unzip it).<br>
     Use the JAR file inside it to try the steps given below as well, to confirm that your computer's Java environment is as expected and can run PE JAR files.
-</tab>
-</tabs>
-<p/>
 
 <box type="important" id="tp-jar-testing-steps" seamless>
 
@@ -148,13 +127,12 @@ Do the following steps ==#r#after 12 noon on the PE-D day -- get started by 4pm 
 
 ###### <div class="text-white bg-secondary p-1">b) What to test</div>
 
-#g#In the scope of PE/PE-D## | #r#Not in the scope##
+#g#In the scope of PE## | #r#Not in the scope##
 -------------------|---------------------
-{{ icon_tick_green }} The behavior of the product jar file<br>{{ icon_tick_green }} UG (pdf file only)<br>{{ icon_tick_green }} DG (pdf file only) | {{ icon_x_red }} The product website, including `.md` files such as README.md<br>{{ icon_x_red }} Data and config files that come with the app (unless they affect the app behavior)<br>{{ icon_x_red }} Terminal output (unless it attracts the attention of the user and worries/alarms him/her unnecessarily)<br>{{ icon_x_red }} Code quality issues (but there is no restriction on examining code to identify product/UG/DG bugs)
+{{ icon_tick_green }} The behavior of the product jar file<br>{{ icon_tick_green }} UG (html) page of the course website<br>{{ icon_tick_green }} DG (html) page of the course website | {{ icon_x_red }} The rest of the product website, including `.md` files such as README.md<br>{{ icon_x_red }} Data and config files that come with the app (unless they affect the app behavior)<br>{{ icon_x_red }} Terminal output (unless it attracts the attention of the user and worries/alarms him/her unnecessarily)<br>{{ icon_x_red }} Code quality issues (but there is no restriction on examining code to identify product/UG/DG bugs)
 
-* **Test ==based on the Developer Guide== (Appendix named _Instructions for Manual Testing_) ==and the User Guide== PDF files.** The testing instructions in the Developer Guide can provide you with some guidance, but if you follow those instructions strictly, you are unlikely to find many bugs. You can deviate from the instructions to probe areas that are more likely to have bugs.<br>
- **If the provided UG/DG PDF files have serious issues** (e.g., some parts seem to be missing), you can report them as bugs, and then use the Web versions of UG/DG for the testing.{% if cs2103 and pe_session=='pe' %}
-* **[==PE-only== (not applicable to PE-D)] The DG appendix named _Planned Enhancements_** (if it exists) gives some enhancements the team is planning for the near future. The feature flaws these enhancements address are 'known' -- reporting them will not earn you any credit.<br/>
+* **Test ==based on the Developer Guide== (Appendix named _Instructions for Manual Testing_) ==and the User Guide==.** The testing instructions in the Developer Guide can provide you with some guidance, but if you follow those instructions strictly, you are unlikely to find many bugs. You can deviate from the instructions to probe areas that are more likely to have bugs.<br>{% if cs2103 %}
+* **The DG appendix named _Planned Enhancements_** (if it exists) gives some enhancements the team is planning for the near future. The feature flaws these enhancements address are 'known' -- reporting them will not earn you any credit.<br/>
   However, you can report `type.FeatureFlaw` bugs if you think these enhancements themselves are flawed/inadequate.<br/>
   You can also report `type.DocumentationBug` bugs if any of the enhancements in this list combines more than one enhancement.
 {% endif %}

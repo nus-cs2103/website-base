@@ -101,8 +101,8 @@ If you are uncomfortable posting your photo due to security reasons, you can pos
 
 #### <span class="badge bg-info">Website</span> <span class="text-info">UG (Web Page)</span>
 
-* Should match the submitted PDF file.
+* Should match the submitted JAR file.
 
 #### <span class="badge bg-info">Website</span> <span class="text-info">DG (Web Page)</span>
 
-* Should match the submitted PDF file.
+* Should match the submitted JAR file.

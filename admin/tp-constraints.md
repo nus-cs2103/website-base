@@ -130,21 +130,13 @@ The file sizes of the deliverables should be reasonable and not exceed the limit
 
 * <span class="text-danger">Product (i.e., the JAR/ZIP file): 100MB</span> (Some third-party software -- e.g., Stanford NLP library, certain graphics libraries -- can cause you to exceed this limit)
 
-* <span class="text-danger">Documents (i.e., PDF files): 15MB/file</span> (Not following [the recommended method of converting to PDF format](https://se-education.org/guides/tutorials/savingPdf.html) can cause big PDF files. Another cause is using unnecessarily high-resolution images for screenshots).
-
-In addition, do ==ensure that the final JAR/PDF files are not bloated unnecessarily==. Such <span class="text-danger">bloat can be reported as a bug</span>.
+In addition, do ==ensure that the final JAR files are not bloated unnecessarily==. Such <span class="text-danger">bloat can be reported as a bug</span>.
 Some suggestions:
 
 * Check that the assets (e.g., images, audio, data) included in the JAR files are all strictly necessary and that their quality is not unnecessarily high (e.g., images with higher resolution than necessary).
 * Check whether the third-party libraries in the JAR file are strictly necessary or whether lighter versions are still enough for your purpose.
 
 {{ icon_important_big_red }} **Using [JavaFX WebView](http://tutorials.jenkov.com/javafx/webview.html)** allows you to display a web page within your application, but it is very likely to cause you to violate this constraint. If you decide to use that library, ensure the benefit is worth the increase in size (in particular, using it just to show an HTML view of the User Guide is not worth it).
-{%- endcall  %}
-
-{% call show_constraint("Constraint-PDF-Friendly") -%}
-The DG and UG should be PDF-friendly. Don't use expandable panels, embedded videos, animated GIFs, etc. Do not split them further into multiple pages.<br>
-
-%%**Reason:** You need to submit the UG and DG as one PDF file each for the final submission.%%
 {%- endcall  %}
 
 -----------------------------------------------------------------------------------------------------------------------

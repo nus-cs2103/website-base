@@ -323,13 +323,13 @@ mark {
 .text-bg-codex,
 .border-codex,
 .btn-outline-codex {
-    --mb-type: #424bc5;                  /* was #6a7bf8 — borders and hover fill */
-    --mb-type-rgb: 66, 75, 197;          /* was 106, 123, 248 */
-    --mb-type-fg: #fff;                  /* was #000  ← the line you asked about */
-    --mb-type-grad-a: #5b63d6;           /* was #9aa0fb */
-    --mb-type-grad-b: #2a34b5;           /* was #5e6ef4 */
-    --mb-type-body-bg: #eef0ff;          /* unchanged */
-    --mb-type-body-fg: #1b1f4d;          /* unchanged */
+    --mb-type: #424bc5;
+    --mb-type-rgb: 66, 75, 197;
+    --mb-type-fg: #fff;
+    --mb-type-grad-a: #5b63d6;
+    --mb-type-grad-b: #2a34b5;
+    --mb-type-body-bg: #eef0ff;
+    --mb-type-body-fg: #1b1f4d;
 }
 
 
