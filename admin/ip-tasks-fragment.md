@@ -1048,7 +1048,7 @@ App: Currently, there is no built-in command to add priorities to tasks.
 <span id="heading_add_an_extension">Add an extension</span>
 <div id="desc_add_an_extension">
 
-* Add at least one extension of your choice, selected from [category B, C, or D](../projectDuke/index.html#extensions-category-b) i.e., pick just one item from one category, not one from _each_ category, e.g., `B-DoWithinPeriodTasks` or `C-Sort` or `D-Places`
+* Add at least one extension of your choice, selected from [category B, C, or D](../projectDuke/index.html#category-b-extensions) i.e., pick just one item from one category, not one from _each_ category, e.g., `B-DoWithinPeriodTasks` or `C-Sort` or `D-Places`
 * We recommend adding the extension via a branch (branch name is up to you). You may add it via a PR.
 * Add a ==tag named `BCD-Extension`== to the corresponding commit.<br>
 Regardless of the exact extension you added, the tag name should be `BCD-Extension`.

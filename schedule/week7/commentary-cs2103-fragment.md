@@ -2,7 +2,7 @@
 
 
 {{ topic_preamble("Requirements: Use Cases") }}
-{{ topic_followup("Requirements: Use Cases") }}
+{{ topic_followup("Requirements Documents") }}
 <!-- ---------------------------------------------------------------------------- -->
 {% call topic_preamble("Design: High-Level View", reuse=false) %}
 

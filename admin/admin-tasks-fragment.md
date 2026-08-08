@@ -80,7 +80,7 @@ Installing and configuring Git is covered in {{ show_gm_lesson_link("gitPrep", "
 <span id="heading_follow_the_git_learning_trail">Get started on learning Git</span>
 <div id="desc_follow_the_git_learning_trail">
 
-* Get started on learning Git and GitHub (used a lot in this course). The relevant lessons are in the [{{ show_as_tab('Topics', icon_tab_topics) }}](../schedule/week1/topics.html#w1-6-rcs-getting-started-with-git) tab.
+* Continue learning Git and GitHub (used a lot in this course). The relevant lessons are in the [{{ show_as_tab('Topics', icon_tab_topics) }}](../schedule/week1/topics.html#W1-7) tab.
 
 </div>
 {#====================================================================================================================#}

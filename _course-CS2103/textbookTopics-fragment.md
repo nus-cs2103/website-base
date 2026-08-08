@@ -129,8 +129,9 @@
             level_three_topics: [
               {name: "introduction", heading: "Introduction", priority: "2"},
               {name: "nonFunctionalRequirements", heading: "Non-Functional Requirements", priority: "2"},
+              {name: "prioritizing", heading: "Prioritizing Requirements", priority: "3"},
               {name: "quality", heading: "Quality of Requirements", priority: "3"},
-              {name: "prioritizing", heading: "Prioritizing Requirements", priority: "3"}
+              {name: "changing", heading: "Changing Requirements", priority: "3"}
             ]
           }
         ]
@@ -153,7 +154,8 @@
               {name: "interviews", heading: "Interviews", priority: "3"},
               {name: "focusGroups", heading: "Focus Groups", priority: "3"},
               {name: "prototyping", heading: "Prototyping", priority: "3"},
-              {name: "productSurveys", heading: "Product Surveys", priority: "3"}
+              {name: "productSurveys", heading: "Product Surveys", priority: "3"},
+              {name: "validation", heading: "Validating Requirements", priority: "3"}
             ]
           }
         ]
@@ -226,6 +228,17 @@
       },
       {
         name: "supplementaryRequirements",
+        level_two_topics: [
+          {
+            name: "",
+            level_three_topics: [
+              {name: "what", heading: "What", priority: "3"}
+            ]
+          }
+        ]
+      },
+      {
+        name: "requirementsDocument",
         level_two_topics: [
           {
             name: "",

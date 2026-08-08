@@ -59,7 +59,7 @@ The technique of _use cases_ (don't confuse with _user stories_) covered below i
 Previously, you learned a number of techniques for specifying requirements. There's one more left, which we'll cover this week.
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
-<div id="{{ slugify("followup Requirements: Use Cases") }}">
+<div id="{{ slugify("followup Requirements Documents") }}">
 
 Now that you know all the different ways of specifying requirements, **here is an example that shows how all techniques of specifying requirements can work together**:
 {{ panopto("a8d7db29-d50c-4e8c-8742-ac4400ee8366", desc="Example: TeamFormer") }}
