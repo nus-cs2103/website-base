@@ -66,7 +66,7 @@ Marks | participation points (PP) only | PP, **#g#+1## mark** added to tP score 
 {% endif %}
 </box>
 
-While PE and PE-D are primarily _manual_ testing sessions, **you may also use any test automation tools or test scripts.**
+While PE are primarily _manual_ testing sessions, **you may also use any test automation tools or test scripts.**
 
 **Test the product and report bugs** as described below, after the start of the PE-D period (i.e., Friday 1200).
 
@@ -76,7 +76,7 @@ While PE and PE-D are primarily _manual_ testing sessions, **you may also use an
 
 <box>
 
-##### <div class="text-white bg-secondary p-1">**Testing instructions for PE and PE-D**</div>
+##### <div class="text-white bg-secondary p-1">**Testing instructions for the PE**</div>
 
 ###### <div class="text-white bg-secondary p-1">a) Downloading and launching the JAR file</div>
 
@@ -131,11 +131,10 @@ While PE and PE-D are primarily _manual_ testing sessions, **you may also use an
 -------------------|---------------------
 {{ icon_tick_green }} The behavior of the product jar file<br>{{ icon_tick_green }} UG (html) page of the course website<br>{{ icon_tick_green }} DG (html) page of the course website | {{ icon_x_red }} The rest of the product website, including `.md` files such as README.md<br>{{ icon_x_red }} Data and config files that come with the app (unless they affect the app behavior)<br>{{ icon_x_red }} Terminal output (unless it attracts the attention of the user and worries/alarms him/her unnecessarily)<br>{{ icon_x_red }} Code quality issues (but there is no restriction on examining code to identify product/UG/DG bugs)
 
-* **Test ==based on the Developer Guide== (Appendix named _Instructions for Manual Testing_) ==and the User Guide==.** The testing instructions in the Developer Guide can provide you with some guidance, but if you follow those instructions strictly, you are unlikely to find many bugs. You can deviate from the instructions to probe areas that are more likely to have bugs.<br>{% if cs2103 %}
+* **Test ==based on the Developer Guide== (Appendix named _Instructions for Manual Testing_) ==and the User Guide==.** The testing instructions in the Developer Guide can provide you with some guidance, but if you follow those instructions strictly, you are unlikely to find many bugs. You can deviate from the instructions to probe areas that are more likely to have bugs.{% if cs2103 %}
 * **The DG appendix named _Planned Enhancements_** (if it exists) gives some enhancements the team is planning for the near future. The feature flaws these enhancements address are 'known' -- reporting them will not earn you any credit.<br/>
   However, you can report `type.FeatureFlaw` bugs if you think these enhancements themselves are flawed/inadequate.<br/>
-  You can also report `type.DocumentationBug` bugs if any of the enhancements in this list combines more than one enhancement.
-{% endif %}
+  You can also report `type.DocumentationBug` bugs if any of the enhancements in this list combines more than one enhancement.{% endif %}
 * **You may do both _system testing_ and _acceptance testing_**.
 * **Focus on product testing first**, before expanding the focus to reporting documentation bugs.<br>
   Reason: If there are serious issues with the jar file that make product testing impossible, you need to find that out quickly (within the first 10 minutes) so that you can switch to a different product to test. If you find yourself in such a situation much later, the time spent testing the previous product would go to waste.
@@ -219,7 +218,7 @@ While PE and PE-D are primarily _manual_ testing sessions, **you may also use an
 <p/>
 
 * **#r#Do not## create/assign sub-issues.** Each issue will count as a separate bug report, even if you link them together as sub-issues.
-* **#r#Do not## refer to one bug report from another** (e.g., `This bug is similar to #12`) as such links will no longer work after the bug report is copied over during later PE/PE-D phases.
+* **#r#Do not## refer to one bug report from another** (e.g., `This bug is similar to #12`) as such links will no longer work after the bug report is copied over during later PE phases.
 
 * {{ icon_info }} **If you need to include `<` or `>` symbols in your bug report**, you can either use `\` to escape them (i.e., use `\<` and `\>` e.g., `x \< y` instead of `x < y`) or wrap them inside backticks.<br>
 Reason: GitHub strips out content wrapped in `<` and `>`, for security reasons.

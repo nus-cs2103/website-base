@@ -40,7 +40,6 @@
     {level: 2, id: "tp-w12", title: "tP Week 12: " + weekly_tp_themes.w12.name, link: "tp-w12.html", priority: 3},
     {level: 2, id: "tp-w13", title: "tP Week 13: " + weekly_tp_themes.w13.name, link: "tp-w13.html", priority: 2},
     {level: 2, id: "tp-deliverables", title: "tP: Deliverables", link: "tp-deliverables.html", priority: 2},
-    {level: 2, id: "tp-ped", title: "tP: Practical Exam Dry Run", link: "tp-ped.html", priority: 2},
     {level: 2, id: "tp-pe", title: "tP: Practical Exam", link: "tp-pe.html", priority: 2},
     {level: 2, id: "tp-grading", title: "tP: Grading", link: "tp-grading.html", priority: 2},
     {level: 2, id: "tp-supervision", title: "tP: Supervision/Guidance", link: "tp-supervision.html", priority: 2},

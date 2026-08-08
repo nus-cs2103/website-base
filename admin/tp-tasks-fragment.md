@@ -589,7 +589,7 @@ We are still in iteration `{{ version_penultimate }}`, due to this iteration bei
 
 ++**Things to note:**++{.text-info}
 
-* **Aim to reach the final version in this iteration itself**: ==After this iteration is over, you get a chance to fix your tP bugs (in the project, as well as documentation) without any penalty.== What's more, others will help you find those bugs (via tutorial activities and the PE Dry Run happening at the end of this iteration).<br>
+* **Aim to reach the final version in this iteration itself**: ==After this iteration is over, you get a chance to fix your tP bugs (in the project, as well as documentation) without any penalty.== What's more, others will help you find those bugs (via tutorial activities).<br>
   To take advantage of the above, try to make your {{ version_penultimate }} (product, DG, and UG) as close to what you intend to submit as your final version (i.e., {{ version_final }}).{% if ped_week == '12' %}
 * **You have two weeks to finish tP tasks listed under this week** due to the extra week added on account of holidays.<br>
   **We have kept the original {{ version_penultimate }} deadlines in the schedule**, to signal that no extra work is need on account of the extra week given. You can **use the extra week as a penalty-free grace period** to finish up any leftover work from the iteration.{% endif %}

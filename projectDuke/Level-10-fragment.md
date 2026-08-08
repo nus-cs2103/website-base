@@ -27,7 +27,7 @@ See the JavaFX tutorial given at https://se-education.org/guides/tutorials/javaF
 Implement the HelloWorld application as described in that page.
 {% endcall %}
 
-To what extent you use AI depends on to what level you want to internalize JavaFX concepts. If you don't think it will not be useful for you to know JavaFX in the future, you can go for maximum use of AI.
+To what extent you use AI depends on to what level you want to internalize JavaFX concepts. If you don't think it will be useful for you to know JavaFX in the future, you can go for maximum use of AI.
 
 {{ icon_tip }} If you wish to use the `present-changes-visually` in this project as well, you can issue a prompt like this:
 
@@ -58,6 +58,14 @@ You are <span class="text-danger">cautioned against trying to do both in one go<
 **Minimal requirement:** The GUI should be fit-for-purpose, i.e., users should be able to use the chatbot via the GUI.
 
 {% call show_ai_guidance("Level-10") %}
+Normally, GUI programming is hard. But with the help of AI, you can now reach a fairly decent GUI quite quickly.
 
+As this increment involves a GUI, at times it may be easier to communicate with AI using annotated screenshots (or even screen recordings). e.g., `The button is overlapping with the text box. See attached screenshot.`
+
+Codex has a built-in plugin called 'Computer use' that gives it the ability to drive apps in your computer like a human user (e.g., click on buttons). You can try to see if it can help you with do simple GUI tests of the app. For example:
+
+{% call mdblock() %}
+Use your 'computer use' plugin to test the basic functionality of the chatbot GUI. Let me know if I need to enable/configure anything to help with that.
+{% endcall %}
 
 {% endcall %}

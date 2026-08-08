@@ -27,12 +27,3 @@ What you need to do:
 -->
 </box>
 {% endif %}
-
-{% if ped_week == '11' %}
-<box type="info" header="****This Friday's briefing (and the PE Dry Run)****">
-
-Heads up! [Practical Exam Dry Run](../../admin/tp-ped.md) ==is a compulsory, #r#graded## activity== this week. It is to be done during the period {{ get_date(date_w11_start, 4, time='1200-1800') }}.
-
-</box>
-<p/>
-{% endif %}

@@ -78,9 +78,13 @@ When doing a project like the iP, we can create a skill to generate a webpage th
    {% call mdblock() %}
    Create a project-specific skill named `present-changes-visually`.
    Use the repo https://github.com/se-edu/skill-present-changes-visually as the basis.
-   Ask for my permission if you run into any permission issues.
+   Ask for my permission if you run into any permission issues. If required packages are missing, go ahead and install them.
    {% endcall %}
-1. After the skill is created, restart Codex so that it recognizes the new skill.
+   <box type="tip" seamless>
+
+   If Codex run into problems when performing tasks (e.g., permission issues, network restrictions, missing tools), push back and ask it to troubleshoot e.g., `Why couldn't you download the file? How to fix?`.
+   </box>
+2. After the skill is created, restart Codex so that it recognizes the new skill.
 1. To test the skill, you can give this by give the following prompt.
    {% call mdblock() %}
    Use the /present-changes-visually skill

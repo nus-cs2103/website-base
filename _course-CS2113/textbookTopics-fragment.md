@@ -414,31 +414,34 @@
             ]
           },
           {
-            name: "clientServer",
-            level_three_topics: [
-              {name: "what", heading: "What", priority: "3"}
-            ]
-          }
-          {
-            name: "serviceOriented",
-            priority: "4",
+            name: "monolith",
             level_three_topics: [
               {name: "what", heading: "What", priority: "4"}
             ]
           },
           {
             name: "eventDriven",
-            priority: "4",
+            level_three_topics: [
+              {name: "what", heading: "What", priority: "4"}
+            ]
+          },
+          {
+            name: "clientServer",
+            level_three_topics: [
+              {name: "what", heading: "What", priority: "4"}
+            ]
+          },
+          {
+            name: "serviceOriented",
             level_three_topics: [
               {name: "what", heading: "What", priority: "4"}
             ]
           },
           {
             name: "more",
-            priority: "4",
             level_three_topics: [
-              {name: "moreStyles", heading: "More Styles", priority: "4"},
-              {name: "usingStyles", heading: "Using Styles", priority: "4"}
+              {name: "usingStyles", heading: "Using and Combining Styles", priority: "4"},
+              {name: "moreStyles", heading: "Other Styles", priority: "4"}
             ]
           }
         ]
@@ -615,6 +618,27 @@
             name: "",
             level_three_topics: [
               {name: "what", heading: "What", priority: "3"}
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  debugging : {
+    name: "debugging",
+    heading: "Debugging",
+    level_one_topics: [
+      {
+        name: "",
+        level_two_topics: [
+          {
+            name: "",
+            level_three_topics: [
+              {name: "what", heading: "What", priority: "1"},
+              {name: "how", heading: "How", priority: "4"},
+              {name: "fixing", heading: "Fixing", priority: "4"},
+              {name: "tools", heading: "Tools", priority: "4"},
+              {name: "advanced", heading: "Advanced", priority: "4"}
             ]
           }
         ]
@@ -1198,7 +1222,7 @@
             name: "",
             level_three_topics: [
               {name: "what", heading: "What", priority: "2"},
-              {name: "testingTextUis", heading: "Automated Testing of CLI Apps", priority: "2"},
+              {name: "testingTextUis", heading: "Automated Testing of CLI Apps", priority: "4"},
               {name: "usingTestDrivers", heading: "Test Automation Using Test Drivers", priority: "3"},
               {name: "tools", heading: "Test Automation Tools", priority: "3"},
               {name: "testingGuis", heading: "Automated Testing of GUIs", priority: "3"}
@@ -1352,6 +1376,28 @@
       }
     ]
   },
+  security : {
+    name: "security",
+    heading: "Secure Software Engineering",
+    level_one_topics: [
+      {
+        name: "",
+        level_two_topics: [
+          {
+            name: "",
+            level_three_topics: [
+              {name: "what", heading: "What", priority: "2"},
+              {name: "why", heading: "Why", priority: "3"},
+              {name: "how", heading: "How", priority: "4"},
+              {name: "when", heading: "When", priority: "4"},
+              {name: "ai", heading: "Securing AI-Assisted Code", priority: "4"},
+              {name: "wrapUp", heading: "Wrap-Up", priority: "4"}
+            ]
+          }
+        ]
+      }
+    ]
+  },
   teamwork : {
     name: "teamwork",
     heading: "Teamwork",
@@ -1395,6 +1441,7 @@
             level_three_topics: [
               {name: "xp", heading: "XP", priority: "3"},
               {name: "scrum", heading: "Scrum", priority: "3"},
+              {name: "choosing", heading: "Choosing a model", priority: "4"},
               {name: "unifiedProcess", heading: "Unified Process", priority: "-1"}
             ]
           }

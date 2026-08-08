@@ -3,12 +3,10 @@
 
 {% if ped_week == '12' %}
   {% set week12_tasks = [
-    {id: 'use_this_week_as_a_buffer'},
-    {id: 'attend_the_PED', deadline: get_date(date_w12_start, 4, time="1200-1800"), graded: true}
+    {id: 'use_this_week_as_a_buffer'}
   ]%}
 {% elseif pe_week == '12' %}
   {% set week12_tasks = [
-    {id: 'start_fixing_PED_bugs'},
     {id: 'submit_final_deliverables', deadline: get_date(date_final_submission, time=time_final_submission)},
     {id: 'prepare_for_PE'},
     {id: 'attend_the_PE', deadline: (get_date(date_w12_start, 4, format=format_normal, time="12 noon") + " to " + get_date(date_w12_start, 5, format=format_normal, time="12 noon")), deadline_type: 'warning'}
@@ -20,7 +18,6 @@
 
 {% if ped_week == '12' and pe_week == '13' %}
   {% set week13_tasks = [
-    {id: 'start_fixing_PED_bugs'},
     {id: 'submit_final_deliverables', deadline: get_date(date_final_submission, time=time_final_submission)},
     {id: 'demo_the_product'},
     {id: 'prepare_for_PE'},
@@ -83,8 +80,7 @@ week11: [
   {id: 'update_ug_dg'},
   {id: 'review_others_dg', deadline: 'during the tutorial', graded: true},
   {id: 'deliver_penultimate_version', deadline: get_date(date_w11_start, 3, time="23:59")},
-  {id: 'draft_the_ppp'},
-  {id: 'attend_the_PED', deadline: get_date(date_w11_start, 4, time="1200-1800"), graded: true}
+  {id: 'draft_the_ppp'}
 ] if ped_week == '11' else [
   {id: 'update_ug_dg'},
   {id: 'review_others_dg', deadline: 'during the tutorial', graded: true},
