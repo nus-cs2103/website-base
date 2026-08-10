@@ -173,6 +173,13 @@ pageNav: {{ categories[category].pagenav }}
 <div class="website-content">
 {{ show_week_pagetop(week_num, "notices") }}
 
+{% if ((week_num | int) - (current_week | int)) > 2 %}
+<box type="warning" dismissible>
+
+**Course website pages for Week {{ week_num }} are still #r#tentative##** as we haven’t reached that week yet.
+</box>
+{% endif %}
+
 <include src="notices-{{ course | lower }}-fragment.md" optional />
 
 {{ show_week_summary(week_num) }}
