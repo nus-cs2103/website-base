@@ -17,11 +17,16 @@ This course requires you to write Java code almost every week, starting from the
 
 ## Use of AI
 
-**This course aims to get you started on AI-assisted SE.** We want you to learn how to use those AI tools and use them in a way that enhances (not compromises) learning of basic SE skills.
+**This course aims to get you started on AI-assisted SE in a way that does not compromise (and possibly enhances) your learning of basic SE skills**.
 
-When faced with a coding-related task (e.g., adding a feature), the level of AI use can vary as follows.
+<box type="info" seamless theme="primary">
 
-* **No AI** use. Hand-code everything. Use AI as a 'smart search engine' to ask general questions.{texts="['AI-1', 'AI-2', 'AI-3', 'AI-4', 'AI-5', 'AI-6']" t-class="badge rounded-pill bg-success fw-bold text-light m-1"}
+**A non-trivial amount of AI use is expected**{.text-primary}. Aim to use AI at least 20% of the time when doing course-related work.
+</box>
+
+**The level of AI use in coding tasks** can vary as follows -- based on how much manual work happens and at which point.
+
+* **No AI** use. Hand-code everything. Use AI as a 'smart search engine' to ask general questions.{texts="['AI-1', 'AI-2', 'AI-3', 'AI-4', 'AI-5', 'AI-6']" t-class="badge rounded-pill bg-primary fw-bold text-light m-1"}
 * **Hand-code first, with AI's feedback:** You hand-code the first version as if there is no AI. Ask AI to review. Refine based on AI's feedback.
 * **Hand-code to start, get AI to finish**: You hand-code a minimal version, just a proof-of-concept. Get AI to strengthen it to a full-fledged version e.g., handle edge cases, add tests.
 * **Visualize and compare**: _Think_ of how you would do the task manually. Get AI to do it. Compare the solution you 'imagined' with the one AI produced.
