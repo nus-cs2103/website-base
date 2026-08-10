@@ -344,7 +344,7 @@
         {location: ["designPatterns", "singleton", "implementation"]},
         {location: ["designPatterns", "singleton", "evaluation"]},
       {subheading: "Facade pattern"},
-         fa{location: ["designPatterns", "facade", "what"]},
+        {location: ["designPatterns", "facade", "what"]},
   {name: "Quality Assurance"},
     {heading: "Testing: Test Coverage"},
       {location: ["testing", "testCoverage", "what"]},
