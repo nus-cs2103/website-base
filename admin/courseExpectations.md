@@ -17,20 +17,18 @@ This course requires you to write Java code almost every week, starting from the
 
 ## Use of AI
 
-This course aims to get you started on using SE-related AI tools well. We want you to learn how to use those AI tools and use them in a way that enhances (not compromises) learning of basic SE skills.
+**This course aims to get you started on AI-assisted SE.** We want you to learn how to use those AI tools and use them in a way that enhances (not compromises) learning of basic SE skills.
 
 When faced with a coding-related task (e.g., adding a feature), the level of AI use can vary as follows.
 
-* No AI use. Hand-code everything. Use AI as a 'smart search engine' to ask general questions.{texts="['AI-1)', 'AI-2)', 'AI-3)', 'AI-4)', 'AI-5)', 'AI-6)']"}
-* Hand-code first as if there is no AI. Ask AI to review. Refine based on AI's feedback.
-* Hand-code minimal version, just a proof-of-concept. Get AI to strengthen it to a full-fledged version e.g., handle edge cases, add tests.
-* Think of how you would do the task manually. Get AI to do it. Compare the solution you 'imagined' with the one AI produced.
-* Get AI to do the task. Review it yourself fully, including the code, tests, behavior etc.
-* Get AI to do the task, fully, including the review. Only review the outcome (e.g., the feature behavior).
+* **No AI** use. Hand-code everything. Use AI as a 'smart search engine' to ask general questions.{texts="['AI-1', 'AI-2', 'AI-3', 'AI-4', 'AI-5', 'AI-6']" t-class="badge rounded-pill bg-success fw-bold text-light m-1"}
+* **Hand-code first, with AI's feedback:** You hand-code the first version as if there is no AI. Ask AI to review. Refine based on AI's feedback.
+* **Hand-code to start, get AI to finish**: You hand-code a minimal version, just a proof-of-concept. Get AI to strengthen it to a full-fledged version e.g., handle edge cases, add tests.
+* **Visualize and compare**: _Think_ of how you would do the task manually. Get AI to do it. Compare the solution you 'imagined' with the one AI produced.
+* **AI codes, you review**: Get AI to do the task. Review it yourself fully, including the code, tests, behavior etc.
+* **Full AI**: Get AI to do the task, fully, including the review. Only review the outcome (e.g., the feature behavior).
 
-Higher levels saves more time but can reduce learning.
-
-Which level to use? Depends on how much you already know, and how much you want to learn.
+**Which level to use? Depends on how much you already know, and your learning goals.** Using AI more will save time and also teach you how to use AI for SE. Hand-coding will teach you basic SE skills.
 
 {{ show_faq("useAiCode") }}
 

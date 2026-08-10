@@ -3,7 +3,15 @@
 
 {% call show_admin_page("tutorials") %}
 <div id="main">
+{% if cs2103 %}
+#r#**We use the tutorial slots for light in-person assessments**.## The purpose is for us (and you) to verify that you are keeping pace with the required learning, even if you are delegating some work to AI. We still call them tutorials though, for convenience.
 
+* The assessment primarily an in-tutorial quiz, administered through Zoom chat.
+* The scope of the topics and the tasks covered so far.
+* No special preparation is needed. Just doing the weekly tasks sincerely is enough.
+* The quiz is not graded for correctness. Just a sincere attempt is enough to pass.
+* Performance is counted towards participation marks. So yes, it is a VERY light assessment.
+{% endif %}
 <panel type="seamless" expanded >
 <span slot="header" class="card-title"><markdown>### Tutorial Timetable</markdown></span>
 <div id="tutorialTimetable">

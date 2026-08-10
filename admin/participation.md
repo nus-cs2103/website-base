@@ -57,11 +57,13 @@
 
 </div>
 
-****{{ thumb("C", "info") }} Sufficient {{ "tutorial" }} attendance/participation****{.text-info}
+****{{ thumb("C", "info") }} Sufficient tutorial attendance/participation****{.text-info}
 
 <div class="indented">
 
-* **-1 mark if you participated in fewer than 7 tutorials** (-2 if fewer than 5 tutorials, -3 if fewer than 3 tutorials): For a tutorial to count as 'participated', you need to show a sufficient level of participation (just attending is not enough). {% if cs2103 %} F2F tutorials that you attend only via Zoom are not counted for participation.{% endif %}
+* **-1 mark if you participated in fewer than 7 tutorials** (-2 if fewer than 5 tutorials, -3 if fewer than 3 tutorials): For a tutorial to count as 'participated', you need to show a sufficient level of participation (just attending is not enough). {% if cs2103 %} F2F tutorials that you attend only via Zoom are not counted for participation.
+* **In-tutorial quiz performance is factored in** when deciding if you 'particiapted' sufficiently in a tutorial. Incorrect answers are not counted againts you but rubbish answers and insincere/fake answers will be.
+{% endif %}
 </div>
 
 <panel type="info" header="**+ Bonus Marks**" expanded no-close no-switch >
