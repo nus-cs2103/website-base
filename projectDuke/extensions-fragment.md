@@ -147,16 +147,7 @@ Add JavaDoc comments to the code.
 <include src="A-Jar-fragment.md"/>
 </div><hr>
 <div id="A-CI">
-<include boilerplate src="dukeExtensionTitle.md" var-extId="A-CI"
-         var-extHeading="Set up CI"/>
-
-Use GitHub Actions to set up Continuous Integration (CI).
-
-The workflow specified by [this `.yml` file](https://github.com/se-edu/duke/blob/full-template/.github/workflows/gradle.yml) is a good candidate for this project.
-
-Refer to the [_Using GitHub Actions_ @SE-EDU/guides](https://se-education.org/guides/tutorials/githubActions.html) to learn how to use that `.yml` file to set up GitHub Actions.
-
-Also note that pushing a GitHub Actions-related file to GitHub requires you to authenticate using a <tooltip content="Personal Access Token">PAT</tooltip> that has `workflow` permissions (because you are modifying a workflow of your repo). If you are using Sourcetree, you can refer to [_Sourcetree Guide_ @SE-EDU/guides](https://se-education.org/guides/tutorials/sourcetree.html) to learn how to connect Sourcetree with GitHub using a PAT.
+<include src="A-CI-fragment.md" />
 
 </div><hr>
 <div id="A-Enums">
@@ -200,63 +191,19 @@ Use third-party libraries in your project. For example, you can use the Natty li
 Add a Developer Guide to the project, explaining the design and implementation to future developers.
 </div><hr>
 <div id="A-Release">
-<include boilerplate src="dukeExtensionTitle.md" var-extId="A-Release"
-         var-extHeading="Release the product"/>
-
-Release the product to be used by potential users. %%e.g., you can make it available on GitHub%%
+<include src="A-Release-fragment.md" />
 </div><hr>
 <div id="A-BetterGui">
-<include boilerplate src="dukeExtensionTitle.md" var-extId="A-BetterGui"
-         var-extHeading="Improve the GUI"/>
-
-Improve the GUI to make it more _polished_. Some examples:
-* Tweak the GUI to match the asymmetric nature of the conversation: As the conversation is between the user and the app (not between two humans), it is asymmetric in nature. Accordingly, it makes sense not to display both sides of the conversation in the same visual format. {{ numbers_roman }}
-* Highlight errors e.g., when the user types a wrong command, the error should be shown in a different format to catch the user's attention.
-* Tweak padding, fonts, colors, alignments to make the GUI more pleasing to look at.<br>
-  Given the app is likely to take only a small portion of the screen, and the bot replies can contain a lot of text, try to optimize for space (e.g., avoid wasting display space that simply shows the background graphics).
-* Allow resizing of the Window, and ensure the content resizes appropriately as the Window changes size.
-* Profile pictures: If your GUI shows profile pictures, you can tweak the way the picture is shown (e.g., crop as a circle or a square with rounded corners). In fact, an easy tweak is to use a picture with a transparent background so that it blends nicely with the background.<br>
-  Given that the participants of the conversation are fixed (i.e., you and the chatbot), do you even need big profile pictures?
-* Focus more on tweaks that actually _improve_ the user experience (UX). Some changes %%(e.g., profile pictures, background graphics)%% can be eye-catching but can even degrade the UX if not done right %%(e.g., it can make the text harder to read)%%
-
-{{ icon_tip }} You can take inspiration from [these past projects](https://nus-cs2103-ay2526s1.github.io/website/admin/ip-showcase.html). If you adopt any ideas from them, don't forget to give credit to the original author.
-
-{{ icon_info }} Minimal requirement: Implement at least one of the examples (i - vi) given above.
-
+<include src="A-BetterGui-fragment.md" />
 </div>
 <div id="A-Personality">
-<include boilerplate src="dukeExtensionTitle.md" var-extId="A-Personality"
-         var-extHeading="Give a unique personality"/>
-
-Choose a unique personality for Duke, and tweak the following aspects to go with that personality:
-
-* Name
-* Phrases used by Duke (e.g., when responding to a command)
-* GUI (colors, icons, font, etc.)
-
+<include src="A-Personality-fragment.md" />
 </div>
 <div id="A-MoreTesting">
-<include boilerplate src="dukeExtensionTitle.md" var-extId="A-MoreTesting"
-         var-extHeading="More automated tests"/>
-
-Write more JUnit tests, to test nearly all code that _can_ be tested automatically.
-
-You may omit code that is hard to test automatically e.g., GUI functionality (test those manually instead).
-
-This can include more manual testing as well e.g., testing on different OSes, different screen resolutions, different OS language settings (English vs Chinese)
-
+<include src="A-MoreTesting-fragment.md" />
 </div>
 <div id="A-MoreErrorHandling">
-<include boilerplate src="dukeExtensionTitle.md" var-extId="A-MoreErrorHandling"
-         var-extHeading="More error handling"/>
-
-Improve the code to handle all errors you anticipate the product will encounter during usage.
-
-Some examples of errors:
-* command format errors: multiple spaces where only one is expected, trailing/leading spaces in the command, an essential parameter missing, a parameter is specified multiple times, special characters used where they are not expected, ...
-* environment issues: an expected file is missing, access to a file is denied, a file content is not as expected, ...
-* data is not as expected: start date/time is later than (or same as) end date/time, a value that should be unique is duplicated (e.g., two tasks with the same exact details), non-existent dates (e.g., Feb 30)
-
+<include src="A-MoreErrorHandling-fragment.md" />
 </div>
 <div id="A-AiAssisted">
 <include boilerplate src="dukeExtensionTitle.md" var-extId="A-AiAssisted"

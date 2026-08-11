@@ -21,6 +21,8 @@ Add a User Guide to the project in the following way:
 
 
 {% call show_ai_guidance("A-UserGuide") %}
+Even if you have been updating the User Guide (in `docs/README.md`) all along, it is worth taking another pass at refining it before releasing your product.
+
 Craft your own prompt to include the important requirements mentioned above.
 
 Review the output from a user's point of view and give feedback to the AI until the user guide meets your expectations.
