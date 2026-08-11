@@ -14,11 +14,11 @@
 1. Tweak the `AGENTS.md` file in the project root, and commit it.
    <box type="info" seamless>
 
-   Information in the `AGENTS.md` is read by AI agents and are included as part of the context.<br>
+   AI agents read the information in `AGENTS.md`, which is included in their context.<br>
    In this specific case, things you can tweak:
 
    * Fill in the parts marked as `[to be filled]`
-   * If using a Mac, ensure the instructions about switching to the correct Java version matches your Java set up.
+   * If using a Mac, ensure the instructions about switching to the correct Java version match your Java setup.
    </box>
 1. Start a new chat/project in Codex (i.e., ChatGPT app in Codex mode). Set your iP folder as the folder of that chat.<br>
    Refer to the tutorial [_Using the Codex Desktop App_ at SE-EDU Guides](https://se-education.org/guides/tutorials/codexDesktop.html) for more info.

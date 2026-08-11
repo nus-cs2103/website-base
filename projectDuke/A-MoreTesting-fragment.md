@@ -4,7 +4,7 @@
 
 Write more JUnit tests, to test nearly all code that _can_ be tested automatically.
 
-You may omit code that is hard to test automatically e.g., GUI functionality (test those manually instead).
+You may omit code that is hard to test automatically e.g., GUI functionality (test it manually instead).
 
 This can include more manual testing as well e.g., testing on different OSes, different screen resolutions, different OS language settings (English vs Chinese)
 

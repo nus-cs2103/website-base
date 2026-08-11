@@ -82,7 +82,7 @@ When doing a project like the iP, we can create a skill to generate a webpage th
    {% endcall %}
    <box type="tip" seamless>
 
-   If Codex run into problems when performing tasks (e.g., permission issues, network restrictions, missing tools), push back and ask it to troubleshoot e.g., `Why couldn't you download the file? How to fix?`.
+   If Codex runs into problems when performing tasks (e.g., permission issues, network restrictions, missing tools), push back and ask it to troubleshoot e.g., `Why couldn't you download the file? How to fix?`.
    </box>
 
 2. After the skill is created, restart Codex so that it recognizes the new skill.

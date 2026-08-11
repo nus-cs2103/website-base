@@ -70,7 +70,7 @@ Commit after each step, and tag after completing each increment.
 
 {% call show_ai_guidance("General: Get AI to check its work") %}
 
-Recent AI coding harnesses already do some checking of its own work. However, it is in our interest to step in and strengthen these guard rails. In addition, do some manual testing of your own.
+Recent AI coding harnesses already do some checking of their own work. However, it is in our interest to step in and strengthen these guard rails. In addition, do some manual testing of your own.
 
 **Create a `test-ui` skill** that you (and Codex) can use to test the code. Here's a sample prompt:
 
