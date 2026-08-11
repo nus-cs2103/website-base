@@ -47,7 +47,7 @@ public class Duke {
 {{ requirements_moreoop_minimal }}
 </div>
 {% set requirements_moreoop_stretch %}
-* **Stretch goal**: Consider extracting more classes e.g., `*Command` classes (i.e., `AddCommand`, `DeleteCommand`, `ExitCommand` etc.) that inherit from an abstract `Command` class, so that you can write the main logic of the App as follows:
+* **Stretch goal**: Consider extracting more classes, e.g., `*Command` classes (i.e., `AddCommand`, `DeleteCommand`, `ExitCommand` etc.) that inherit from an abstract `Command` class, so that you can write the main logic of the App as follows:
   ```java
   public void run() {
       ui.showWelcome();

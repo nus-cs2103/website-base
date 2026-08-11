@@ -40,8 +40,8 @@ Do not convert `src`, `main`, `java` into packages. For example, the following i
 </tree>
 </box>
 
-* **Minimal**: put all classes in one package e.g., `duke`
-* **Stretch goal**: divide into multiple packages as the number of classes increases e.g., `duke.task`, `duke.command`
+* **Minimal**: put all classes in one package, e.g., `duke`
+* **Stretch goal**: divide into multiple packages as the number of classes increases, e.g., `duke.task`, `duke.command`
 
 
 {% call show_ai_guidance("A-Packages") %}

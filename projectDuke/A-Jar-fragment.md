@@ -32,7 +32,7 @@ Refer to the tutorial [_Working with JAR files_ @SE-EDU/guides](https://se-educa
 
   1. Go to your fork on GitHub and [create a new _release_](https://help.github.com/en/articles/creating-releases).
   1. In the page where you supply the details of the release,
-     1. give an appropriate version number e.g., `v0.1`
+     1. give an appropriate version number, e.g., `v0.1`
      1. attach the JAR file where it says `Attach binaries by dropping them ...`.
 </box>
 
