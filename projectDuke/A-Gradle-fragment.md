@@ -29,7 +29,7 @@ merge add-gradle-support id: "Merge branch ..."
 
 Requirements for this increment:
 
-* **Minimal**: Set up Gradle so that you can build and run Duke using Gradle. After doing this, you can move to the next increment.
+* **Minimal**: Set up Gradle so that you can build and run your chatbot using Gradle. After doing this, you can move to the next increment.
 * **Recommended** (to be done at a later time): Be able to run JUnit tests using Gradle (this can only be done after you've reached the `A-JUnit` increment).
 * **Stretch goal** (to be done at a later time): Use Gradle to automate more things in your project, as you progress through the project.
 

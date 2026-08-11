@@ -2,9 +2,9 @@
 
 {{ show_duke_extension_title("A-Personality", "Give a unique personality", "primary") }}
 
-Choose a unique personality for Duke, and tweak the following aspects to go with that personality:
+Choose a unique personality for your chatbot, and tweak the following aspects to go with that personality:
 
 * Name
-* Phrases used by Duke (e.g., when responding to a command)
+* Phrases used by your chatbot (e.g., when responding to a command)
 * GUI (colors, icons, font, etc.)
 
