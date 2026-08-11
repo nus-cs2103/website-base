@@ -1,6 +1,6 @@
 {% from "common/macros.njk" import ask_chatgpt, mdblock, show_ai_guidance, show_duke_extension_title with context %}
 
-{{ show_duke_extension_title("A-Assertions", "User Assertions", "primary") }}
+{{ show_duke_extension_title("A-Assertions", "Use Assertions", "primary") }}
 
 Use the `assert` feature (not JUnit assertions) to document important assumptions that should hold at various points in the code.
 
