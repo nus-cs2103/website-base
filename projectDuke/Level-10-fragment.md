@@ -60,7 +60,7 @@ You are <span class="text-danger">cautioned against trying to do both in one go<
 {% call show_ai_guidance("Level 10. GUI") %}
 Normally, GUI programming is hard. But with the help of AI, you can now build a fairly decent GUI quite quickly.
 
-As this increment involves a GUI, at times it may be easier to communicate with AI using annotated screenshots (or even screen recordings). e.g., `The button is overlapping with the text box. See attached screenshot.`
+As this increment involves a GUI, at times it may be easier to communicate with AI using annotated screenshots (or even screen recordings), e.g., `The button is overlapping with the text box. See attached screenshot.`
 
 Codex has a built-in plugin called 'Computer use' that gives it the ability to drive apps in your computer like a human user (e.g., click on buttons). You can see if it can help you do simple GUI tests of the app. For example:
 

@@ -73,7 +73,7 @@ Here are two additional requirements. Ensure the code meets them too.
 
 {% call show_ai_guidance("General: Compact to prevent context rot") %}
 
-AI tools have a way to check how much of the context window has already been filled up in the current chat thread. In Codex, simply typing `/` in the chat box when it is empty will pop up details about the ongoing chat, which also includes a line named `Compact` stating the status of the context window.
+AI tools can show how much of the context window the current chat thread has used. In Codex, simply typing `/` in the chat box when it is empty will pop up details about the ongoing chat, which also includes a line named `Compact` stating the status of the context window.
 
 It is said that the AI will start getting 'dumber' once you go past 30-40% of the context window. If that happens to you, you can use the /compact command to compact the context.
 

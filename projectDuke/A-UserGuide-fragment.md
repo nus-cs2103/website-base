@@ -14,7 +14,7 @@ Add a User Guide to the project in the following way:
 
 **Minimal**:
 * Ensure the chatbot name is stated clearly at the top of the User Guide.
-* Provide the reader with enough guidance to be able to use all important features of your chatbot.
+* Give the reader enough guidance to use all important features of your chatbot.
 
 {{ icon_info }} **How detailed should the user guide be?** It should be fit-for-purpose: think from the user's point of view and include as much information as the user needs, while keeping the guide as short as possible -- users don't have the patience for lengthy user guides -- and in a format as friendly as possible.<br>
  You can use the 'Features' section of [this user guide](https://se-education.org/addressbook-level3/UserGuide.html#features) as a benchmark.

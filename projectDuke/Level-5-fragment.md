@@ -33,7 +33,7 @@ You are strongly encouraged to use your own wording for the error messages, rath
 * **Typical**:
   * Handle all possible errors in the current version.
   * As you evolve the chatbot, continue to handle errors related to the new features added.
-* **Stretch goals**:
+* **Stretch goal**:
   * Make the error handling more error-specific, e.g., give the user a clear/specific explanation of the error and how to correct it.
 
 {% call show_ai_guidance("Level 5. Handle Errors") %}
