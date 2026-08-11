@@ -50,7 +50,7 @@ Start a new chat thread in the Codex project you created in Level-0.
 
 <box type="tip" seamless>
 
-Use one chat thread per iP increment, and rename the thread to match the increment. It will make finding past chat threads easier, and more importantly, reduce the risk of {{ ask_chatgpt("context rot", "What is 'context rot'?") }}.
+Use one chat thread per iP increment, and rename the thread to match the increment. It makes past chat threads easier to find and, more importantly, reduces the risk of {{ ask_chatgpt("context rot", "What is 'context rot'?") }}.
 </box>
 
 {{ show_prompt_part1(requirements_level_1, sample_output_level_1) }}
