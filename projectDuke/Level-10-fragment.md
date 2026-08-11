@@ -27,7 +27,7 @@ See the JavaFX tutorial given at https://se-education.org/guides/tutorials/javaF
 Implement the HelloWorld application as described in that page.
 {% endcall %}
 
-To what extent you use AI depends on to what level you want to internalize JavaFX concepts. If you don't think it will be useful for you to know JavaFX in the future, you can go for maximum use of AI.
+How much you use AI depends on how deeply you want to internalize JavaFX concepts. If you don't think it will be useful for you to know JavaFX in the future, you can go for maximum use of AI.
 
 {{ icon_tip }} If you wish to use the `present-changes-visually` skill in this project as well, you can issue a prompt like this:
 
