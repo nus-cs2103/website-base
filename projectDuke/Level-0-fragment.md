@@ -43,11 +43,11 @@
 {% endcall %}
 
 
-**++(b) Update the initial code simply greet the user and exit.++**
+**++(b) Update the initial code to simply greet the user and exit.++**
 
 
 {% set requirements_level_0 %}
-Update the initial code simply greet the user and exit.
+Update the initial code to simply greet the user and exit.
 {% endset %}
 
 {% set sample_output_level_0 %}
