@@ -1,6 +1,6 @@
 {% from "common/admin.njk" import show_admin_page, show_project_summary_lead with context %}
 {% from "common/topics.njk" import panopto, topic_preamble with context %}
-{% from "common/macros.njk" import as_tag, button, embed_topic, get_date, show_faq, show_github_username_entry, show_gm_lesson_link, show_troubleshooting, step, thumb, timing_badge with context %}
+{% from "common/macros.njk" import as_tag, button, embed_topic, get_date, show_ai_guidance, mdblock, show_faq, show_github_username_entry, show_gm_lesson_link, show_troubleshooting, step, thumb, timing_badge with context %}
 {% from "_course-" + course + "/weeklyIpTasks-fragment.md" import weekly_ip_tasks with context %}
 
 {#====================================================================================================================
@@ -67,7 +67,7 @@
 
 * Be familiar with how this course expects to use AI tools:
 
-{{ embed_topic("courseExpectations.md#use-of-ai", "Admin " + icon_embedding + " Course Expectations → **Use of AI**", "1", indent=1, type="warning") }}
+{{ embed_topic("courseExpectations.md#use-of-ai", "Admin " + icon_embedding + " Course Expectations → **Use of AI**", "1", indent=1, type="codex") }}
 
 </div>
 <div id="volatile-requirements">
@@ -576,17 +576,18 @@ If your fork doesn't have the `add-gradle-support` branch (i.e., you did not cop
 <div class="indented-level1">
 <br>
 
-<span class="text-danger">**:fab-apple: Attention Mac users**</span>! If you are not using the ==exact **Azul** JDK distribution== (not any other JDK 17 distribution) specified by our advisory for Mac users in [this page](programmingLanguages.md), you are likely to run into problems while doing `Level-10`.
+<span class="text-danger">**:fab-apple: Attention Mac users**</span>! If you are not using the ==exact **Azul** JDK distribution== (not any other JDK {{ java_version }} distribution) specified by our advisory for Mac users in [this page](programmingLanguages.md), you are likely to run into problems while doing `Level-10`.
 </div>
 </div>
 {#====================================================================================================================#}
 <div id="post_Level-10">
 
 <div class="indented-level1">
+<p/>
 
 * **Follow the sample [build.gradle given in the JavaFX tutorial](https://se-education.org/guides/tutorials/javaFxPart1.html#setting-up-java-fx)** closely, instead of following suggestions from AI tools.<br>
   %%Reason: As there are different ways of achieving this, following advice from AI tools can result in a 'Frankenstein' solution (i.e., a mixture of different approaches) that might work on your computer but might not work on other OSes.%% {{ bullet_important_red }}
-* **You no longer need to keep the text-based UI** after adding a GUI (although you are welcome to).{{ bullet_info }}
+* **You no longer need to keep the text-based UI** after adding a GUI. But you are welcome to keep it too -- in fact keeping it makes testing the app easier as most of the core logic can be tested via the text UI rather than the GUI as the latter is harder to subject to automated tests.{{ bullet_info }}
 * **Is the `bye` command still needed**, now that the GUI can be closed in other ways?<br>
   Yes, we recommend keeping it. Reason: Being able to close the app by typing a command is consistent with the app's CLI-style <tooltip content="i.e., User Experience">UX</tooltip>.{{ bullet_Q }}
 </div>
@@ -601,6 +602,11 @@ If your fork doesn't have the `add-gradle-support` branch (i.e., you did not cop
 <div tags="m--cs2103">
 
 * As before, we recommend (but do not require) that each increment be done as a separate branch and merged to the `master` branch when fully done.
+* #r#Use You are required to do **at least two** of the following optional increments, and you should **use AI** heaviliy to do them.## Even if you have been hand-coding everything until now, this is a good point to start using AI-assisted coding.
+
+{% call show_ai_guidance("Add optional enhancements") %}
+{{ icon_tip }} **When appropriate, use AI as a collaborator and idea generator.** Instead of simply telling AI what to do, ask AI for ideas on how to proceed. But don't outsource thinking to the AI entirely. Your creativity is what will make your iP different from others -- after all, they are using the same AI tools as you.
+{% endcall %}
 </div>
 </div>
 {#====================================================================================================================#}
@@ -778,6 +784,11 @@ public class Main {
 
 If you wish, **you _may_ write the PR description to be very similar to the example** given above -- as the goal here is to demonstrate your mastery of the GFMD syntax (not advertising skills).
 </box>
+
+{% call show_ai_guidance("Use GFMD in the PR description") %}
+
+**You should be familiar enough with Markdown to use most of the basic syntax without having to look it up**, as it is used a lot in today's technical communications.  Writing a quick Markdown text snippet by hand is faster (and cheaper) than prompting AI to do it for you. But yes, AI understand Markdown well, and you can certainly get AI to write content in Markdown format when the situation warrants it.
+{% endcall %}
 </div>
 {#====================================================================================================================#}
 <span id="heading_review_two_prs">Review some peer PRs</span>
@@ -835,7 +846,7 @@ This task is worth `2x2=4` participation points.
 <span id="heading_learn_from_others">Learn from others (optional)</span>
 <div id="desc_learn_from_others">
 
-* **You can use the [iP Code Dashboard]({{ url_ip_dashboard }}) to view others' iP code**, using the `Links → iP Code Dashboard` item in the top navigation menu of this course website. We encourage you to read others' code and learn from them. If you adopt solutions from others (also encouraged), please follow our reuse policy. <br>
+* **You can use the [iP Code Dashboard]({{ url_ip_dashboard }}) to view others' iP code**, using the `Links → iP Code Dashboard` item in the top navigation menu of this course website. We encourage you to read others' code and learn from them. If you adopt solutions from others (also encouraged), please follow our reuse policy.<br>
 
 
 <box type="tip" seamless>
@@ -846,6 +857,46 @@ You can enable the `[ ] show tags` option at the top of the dashboard to see tag
 </box>
 
 {{ embed_topic("appendixB-policies.md#policy-reuse", "Admin " + icon_embedding + " **Course Policies → Policy on Reuse**", "1", indent=1) }}
+
+
+{% call show_ai_guidance("Learn from others") %}
+Scanning through a large amount of materials to find interesting bits seems like the kind of 'legwork' suitable to delegate to AI.
+
+Here's a prompt you can write to get AI's help with learning from peer iP submissions. #r# But don't give it to the AI directly.##
+
+{% set initial_prompt_learn_from_others %}
+Pick 20 PRs from {{ url_course_org }}/ip/pulls randomly.
+
+Compare their code to my code in this repo (`master` branch). Point out up to 10 cases that differ from mine in notable ways where examining the difference could be potentially instructive to me. Present your results by doing something along the lines of /present-changes-visually skill to generate a page `_temp/interesting-differences-in-PRs.html` containing these differences (include explanations as well).
+
+For each case:
+* Aask me which one is the better choice and why (or a more pointed question specific to the code).
+* After I give my opinion, give me yours.
+{% endset %}
+
+{% call mdblock() %}
+{{ initial_prompt_learn_from_others }}
+{% endcall %}
+
+Instead, you can ask AI's help to refine the prompt first, like this:
+
+
+{% call mdblock() %}
+**Help me refine the following prompt.** The goal of the prompt is to get you to help me learn from peer code submissions. Feel free to extend the prompt in ways that achieves my goal better.
+
+----
+{{ initial_prompt_learn_from_others }}
+{% endcall %}
+
+Remember to do a sanity check of the refined prompt to confirm it matches your expectations. After that, you can issue the refined prompt to Codex, possibly in a separate chat thread.
+
+<box type="tip" seamless>
+The above is an example of two useful strategies in using AI:
+
+{{ good }} **Getting AI to help you learn more with less manual work.**<br>
+{{ good }} **Getting AI to write/rewrite prompts.**
+</box>
+{% endcall %}
 
 </div>
 {#====================================================================================================================#}
@@ -893,7 +944,7 @@ This activity is worth `2x2=4` participation points.
 * There is no need to create a [_release_ on GitHub](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository) with this JAR file (although you are welcome to).
 </div>
 {#====================================================================================================================#}
-<span id="heading_write_full_commit_messages">Write some full commit messages</span>
+<span id="heading_write_full_commit_messages">Write full commit messages</span>
 <div id="desc_write_full_commit_messages">
 
 * While we do not require you to write _full_ commit messages (i.e., including a message body) for work done in this course, it is still good to learn how to write one. The purpose of this task is to give you some practice in writing clear full commit messages.
@@ -901,12 +952,17 @@ This activity is worth `2x2=4` participation points.
   1. Write full commit messages for at least 2-3 commits that you push this week.
   1. Follow these [_Git conventions for the commit message body_ as specified by @SE-EDU/guides](https://se-education.org/guides/conventions/git.html#commit-message-body) when writing them.
   1. Git tag one of those commits as `A-FullCommitMessage`.
+
+{% call show_ai_guidance("Write full commit messages") %}
+
+If you have been using AI to craft Git commit messages until now, this is the time to write a few full commit messages by hand. But you can still ask AI to review your commit messages and provide suggestions based on the /seedu-git-standard skill that you created earlier.
+{% endcall %}
 </div>
 {#====================================================================================================================#}
 <span id="heading_finalize_features">Finalize the features</span>
 <div id="desc_finalize_features">
 
-* **Ensure the product can handle common errors <tooltip content="should not crash the app or render it unusable; user should be notified of the problem">gracefully</tooltip>**, such as the user making an unintentional error in the command, or the data file not being found in the expected location.
+* **Ensure the product can handle common errors <tooltip content="should not crash the app or render it unusable; user should be notified of the problem">gracefully</tooltip>**, such as the user making an unintentional error in the command, or the data file not being found in the expected location.motion-prefix)
 * {{ icon_important_big_red }} **Ensure that the product name is not `Duke`** (as required by [Level-0](../projectDuke/index.html#level-0-rename-greet-exit)){% if cs2103 %}<br>
    and the name is shown correctly everywhere it appears in the UI e.g., the title bar of the GUI{% endif %}.
   * Reminder: You may give the product any name, but do not rename the repo.

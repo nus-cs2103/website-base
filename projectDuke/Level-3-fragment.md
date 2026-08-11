@@ -75,7 +75,7 @@ When doing a project like the iP, we can create a skill to generate a webpage th
 
 1. To create a skill, you can simply ask the AI to create the skill from scratch. But we have already created a skill named `present-changes-visually` and shared it at https://github.com/se-edu/skill-present-changes-visually<br>
    So, you don't have to create it from scratch. Instead, give the following prompt to Codex.
-   {% call mdblock() %}
+   {% call mdblock(indented_level=1) %}
    Create a project-specific skill named `present-changes-visually`.
    Use the repo https://github.com/se-edu/skill-present-changes-visually as the basis.
    Ask for my permission if you run into any permission issues. If required packages are missing, go ahead and install them.
@@ -84,9 +84,10 @@ When doing a project like the iP, we can create a skill to generate a webpage th
 
    If Codex run into problems when performing tasks (e.g., permission issues, network restrictions, missing tools), push back and ask it to troubleshoot e.g., `Why couldn't you download the file? How to fix?`.
    </box>
+
 2. After the skill is created, restart Codex so that it recognizes the new skill.
-1. To test the skill, you can give this by give the following prompt.
-   {% call mdblock() %}
+3. To test the skill, you can use the following prompt.
+   {% call mdblock(indented_level=1) %}
    Use the /present-changes-visually skill
    {% endcall %}
    This will create a webpage comparing the current uncommitted changes to the last committed version of the code. The file will be created as `_temp/visual-diff.html`.<br>
@@ -100,11 +101,11 @@ When doing a project like the iP, we can create a skill to generate a webpage th
 </div>
 
 4. You can be more specific when invoking this skill. Here is an example:
-   {% call mdblock() %}
+   {% call mdblock(indented_level=1) %}
    Use the /present-changes-visually skill to compare the most recent commit with the one before it.
    Save the file as `_temp/with-and-without-tasks-class.html`.
     {% endcall %}
-1. Commit the new skill (it will be inside a folder `.codex/skills/present-changes-visually`) to the repo so that it is available for future use. Alternatively, you can add it to the `.gitignore` file so that the skill remains in the local repo but not pushed to the remote repo.
+5. Commit the new skill (it will be inside a folder `.codex/skills/present-changes-visually`) to the repo so that it is available for future use. Alternatively, you can add it to the `.gitignore` file so that the skill remains in the local repo but not pushed to the remote repo.
 {% endcall %}
 
 {% call show_ai_guidance("Level 3. Mark as Done") %}

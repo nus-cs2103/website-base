@@ -8,7 +8,7 @@
 <variable name="S">1</variable>
 <variable name="semester">AY2627S{{ S }}</variable>
 <variable name="period">2026 Aug-Dec</variable>
-<variable name="current_week">-1</variable> <!-- after semester ends, set this to 15 and enable built-in search in site.json -->
+<variable name="current_week">1</variable> <!-- after semester ends, set this to 15 and enable built-in search in site.json -->
 
 <variable name="algolia">no</variable>
 

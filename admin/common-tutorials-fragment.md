@@ -1,4 +1,4 @@
-{% from "common/macros.njk" import embed_topic, show_faq, show_gm_lesson_link, step, thumb, timing_badge with context %}
+{% from "common/macros.njk" import embed_topic, show_ai_guidance, mdblock, show_faq, show_gm_lesson_link, step, thumb, timing_badge with context %}
 
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="form-teams">
@@ -91,6 +91,28 @@ Alternatively, you can use PR labels (if any) to filter PRs/Issues.<br>
 </box>
 
 :fas-question-circle: FAQ: How many comments should I add? Answer: Depends on the code being reviewed, but we expect most PRs would warrant at least 4-5 comments. If the PR is huge, you can stop when you think you've put in a fair amount of time on the job (~15 minutes) and added enough comments for the PR author to receive some value.
+
+{% call show_ai_guidance("Review some peer PRs") %}
+
+If you have been using AI to write most of your iP code, you are not likey to be familiar with the coding standard yourself. So, it is worthwhile to manually scan the code to spot any coding standards before asking AI to help with this task.
+
+{% call mdblock() %}
+
+The code in the PR [PR LINK] is supposed to follow the Java coding standard as per /seedu-java-coding-standard skill. Point out any potential coding standard violations. Just list them here. Do not add review comments in the PR.
+{% endcall %}
+
+That said, if the PR you review contains code written mostly by AI, you are unlikely to find many coding standard violations.
+In that case, you can comment on noteworthy cases of coding standard compliance -- remember to note the specific rule e.g.,
+
+```
+Good to see you used the correct phrasing style for the javadoc overview statement.
+```
+```
+Nice to see you added javadoc comments to private methods too, although it wasn't required.
+But do you think this method needs a javadoc comment? It seems rather straight forward.
+The javadoc comment doesn't seem to add much value.
+```
+{% endcall %}
 </div>
 
 </div>

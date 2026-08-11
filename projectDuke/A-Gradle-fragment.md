@@ -60,7 +60,7 @@ Go ahead and do it. Also explain the steps you took.
 </tab>
 </tabs>
 
-After mering the branch and setting it up in the IDE:
+After merging the branch and setting it up in the IDE:
 
 {% call mdblock() %}
 How do I check if Gradle is working?

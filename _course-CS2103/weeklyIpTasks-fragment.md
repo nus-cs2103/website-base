@@ -62,9 +62,6 @@ week5: [
 ],
 week6: [
   {id: 'add_increments', increments:  [
-    {id: 'A-AiAssisted', title: 'Enhance using AI tools'}
-  ]},
-  {id: 'add_increments', increments:  [
     {id: 'A-BetterGui', title: 'Better GUI', tag: 'optional'},
     {id: 'A-Personality', title: 'A unique personality', tag: 'optional'},
     {id: 'A-MoreErrorHandling', title: 'More error handling', tag: 'optional'},

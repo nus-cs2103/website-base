@@ -91,7 +91,7 @@ Let's do this iteratively. In each iteration, do the following steps:
 2. Implement that increment.
 3. Test it to ensure there are no regressions, using /test-ui skill.
 4. Commit the changes with a detailed commit message. You have my permission to commit in this repo.
-4. General a visual diff using the /present-changes-visually skill. Also explain the rationale for the change and its pros and cons.
+4. Generate a visual diff using the /present-changes-visually skill. Also explain the rationale for the change and its pros and cons.
 5. Briefly outline the next increment to be done in the next iteration. If there are no more increments worth doing, say so and stop.
 
 Go ahead and do the first iteration.
