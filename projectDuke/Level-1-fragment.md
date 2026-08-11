@@ -45,7 +45,7 @@ Example:
 **You are strongly encouraged to customize the chatbot**: In addition to the command/display formats, you can even customize its personality to make your chatbot unique.
 </box>
 
-{% call show_ai_guidance("Level1: Echo") %}
+{% call show_ai_guidance("Level 1. Echo") %}
 Start a new chat thread in the Codex project you created in Level-0.
 
 <box type="tip" seamless>
