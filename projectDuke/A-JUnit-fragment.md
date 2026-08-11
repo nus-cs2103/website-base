@@ -20,7 +20,7 @@ Here's a series of prompts for ramping up the JUnit tests in the code base.
 Add a JUnit test to test one of the methods in the codebase. Choose a method that lends itself well to testing through JUnit.
 Include all reasonable test cases.
 Follow Gradle and JUnit conventions as to the file path and naming. Example:
-* Class being tested `seedu.duke.Todo`: src\main\java\seedu\duke\Todo.java`
+* Class being tested `seedu.duke.Todo`: `src\main\java\seedu\duke\Todo.java`
 * Test class `seedu.duke.TodoTest`: `src\test\java\seedu\duke\TodoTest.java`
 
 If names of the test methods are long, you may resort to the following naming convention:
