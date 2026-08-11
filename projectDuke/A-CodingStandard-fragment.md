@@ -2,7 +2,7 @@
 
 {{ show_duke_extension_title("A-CodingStandard", "Tweak the code to comply with a coding standard", "primary") }}
 
-Tweak the code to comply with a given coding standard. From this point onward, ensure any new code added is compliant with the given coding standard.
+Tweak the code to comply with a given coding standard. From this point onward, ensure any new code you add complies with it too.
 
 <box type="tip" seamless>
 
