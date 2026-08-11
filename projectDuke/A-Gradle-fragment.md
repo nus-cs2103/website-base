@@ -40,7 +40,7 @@ If you are new to merging branches, you can get AI's help to guide you along. Ex
 <tabs>
   <tab header="Sample prompt (less AI)">
 {% call mdblock() %}
-Gradle support provided as a separate branch named `add-gradle-support`.
+Gradle support is provided as a separate branch named `add-gradle-support`.
 I have fetched that branch and merged it to my `master` branch. Check if I did it correctly.
 {% endcall %}
   </tab>

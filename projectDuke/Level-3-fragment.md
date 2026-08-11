@@ -225,7 +225,7 @@ t.markAsDone();
 ```
 {% endcall %}
 
-Now that we have multiple files being updated, it is good time to put the `present-changes-visually` skill to use. Invoke the skill and use the generated file to examine how introducing a separate `Task` class changes the code structure.
+Now that we have multiple files being updated, it is a good time to put the `present-changes-visually` skill to use. Invoke the skill and use the generated file to examine how introducing a separate `Task` class changes the code structure.
 
 {{ icon_tip }} If you are not sure of the pros and cons of adding this new class, simply prompt Codex to explain it to you. Feel free to probe further using follow-up questions and push back using counterarguments.
 

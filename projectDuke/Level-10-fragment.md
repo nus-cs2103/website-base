@@ -29,7 +29,7 @@ Implement the HelloWorld application as described in that page.
 
 To what extent you use AI depends on to what level you want to internalize JavaFX concepts. If you don't think it will be useful for you to know JavaFX in the future, you can go for maximum use of AI.
 
-{{ icon_tip }} If you wish to use the `present-changes-visually` in this project as well, you can issue a prompt like this:
+{{ icon_tip }} If you wish to use the `present-changes-visually` skill in this project as well, you can issue a prompt like this:
 
 {% call mdblock() %}
 Promote the skill present-changes-visually I created in the project `[give the project folder here]` into a system-wide skill so that I can use it from other projects.

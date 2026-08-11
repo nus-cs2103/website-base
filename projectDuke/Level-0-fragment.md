@@ -27,7 +27,7 @@
   I wish to change the chatbot name from duke to [NEW NAME].
   Which files need to be changed in what way?
   {% endcall %}
-1. If you are happy with reply, you can follow up with a `Go ahead and make those changes`.<br>
+1. If you are happy with the reply, you can follow up with a `Go ahead and make those changes`.<br>
    <box type="tip" seamless>
 
    **To economize the use of tokens, start with a cheaper model** (e.g., `Luna` at `High` or `Extra High` setting). Use more expensive models only when cheaper ones fail to meet expectations or you think the task is worth a higher cost of tokens.
