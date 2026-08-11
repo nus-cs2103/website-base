@@ -1,6 +1,6 @@
 {% from "common/macros.njk" import ask_chatgpt, mdblock, show_ai_guidance, show_duke_extension_title with context %}
 
-{{ show_duke_extension_title("A-CheckStyle", "Use Checkstyle", "primary") }}
+{{ show_duke_extension_title("A-Checkstyle", "Use Checkstyle", "primary") }}
 
 Use Checkstyle to detect coding style violations.
 
