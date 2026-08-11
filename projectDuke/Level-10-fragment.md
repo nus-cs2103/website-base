@@ -35,7 +35,7 @@ To what extent you use AI depends on to what level you want to internalize JavaF
 Promote the skill present-changes-visually I created in the project `[give the project folder here]` into a system-wide skill so that I can use it from other projects.
 {% endcall %}
 
-You might have to restart Codex to make the promoted skill is available for use.
+You might have to restart Codex to make the promoted skill available for use.
 
 {% endcall %}
 
@@ -62,7 +62,7 @@ Normally, GUI programming is hard. But with the help of AI, you can now reach a 
 
 As this increment involves a GUI, at times it may be easier to communicate with AI using annotated screenshots (or even screen recordings). e.g., `The button is overlapping with the text box. See attached screenshot.`
 
-Codex has a built-in plugin called 'Computer use' that gives it the ability to drive apps in your computer like a human user (e.g., click on buttons). You can try to see if it can help you with do simple GUI tests of the app. For example:
+Codex has a built-in plugin called 'Computer use' that gives it the ability to drive apps in your computer like a human user (e.g., click on buttons). You can see if it can help you do simple GUI tests of the app. For example:
 
 {% call mdblock() %}
 Use your 'computer use' plugin to test the basic functionality of the chatbot GUI. Let me know if I need to enable/configure anything to help with that.

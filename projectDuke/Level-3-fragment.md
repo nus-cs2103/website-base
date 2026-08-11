@@ -56,7 +56,7 @@ In this iP increment, we can break the task into smaller steps, such as:
 When faced with design choices under time pressure, we normally choose the one we think is the best option and implement it. We don't spend time implementing alternatives. However, when using AI, we can explore multiple options quickly and easily. We can ask the AI to generate code for different design choices and compare them. This way, we can make more informed decisions and learn from the alternatives.
 
 {% call show_example() %}
-In this iP increment, most would have used a `Task` class right away. However, we can ask the AI to generate code for the `mark` and `unmark` commands without using a `Task` class. We can then compare the two approaches and to see how they compare to each other.
+In this iP increment, most would have used a `Task` class right away. However, we can ask the AI to generate code for the `mark` and `unmark` commands without using a `Task` class. We can then compare the two approaches.
 {% endcall %}
 
 
@@ -225,7 +225,7 @@ t.markAsDone();
 ```
 {% endcall %}
 
-Now that we have multiple files being updated, it is good time to put the `present-changes-visually` skill to use. Invoke the skill and use the generated file to examine how introducing a separate `Task` class changes to code structure.
+Now that we have multiple files being updated, it is good time to put the `present-changes-visually` skill to use. Invoke the skill and use the generated file to examine how introducing a separate `Task` class changes the code structure.
 
 {{ icon_tip }} If you are not sure of the pros and cons of adding this new class, simply prompt Codex to explain it to you. Feel free to probe further using follow-up questions and push back using counterarguments.
 
