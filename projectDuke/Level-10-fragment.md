@@ -58,7 +58,7 @@ You are <span class="text-danger">cautioned against trying to do both in one go<
 **Minimal requirement:** The GUI should be fit-for-purpose, i.e., users should be able to use the chatbot via the GUI.
 
 {% call show_ai_guidance("Level-10") %}
-Normally, GUI programming is hard. But with the help of AI, you can now reach a fairly decent GUI quite quickly.
+Normally, GUI programming is hard. But with the help of AI, you can now build a fairly decent GUI quite quickly.
 
 As this increment involves a GUI, at times it may be easier to communicate with AI using annotated screenshots (or even screen recordings). e.g., `The button is overlapping with the text box. See attached screenshot.`
 
