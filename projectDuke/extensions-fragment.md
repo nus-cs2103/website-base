@@ -353,7 +353,7 @@ Provide a way to _archive_ items so that the user can remove items from the app 
 <include boilerplate src="dukeExtensionTitle.md" var-extId="C-MassOps" var-extStyle="success"
          var-extHeading="Mass operations"/>
 
-Provide a way to perform tasks on multiple items %%e.g., delete some specific items in one go%%.
+Provide a way to perform operations on multiple items %%e.g., delete some specific items in one go%%.
 </div>
 <div id="C-Statistics">
 <include boilerplate src="dukeExtensionTitle.md" var-extId="C-Statistics" var-extStyle="success"
