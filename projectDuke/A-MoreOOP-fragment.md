@@ -70,7 +70,7 @@ public class Duke {
 {% endset %}
 <box type="info" seamless>
 
-Your class names may differ from the ones given above. The design can differ too, if you can justify that your design is a good OOP design (there is no one _correct_ design solution for most design problems, after all).
+Your class names may differ from the ones given above. The design can differ too, as long as you can justify it as good OOP (there is no one _correct_ solution for most design problems, after all).
 </box>
 
 {% call show_ai_guidance("A-MoreOOP") %}
@@ -82,7 +82,7 @@ The target: {{ req_start }}
 {{ requirements_moreoop }}
 {{ requirements_moreoop_minimal }}
 
-Your class names may differ from the ones given above. The design can differ too, if you can justify that your design is a good OOP design.
+Your class names may differ from the ones given above. The design can differ too, as long as you can justify it as good OOP.
 {{ req_end }}
 
 Let's do this iteratively. In each iteration, do the following steps:
