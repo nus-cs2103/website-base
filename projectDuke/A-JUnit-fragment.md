@@ -2,7 +2,7 @@
 
 {{ show_duke_extension_title("A-JUnit", "Add JUnit tests", "primary") }}
 
-Add JUnit tests to test the behavior of the code.
+Add JUnit tests to verify the behavior of the code.
 
 * **Minimal**: Use JUnit to test ==at least two non-trivial methods==, from two different classes (if you have multiple classes),<br>
   and ensure they are ==tested reasonably well== (i.e., the test code should try to catch most potential bugs in the target methods).
