@@ -105,7 +105,7 @@ When doing a project like the iP, we can create a skill to generate a webpage th
    Use the /present-changes-visually skill to compare the most recent commit with the one before it.
    Save the file as `_temp/with-and-without-tasks-class.html`.
     {% endcall %}
-5. Commit the new skill (it will be inside a folder `.codex/skills/present-changes-visually`) to the repo so that it is available for future use. Alternatively, you can add it to the `.gitignore` file so that the skill remains in the local repo but not pushed to the remote repo.
+5. Commit the new skill (it will be inside a folder `.codex/skills/present-changes-visually`) to the repo so that it is available for future use. Alternatively, you can add it to the `.gitignore` file so that the skill stays in your local repo but is not pushed to the remote repo.
 {% endcall %}
 
 {% call show_ai_guidance("Level 3. Mark as Done") %}
