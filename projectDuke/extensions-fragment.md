@@ -299,7 +299,7 @@ Add the ability to recognize and deal with duplicate items. %%e.g., the same tas
 <include boilerplate src="dukeExtensionTitle.md" var-extId="C-FlexibleDataSource" var-extStyle="success"
          var-extHeading="Flexible data source"/>
 
-Provide more flexibility with the data source %%e.g., the ability for the user to specify which file to use as the data source%%.
+Provide more flexibility with the data source %%e.g., let the user specify which file to use as the data source%%.
 </div><hr>
 
 <div id="C-Sort">
