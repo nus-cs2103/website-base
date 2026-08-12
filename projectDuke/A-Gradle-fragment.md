@@ -4,7 +4,7 @@
 
 Use Gradle to automate some of the build tasks of the project, as follows:
 
-* Gradle support is provided as a separate branch named `add-gradle-support` in the Duke repo. ==Merge that branch to your `master` branch==.{text="Step 1."}
+* Gradle support is provided as a separate branch named `add-gradle-support` in the Duke repo. ==Merge that branch into your `master` branch==.{text="Step 1."}
 
 <mermaid>
 {{ "%%{init: { 'theme': 'default', 'gitGraph': {'mainBranchName': 'master'}} }%%" }}
@@ -41,20 +41,20 @@ If you are new to merging branches, you can get AI's help to guide you along. Ex
   <tab header="Sample prompt (less AI)">
 {% call mdblock() %}
 Gradle support is provided as a separate branch named `add-gradle-support`.
-I have fetched that branch and merged it to my `master` branch. Check if I did it correctly.
+I have fetched that branch and merged it into my `master` branch. Check if I did it correctly.
 {% endcall %}
   </tab>
   <tab header="Sample prompt (more AI)">
 {% call mdblock() %}
 Gradle support is supposed to be provided as a separate branch named `add-gradle-support`.
 1. Check if that branch is in my fork.
-2. I have not fetched or pulled that branch to my local repo. I need to merge that branch to my `master` branch. What are the steps? Explain each step.
+2. I have not fetched or pulled that branch to my local repo. I need to merge that branch into my `master` branch. What are the steps? Explain each step.
 {% endcall %}
 </tab>
   <tab header="Sample prompt (even more AI)">
 {% call mdblock() %}
 Gradle support is provided as a separate branch named `add-gradle-support` in my fork.
-I need to merge that branch to my `master` branch.
+I need to merge that branch into my `master` branch.
 Go ahead and do it. Also explain the steps you took.
 {% endcall %}
 </tab>
