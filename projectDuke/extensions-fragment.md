@@ -209,7 +209,7 @@ Add a Developer Guide to the project, explaining the design and implementation t
 <include boilerplate src="dukeExtensionTitle.md" var-extId="A-AiAssisted"
          var-extHeading="Enhance the code using AI tools"/>
 
-Use AI tools (e.g., GitHub Copilot, ChatGPT, Claude, Cursor etc.) to enhance your chatbot code. For example, you can get AI tools to help you,
+Use AI tools (e.g., GitHub Copilot, ChatGPT, Claude, Cursor, etc.) to enhance your chatbot code. For example, you can get AI tools to help you,
 
 * improve the quality of the current code.
 * tweak an existing feature to make it more useful to the user.
