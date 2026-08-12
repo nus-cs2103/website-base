@@ -68,7 +68,7 @@ Example:
 
 {% call show_ai_guidance("Updating the initial code") %}
 
-This change is simple enough that you can easily do it by hand. Doing it using AI can help you get used to working with the AI without losing much value on the hand-coding front (i.e., a way of taking 'baby steps'). Here are two sample prompts:
+This change is simple enough to do by hand. Doing it with AI instead is a way of taking 'baby steps': you get used to working with AI without giving up much hand-coding practice. Here are two sample prompts:
 
 <tabs>
   <tab header="Sample prompt (less AI)">
