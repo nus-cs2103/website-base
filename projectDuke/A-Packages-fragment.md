@@ -6,7 +6,7 @@ Organize the classes into suitable Java packages.
 
 <box type="warning" seamless>
 
-Note that `src/main/java` should be kept as the <tooltip content="root folder for Java source code">source root</tooltip> folder, as some tools we'll be using later will look for the Java source code in that folder by default.
+Keep `src/main/java` as the <tooltip content="root folder for Java source code">source root</tooltip> folder, because some tools we'll use later look for the Java source code there by default.
 
 For example, suppose you have the following structure now, and you wish to move `Duke.java` into a package `duke.ui`.
 
