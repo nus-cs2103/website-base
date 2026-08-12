@@ -46,7 +46,7 @@ You might have to restart Codex to make the promoted skill available for use.
 1. learning JavaFX basics
 1. creating a GUI for your chatbot
 
-You are <span class="text-danger">cautioned against trying to do both in one go</span>. Instead, complete the JavaFX tutorial as a separate project before adding a GUI to the chatbot.
+<span class="text-danger">Do not try to do both in one go</span>. Instead, complete the JavaFX tutorial as a separate project before adding a GUI to the chatbot.
 
 </box>
 
