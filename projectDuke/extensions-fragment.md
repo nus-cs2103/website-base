@@ -304,7 +304,7 @@ Provide more flexibility with the data source, %%e.g., let the user specify whic
 
 <div id="C-Sort">
 <include boilerplate src="dukeExtensionTitle.md" var-extId="C-Sort" var-extStyle="success"
-         var-extHeading="Sorting items managed by the App"/>
+         var-extHeading="Sorting items managed by the app"/>
 
 The ability to sort items, %%e.g., sort deadlines chronologically%%.
 </div>
@@ -359,7 +359,7 @@ Provide a way to perform operations on multiple items, %%e.g., delete some speci
 <include boilerplate src="dukeExtensionTitle.md" var-extId="C-Statistics" var-extStyle="success"
          var-extHeading="Statistics and insights"/>
 
-Provide a way to leverage statistics about the items managed by the App, %%e.g., show the number of tasks that have been completed in the past week%%.
+Provide a way to leverage statistics about the items managed by the app, %%e.g., show the number of tasks that have been completed in the past week%%.
 </div>
 <div id="C-UndoRedo">
 <include boilerplate src="dukeExtensionTitle.md" var-extId="C-Undo" var-extStyle="success"
@@ -373,12 +373,12 @@ Minimal: the ability to undo the most recent command.
 <include boilerplate src="dukeExtensionTitle.md" var-extId="C-Help" var-extStyle="success"
          var-extHeading="Give help to users"/>
 
-Provide in-App guidance to users.
+Provide in-app guidance to users.
 
 Minimal: add a command to access a help page.
 
 Other ideas:
-* Load the App with some sample data at the first run.
+* Load the app with some sample data at the first run.
 
 </div>
 <div id="C-FriendlierSyntax">
