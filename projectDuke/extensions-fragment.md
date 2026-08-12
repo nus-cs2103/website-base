@@ -409,7 +409,7 @@ Support managing info about contacts, %%e.g., details of friends%%.
 <include boilerplate src="dukeExtensionTitle.md" var-extId="D-Notes" var-extStyle="danger"
          var-extHeading="Support managing notes"/>
 
-Support managing info about small snippets of textual information the user wants to record, %%e.g., one's own waist size, a name of a movie that the user wants to remember%%.
+Support managing small snippets of textual information the user wants to record, %%e.g., their own waist size, or a movie title they want to remember%%.
 </div>
 <div id="D-Expenses">
 <include boilerplate src="dukeExtensionTitle.md" var-extId="D-Expenses" var-extStyle="danger"
