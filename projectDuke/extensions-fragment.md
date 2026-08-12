@@ -291,7 +291,7 @@ Deal with schedule anomalies %%e.g., detect if a task being added clashes with a
 
 <div id="C-DetectDuplicates">
 <include boilerplate src="dukeExtensionTitle.md" var-extId="C-DetectDuplicates" var-extStyle="success"
-         var-extHeading="Deal duplicate items"/>
+         var-extHeading="Deal with duplicate items"/>
 
 Add the ability to recognize and deal with duplicate items. %%e.g., the same task added multiple times%%.
 </div><hr>
