@@ -359,7 +359,7 @@ Provide a way to perform operations on multiple items, %%e.g., delete some speci
 <include boilerplate src="dukeExtensionTitle.md" var-extId="C-Statistics" var-extStyle="success"
          var-extHeading="Statistics and insights"/>
 
-Provide a way to leverage statistics about the items managed by the app, %%e.g., show the number of tasks that have been completed in the past week%%.
+Provide a way to see useful statistics about the items managed by the app, %%e.g., show the number of tasks that have been completed in the past week%%.
 </div>
 <div id="C-UndoRedo">
 <include boilerplate src="dukeExtensionTitle.md" var-extId="C-Undo" var-extStyle="success"
