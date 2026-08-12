@@ -41,7 +41,7 @@ Example:
 
 {% call show_ai_guidance("General: Proceed in small steps. Examine each step.") %}
 
-As we use AI for coding, we lose our understanding of the code. We also forgo the skills (both coding and problem-solving) that we would have gained by doing the work ourselves. To avoid this, we should proceed in small steps, examining each step before moving on to the next. This way, we can understand what is happening and learn from it.
+Using AI for coding can cost us our understanding of the code, and the coding and problem-solving skills we would have gained by doing the work ourselves. We should proceed in small steps, examining each one before moving on, so we understand what is happening and learn from it.
 
 {% call show_example() %}
 In this iP increment, we can break the task into smaller steps, such as:
