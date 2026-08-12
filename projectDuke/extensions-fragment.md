@@ -415,7 +415,7 @@ Support managing info about small snippets of textual information the user wants
 <include boilerplate src="dukeExtensionTitle.md" var-extId="D-Expenses" var-extStyle="danger"
          var-extHeading="Support managing expenses"/>
 
-Support managing info about expenses, %%e.g., the amounts spent on food, books, transport, etc.%%.
+Support managing info about expenses, %%e.g., the amounts spent on food, books, transport, etc.%%
 </div>
 <div id="D-Loans">
 <include boilerplate src="dukeExtensionTitle.md" var-extId="D-Loans" var-extStyle="danger"
