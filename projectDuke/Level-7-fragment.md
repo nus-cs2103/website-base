@@ -43,7 +43,7 @@ One possible way to break this increment into small steps is:
 
 If you are confident that you know how to implement this increment yourself, you can ask for a more complete implementation in one go.
 
-Here are the sample prompts for the first incremental approach.
+Here are sample prompts for the incremental approach above.
 
 {% call mdblock() %}
 Here is the requirement:
