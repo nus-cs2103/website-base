@@ -41,7 +41,7 @@ t.markAsDone();
 
 As there are multiple types of tasks that have some similarity between them, you can implement `Todo`, `Deadline` and `Event` classes to inherit from a `Task` class.
 
-Furthermore, use polymorphism to store all tasks in a data structure containing `Task` objects e.g., `Task[100]`.
+Furthermore, use polymorphism to store all tasks in a data structure containing `Task` objects, e.g., `Task[100]`.
 
 <panel type="seamless" header="Partial solution" minimized>
 
