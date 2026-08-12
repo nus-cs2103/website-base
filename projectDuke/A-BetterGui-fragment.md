@@ -14,5 +14,5 @@ Improve the GUI to make it more _polished_. Some examples:
 
 {{ icon_tip }} You can take inspiration from [these past projects](https://nus-cs2103-ay2526s1.github.io/website/admin/ip-showcase.html). If you adopt any ideas from them, don't forget to give credit to the original author.
 
-{{ icon_info }} Minimal requirement: Implement at least one of the examples (i - vi) given above.
+{{ icon_info }} **Minimal requirement:** Implement at least one of the examples (i - vi) given above.
 

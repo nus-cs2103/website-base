@@ -326,7 +326,7 @@ Allow more flexibility in search, %%e.g., find items even if the keyword matches
 
 Support a way to easily edit details of items, %%e.g., change the end time of an event without changing anything else%%.
 
-Minimal: the ability to update an existing item without having to delete it first
+**Minimal**: the ability to update an existing item without having to delete it first
 
 Other ideas:
 * the ability to _clone_ items (to easily create new items based on existing items)
@@ -367,7 +367,7 @@ Provide a way to leverage statistics about the items managed by the app, %%e.g.,
 
 Provide a way to undo a command.
 
-Minimal: the ability to undo the most recent command.
+**Minimal**: the ability to undo the most recent command.
 </div>
 <div id="C-Help">
 <include boilerplate src="dukeExtensionTitle.md" var-extId="C-Help" var-extStyle="success"
@@ -375,7 +375,7 @@ Minimal: the ability to undo the most recent command.
 
 Provide in-app guidance to users.
 
-Minimal: add a command to access a help page.
+**Minimal**: add a command to access a help page.
 
 Other ideas:
 * Load the app with some sample data at the first run.
@@ -387,7 +387,7 @@ Other ideas:
 
 Make the command syntax more flexible.
 
-Minimal: provide shorter aliases for keywords, %%e.g., `t` can be shorter alias for `todo`%%.
+**Minimal**: provide shorter aliases for keywords, %%e.g., `t` can be shorter alias for `todo`%%.
 
 Other ideas:
 * Allow users to define their own aliases
