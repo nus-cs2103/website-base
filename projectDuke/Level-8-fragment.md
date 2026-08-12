@@ -47,7 +47,7 @@ public class Main {
 
 {% call show_ai_guidance("General: Look out for random deviations") %}
 
-AI can do an action (such as running the tests) the first few times without any issue but run into a problem the next time. At times, wanting to be helpful, it will then try to 'fall back' on other alternatives. If you are not monitoring the AI carefully, you might not even realize that AI did something differently and what it did is not what you wanted.
+AI can do an action (such as running the tests) the first few times without any issue but run into a problem the next time. At times, wanting to be helpful, it will then try to 'fall back' on other alternatives. If you are not monitoring the AI carefully, you might not even realize that AI did something different, and that what it did is not what you wanted.
 
 If you see AI going off-track, stop and issue firmer instructions.
 {% endcall %}
