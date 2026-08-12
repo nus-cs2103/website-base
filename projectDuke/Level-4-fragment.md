@@ -80,7 +80,7 @@ Create a project-specific skill named `test-ui`, as follows.
 * The skill should accept lists of commands and expected outputs. For each command, it should run the program and check the output against the expected output.
 * The list of test cases (and other relevant information) should be recorded in the `test/ui-test-plan.md` file.
 * Each test case should specify the aim of the test case, inputs, and the expected output.
-* After testing, show a record of console inputs/outputs so we can see the test session.
+* After testing, show a record of the console input and output so we can see the test session.
 * If a test case failed, terminate the test session immediately, and report the actual and expected outputs.
 {% endcall %}
 
