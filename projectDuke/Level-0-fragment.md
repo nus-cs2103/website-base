@@ -32,7 +32,7 @@
 
    **To economize the use of tokens, start with a cheaper model** (e.g., `Luna` at `High` or `Extra High` setting). Use more expensive models only when cheaper ones fail to meet expectations or you think the task is worth a higher cost of tokens.
 
-    **Set the permission level to `Approve for me`**: Codex will still ask your permission when performing 'risky' actions but proceed with less risky actions without bothering you every time.
+    **Set the permission level to `Approve for me`**: Codex will still ask for permission before 'risky' actions but will proceed with lower-risk ones without asking every time.
    </box>
 1. If Codex doesn't update the banner, you can ask it to do so.
    {% call mdblock() %}
