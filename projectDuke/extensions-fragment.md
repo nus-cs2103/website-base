@@ -445,5 +445,5 @@ Support managing info about clients %%e.g., for an insurance agent to keep track
 <include boilerplate src="dukeExtensionTitle.md" var-extId="D-Merchandise" var-extStyle="danger"
          var-extHeading="Support managing merchandise info"/>
 
-Support managing info about merchandise %%e.g., a property agent to keep track of properties, a collector of stamps keep track of items in the collection%%
+Support managing info about merchandise %%e.g., for a property agent to keep track of properties, or for a stamp collector to keep track of items in the collection%%
 </div>
