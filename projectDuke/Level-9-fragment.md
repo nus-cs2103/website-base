@@ -20,5 +20,5 @@ find book
 
 {% call show_ai_guidance("Level 9. Find") %}
 
-As this increment is fairly straightforward, breaking it into smaller steps might not have much learning value. You can try to 'one shot' it: give the AI all the information up front and ask it to complete the increment entirely, including committing, tagging, and pushing. If the AI misses some parts of the expected work, you can learn from that and try to be more comprehensive the next time you attempt it.
+As this increment is fairly straightforward, breaking it into smaller steps might not have much learning value. You can try to 'one shot' it: give the AI all the information up front and ask it to complete the increment entirely, including committing, tagging, and pushing. If the AI misses parts of the expected work, you can learn from that and try to be more comprehensive next time.
 {% endcall %}
