@@ -39,7 +39,7 @@ t.markAsDone();
 <include boilerplate src="dukeExtensionTitle.md" var-extId="A-Inheritance"
          var-extHeading="Use inheritance to support multiple task types"/>
 
-As there are multiple types of tasks that have some similarity between them, you can implement `Todo`, `Deadline` and `Event` classes to inherit from a `Task` class.
+As the task types share some similarities, you can implement `Todo`, `Deadline` and `Event` classes to inherit from a `Task` class.
 
 Furthermore, use polymorphism to store all tasks in a data structure containing `Task` objects, e.g., `Task[100]`.
 
