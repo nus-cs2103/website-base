@@ -81,7 +81,7 @@ The project consists of the following _increments_:
   * ++<span class="badge rounded-pill bg-primary">Category A</span>++ These are internal/feature enhancements meant to help you practice a specific Java or an SE technique.
   * ++<span class="badge rounded-pill bg-info">Category B</span>++ These are enhancements related to task tracking.
   * ++<span class="badge rounded-pill bg-success">Category C</span>++ These are enhancements, not specifically related to task tracking.
-  * ++<span class="badge rounded-pill bg-danger">Category D</span>++ Each of these adds the ability to track another type of entities.
+  * ++<span class="badge rounded-pill bg-danger">Category D</span>++ Each of these adds the ability to track another type of entity.
 </div>
 </div>
 
