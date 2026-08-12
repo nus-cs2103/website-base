@@ -387,7 +387,7 @@ Other ideas:
 
 Make the command syntax more flexible.
 
-**Minimal**: provide shorter aliases for keywords, %%e.g., `t` can be shorter alias for `todo`%%.
+**Minimal**: provide shorter aliases for keywords, %%e.g., `t` can be a shorter alias for `todo`%%.
 
 Other ideas:
 * Allow users to define their own aliases
