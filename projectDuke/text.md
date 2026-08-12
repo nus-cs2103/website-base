@@ -71,7 +71,7 @@ bye
 
 ```
 
-{{ icon_tip }} **You are ==encouraged to give your chatbot another name (and a different personality if you wish)==**, to differentiate yours from others'. If you do the latter, please do not use slang or words that some classmates might not know, and avoid offensive language.
+{{ icon_tip }} **You are ==encouraged to give your chatbot another name (and a different personality if you wish)==**, to differentiate yours from others'. If you give it a personality, please do not use slang or words that some classmates might not know, and avoid offensive language.
 
 <div id="increments_summary">
 
