@@ -73,8 +73,8 @@ When doing a project like the iP, we can create a skill to generate a webpage th
 
 **Create the `present-changes-visually` skill**
 
-1. You can ask the AI to create a skill from scratch. But we have already created one named `present-changes-visually` and shared it at https://github.com/se-edu/skill-present-changes-visually<br>
-   So, you don't have to create it from scratch. Instead, give the following prompt to Codex.
+1. We have already created a `present-changes-visually` skill and shared it at [https://github.com/se-edu/skill-present-changes-visually](https://github.com/se-edu/skill-present-changes-visually).<br>
+   Instead of creating one from scratch, give the following prompt to Codex.
    {% call mdblock(indented_level=1) %}
    Create a project-specific skill named `present-changes-visually`.
    Use the repo https://github.com/se-edu/skill-present-changes-visually as the basis.
