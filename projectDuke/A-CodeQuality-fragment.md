@@ -5,7 +5,7 @@
 
 Critically examine the code and refactor to improve the code quality where necessary.
 
-{{ icon_important_big_red }} When adding this increment, follow closely the 'Code Quality' topics you have learned so far, rather than merely follow your own intuition about code quality.
+{{ icon_important_big_red }} When implementing this increment, closely follow the 'Code Quality' guidelines you have learned so far, rather than relying solely on your own intuition.
 
 {% call show_ai_guidance("A-CodeQuality") %}
 
