@@ -30,7 +30,7 @@
 1. If you are happy with the reply, you can follow up with a `Go ahead and make those changes`.<br>
    <box type="tip" seamless>
 
-   **To economize the use of tokens, start with a cheaper model** (e.g., `Luna` at `High` or `Extra High` setting). Use more expensive models only when cheaper ones fail to meet expectations or you think the task is worth a higher cost of tokens.
+   **To save tokens, start with a cheaper model** (e.g., `Luna` at `High` or `Extra High` setting). Use more expensive models only when cheaper ones fail to meet expectations or you think the task is worth a higher cost of tokens.
 
     **Set the permission level to `Approve for me`**: Codex will still ask for permission before 'risky' actions but will proceed with lower-risk ones without asking every time.
    </box>
