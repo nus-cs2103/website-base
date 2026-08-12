@@ -5,7 +5,7 @@
 ### Level 7. Save
 
 {% set requirements_level_7 %}
-Save the tasks on the hard disk automatically whenever the task list changes. Load the data from the hard disk when the chatbot starts up. You may hard-code the file name and relative path from the project root %%e.g., `./data/duke.txt`%%
+Save the tasks on the hard disk automatically whenever the task list changes. Load the data from the hard disk when the chatbot starts up. You may hard-code the file name and relative path from the project root, %%e.g., `./data/duke.txt`%%
 
 The format of the file is up to you. Example:
 ```{.no-line-numbers}

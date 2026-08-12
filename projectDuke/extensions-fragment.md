@@ -240,49 +240,49 @@ Provide a way to easily snooze/postpone/reschedule tasks.
 <include boilerplate src="dukeExtensionTitle.md" var-extId="B-RecurringTasks" var-extStyle="info"
          var-extHeading="Recurring tasks"/>
 
-Provide support for managing _recurring_ tasks %%e.g., a weekly project meeting%%.
+Provide support for managing _recurring_ tasks, %%e.g., a weekly project meeting%%.
 </div><hr>
 <div id="B-DoAfterTasks">
 <include boilerplate src="dukeExtensionTitle.md" var-extId="B-DoAfterTasks" var-extStyle="info"
          var-extHeading="'Do after' tasks"/>
 
-Support the managing of tasks that need to be _done_ after a specific time/task %%e.g., return book after the exam is over%%.
+Support the managing of tasks that need to be _done_ after a specific time/task, %%e.g., return book after the exam is over%%.
 </div><hr>
 <div id="B-DoWithinPeriodTasks">
 <include boilerplate src="dukeExtensionTitle.md" var-extId="B-DoWithinPeriodTasks" var-extStyle="info"
          var-extHeading="'Do within a period' task"/>
 
-Provide support for managing tasks that need to be done within a certain period %%e.g., collect certificate between Jan 15 and 25th%%.
+Provide support for managing tasks that need to be done within a certain period, %%e.g., collect certificate between Jan 15 and 25th%%.
 </div><hr>
 <div id="B-FixedDurationTasks">
 <include boilerplate src="dukeExtensionTitle.md" var-extId="B-FixedDurationTasks" var-extStyle="info"
          var-extHeading="Unscheduled tasks with a fixed duration"/>
 
-Provide support for managing tasks that take a fixed amount of time but do not have a fixed start/end time %%e.g., reading the sales report (needs 2 hours)%%.
+Provide support for managing tasks that take a fixed amount of time but do not have a fixed start/end time, %%e.g., reading the sales report (needs 2 hours)%%.
 </div><hr>
 <div id="B-Reminders">
 <include boilerplate src="dukeExtensionTitle.md" var-extId="B-Reminders" var-extStyle="info"
          var-extHeading="Reminders for tasks"/>
 
-Provide a way to get reminders about tasks %%e.g., remind the user about upcoming deadlines%%.
+Provide a way to get reminders about tasks, %%e.g., remind the user about upcoming deadlines%%.
 </div><hr>
 <div id="B-FindFreeTimes">
 <include boilerplate src="dukeExtensionTitle.md" var-extId="B-FindFreeTimes" var-extStyle="info"
          var-extHeading="Find free times"/>
 
-Provide a way for the user to find free times %%e.g., when is the nearest day in which I have a 4 hour free slot?%%.
+Provide a way for the user to find free times, %%e.g., when is the nearest day in which I have a 4 hour free slot?%%.
 </div><hr>
 <div id="B-ViewSchedules">
 <include boilerplate src="dukeExtensionTitle.md" var-extId="B-ViewSchedules" var-extStyle="info"
          var-extHeading="View schedules"/>
 
-Provide a way to view tasks in the form of a schedule %%e.g., view the schedule for a specific date%%.
+Provide a way to view tasks in the form of a schedule, %%e.g., view the schedule for a specific date%%.
 </div><hr>
 <div id="B-DetectAnomalies">
 <include boilerplate src="dukeExtensionTitle.md" var-extId="B-DetectAnomalies" var-extStyle="info"
          var-extHeading="Detect scheduling anomalies"/>
 
-Deal with schedule anomalies %%e.g., detect if a task being added clashes with another task in the list%%.
+Deal with schedule anomalies, %%e.g., detect if a task being added clashes with another task in the list%%.
 </div>
 
 <!-- ======================================================================================================= -->
@@ -293,38 +293,38 @@ Deal with schedule anomalies %%e.g., detect if a task being added clashes with a
 <include boilerplate src="dukeExtensionTitle.md" var-extId="C-DetectDuplicates" var-extStyle="success"
          var-extHeading="Deal with duplicate items"/>
 
-Add the ability to recognize and deal with duplicate items. %%e.g., the same task added multiple times%%.
+Add the ability to recognize and deal with duplicate items, %%e.g., the same task added multiple times%%.
 </div><hr>
 <div id="C-FlexibleDataSource">
 <include boilerplate src="dukeExtensionTitle.md" var-extId="C-FlexibleDataSource" var-extStyle="success"
          var-extHeading="Flexible data source"/>
 
-Provide more flexibility with the data source %%e.g., let the user specify which file to use as the data source%%.
+Provide more flexibility with the data source, %%e.g., let the user specify which file to use as the data source%%.
 </div><hr>
 
 <div id="C-Sort">
 <include boilerplate src="dukeExtensionTitle.md" var-extId="C-Sort" var-extStyle="success"
          var-extHeading="Sorting items managed by the App"/>
 
-The ability to sort items %%e.g., sort deadlines chronologically%%.
+The ability to sort items, %%e.g., sort deadlines chronologically%%.
 </div>
 <div id="C-NaturalDates">
 <include boilerplate src="dukeExtensionTitle.md" var-extId="C-NaturalDates" var-extStyle="success"
          var-extHeading="More natural date formats"/>
 
-Support more natural date formats %%e.g., `Mon` in a user command can be interpreted as the date of the next Monday in the calendar%%.
+Support more natural date formats, %%e.g., `Mon` in a user command can be interpreted as the date of the next Monday in the calendar%%.
 </div>
 <div id="C-BetterSearch">
 <include boilerplate src="dukeExtensionTitle.md" var-extId="C-BetterSearch" var-extStyle="success"
          var-extHeading="More flexibility in searching for items"/>
 
-Allow more flexibility in search %%e.g., find items even if the keyword matches the item only partially%%.
+Allow more flexibility in search, %%e.g., find items even if the keyword matches the item only partially%%.
 </div>
 <div id="C-Update">
 <include boilerplate src="dukeExtensionTitle.md" var-extId="C-Update" var-extStyle="success"
          var-extHeading="Easily edit items"/>
 
-Support a way to easily edit details of items %%e.g., change the end time of an event without changing anything else%%.
+Support a way to easily edit details of items, %%e.g., change the end time of an event without changing anything else%%.
 
 Minimal: the ability to update an existing item without having to delete it first
 
@@ -335,31 +335,31 @@ Other ideas:
 <include boilerplate src="dukeExtensionTitle.md" var-extId="C-Tagging" var-extStyle="success"
          var-extHeading="Tagging items"/>
 
-Provide a way to tag items %%e.g., tag a task as `#fun`%%.
+Provide a way to tag items, %%e.g., tag a task as `#fun`%%.
 </div>
 <div id="C-Priority">
 <include boilerplate src="dukeExtensionTitle.md" var-extId="C-Priority" var-extStyle="success"
          var-extHeading="Prioritizing items"/>
 
-Provide a way to attach priorities to items %%e.g., mark an item as a `high` priority (or priority level `1`)%%.
+Provide a way to attach priorities to items, %%e.g., mark an item as a `high` priority (or priority level `1`)%%.
 </div>
 <div id="C-Archive">
 <include boilerplate src="dukeExtensionTitle.md" var-extId="C-Archive" var-extStyle="success"
          var-extHeading="Archiving items"/>
 
-Provide a way to _archive_ items so that the user can remove items from the app but still keep a record of them somewhere %%e.g., archive all tasks in the list into a file so that the user can start over with a clean slate%%.
+Provide a way to _archive_ items so that the user can remove items from the app but still keep a record of them somewhere, %%e.g., archive all tasks in the list into a file so that the user can start over with a clean slate%%.
 </div>
 <div id="C-MassOps">
 <include boilerplate src="dukeExtensionTitle.md" var-extId="C-MassOps" var-extStyle="success"
          var-extHeading="Mass operations"/>
 
-Provide a way to perform operations on multiple items %%e.g., delete some specific items in one go%%.
+Provide a way to perform operations on multiple items, %%e.g., delete some specific items in one go%%.
 </div>
 <div id="C-Statistics">
 <include boilerplate src="dukeExtensionTitle.md" var-extId="C-Statistics" var-extStyle="success"
          var-extHeading="Statistics and insights"/>
 
-Provide a way to leverage statistics about the items managed by the App %%e.g., show the number of tasks that have been completed in the past week%%.
+Provide a way to leverage statistics about the items managed by the App, %%e.g., show the number of tasks that have been completed in the past week%%.
 </div>
 <div id="C-UndoRedo">
 <include boilerplate src="dukeExtensionTitle.md" var-extId="C-Undo" var-extStyle="success"
@@ -387,7 +387,7 @@ Other ideas:
 
 Make the command syntax more flexible.
 
-Minimal: provide shorter aliases for keywords %%e.g., `t` can be shorter alias for `todo`%%.
+Minimal: provide shorter aliases for keywords, %%e.g., `t` can be shorter alias for `todo`%%.
 
 Other ideas:
 * Allow users to define their own aliases
@@ -403,47 +403,47 @@ Other ideas:
 <include boilerplate src="dukeExtensionTitle.md" var-extId="D-Contacts" var-extStyle="danger"
          var-extHeading="Support managing contacts"/>
 
-Support managing info about contacts %%e.g., details of friends%%
+Support managing info about contacts, %%e.g., details of friends%%
 </div>
 <div id="D-Notes">
 <include boilerplate src="dukeExtensionTitle.md" var-extId="D-Notes" var-extStyle="danger"
          var-extHeading="Support managing notes"/>
 
-Support managing info about small snippets of textual information the user wants to record %%e.g., one's own waist size, a name of a movie that the user wants to remember%%
+Support managing info about small snippets of textual information the user wants to record, %%e.g., one's own waist size, a name of a movie that the user wants to remember%%
 </div>
 <div id="D-Expenses">
 <include boilerplate src="dukeExtensionTitle.md" var-extId="D-Expenses" var-extStyle="danger"
          var-extHeading="Support managing expenses"/>
 
-Support managing info about expenses %%e.g., the amounts spent on food, books, transport, etc.%%
+Support managing info about expenses, %%e.g., the amounts spent on food, books, transport, etc.%%
 </div>
 <div id="D-Loans">
 <include boilerplate src="dukeExtensionTitle.md" var-extId="D-Loans" var-extStyle="danger"
          var-extHeading="Support managing loan records"/>
 
-Support keeping records of loans given/taken %%e.g., money lent/owed to colleagues/friends%%
+Support keeping records of loans given/taken, %%e.g., money lent/owed to colleagues/friends%%
 </div>
 <div id="D-Places">
 <include boilerplate src="dukeExtensionTitle.md" var-extId="D-Places" var-extStyle="danger"
          var-extHeading="Support managing info about places"/>
 
-Support recording info about places %%e.g., info about restaurants visited, for future reference%%
+Support recording info about places, %%e.g., info about restaurants visited, for future reference%%
 </div>
 <div id="D-Trivia">
 <include boilerplate src="dukeExtensionTitle.md" var-extId="D-Trivia" var-extStyle="danger"
          var-extHeading="Support managing trivia"/>
 
-Provide the ability to learn/memorize things %%e.g., learn vocabulary, answers to questions%%
+Provide the ability to learn/memorize things, %%e.g., learn vocabulary, answers to questions%%
 </div>
 <div id="D-Clients">
 <include boilerplate src="dukeExtensionTitle.md" var-extId="D-Clients" var-extStyle="danger"
          var-extHeading="Support managing client info"/>
 
-Support managing info about clients %%e.g., for an insurance agent to keep track of clients%%
+Support managing info about clients, %%e.g., for an insurance agent to keep track of clients%%
 </div>
 <div id="D-Merchandise">
 <include boilerplate src="dukeExtensionTitle.md" var-extId="D-Merchandise" var-extStyle="danger"
          var-extHeading="Support managing merchandise info"/>
 
-Support managing info about merchandise %%e.g., for a property agent to keep track of properties, or for a stamp collector to keep track of items in the collection%%
+Support managing info about merchandise, %%e.g., for a property agent to keep track of properties, or for a stamp collector to keep track of items in the collection%%
 </div>
