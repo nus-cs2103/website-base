@@ -252,7 +252,7 @@ Support the managing of tasks that need to be _done_ after a specific time/task,
 <include boilerplate src="dukeExtensionTitle.md" var-extId="B-DoWithinPeriodTasks" var-extStyle="info"
          var-extHeading="'Do within a period' task"/>
 
-Provide support for managing tasks that need to be done within a certain period, %%e.g., collect certificate between Jan 15 and 25th%%.
+Provide support for managing tasks that need to be done within a certain period, %%e.g., collect certificate between Jan 15 and Jan 25%%.
 </div><hr>
 <div id="B-FixedDurationTasks">
 <include boilerplate src="dukeExtensionTitle.md" var-extId="B-FixedDurationTasks" var-extStyle="info"
@@ -270,7 +270,7 @@ Provide a way to get reminders about tasks, %%e.g., remind the user about upcomi
 <include boilerplate src="dukeExtensionTitle.md" var-extId="B-FindFreeTimes" var-extStyle="info"
          var-extHeading="Find free times"/>
 
-Provide a way for the user to find free times, %%e.g., when is the nearest day in which I have a 4 hour free slot?%%.
+Provide a way for the user to find free times, %%e.g., when is the nearest day on which I have a 4-hour free slot?%%
 </div><hr>
 <div id="B-ViewSchedules">
 <include boilerplate src="dukeExtensionTitle.md" var-extId="B-ViewSchedules" var-extStyle="info"
