@@ -122,8 +122,8 @@ Use Java Collections classes for storing data. For example, you can use an [`Arr
          var-extHeading="Add JavaDoc comments"/>
 
 Add JavaDoc comments to the code.
-* **Minimal**: Add header comments to at least half of the non-private classes/methods.
-* **Stretch goal**: Add header comments to all non-private classes/methods, and non-trivial private methods.
+* **Minimal**: Add header comments to at least half of the non-private classes and methods.
+* **Stretch goal**: Add header comments to all non-private classes and methods, and non-trivial private methods.
 </div><hr>
 <div id="A-CodingStandard">
 <include src="A-CodingStandard-fragment.md" />
