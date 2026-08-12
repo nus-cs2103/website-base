@@ -306,7 +306,7 @@ Provide more flexibility with the data source, %%e.g., let the user specify whic
 <include boilerplate src="dukeExtensionTitle.md" var-extId="C-Sort" var-extStyle="success"
          var-extHeading="Sorting items managed by the app"/>
 
-The ability to sort items, %%e.g., sort deadlines chronologically%%.
+Provide a way to sort items, %%e.g., sort deadlines chronologically%%.
 </div>
 <div id="C-NaturalDates">
 <include boilerplate src="dukeExtensionTitle.md" var-extId="C-NaturalDates" var-extStyle="success"
@@ -324,7 +324,7 @@ Allow more flexibility in search, %%e.g., find items even if the keyword matches
 <include boilerplate src="dukeExtensionTitle.md" var-extId="C-Update" var-extStyle="success"
          var-extHeading="Easily edit items"/>
 
-Support a way to easily edit details of items, %%e.g., change the end time of an event without changing anything else%%.
+Provide a way to easily edit item details, %%e.g., change the end time of an event without changing anything else%%.
 
 **Minimal**: the ability to update an existing item without having to delete it first
 
