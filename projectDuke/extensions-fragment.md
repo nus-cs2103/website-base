@@ -246,7 +246,7 @@ Provide support for managing _recurring_ tasks, %%e.g., a weekly project meeting
 <include boilerplate src="dukeExtensionTitle.md" var-extId="B-DoAfterTasks" var-extStyle="info"
          var-extHeading="'Do after' tasks"/>
 
-Support the managing of tasks that need to be _done_ after a specific time/task, %%e.g., return book after the exam is over%%.
+Support the managing of tasks that need to be _done_ after a specific time or task, %%e.g., return book after the exam is over%%.
 </div><hr>
 <div id="B-DoWithinPeriodTasks">
 <include boilerplate src="dukeExtensionTitle.md" var-extId="B-DoWithinPeriodTasks" var-extStyle="info"
