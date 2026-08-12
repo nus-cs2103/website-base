@@ -27,7 +27,7 @@ If you use file paths in your code:
 
 <box type="important" seamless>
 
-**Your code must <tooltip content="i.e., if the file is missing, your code must create it">handle</tooltip> the case where the data file doesn't exist at the start.** Reason: when someone else takes your chatbot and runs it for the first time, the required file will not exist on their computer. Similarly, if you expect the data file to be in a specific folder (e.g., `./data/`), you must also handle the folder-does-not-exist-yet case.
+**Your code must <tooltip content="i.e., if the file is missing, your code must create it">handle</tooltip> the case where the data file doesn't exist at the start.** Reason: when someone else takes your chatbot and runs it for the first time, the required file will not exist on their computer. Similarly, if you expect the data file to be in a specific folder (e.g., `./data/`), you must also handle the case where the folder doesn't exist yet.
 </box>
 
 **Stretch goal**: Handle the situation of the data file being corrupted (i.e., content not in the expected format).
