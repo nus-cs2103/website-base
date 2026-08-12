@@ -37,7 +37,7 @@ t.markAsDone();
 </div><hr>
 <div id="A-Inheritance">
 <include boilerplate src="dukeExtensionTitle.md" var-extId="A-Inheritance"
-         var-extHeading="Use Inheritance to support multiple task types"/>
+         var-extHeading="Use inheritance to support multiple task types"/>
 
 As there are multiple types of tasks that have some similarity between them, you can implement `Todo`, `Deadline` and `Event` classes to inherit from a `Task` class.
 
@@ -81,7 +81,7 @@ Make the `Task` class an abstract class. If applicable, use abstract methods as 
 
 <div id="A-Exceptions">
 <include boilerplate src="dukeExtensionTitle.md" var-extId="A-Exceptions"
-         var-extHeading="Use Exceptions to handle errors"/>
+         var-extHeading="Use exceptions to handle errors"/>
 
 Use exceptions to handle errors. For example, define a custom exception class %%(e.g., `DukeException` -- name it to match your chatbot's name)%% to represent exceptions specific to Duke.
 
@@ -165,13 +165,13 @@ Use Java varargs, if applicable.
 </div><hr>
 <div id="A-Lambdas">
 <include boilerplate src="dukeExtensionTitle.md" var-extId="A-Lambdas"
-         var-extHeading="Use Lambdas"/>
+         var-extHeading="Use lambdas"/>
 
 Use the Lambdas feature of Java in your code, if applicable.
 </div><hr>
 <div id="A-Streams">
 <include boilerplate src="dukeExtensionTitle.md" var-extId="A-Streams"
-         var-extHeading="Use Streams"/>
+         var-extHeading="Use streams"/>
 
 Use the Streams feature of Java in your code, if applicable.
 </div><hr>

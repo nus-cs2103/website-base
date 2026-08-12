@@ -1,6 +1,6 @@
 {% from "common/macros.njk" import ask_chatgpt, show_ai_guidance, show_duke_extension_title with context %}
 
-{{ show_duke_extension_title("A-Enums", "Use Enumerations", "primary") }}
+{{ show_duke_extension_title("A-Enums", "Use enumerations", "primary") }}
 
 Use Java `enum`s, if applicable.
 
