@@ -53,7 +53,7 @@ In this iP increment, we can break the task into smaller steps, such as:
 
 {% call show_ai_guidance("General: Use AI to explore more.") %}
 
-When faced with design choices under time pressure, we normally implement the option we think is best, without spending time on alternatives. However, when using AI, we can explore multiple options quickly and easily. We can ask the AI to generate code for different design choices and compare them. This way, we can make more informed decisions and learn from the alternatives.
+Under time pressure, we normally implement the option we think is best without considering alternatives. With AI, we can generate and compare multiple options quickly, make more informed decisions, and learn from the alternatives.
 
 {% call show_example() %}
 In this iP increment, most would have used a `Task` class right away. However, we can ask the AI to generate code for the `mark` and `unmark` commands without using a `Task` class. We can then compare the two approaches.
