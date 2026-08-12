@@ -20,9 +20,9 @@ T | 1 | join sports club
 
 <box type="tip" seamless>
 
-**If you use file paths in your code,**
-* remember to use relative paths rather than absolute paths such as `C:\data`. If not, your app can cause unpredictable results when used on another computer.
-* remember to [specify file paths in an OS-independent way](https://www.sghill.net/how-do-i-make-cross-platform-file-paths-in-java.html). If not, your app might not work when used on a different OS.
+If you use file paths in your code:
+* **Use relative paths rather than absolute paths** such as `C:\data`. If not, your app can cause unpredictable results when used on another computer.
+* **[Specify file paths in an OS-independent way](https://www.sghill.net/how-do-i-make-cross-platform-file-paths-in-java.html)**. If not, your app might not work when used on a different OS.
 </box>
 
 <box type="important" seamless>

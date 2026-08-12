@@ -24,11 +24,11 @@ Refer to the tutorial [_Working with JAR files_ @SE-EDU/guides](https://se-educa
 
 <box type="info" seamless>
 
-**If your project is being revision-controlled using Git/GitHub**,<br>
+If your project is being revision-controlled using Git/GitHub:<br>
 
-* <span class="text-danger">do not commit the JAR file created</span>. Reason: We don't normally commit generated binary files into the repository.
+* <span class="text-danger">**Do not commit the JAR file created**</span>. Reason: We don't normally commit generated binary files into the repository.
 
-* Instead, make the JAR file available through a GitHub release:
+* Instead, **make the JAR file available through a GitHub release**:
 
   1. Go to your fork on GitHub and [create a new _release_](https://help.github.com/en/articles/creating-releases).
   1. In the page where you supply the details of the release,
