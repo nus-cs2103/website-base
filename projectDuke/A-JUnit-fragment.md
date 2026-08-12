@@ -14,7 +14,7 @@ Refer to the [_JUnit tutorial_ @SE-EDU/guides](https://se-education.org/guides/t
 
 {{ icon_tip }} If you haven't written JUnit tests before, you may want to write the first 1-2 JUnit tests by hand.
 
-Here's a series of prompts for ramping up the JUnit tests in the code base.
+Here's a series of prompts for ramping up the JUnit tests in the codebase.
 
 {% call mdblock() %}
 Add a JUnit test to test one of the methods in the codebase. Choose a method that lends itself well to testing through JUnit.
