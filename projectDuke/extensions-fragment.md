@@ -4,7 +4,7 @@
 <include boilerplate src="dukeExtensionTitle.md" var-extId="A-Classes"
          var-extHeading="Use a class to represent tasks"/>
 
-While it is possible to represent a task list as a multi-dimensional array containing <tooltip content="`String`, `int`, `boolean` etc.">primitive values</tooltip>, the more natural approach is to use a `Task` class to represent tasks.
+While you could represent a task list as a multi-dimensional array of <tooltip content="`String`, `int`, `boolean` etc.">primitive values</tooltip>, the more natural approach is to use a `Task` class.
 
 <panel type="seamless" header="Partial solution" minimized>
 
