@@ -427,7 +427,7 @@ Support keeping records of loans given/taken, %%e.g., money lent/owed to colleag
 <include boilerplate src="dukeExtensionTitle.md" var-extId="D-Places" var-extStyle="danger"
          var-extHeading="Support managing info about places"/>
 
-Support recording info about places, %%e.g., info about restaurants visited, for future reference%%.
+Support recording details about places, %%e.g., restaurants the user has visited, for future reference%%.
 </div>
 <div id="D-Trivia">
 <include boilerplate src="dukeExtensionTitle.md" var-extId="D-Trivia" var-extStyle="danger"
