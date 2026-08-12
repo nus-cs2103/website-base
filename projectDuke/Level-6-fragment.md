@@ -34,7 +34,7 @@ delete 3
 {% call show_ai_guidance("General: Get AI to review tests") %}
 
 * You can also ask different Codex models to review the `ui-test-plan.md` and suggest ways to improve it. Something overlooked by one model can be detected by another.
-* This is also a good place to use more powerful models. Crafting good test cases has long-term benefits, and is worth the extra token cost.
+* This is also a good place to use more powerful models. Crafting good test cases has long-term benefits and is worth the extra token cost.
 * You can go one step further and get other AI tools (Claude, Gemini, etc.) to review the test cases file too.
 
 {% endcall %}
