@@ -39,7 +39,7 @@ One possible way to break this increment into small steps is:
 1. Implement writing to the file. Ask for a minimal implementation for the <tooltip content="the execution path that doesn't encounter any error conditions">'happy path'</tooltip> only.
 1. Implement reading from the file. Happy path only.
 1. Add error handling.
-1. Ask to check if the two notes given (the one about the file path and the one about the file not existing) are covered.
+1. Ask the AI to check whether the two notes above (the one about file paths and the one about the file not existing) are covered.
 
 If you are confident that you know how to implement this increment yourself, you can ask for a more complete implementation in one go.
 
