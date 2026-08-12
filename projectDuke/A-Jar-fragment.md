@@ -1,6 +1,6 @@
 {% from "common/macros.njk" import ask_chatgpt, mdblock, show_ai_guidance, show_duke_extension_title with context %}
 
-{{ show_duke_extension_title("A-Jar", "Package the App as a JAR file", "primary") }}
+{{ show_duke_extension_title("A-Jar", "Package the app as a JAR file", "primary") }}
 
 Package the app as an executable JAR file so that it can be distributed easily.
 
