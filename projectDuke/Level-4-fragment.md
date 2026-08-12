@@ -77,7 +77,6 @@ Recent AI coding harnesses already do some checking of their own work. However, 
 {% call mdblock() %}
 
 Create a project-specific skill named `test-ui`, as follows.
-* The skill should run the program and test it with a set of commands, and check if the output matches the expected output.
 * The skill should take as input a list of commands and a list of expected outputs, and run the program with each command, checking if the output matches the expected output.
 * The list of test cases (and other relevant information) should be recorded in `test/ui-test-plan.md` file.
 * Each test case should specify the aim of the test case, inputs, and the expected output.
