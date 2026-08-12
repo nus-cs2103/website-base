@@ -76,7 +76,7 @@ bye
 <div id="increments_summary">
 
 The project consists of the following _increments_:
-* **Levels**: A series of features, meant to be added to your chatbot in the given order, although some can be skipped. These have been named `Level 0` to `Level 10` to indicate how each makes the product progressively "level up".
+* **Levels**: A series of features to add to your chatbot in the given order; some can be skipped. These have been named `Level 0` to `Level 10` to indicate how each makes the product progressively "level up".
 * **Extensions:**
   * ++<span class="badge rounded-pill bg-primary">Category A</span>++ These are internal/feature enhancements meant to help you practice a specific Java or an SE technique.
   * ++<span class="badge rounded-pill bg-info">Category B</span>++ These are enhancements related to task tracking.
