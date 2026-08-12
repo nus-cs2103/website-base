@@ -188,7 +188,7 @@ list
 {% endcall %}
 As before, examine the code, and commit.
 
-**Step 3: Implement the `A-Classes` extension.**
+**Step 3: Implement the `A-Classes` extension**
 
 {% call mdblock() %}
 

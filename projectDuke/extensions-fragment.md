@@ -326,7 +326,7 @@ Allow more flexibility in search, %%e.g., find items even if the keyword matches
 
 Provide a way to easily edit item details, %%e.g., change the end time of an event without changing anything else%%.
 
-**Minimal**: the ability to update an existing item without having to delete it first
+**Minimal**: the ability to update an existing item without having to delete it first.
 
 Other ideas:
 * the ability to _clone_ items (to easily create new items based on existing items)
