@@ -403,47 +403,47 @@ Other ideas:
 <include boilerplate src="dukeExtensionTitle.md" var-extId="D-Contacts" var-extStyle="danger"
          var-extHeading="Support managing contacts"/>
 
-Support managing info about contacts, %%e.g., details of friends%%
+Support managing info about contacts, %%e.g., details of friends%%.
 </div>
 <div id="D-Notes">
 <include boilerplate src="dukeExtensionTitle.md" var-extId="D-Notes" var-extStyle="danger"
          var-extHeading="Support managing notes"/>
 
-Support managing info about small snippets of textual information the user wants to record, %%e.g., one's own waist size, a name of a movie that the user wants to remember%%
+Support managing info about small snippets of textual information the user wants to record, %%e.g., one's own waist size, a name of a movie that the user wants to remember%%.
 </div>
 <div id="D-Expenses">
 <include boilerplate src="dukeExtensionTitle.md" var-extId="D-Expenses" var-extStyle="danger"
          var-extHeading="Support managing expenses"/>
 
-Support managing info about expenses, %%e.g., the amounts spent on food, books, transport, etc.%%
+Support managing info about expenses, %%e.g., the amounts spent on food, books, transport, etc.%%.
 </div>
 <div id="D-Loans">
 <include boilerplate src="dukeExtensionTitle.md" var-extId="D-Loans" var-extStyle="danger"
          var-extHeading="Support managing loan records"/>
 
-Support keeping records of loans given/taken, %%e.g., money lent/owed to colleagues/friends%%
+Support keeping records of loans given/taken, %%e.g., money lent/owed to colleagues/friends%%.
 </div>
 <div id="D-Places">
 <include boilerplate src="dukeExtensionTitle.md" var-extId="D-Places" var-extStyle="danger"
          var-extHeading="Support managing info about places"/>
 
-Support recording info about places, %%e.g., info about restaurants visited, for future reference%%
+Support recording info about places, %%e.g., info about restaurants visited, for future reference%%.
 </div>
 <div id="D-Trivia">
 <include boilerplate src="dukeExtensionTitle.md" var-extId="D-Trivia" var-extStyle="danger"
          var-extHeading="Support managing trivia"/>
 
-Provide the ability to learn/memorize things, %%e.g., learn vocabulary, answers to questions%%
+Provide the ability to learn/memorize things, %%e.g., learn vocabulary, answers to questions%%.
 </div>
 <div id="D-Clients">
 <include boilerplate src="dukeExtensionTitle.md" var-extId="D-Clients" var-extStyle="danger"
          var-extHeading="Support managing client info"/>
 
-Support managing info about clients, %%e.g., for an insurance agent to keep track of clients%%
+Support managing info about clients, %%e.g., for an insurance agent to keep track of clients%%.
 </div>
 <div id="D-Merchandise">
 <include boilerplate src="dukeExtensionTitle.md" var-extId="D-Merchandise" var-extStyle="danger"
          var-extHeading="Support managing merchandise info"/>
 
-Support managing info about merchandise, %%e.g., for a property agent to keep track of properties, or for a stamp collector to keep track of items in the collection%%
+Support managing info about merchandise, %%e.g., for a property agent to keep track of properties, or for a stamp collector to keep track of items in the collection%%.
 </div>
