@@ -15,7 +15,7 @@
    <box type="info" seamless>
 
    AI agents read the information in `AGENTS.md`, which is included in their context.<br>
-   In this specific case, things you can tweak:
+   In this case, you can tweak the following:
 
    * Fill in the parts marked as `[to be filled]`
    * If using a Mac, ensure the instructions about switching to the correct Java version match your Java setup.
