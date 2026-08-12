@@ -90,7 +90,7 @@ When doing a project like the iP, we can create a skill to generate a webpage th
    {% call mdblock(indented_level=1) %}
    Use the /present-changes-visually skill
    {% endcall %}
-   This will create a webpage comparing the current uncommitted changes to the last committed version of the code. The file will be created as `_temp/visual-diff.html`.<br>
+   This will create `_temp/visual-diff.html`, a webpage comparing the current uncommitted changes with the last committed version of the code.<br>
    The format of the page should look similar to the screenshot below:
 
 <div class="indented-level1">
