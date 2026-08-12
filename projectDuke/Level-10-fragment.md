@@ -7,7 +7,7 @@
 
 ### Level 10. GUI
 
-Add a GUI to the chatbot. Use the JavaFX technology to implement the GUI.
+Add a GUI to the chatbot, using JavaFX.
 
 <br>
 <br>
