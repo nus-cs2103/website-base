@@ -318,7 +318,7 @@ Support more natural date formats %%e.g., `Mon` in a user command can be interpr
 <include boilerplate src="dukeExtensionTitle.md" var-extId="C-BetterSearch" var-extStyle="success"
          var-extHeading="More flexibility in searching for items"/>
 
-All more flexibility in search %%e.g., find items even if the keyword matches the item only partially%%.
+Allow more flexibility in search %%e.g., find items even if the keyword matches the item only partially%%.
 </div>
 <div id="C-Update">
 <include boilerplate src="dukeExtensionTitle.md" var-extId="C-Update" var-extStyle="success"
