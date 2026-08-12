@@ -258,7 +258,7 @@ Provide support for managing tasks that need to be done within a certain period 
 <include boilerplate src="dukeExtensionTitle.md" var-extId="B-FixedDurationTasks" var-extStyle="info"
          var-extHeading="Unscheduled tasks with a fixed duration"/>
 
-Provide support for managing tasks that takes a fixed amount of time but does not have a fixed start/end time %%e.g., reading the sales report (needs 2 hours)%%.
+Provide support for managing tasks that take a fixed amount of time but do not have a fixed start/end time %%e.g., reading the sales report (needs 2 hours)%%.
 </div><hr>
 <div id="B-Reminders">
 <include boilerplate src="dukeExtensionTitle.md" var-extId="B-Reminders" var-extStyle="info"
