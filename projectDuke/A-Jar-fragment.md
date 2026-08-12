@@ -28,7 +28,7 @@ Refer to the tutorial [_Working with JAR files_ @SE-EDU/guides](https://se-educa
 
 * <span class="text-danger">do not commit the JAR file created</span>. Reason: We don't normally commit generated binary files into the repository.
 
-* Instead, you can make the JAR file available (via the GitHub release mechanism) in the following manner.
+* Instead, make the JAR file available through a GitHub release:
 
   1. Go to your fork on GitHub and [create a new _release_](https://help.github.com/en/articles/creating-releases).
   1. In the page where you supply the details of the release,
