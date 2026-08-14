@@ -1,5 +1,5 @@
 {% from "common/topics.njk" import panopto, topic_followup, topic_preamble with context %}
-{% from "common/macros.njk" import embed_topic, slugify with context %}
+{% from "common/macros.njk" import embed_topic, slugify, show_ai_impact with context %}
 <!-- ==================================================================================================== -->
                                          Misc
 <!-- ==================================================================================================== -->
@@ -485,7 +485,7 @@ As you will be updating documentation of your project soon, here are some guidel
 <!-- ==================================================================================================== -->
                                     Testing
 <!-- ==================================================================================================== -->
-<div id="{{ slugify("Automated Testing of Text UIs") }}">
+<div id="{{ slugify("Intro to Automated Testing") }}">
 
 As you start adding features to your project iteratively, you'll need **a way to detect if the new code breaks the existing code**. Next, let's learn a rather simple way to do that using a certain type of testing (we'll be learning more sophisticated methods in later weeks).
 
@@ -497,6 +497,16 @@ As you start adding features to your project iteratively, you'll need **a way to
 **Soon, you will start writing automated Java tests for your project**.
 
 First, let us learn such testing fits into an aspect called _developer testing_ of the testing landscape.
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="followup-testing-testautomation-testingtextuis">
+{% call show_ai_impact("AI and testing") %}
+**AI greatly reduces the effort needed to automate tests.** Drafting test cases, writing test code, and setting up supporting mechanisms now take much less time. As a result, "we did not have time to write tests" is a much weaker excuse.
+
+**However, an AI agent cannot know the expected behavior unless someone defines it.** This part of a test case must come from someone who understands what the software should do. If an agent writes both the software and its tests, it may make the same mistake in both. All the tests may then pass without proving that the software is correct.
+
+**Regression testing becomes even more valuable.** AI agents can make large changes quickly, but they do not automatically know which behaviors matter most. An automated regression test suite gives you more confidence when accepting changes you did not write yourself -- and such changes are now being made more frequently.
+{% endcall %}
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("Unit Testing") }}">

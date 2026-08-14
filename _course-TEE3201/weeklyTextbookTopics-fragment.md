@@ -80,7 +80,7 @@
       {location: ["teamwork", "teamStructures"]},
 {week: "7"},
   {name: "Testing"},
-    {heading: "Automated Testing of Text UIs"},
+    {heading: "Intro to Automated Testing"},
       {location: ["testing", "introduction", "what"], panopto: "48b60ad5-387d-4d2d-a82a-ac0c0091a705"},
       {location: ["testing", "testingTypes", "regressionTesting", "what"], panopto: "fc0416bd-b376-417d-9e45-ac0c00a53312"},
       {location: ["testing", "testAutomation", "what"]},

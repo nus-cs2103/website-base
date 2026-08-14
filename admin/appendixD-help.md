@@ -9,11 +9,6 @@
 
 %%{{ icon_info }} This guide is mostly about getting tech help, but it also applies to getting clarifications on course topics too, e.g., what is the difference between _refactoring_ and _rewriting_?%%
 
-<span class="float-end">
-
-<pic eager src="{{baseUrl}}/admin/images/the good reasons to get home early.png" width="300"></pic><br>
-</span>
-
 **Keep in mind that instructors don't have ready solutions to all technical problems**. Unlike tutorial questions for which instructors have model solutions, given the complexity of the industry tools we use (Gradle, GitHub, Git, ...) and the rapid pace at which they are updated, instructors don't have ready solutions to most technical problems you face in this course. The only realistic way to solve those problems at a large scale is crowdsourcing, i.e., someone else who faced a similar problem might know how to fix it.
 
 
@@ -31,11 +26,10 @@
 
 * **Get your team to meet for a weekly work-together session**. When you do course tasks together, it is easy to compare notes with each other and figure out what deviation is causing the problem. That is, crowdsource your team first.
 
+* **Ask AI tools such as ChatGPT**. If the question is not too specific to the course, they might be able to give you a solution. It will also help you hone your prompt engineering skills and keep you abreast of the current capabilities of such tools.
+
 * **Search**: It is very likely the answer already exists somewhere in cyberspace. Almost every programming-related question has been answered in places like Stack Overflow. Don't give an opportunity for someone to ask you to [STFW](http://www.jibble.org/stfw/).
   Pay attention to the error message you encounter. Sometimes it also contains hints as to how to fix the problem. Even if not, a web search on the error message is a good starting point.<br>
-  <pic eager src="{{baseUrl}}/admin/images/how to google it.png" width="600"/>
-
-* **Ask AI tools such as ChatGPT**. If the question is not too specific to the course, they might be able to give you a solution. It will also help you hone your prompt engineering skills and keep you abreast of the current capabilities of such tools.
 
 * **Ask in the [course forum]({{ url_forum }})**:
   <box type="tip" seamless>

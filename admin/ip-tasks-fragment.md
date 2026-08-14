@@ -602,7 +602,7 @@ If your fork doesn't have the `add-gradle-support` branch (i.e., you did not cop
 <div tags="m--cs2103">
 
 * As before, we recommend (but do not require) that each increment be done as a separate branch and merged to the `master` branch when fully done.
-* #r#Use You are required to do **at least two** of the following optional increments, and you should **use AI** heaviliy to do them.## Even if you have been hand-coding everything until now, this is a good point to start using AI-assisted coding.
+* #r#You are required to do **at least two** of the following optional increments, and you should **use AI** heavily to do them.## Even if you have been hand-coding everything until now, this is a good point to start using AI-assisted coding.
 
 {% call show_ai_guidance("Add optional enhancements") %}
 {{ icon_tip }} **When appropriate, use AI as a collaborator and idea generator.** Instead of simply telling AI what to do, ask AI for ideas on how to proceed. But don't outsource thinking to the AI entirely. Your creativity is what will make your iP different from others -- after all, they are using the same AI tools as you.
@@ -870,7 +870,7 @@ Pick 20 PRs from {{ url_course_org }}/ip/pulls randomly.
 Compare their code to my code in this repo (`master` branch). Point out up to 10 cases that differ from mine in notable ways where examining the difference could be potentially instructive to me. Present your results by doing something along the lines of /present-changes-visually skill to generate a page `_temp/interesting-differences-in-PRs.html` containing these differences (include explanations as well).
 
 For each case:
-* Aask me which one is the better choice and why (or a more pointed question specific to the code).
+* Ask me which one is the better choice and why (or a more pointed question specific to the code).
 * After I give my opinion, give me yours.
 {% endset %}
 

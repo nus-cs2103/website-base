@@ -267,6 +267,19 @@ Your GitHub username : <cv-placeholder-input name="username" appearance="underli
 {% endmacro %}
 <!-- ============================================================ -->
 
+{% macro show_ai_impact(heading)%}
+<box type="info" theme="primary" icon=":fas-robot:"seamless>
+<div slot="header">
+
+**<span style="color: #0c1ff6;">AI's impact on &raquo;</span> {{ heading }}**
+</div>
+
+{{ caller() }}
+</box>
+{% endmacro %}
+
+<!-- ============================================================ -->
+
 {#
   mdblock -- renders a block of Markdown inside a bordered box, with a
   'Copy as Markdown' button that puts the original Markdown on the clipboard.

@@ -101,7 +101,7 @@
       {location: ["oop", "classes", "enumerations"]},
       {location: ["cppToJava", "misc", "enums"]},
   {name: "Testing"},
-    {heading: "Automated Testing of Text UIs"},
+    {heading: "Intro to Automated Testing"},
       {location: ["testing", "introduction", "what"]},
       {location: ["testing", "testingTypes", "regressionTesting", "what"]},
       {location: ["testing", "testAutomation", "what"]},

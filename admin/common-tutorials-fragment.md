@@ -94,7 +94,7 @@ Alternatively, you can use PR labels (if any) to filter PRs/Issues.<br>
 
 {% call show_ai_guidance("Review some peer PRs") %}
 
-If you have been using AI to write most of your iP code, you are not likey to be familiar with the coding standard yourself. So, it is worthwhile to manually scan the code to spot any coding standards before asking AI to help with this task.
+If you have been using AI to write most of your iP code, you are not likely to be familiar with the coding standard yourself. So, it is worthwhile to manually scan the code to spot any coding standard violations before asking AI to help with this task.
 
 {% call mdblock() %}
 

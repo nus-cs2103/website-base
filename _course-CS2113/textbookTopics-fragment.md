@@ -1924,7 +1924,7 @@
               {name: "basic", heading: "Inheritance (Basic)", priority: "2"},
               {name: "objectClass", heading: "The Object Class", priority: "2"},
               {name: "interfaces", heading: "Interfaces", priority: "3"},
-              {name: "polymorphism", heading: "Polymorhism", priority: "3"},
+              {name: "polymorphism", heading: "Polymorphism", priority: "3"},
               {name: "abstractClassesAndMethods", heading: "Abstract Classes and Methods", priority: "3"}
             ]
           }

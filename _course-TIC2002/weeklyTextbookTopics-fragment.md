@@ -81,7 +81,7 @@
       {location: ["oop", "polymorphism", "how"]},
       {location: ["cppToJava", "inheritance", "polymorphism"], panopto: "889da1bc-5c73-4371-a2e5-ac2800ddc5ef"},
   {name: "Testing"},
-    {heading: "Automated Testing of Text UIs"},
+    {heading: "Intro to Automated Testing"},
       {location: ["testing", "introduction", "what"], panopto: "48b60ad5-387d-4d2d-a82a-ac0c0091a705"},
       {location: ["testing", "testingTypes", "regressionTesting", "what"], panopto: "fc0416bd-b376-417d-9e45-ac0c00a53312"},
       {location: ["testing", "testAutomation", "what"]},

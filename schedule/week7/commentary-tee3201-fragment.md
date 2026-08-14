@@ -1,5 +1,5 @@
 {% from "common/topics.njk" import panopto, slugify, topic_followup, topic_preamble with context %}
-{% call topic_preamble("Automated Testing of Text UIs", reuse=false) %}
+{% call topic_preamble("Intro to Automated Testing", reuse=false) %}
 As your program gets bigger, manual testing becomes a hassle. However, not testing the code sufficiently and often enough can cause the program to have bugs without you realizing it.
 
 **Let us learn some concepts related to automating the tasks of testing.**

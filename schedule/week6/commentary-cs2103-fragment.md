@@ -1,4 +1,5 @@
 {% from "common/topics.njk" import panopto, slugify, topic_followup, topic_preamble with context %}
+{% from "common/macros.njk" import show_ai_impact with context %}
 
 
 <!-- ---------------------------------------------------------------------------- -->
@@ -22,8 +23,13 @@ As the tP is bigger than the iP, it's not possible to work with its entire desig
 <!-- ---------------------------------------------------------------------------- -->
 {% call topic_preamble("IDEs: Intermediate Features", reuse=false) %}
 
-It's time to push our IDEs to do more for us. The features given below can often make the IDEs worth the trouble.
+{% call show_ai_impact("IDEs") %}
+**AI changes what you use an IDE for, not whether you need one.**
 
+* **The features that help you write code matter less now.** Auto-completion, code snippets, and memorized shortcuts save less time when the code arrives from an agent all at once. Typing code fast is no longer what makes a developer fast.
+* **The features that help you read and check code matter more.** Jumping to a definition, finding every place a method is used, stepping through a debugger, reading a diff before you accept it: this is how you check work you did not write. An agent can tell you what its code is meant to do. Only running it will tell you what it actually does.
+* **So an IDE is turning into a place where you inspect code, not just a place where you write it.** That makes the navigation and debugging features worth learning well, even if an agent does most of the typing.
+{% endcall %}
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
 {% call topic_preamble("Logging", reuse=false) %}

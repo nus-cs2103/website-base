@@ -4,7 +4,7 @@
 {{ topic_preamble("OOP + Java: Polymorphism") }}
 {{ topic_preamble("Java: Constants") }}
 {{ topic_preamble("OOP + Java: Enumerations") }}
-{{ topic_preamble("Automated Testing of Text UIs") }}
+{{ topic_preamble("Intro to Automated Testing") }}
 {{ topic_preamble("Code Quality: Readability") }}
 {{ topic_preamble("Code Quality: Refactoring") }}
 {{ topic_preamble("RCS: Creating Pull Requests") }}

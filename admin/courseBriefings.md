@@ -52,24 +52,23 @@ This week's briefing videos start with a detour.
 ---
 
 <span class="text-info">****0. Detour: SDLC Basics****</span>: Watch the following video covering the [week 2 topic 'SDLC Process Models Basics']({{ baseUrl }}/schedule/week2/topics.html#W2-2), as the rest of the course briefing refers to those concepts.
-{{ panopto(desc="6 mins -- %%Detour: **SDLC Basics**%%", "84a0119c-8f76-46fc-a256-b0f90098e59f", start_week="2") }}
+{{ panopto(desc="6 mins -- %%Detour: **SDLC Basics**%%", "84a0119c-8f76-46fc-a256-b0f90098e59f", start_week="1") }}
 
 ---
 </div>
 
-
 <span class="text-info">****1. Iterative + Brownfield = ???****</span>: How the iterative and brownfield approach used in the course affects your learning experience.
-{{ panopto(desc="6 mins", "e074cbed-2afb-46f6-81bc-b0fb01057eb8", start_week="2") }}
+{{ panopto(desc="6 mins", "c97a1f22-4236-4d17-b004-b4a5005841cb", start_week="1") }}
 
 <span class="text-info">****2. Challenges and Solutions****</span>: How to tackle three challenges you will face in the course: _information overload_, _workload_, and _technical problems_.
-{{ panopto(desc="11 mins", "bfea6b66-ecf1-4846-9f13-b26500800818", start_week="2") }}
+{{ panopto(desc="16 mins", "70bdbe1a-c372-48f4-b9b5-b4a40112f693", start_week="1") }}
 
 ---
 
 <span class="text-info">****3. Week 1→2 Briefing****</span> (Week 1 Recap + Week 2 Preview): This video recaps Week 1 and gives a preview of what you need to do in Week 2.<br>
 %%Note: While weekly briefings are normally done in hybrid mode, this week's briefing is released as a pre-recorded video so you can start week 2 tasks early.%%
 
-{{ panopto(desc="4 mins", "8548228b-dc17-4eaa-8aa2-b335010eea89", start_week="2") }}
+{{ panopto(desc="6 mins", "7418be6b-cece-43df-8858-b4a401197f57", start_week="1") }}
 </div>
 </panel>
 
