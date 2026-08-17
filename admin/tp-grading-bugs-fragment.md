@@ -60,9 +60,9 @@ These are considered _functionality bugs_:<br>
 
 **These are considered DG bugs (if they hinder the reader):**
 
-<panel type="seamless" header="Those given as possible UG bugs ...">
-<include src="tp-grading-bugs-fragment.md#ugBugs" />
-</panel>
+Those mentioned elsewhere as possible UG bugs ...
+{{ embed_topic("tp-grading-bugs-fragment.md#ugBugs", "Admin " + icon_embedding + " tP Grading → **Possible UG Bugs**", "3", indent="1") }}
+
 
 <span tags="m--cs2103" id="architectureDiagramBugs">
 

@@ -10,23 +10,40 @@
 
 #### When to form teams
 {% set session = "tutorial" %}
-Teams will be formed around week 3. We'll let you know more details closer to the time.
+**Teams will be formed around Weeks 2-3.** We'll let you know more details closer to the time.
 
-#### Team size
+#### Team composition constraints
 
-* The default ==team size is five==.
+**We allow some freedom in choosing team members**, subject to these constraints:
 
-#### Team composition
+* **The default ==team size is five==.**
+* **All team members should be in the same tutorial.** ==Delay forming teams until your place in a tutorial is confirmed.== We do not allow changing tutorials to team up with your preferred teammates.
+* **Teams of a single nationality are not allowed** unless the only language common among all team members is English, e.g., an all-Singaporean team that includes both Chinese and Malay students. %%Rationale: to train you to work in multicultural teams and to ensure that English is used for all project communication.%%
+* **No more than one exchange student per team.** %%Rationale: to increase interaction between exchange students and NUS students.%%{% if cs2113 %}
+* **Same-gender teams are discouraged but allowed.** %%Rationale: to train you for mixed-gender work environments.%%{% endif %}
+* **If you prefer not to form teams yourselves**, don't worry; we'll place you in a team.<br>
+  **If you do not have enough team members**, we'll help fill the vacancies.
+* **We may modify teams** when circumstances require it. You cannot object to such changes. Staying with your preferred team is not guaranteed.
 
-* **We allow some freedom in choosing team members**, subject to these constraints:
-  * **All team members should be in the same tutorial.** ==Delay forming teams until your place in a tutorial is confirmed.== We do not allow changing tutorials to team up with your preferred teammates.
-  * **Teams of a single nationality are not allowed** unless the only language common among all team members is English, e.g., an all-Singaporean team that includes both Chinese and Malay students. %%Rationale: to train you to work in multicultural teams and to ensure that English is used for all project communication.%%
-  * **No more than one exchange student per team.** %%Rationale: to increase interaction between exchange students and NUS students.%%
-  * **Same-gender teams are discouraged but allowed.** %%Rationale: to train you for mixed-gender work environments.%%
-* **If you prefer not to form teams yourselves**, not to worry; we'll put you in a team.
-* **We may have to modify teams** when circumstances call for it. There is no avenue for you to object. Staying with your preferred team is not guaranteed.
+{% if cs2103 %}<div id="submitting-formed-teams">
 
+#### How to form teams
+
+* **You may form teams of up to five members** on your own. You are #r#not allowed to form six-person teams on your own##.
+* **You may form partial teams** (i.e., with two, three, or four members). We'll add more members to fill the remaining vacancies.
+* **The teaching team can add more members to your team**, up to a team size of six. Therefore, even if you form a five-person team, we may assign you a sixth member.
+* #r#**All five-member teams you form yourselves must comply with the nationality constraint**## stated above unless it is impossible for you to do so (i.e., all remaining students in your tutorial group do not satisfy the constraint).<br>
+  Partial teams (i.e., with four or fewer members) are encouraged to comply with the nationality constraint to reduce the likelihood that the teaching team will dissolve them.
+* **Ensure you have the consent of all proposed team members** before submitting the team details.
+* Submission:
+  * **==Submit your team details through the Canvas form==**, which will open early in Week 2. We'll announce it when it opens.
+  * Only one person need to submit on behalf of the entire team. Coordinate among the team members to avoid double-submissions.
+  * Please ensure the team member names you specify match their name as shown in Canvas (reason: these submissions are processed by a script).
+  * {{ faq }} What if there is a change after we submit the team details?<br>
+    **A:** The same person should resubmit the form with the updated details (Canvas does not allow you to edit previous submissions).
 </div>
+{% endif %}
+
 <div id="teamIdFormat">
 
 #### Team ID
@@ -54,6 +71,7 @@ Teams will be formed around week 3. We'll let you know more details closer to th
 {{ lecture_name }} but well ahead of the deadline for weekly tasks. %%Reason: _After_ the {{ lecture_name_short }} → so that you've been briefed about upcoming project tasks; _well ahead of_ the deadline → so that you can use the meeting to plan or do weekly project tasks.%%<br>
     But it's OK to choose a time slot outside that recommended period if you cannot find a suitable time within it.
 
+</div>
 </div>
 
 {% endcall %}

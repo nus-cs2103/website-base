@@ -36,7 +36,8 @@ Associate Professor (Education)<br>
 
 ### **Michael** D. Adams
 
-**Co-Lecturer**<br>
+{{ show_role("Co-Lecturer") }}
+
 %%:fas-envelope:%% `adamsmd`[at]`nus.edu.sg`<br>
 %%:fas-map-marker-alt:%% COM3‐02‐47<br>
 %%:fas-home:%% https://michaeldadams.org | %%:fab-github:%% [@adamsmd](https://github.com/adamsmd)
@@ -117,6 +118,26 @@ Senior Lecturer<br>
 
 
 -->
+
+<div id="Anis" class="container">
+  <div class="row bt-2">
+    <div class="col-3">
+
+<img src="{{ url_course_gihub_io }}/tutor-photos/anisyusof-sc.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
+    </div>
+    <div class="col">
+
+### **Anis** Bin Yusof
+
+{{ show_role("Co-Lecturer") }}
+
+Lecturer<br>
+%%:fas-envelope:%% `dcsay`[at]`nus.edu.sg`<br>
+%%:fab-github:%% [@anisyusof-sc](https://github.com/anisyusof-sc)
+    </div>
+  </div>
+</div>
+
 -----------------------------
 
 <div id="Tzer-Bin" class="container">

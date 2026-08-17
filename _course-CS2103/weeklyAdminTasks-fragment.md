@@ -10,7 +10,8 @@ week1: [
 ],
 week2: [
   {id: 'submit_first_post_lecture_quiz', deadline: get_date(date_w2_start, 4, time=time_lecture_start), graded: true},
-  {id: 'get_connect_with_comm_channels'}
+  {id: 'get_connect_with_comm_channels'},
+  {id: 'start_forming_teams'}
 ],
 week3: [
   {id: 'submit_post_lecture_quiz', graded: true},

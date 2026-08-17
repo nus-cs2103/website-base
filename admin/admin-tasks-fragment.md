@@ -116,6 +116,15 @@ Installing and configuring Git is covered in {{ show_gm_lesson_link("gitPrep", "
 {{ embed_topic("tools.md#communication", "Admin " + icon_embedding + " **Tools - Communication**", "3", indent="1") }}
 </div>
 {#====================================================================================================================#}
+<span id="heading_start_forming_teams">[Optional] Start forming teams for the team project</span>
+<div id="desc_start_forming_teams">
+
+
+* If you wish to form teams on your own, you can do so, as given below:
+
+{{ embed_topic(baseUrl + "/admin/tp-teams.md#main", "Admin " + icon_embedding + " **tP → Forming Teams**", "3", indent="1") }}
+</div>
+{#====================================================================================================================#}
 <span id="heading_submit_post_lecture_quiz">Submit weekly quiz</span>
 <div id="desc_submit_post_lecture_quiz">
 
