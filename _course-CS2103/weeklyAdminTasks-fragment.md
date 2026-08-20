@@ -14,8 +14,7 @@ week2: [
   {id: 'start_forming_teams'}
 ],
 week3: [
-  {id: 'submit_post_lecture_quiz', graded: true},
-  {id: 'form_teams'}
+  {id: 'submit_post_lecture_quiz', graded: true}
 ],
 week4: [
   {id: 'accept_github_invitations', graded: true},

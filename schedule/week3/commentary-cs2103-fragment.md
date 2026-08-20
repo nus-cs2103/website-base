@@ -15,6 +15,7 @@ Next, we have a few more Java topics that you need as you move from a 'programmi
 
 {{ topic_preamble("Code Quality: Coding Standards") }}
 {{ topic_preamble("codeQuality-introduction-basic") }}
+{{ topic_followup("Code Quality: Coding Standards") }}
 <!-- ---------------------------------------------------------------------------- -->
 {% call topic_preamble("Developer Testing", reuse=false) %}
 

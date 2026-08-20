@@ -31,7 +31,8 @@ That is, you either get full marks, or less than half the marks for each aspect.
 * **More than 90% of all deliverables** have been completed in the final version of the iP submitted.<br>
     Requirements marked as <span class="badge rounded-pill bg-secondary">optional</span> or <span class="badge rounded-pill bg-secondary">if-applicable</span> are not counted when calculating the percentage of deliverables.<br>
     When a requirement specifies a `minimal` version, reaching that minimal version is enough for it to be counted for grading. However, we recommend you go beyond the minimal version; the farther you go, the more practice you will get.{% if cs2103 %}
-* **Has a GUI** that is at least as good as the one reached by !!part 4!! of the JavaFX tutorial (i.e., features covered in part 5 are not required) and <tooltip content="i.e., a user can use the chatbot via the GUI">fit for purpose</tooltip>.{% endif %}
+* **Has a GUI** that is at least as good as the one reached by !!part 4!! of the JavaFX tutorial (i.e., features covered in part 5 are not required) and <tooltip content="i.e., a user can use the chatbot via the GUI">fit for purpose</tooltip>.
+* **Has done at least two <span class="badge rounded-pill bg-secondary">optional</span> increments using AI assistance**, as stated in [Week 6 iP instructions]({{baseUrl}}/admin/ip-w6.html).{% endif %}
 * **No major bugs.**
 * **Reasonable use of OOP**, e.g., at least some use of inheritance, with code divided into classes in a sensible way (e.g., `Ui`, `Storage`, `Parser`, `Todo`, `Deadline`, `Event`, etc.).
 * **At least half of the public methods/classes have Javadoc comments.**

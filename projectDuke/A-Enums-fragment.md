@@ -2,7 +2,7 @@
 
 {{ show_duke_extension_title("A-Enums", "Use enumerations", "primary") }}
 
-Use Java `enum`s, if applicable.
+Use Java `enum`s, if applicable (i.e., if `enum`s a natural fit for somewhere your current code).
 
 {% call show_ai_guidance("A-Enums") %}
 

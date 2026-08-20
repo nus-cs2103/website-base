@@ -69,6 +69,11 @@
 
 {{ embed_topic("courseExpectations.md#use-of-ai", "Admin " + icon_embedding + " Course Expectations → **Use of AI**", "1", indent=1, type="codex") }}
 
+<div class="indented-level1">
+
+{{ faq }} **Wait. So, do we hand-code the iP or use the prompts given?**<br>
+**A:** It's your decision, as given in the panel above. If you are not sure, you can start with level <span class="badge rounded-pill bg-primary fw-bold text-light m-1">AI-2</span> of AI use) and move to higher levels only when you feel it is justified.
+</div>
 </div>
 <div id="volatile-requirements">
 
@@ -530,7 +535,7 @@ commit id: "m6"
 
 <box type="info" seamless>
 
-If your code already has Javadoc comments for all public methods, you can simply add the `A-JavaDoc` tag to the current commit and skip the `A-JavaDoc` increment.
+If your code already has Javadoc comments for all public methods, you can simply add the `A-JavaDoc` tag to the current commit -- no need to create a separate branch for it as stated above.
 </box>
 </div>
 </div>
@@ -922,7 +927,7 @@ This activity is worth `2x2=4` participation points.
      %%Reason: this prevents data files created by other JAR files you tested earlier from interfering with the current JAR file.%%{ texts="['5.1','5.2','5.3','5.4']" }
    * Open a terminal and ==navigate to the folder== where you put the JAR file (e.g., `cd smoke-test/ip1`)<br>
      %%Reason: data files will be created relative to the folder the terminal is currently in.%%
-   * {{ icon_important_big_red }} Run the ==`java -version` command== to confirm you are using Java 17.{% if cs2103 %}<br>
+   * {{ icon_important_big_red }} Run the ==`java -version` command== to confirm you are using Java {{ java_version }}.{% if cs2103 %}<br>
       :fab-apple: Mac users, confirm you are using the exact Java distribution we have prescribed [here](programmingLanguages.md).{% endif %}
    * Run the JAR file using the ==`java -jar "{file_name}"` command== (rather than double-clicking) in the same terminal.<br>
      ```
@@ -1025,9 +1030,9 @@ If you added the `Ui.png` correctly and set up the product website correctly, ==
    * Create the JAR file {% if cs2103%}[using Gradle](https://se-education.org/guides/tutorials/gradle.html) -- this needs to be a [fat JAR file](https://se-education.org/guides/tutorials/jar.html#fat-jar-files:~:text=given%20here.-,Fat%20JAR%20files,-A%20normal%20JAR) (hence, it's best created [using Gradle's shadow plugin](https://se-education.org/guides/tutorials/jar.html#:~:text=Creating-,JAR%20files,With%20Gradle,-With%20IntelliJ%20IDEA)).{% else %}in one of these ways:
      * If you have added a GUI or using third-party libraries: [use Gradle](https://se-education.org/guides/tutorials/gradle.html).
      * Else: you can use IntelliJ.{% endif %}
-   * The JAR file should be ==cross-platform and should work on a computer that has Java 17==. To avoid version compatibility issues, we strongly recommend the following approach:
+   * The JAR file should be ==cross-platform and should work on a computer that has Java {{ java_version }}==. To avoid version compatibility issues, we strongly recommend the following approach:
       * Open a terminal window and navigate to the root of your project folder. {{ numbers_roman }}
-      * Run the `java -version` command to confirm the terminal is using Java 17.
+      * Run the `java -version` command to confirm the terminal is using Java {{ java_version }}.
       * Run the `./gradlew clean shadowJar` command to create the JAR file.
 3. **Do the following [_smoke tests_](https://en.wikipedia.org/wiki/Smoke_testing_(software))** to ensure the JAR file works %%(reason: a similar flow will be used when grading your iP)%%.<br>
    * Copy the JAR file to an empty folder and test it from there. This should surface issues with hard-coded file paths.<br>
@@ -1117,6 +1122,58 @@ Regardless of the exact extension you added, the tag name should be `BCD-Extensi
 {{ icon_tip }} You may want to pick an extension that is potentially relevant to your tP so that the code can be reused in the tP later, if possible.
 
 </div>
+
+{% call show_ai_guidance("Specify before implementing") %}
+You can use this increment to experiment with **a more 'specification-heavy' approach, aiming to separate "decide what it should do" from "make code changes."**
+
+Here is a sequence of sample prompts:
+
+**1. Disover and clarify -- no code.**
+{% call mdblock() %}
+Enter plan mode. I want to add this feature:
+
+[feature request]
+
+Inspect the current project and ask me every product decision that would materially affect the design, command syntax, validation, display, storage, backward compatibility, tests, or documentation. Do not change any files.
+{% endcall %}
+
+**2. Write the agreed specification.**
+{% call mdblock() %}
+Using my decisions below, write an implementation-ready specification for the feature. Include user commands, valid and invalid examples, exact output, storage format, compatibility rules, acceptance criteria, and the files likely to change.
+
+[your decisions]
+
+Do not implement it yet.
+{% endcall %}
+
+**3. Review the specification.**
+{% call mdblock() %}
+Critically review this specification against the existing codebase. Identify ambiguities, edge cases, and unnecessary complexity. Recommend the smallest useful scope. Do not modify files.
+
+[specification]
+{% endcall %}
+
+**4. Implement the agreed scope.**
+{% call mdblock() %}
+Implement the approved specification below. Do not add adjacent features or change behavior outside its scope. Update relevant JUnit tests, `tests/test-plan.md`, and `docs/README.md`. Explain any necessary deviation from the specification before making it.
+
+[approved specification]
+{% endcall %}
+
+**5. Verify against the specification.**
+{% call mdblock() %}
+Verify the implementation against the approved specification. Run the relevant JUnit, Checkstyle, and end-to-end CLI checks. Report each acceptance criterion as pass/fail with evidence. Do not make further changes unless I ask.
+
+[approved specification]
+{% endcall %}
+
+**6. Commit after review.**
+{% call mdblock() %}
+Review the final diff for unintended changes. If it matches the approved specification and verification passed, create one commit.
+{% endcall %}
+
+{% endcall %}
+
 {{ show_faq("ipMinimumRequirementNotGiven") }}
 </div>
 {#====================================================================================================================#}

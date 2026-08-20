@@ -31,7 +31,7 @@ week3: [
     {id: 'A-Jar', title: 'Create a JAR File'}
   ]},
   {id: 'add_increments', suffix: ' as parallel branches', increments:  [
-    {id: 'A-JavaDoc', title: 'JavaDoc', tag: 'if-applicable'},
+    {id: 'A-JavaDoc', title: 'JavaDoc'},
     {id: 'A-CodingStandard', title: 'Follow the Coding Standard'},
     {id: 'Level-9', title: 'Find'}
   ]},
@@ -53,7 +53,7 @@ week5: [
   {id: 'add_increments', suffix: ' as PRs', increments:  [
     {id: 'A-Assertions', title: 'Use Assertions'},
     {id: 'A-CodeQuality', title: 'Improve Code Quality'},
-    {id: 'A-Streams', title: 'Use Streams', tag: 'optional'}
+    {id: 'A-Streams', title: 'Use Streams', tag: 'if-applicable'}
   ]},
   {id: 'add_increments', suffix: '', increments:  [
     {id: 'A-CI', title: 'Set up CI', tag: 'optional'}

@@ -27,7 +27,8 @@ This course requires you to write Java code almost every week, starting from the
 **The level of AI use in coding tasks** can vary as follows -- based on how much manual work happens and at which point.
 
 * **No AI** use. Hand-code everything. Use AI as a 'smart search engine' to ask general questions.{texts="['AI-1', 'AI-2', 'AI-3', 'AI-4', 'AI-5', 'AI-6']" t-class="badge rounded-pill bg-primary fw-bold text-light m-1"}
-* **Hand-code first, with AI's feedback:** You hand-code the first version as if there is no AI. Ask AI to review. Refine based on AI's feedback.
+* **Hand-code first, with AI's feedback:** You hand-code the first version as if there is no AI. Ask AI to review. Refine based on AI's feedback.<br>
+  {{ icon_info }} Operating at this level (on avearge) is !!enough to meet the minimum requirement of AI use!! the course expects.
 * **Hand-code to start, get AI to finish**: You hand-code a minimal version, just a proof-of-concept. Get AI to strengthen it to a full-fledged version e.g., handle edge cases, add tests.
 * **'Think' and compare**: _Think_ of how you would do the task manually. Get AI to do it. Compare the solution you 'imagined' with the one AI produced.
 * **AI codes, you review**: Get AI to do the task. Review it yourself fully, including the code, tests, behavior etc.

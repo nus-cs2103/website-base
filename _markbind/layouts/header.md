@@ -87,7 +87,7 @@
     <li tags="m--cs2103"><a href="{{ baseUrl }}/admin/uml-reference-sheet.md" target="_blank" class="dropdown-item"><md>:fas-diagram-project: UML Reference Sheet</md></a></li>
     {% if (current_week | int) < 12 %}<li tags="m--cs2103"><span class="dropdown-item"><md>%%:fas-file-lines: Exam Reference Sheet (to be released)%%</md></span></li>{% else %}<li tags="m--cs2103"><a href="{{ baseUrl }}/admin/exam-reference-sheet.md" target="_blank" class="dropdown-item"><md>:fas-file-lines: Exam Reference Sheet</md></a></li>{% endif %}
     <li tags="m--tic2002"><a href="{{url_ip_dashboard}}" target="_blank" class="dropdown-item"><md>:fas-chart-area: Code Dashboard</md></a></li>
-    <li tags="m--tic2002"><a href="{{url_course_org}}/{{ ip_repo_name }}" target="_blank" class="dropdown-item"><md>{{ icon_repo }} Duke repo</md></a></li>
+    <li tags="m--cs2103"><a href="{{ baseUrl }}/admin/CP3108A-option.html" target="_blank" class="dropdown-item"><md>{{ icon_info }} Info on the CP3108A/B option</md></a></li>
   </dropdown>
   <li ><a highlight-on="none" href="#cv-share" class="nav-link"><md><tooltip content="share a focused view of the current page"  placement="bottom">:fas-share-square:</tooltip></md></a></li>
   <li slot="right" class="nav-link">
