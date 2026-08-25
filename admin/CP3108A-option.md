@@ -45,7 +45,7 @@ W5-W6 | Do at least 4 iP increments marked as <span class="badge rounded-pill bg
 W6-W7 | Do 2 out of 3 [AB3 tutorials]({{ baseUrl }}/admin/tp-w6.html#4-get-familiar-with-the-codebase) | 1 required, the rest optional
 W2-W10 | Learn basics tools Gradle, Checkstyle, Codecov, Codex, PlantUML, an IDE | Most are necessry for the course projects anyway
 
-</div>
+Note: The #r#CP3108A/B deadline for each task## is the same as its deadline for CS2103/T.
 
 **Benefits** of taking this option:
 
@@ -70,3 +70,5 @@ W2-W10 | Learn basics tools Gradle, Checkstyle, Codecov, Codex, PlantUML, an IDE
 
 {{ faq }} **Can I do the work this semester and claim CP3108A/B credit in a later semester?**<br>
 **A:** No, this special arrangement is only if you do the two courses in parallel.
+
+</div>

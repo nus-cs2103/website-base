@@ -590,6 +590,20 @@ If your fork doesn't have the `add-gradle-support` branch (i.e., you did not cop
 <div class="indented-level1">
 <p/>
 
+<div id="cp3108-javafx-tutorial">
+
+<box type="info" seamless>
+
+**If you are enrolled in CP3108A/B**, you need to do the following additional tasks so that we can detect your work for CP3108A/B:
+
+1. Fork the starter repo, as instructed in the JavaFX Tutorial Part 1.
+1. As you go through the tutorial, commit regularly. After finishing a tutorial part, add a matching tag `Tutorial-Part1`, `Tutorial-Part2`, etc.
+1. Push the commits and tags to your fork.
+1. Also complete, commit, tag, and push at least half of the tweaks shown in Part 5 of the tutorial.
+
+</box>
+</div>
+
 * **Follow the sample [build.gradle given in the JavaFX tutorial](https://se-education.org/guides/tutorials/javaFxPart1.html#setting-up-java-fx)** closely, instead of following suggestions from AI tools.<br>
   %%Reason: As there are different ways of achieving this, following advice from AI tools can result in a 'Frankenstein' solution (i.e., a mixture of different approaches) that might work on your computer but might not work on other OSes.%% {{ bullet_important_red }}
 * **You no longer need to keep the text-based UI** after adding a GUI. But you are welcome to keep it too -- in fact keeping it makes testing the app easier as most of the core logic can be tested via the text UI rather than the GUI as the latter is harder to subject to automated tests.{{ bullet_info }}
@@ -717,6 +731,8 @@ Resources:
 <div id="desc_start_learning_javafx">
 
 If you can spare some time, start learning JavaFX by following the [_JavaFX tutorial_ @SE-EDU/guides](https://se-education.org/guides/tutorials/javaFx.html). Doing so will make your life easier in the following week.
+
+<include src="ip-tasks-fragment.md#cp3108-javafx-tutorial" />
 
 <include src="../projectDuke/Level-10-fragment.md#ai-guidance-javafx-tutorial" />
 </div>

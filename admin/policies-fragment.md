@@ -18,8 +18,9 @@ Examples of admin questions:
 
 <div id="policy-teamSize">
 
-As most of the work is graded individually, team sizes of 4/5/6 are not expected to affect your grade. For example, while managing larger teams is harder, larger teams also have more collective know-how, so these factors can cancel each other out. However, we give some special consideration when grading 3-person teams.
+**Team size should not give you an advantage or disadvantage.** In a class of this size, it is impossible for all teams to have the same number of members. Each semester, we have teams of 3, 4, 5, or 6 members. Accordingly, our grading scheme is designed so that team size neither advantages nor disadvantages you. We do not expect every team to complete the same amount of work; instead, we expect each person to complete a fixed amount. Although this is a team project, you are graded individually based on the work you did rather than the team's total work. Therefore, as long as you complete the required work, the number of team members does not matter.<br>
 
+**Do not worry about team size affecting your grade.** Larger teams can be harder to manage, but they also have more collective know-how, so these factors can balance out. That said, we monitor teams of three to ensure that their members are not unduly burdened with extra work because of their smaller size.
 </div>
 
 <div id="policy-followingInstructions">
@@ -246,4 +247,3 @@ The ability to meet deadlines is a learning outcome of this course. Therefore, *
 
 {% if cs2103 %}However, weekly project deliverables without specific deadlines are flexible. You will not be penalized for missing them if you catch up within a few days.{% endif %}
 </div>
-

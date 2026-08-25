@@ -4,13 +4,20 @@
 {% call show_admin_page("tutorials") %}
 <div id="main">
 {% if cs2103 %}
+
+++++%%(_aka_ Weekly In-Person Assessments)%%++++
+
 #r#**We use the tutorial slots for light in-person assessments**.## The purpose is for us (and you) to verify that you are keeping pace with the required learning, even if you are delegating some work to AI. We still call them tutorials though, for convenience.
 
 * The assessment primarily an in-tutorial quiz, administered through Zoom chat.
 * The scope of the topics and the tasks covered so far.
 * No special preparation is needed. Just doing the weekly tasks sincerely is enough.
-* The quiz is not graded for correctness. Just a sincere attempt is enough to pass.
 * Performance is counted towards participation marks. So yes, it is a VERY light assessment.
+
+<box type="important" seamless>
+
+**Grading:**{.text-danger} **The quiz is not graded for correctness. Just a sincere attempt is enough to pass.** More specifically, **you need to make a <popover content="a 'sincere' attempt is one that shows you have looked through the relevant materials and tried to come up with the correct answer">_sincere attempt_</popover> on at least `total-2` <popover content="Only some questions posed to you during the session will be 'graded', and the tutor will tell you which ones.">graded questions</popover> in the tutorial to pass.** %%e.g., if the session has 7 graded questions, you need to attempt at least 5.%%
+</box>
 {% endif %}
 <panel type="seamless" expanded >
 <span slot="header" class="card-title"><markdown>### Tutorial Timetable</markdown></span>

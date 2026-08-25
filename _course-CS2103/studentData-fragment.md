@@ -2,7 +2,6 @@
 {% set tutors = [
  {name: "JAIN ANANYA", nick: "Ananya", nusnet: "e1486278", github: "ananyaj1515"},
  {name: "HARVINDER ARJUN SINGH S/O SUKHWANT SINGH", nick: "Arjun", nusnet: "e1398691", github: "Harjun751"},
- {name: "GOEL ARNAV", nick: "Arnav", nusnet: "e1297755", github: "arnav-goel05"},
  {name: "ACHMAD FIRDAUS ASSABIL", nick: "Assabil", nusnet: "e1375365", github: "MrMarshall12"},
  {name: "GUPTA AVISHI", nick: "Avishi", nusnet: "e1355071", github: "Avishi-Gupta"},
  {name: "BRIAN SEBASTIAN HU", nick: "Brian", nusnet: "e1398493", github: "joojaja"},
@@ -27,7 +26,6 @@
  {name: "NICHOLAS CHENG DE FEI", nick: "Nicholas Cheng", nusnet: "e1113742", github: "df-Nic"},
  {name: "NICHOLAS LIM ZIXIAN", nick: "Nicholas Lim", nusnet: "e1122580", github: "nicholaslimzixian"},
  {name: "NIVANTH NARICITTY", nick: "Nivanth", nusnet: "e1514412", github: "nivanthn"},
- {name: "KASHIF RUMAISA", nick: "Rumaisa", nusnet: "e1375363", github: "RumaisaKashif"},
  {name: "RYAN CHEN RUI YANG", nick: "Ryan Chen", nusnet: "e1121649", github: "bipplane"},
  {name: "MOEY SEAN JEAN", nick: "Sean Jean", nusnet: "e0960483", github: "MoeySeanJean"},
  {name: "CHEN SHAOHENG", nick: "Shaoheng", nusnet: "e1121039", github: "cshao02"},

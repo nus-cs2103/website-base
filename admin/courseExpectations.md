@@ -34,7 +34,19 @@ This course requires you to write Java code almost every week, starting from the
 * **AI codes, you review**: Get AI to do the task. Review it yourself fully, including the code, tests, behavior etc.
 * **Full AI**: Get AI to do the task, fully, including the review. Only review the outcome (e.g., the feature behavior).
 
-**Which level to use? Depends on how much you already know, and your learning goals.** Using AI more will save time and also teach you how to use AI for SE. Hand-coding will teach you basic SE skills.
+**++Which level to use?++ Depends on how much you already know, and your learning goals.** Using AI more will save time and also teach you how to use AI for SE. Hand-coding will teach you basic SE skills.
+
+<box type="info" seamless theme="primary" id="which-ai-tool-to-use">
+
+**++Which AI tool to use?++ You may use any available AI tools.** The AI guidance we provide assumes you have access to at least one standard-tier AI tool, **such as the following ones, which are freely available to all SoC students**:
+
+The [AI@SoC page](https://mysoc.nus.edu.sg/category/ai/) includes the following:
+
+* ChatGPT: https://soc-n.us/chatgpt-access (will be replaced by an NUS-wide subscription by the end of August)
+* Gemini (and Antigravity)
+
+The AI tool use required for CS2103/T course tasks is expected to be well within the usage limits of a single standard-tier subscription (i.e., the S$30/month tiers of ChatGPT and Claude) and the limits of the free subscriptions provided by SoC.
+</box>
 
 {{ show_faq("useAiCode") }}
 

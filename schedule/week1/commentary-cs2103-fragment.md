@@ -1,4 +1,6 @@
 {% from "common/topics.njk" import panopto, slugify, topic_followup, topic_preamble with context %}
+{% from "common/macros.njk" import show_faq with context %}
+
 
 {{ topic_preamble("SE: Intro") }}
 {% call topic_preamble("OOP: Classes & Objects", reuse=false) %}
@@ -38,5 +40,13 @@ Unless you are an experienced Git user, **you are strongly encouraged to do the 
 </box>
 
 This week, we start with Tour 1.
+{% endcall %}
+<!-- ---------------------------------------------------------------------------- -->
+{% call topic_followup("RCS: Getting Started with Git", reuse=false) %}
+
+**Is the content covered on the Git-Mastery site examinable?** See the following FAQ:
+
+{{ show_faq("examIsXyzInScope") }}
+
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
