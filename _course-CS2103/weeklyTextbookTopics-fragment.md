@@ -140,7 +140,7 @@
   {name: "Quality Assurance"},
     {heading: "Static Analysis"},
       {location: ["qualityAssurance", "staticAnalysis", "what"], panopto: "a44af2d0-85a7-4183-8330-ab9200cfe405"},
-    {heading: "Code reviews"},
+    {heading: "Code Reviews"},
       {location: ["qualityAssurance", "codeReviews", "what"], panopto: "e43e6509-74e2-4a5c-9f3d-ab9200c552f6"},
   {name: "Project Management"},
     {heading: "RCS: Managing Pull Requests I"},

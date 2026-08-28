@@ -32,7 +32,7 @@ If there are parallel slots for the same course code, a suffix of `a` or `b` is 
 
 <box type="info" tags="m--cs2103" header="****Zoom Links & Venue****" id="venue-and-links" icon=":fas-info-circle:">
 
-**The first two tutorials (i.e., weeks 3 and 4) will be conducted fully online (via Zoom).**
+**The first two tutorials (i.e., weeks 3 and 4) will be conducted fully online (via Zoom)** %%-- yes, not strictly 'in-person' in those two weeks.%%
 {% if (current_week | int) <= 4 %}
 * Zoom links for tutorial sessions will be available on the [Canvas course homepage]({{ url_canvas_home }}), from week 3 Tuesday %%(i.e., 1 day before the first tutorial of the semester)%%.
 * Zoom tutorials require you to **use a video camera**. Use a device with a camera, or have a second device (e.g., mobile phone) to use as a video camera.

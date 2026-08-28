@@ -622,7 +622,7 @@ Use this week extra week to finish up any leftover work from the previous week.
 * **Submission:** via the [Canvas survey named `tP: AB3 Initial Experience`]({{ url_canvas_home }}/quizzes) by ==<span class="text-danger">{{ get_date(date_w3_start, 5, time="23:59") }}</span>==
 
 * **Steps:**
-    1. Download the latest released version %%(i.e., the jar file)%% of AB3 from [its upstream repo](https://se-edu.github.io/addressbook-level3/UserGuide.html).
+    1. Download the latest released version %%(i.e., the jar file)%% of AB3 from [its upstream product website](https://se-edu.github.io/addressbook-level3/UserGuide.html).
     1. Get it running on your computer. Play around with it to familiarize yourself with its current features.
     1. Add yourself to the list of contacts in AB3 (using the `add ...` command).
     1. Take a screenshot of the AB3 window while it shows the contact info you added earlier. Save it as a `.png` file.

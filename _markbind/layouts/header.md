@@ -64,8 +64,8 @@
   {{ ip_dashboard_links() }}
   <hr>
     <md>**&nbsp;Team Project (tP):**</md>
-    <li><a href="{{baseUrl}}/admin/tp-overview.html" class="dropdown-item"><md>{{ icon_project }} Team Project Info</md></a></li>
-    <li tags="m--cs2103 m--cs2113"><a href="{{url_course_org}}/{{ tp_repo_name }}" target="_blank" class="dropdown-item"><md>{{ icon_repo }} tP Upstream Repo {% if not cs2113 %}(AB3){% endif %}</md></a></li>
+    <li><a href="{{baseUrl}}/admin/tp-overview.html" class="dropdown-item"><md>{{ icon_project }} Team Project Info</md></a></li>{% if (current_week | int) > 4 %}
+     <li tags="m--cs2103 m--cs2113"><a href="{{url_course_org}}/{{ tp_repo_name }}" target="_blank" class="dropdown-item"><md>{{ icon_repo }} tP Upstream Repo {% if not cs2113 %}(AB3){% endif %}</md></a></li>{% endif %}
     <li><a href="{{ url_team_list }}" class="dropdown-item"><md>:glyphicon-list-alt: Team List</md></a></li>
   {{ tp_dashboard_links() }}
   <li tags="m--cs2113"><a href="https://github.com/se-edu/addressbook-level3" target="_blank" class="dropdown-item"><md>{{ icon_repo }} Reference AB3</md></a></li>

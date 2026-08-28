@@ -93,7 +93,7 @@ This week's briefing videos start with a detour.
 
 ****tP Briefing (Part 1 -- Getting Started)****{.text-info}
 
-{{ panopto(desc="9 mins", "ecf50649-072a-416b-8382-b10900fd2f81", start_week="4") }}
+{{ panopto(desc="9 mins", "ecf50649-072a-416b-8382-b10900fd2f81", start_week="3") }}
 
 </div>
 </panel>

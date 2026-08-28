@@ -625,7 +625,7 @@ Testing is the first thing that comes to mind when you hear 'Quality Assurance' 
 Previously, you already learned about two 'other' QA methods. This week, we add a third:
 
 - [x] %%Code reviews%%
-- [x] %%Static Analysis%%
+- [x] %%Static analysis%%
 - [ ] **Formal methods**
 
 </div>

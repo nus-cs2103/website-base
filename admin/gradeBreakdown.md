@@ -47,7 +47,6 @@ Rationale: Such activities are mutually beneficial and enhance both your learnin
 * Helping others test their iP/tP, as requested via the forum.
 * Giving peer feedback through pull request reviews to team members (in the tP) and other students (in the iP).
 * Participating in peer evaluations in iP and tP.
-* Helping to find bugs in another team's product (in the tP practical exam dry run).
 
 ****What qualifies for bonus marks:**** While most of the eligible activities already have participation points attached to them, the **bonus marks are earned by going the extra mile to help peers**. Some examples:
 * Providing more useful and thoughtful input.

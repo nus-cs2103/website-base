@@ -1255,7 +1255,8 @@ Aspect | Is in the scope?
 -------|------------------
 External pages hyperlinked from the [examinable version of the textbook]({{ url_course_website }}/se-book-adapted/print.html) e.g., eXtreme Programming website | No.
 Content listed in _Resources_ panels | No.
-Content covered on the [Git-Mastery site](https://git-mastery.org) | You are expected to know basic concepts used in the course projects (that you ought to remember after using Git and GitHub for an entire semester) but not specific commands. %%e.g., you should know what happens when you create a commit but not the command used to create it.%%
+Content covered on the [Git-Mastery site](https://git-mastery.org) | You are expected to know basic concepts used in the course projects (that you ought to remember after using Git and GitHub for an entire semester) but not specific commands. %%e.g., you should know what happens when you create a commit but not the command used to create it.
+Java concpets/syntax | We do not test Java specifically, but you are expected to be familiar with basic Java concepts/syntax as some exam questions will use Java code snippets or Java concepts
 Book titles and authors mentioned e.g., The Mythical Man-Month by Fred Brooks | No.
 Refactoring and code 'smells' listed under the topic [Refactoring]({{ url_course_website }}/se-book-adapted/chapters/refactoring.html) | You should be able to cite examples of refactorings and code smells but their details will not be tested
 
