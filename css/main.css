@@ -167,6 +167,14 @@ mark {
     }
 }
 
+.tbg {  /* transparent white background for images */
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 8px;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+
 .important {
     color: #980000;
 }
@@ -256,8 +264,8 @@ mark {
 
 /* Give untyped <box> elements Bootstrap's bg-light background. */
 .alert.box-container.alert-default {
-    --bs-bg-opacity: 1;
-    background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity));
+    background-color: var(--bs-tertiary-bg); /* Very subtle gray */
+    /* Alternative: background-color: var(--bs-secondary-bg); for a slightly darker gray */
 }
 
 /* =========================================================
