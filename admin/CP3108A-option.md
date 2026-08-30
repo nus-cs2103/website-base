@@ -40,7 +40,7 @@ CP3108A (2 Units) and CP3108B (4 Units) are [Independent Study Courses (ISC)](ht
 Period | Task | If taking CS2103/T only
 -------|------|--------------
 W1-W5 | Do at least 80% of the [Git-Mastery](https://git-mastery.org/lessons/index.html#/cs2103) exercises that are marked as compulsory, and ensure progress tracking feature is enabled. | Optional,<br>strongly recommended
-W3-W4 | Complete all 5 parts of the [JavaFX tutorial]({{ baseUrl }}/admin/ip-w3.html#6-optional-get-a-head-start-on-javafx). | 4 necessary for the iP anyway, 1 optional
+W3-W4 | Complete parts 1-4 and at least half of part 5 of the [JavaFX tutorial]({{ baseUrl }}/admin/ip-w3.html#6-optional-get-a-head-start-on-javafx). | first 4 are necessary for the iP anyway, 5th is optional
 W5-W6 | Do at least 4 iP increments marked as <span class="badge rounded-pill bg-secondary text-light">optional</span> ([Examples]({{ baseUrl }}/admin/ip-w6.html#2-add-increments-a-bettergui-a-personality-a-moreerrorhandling-a-moretesting)).<br> {{ icon_tip }} You may use AI to do these. | At least 2 optional increments are 'required'
 W6-W7 | Do 2 out of 3 [AB3 tutorials]({{ baseUrl }}/admin/tp-w6.html#4-get-familiar-with-the-codebase) | 1 required, the rest optional
 W2-W10 | Learn basics tools Gradle, Checkstyle, Codecov, Codex, PlantUML, an IDE | Most are necessry for the course projects anyway

@@ -215,7 +215,7 @@ But ==as there are no tutorials this week, you have until the next lecture== to 
   * Start a branch named `branch-{increment ID}` (e.g., `branch-Level-5`). You are recommended to have multiple commits in that branch. Follow the branch naming convention exactly or else our gradings scripts might miss your branch.
   * After the increment is ready, merge the `branch-Level-5` back on to `master`, ==without a _fast-forward_== so that git creates a separate commit for the merge. `git tag` that merge commit as `Level-5`.
   * Push the branch to your fork so that the grading script can detect it. As before, push the tag as well.
-  * {{ icon_important_big_red }} Advanced Git users: do not delete the branch after merging.
+  * {{ icon_important_big_red }} #r#Do not delete the branch after merging.## If you do, our grading scripts will not be able to detect your use of Git branches.
 </div>
 </div>
 {#====================================================================================================================#}
@@ -236,8 +236,8 @@ But ==as there are no tutorials this week, you have until the next lecture== to 
      If there are merge conflicts, you'll have to resolve them first.
   1. As before, tag the commit (in the `master` branch, after merging) that achieves the respective deliverable, and push to your fork.
 * As before,
- {{ icon_tip }} Merge without a _fast-forward_ so that git creates a separate commit for the merge.<br>
- {{ icon_important_big_red }} Advanced Git users: do not delete the branch after merging.
+  {{ icon_tip }} Merge without a _fast-forward_ so that git creates a separate commit for the merge.<br>
+  * {{ icon_important_big_red }} #r#Do not delete the branch after merging.## If you do, our grading scripts will not be able to detect your use of Git branches.
 </div>
 
 </div>
@@ -291,8 +291,8 @@ If you are new to Git branching, before attempting this iP increment, first lear
      (a) the `master` branch,<br>
      (b) the `branch-Level-7` branch,<br>
      (c) the `Level-7` tag.<br>
-     {{ icon_important_big_red }} Advanced Git users: do not delete the branch after merging.<br>
-     {{ icon_important_big_red }} Only _merged_ branches are detected by the script. After merging a branch `b1` into the `master` branch, you need to push both the `master` and the `b1` branches to the fork. Pushing the `master` branch does not automatically take the `b1` branch along with it just because it is already merged into the `master` branch.
+     {{ icon_important_big_red }} #r#Do not delete the branch after merging.## If you do, our grading scripts will not be able to detect your use of Git branches.<br>
+     {{ icon_important_big_red }} Only _merged_ branches are detected by our scripts. After merging a branch `b1` into the `master` branch, you need to push both the `master` and the `b1` branches to the fork. Pushing the `master` branch does not automatically take the `b1` branch along with it just because it is already merged into the `master` branch.
 
 </div>
 </div>
