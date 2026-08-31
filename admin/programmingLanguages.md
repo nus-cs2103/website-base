@@ -8,7 +8,7 @@
 <tbody>
 <tr>
 <td width="160px">
- <pic eager src="{{baseUrl}}/admin/images/JamesGosling.png" width="150px"></pic>
+ <pic eager class="tbg" src="{{baseUrl}}/admin/images/JamesGosling.png" width="150px"></pic>
 </td>
 <td>
 
