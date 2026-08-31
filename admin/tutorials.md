@@ -9,15 +9,22 @@
 
 #r#**We use the tutorial slots for light in-person assessments**.## The purpose is for us (and you) to verify that you are keeping pace with the required learning, even if you are delegating some work to AI. We still call them tutorials though, for convenience.
 
-* The assessment primarily an in-tutorial quiz, administered through Zoom chat.
+* The assessment is primarily an in-tutorial quiz, administered through Zoom chat.
 * The scope of the topics and the tasks covered so far.
 * No special preparation is needed. Just doing the weekly tasks sincerely is enough.
 * Performance is counted towards participation marks. So yes, it is a VERY light assessment.
 
+<div id="tutorial-grading">
+
 <box type="important" seamless>
 
-**Grading:**{.text-danger} **The quiz is not graded for correctness. Just a sincere attempt is enough to pass.** More specifically, **you need to make a <popover content="a 'sincere' attempt is one that shows you have looked through the relevant materials and tried to come up with the correct answer">_sincere attempt_</popover> on at least `total-2` <popover content="Only some questions posed to you during the session will be 'graded', and the tutor will tell you which ones.">graded questions</popover> in the tutorial to pass.** %%e.g., if the session has 7 graded questions, you need to attempt at least 5.%%
+**Grading:**{.text-danger} **The in-tutorial quiz is not graded for correctness. Just a sincere attempt is enough to pass.** More specifically, **you need to make a <popover content="a 'sincere' attempt is one that shows you have looked through the relevant materials and tried to come up with the correct answer">_sincere attempt_</popover> on at least `total-2` <popover content="Only some questions posed to you during the session will be 'graded', and the tutor will tell you which ones.">graded questions</popover> in the tutorial to pass.** %%e.g., if the session has 7 graded questions, you need to attempt at least 5.%%
+
+**You need to <popover content="i.e., make a sincere attempt on at least `total-2` graded questions">pass the quiz</popover> in at least 7 (out of 9) tutorials** to avoid losing participation marks.<br>
+**The buffer of 2 tutorials covers absences (or low participation) due to _any_ reason**, including valid reasons such as an MC and 'not-so-valid' ones such as 'my alarm glitched'. So, if you missed 3 tutorials but only 2 are covered by valid reasons, the marks deduction still applies. We can consider waiving the deduction only if you have valid reasons covering more than 2 tutorials.
 </box>
+
+</div>
 {% endif %}
 <panel type="seamless" expanded >
 <span slot="header" class="card-title"><markdown>### Tutorial Timetable</markdown></span>

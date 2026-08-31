@@ -57,12 +57,18 @@
 
 </div>
 
-****{{ thumb("C", "info") }} Sufficient tutorial attendance/participation****{.text-info}
+****{{ thumb("C", "info") }} {% if cs2103 %}Sufficient performance in tutorial quizzes{% else %}Sufficient tutorial attendance/participation{% endif %}****{.text-info}
 
-<div class="indented">
+<div id="tutorial-participation" class="indented">
 
-* **-1 mark if you participated in fewer than 7 tutorials** (-2 if fewer than 5 tutorials, -3 if fewer than 3 tutorials): For a tutorial to count as 'participated', you need to show a sufficient level of participation (just attending is not enough). {% if cs2103 %} F2F tutorials that you attend only via Zoom are not counted for participation.
-* **In-tutorial quiz performance is factored in** when deciding if you 'participated' sufficiently in a tutorial. Incorrect answers are not counted against you but rubbish answers and insincere/fake answers will be.
+{% if cs2103 %}
+{{ embed_topic("tutorials.md#tutorial-grading", "Admin " + icon_embedding + " Tutorials → Grading (Extract)", "1", indent=1, status="expanded") }}
+
+* **-1 mark if you passed the in-tutorial quiz in only 6 tutorials**.<br>
+-2 if passed in only 5 tutorials, -3 if only 4, and so on.
+* #r#F2F tutorials that you attend only via Zoom are not counted## for participation.
+{% else %}
+* **-1 mark if you participated in fewer than 7 tutorials** (-2 if fewer than 5 tutorials, -3 if fewer than 3 tutorials): For a tutorial to count as 'participated', you need to show a sufficient level of participation (just attending is not enough).
 {% endif %}
 </div>
 
