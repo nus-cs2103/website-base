@@ -226,8 +226,8 @@
 <variable id="icon_team_rep"><md>:fas-user:%%/:fas-users:%%</md></variable>
 <variable name="icon_both">{{ icon_individual }}/{{ icon_team }}</variable>
 
-<variable id="label_example"><span class="badge bg-light text-secondary">{{ icon_example }} Example </span></variable>
-<variable id="label_examples"><span class="badge bg-light text-secondary">{{ icon_example }} Examples </span></variable>
+<variable id="label_example"><span class="badge bg-body-tertiary text-secondary">{{ icon_example }} Example </span></variable>
+<variable id="label_examples"><span class="badge bg-body-tertiary text-secondary">{{ icon_example }} Examples </span></variable>
 
 
 <variable id="indented_arrow">&nbsp;&nbsp;&nbsp;&nbsp; ++↳++</variable>
@@ -251,12 +251,12 @@
 
 <variable name="s"><md>:glyphicon-flash:</md></variable>
 <variable name="star"><span class='glyphicon glyphicon-flash' aria-hidden='true'></span></variable>
-<variable name="one_star"><span class='badge rounded-pill bg-light text-danger'>{{ star | safe }} </span></variable>
+<variable name="one_star"><span class='badge rounded-pill bg-body-tertiary text-danger'>{{ star | safe }} </span></variable>
 <variable name="prereq_no_stars"><span class='badge rounded-pill bg-secondary'>{{ icon_prereq | safe }}{{ icon_prereq | safe }}</span></variable>
 <variable name="prereq_one_star"><span class='badge rounded-pill bg-secondary'>{{ icon_prereq | safe }}{{ icon_prereq | safe }} : {{ star | safe }} </span></variable>
-<variable name="two_stars"><span class='badge rounded-pill bg-light text-warning'>{{ star | safe }}{{ star | safe }} </span></variable>
+<variable name="two_stars"><span class='badge rounded-pill bg-body-tertiary text-warning'>{{ star | safe }}{{ star | safe }} </span></variable>
 <variable name="prereq_two_stars"><span class='badge rounded-pill bg-secondary'>{{ icon_prereq | safe }}{{ icon_prereq | safe }} : {{ star | safe }}{{ star | safe }} </span></variable>
-<variable name="three_stars"><span class='badge rounded-pill bg-light text-primary'>{{ star | safe }}{{ star | safe }}{{ star | safe }} </span></variable>
+<variable name="three_stars"><span class='badge rounded-pill bg-body-tertiary text-primary'>{{ star | safe }}{{ star | safe }}{{ star | safe }} </span></variable>
 <variable name="prereq_three_stars"><span class='badge rounded-pill bg-secondary'>{{ icon_prereq | safe }}{{ icon_prereq | safe }} : {{ star | safe }}{{ star | safe }}{{ star | safe }} </span></variable>
 <variable name="four_stars"><span class='badge rounded-pill bg-success'>{{ star | safe }}{{ star | safe }}{{ star | safe }}{{ star | safe }}: OPTIONAL</span></variable>
 <variable name="prereq_four_stars"><span class='badge rounded-pill bg-secondary'>{{ icon_prereq | safe }}{{ icon_prereq | safe }} : {{ star | safe }}{{ star | safe }}{{ star | safe }}{{ star | safe }} </span></variable>

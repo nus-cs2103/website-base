@@ -872,9 +872,9 @@ This task is worth `2x2=4` participation points.
 
 <box type="tip" seamless>
 
-Click on the <span class="badge bg-light text-dark">%%**:fas-code:**%%</span>&nbsp;icon corresponding to a student name to see the code written by that person.
+Click on the <span class="badge bg-body-tertiary text-body-emphasis">%%**:fas-code:**%%</span>&nbsp;icon corresponding to a student name to see the code written by that person.
 
-You can enable the `[ ] show tags` option at the top of the dashboard to see tags in each repo. Similarly, you can click on the <span class="badge bg-light text-dark">%%**:fas-list:**%%</span>&nbsp;icon to see a list of commits in a specific repo.
+You can enable the `[ ] show tags` option at the top of the dashboard to see tags in each repo. Similarly, you can click on the <span class="badge bg-body-tertiary text-body-emphasis">%%**:fas-list:**%%</span>&nbsp;icon to see a list of commits in a specific repo.
 </box>
 
 {{ embed_topic("appendixB-policies.md#policy-reuse", "Admin " + icon_embedding + " **Course Policies → Policy on Reuse**", "1", indent=1) }}
@@ -1114,7 +1114,7 @@ App: Currently, there is no built-in command to add priorities to tasks.
 **If you want to cite the iP on your resume**, you can make it more compelling to potential employers. These improvements are not considered for grading and can be done after the semester ends. Some ideas:
 * **Improve the GUI**: Make the UI look nicer, more distinctive, and memorable. You can get inspiration from [what others have done](ip-showcase.html) (but remember to give credit if you reuse any code from them).
 * **Add a demo** video or an animated GIF to your user guide to show how the app works.
-* **Improve code quality**: The iP is the right size to cite as an example of your code quality. You can use the RepoSense link (<span class="badge rounded-pill bg-light text-dark font-monospace small">**&lt;/>**</span>) in the [iP Showcase page](ip-showcase.html) to point to your iP code.
+* **Improve code quality**: The iP is the right size to cite as an example of your code quality. You can use the RepoSense link (<span class="badge rounded-pill bg-body-tertiary text-body-emphasis font-monospace small">**&lt;/>**</span>) in the [iP Showcase page](ip-showcase.html) to point to your iP code.
 * **Add more features.**
 
 {{ icon_tip }} On a somewhat related note, you can also **create similar product websites for your other projects**, such as those from other courses or pet projects.

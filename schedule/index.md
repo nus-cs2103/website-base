@@ -109,13 +109,13 @@ pageNav: {{ categories[category].pagenav }}
   <div class="row">
   <div class="col-sm" style="border-right: 1px dotted lightgrey">
 
-#### <a href="topics-py.html" class="badge bg-light text-dark">:fas-code: Programming Topics</a>
+#### <a href="topics-py.html" class="badge bg-body-tertiary text-body-emphasis">:fas-code: Programming Topics</a>
 <include src="../programming-topics-fragment.md#week{{ week_num  }}-toc" optional />
 
   </div>
   <div class="col-sm">
 
-#### <a href="topics.html" class="badge bg-light text-dark">{{ icon_book }} SE Topics</a>
+#### <a href="topics.html" class="badge bg-body-tertiary text-body-emphasis">{{ icon_book }} SE Topics</a>
 {{ topics.show_week_schedule_main(week_num, weekly_textbook_topics, "", is_toc=true, is_flat=true) }}
 
 <panel type="seamless" header="%%Full ToC%%">
@@ -127,7 +127,7 @@ pageNav: {{ categories[category].pagenav }}
   <div class="row" style="border-top: 1px dotted lightgrey">
   <div class="col-sm">
 
-#### <a href="admin.html" class="badge bg-light text-dark mt-2">:fas-tasks: Tasks</a>
+#### <a href="admin.html" class="badge bg-body-tertiary text-body-emphasis mt-2">:fas-tasks: Tasks</a>
 <include src="admin-{{ course | lower }}-fragment.md#summary" optional/>
   </div>
   </div>
