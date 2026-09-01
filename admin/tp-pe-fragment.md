@@ -447,7 +447,6 @@ Only the `response.Accepted` bugs are counted against the dev team. While `respo
 @startuml
 hide circle
 hide empty members
-skinparam backgroundcolor transparent
 
 class "Bug#1\n(the original)" as Original
 class "Bug#2\n(a duplicate)" as Duplicate1
@@ -464,7 +463,6 @@ Original <-down- Duplicate3: "sub-issue of"
 @startuml
 hide circle
 hide empty members
-skinparam backgroundcolor transparent
 
 class "Bug#1\n(the original)" as Original
 class "Bug#2\n(a duplicate)" as Duplicate1

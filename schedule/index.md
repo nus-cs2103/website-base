@@ -248,7 +248,7 @@ A label with the {{ icon_deadline }} icon indicates the deadline for that task %
   {% set theme = weekly_tp_themes["w" + week_num] %}
 {% endif %}
 
-<div id="summary" class="lead border-left ml-3 mb-3 pl-2" style="color: purple;">
+<div id="summary" class="summary-lead lead border-start ms-3 mb-3 ps-2">
 
 {% if ip %}
 **iP:**

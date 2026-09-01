@@ -14,7 +14,6 @@ pie title
 
 <puml name="gradeBreakdown.png">
 @startwbs
-skinparam backgroundcolor transparent
 + <b><color:red>100</color></b> marks
  + Participation: <b><color:red>{{ marks_participation }}</color></b> marks
  + Individual Project (iP): <b><color:red>{{ marks_ip }}</color></b> marks
