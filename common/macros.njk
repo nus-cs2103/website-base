@@ -152,7 +152,7 @@
 
 {% macro show_as_tab(text, icon) %}<span class="border bg-white ps-1 pe-1 text-nowrap">{{ icon }} {{ text }}</span>{% endmacro %}
 
-{% macro show_as_rounded_tab(text) %}<span class="border border-secondary border-bottom-0 pe-1 ps-1 mr-1 ml-1 rounded-top"><small>{{ text }}</small></span>{% endmacro %}
+{% macro show_as_rounded_tab(text) %}<span class="border border-secondary border-bottom-0 pe-1 ps-1 me-1 ms-1 rounded-top"><small>{{ text }}</small></span>{% endmacro %}
 
 {% macro get_week_start_date(week_num, format="YYYY-MM-DD", shift=0) -%}{{  get_week_start_date_untrimmed(week_num, format, shift) | trim }}{% endmacro %}
 

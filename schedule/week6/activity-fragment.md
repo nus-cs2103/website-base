@@ -65,7 +65,7 @@ The revision graph should look like this now:<br>
   * Proceed with the reset and note how the revision graph is in the state it was before the merge.
 
 
-<panel type="light" header=":fas-play-circle: See an animation of this step" add-class="d-block pl-5" minimized >
+<panel type="light" header=":fas-play-circle: See an animation of this step" add-class="d-block ps-5" minimized >
 
 <pic eager src="images/undo-merge.gif" />
 </panel>
@@ -202,7 +202,7 @@ So far so good. Next, let's learn how to merge PRs when there are merge conflict
 
 * {{ step(14) }} **Merge the `vendor-ravi` PR** as you merged the previous PR in {{ step('11', step_style='secondary') }}.
 
-<panel header="Step 11 (for reference)" add-class="d-block ml-5" minimized>
+<panel header="Step 11 (for reference)" add-class="d-block ms-5" minimized>
 <include src="activity-fragment.md#11" />
 </panel>
 <p/>

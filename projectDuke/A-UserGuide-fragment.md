@@ -5,7 +5,7 @@
 Add a User Guide to the project in the following way:
 * Update the given `docs/README.md`. See [this guide](https://guides.github.com/features/mastering-markdown/) to GitHub flavored Markdown (GFMD).
 * Enable the _GitHub Pages_ feature for your fork:
-  1. Go to your repo's <span class="border border-secondary border-bottom-0 pe-1 ps-1 mr-1 ml-1 rounded-top"><small>:fas-cog: settings</small></span> tab.
+  1. Go to your repo's <span class="border border-secondary border-bottom-0 pe-1 ps-1 me-1 ms-1 rounded-top"><small>:fas-cog: settings</small></span> tab.
   1. Click `Pages` on the menu on the left edge of the page.
   1. Set the `Source` as: [**%%:octicon-git-branch: Branch:%%** master :octicon-triangle-down:] branch and [:octicon-file-directory: /docs :octicon-triangle-down:] folder and click `Save`.<br>
      You can select a theme too.

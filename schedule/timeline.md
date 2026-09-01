@@ -20,7 +20,7 @@ pageNav: 3
 <p/>
 <hr>
 
-{% macro show_link(week_num, icon, page) -%}<small><small><a href="week{{ week_num }}/{{ page }}" class="badge bg-light text-dark mr-1">%%{{ icon }}%%</a></small></small>{%- endmacro %}
+{% macro show_link(week_num, icon, page) -%}<small><small><a href="week{{ week_num }}/{{ page }}" class="badge bg-light text-dark me-1">%%{{ icon }}%%</a></small></small>{%- endmacro %}
 
 
 {% for week_num in range(1, 14) %}

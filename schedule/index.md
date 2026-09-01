@@ -78,7 +78,7 @@ pageNav: {{ categories[category].pagenav }}
 <span id="summary">
 <div class="container">
   <div class="row">
-  <div class="col-sm border-right">
+  <div class="col-sm border-end">
 {% if week_num + "" in weeks_with_no_topics %}
 * %%No topics are allocated to this week.%%
 {% else %}
@@ -140,7 +140,7 @@ pageNav: {{ categories[category].pagenav }}
 <span id="summary">
 <div class="container">
   <div class="row">
-  <div class="col-sm border-right">
+  <div class="col-sm border-end">
 
 **Topics:**
 {% if week_num + "" in weeks_with_no_topics %}

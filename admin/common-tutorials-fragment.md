@@ -135,7 +135,7 @@ Tutorial | Reviewer | Second PR to review | Backup PR to review
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="demo-debugging-using-personbook">
 
-<box light type="success" add-class="ml-4" icon=":fas-lightbulb:">
+<box light type="success" add-class="ms-4" icon=":fas-lightbulb:">
 
 **Suggested pre-tutorial preparations**:
 * Clone the [{{ url_course_org }}/personbook]({{ url_course_org }}/personbook) repo to your Computer (no need to fork first).

@@ -817,13 +817,13 @@ If you wish, **you _may_ write the PR description to be very similar to the exam
 
 <div tags="m--cs2103">
 
-<box type="wrong" add-class="ml-4" icon=":fas-hand-paper:" icon-size="2x" seamless>
+<box type="wrong" add-class="ms-4" icon=":fas-hand-paper:" icon-size="2x" seamless>
 
 **Please wait until {{ date_w4_start | date(format_normal, 0) }}** before starting this task, to give others a few extra days to create the PR if they haven't done so yet.
 </box>
 </div>
 
-<box type="info" add-class="ml-4">
+<box type="info" add-class="ms-4">
 
 This task is worth `2x2=4` participation points.
 </box>
