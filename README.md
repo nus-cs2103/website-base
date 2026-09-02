@@ -26,6 +26,84 @@
       ```
    1. Deploy the website to make the updated book content visible to students
 
+## Keeping content readable in both light mode and dark mode
+
+**This site renders in both light mode and dark mode, and each reader gets whichever one their operating system prefers.** There is no "default" theme to design against, so every page has to work in both. The toggle in the navbar lets a reader override their operating system setting, and their choice is remembered.
+
+**The rules below matter most when you reach for a Bootstrap class**, because only some Bootstrap colors follow the theme. The rest are a single fixed value that was chosen for a white page.
+
+### Never put a color in an inline `style` attribute
+
+**An inline color cannot change between themes.** Text written as `<span style="color:purple">` stays the same dark purple on the dark page, where it drops to roughly 1.4:1 against the background and becomes unreadable.
+
+**Add a class in `css/main.css` instead, with a `[data-bs-theme="dark"]` counterpart.** The dark rule only has to cover the values that actually need to move:
+
+```css
+.text-purple { color: purple; }                        /* fine on white */
+[data-bs-theme="dark"] .text-purple { color: #b69ae8; }
+```
+
+The same applies to `style="background-color: ..."`, which otherwise leaves a light panel sitting in a dark page.
+
+### Prefer the utilities that follow the theme
+
+**These Bootstrap utilities change value between themes, so they are safe to use anywhere:**
+
+| Use | Instead of | Notes |
+|---|---|---|
+| `text-body-emphasis` | `text-dark`, `text-white` | Highest-contrast body text |
+| `text-body-secondary` | `text-muted`, `text-secondary` | De-emphasized text; `text-secondary` is *not* theme-aware |
+| `bg-body-tertiary` | `bg-light` | Subtle panel fill |
+| `border`, `border-top`, etc. | `border-light`, `border-dark` | Picks up the theme's border color |
+| `text-primary-emphasis`, `text-success-emphasis`, ... | `text-primary`, `text-success`, ... | The `-emphasis` variants are the theme-aware pair |
+
+**Avoid the fixed-color utilities for anything that carries text.** `bg-dark`, `bg-light`, `text-dark`, `text-white`, `text-secondary`, and the plain `text-primary` / `text-success` / `text-danger` / `text-info` family all resolve to one value in both themes.
+
+### Pair a background with its text using `text-bg-*`
+
+**A `bg-*` class sets only the background, and leaves the text color to whatever it inherits.** On a badge that default is white, so `<span class="badge bg-info">` renders white on cyan at about 2:1, which is unreadable, and it is wrong in *both* themes.
+
+**Write `text-bg-info` instead**, which sets the background and the matching text color together:
+
+```html
+<span class="badge text-bg-info">PPP</span>      <!-- good -->
+<span class="badge bg-info">PPP</span>           <!-- white on cyan -->
+```
+
+### Do not use `bg-dark` for banners or pills
+
+**`bg-dark` is `#212529`, which is exactly the dark page background**, so a dark banner or pill dissolves into the page. Its white text stays readable, but the bar itself disappears. `css/main.css` already lifts these to a visible slate in dark mode, so existing `bg-dark` markup is safe; prefer a semantic class over adding more.
+
+### Avoid the `*-subtle` backgrounds
+
+**The `bg-*-subtle` utilities do change with the theme, but their dark values are *darker* than the dark page**, so the tint you wanted vanishes and the box reads as a hole. `bg-info-subtle` is `#032830` against a `#212529` page, barely one part in a hundred of difference.
+
+**Use a translucent wash instead**, which tints whatever is behind it and therefore needs no dark-mode counterpart at all:
+
+```css
+.bg-term-highlight { background-color: rgba(13, 202, 240, 0.2); }
+```
+
+### Pin the text color on any fixed-color ground
+
+**Theme-aware text drifts off a fixed-color background.** `bg-warning` stays amber in both themes, so text that lightens for dark mode (`%%dimmed%%`, `==highlighted==`, `text-danger`) ends up light-on-amber. Anything placed inside `bg-warning`, `bg-info`, a `<mark>`, or an image panel needs its color pinned for both themes rather than left to inherit.
+
+### Give transparent images the `tbg` class
+
+**Diagrams saved with a transparent background lose their black lines and labels on the dark page.** Add `tbg`, which puts a translucent light panel behind the image:
+
+```html
+<pic eager class="tbg" src="../images/classDiagramsAllNotations.png" width="600" />
+```
+
+Use `add-class="tbg"` when the tag already carries other attributes. A caption inside the panel is handled automatically: `css/main.css` pins dark text and links inside `tbg` and `bg-white`.
+
+### Check both themes before you commit
+
+**Build the site, open the page, and toggle the theme in the navbar.** Because the theme follows your operating system, viewing a page once only tells you about half of it. Look for text that fades into its background, and for panels, badges, or banners that disappear.
+
+**When you add a rule to `css/main.css`, check that a later rule does not override it.** Two rules with the same specificity are resolved by order, so a general `[data-bs-theme="dark"] .dimmed` added at the end of the file will beat a more targeted `.bg-warning .dimmed` written earlier. Give the targeted rule the higher specificity when they overlap.
+
 ## Bug reports, suggestions, change requests
 
 * MarkBind bug reports and suggestions [https://github.com/MarkBind/markbind/issues](https://github.com/MarkBind/markbind/issues)
