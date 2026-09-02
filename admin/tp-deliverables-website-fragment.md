@@ -1,12 +1,12 @@
 When setting up your team repo, you would be configuring **the GitHub Pages feature to publish your documentation** as a website.
 
-#### <span class="badge bg-info">Website</span> <span class="text-info">Home page</span>
+#### <span class="badge text-bg-info">Website</span> <span class="text-info">Home page</span>
 
 * Update to match your product.
 
 <div tags="m--cs2103 m--cs2113">
 
-#### <span class="badge bg-info">Website</span> <span class="text-info">`Ui.png`</span>
+#### <span class="badge text-bg-info">Website</span> <span class="text-info">`Ui.png`</span>
 
 <div tags="m--cs2103">
 
@@ -79,7 +79,7 @@ Reason: Screenshot not cropped cleanly (contains extra background details).
 
 </div>
 
-#### <span class="badge bg-info">Website</span> <span class="text-info">AboutUs Page</span>
+#### <span class="badge text-bg-info">Website</span> <span class="text-info">AboutUs Page</span>
 
 <div tags="m--cs2113">
 
@@ -99,10 +99,10 @@ If you are uncomfortable posting your photo due to security reasons, you can pos
 * **Include a link to each person's PPP page.**
 * **Team member names:** you may use the full name, part of the name, or GitHub username of the team member.
 
-#### <span class="badge bg-info">Website</span> <span class="text-info">UG (Web Page)</span>
+#### <span class="badge text-bg-info">Website</span> <span class="text-info">UG (Web Page)</span>
 
 * Should match the submitted JAR file.
 
-#### <span class="badge bg-info">Website</span> <span class="text-info">DG (Web Page)</span>
+#### <span class="badge text-bg-info">Website</span> <span class="text-info">DG (Web Page)</span>
 
 * Should match the submitted JAR file.

@@ -353,7 +353,7 @@ Second part of a possible prompt:
 
 <!-- ============================================================ -->
 
-{% macro show_gm_lesson_link(lesson_id, lesson_name)%}<md>++<span style="background-color: #e6f4ea;" class="badge rounded-pill text-success">:octicon-git-branch: Git-Mastery → <a href="https://git-mastery.org/lessons/{{ lesson_id }}/#/{{ course | lower }}" target="_blank">**Lesson: {{ lesson_name }}**</a></span>++</md>{% endmacro %}
+{% macro show_gm_lesson_link(lesson_id, lesson_name)%}<md>++<span class="badge rounded-pill bg-gm-link text-success-emphasis">:octicon-git-branch: Git-Mastery → <a href="https://git-mastery.org/lessons/{{ lesson_id }}/#/{{ course | lower }}" target="_blank">**Lesson: {{ lesson_name }}**</a></span>++</md>{% endmacro %}
 <!-- ============================================================ -->
 
 {% macro ask_chatgpt(visible_text, prompt) %}<span class="badge bg-body-tertiary rounded-pill text-body-emphasis fw-normal d-print-none"><a href="https://chatgpt.com/?q={{ (prompt if prompt else visible_text) | urlencode }}" target="_blank">{{ visible_text }}</a> %%:bi-openai:%%</span>{% endmacro %}

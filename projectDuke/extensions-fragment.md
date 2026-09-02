@@ -221,7 +221,7 @@ You can refer to the [se-edu guide on AI-Assisted Coding](https://se-education.o
 
 <!-- ======================================================================================================= -->
 
-## <span class="text-white bg-info badge rounded-pill">Category B</span> Extensions
+## <span class="text-bg-info badge rounded-pill">Category B</span> Extensions
 
 
 <div id="B-TentativeScheduling">

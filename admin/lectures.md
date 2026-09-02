@@ -9,7 +9,7 @@
 
 <div tags="m--cs2103">
 
-<p class="lead text-secondary"><em>Weekly briefings</em> are short weekly sessions (about 1 hour) conducted by the course lecturer(s) to wrap up the current week and brief you about the upcoming week.</p>
+<p class="lead text-body-secondary"><em>Weekly briefings</em> are short weekly sessions (about 1 hour) conducted by the course lecturer(s) to wrap up the current week and brief you about the upcoming week.</p>
 
 ****This course does not have _lectures_****, as the course uses the _blended learning_ mode. Course content is delivered through an online textbook and pre-recorded videos, instead of lectures being the main way to deliver content. We still have a lecture slot/venue, which we use for other course activities.
 

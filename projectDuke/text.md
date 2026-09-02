@@ -79,7 +79,7 @@ The project consists of the following _increments_:
 * **Levels**: A series of features to add to your chatbot in the given order; some can be skipped. These have been named `Level 0` to `Level 10` to indicate how each makes the product progressively "level up".
 * **Extensions:**
   * ++<span class="badge rounded-pill bg-primary">Category A</span>++ These are internal/feature enhancements meant to help you practice a specific Java or an SE technique.
-  * ++<span class="badge rounded-pill bg-info">Category B</span>++ These are enhancements related to task tracking.
+  * ++<span class="badge rounded-pill text-bg-info">Category B</span>++ These are enhancements related to task tracking.
   * ++<span class="badge rounded-pill bg-success">Category C</span>++ These are enhancements, not specifically related to task tracking.
   * ++<span class="badge rounded-pill bg-danger">Category D</span>++ Each of these adds the ability to track another type of entity.
 </div>

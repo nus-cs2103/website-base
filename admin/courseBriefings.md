@@ -5,7 +5,7 @@
 {% call show_admin_page("courseBriefings") %}
 <div id="main">
 
-<p class="lead text-secondary"><em>Course briefing videos</em> cover general administrative instructions and highlight important parts of the course.</p>
+<p class="lead text-body-secondary"><em>Course briefing videos</em> cover general administrative instructions and highlight important parts of the course.</p>
 
 **Course briefings are delivered as pre-recorded videos** so they can be shorter, and you can watch them at a faster speed to save time if you wish.
 

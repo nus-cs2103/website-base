@@ -226,13 +226,13 @@
 <variable id="icon_team_rep"><md>:fas-user:%%/:fas-users:%%</md></variable>
 <variable name="icon_both">{{ icon_individual }}/{{ icon_team }}</variable>
 
-<variable id="label_example"><span class="badge bg-body-tertiary text-secondary">{{ icon_example }} Example </span></variable>
-<variable id="label_examples"><span class="badge bg-body-tertiary text-secondary">{{ icon_example }} Examples </span></variable>
+<variable id="label_example"><span class="badge bg-body-tertiary text-body-secondary">{{ icon_example }} Example </span></variable>
+<variable id="label_examples"><span class="badge bg-body-tertiary text-body-secondary">{{ icon_example }} Examples </span></variable>
 
 
 <variable id="indented_arrow">&nbsp;&nbsp;&nbsp;&nbsp; ++↳++</variable>
 
-<variable name="faq"><span class="badge rounded-pill bg-info"><md>:far-question: FAQ</md></span></variable>
+<variable name="faq"><span class="badge rounded-pill text-bg-info"><md>:far-question: FAQ</md></span></variable>
 <variable name="ts"><span class="badge rounded-pill bg-warning text-dark"><md>:fas-wrench: ++Troubleshooting++</md></span></variable>
 <variable name="bad"><span style="color: red"><md>:fas-thumbs-down: Bad</md></span></variable>
 <variable name="good"><span style="color: green"><md>:fas-thumbs-up: Good</md></span></variable>
@@ -244,7 +244,7 @@
 <variable name="evidence">++{{ icon_evidence | safe }} Evidence:++</variable>
 
 <variable name="edition_badge"><small><small><small><span class='badge rounded-pill bg-{{ course_color }}'>{{ course_pair }} edition - {{ period }}</span></small></small></small></variable>
-<variable name="M"><span class="badge bg-info">&nbsp;{{ course }}&nbsp;</span></variable>
+<variable name="M"><span class="badge text-bg-info">&nbsp;{{ course }}&nbsp;</span></variable>
 <variable name="MT"><span class="badge bg-warning text-dark">{{ course }}T</span></variable>
 
 <variable name="heading_project"><h3 class="bg-dark text-white p-2 mb-4 mt-4">{{ icon_project }} Project</h3></variable>

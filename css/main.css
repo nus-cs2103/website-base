@@ -570,3 +570,73 @@
     color: #b69ae8;                      /* 6.4:1 on #212529; CSS `purple`
                                             (#800080) manages only 1.6:1 */
 }
+
+
+/* =========================================================
+   Highlighted text (<mark>, written as ==text== in Markdown).
+
+   MarkBind repaints the highlight dark-olive in dark mode
+   (`--bs-highlight-bg`, #664d03) but leaves the text at
+   `color: inherit`. Inside a fixed-colour ground -- e.g. a
+   text-bg-info panel header, where the inherited colour is
+   black -- that lands black-on-olive at 2.6:1. Pin the
+   paired colour Bootstrap already defines for that ground.
+   ========================================================= */
+
+[data-bs-theme="dark"] mark {
+    color: var(--bs-highlight-color);    /* #dee2e6, 6.1:1 on #664d03 */
+}
+
+
+/* =========================================================
+   Theme-aware text on fixed-colour grounds.
+
+   Bootstrap flips text colours between light and dark but leaves the
+   `.bg-*` fills alone, so text that adapts drifts out of contrast
+   whenever it sits on a fill that does not. Each rule below re-pins
+   one such pair. See also the <mark> rule above, same family.
+   ========================================================= */
+
+/* `%%...%%` inside an amber header (tp-grading's marks allocations).
+   .dimmed lightens to #adb5bd in dark mode while bg-warning stays
+   #ffc107, leaving 1.3:1. Darken rather than lighten here. */
+[data-bs-theme="dark"] .bg-warning .dimmed {
+    color: #5c4a00;                      /* 7.0:1 on #ffc107 */
+}
+
+/* .bg-info paints the ground only, and .badge's own default colour is
+   white -- 2.0:1, in both themes. Bootstrap's .text-bg-info pairs black
+   with the cyan; do the same for the badges that build the class from a
+   variable (`bg-{{ extStyle }}` and friends), which no source-level
+   rename can reach. */
+.badge.bg-info {
+    color: #000;                         /* 10.7:1 on #0dcaf0 */
+}
+
+/* Semantic text colours resolve from --bs-*-rgb, which is fixed, so they
+   land at 3.0-3.9:1 on the dark page. The matching *-text-emphasis
+   tokens are the theme-aware pair. !important because the rules being
+   overridden set the colour that way too. */
+[data-bs-theme="dark"] .text-danger    { color: var(--bs-danger-text-emphasis) !important; }
+[data-bs-theme="dark"] .text-success   { color: var(--bs-success-text-emphasis) !important; }
+[data-bs-theme="dark"] .mkb-text-red   { color: var(--bs-danger-text-emphasis) !important; }
+[data-bs-theme="dark"] .mkb-text-green { color: var(--bs-success-text-emphasis) !important; }
+
+/* Collapsed cross-page panel titles ("Admin -> tP -> ..."). Bootstrap
+   pins .btn-outline-secondary's --bs-btn-color to a fixed #6c757d,
+   giving 2.8:1 on the panel ground. The button's own colour cannot be
+   overridden -- MarkBind's Vue layer re-applies it -- so colour the
+   title inside it instead. */
+[data-bs-theme="dark"] .morph-display-wrapper .card-title,
+[data-bs-theme="dark"] .morph-display-wrapper .card-title * {
+    color: var(--bs-body-color) !important;
+}
+
+/* Git-Mastery lesson/tour link badges (show_gm_lesson_link and
+   show_gm_tour_link). Previously an inline #e6f4ea, which stayed light
+   in dark mode; a translucent wash tints whichever ground is behind it,
+   so no [data-bs-theme] override is needed. Paired with
+   .text-success-emphasis at the call sites: 11.1:1 light, 5.6:1 dark. */
+.bg-gm-link {
+    background-color: rgba(var(--bs-success-rgb), 0.15);
+}

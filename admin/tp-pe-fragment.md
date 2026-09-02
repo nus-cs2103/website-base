@@ -36,7 +36,7 @@
 
   * ****Phase 2: Developer Response****{.text-success}: <span id="pe-p2-desc">In this phase, you respond to the bug reports you received. This is done during the Sunday - Tuesday period after the PE.</span>
   * ****Phase 3: Tester Response****{.text-success}: <span id="pe-p3-desc">In this phase, you will receive the dev team's response to the bugs you reported, and will give your own counter-response (if needed). This is done during the Wednesday - Friday period after the PE.</span>
-  * ****Phase 4: Tutor Moderation****{.text-secondary}: <span id="pe-p4-desc">In this phase, tutors will look through all dev responses you objected to in the previous phase and decide on a final outcome. Students are not usually involved in this phase.</span><br><br>
+  * ****Phase 4: Tutor Moderation****{.text-body-secondary}: <span id="pe-p4-desc">In this phase, tutors will look through all dev responses you objected to in the previous phase and decide on a final outcome. Students are not usually involved in this phase.</span><br><br>
 
 {{ show_faq('peTooLong', is_compact=1) }}
 {{ show_faq('peOtherCommitments') }}
