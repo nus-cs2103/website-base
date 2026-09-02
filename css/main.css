@@ -845,6 +845,44 @@
     color: var(--bs-primary-text-emphasis);   /* #6ea8fe, 6.4:1 on the page */
 }
 
+/* MarkBind popovers are floating-vue (.v-popper), not Bootstrap popovers --
+   the .popover class never appears in a built page. floating-vue dresses them
+   with its dropdown theme:
+
+       .v-popper--theme-dropdown .v-popper__inner { background:#fff; color:#000 }
+
+   MarkBind tries to darken that with
+
+       [data-bs-theme=dark] .v-popper__inner { background: var(--bs-popover-bg) }
+
+   but --bs-popover-bg is declared only inside Bootstrap's own .popover rule,
+   and a .v-popper__inner is never inside a .popover, so the variable is
+   undefined here. An undefined var() makes the declaration invalid at
+   computed-value time, so background falls back to transparent rather than to
+   the #fff it meant to replace -- and the rule never touches color at all.
+
+   In dark mode that leaves a panel at 1.00:1 with the page showing through it,
+   carrying #000 body text at 1.36:1. Only spans that set a color of their own,
+   such as %%dimmed%% text, stay readable, which is why a popover can look
+   half-legible rather than plainly broken.
+
+   Set the surface, the text, and the arrow together: the arrow carries its own
+   fill and border colors and stays white otherwise. */
+[data-bs-theme="dark"] .v-popper--theme-dropdown .v-popper__inner {
+    background: #2b3035;                 /* 1.16:1 lift off the page */
+    border-color: #495057;               /* 1.63:1 on the panel */
+    color: var(--bs-body-color);         /* #dee2e6, 10.2:1 on the panel */
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.5);
+}
+
+[data-bs-theme="dark"] .v-popper--theme-dropdown .v-popper__arrow-inner {
+    border-color: #2b3035;               /* matches the panel fill */
+}
+
+[data-bs-theme="dark"] .v-popper--theme-dropdown .v-popper__arrow-outer {
+    border-color: #495057;               /* matches the panel edge */
+}
+
 /* Algolia DocSearch. The widget ships a single, light palette and the CDN
    stylesheet wires up no dark theme here, so it is pinned to that light
    palette in both themes on purpose. Two reasons: the navbar is dark
