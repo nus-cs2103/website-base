@@ -702,3 +702,35 @@
 /* Links land in the same spot: the dark-mode link colour (#6ea8fe) is
    tuned for the page, and reaches only 3.3:1 on the olive highlight. */
 [data-bs-theme="dark"] mark a { color: #cfe2ff; }                        /* 6.1:1 */
+
+
+/* =========================================================
+   Blocks that dissolve into the dark page.
+
+   These paint a fill rather than text, so nothing became
+   unreadable -- the decoration simply vanished. Each is fixed
+   by re-pointing the Bootstrap token the utility already
+   reads, which avoids having to out-shout its !important.
+   ========================================================= */
+
+/* Dark banners and pills: week pills on the timeline, the iP/tP section
+   headings, "Direction 1: Evolve", "[Key Exercise]", level thumbnails.
+   --bs-dark-rgb is a fixed 33,37,41 -- byte-identical to the dark page
+   background, so every one of these went to 1.00:1 as a block. Lifting
+   to #495057 (the theme's own border colour) reads as a raised bar at
+   1.9:1 and still carries white text at 8.2:1.
+
+   The navbar keeps the original: it already has a bottom border marking
+   it off, and it should not read as a floating slate bar. */
+[data-bs-theme="dark"] .bg-dark:not(.navbar) {
+    --bs-dark-rgb: 73, 80, 87;           /* #495057 */
+}
+
+/* Commentary and follow-up boxes. --bs-success-bg-subtle resolves to
+   #051b11 in dark mode, which is *darker* than the page -- the box read
+   as a hole punched in the background rather than a panel laid on it. A
+   translucent wash sits just above the page instead, and needs no
+   separate light-mode value. */
+[data-bs-theme="dark"] .bg-success-subtle {
+    --bs-success-bg-subtle: rgba(var(--bs-success-rgb), 0.15);
+}

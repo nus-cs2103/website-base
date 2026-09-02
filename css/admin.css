@@ -5,3 +5,10 @@ h2{
     margin-bottom: 10px;
     padding: 5px;
 }
+
+/* The h2 banner above is a fixed #292b2c, within 1.08:1 of the dark page
+   background, so the bar disappeared there. Matches the slate used for
+   .bg-dark banners in main.css. */
+[data-bs-theme="dark"] h2 {
+    background-color: #495057;
+}
