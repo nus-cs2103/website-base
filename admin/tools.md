@@ -26,7 +26,7 @@ Install Zoom on your computer. Installation and login instructions are [here](ht
 
 <box>
 
-<span style="color:purple">**:fas-hard-hat: Preparation**:</span>
+<span class="text-purple">**:fas-hard-hat: Preparation**:</span>
 
 Create a GitHub account (if you don't have one yet), as explained in the panel below.
 
@@ -52,7 +52,7 @@ Create a GitHub account (if you don't have one yet), as explained in the panel b
 
 <box>
 
-<span style="color:purple">**:fas-hard-hat: Preparation:**</span>
+<span class="text-purple">**:fas-hard-hat: Preparation:**</span>
 
 * You'll receive the invitation to Coursemology sometime close to the first lecture.
 * More information about Coursemology will be given in the first lecture.
@@ -88,7 +88,7 @@ Follow the tutorial [_Using the Codex Desktop App_ at SE-EDU Guides](https://se-
 
 <box>
 
-<span style="color:purple">**:fas-hard-hat: Preparation:**</span>
+<span class="text-purple">**:fas-hard-hat: Preparation:**</span>
 
 We encourage all students to ==_watch_ [the forum]({{ url_forum }})== to get alerts when new issues/comments are posted ![image](https://user-images.githubusercontent.com/1673303/44647915-0c761a80-aa12-11e8-98ac-2deb50532643.png)
 </box>
@@ -135,7 +135,7 @@ That said, we have also provided many **resources for VS Code at [se-edu/guides]
 
 <box>
 
-<span style="color:purple">**:fas-hard-hat: Preparation:**</span>
+<span class="text-purple">**:fas-hard-hat: Preparation:**</span>
 * Install the IDE on your computer. You may use the IntelliJ community edition (free) or the ultimate edition (free for students).
 * If you have an older version of the IDE, we recommend updating to the latest version.
 </box>
@@ -155,7 +155,7 @@ We use the [TEAMMATES](http://teammatesv4.appspot.com/) online peer evaluation s
 
 <box>
 
-<span style="color:purple">**:fas-hard-hat: Preparation:**</span>
+<span class="text-purple">**:fas-hard-hat: Preparation:**</span>
 When the first feedback session is open on TEAMMATES, you will receive an email from TEAMMATES. There is nothing for you to do until then.
 
 When you receive that email, it will include a unique link that lets you access TEAMMATES without logging in. Logging in with a Google account is optional, but doing so allows you to view all your TEAMMATES sessions on one page.

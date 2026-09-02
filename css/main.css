@@ -640,3 +640,65 @@
 .bg-gm-link {
     background-color: rgba(var(--bs-success-rgb), 0.15);
 }
+
+
+/* Heading text paired with the info badges (`<span class="text-info">`).
+   --bs-info is a bright cyan (#0dcaf0) that reads well on the dark page
+   but only manages 2.0:1 on white -- and light is the default theme, so
+   this was the site's worst contrast in the theme most readers see. The
+   *-text-emphasis token is the per-theme pair: a deeper teal on white,
+   a lighter cyan on the dark ground.
+
+   :not(.bg-info) spares the mid-semester survey bar charts, which stack
+   `text-info bg-info` deliberately so the filler dots stay invisible. */
+.text-info:not(.bg-info) {
+    color: var(--bs-info-text-emphasis) !important;   /* 5.1:1 light, 9.9:1 dark */
+}
+
+
+/* "Preparation" labels (:fas-hard-hat:) on the tool-setup pages, plus the
+   references to them in the task lists. CSS `purple` (#800080) reads well
+   on white at 9.4:1, so light mode is left exactly as authored; it is only
+   the dark page, at 1.4:1, that needs a lighter value. */
+.text-purple {
+    color: purple;
+}
+
+[data-bs-theme="dark"] .text-purple {
+    color: #b69ae8;                      /* 5.6:1 on the tertiary panel */
+}
+
+/* The "AI's impact on >>" label heading the per-topic commentary boxes.
+   Same shape: 8.3:1 on white, but 2.2:1 on the box's dark ground. */
+.ai-impact-label {
+    color: #0c1ff6;
+}
+
+[data-bs-theme="dark"] .ai-impact-label {
+    color: #6ea8fe;                      /* 7.4:1 on #051b11 */
+}
+
+/* .bg-white and .tbg are light surfaces in *both* themes -- a <pic> whose
+   transparent image needs a pale ground, with its caption sharing the
+   panel. Dark-mode body text lands on them at 1.3:1 and 1.15:1, so pin
+   the light palette for anything inside. The link colour is darker than
+   Bootstrap's #0d6efd, which manages only 3.0:1 on .tbg's translucent
+   ground once it composites over the dark page. */
+[data-bs-theme="dark"] .bg-white,
+[data-bs-theme="dark"] .tbg     { color: #212529; }   /* 15.4:1 white, 10.3:1 .tbg */
+
+[data-bs-theme="dark"] .bg-white a,
+[data-bs-theme="dark"] .tbg a   { color: #084298; }   /*  9.4:1 white,  6.3:1 .tbg */
+
+/* Semantic colours nested inside a highlight. The *-text-emphasis tokens
+   are tuned for the page background, not for mark's dark olive, so they
+   stop at ~3.2:1 there. These are the light-theme *-bg-subtle values,
+   which keep the red/green distinction and clear AA on #664d03.
+   !important because the .text-danger/.text-success rules above set the
+   colour that way too; this selector is the more specific of the two. */
+[data-bs-theme="dark"] mark .text-danger  { color: #f8d7da !important; }  /* 6.0:1 */
+[data-bs-theme="dark"] mark .text-success { color: #d1e7dd !important; }  /* 6.2:1 */
+
+/* Links land in the same spot: the dark-mode link colour (#6ea8fe) is
+   tuned for the page, and reaches only 3.3:1 on the olive highlight. */
+[data-bs-theme="dark"] mark a { color: #cfe2ff; }                        /* 6.1:1 */

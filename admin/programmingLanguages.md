@@ -29,7 +29,7 @@ The exam expects Java knowledge you would normally gain from using it in the cou
 
 <box>
 
-<span style="color:purple">**:fas-hard-hat: Preparation:**</span>
+<span class="text-purple">**:fas-hard-hat: Preparation:**</span>
 
 We require you to use **Java {{ java_version }}** and JDK {{ java_version }} (the [Oracle version](https://www.oracle.com/java/technologies/downloads/#java{{ java_version }}) or an alternative such as OpenJDK) for all coursework. {{ ask_chatgpt("What is JDK?", "What is the JDK? How is it related to SDKs? Answer briefly")}} It is your responsibility to ensure the code you write (and executables you produce) is compatible with that version of Java. ==Any incompatibilities will be considered bugs==.
 

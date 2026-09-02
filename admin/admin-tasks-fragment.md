@@ -24,7 +24,7 @@
 <span id="heading_set_up_tools">Set up the tools</span>
 <div id="desc_set_up_tools">
 
-* Follow the tool <span class="border pe-1 ps-1" style="color:purple">**:fas-hard-hat: Preparation**</span> instructions given in the following panels.
+* Follow the tool <span class="border pe-1 ps-1 text-purple">**:fas-hard-hat: Preparation**</span> instructions given in the following panels.
 
 {{ embed_topic(baseUrl+"/admin/programmingLanguages.md#main", "Admin " + icon_embedding + " **Programming Language** (and #r#the Java version you are required to use##)", "2", indent="1") }}
 {{ embed_topic("tools.md#github", "Admin " + icon_embedding + " **Tools - GitHub**", "2", indent="1") }}

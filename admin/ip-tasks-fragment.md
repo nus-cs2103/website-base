@@ -651,7 +651,7 @@ If your fork doesn't have the `add-gradle-support` branch (i.e., you did not cop
 <span id="heading_set_up_prerequisites">Set up prerequisites</span>
 <div id="desc_set_up_prerequisites">
 
-* **Ensure you have followed the <span class="ps-1 pe-1" style="color:purple; border: 0.5px solid lightgrey">:fas-hard-hat: Preparation</span> sections of the following course tools:**
+* **Ensure you have followed the <span class="ps-1 pe-1 text-purple" style="border: 0.5px solid lightgrey">:fas-hard-hat: Preparation</span> sections of the following course tools:**
 
 {{ embed_topic(baseUrl+"/admin/programmingLanguages.md#main", "Admin " + icon_embedding + " **Programming Language**", "2", indent="1") }}
 {{ embed_topic("tools.md#rcs", "Admin " + icon_embedding + " **Tools → Git**", "2", indent="1") }}
