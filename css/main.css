@@ -845,20 +845,51 @@
     color: var(--bs-primary-text-emphasis);   /* #6ea8fe, 6.4:1 on the page */
 }
 
-/* Algolia DocSearch button. Its own #969faf placeholder is only 2.3:1 on
-   its #ebedf0 pill, so the navbar search reads poorly in *both* themes;
-   the CDN stylesheet also has no dark theme here, so the pill stays light
-   against the dark navbar. The variables
-   are set on the button rather than :root on purpose: the search modal
-   portals to <body> and keeps its own light palette, so re-colouring its
-   text globally would leave dark text on a light panel. */
-.DocSearch-Button {
-    --docsearch-muted-color: #5c6370;    /* 5.2:1 on the light #ebedf0 pill */
+/* Algolia DocSearch. The widget ships a single, light palette and the CDN
+   stylesheet wires up no dark theme here, so it is pinned to that light
+   palette in both themes on purpose. Two reasons: the navbar is dark
+   whichever theme the page is in, so a light pill is the readable choice
+   on it either way; and the modal portals out to <body>, where a
+   half-themed panel would read worse than a consistently light one.
+
+   Nothing in the widget's own CSS breaks in dark mode. What breaks is the
+   site's element-level dark rules reaching into its markup, since the
+   shortcut keys are <kbd> and the modal footer is a <footer>. MarkBind
+   repaints both, and the modal inherits the dark body text color. Each is
+   put back below.
+
+   Its own #969faf muted color is only 2.3:1 on the #ebedf0 pill and 1.9:1
+   on a shortcut key, so both are darkened in both themes. */
+.DocSearch-Button,
+.DocSearch-Modal {
+    --docsearch-muted-color: #5c6370;    /* 5.2:1 on the light pill */
 }
 
-[data-bs-theme="dark"] .DocSearch-Button {
-    --docsearch-searchbox-background: #2b3035;
-    --docsearch-searchbox-focus-background: #343a40;
-    --docsearch-text-color: #dee2e6;
-    --docsearch-muted-color: #adb5bd;    /* 6.4:1 on the dark pill */
+kbd.DocSearch-Button-Key,
+kbd.DocSearch-Commands-Key {
+    color: #4d5361;                      /* 5.5:1 on the key gradient */
+}
+
+/* MarkBind's dark <kbd> rule out-ranks the widget's own key styling: it
+   paints the key #2b3035 and its text #e9ecef, but only the background
+   *color*, so the light key gradient still covers it and the glyph ends up
+   at 1.2:1. Uncover the gradient and restore the key's own text. */
+[data-bs-theme="dark"] kbd.DocSearch-Button-Key,
+[data-bs-theme="dark"] kbd.DocSearch-Commands-Key {
+    background-color: transparent;
+    box-shadow: var(--docsearch-key-shadow);
+    color: #4d5361;                      /* 5.5:1 on the key gradient */
+}
+
+/* MarkBind's dark <footer> rule turns the modal's footer near-black inside
+   an otherwise light panel. */
+[data-bs-theme="dark"] footer.DocSearch-Footer {
+    background-color: var(--docsearch-footer-background);
+    color: var(--docsearch-text-color);   /* 16.7:1 on the white footer */
+}
+
+/* Text in the modal that sets no color of its own -- the start screen and
+   the no-results screen -- otherwise inherits the dark body color. */
+[data-bs-theme="dark"] .DocSearch-Modal {
+    color: var(--docsearch-text-color);   /* 15.4:1 on the modal */
 }
