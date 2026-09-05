@@ -201,5 +201,20 @@ This is a non-exhaustive list; you may define additional roles.
 </div>
 <!-- ==================================================================================================== -->
 
+<div id="tpAiExpectations">
+
+<h2 class="text-bg-codex p-1">{{ icon_ai }} Expectations on AI use in the tP</h2>
+
+* **You are expected to use AI in the tP**, following the guidance in [Course Expectations → Use of AI]({{ url_course_website }}/admin/courseExpectations.html?cv-box=use-of-ai%3Ared%3Atl%3ADetails%2520...).
+* **We recommend that you ==gradually increase your level of AI use== throughout the tP**, but this is not _required_.
+  <box type="warning" seamless>
+
+  If you used AI sparingly in the iP or did not read its AI guidance, **skim those iP guidance notes** now for techniques that may help you later.
+  </box>
+* Unlike in the iP, we will not provide frequent AI guidance for the tP.<br>
+  **You are expected to decide where and how to use AI and to craft most of your own prompts.** We will still provide occasional guidance on using AI in the tP.
+
+</div>
+<!-- ==================================================================================================== -->
 </div>
 {% endcall %}

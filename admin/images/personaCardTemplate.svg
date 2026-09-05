@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 470" width="640" height="470" role="img" aria-label="Layout of a persona card: avatar and name at the top, then a quote, then goals and frustrations side by side, then the situation in which the persona would use the product">
+  <style>
+    .label { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 10.5px; font-weight: 700; letter-spacing: 0.9px; fill: #7d8792; }
+    .bar-strong { fill: #c2cad3; }
+    .bar { fill: #dee3e9; }
+    .rule { stroke: #e6eaee; stroke-width: 1; }
+  </style>
+
+  <rect x="12" y="12" width="616" height="446" rx="14" fill="#ffffff" stroke="#d3d9e0" stroke-width="1.5"/>
+
+  <!-- identity -->
+  <circle cx="80" cy="92" r="40" fill="#eef1f4" stroke="#dee3e9" stroke-width="1.5"/>
+  <circle cx="80" cy="80" r="14" fill="#c7cdd5"/>
+  <path d="M56 116a24 22 0 0 1 48 0z" fill="#c7cdd5"/>
+
+  <text class="label" x="144" y="66">NAME</text>
+  <rect class="bar-strong" x="144" y="74" width="205" height="20" rx="5"/>
+  <text class="label" x="144" y="114">ROLE, AND WHO THEY ARE IN ONE LINE</text>
+  <rect class="bar" x="144" y="122" width="330" height="12" rx="4"/>
+
+  <line class="rule" x1="40" y1="160" x2="600" y2="160"/>
+
+  <!-- quote -->
+  <text x="42" y="222" font-family="Georgia, serif" font-size="52" fill="#dee3e9">&#8220;</text>
+  <text class="label" x="90" y="190">QUOTE, IN THEIR OWN WORDS</text>
+  <rect class="bar" x="90" y="198" width="436" height="12" rx="4"/>
+  <rect class="bar" x="90" y="218" width="352" height="12" rx="4"/>
+
+  <line class="rule" x1="40" y1="256" x2="600" y2="256"/>
+
+  <!-- goals -->
+  <text class="label" x="40" y="286">GOALS</text>
+  <circle cx="46" cy="302" r="3" fill="#c2cad3"/>
+  <rect class="bar" x="58" y="296" width="196" height="12" rx="4"/>
+  <circle cx="46" cy="326" r="3" fill="#c2cad3"/>
+  <rect class="bar" x="58" y="320" width="222" height="12" rx="4"/>
+  <circle cx="46" cy="350" r="3" fill="#c2cad3"/>
+  <rect class="bar" x="58" y="344" width="168" height="12" rx="4"/>
+
+  <!-- frustrations -->
+  <text class="label" x="340" y="286">FRUSTRATIONS</text>
+  <circle cx="346" cy="302" r="3" fill="#c2cad3"/>
+  <rect class="bar" x="358" y="296" width="212" height="12" rx="4"/>
+  <circle cx="346" cy="326" r="3" fill="#c2cad3"/>
+  <rect class="bar" x="358" y="320" width="176" height="12" rx="4"/>
+  <circle cx="346" cy="350" r="3" fill="#c2cad3"/>
+  <rect class="bar" x="358" y="344" width="230" height="12" rx="4"/>
+
+  <line class="rule" x1="40" y1="378" x2="600" y2="378"/>
+
+  <!-- context of use -->
+  <text class="label" x="40" y="406">WHEN AND WHY THEY WOULD REACH FOR OUR PRODUCT</text>
+  <rect class="bar" x="40" y="414" width="520" height="12" rx="4"/>
+  <rect class="bar" x="40" y="434" width="404" height="12" rx="4"/>
+</svg>

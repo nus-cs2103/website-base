@@ -770,7 +770,7 @@ As we are still in the early stages of identifying a problem to solve, do not th
 {% call show_ai_guidance("Using AI to stress-test personas and user journeys") %}
 You can use AI to help with this task:
 
-* Option 1: Ask AI to _create_ the persona from your one-line description. Downside: What comes back is your own assumptions, restated at greater length and with more confidence.
+* Option 1: Ask AI to _create_ the persona (and user journey) from your one-line description. Downside: What comes back is your own assumptions, restated at greater length and with more confidence.
 * Option 2 [recommended]: Write the persona and the user journey yourselves first, as a team, by following the recipe. Then use AI to attack what you wrote.
 
 The details below are for the 2nd option:
@@ -816,6 +816,10 @@ Use only what I gave you. Don't invent traits, backstory, numbers, or job detail
 
 Give it to me as a self-contained HTML file I can open and screenshot, sized to fit on one page. Use a simple illustrated avatar, not a photo of a real person.
 {% endcall %}
+
+<panel type="seamless" header="A peek at what a _persona card_ looks like" peek >
+<pic src="images/personaCardTemplate.svg" />
+</panel>
 {% endcall %}
 </div>
 

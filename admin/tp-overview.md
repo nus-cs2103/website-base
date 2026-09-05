@@ -71,7 +71,13 @@ For example, an app to manage one of these:{% if cs2113 %}
 
 <div tags="m--cs2103">
 
-<span class="badge rounded-pill bg-dark text-light">++++Direction 1: Evolve++++</span> Evolve <tooltip content="AddressBook-Level3">AB3</tooltip> into a more powerful or more optimized contact management app. Some examples:
+<span class="badge rounded-pill bg-dark text-light">++++Direction 1: Evolve++++</span> Evolve <tooltip content="AddressBook-Level3">AB3</tooltip> into a more powerful or more optimized contact management app.
+
+<box type="tip" seamless>
+
+TLDR: **In the Evolve direction, make AB3 a better version of itself.**
+</box>
+Some examples:
 
 * Contact management optimized for a specific type of user, for example:
   * a salesperson managing client contacts (can be further optimized for the product/service type e.g., insurance, loans, real estate, etc.)
