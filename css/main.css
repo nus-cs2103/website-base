@@ -268,6 +268,26 @@
     /* Alternative: background-color: var(--bs-secondary-bg); for a slightly darker gray */
 }
 
+/* se-book-adapted chapter pages also load book/css/common.css, and they load
+   it after this file. It carries the pre-dark-mode version of the rule above:
+
+       .alert.box-container.alert-default {
+           background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity));
+       }
+
+   --bs-light-rgb is a fixed 248,249,250 in both themes -- the mirror of the
+   --bs-dark-rgb problem handled further down -- so on those pages an untyped
+   <box> keeps a #f8f9fa ground on the dark page and the body text sits on it
+   at 1.24:1. The two rules have the same specificity, so there it simply wins
+   on order; scoping to dark takes it back. The same box on a /book/ page is
+   fine, because those pages load only this file.
+
+   Light mode needs no counterpart: --bs-tertiary-bg is #f8f9fa there, so both
+   rules already agree. */
+[data-bs-theme="dark"] .alert.box-container.alert-default {
+    background-color: var(--bs-tertiary-bg);  /* #2b3035, 10.2:1 for body text */
+}
+
 /* =========================================================
    Custom panel types: purple, teal, pink, claude, codex
 

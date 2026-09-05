@@ -1,4 +1,5 @@
 {% from "common/topics.njk" import panopto, slugify, topic_followup, topic_preamble with context %}
+{% from "common/macros.njk" import show_ai_impact with context %}
 
 
 <!-- ---------------------------------------------------------------------------- -->
@@ -10,6 +11,20 @@ As you will be dealing with the _requirements_ aspects of the tP soon, this is a
 <!-- ---------------------------------------------------------------------------- -->
 {{ topic_preamble("Requirements: Gathering") }}
 {{ topic_preamble("Requirements: Specifying") }}
+
+{% call topic_followup("Requirements: Specifying", reuse=false) %}
+
+{% call show_ai_impact("Software Requirements") %}
+**AI makes drafting and organizing requirements easier, but makes clear, validated requirements more important.** Agents can quickly suggest features, summarize stakeholder input, create prototypes, and turn notes into user stories, acceptance criteria, and glossaries. This reduces the effort needed for brainstorming and routine documentation.
+
+**An AI agent cannot authoritatively decide what stakeholders truly need, which trade-offs matter, or whether conflicting needs have been resolved.** Because AI can turn vague instructions into plausible software very quickly, teams must put more effort into gathering evidence from real users, recording important constraints and non-functional requirements, and stating acceptance criteria precisely—otherwise, AI merely helps them build the wrong product faster.
+
+**Thanks to AI, prototyping is now becoming the cheapest way to gather requirements.** Stakeholders work out what they want by reacting to something concrete. Building that concrete thing used to be slow, so teams asked in surveys and interviews instead. Now you can put a rough version in front of people in an afternoon.
+
+{% endcall %}
+
+{% endcall %}
+
 <!-- ---------------------------------------------------------------------------- -->
 {% call topic_preamble("Refactoring", reuse=false) %}
 

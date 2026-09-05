@@ -5,7 +5,7 @@
  {name: "ACHMAD FIRDAUS ASSABIL", nick: "Assabil", nusnet: "e1375365", github: "MrMarshall12"},
  {name: "GUPTA AVISHI", nick: "Avishi", nusnet: "e1355071", github: "Avishi-Gupta"},
  {name: "BRIAN SEBASTIAN HU", nick: "Brian", nusnet: "e1398493", github: "joojaja"},
- {name: "CHEW JIA HUI, BRYAN", nick: "Bryan", nusnet: "e1122357", github: "bryanjhc"},
+ {name: "CHEW JIA HUI, BRYAN", nick: "Bryan", nusnet: "e1122357", github: "itsjackkenson"},
  {name: "CHEN FENG", nick: "Chen Feng", nusnet: "e1155304", github: "Feng1231"},
  {name: "DARREN TEO HEE HONG", nick: "Darren", nusnet: "e1122143", github: "darHH"},
  {name: "DARRYL YENG WEI ZHI", nick: "Darryl", nusnet: "e1398031", github: "Arkanian4"},
