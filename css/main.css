@@ -595,16 +595,64 @@
 /* =========================================================
    Highlighted text (<mark>, written as ==text== in Markdown).
 
-   MarkBind repaints the highlight dark-olive in dark mode
-   (`--bs-highlight-bg`, #664d03) but leaves the text at
-   `color: inherit`. Inside a fixed-colour ground -- e.g. a
-   text-bg-info panel header, where the inherited colour is
-   black -- that lands black-on-olive at 2.6:1. Pin the
-   paired colour Bootstrap already defines for that ground.
+   MarkBind picks its own highlighter yellow for light mode --
+   `mark { background-color: #ff0 }`, overriding Bootstrap's
+   pale #fff3cd -- but in dark mode it hands the ground back to
+   Bootstrap's --bs-highlight-bg, which is a dark olive,
+   #664d03. That sits only deltaE 50 from the #212529 page,
+   against light mode's 97, so the highlight stops doing the
+   one job a highlight has.
+
+   The gap is structural, not a careless pick. Yellow works on
+   white because it is nearly as *light* as the page and
+   differs almost entirely in chroma. Nothing can do that on a
+   dark page: no saturated colour exists down at the page's
+   L* 13, so on dark the only route to salience is lightness --
+   a bright ground with dark text, which is also what a real
+   highlighter pen looks like.
+
+   So dark mode inverts, exactly as .bg-white and .tbg do
+   further down: a light ground, with the light palette pinned
+   for everything sitting on it. #e6d000 lands deltaE 111 from
+   the page -- near light mode's 97, and short of pure #ff0,
+   which glares at 130.
    ========================================================= */
 
+[data-bs-theme="dark"] {
+    --bs-highlight-bg: #e6d000;          /* was #664d03 */
+    --bs-highlight-color: #212529;       /* was #dee2e6; 9.8:1 on the gold */
+}
+
+/* MarkBind leaves mark's text at `color: inherit`, which inside a
+   fixed-colour ground -- e.g. a text-bg-info panel header, where the
+   inherited colour is black -- ignores the token above. Pin it. */
 [data-bs-theme="dark"] mark {
-    color: var(--bs-highlight-color);    /* #dee2e6, 6.1:1 on #664d03 */
+    color: var(--bs-highlight-color);
+}
+
+
+/* Inline code inside a highlight. MarkBind already intends a translucent
+   chip here -- `mark code { background-color: rgba(255,255,255,.83) }` --
+   so the highlight tints it and the band reads as one continuous stripe.
+   That rule never wins: it is two element selectors, (0,0,2), while the
+   highlight.js theme's `.hljs.inline` is two classes, (0,2,0). So the code
+   keeps its ordinary chip instead -- #f8f8f8 in light, #444 in dark. On
+   yellow the accident passes for the intended thing; on the gold it punches
+   a dark hole straight through the highlight. One specificity fix serves
+   both themes.
+
+   Only the text colour needs a theme scope: light already pins #c2255c
+   further down, while dark would otherwise keep the code theme's #dcdcdc
+   on a near-white chip. Both are scoped to .no-lang, so a
+   language-highlighted snippet -- none are inside a mark today -- keeps its
+   own dark ground and its syntax colours rather than losing them to a chip
+   it cannot be read on. */
+mark code.hljs.no-lang {
+    background-color: rgba(255, 255, 255, 0.83);   /* #ffffd4 on yellow, #fbf7d4 on gold */
+}
+
+[data-bs-theme="dark"] mark code.hljs.no-lang {
+    color: #c2255c;                                /* 5.2:1 on the chip */
 }
 
 
@@ -667,16 +715,56 @@
 
 
 /* Heading text paired with the info badges (`<span class="text-info">`).
-   --bs-info is a bright cyan (#0dcaf0) that reads well on the dark page
-   but only manages 2.0:1 on white -- and light is the default theme, so
-   this was the site's worst contrast in the theme most readers see. The
-   *-text-emphasis token is the per-theme pair: a deeper teal on white,
-   a lighter cyan on the dark ground.
+
+   Bootstrap's plain colour utilities are not theme-aware. `.text-info`
+   resolves to rgba(var(--bs-info-rgb), ...), and --bs-info-rgb is
+   declared exactly once, as 13,202,240 (#0dcaf0), with no
+   [data-bs-theme="dark"] counterpart -- the same trap as --bs-light-rgb
+   and --bs-dark-rgb further down. That cyan reads well on the dark page
+   but manages 2.0:1 on white, and light is the default theme, so this
+   was the site's worst contrast in the theme most readers see.
+
+   The theme-aware pair is --bs-info-text-emphasis, which Bootstrap 5.3
+   exposes as `.text-info-emphasis`. Relabelling every `.text-info` call
+   site across the site's markdown would be the by-the-book fix; pointing
+   the utility at the token is the cheap equivalent.
+
+   Bootstrap derives the light half of that token mechanically, as
+   shade-color($info, 60%), and #055160 lands so dark it reads almost
+   black beside body text. The value below is that same ladder taken one
+   step less far -- shade-color($info, 40%) -- which lifts it a long way
+   (Lab L* 31 -> 47, chroma 21 -> 28) while holding --bs-info's own hue.
+   Dark keeps Bootstrap's #6edff6, which measures well as it is.
+
+   Holding the hue is the point. The site pairs these labels with
+   `text-bg-info` badges and banners -- see admin/tp-expectations.md,
+   where an <h2 class="text-bg-info"> sits directly above a matching
+   <span class="text-info"> -- and that fill is --bs-info itself, fixed
+   at hue 190 in both themes. Anything off that hue reads as a second
+   colour beside the badge rather than the same one, which is what a
+   turquoise (hue 175) did here. Dark already works this way: #6edff6 is
+   the same hue as the fill, only lighter.
+
+   40% is also the last step that clears AA. These spans are not all
+   headings -- they also wrap 10.5px `<code>` marks and one 16px
+   regular-weight line -- so the 4.5:1 bar for normal text applies, and
+   shade 35% (#08839c) falls to 4.2:1 on a <box>.
+
+   Retuning the token rather than hard-coding a colour on `.text-info`
+   keeps everything that reaches it by another route in step --
+   `.text-info-emphasis`, `.alert-info`, `.list-group-item-info`. None
+   are in use today; a future .alert-info would sit at 4.34:1 on
+   --bs-info-bg-subtle, so give that one an explicit colour if it ever
+   turns up.
 
    :not(.bg-info) spares the mid-semester survey bar charts, which stack
    `text-info bg-info` deliberately so the filler dots stay invisible. */
+:root:not([data-bs-theme="dark"]) {
+    --bs-info-text-emphasis: #087990;                 /* was #055160 */
+}
+
 .text-info:not(.bg-info) {
-    color: var(--bs-info-text-emphasis) !important;   /* 5.1:1 light, 9.9:1 dark */
+    color: var(--bs-info-text-emphasis) !important;   /* 5.1:1 light, 10.0:1 dark */
 }
 
 
@@ -714,18 +802,20 @@
 [data-bs-theme="dark"] .bg-white a,
 [data-bs-theme="dark"] .tbg a   { color: #084298; }   /*  9.4:1 white,  6.3:1 .tbg */
 
-/* Semantic colours nested inside a highlight. The *-text-emphasis tokens
-   are tuned for the page background, not for mark's dark olive, so they
-   stop at ~3.2:1 there. These are the light-theme *-bg-subtle values,
-   which keep the red/green distinction and clear AA on #664d03.
+/* Semantic colours nested inside a highlight. Dark mode's tokens are
+   tuned for the dark page, so on the highlight's light ground they wash
+   out completely -- the old #f8d7da danger sits at 1.2:1 on the gold.
+   These are the light-theme emphasis values, the same ones .bg-white and
+   .tbg pin just above, for the same reason: the ground is light even
+   though the page is not.
    !important because the .text-danger/.text-success rules above set the
    colour that way too; this selector is the more specific of the two. */
-[data-bs-theme="dark"] mark .text-danger  { color: #f8d7da !important; }  /* 6.0:1 */
-[data-bs-theme="dark"] mark .text-success { color: #d1e7dd !important; }  /* 6.2:1 */
+[data-bs-theme="dark"] mark .text-danger  { color: #58151c !important; }  /* 8.7:1 */
+[data-bs-theme="dark"] mark .text-success { color: #0a3622 !important; }  /* 8.6:1 */
 
-/* Links land in the same spot: the dark-mode link colour (#6ea8fe) is
-   tuned for the page, and reaches only 3.3:1 on the olive highlight. */
-[data-bs-theme="dark"] mark a { color: #cfe2ff; }                        /* 6.1:1 */
+/* Links land in the same spot: the dark-mode link colour (#6ea8fe) drops
+   to 1.5:1 on the gold. #084298 is what .bg-white and .tbg already use. */
+[data-bs-theme="dark"] mark a { color: #084298; }                         /* 6.0:1 */
 
 
 /* =========================================================

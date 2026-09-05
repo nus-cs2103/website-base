@@ -14,7 +14,7 @@
 <div tags="m--cs2103" id="functionality-expectations">
 
 **The expected level of _functionality_ is what you could achieve if each member puts in about ==50% of the implementation effort they put into the iP==** (reason for setting it much less than 100%: even after adding the extra overhead of doing the project as a team and working with an existing codebase, we don't want the tP to take more effort than the iP). This is the primary measure we will use when grading your tP implementation effort.<br>
-Furthermore, we estimate that this bar is roughly _equivalent_ to **writing about 300-400 lines of functional code** (excluding testing and documentation) per person. This is a secondary ballpark measure you can keep an eye on, alongside the primary measure mentioned above.
+Furthermore, we estimate that this bar is roughly _equivalent_ to **writing about {{ tp_min_loc }}-{{ (tp_min_loc | int) + 100 }} lines of functional code** (excluding testing and documentation) per person. This is a secondary ballpark measure you can keep an eye on, alongside the primary measure mentioned above.
 
 </div>
 <div tags="m--cs2113">

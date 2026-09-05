@@ -165,6 +165,8 @@
 <variable id="bullet_tip">{ icon="fas-lightbulb" i-class="badge rounded-pill bg-success text-white my-1" i-size="10px" }</variable>
 <variable id="bullet_x_red">{ icon="fas-times" i-class="text-danger" }</variable>
 
+<variable name="icon_ai"><md>:fas-robot:</md></variable>
+<variable name="icon_ai_blue"><span class="text-primary"><md>{{ icon_ai }}</md></span></variable>
 <variable name="icon_alert"><span class="badge rounded-pill bg-danger text-light">:fas-exclamation: ALERT</span></variable>
 <variable name="icon_announcement"><md>:fas-bell:</md></variable>
 <variable name="icon_book"><md>:fas-book:</md></variable>

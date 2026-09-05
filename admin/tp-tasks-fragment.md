@@ -1,5 +1,5 @@
 {% from "common/admin.njk" import show_admin_page with context %}
-{% from "common/macros.njk" import as_tag, button, embed_topic, get_date, show_as_tab, show_as_rounded_tab, show_caution, show_faq, show_gm_lesson_link, show_tp_goals, show_tp_week_intro, show_tp_week_outro, show_tp_iterations_gantt, thumb, thumb_small, timing_badge with context %}
+{% from "common/macros.njk" import as_tag, button, embed_topic, get_date, mdblock, show_ai_guidance, show_as_tab, show_as_rounded_tab, show_caution, show_faq, show_gm_lesson_link, show_tp_goals, show_tp_week_intro, show_tp_week_outro, show_tp_iterations_gantt, thumb, thumb_small, timing_badge with context %}
 {% from "admin/ip-tasks-fragment.md" import show_xp_page  with context %}
 {% from "_course-" + course + "/weeklyTpTasks-fragment.md" import weekly_tp_tasks  with context %}
 {% from "_course-" + course + "/studentData-fragment.md" import tp_dg_review_allocation with context %}
@@ -226,6 +226,10 @@ In addition, you can mitigate the impact of such bugs and thus lower their sever
   Note: We are not aiming for a precise design of the end product. As per B, we don't need such a precise design this early in the project.
 * Task {{ thumb_small("2") }} (_Choose user stories for the MVP version_) takes the first step in the direction of PS2 above, by **narrowing down the user requirements** to a smaller subset that we can deliver in an earlier iteration.
 
+For reference:
+{{ icon_ai_blue }} {{ embed_topic("tp-expectations.md#tpAiExpectations", "Admin " + icon_embedding + " tP → Expectations → **Expectations on AI use in the tP**", "3", indent="1") }}
+
+
 {% endcall %}
 {#====================================================================================================================#}
 {% call show_tp_week_intro("cs2103", 6) %}
@@ -262,6 +266,9 @@ This week, we focus on two fronts:
 {{ embed_topic("weeklySchedule.md#deadline-definition", "Admin " + icon_embedding + " Weekly schedule → **Deadline for weekly tasks**", "1", indent="1") }}
 
 * **Most aspects of project progress are tracked using automated scripts.** ==Please follow our instructions closely or else the scripts will not be able to detect your progress==. There will be no partial credit for work that did not follow the instructions precisely, but in most cases you can get the work counted simply by rectifying the non-compliance.{{ bullet_important_red }}
+
+{{ icon_ai_blue }} For reference:
+{{ embed_topic("tp-expectations.md#tpAiExpectations", "Admin " + icon_embedding + " tP → Expectations → **Expectations on AI use in the tP**", "3", indent="1") }}
 
 {% endcall %}
 {#====================================================================================================================#}
@@ -756,7 +763,61 @@ As we are still in the early stages of identifying a problem to solve, do not th
 
 * **==Follow the steps in the recipe mentioned above to arrive at user stories== for the product**, with your team members. <span tags="m--cs2103"><span class="text-danger">If you don't follow the recipe</span>, you could end up with a different set of user stories than you would otherwise.
   </span><br>
-  **Keep records of all intermediate steps, e.g., the persona, scope, and narrative.**
+  **Keep records of all intermediate steps, e.g., the persona, scope, and narrative** (aka user journey).
+
+<div class="indented-level1">
+
+{% call show_ai_guidance("Using AI to stress-test personas and user journeys") %}
+You can use AI to help with this task:
+
+* Option 1: Ask AI to _create_ the persona from your one-line description. Downside: What comes back is your own assumptions, restated at greater length and with more confidence.
+* Option 2 [recommended]: Write the persona and the user journey yourselves first, as a team, by following the recipe. Then use AI to attack what you wrote.
+
+The details below are for the 2nd option:
+
+**1. Ask AI to poke holes in the persona.**
+{% call mdblock() %}
+Here is the user persona and problem scope my team wrote for our product:
+
+[persona and scope]
+
+Don't rewrite it. Instead:
+- List the claims in it that we have assumed rather than observed, and suggest how we could check each one.
+- Name up to 5 kinds of users this persona leaves out, especially those whose needs would change our feature list.
+- Point out details that are stereotypes rather than characteristics that actually affect how the user would use the product.
+{% endcall %}
+
+**2. Ask AI to role-play the persona, but aim it at friction.** Ask an AI "would you use this product?" and you will get a yes. **The question worth asking is where the user gives up.**
+{% call mdblock() %}
+Play the role of this persona:
+
+[persona]
+
+Here are the stages of the user journey we expect them to go through:
+
+[stages]
+
+For each stage, tell me in the persona's voice: what they are trying to achieve, what would confuse or annoy them, and the point at which they would abandon the product and go back to how they do things now.
+
+Be critical. Assume they are busy and have little patience for learning a new tool. Do not reassure me that the product is useful.
+{% endcall %}
+
+
+**3. Get AI to make a visual persona card, but only after the content settles** %%(a shared name and face help the team keep one specific user in mind while writing user stories)%%.
+
+{% call mdblock() %}
+Here is the user persona my team has settled on:
+
+[persona]
+
+Turn it into a one-page persona card we can paste into our project notes: name, a one-line description of who they are, a representative quote, their goals, their frustrations, and the situation in which they would reach for our product.
+
+Use only what I gave you. Don't invent traits, backstory, numbers, or job details that aren't in the text above. If a section of a standard persona card has nothing to fill it, leave the section out and tell me what we're missing.
+
+Give it to me as a self-contained HTML file I can open and screenshot, sized to fit on one page. Use a simple illustrated avatar, not a photo of a real person.
+{% endcall %}
+{% endcall %}
+</div>
 
 * **User stories for what version?** At this stage, collect user stories to cover at least the version you hope to deliver at the end of the semester. It is OK to go even beyond that %%(reason: we are simulating a project that will continue even after the semester is over)%%.{% if cs2103 %}<br>
   Do not omit user stories already covered by the features in AB3, %%i.e., the user story should be recorded even if AB3 already caters to it.%%{% endif %}
