@@ -24,18 +24,18 @@
  {{ MT | safe }} | COM3-01-20 | **T**hu  **17**:00 | ~~%%G11%%~~ | **`CS2103T-T17`**| <trigger trigger="click" for="modal:tutorialSchedule-Weng-Sheng">Weng Sheng</trigger> | <trigger trigger="click" for="modal:tutorialSchedule-Kevin">Kevin</trigger>
  | | | | | | |
  {{ MT | safe }} | COM3-01-20 | **F**ri  **08**:00 | ~~%%G06%%~~ | **`CS2103T-F08`**| <trigger trigger="click" for="modal:tutorialSchedule-Letian">Letian</trigger> | <trigger trigger="click" for="modal:tutorialSchedule-Arjun">Arjun</trigger>
- {{ M | safe }} | COM1-02-10 | **F**ri  **09**:00 | ~~%%03%%~~ | **`CS2103-F09`**| <trigger trigger="click" for="modal:tutorialSchedule-Kelly">Kelly</trigger> |
+ {{ M | safe }} | ==#m#COM1-02-10##== | **F**ri  **09**:00 | ~~%%03%%~~ | **`CS2103-F09`**| <trigger trigger="click" for="modal:tutorialSchedule-Kelly">Kelly</trigger> |
  {{ MT | safe }} | COM3-01-20 | **F**ri  **09**:00 | ~~%%G18%%~~ | **`CS2103T-F09`**| <trigger trigger="click" for="modal:tutorialSchedule-Thaddaeus">Thaddaeus</trigger> | <trigger trigger="click" for="modal:tutorialSchedule-Arjun">Arjun</trigger>
- {{ M | safe }} | COM1-02-10 | **F**ri  **10**:00 | ~~%%02%%~~ | **`CS2103-F10`**| <trigger trigger="click" for="modal:tutorialSchedule-Kelly">Kelly</trigger> |
+ {{ M | safe }} | ==#m#COM1-02-10##== | **F**ri  **10**:00 | ~~%%02%%~~ | **`CS2103-F10`**| <trigger trigger="click" for="modal:tutorialSchedule-Kelly">Kelly</trigger> |
  {{ MT | safe }} | COM3-01-20 | **F**ri  **10**:00 | ~~%%G09%%~~ | **`CS2103T-F10`**| <trigger trigger="click" for="modal:tutorialSchedule-Wei-Xian">Wei Xian</trigger> | <trigger trigger="click" for="modal:tutorialSchedule-Jun-Xi">Jun Xi</trigger>
- {{ M | safe }} | COM1-02-10 | **F**ri  **11**:00 | ~~%%01%%~~ | **`CS2103-F11`**| <trigger trigger="click" for="modal:tutorialSchedule-Tzer-Bin">Tzer Bin</trigger> |
+ {{ M | safe }} | ==#m#COM1-02-10##== | **F**ri  **11**:00 | ~~%%01%%~~ | **`CS2103-F11`**| <trigger trigger="click" for="modal:tutorialSchedule-Tzer-Bin">Tzer Bin</trigger> |
  {{ MT | safe }} | COM3-01-20 | **F**ri  **11**:00 | ~~%%G16%%~~ | **`CS2103T-F11`**| <trigger trigger="click" for="modal:tutorialSchedule-Fang-Han">Fang Han</trigger> | <trigger trigger="click" for="modal:tutorialSchedule-Chen-Feng">Chen Feng</trigger>
- {{ M | safe }} | COM1-02-10 | **F**ri  **12**:00 | ~~%%04%%~~ | **`CS2103-F12`**| <trigger trigger="click" for="modal:tutorialSchedule-Florian">Florian</trigger> | <trigger trigger="click" for="modal:tutorialSchedule-Haley">Haley</trigger>
+ {{ M | safe }} | ==#m#COM1-02-10##== | **F**ri  **12**:00 | ~~%%04%%~~ | **`CS2103-F12`**| <trigger trigger="click" for="modal:tutorialSchedule-Florian">Florian</trigger> | <trigger trigger="click" for="modal:tutorialSchedule-Haley">Haley</trigger>
  {{ MT | safe }} | COM3-01-20 | **F**ri  **12**:00 | ~~%%G19%%~~ | **`CS2103T-F12`**| <trigger trigger="click" for="modal:tutorialSchedule-Sean-Jean">Sean Jean</trigger> | <trigger trigger="click" for="modal:tutorialSchedule-Yugin">Yugin</trigger>
- {{ M | safe }} | COM1-02-10 | **F**ri  **13**:00 | ~~%%05%%~~ | **`CS2103-F13`**| <trigger trigger="click" for="modal:tutorialSchedule-Tzer-Bin">Tzer Bin</trigger> |
+ {{ M | safe }} | ==#m#COM1-02-10##== | **F**ri  **13**:00 | ~~%%05%%~~ | **`CS2103-F13`**| <trigger trigger="click" for="modal:tutorialSchedule-Tzer-Bin">Tzer Bin</trigger> |
  {{ MT | safe }} | COM3-01-20 | **F**ri  **13**:00 | ~~%%G13%%~~ | **`CS2103T-F13`**| <trigger trigger="click" for="modal:tutorialSchedule-I-Hur">I-Hur</trigger> | <trigger trigger="click" for="modal:tutorialSchedule-Chen-Feng">Chen Feng</trigger>
  {{ MT | safe }} | COM3-01-20 | **F**ri  **14**:00 | ~~%%G14%%~~ | **`CS2103T-F14`**| <trigger trigger="click" for="modal:tutorialSchedule-Zheng-Ting">Zheng Ting</trigger> | <trigger trigger="click" for="modal:tutorialSchedule-Yugin">Yugin</trigger>
- {{ MT | safe }} | COM1-02-10 | **F**ri  **14**:00 | ~~%%G26%%~~ | **`CS2103T-F14a`**| <trigger trigger="click" for="modal:tutorialSchedule-Theresia">Theresia</trigger> | <trigger trigger="click" for="modal:tutorialSchedule-Wesley">Wesley</trigger>
+ {{ MT | safe }} | ==#m#COM1-02-10##== | **F**ri  **14**:00 | ~~%%G26%%~~ | **`CS2103T-F14a`**| <trigger trigger="click" for="modal:tutorialSchedule-Theresia">Theresia</trigger> | <trigger trigger="click" for="modal:tutorialSchedule-Wesley">Wesley</trigger>
  {{ MT | safe }} | COM3-01-20 | **F**ri  **15**:00 | ~~%%G17%%~~ | **`CS2103T-F15`**| <trigger trigger="click" for="modal:tutorialSchedule-Zilin">Zilin</trigger> | <trigger trigger="click" for="modal:tutorialSchedule-Yugin">Yugin</trigger>
 
 

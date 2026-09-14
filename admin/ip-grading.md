@@ -49,7 +49,7 @@ That is, you either get full marks, or less than half the marks for each aspect.
 ##### :fas-trophy: Project Management [`{{ marks_ip_pm }}` marks]{.text-info}
 
 * **Submitted _some_ deliverables** in at least 4 out of the {{ '5' if cs2103 else '6' }} iP weeks (i.e., week 2 to week {{ '6' if cs2103 else '7' }})
-* **Followed the other specified requirements** (e.g., using Git/GitHub for each increment and doing peer reviews) in at least 4 weeks{% if cs2103 %}<br>
+* **Followed the other specified requirements** (e.g., using Git/GitHub for each increment, doing peer reviews in weeks they are required) in at least 4 weeks{% if cs2103 %}<br>
   <span id="how-to-fix-git-standard">{{ icon_important_big_red }} **To qualify for full marks, your last 5 iP commits need to comply with [our convention for Git commit message subjects]({{ baseUrl }}/admin/standardsAndConventions.html)** (i.e., your {{ as_tag("Git Standard", tag_style="success") }} tag is green). If this item is not green for you, add more commits containing small code tweaks until you satisfy this requirement instead of modifying past commit messages (which requires force-pushing). %%(Reason: this will hopefully help you remember the convention better in the tP)%%.</span> {% endif %}
 </box>
 <box>

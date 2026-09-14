@@ -594,9 +594,9 @@ If your fork doesn't have the `add-gradle-support` branch (i.e., you did not cop
 
 <box type="info" seamless>
 
-**If you are enrolled in CP3108A/B**, you need to do the following additional tasks so that we can detect your work for CP3108A/B:
+**JavaFX Tutorial Submission:** [#r#required for CP3108A/B##, optional for the rest]:
 
-1. Fork the starter repo, as instructed in the JavaFX Tutorial Part 1.
+1. Fork the starter repo, as instructed in the [JavaFX Tutorial Part 1](https://se-education.org/guides/tutorials/javaFxPart1.html?cv-highlight=c%3AFork%20this%20starte%3Ao%20your%20computer.%3A56%3Acontent-wrapper%3AP%3A4%3A-1581711106%3A-1581711106%3Ablue%3Atl%3ASee%2520here%253A).
 1. As you go through the tutorial, commit regularly. After finishing a tutorial part, add a matching tag `Tutorial-Part1`, `Tutorial-Part2`, etc.
 1. Push the commits and tags to your fork.
 1. Also complete, commit, tag, and push at least half of the tweaks shown in Part 5 of the tutorial.
@@ -621,7 +621,7 @@ If your fork doesn't have the `add-gradle-support` branch (i.e., you did not cop
 <div tags="m--cs2103">
 
 * As before, we recommend (but do not require) that each increment be done as a separate branch and merged to the `master` branch when fully done.
-* #r#You are required to do **at least two** of the following optional increments, and you should **use AI** heavily to do them.## Even if you have been hand-coding everything until now, this is a good point to start using AI-assisted coding.
+* #r#You are required to do **at least two** of the following optional increments, and you should **use AI** heavily to do them.## Even if you have been hand-coding everything until now, this is a good point to give AI-assisted coding a try.
 
 {% call show_ai_guidance("Add optional enhancements") %}
 {{ icon_tip }} **When appropriate, use AI as a collaborator and idea generator.** Instead of simply telling AI what to do, ask AI for ideas on how to proceed. But don't outsource thinking to the AI entirely. Your creativity is what will make your iP different from others -- after all, they are using the same AI tools as you.
@@ -960,6 +960,11 @@ This activity is worth `2x2=4` participation points.
 <span id="heading_generate_new_jar">Generate a new JAR file</span>
 <div id="desc_generate_new_jar">
 
+<box type="info" seamless>
+
+Purpose: As you recently added JavaFX as a new dependency to the project, let's do a quick a check of the JAR creation workflow **to ensure the required dependencies are bundled correctly into the JAR file**.
+</box>
+
 * Generate a new JAR file using Gradle %%(Gradle can bundle the JavaFX third-party library into the JAR file. If you do not bundle JavaFX with the JAR file, the application will not work on computers that don't have JavaFX installed)%%. Refer to the [_Gradle tutorial_ @SE-EDU/guides](https://se-education.org/guides/tutorials/gradle.html#creating-jar-files) to learn how.<br>
 ==If the `.jar` file is smaller than 5MB==, most likely JavaFX libraries are not inside it.
 * There is no need to create a [_release_ on GitHub](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository) with this JAR file (although you are welcome to).
@@ -968,7 +973,11 @@ This activity is worth `2x2=4` participation points.
 <span id="heading_write_full_commit_messages">Write full commit messages</span>
 <div id="desc_write_full_commit_messages">
 
-* While we do not require you to write _full_ commit messages (i.e., including a message body) for work done in this course, it is still good to learn how to write one. The purpose of this task is to give you some practice in writing clear full commit messages.
+<box type="info" seamless>
+
+Purpose: While we do not require you to write _full_ commit messages (i.e., including a message body) for work done in this course, it is still good **to learn how to write a full commit message**. The purpose of this task is to give you some practice in writing clear full commit messages.
+</box>
+
 * Requirements:
   1. Write full commit messages for at least 2-3 commits that you push this week.
   1. Follow these [_Git conventions for the commit message body_ as specified by @SE-EDU/guides](https://se-education.org/guides/conventions/git.html#commit-message-body) when writing them.
@@ -983,7 +992,7 @@ If you have been using AI to craft Git commit messages until now, this is the ti
 <span id="heading_finalize_features">Finalize the features</span>
 <div id="desc_finalize_features">
 
-* **Ensure the product can handle common errors <tooltip content="should not crash the app or render it unusable; user should be notified of the problem">gracefully</tooltip>**, such as the user making an unintentional error in the command, or the data file not being found in the expected location.motion-prefix)
+* **Ensure the product can handle common errors <tooltip content="should not crash the app or render it unusable; user should be notified of the problem">gracefully</tooltip>**, such as the user making an unintentional error in the command, or the data file not being found in the expected location)
 * {{ icon_important_big_red }} **Ensure that the product name is not `Duke`** (as required by [Level-0](../projectDuke/index.html#level-0-rename-greet-exit)){% if cs2103 %}<br>
    and the name is shown correctly everywhere it appears in the UI e.g., the title bar of the GUI{% endif %}.
   * Reminder: You may give the product any name, but do not rename the repo.

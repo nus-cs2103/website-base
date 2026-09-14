@@ -394,7 +394,7 @@
             name: "",
             level_three_topics: [
               {name: "what", heading: "What", priority: "1"},
-              {name: "why", heading: "Why architecture matters", priority: "1"},
+              {name: "why", heading: "Why Architecture Matters", priority: "1"},
               {name: "components", heading: "Components, Interfaces, and Dependencies", priority: "1"}
             ]
           }
@@ -406,7 +406,7 @@
           {
             name: "",
             level_three_topics: [
-              {name: "views", heading: "Different Views of a System", priority: "1"},
+              {name: "views", heading: "Different Diagrams of one System", priority: "1"},
               {name: "reading", heading: "Reading Architecture Diagrams", priority: "1"},
               {name: "drawing", heading: "Drawing Architecture Diagrams", priority: "1"}
             ]

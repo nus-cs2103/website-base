@@ -176,7 +176,7 @@
 <variable name="icon_example"><md>:fas-cube:</md></variable>
 <variable name="icon_embedding"><md>:glyphicon-log-in:</md></variable>
 <variable name="icon_exercise"><md>:fas-dumbbell:</md></variable>
-<variable name="icon_extra"><span class='badge rounded-pill bg-secondary'><md>:fas-plus: extra</md></span></variable>
+<variable name="icon_extra"><span class='badge rounded-pill text-bg-teal'><md>(:fas-plus: extra)</md></span></variable>
 <variable name="icon_evidence"><md>:fas-briefcase:</md></variable>
 <variable name="icon_graded"><span class="text-info"><tooltip content="counted for participation"><md>:fab-product-hunt:</md></tooltip></span></variable>
 <variable name="icon_info"><md>:fas-info-circle:</md></variable>

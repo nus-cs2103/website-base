@@ -145,6 +145,12 @@ Example AB3 website using MarkBind: [here](https://damithc.github.io/ab3-markbin
      * Tick the option `Require status checks to pass before merging` to ensure that a branch has to pass CI before it can be merged into the `master` branch
      * If you think all PRs should be reviewed by someone other than the PR author before they are merged, also tick the `Require pull request reviews before merging` option.
 
+{% if cs2103 %}
+<box type="info" seamless>
+
+In the AB3 repo given to you, AI agent files (e.g., `AGENTS.md`) are git-ignored. This allows you to have you own local versions of agent files without committing them to the team repo. However, you are welcome to (in fact, encouraged to) have shared agent files in the team repo. So, feel free **remove the relevant entries in `.gitignore` file when your team is ready to have shared agent files**.
+</box>
+{% endif %}
 </div>
 <!-- ==================================================================================================== -->
 

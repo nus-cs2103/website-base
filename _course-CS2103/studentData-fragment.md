@@ -645,7 +645,7 @@
 
 
 {% set org_replacements = {
-
+  'AY2627S1-CS2103T-F09-2': 'AY2627S1-CS2103T-F09-2a'
 }%}
 
 {% set teams = {
@@ -654,7 +654,7 @@
  'CS2103-F10-1': 'https://docs.google.com/document/d/1vJZVMvVXfiPGkxZsnVeOglux00g89OQ4GkDvAeGJ-Vs/edit?usp=sharing',
  'CS2103-F10-2': 'https://docs.google.com/document/d/1K-H9tAqGbFy1AUA_SWh93oHA8X35jTMlRjdd9ios7VU/edit?usp=sharing',
  'CS2103-F11-1': 'https://docs.google.com/document/d/1VKXnFn9TCEtaa4QU81E7AxDiPskZrgbZs5lkGvC0hQs/edit?usp=sharing',
- 'CS2103-F11-2': 'https://nusu-my.sharepoint.com/:w:/g/personal/e1527479_u_nus_edu/IQDN1jfT0ckMT5F8Zs8Pb1jYAdYltur2Z8Y3Jor6gvgivCs?e=BjkGXV',
+ 'CS2103-F11-2': 'https://nusu-my.sharepoint.com/:w:/g/personal/e1527479_u_nus_edu/IQDN1jfT0ckMT5F8Zs8Pb1jYAQ0bYXnnOUW9KeaxRDPQilg?e=4VHZQZ&CID=FB45F587-8A81-A743-B07E-2C1A1FC63704',
  'CS2103-F12-1': 'https://docs.google.com/document/d/1K961uBib9QCexCY-Nxjhd8EM2bXOvcuBm0EmyVQmKJk/edit?usp=sharing',
  'CS2103-F12-2': 'https://docs.google.com/document/d/1ymOWTthEt-5ca1XA3X6_z-TQGXCwRF_2Z8AM6BA3Wwg/edit?usp=sharing',
  'CS2103-F12-3': 'https://docs.google.com/document/d/1rPAvQbA8qOZV7QuE9JAnojTvz0aszP_HSUSymqMrYug/edit?usp=sharing',
