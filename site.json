@@ -16,6 +16,9 @@
     "README.md",
     "schedule/admin/*",
     "*.md",
+    "*.pptx",
+    "*.drawio",
+    "*.bkp",
     "diagrams/*",
     "book/diagrams/*",
     ".git/*"
