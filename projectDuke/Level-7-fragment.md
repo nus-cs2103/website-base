@@ -30,6 +30,16 @@ If you use file paths in your code:
 **Your code must <tooltip content="i.e., if the file is missing, your code must create it">handle</tooltip> the case where the data file doesn't exist at the start.** Reason: when someone else takes your chatbot and runs it for the first time, the required file will not exist on their computer. Similarly, if you expect the data file to be in a specific folder (e.g., `./data/`), you must also handle the case where the folder doesn't exist yet.
 </box>
 
+<div id="limit-write-operations">
+
+<box type="important" icon=":fas-ban:" seamless>
+
+**Limit writing operations to the current folder only.** The app should not create files or folders outside the folder from which it is run. In particular, do not store files in the user's home folder.
+
+Reason: This prevents the app from inadvertently corrupting a user's files elsewhere on the disk or filling a tester's disk with files.
+</box>
+</div>
+
 **Stretch goal**: Handle the situation of the data file being corrupted (i.e., content not in the expected format).
 
 {% call show_ai_guidance("Level 7. Save") %}

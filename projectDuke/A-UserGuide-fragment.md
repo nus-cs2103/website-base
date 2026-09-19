@@ -26,4 +26,6 @@ Even if you have been updating the User Guide (in `docs/README.md`) all along, i
 Craft your own prompt to include the important requirements mentioned above.
 
 Review the output from a user's point of view and give feedback to the AI until the user guide meets your expectations.
+
+Once you are happy with the contents, you can ask AI to 'beautify' or 'polish' the appearance of the user guide, for example, by applying appropriate color and font choices. You can also ask it to `give me a few design options to choose from` to stay in control of the design choices.
 {% endcall %}

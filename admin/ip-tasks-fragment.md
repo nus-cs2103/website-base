@@ -1001,6 +1001,10 @@ If you have been using AI to craft Git commit messages until now, this is the ti
 
 {{ embed_topic("appendixB-policies.md#policy-reuse", "Admin " + icon_embedding + " **Course Policies → Policy on Reuse**", "1", indent="1") }}
 
+* Reminder about the following:
+
+<include src="{{ baseUrl }}/projectDuke/Level-7-fragment.md#limit-write-operations" />
+
 {{ show_faq("ipMoreCodeQualityFeedback", is_compact=1) }}
 {{ show_faq("ipIfSubmissionBelowBar") }}
 </div>
@@ -1120,13 +1124,61 @@ App: Currently, there is no built-in command to add priorities to tasks.
 <div id="desc_get_more_out_of_the_ip">
 <div class="indented">
 
-**If you want to cite the iP on your resume**, you can make it more compelling to potential employers. These improvements are not considered for grading and can be done after the semester ends. Some ideas:
-* **Improve the GUI**: Make the UI look nicer, more distinctive, and memorable. You can get inspiration from [what others have done](ip-showcase.html) (but remember to give credit if you reuse any code from them).
-* **Add a demo** video or an animated GIF to your user guide to show how the app works.
-* **Improve code quality**: The iP is the right size to cite as an example of your code quality. You can use the RepoSense link (<span class="badge rounded-pill bg-body-tertiary text-body-emphasis font-monospace small">**&lt;/>**</span>) in the [iP Showcase page](ip-showcase.html) to point to your iP code.
-* **Add more features.**
+**If you want to cite the iP on your résumé**, you can make it more compelling to potential employers. These improvements are not considered for grading and can be done after the semester ends. Some ideas:
 
-{{ icon_tip }} On a somewhat related note, you can also **create similar product websites for your other projects**, such as those from other courses or pet projects.
+<box type="tip" seamless>
+
+**Time to use AI to !!enhance and multiply!! the value of iP**{ .text-success }
+
+Even if you have been hesitant to use AI for the iP up to now (e.g., to prioritize learning over productivity), you can make more liberal use of AI now. You have learned the basics, and continuing to hand-code the iP has less learning value. Besides, you need to learn how to use AI effectively.
+</box>
+
+* **Make the iP better:**
+  * **Improve the GUI**: Make the UI look nicer, more distinctive, and memorable. You can get inspiration from [what others have done](ip-showcase.html) (but remember to give credit if you reuse any code from them).
+  * **Add a demo** video or an animated GIF to your user guide to show how the app works.
+  * **Improve code quality**: The iP is the right size to cite as an example of your code quality. You can use the RepoSense link (<span class="badge rounded-pill bg-body-tertiary text-body-emphasis font-monospace small">**&lt;/>**</span>) in the [iP Showcase page](ip-showcase.html) to point to your iP code.
+  * **Add more features.** For example, add one of the Category B, C, or D extensions listed [here]({{ baseUrl }}/projectDuke/index.html#category-b-extensions).
+* **Create new projects using the iP as a template:**
+  * Start by creating an app modeled on the iP but with a different purpose and appearance.
+<div class="indented-level2">
+{% call show_ai_guidance("Creating a new product using the iP as a template") %}
+**AI is good at creating variants of existing work.** In most cases, you can get to a working version within an hour(!).
+
+Here's a workflow you can use with Codex:
+
+1. Create a new folder.
+1. Create a new project in Codex and give it access to that folder.
+1. Give an initial prompt such as the following:
+
+{% call mdblock() %}
+Create a desktop application called [NAME] to [BRIEF DESCRIPTION OF PRODUCT BEHAVIOR].
+The application should **follow the structure and the tool stack of the project at [IP PROJECT FOLDER]**.
+This is not a CLI app like that one; it is a full GUI app.
+The first version can be minimal, basic CRUD features only.
+{% endcall %}
+
+4. Once you have a reasonable working prototype, you can get AI to create a product website as well.
+5. If you feel that you are producing work without learning, you can ask AI to help with that too.
+
+{% call mdblock() %}
+Compared to the previous project, what new tools/techniques were used in this project?
+
+Which of these are worth learning?
+
+Guide me to learn [...].
+{% endcall %}
+
+{% endcall %}
+</div>
+
+<div class="indented-level1">
+
+  * Continue to create more products, each one going further than the one before, thus helping you to learn something new.
+</div>
+
+* **Create product websites for your other projects**, such as those from other courses or pet projects.
+* **Create a home page for yourself**, including a product portfolio page to showcase your projects.
+  * You can ask AI to help you create a home page on GitHub (free).
 
 </div>
 </div>
