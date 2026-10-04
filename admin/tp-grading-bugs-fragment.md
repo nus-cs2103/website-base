@@ -107,7 +107,7 @@ Those mentioned elsewhere as possible UG bugs ...
 
 :fas-bug: Problems in NFRs. Examples:
 * Not really a _Non-Functional_ Requirement
-* Not scoped clearly (i.e., hard to decide when it has been met)
+* Not scoped clearly (i.e., hard to decide if it has been met)
 * Not reasonably achievable
 * Highly relevant NFRs missing
 </span>

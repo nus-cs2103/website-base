@@ -21,20 +21,27 @@ This course requires you to write Java code almost every week, starting from the
 
 <box type="info" seamless theme="primary">
 
-**A non-trivial amount of AI use is expected**{.text-primary}. Aim to use AI at least 20% of the time when doing course-related work.
+**A non-trivial amount of AI use is expected**{.text-primary}. Aim to use AI at least 20% of the time when doing course-related work, on average.
 </box>
 
 **The level of AI use in coding tasks** can vary as follows -- based on how much manual work happens and at which point.
 
-* **No AI** use. Hand-code everything. Use AI as a 'smart search engine' to ask general questions.{texts="['AI-1', 'AI-2', 'AI-3', 'AI-4', 'AI-5', 'AI-6']" t-class="badge rounded-pill bg-primary fw-bold text-light m-1"}
+* **No AI** use. Hand-code everything. Use AI as a 'smart search engine' to ask general questions.<br>
+  {{ icon_info }} Use this level when doing SE tasks that are very new to you.{texts="['AI-1', 'AI-2', 'AI-3', 'AI-4', 'AI-5', 'AI-6']" t-class="badge rounded-pill bg-primary fw-bold text-light m-1"}
 * **Hand-code first, with AI's feedback:** You hand-code the first version as if there is no AI. Ask AI to review. Refine based on AI's feedback.<br>
   {{ icon_info }} Operating at this level (on avearge) is !!enough to meet the minimum requirement of AI use!! the course expects.
 * **Hand-code to start, get AI to finish**: You hand-code a minimal version, just a proof-of-concept. Get AI to strengthen it to a full-fledged version e.g., handle edge cases, add tests.
 * **'Think' and compare**: _Think_ of how you would do the task manually. Get AI to do it. Compare the solution you 'imagined' with the one AI produced.
 * **AI codes, you review**: Get AI to do the task. Review it yourself fully, including the code, tests, behavior etc.
-* **Full AI**: Get AI to do the task, fully, including the review. Only review the outcome (e.g., the feature behavior).
+* **Full AI**: Get AI to do the task, fully, including the review. Only review the outcome (e.g., the feature behavior).<br>
+  {{ icon_info }} Use this level sparingly, if at all. As you will be graded for code quality, it is not prudent not to review the AI-generated code at all.
 
-**++Which level to use?++ Depends on how much you already know, and your learning goals.** Using AI more will save time and also teach you how to use AI for SE. Hand-coding will teach you basic SE skills.
+**++Which level to use?++ Depends on the task, how well can do the task manually, and your learning goals.**
+
+* Hand-coding will teach you basic SE skills. Using AI more will save time and also teach you how to use AI for SE.
+* **Recommended: First learn to do the task manually** (i.e., Levels AI-1, AI-2).<br>
+  As you become more confident of your ability to do that task manually, move to higher levels of AI use (i.e., AI-3 and higher) to do the same task faster.
+* #r#If you can't explain what AI did, your level of AI use is too high.##
 
 <box type="info" seamless theme="primary" id="which-ai-tool-to-use">
 

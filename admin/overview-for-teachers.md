@@ -15,7 +15,7 @@ pageNav: 2
 
 **Workload:** 4 Units (i.e., workload of 10 hours/week)
 
-**Class size:** (CS2103T: `400` + CS2103: `62` = `462`)
+**Class size:** (CS2103T: `509` + CS2103: `53` = `562`)
 
 **Topics covered:** are [here](../se-book-adapted/index.html).
 
@@ -29,25 +29,29 @@ Here is the grade breakdown:
 
 -----------------------{.dotted .border-info}
 
-## Lectures{.text-info}
+## ~~Lectures~~ Weekly Briefings{.text-info}
 
-**As CS2103/T is under the PVO's BL2.0 initiative, it is delivered in blended mode.** The primary content delivery mechanism is the online textbook + pre-recorded videos (For example, topics in [Schedule -> Week 7 -> Topics](../schedule/week7/topics.html) page).
+**CS2103/T is delivered in blended mode.** The primary content delivery mechanism is the online textbook + pre-recorded videos (For example, topics in [Schedule -> Week 10 -> Topics](../schedule/week10/topics.html) page).
 
-The lecture is shorter (about 1 hour), and is used for a 'briefing' only, consisting of two parts:
-1. A recap of the previous week's topics e.g., reiterate finer points
+**The course doesn't have traditional lectures. We use the lecture slot for a _weekly briefing_ instead.**
+The briefing is shorter (about 1 hour), and consists of two parts:
+
+1. A recap (and a deep dive) of the previous week's topics e.g., reiterate finer points
 1. A preview of next week's topics e.g., motivation, importance, how they fit into the big picture etc.
 
-**The lecture is complementary, and optional.** As most students prefer to watch the recording rather than attend live, ==making the lecture interactive is of low priority==. However, there is an in-lecture quiz students can do during the lecture or while watching the recording.
+**The briefing is delivered in hybrid mode, and is optional to attend synchronously.** As most students prefer to watch the recording, ==making the session interactive is of low priority==. However, there is an in-briefing quiz students can do during the briefing or while watching the recording.
+
+**To ensure students learn the weekly materials, there is a separate weekly quiz on Canvas.** Students need to submit it before the following lecture. It counts for participation.
 
 -----------------------{.dotted .border-info}
 
 ## Tutorials{.text-info}
 
-**Tutorials are delivered via Zoom.** As most are done by UG tutors, the class size is kept at 10 students per tutor i.e., 46 tutorial sessions per week.
+**Our tutorials are a combination of traditional tutorials and ==a light F2F assessment==.**
 
-**We use Zoom chat to get _everyone_ to answer _all_ questions** posed during the tutorial. As students answer using private messages, everyone gets to attempt the question without being influenced by others in the class. Although this slows down the tutorial, we do it because research shows that attempting to answer a question before receiving the correct answer enhances retention, even if their own answer was incorrect.
+**During the tutorial, the tutor poses a series of questions. Students answer using Zoom private chat.** The answer is discussed immediately. Student answers are later extracted from Zoom chat logs. Students earn points as long as they made a good attempt.
 
-**Tutors are given detailed instructions, and slides to use** in the interest of uniformity. As a quality control measure, tutorial are recorded, and each tutor files a report after the end of each tutorial.
+**Tutors are given detailed instructions, and slides to use** in the interest of uniformity. I conduct a mock tutorial during the weekly staff meeting to show how to deliver the tutorial. As a quality control measure, tutorial are recorded, and each tutor files a report after the end of each tutorial. As most are done by UG tutors, the class size is kept at around 10 students per tutor.
 
 -----------------------{.dotted .border-info}
 
@@ -55,9 +59,10 @@ The lecture is shorter (about 1 hour), and is used for a 'briefing' only, consis
 
 **This is a <tooltip content="created from scratch">greenfield</tooltip> project done in iterative fashion**, meant to build up students' individual competences before they start the team project. Students add features to the product incrementally, while practicing the use of relevant tools such as Java, Git, GitHub, Gradle etc.
 
-**The _mastery learning_ approach is used** i.e., students can keep trying until their work is good enough to earn full marks. The product they build is a chat bot that helps the user with keeping track of tasks.
+**The _mastery learning_ approach is used** i.e., students can keep trying until their work is good enough to earn full marks. The product they build is a chatbot that helps the user with keeping track of tasks.
 
-* The project description starts from [this page](ip-overview.html).
+* The project description starts from [this page](ip-overview.html).<br>
+  For a representative view of project tasks for a specific week, see [Week 3 iP tasks](ip-w3.md).
 * Final versions of this semester's iPs are in [this page](ip-showcase.html). Same examples given below:
 
 <tabs active="1">

@@ -48,13 +48,6 @@ In fact, here is the grading criterion for the individual project effort:
 {{ embed_topic("tp-pe-fragment.md#projectGrading-effort-instructions", "Admin " + icon_embedding + " tP → PE → ==Evaluating the  Implementation Effort==", "3") }}
 </box>
 
-<box tags="m--cs2103">
-
-{{ icon_tip }} If you wish to add the following features to your app, we recommend (but do not require) that you use similar features in AB4 (not AB3) as models to reduce the effort required.
-  * [Undo/redo](https://se-education.org/addressbook-level4/DeveloperGuide.html#undo-redo-feature)
-  * [Automated GUI tests](https://se-education.org/addressbook-level4/Testing.html#types-of-tests)
-</box>
-
 </div>
 <!-- ==================================================================================================== -->
 <div id="teamExpectations">

@@ -22,7 +22,7 @@ Your tutor will serve as your _project supervisor_ too.
 
 **How to make project decisions** (given instructors are not going to make them for you)? Here are some tips:
 
-* **Quickly try out the alternatives**. Rather than get into an _analysis-paralysis_ state, quickly prototype the alternatives to figure out which works better.
+* **Quickly try out the alternatives**. Rather than get into an _analysis-paralysis_ state, quickly prototype the alternatives to figure out which works better. With the help of AI, this can be done very quickly.
 * **Go with the team consensus/majority.** As most project components are graded by peers, the majority view within the team is a good approximation of how the result will be judged.
 * **Go with the simpler alternative** that's good enough for the current iteration. That way, if the decision was the wrong one, you'll find out sooner and the cost will be less. A common rookie pitfall is the temptation to look for an _ideal_ future-proof solution -- usually, there is no such thing. Most alternatives can get the job done; it's just that costs and benefits vary.
 * **Look at what other teams are doing.** That will help you tell whether you are going in entirely the wrong direction, and it might also lead you to more alternatives to consider.

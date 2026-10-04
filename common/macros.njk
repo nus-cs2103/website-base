@@ -362,6 +362,9 @@ Second part of a possible prompt:
 {% macro ask_chatgpt_for_three_os(visible_text, prompt) %}<small>{{ visible_text }}</small> {{ ask_chatgpt(":fab-windows: Windows", prompt + " I'm using Windows") }} | {{ ask_chatgpt(":fab-apple: macOS", prompt + " I'm using macOS")  }} | {{ ask_chatgpt(":fab-linux: Linux", prompt + " I'm using Linux") }}{% endmacro %}
 <!-- ============================================================ -->
 
+{% macro show_extra_info(visible_text, info) %}<span class="badge bg-body-secondary rounded-pill text-info-emphasis fw-normal d-print-none"><popover content="{{ info }}">:octicon-info: {{ visible_text }}</popover></span>{% endmacro %}
+<!-- ============================================================ -->
+
 {% macro show_example() %}
 <cv-toggle xtoggle-id="examples">
 <div class="indented-level1 example">

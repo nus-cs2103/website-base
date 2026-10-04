@@ -637,7 +637,6 @@
  ['JOAS.. KAI', 'CS2103T-W14-3', 'joash-chen'],
  ['MALA..JEEL', 'CS2103T-W14-3', 'AaravMalani'],
  ['AXEL.. HAN', 'CS2103T-W14-4', 'axelheng'],
- ['CHEW..YSON', 'CS2103T-W14-4', 'joysonchewjin'],
  ['CLEM.. KAI', 'CS2103T-W14-4', 'ApproxNeo'],
  ['LIM ..RJUN', 'CS2103T-W14-4', 'patientotter'],
  ['TANG..HONG', 'CS2103T-W14-4', 'minghong-dev']
@@ -677,7 +676,7 @@
  'CS2103T-F11-2': 'https://docs.google.com/document/d/1GLZfvA9u4FTDGiwQwYbSljxF2em7pgFQrlYE09PPaRE/edit?usp=sharing',
  'CS2103T-F11-3': 'https://docs.google.com/document/d/1gMhlUbLYaGpUXLcB4Iarp8EpakWh6jLE2bp2q5Warig/edit?usp=sharing',
  'CS2103T-F11-4': 'https://docs.google.com/document/d/1OP7_IAdmBerZvI9YPJGtKJag9qdXIZDUbQpf8_5X-RY/edit?usp=sharing',
- 'CS2103T-F12-1': 'https://app.notion.com/p/tP-product-ideation-3d0f90fdabd18018a2fde837a01bf17a',
+ 'CS2103T-F12-1': 'https://docs.google.com/document/d/1lhLqo9vcEDR28iKMdRUWWzCSY25mZQO9auo1mnLTU_8/edit?usp=sharing',
  'CS2103T-F12-2': 'https://docs.google.com/document/d/1neSBaBMyVvYfH09SF8udbRaHeGY9N2nuXx0__KlLFyg/edit?usp=sharing',
  'CS2103T-F12-3': 'https://docs.google.com/document/d/1-HbP3R_yrXg_IWM4AbQ_5U_Y3j9FqkikurQ3bTQYqtA/edit?usp=sharing',
  'CS2103T-F12-4': 'https://docs.google.com/document/d/13ZVqMNTCZEDBHBvu9JSCsdiTkQ6mMGxFAchrpFnLr1E/edit?usp=sharing',

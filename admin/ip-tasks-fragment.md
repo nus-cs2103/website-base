@@ -1,6 +1,6 @@
 {% from "common/admin.njk" import show_admin_page, show_project_summary_lead with context %}
 {% from "common/topics.njk" import panopto, topic_preamble with context %}
-{% from "common/macros.njk" import as_tag, button, embed_topic, get_date, show_ai_guidance, mdblock, show_faq, show_github_username_entry, show_gm_lesson_link, show_troubleshooting, step, thumb, timing_badge with context %}
+{% from "common/macros.njk" import as_tag, button, embed_topic, get_date, show_ai_guidance, mdblock, show_extra_info, show_faq, show_github_username_entry, show_gm_lesson_link, show_troubleshooting, step, thumb, timing_badge with context %}
 {% from "_course-" + course + "/weeklyIpTasks-fragment.md" import weekly_ip_tasks with context %}
 
 {#====================================================================================================================
@@ -939,14 +939,12 @@ This activity is worth `2x2=4` participation points.
 3. **Locate the app's User Guide** by following the link provided in that email.
 1. **Open the Canvas survey** (the one named `iP Peer Evaluation 1`) that you will use to submit your evaluation, and note the items you need to evaluate.
 1. **Run the JAR file** as follows:
-   * Put the JAR file in an ==empty folder==<br>
-     %%Reason: this prevents data files created by other JAR files you tested earlier from interfering with the current JAR file.%%{ texts="['5.1','5.2','5.3','5.4']" }
-   * Open a terminal and ==navigate to the folder== where you put the JAR file (e.g., `cd smoke-test/ip1`)<br>
-     %%Reason: data files will be created relative to the folder the terminal is currently in.%%
+   * Put the JAR file in an ==empty folder==. {{ show_extra_info("Why an empty folder?", "This prevents data files created by other JAR files you tested earlier from interfering with the current JAR file.") }}<br>{ texts="['5.1','5.2','5.3','5.4']" }
+   * Open a terminal and ==navigate to the folder== where you put the JAR file {{ show_extra_info("How?", "e.g., `cd smoke-test/ip1`") }} {{ show_extra_info("Why navigate to that folder?", "Data files will be created relative to the folder the terminal is currently in.") }}<br>
    * {{ icon_important_big_red }} Run the ==`java -version` command== to confirm you are using Java {{ java_version }}.{% if cs2103 %}<br>
       :fab-apple: Mac users, confirm you are using the exact Java distribution we have prescribed [here](programmingLanguages.md).{% endif %}
-   * Run the JAR file using the ==`java -jar "{file_name}"` command== (rather than double-clicking) in the same terminal.<br>
-     ```
+   * Run the JAR file using the ==`java -jar "{file_name}"` command== (rather than double-clicking) in the same terminal. {{ show_extra_info("Why not double-click?", "To ensure the JAR is run using the Java version you just verified (double-clicking can run the JAR file using OS's default Java version), and it is run in the currernt folder (some OS'es will put run a double-clicked JAR file from a default sandbox location instead of the current folder)") }}<br>
+     ```bash
      java -jar "my task manager.jar"
      ```
 1. **Do some light testing of the app** (no more than 10 minutes) to ensure the claimed features actually exist and there are no obvious bugs.<br>
@@ -954,7 +952,7 @@ This activity is worth `2x2=4` participation points.
 1. **Submit your evaluation** using the survey.
 1. **Repeat the above steps for the second iP** allocated to you (use the `iP Peer Evaluation 2` survey).<br>
    If _both_ iPs crash or fail severely in the same way, the problem may be on your side. Please contact the teaching team to ask how to proceed.
-1. %%**Take note of the effort required for a _typical_ iP**: After evaluating two peer iPs, you should be in a better position to estimate the implementation effort expected for the tP (reason: that expectation is estimated with reference to the effort required for a _typical_ iP).%%
+1. **Take note of the effort required for a _typical_ iP** as this will be helpful in estimating the required tP effort. {{ show_extra_info("How?", "The expected effort in the tP is specified relative to the effort required for a typical iP.") }}
 </div>
 {#====================================================================================================================#}
 <span id="heading_generate_new_jar">Generate a new JAR file</span>

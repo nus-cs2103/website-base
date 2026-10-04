@@ -1,5 +1,5 @@
 {% from "common/admin.njk" import show_admin_page with context %}
-{% from "common/macros.njk" import as_tag, button, embed_topic, get_date, mdblock, show_ai_guidance, show_as_tab, show_as_rounded_tab, show_caution, show_faq, show_gm_lesson_link, show_tp_goals, show_tp_week_intro, show_tp_week_outro, show_tp_iterations_gantt, thumb, thumb_small, timing_badge with context %}
+{% from "common/macros.njk" import as_tag, button, embed_topic, get_date, mdblock, show_ai_guidance, show_as_tab, show_as_rounded_tab, show_caution, show_example, show_extra_info, show_faq, show_gm_lesson_link, show_tp_goals, show_tp_week_intro, show_tp_week_outro, show_tp_iterations_gantt, thumb, thumb_small, timing_badge with context %}
 {% from "admin/ip-tasks-fragment.md" import show_xp_page  with context %}
 {% from "_course-" + course + "/weeklyTpTasks-fragment.md" import weekly_tp_tasks  with context %}
 {% from "_course-" + course + "/studentData-fragment.md" import tp_dg_review_allocation with context %}
@@ -289,7 +289,7 @@ This week, we focus on two fronts:
 <include src="tp-timeline.md#lo-above-product" />
 </div>
 
-**We consider this iteration a 'practice' iteration**. Reason: As this is the first time your team is working on this codebase, we first focus on learning the workflow that you need to follow as a team. In this practice iteration, we limit ourselves to document updates only (to minimize the risk of breaking the codebase).
+**This is a 'practice' iteration**, limited to a documentation update only. {{ show_extra_info("Reason", "As this is the first time your team is working on this codebase, we first focus on learning the workflow that you need to follow as a team. In this practice iteration, we limit ourselves to document updates only (to minimize the risk of breaking the codebase).") }}
 
 Specifically, we start with a workflow practice session (in task {{ thumb_small("1") }}), and then do further documentation updates in tasks {{ thumb_small("2") }} and {{ thumb_small("3") }}.
 
@@ -345,11 +345,11 @@ The _breadth-first iterative_ approach requires each intermediate version to be 
 {% call show_tp_week_outro("cs2103", 8) %}
 <box type="info" icon=":bi-emoji-surprise:" icon-size="2x" seamless>
 
-<span class="text-info">**Shocked by iP to tP transition?**</span> Around this time you will realize how much slower you can implement things in the tP compared to the iP. As discouraging as this might feel, there are several ways this can contribute toward the learning outcomes of this course, and it is not expected to affect your tP grade either.
+<span class="text-info">**Shocked by iP to tP transition?**</span> Around this time you will realize moving code forward in the tP is much slower than in the iP. As discouraging as this might feel, there are several ways this can contribute toward the learning outcomes of this course, and it is not expected to affect your tP grade either.
 
 <panel type="seamless" header="More on this ...">
 
-1. **It is important to realize that working in larger codebases is a much slower affair.** The number of lines an engineer can write per day is often limited to a double-digit value, [even going as low as 20](https://medium.com/modern-stack/how-much-computer-code-has-been-written-c8c03100f459#:~:text=As%20we%20can%20see%2C%20a,in%20a%20given%20working%20year.).
+1. **It is important to realize that working in larger codebases is a much slower affair.** The number of lines an engineer can write per day is often limited to a double-digit value, [even going as low as 20](https://medium.com/modern-stack/how-much-computer-code-has-been-written-c8c03100f459#:~:text=As%20we%20can%20see%2C%20a,in%20a%20given%20working%20year.). While AI can speed up this to some extent, the rate of progress is still lower (and the token cost is much higher) when working in larger code bases.
 1. **The speed varies from project to project**, and naturally, is slowest at the start when you are very new to the project. Even more so if you are new to working with legacy code. On the positive side, the iterative approach we use gives us room to adjust targets based on the actual speed you can deliver in the tP codebase.
 1. **The slowness of progress can be partly due to design flaws** of the current codebase (i.e., the design makes code changes harder than necessary). Keep a lookout for such cases, and if you can think of design tweaks that make the code easier to change, go ahead and try them out. Such work can earn credit too.
 
@@ -359,7 +359,7 @@ Finally, we don't expect each of you to put into the tP more _effort_ than you p
 
 <box type="info" seamless>
 
-**Feel free to improve AB3 in any way you see fit.**{.text-info} While not very 'buggy', AB3 is not 'perfect' either (it is not meant to be a 'model solution'). In particular, ==find and fix any bugs it has==. If you are not sure if something is a bug or an intended behavior, you can post in the forum to check.<br>
+**Feel free to improve AB3 in any way you see fit.**{.text-info} While not very 'buggy', AB3 is not meant to be a 'model solution' either. In particular, ==find and fix any bugs it has==. If you are not sure if something is a bug or intended, you can post in the forum to check.<br>
 While we are on the topic, also note that the architecture of AB3 doesn't suit every kind of application either. As you gain more experience in other application domains, you will learn different types of architectures to add to the collection of architectures you can consider for future projects. The same goes for the tool chain and the tech stack of AB3. Therefore, **do not try to apply AB3 as a template for _every_ other project you encounter in the future**.
 </box>
 
@@ -1103,10 +1103,10 @@ Now that you have learned the tP workflow, you can proceed to update a few more 
 **Recommended procedure for updating docs**:{.text-info}
 
 1. Decide among yourselves who will update which parts of the document(s).<br>
-   All team members are expected to contribute to all aspects of documentation %%(e.g., user docs, developer docs, diagrams)%%
+   Note: All team members are expected to contribute to <popover content="e.g., user docs, developer docs, diagrams">all aspects of documentation</popover>.
 1. Update the team repo by following the prescribed workflow:
 
-{{ embed_topic("appendixE-gitHub.md#tp-schedule-tracking", "Admin " + icon_embedding + " Appendix E(extract): **tP Project Schedule Tracking**", "3") }}
+{{ embed_topic("appendixE-gitHub.md#tp-schedule-tracking", "Admin " + icon_embedding + " Appendix E(extract): **tP Project Schedule Tracking**", "3", indent=1) }}
 <p/>
 
 **Guidance on using documentation tools** (e.g., how to preview changes locally before committing/pushing) can be found in the relevant section of the Developer Guide of your team project website that you set up earlier. Given below is a shortcut for your convenience:
@@ -1119,11 +1119,24 @@ Now that you have learned the tP workflow, you can proceed to update a few more 
 <div class="indented-level1">
 
 1. We use Git data to detect contributions to documentation. If one person commits all documents on behalf of the entire team, our grading scripts will identify that person as the sole contributor to documentation.
-1. Git authorship data will help you identify the person responsible for specific bugs in documentation %%-- in the final submission, only the person(s) responsible for each bug is penalized for that bug.%%
+1. Git authorship data will help you identify the person responsible for specific bugs in documentation. {{ show_extra_info("Why does that matter?", "In the final submission, only the person(s) responsible for each bug is penalized for that bug. So, it is better for the person who wrote the code to be the committer too.") }}
 1. The project is intended as an exercise for you to practice using Git to manage changes to the same code in parallel.
 </div>
 
 {{ show_faq("githubIssuesMultipleDocAuthors") }}
+</box>
+
+
+{% call show_ai_guidance("Hold back AI-generated code for a while") %}
+
+Learning a brownfield codebase is hard. If you start introducing large chunks of AI-generated content into the repo very early, it will make the learning curve even steeper.
+
+So, **use AI-generated content sparingly in the first 1-2 weeks of tP coding.** You can use AI more in later weeks if you wish, after all team members are fairly familiar with the codebase.
+{% endcall %}
+
+<box type="warning" seamless>
+
+**AI-generated commits should be owned by a team member.** ==Even if a commit is generated by AI, the `author` field of the commit should indicate which team member is responsible for it.== Do not leave it as `Claude` or `Codex`. Instruct your AI to commit using your name as the author. If not, the work will not be credited to any team member as we can't identify who directed the AI to do the work.
 </box>
 
 </div>
@@ -1132,13 +1145,18 @@ Now that you have learned the tP workflow, you can proceed to update a few more 
 ****A: Update the `README.md` to match your project:****
 
 * Add a UI mockup of your intended final product.
-    Note that the ==image of the UI should be `docs/images/Ui.png`== so that it can be downloaded by our scripts. Limit the file to one screenshot/mockup, and ensure the new image has roughly the same `height x width` proportions as the original one. %%Reason: when we compile these images from all teams into one page ([example]({{ url_team_list }})), yours should not look out of place.%%<br>
+    Note that the ==image of the UI should be `docs/images/Ui.png`== so that it can be downloaded by our scripts. Limit the file to one screenshot/mockup, and ensure the new image has roughly the same `height x width` proportions as the original one. <span class="badge bg-body-secondary rounded-pill text-info-emphasis fw-normal d-print-none"><trigger trigger="click" for="modal:ui-why-same-proportions">:octicon-info: Why same proportions?</trigger></span><br>
     {{ info }} The UI mockup can be a hand-drawn sketch or created using a tool such as PowerPoint, PlantUML, or Figma. Don't spend a lot of time on this, as this will eventually be replaced by a screenshot of the actual product.<br>
     {{ icon_Q }} Can we use an AB3 screenshot for this? Only in the unlikely case that your final product UI is expected to look exactly the same as AB3.{ texts="['A1.', 'A2.', 'A3.', 'A4.']" }
 * Update the link of the GitHub Actions _build status badge_ (<img src="https://github.com/se-edu/addressbook-level3/workflows/Java%20CI/badge.svg" alt="Build Status">) so that it reflects the build status of your team repo.
 * Acknowledge the original source of the code, e.g.,<br>
     `This project is based on the AddressBook-Level3 project created by the [SE-EDU initiative](https://se-education.org).`
 * Update all remaining contents of the page to match your own project (i.e., it should read like the README.md of an actual project, not that of a sample project given to students).
+
+<modal header="Why Ui.png needs to be the same proportions?" id="modal:ui-why-same-proportions">
+
+When we compile these images from all teams into one page ([example]({{ url_team_list }})), yours should not look out of place.
+</modal>
 
 <box type="tip" seamless>
 
@@ -1199,8 +1217,8 @@ At the end of the project, each member needs to create a Project Portfolio Page 
   {{ icon_tip }} Some examples of these can be found in the [AB3 Developer Guide](https://se-education.org/addressbook-level3/DeveloperGuide.html#product-scope).
 
   * **Target user profile**, **value proposition**, and <trigger trigger="click" for="modal:v10-userstories">**user stories**</trigger>: Update the target user profile and value proposition to match the project direction you have selected. Give a list of the user stories (and update/delete existing ones, if applicable), including priorities. This can include user stories that were considered but will not be included in the final product.
-  * <trigger trigger="click" for="modal:v10-usecases">**Use cases**</trigger>: Give <tooltip content="suggested: each member adds at least one use case">a few</tooltip> representative use cases (textual form) that need multiple steps to complete. %%e.g., Adding a tag to a person (assume the user needs to find the person first)%%
-  * <trigger trigger="click" for="modal:v10-nfr">**Non-functional requirements**</trigger>: List whichever NFRs you think are reasonable for your product %%e.g., performance requirements, usability requirements, scalability requirements, etc.%%<br>
+  * <trigger trigger="click" for="modal:v10-usecases">**Use cases**</trigger>: Give <tooltip content="suggested: each member adds at least one use case">a few</tooltip> representative use cases (textual form) that need multiple steps to complete. {{ show_extra_info("Example", "Adding a tag to a person (assume the user needs to find the person first)") }}
+  * <trigger trigger="click" for="modal:v10-nfr">**Non-functional requirements**</trigger>: List whichever NFRs you think are reasonable for your product.</popover> {{ show_extra_info("Examples", "performance requirements, usability requirements, scalability requirements, etc.") }}<br>
     {{ icon_tip }} Some of the given [project constraints](tp-constraints.md) can be framed as NFRs (e.g., `Constraint-Portable`) while others are purely for pedagogical/course-admin purposes (e.g., `Constraint-Incremental`).
   * <trigger trigger="click" for="modal:v10-glossary">**Glossary**</trigger>: Define terms that are worth recording.
 
@@ -1261,7 +1279,7 @@ Furthermore, these sections will be graded at the final project evaluation, and 
 
 <box type="tip" seamless>
 
-**Strongly recommended to do this as a team activity** (preferably F2F, or else connected via Zoom/MS Teams). That will help you proceed faster (e.g., a PR can be merged soon after it has been created) and will also make it easy for you to help each other with workflow matters.
+**Strongly recommended to do this as a team activity** (preferably F2F, or else connected via Zoom/MS Teams). That will help you proceed faster {{ show_extra_info("Example", "a PR can be merged soon after it has been created") }} and will also make it easy for you to help each other with workflow matters.
 </box>
 
 ****Steps:****
@@ -1275,7 +1293,7 @@ Furthermore, these sections will be graded at the final project evaluation, and 
 
    {{ embed_topic("appendixE-gitHub.md#tp-individual-fork-setup", "Admin " + icon_embedding + " Appendix E (extract): **tP Individual Fork Setup**", "1", indent="1") }}
 
-3. [each member] **Add your photo to the repo while ==following the prescribed tP workflow==**. Here are the steps %%(yes, it is a lot of steps for such a small update, but the purpose is to learn the workflow)%%:
+3. [each member] **Add your photo to the repo while ==following the prescribed tP workflow==**. Here are the steps {{ show_extra_info("Why many steps?", "Yes, it is a lot of steps for such a small update, but the purpose is to learn the workflow.") }}:
 
 <div class="indented-level1">
 
@@ -1297,12 +1315,9 @@ Furthermore, these sections will be graded at the final project evaluation, and 
   * Add a suitable photo of yourself, as described <trigger trigger="click" for="modal:mid-v12-photo">here</trigger>.<br>
   * The filename of the profile photo should be<br>
     `docs/images/github_username_in_lower_case.png`<br>
-    Note the need for ==lowercase== (<popover content="GitHub usernames are not case sensitive, but URLs in GitHub Pages are -- to avoid any mismatches, we have fixed the file name here to be lower case">%%why lowercase?%%</popover>) %%e.g., `JohnDoe123` -> `docs/images/johndoe123.png`, not `docs/images/JohnDoe123.png`%%.<br>
+    Note the need for ==lowercase== {{ show_extra_info("Why lowercase?", "GitHub usernames are not case sensitive, but URLs in GitHub Pages are -- to avoid any mismatches, we have fixed the file name here to be lower case") }} %%e.g., `JohnDoe123` -> `docs/images/johndoe123.png`, not `docs/images/JohnDoe123.png`%%.<br>
     If your photo is in jpg format, ==name the file as `.png`== anyway.
-  * At the same time, you can update the following links, which appear below the photo:
-    * `[homepage]`: Link it to your home page, if you have one. Otherwise, you can remove it.
-    * `[github]`: Link it to your GitHub profile page.
-    * `[portfolio]`: This link is to be used for [an optional deliverable called the _Project Portfolio Page_](tp-deliverables.html?cv-highlight=tp-deliverables-ppp) that will come later. You can remove it for now, and put it back if you decide to opt in for that deliverable at the end of the tP.
+
 </box>
 
 </div>
@@ -1338,9 +1353,12 @@ Furthermore, these sections will be graded at the final project evaluation, and 
 
 This page (in the `/docs` folder) is used for course admin purposes. ==Please follow the format closely== or else our scripts will not be able to give credit for your work. Similarly, ==do not split the given `.md` files further into multiple files==, as our grading script will check only those files.
 
-* Add your own details.
-* There is no need to mention the tutor/lecturer, but it is OK to do so.
+* Update the following links, which appear below the photo:
+    * `[homepage]`: Link it to your home page, if you have one. Otherwise, you can remove it.
+    * `[github]`: Link it to your GitHub profile page.
+    * `[portfolio]`: This link is to be used for [an optional deliverable called the _Project Portfolio Page_](tp-deliverables.html?cv-highlight=tp-deliverables-ppp) that will come later. You can remove it for now, and put it back if you decide to opt in for that deliverable at the end of the tP.
 * Indicate the different roles played and responsibilities held by each team member. You can reassign these <trigger trigger="click" for="modal:midv11-rolesAndResponsibilities">roles and responsibilities %%(as explained in Admin {{ icon_embedding }} Project Scope)%%</trigger> later in the project, if necessary.
+* There is no need to mention the tutor/lecturer, but it is OK to do so.
 
 </box>
 </div>
@@ -1357,12 +1375,12 @@ This page (in the `/docs` folder) is used for course admin purposes. ==Please fo
 * Merge one of the PRs sent in step 4.1 (e.g., the one that arrived first). If this causes conflicts in other PRs, resolve those conflicts.<br>
   {{ icon_tip }} [This week's tP briefing video (`Part 2a -- v1.1, Workflow`)]({{ baseUrl }}/schedule/week7/index.html) has a section on how to resolve conflicts in PRs.{text="4.3"}
 * Merge the remaining PRs one at a time, while resolving merge conflicts as needed.{text="4.4"}
-* Check the AboutUs page in your team's repo to confirm that the page appears as expected. [Here]({{ url_ab3_upstream_website}}/AboutUs.html) is an example.<br>
+* Check the AboutUs page in your team's repo to confirm that the page appears as expected ([example]({{ url_ab3_upstream_website}}/AboutUs.html)).<br>
   If something is not right, you might have to create another PR to rectify it.{text="4.5"}
 
 </div>
 
-5. Congrats! You are done with this workflow practice session. It might have felt like a lot of 'jumping through hoops' for very little gain, but as you go through the tP, this 'workflow overhead' is expected to feel progressively less 'draggy'. Hopefully, it will be almost second nature to you by the time you finish the tP.
+5. Congrats! You are done with this workflow practice session {{ show_extra_info("Again, why _so_ many steps?", "It might have felt like a lot of 'jumping through hoops' for very little gain, but as you go through the tP, this 'workflow overhead' is expected to feel progressively less 'draggy'. Hopefully, it will be almost second nature to you by the time you finish the tP.") }}
 
 </div>
 {#====================================================================================================================#}
@@ -1371,17 +1389,16 @@ This page (in the `/docs` folder) is used for course admin purposes. ==Please fo
 
 <box type="info" seamless>
 
-Although the MVP version is scheduled to be released in `{{ version_mvp }}` and not in the current iteration `{{ version_first }}`, in this task we refine the MVP features and divide them among the team members, because the MVP is the first full product version anyway (i.e., there is nothing earlier that we can aim our plans at).
+Although the MVP version is scheduled to be released in `{{ version_mvp }}` and not in the current iteration `{{ version_first }}`, in this task we refine the MVP features and divide them among the team members {{ show_extra_info("Why?", "The MVP is the first full product version anyway; there is nothing earlier that we can aim our plans at.") }}.
 </box>
 
-* {{ icon_team }} **Re-confirm MVP feature design**. Recall that you decided on features to include in the MVP version of the product. Revisit that design. Ensure the following (you may refine the MVP feature design if necessary).
+* {{ icon_team }} **Re-confirm MVP feature design**. Revisit your MVP feature list that you decided in a previous week. Refine it if necessary to ensure the following.
   * It consists of not only<br>
     **the most essential features** of the target product, but also<br>
-    **the simplest implementation of those features** %%(e.g., when adding a new feature to track birthdays of contacts, the simplest implementation of it could be simply adding a new text field for the contact)%%.
-  * It will **still be a working product** (i.e., it _can_ be used)<br>
-    %%Reason: As we are following the breadth-first iterative approach, each intermediate version should be a working product.%%
-* {{ icon_team }} **Divide the features among the team members**, i.e., who will be implementing which feature.
-  * Reminder: We recommend that the work be ==divided primarily based on features/enhancements, not by components==.
+    **the simplest implementation of those features.** {{ show_extra_info("Example", "when adding a new feature to track birthdays of contacts, the simplest implementation could be simply adding a new text field for the contact.") }}
+  * It will **still be a <popover content="i.e., it can be used. Reason: As we are following the breadth-first iterative approach, each intermediate version should be a working product.">working product</popover>**.
+* {{ icon_team }} **Decide which team member implements which feature**.<br>
+  Reminder: We recommend that the work be ==divided primarily based on features/enhancements, not by components==.
 
 {{ show_faq("tpNotEnoughMvpFeaturesToDivide") }}
 
@@ -1389,8 +1406,8 @@ Although the MVP version is scheduled to be released in `{{ version_mvp }}` and 
 
 **{{ icon_tip }} Ways to level up your tP game:**{.text-success}
 
-Consider the feature flaws and implementation bugs in the panels below that could cost you marks if they remained in the final version %%(these panels are extracts from the final product evaluation instructions given in the practical exam)%%. If they are avoided from the start, there is no need to hunt them down and fix them later.<br>
-Tip: Especially ==note the part on _overzealous input validation_==, which is a common issue found in tPs.
+Avoid from the start the _feature flaws_ and _implementation bugs_ in the panels below that could cost you marks if they remained in the final version.<br>
+Especially ==note the part on _overzealous input validation_==, which is a common issue found in tPs.
 
 <panel header="Admin {{ icon_embedding  }} tP: Practical Exam (PE) → Guidelines for bug triaging (extract 1)" peek>
 <include src="tp-pe-bug-triaging-guidelines-fragment.md#triaging-functionality-bugs" />
@@ -1487,8 +1504,8 @@ Tip: Especially ==note the part on _overzealous input validation_==, which is a 
 <span id="heading_rename_packages">%%{{ icon_team_rep }} [Optional] Rename packages/classes%%</span>
 <div id="desc_rename_packages">
 
-* **If you wish to rename AB3 packages/classes** to fit your product, this is the best time to do so (i.e., before starting any functionality changes), as renaming causes widespread changes to the codebase, leading to many merge conflicts with other ongoing PRs.
-* **Renaming packages/classes is optional**. It is fine to keep the existing ones. But if you decide to rename them, do it quickly, and probably best done by one person in one shot (to minimize merge conflicts).
+* **If you wish to rename AB3 packages/classes** to fit your product, this is the best time to do so, and is best done by one person.{{ show_extra_info("Why?", "It is better to do package/class renaming before starting functionality changes: renaming causes widespread changes to the codebase, leading to many merge conflicts with other ongoing PRs.") }}<br>
+  **Renaming packages/classes is optional**. It is fine to keep the existing ones.
 
 </div>
 {#====================================================================================================================#}
@@ -1497,34 +1514,36 @@ Tip: Especially ==note the part on _overzealous input validation_==, which is a 
 
 <box type="important" seamless>
 
-**Each member is expected to <tooltip content="i.e., merge at least one PR">merge _some_ code</tooltip> in each <tooltip content="{{ version_first }}, {{ version_mvp }}, {{ version_alpha }}, etc."> iteration</tooltip>.**<br>
-  %%Reason: As each iteration focuses on a different learning outcome, it is better for you to take part in each of them fully.%%
+**Each member is expected to <popover content="i.e., merge at least one PR">merge _some_ code</popover> in each <popover content="{{ version_first }}, {{ version_mvp }}, {{ version_alpha }}, etc.">iteration</popover>.** {{ show_extra_info("Why?", "As each iteration focuses on a different learning outcome, it is better for you to take part in each of them fully.") }}<br>
 
 {{ show_faq("tpNoPrInIteration") }}
 </box>
 <box type="tip" seamless>
 
-**Prefer smaller PRs**.<br>
-  %%Reason: The **ability to divide work into small yet meaningful PRs** is another intended learning outcome.%%
+**Prefer smaller PRs.** {{ show_extra_info("Why?", "The ability to divide work into small yet meaningful increments is another intended learning outcome. Besides, smaller PRs are easier to manage.") }}<br>
 
-* For example, suppose you are asked to implement a feature F in the current iteration. Instead of creating one big PR for it, you can start with a smaller PR that implements a very VERY simple version of F, followed by a few more PRs that improve F incrementally.
-* %%{{ icon_resource }} Side reading: [blog post] [Small Pull Requests: 6 reasons why they are the best choice](https://blog.codacy.com/small-pull-requests).%%
+{% call show_example() %}
+Suppose you are asked to implement a feature F in the current iteration. Instead of creating one big PR for it, you can start with a smaller PR that implements a very VERY simple version of F, followed by a few more PRs that improve F incrementally.
+{% endcall %}
+
+%%{{ icon_resource }} Side reading: [blog post] [Small Pull Requests: 6 reasons why they are the best choice](https://blog.codacy.com/small-pull-requests).%%
 </box>
 
 ****Steps:****
 
 * {{ icon_individual }} **Select a code change to implement**, as follows:{text="S1." t-class="fw-bold"}
-  * Consider the feature that you have been assigned to implement for the upcoming MVP version of the product (which will be released in iteration `{{ version_mvp }}`, not in the current iteration `{{ version_first }}`).
-  * Pick a small code change that you'll need to do to implement that feature. This is a small code change contributing toward the feature, not the entire feature itself. %%Examples: add parser support for a new command word, add a field to the person class%%.<br>
-   This code change should not 'break' the codebase though (e.g., it should not refer to a class that you plan to add in a future PR but doesn't exist yet). Ideally, it should not cause any existing tests to break either. That is, the change should take the codebase forward in a meaningful way.
+  * Consider the feature that you have been assigned to implement for the upcoming MVP version of the product (which will be released in iteration `{{ version_mvp }}`, not in the current iteration `{{ version_first }}`). {{ numbers_roman }}
+  * Pick a small code change that you'll need to do to implement that feature, i.e., a small code change contributing toward the feature, not the entire feature itself. {{ show_extra_info("Examples", "add parser support for a new command word, add a field to the person class") }}<br>
+   This code change should **take the codebase forward in a meaningful way, without 'breaking' the codebase** or existing tests. {{ show_extra_info("Example of 'breaking'", "The new code refers to a class that you plan to add in a future PR but doesn't exist yet.") }}
 * {{ icon_individual }} **Implement that code change while following the workflow** that you practiced in the previous week. A summary of the steps:{text="S2."}
-    * Create an issue for it. Assign it to yourself. Assign it to milestone `{{ version_first }}`.
+    * Create an issue for it. Assign it to yourself. Assign it to milestone `{{ version_first }}`. {{ numbers_roman }}
     * Create a PR from a separate branch in your fork. Assign it to `{{ version_first }}`.
     * Get the PR reviewed.
-    * Get the PR merged. Close the corresponding issue.
-* {{ icon_individual }} **Continue to implement code changes** (i.e., repeat S1 and S2) that move you toward your MVP feature(s). We recommend creating <tooltip content="i.e., while waiting for one PR to be merged, create a new PR to fix another issue">parallel PRs</tooltip> when implementing code changes with no/low dependency between them.{text="S3."}
+    * Get the PR merged.
+    * Close the corresponding issue.
+* {{ icon_individual }} **Continue to implement code changes** (i.e., repeat S1 and S2) that move you toward your MVP feature(s). We recommend creating <popover content="i.e., while waiting for one PR to be merged, create a new PR to fix another issue">parallel PRs</popover> when implementing code changes with no/low dependency between them.{text="S3."}
 * {{ icon_team }} **Wrap up the milestone**. When the iteration period is over, do the following:{text="S4."}
-  * Move any pending issues/PRs to the next milestone (i.e., `{{ version_mvp }}`). %%As you do not need to release a product version at the end of this iteration, we can freely move any pending work to the next iteration.%%
+  * Move any pending issues/PRs to the next milestone (i.e., `{{ version_mvp }}`). {{ show_extra_info("Why?", "As you do not need to release a product version at the end of this iteration, you can freely move any pending work to the next iteration.") }} {{ numbers_roman }}
   * Close the milestone.
   * There is no need to do a product release.
 
