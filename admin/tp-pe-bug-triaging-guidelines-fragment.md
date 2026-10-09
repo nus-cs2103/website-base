@@ -28,21 +28,18 @@ Accordingly, we hope you'll **accept bug reports graciously** (rather than fight
   (a) The exact same bug reported multiple times.<br>
   (b) Multiple buggy behaviors that are actually caused by the same defect and ==cannot be fixed independently== (i.e., fixing one fixes the others automatically).<br>
   <br>
-  In real projects, similar bugs (e.g., the same typo in multiple places) tend to get combined into a single issue/PR; in the PE, we have to keep independently-fixable things as separate bugs, to avoid complications in grading. After all, having the same typo in two places is not exactly the same as having it in only one place.<br><br>
-  If an independently-fixable yet similar problem appears in more than five distinct places, the dev team (not the tester) can ask for our permission to combine them as one bug (in which case we'll require you to increase the severity to match the frequency of the bug).
+  In real projects, similar bugs (e.g., the same typo in multiple places) tend to get combined into a single issue/PR; in the PE, we have to keep independently-fixable things as separate bugs, to avoid complications in grading. After all, having the same typo in two places is worse than having it in only one place.
 
 <div id="how-to-prove-out-of-scope">
 
 * **How to prove that something is `response.NotInScope`**: In general, a flaw (e.g., a missing feature, a suboptimal design of a feature, a known bug) can be considered `NotInScope` ==if rectifying it is less important than the work that has been done already== (because it is fine to delay lower priority work until future iterations) %%i.e., the supposedly 'better' implementation will take more effort than the current implementation, reducing the effort available to spend on other more important tasks.%%<br>
-  In addition, at least one of the following needs to be satisfied:
+  In addition, satisfying at least one of the following conditions works in favor of `response.NotInScope`:
   * The UG specifies it as not supported or coming in a future version.
-  * The user cannot attempt to use the missing feature, or when the user does so, the software fails gracefully, possibly with a suitable error message, i.e., the software should not crash.
+  * The user cannot attempt to use the missing feature, or when the user does so, the software fails gracefully (or at least fails in an easily recoverable way), possibly with a suitable error message, i.e., the software should not crash.
 
 <div class="indented-level1">
 
-{{ icon_info }} If a bug qualifies for `response.NotInScope`, the dev team will not be penalized, but the bug reporter will earn a small amount of credit for reporting it.{% if cs2103 %}
-
-{{ icon_info }} If a bug matches an enhancement listed in the 'Appendix: Planned Enhancements' of the DG, that bug can be not-accepted (the tester should not have reported it at all).{% endif %}
+{{ icon_info }} If a bug qualifies for `response.NotInScope`, the dev team will not be penalized, but the bug reporter will earn a small amount of credit for reporting it.
 </div>
 </div>
 
@@ -52,7 +49,7 @@ Accordingly, we hope you'll **accept bug reports graciously** (rather than fight
 
 <div id="triaging-functionality-bugs">
 
-##### Functionality bugs
+##### Triaging functionality bugs
 
 * **Problems caused by _extreme_ user behaviors**:
   * If the problem happens only in cases of deliberate sabotage %%(e.g., user entered a 30-digit telephone number)%%, it will not be considered a bug (in our context).<br>
@@ -74,8 +71,7 @@ However, if it is possible for a user mistake to cause such inputs %%(e.g., the 
 </div>
 <div id="triaging-feature-flaws">
 
-##### Feature flaws
-
+##### Triaging feature-flaw bugs
 
 * Missing features and problems in how a feature is designed are considered feature flaws, i.e., `type.FeatureFlaw`.
 * **Feature flaws can be claimed as `NotInScope`** if they qualify as per the rules explained earlier, except for these cases:
@@ -98,10 +94,12 @@ However, if it is possible for a user mistake to cause such inputs %%(e.g., the 
   * Applying an AND constraint on search keywords means the user will miss out on potentially useful search results unless she remembers the exact words she is looking for. But if an OR constraint is used, the user can retrieve results even if she mis-remembers some of the search terms %%(searching for `Alice` `Richards` can return both `Alice Davidson` and `Alison Richards`, one of which is likely to be what the user was looking for)%%.
 </div>
 
+<div id="triaging-documentation-bugs">
 
-##### Documentation bugs
+##### Triaging documentation bugs
+
 * **Broken/incorrect links**: Severity can be `Low` or `Medium` depending on how much inconvenience they cause to the reader.
-* **Extra white space** introduced by the PDF conversion: Not counted as bugs unless it hinders the reader. Cases such as a diagram being split between pages are considered bugs, because they hinder the reader.<br>
+* **Layout and formatting issues**: Counted as bugs if they hinder the reader.<br>
   {{ icon_info }} **'Hinder' the reader?** Don't interpret 'hinder' as 'impossible to read'. Even formatting issues such as too much/little padding, font size, alignment, inconsistencies, etc. can 'hinder' the reader in the sense they can slow down the reader or require the reader to put more effort than necessary. Those things that 'need to be fixed' are still bugs but of lower severities (depending on how much they hinder the reader -- most likely `severity.VeryLow` if the issue is purely cosmetic).
 * **UML notation variations** caused by the diagramming tool: Can be not-accepted if not contradicting the standard notation (as given by the textbook) i.e., extra decorations that are not misleading.<br>
   Omitting optional notations is not a bug as long as it doesn't hinder understanding.
@@ -112,7 +110,7 @@ However, if it is possible for a user mistake to cause such inputs %%(e.g., the 
  While many UML notations are optional, haphazard omissions without a good reason can affect consistency, which affects readability e.g., it can be considered a minor bug if a sequence diagram omits activation bars in some places but not in others and yet the omission doesn't make the diagram any easier to read.
 * **Nitty-gritty details missing from the UG** are not bugs as long as the user is informed of those details using other means such as error messages or in-app help.
 * **Minor typos**: These are still considered `severity.VeryLow` `type.DocumentationBug` bugs (even if the typo is in the actual UI), which carry a very tiny penalty.<br>
-  As avoiding/correcting obvious typos does not take significant extra effort, they should not have been postponed to a future version. {% if cs2103 %}Plus, correcting typos is allowed during the feature freeze. {% endif %}So, they don't qualify for `response.NotInScope`.
+  As avoiding/correcting obvious typos does not take significant extra effort, they should not have been postponed to a future version. So, they don't qualify for `response.NotInScope`.
 * **Minor grammar errors**: You may categorize a minor grammar bug as `severity.VeryLow` `type.DocumentationBug`. And, a grammar bug can be marked as `response.NotInScope` if it doesn't hinder the reader.
 * **Severity of bugs related to _missing requirements_** (e.g., missing user stories)? Depends on the potential damage the omission can cause. Keep in mind that not documenting a requirement increases the risk of it not getting implemented in a timely manner (i.e., future developers will not know that feature needs to be implemented).
 * **Unfulfilled NFRs**: If the DG mentions non-functional requirements that are not met by the product, it can be a `severity.Low` `DocumentationBug` if the NFR was unreasonable in the first place. Otherwise, it can be a `type.FeatureFlaw` bug.
@@ -123,3 +121,4 @@ However, if it is possible for a user mistake to cause such inputs %%(e.g., the 
   * If the said feature is not visible to the user and is very unlikely to be detected by accident, we can assume the feature was never meant to be released in the current version, which should be fine.
   * If the feature is simple, easily discoverable, and intuitive to use, it is fine to be omitted from the UG, especially if the inclusion seems to add noise rather than value.
   * Other cases point to some issue, either an omission in the UG, or a WIP feature not properly protected/hidden/disabled in the released product.
+</div>

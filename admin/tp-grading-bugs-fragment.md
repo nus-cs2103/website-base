@@ -131,7 +131,7 @@ Those mentioned elsewhere as possible UG bugs ...
 * **The penalty for a bug is divided equally** among <popover content="In the PE, each team gets to decide who are the assignees for each bug report they received">assignees</popover>.
 * **Developers are not penalized for duplicate bug reports** they received, but the testers earn credit for duplicate bug reports they submitted, provided the duplicates are not submitted by the same tester.<br>
   However, **<tooltip content="i.e., the same bug reported by many testers">_obvious_ bugs</tooltip> earn less credit** for each tester.
-* **Excessive incorrect downgrading/rejecting/<tooltip content="marking as duplicates">duplicate-flagging</tooltip>**, if deemed an attempt to _game the system_, will be penalized.
+* **Excessive incorrect downgrading/rejecting/<tooltip content="marking as duplicates">duplicate-flagging</tooltip>** will lower your marks because the accuracy of your responses is a grading factor.
 
 {{ show_faq("tpMoreCodeMeansHigherPenalty") }}
 {{ show_faq("tpTestingLessBuggyProducts", is_compact="1") }}

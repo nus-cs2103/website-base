@@ -54,6 +54,14 @@ The data should be stored locally and should be in a human-editable text file.<b
 
 {%- endcall  %}
 
+{% call show_constraint("Constraint-Data-Sandbox") -%}
+
+The app may not read or write files outside the 'home folder,' i.e., the folder containing the JAR file. But it may create sub-folders inside the home folder and write to any such sub-folder.
+The app may not change any OS-level configuration settings.
+
+%%**Reason:** To prevent the app from messing up testers' local files/settings.%%
+{%- endcall  %}
+
 {% call show_constraint("Constraint-No-DBMS") -%}
 Do not use a <tooltip content="Database Management System, e.g., MySQL">DBMS</tooltip> to store data.<br/>
 %%**Reason:** Using a DBMS to store data will reduce the room to apply OOP techniques to manage data. It is true that most real-world systems use a DBMS, but given the small size of this project, we

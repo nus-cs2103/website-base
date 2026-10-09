@@ -8,22 +8,22 @@
 <div class="indented-level1">
 <panel header="more details on the motivation and objectives..." minimized>
 
-* **The upfront objective of the PE is to increase the rigor of project grading.** Assessing most aspects of the project involves an element of subjectivity. As the project counts for a large percentage of the final grade, it is not prudent to rely on tutors' evaluations alone as there can be significant variations between how different tutors assess projects. That is why we collect more data points via the PE to minimize the chance of your project being affected by evaluator-bias.
+* **One objective of the PE is to increase the rigor of project grading.** Most aspects of the project are subjective. Therefore, it is not enough to use tutors' evaluations alone as tutors can vary in their assessments of subjective aspects. To minimize evaluator bias, we collect more data points via the PE.
 * **PE also evaluates your testing skills**, done as the following two parts:
-  1. **You will be given a chance to find bugs in a different piece of software.** Furthermore, you will be given an opportunity to ~~defend your bug reports against any possible objections~~ interact with the developers (anonymously) to refine the bug report further %%e.g., correct the severity level if the level you chose initially was incorrect%%. If you report possible bugs that turn out to be actual bugs, you earn marks (provided the product actually had bugs in the first place).
-  2. **Your product will be subjected to rigorous testing** and you will be given a chance to point out any inaccuracies in the bugs reported. You will lose marks for any bugs that turned out to be real bugs, but only if your work has more bugs than a certain bar.
+  1. **You will be given a chance to find bugs in a different piece of software.** Furthermore, you will be given an opportunity to ~~defend your bug reports against any possible objections~~ interact with the developers (anonymously) to refine the bug report further %%e.g., correct the severity level if the level you chose initially was incorrect%%. If your bug reports turn out to be actual bugs, you earn marks.
+  2. **Your product will be subjected to rigorous testing** and you will be given a chance to point out any inaccuracies in the bugs reported. You will lose marks for any bugs that turned out to be real bugs, but only if your work has a higher bug density than our bar.
 * **The above two can lead to high-rigor, <tooltip content="based on how well you achieve the objectives of testing, as opposed to indirect measures such as number of test cases">_outcome-based_</tooltip> evaluation of your testing skills**. The alternative is to rely solely on other easy-to-measure metrics %%(e.g., the number of test cases, test coverage, test LoC etc.)%% which we don't think are as good representations of your actual testing skills.
 **The _ultimate_ objective of the PE is not even the higher rigor of grading.** Because of the PE, you will realize that any bugs are very likely to be detected, which means you will work extra hard to avoid bugs; and THAT is the real benefit. Ultimately, <span class="text-success">**what we want is for you to internalize a higher standard for testing and a lower tolerance for bugs in your own code**</span> -- something that can have a longer-lasting impact on your future careers, beyond the mere course grade.
 * **Problem: There is no way we can carry out the above-mentioned** two-part evaluation with a high level of rigor if we use tutors as testers or an automated testing script. %%e.g., some tutors might not have the motivation to try hard enough to find bugs, and it will be hard to find tutors willing to spend many hours testing products so near to their own exams.%%<br>
   **Solution: Get the two parts of the evaluation to feed each other** by getting students to test each other's products.
 * **The fact that you are testing products created by your classmates and objecting to bugs reported by your classmates can make this a rather 'unpleasant' experience**. You might feel like _being pitted against each other_, or as if _you are forced to bring each other down_. But as you read above, it is a necessary evil for this evaluation to be even possible. Given the actual goal is to get you to create products with very few bugs, we think switching off the 'collaborative learning' mode for just a few days is a price worth paying to achieve that goal. After all, the PE is an evaluation activity (not a _learning activity_) and happens _after_ the regular learning period is over.
-* **You are not taking marks from someone else** -- at least, don't think of it that way. The point of contention is 'is this really a bug?' which is independent of the people involved. Furthermore, the reward for detecting a bug and the penalty for having a bug in your code are calculated independently.
-* **Still, _none of us_ likes it when others point out problems of our work**. Some of us don't even like pointing out problems of others' work. But ==we just have to learn not to take bug reports personally==. Another important intended outcome is to be able to report bugs in a way that doesn't feel like you are _attacking_ or trying to _sabotage_ the dev team.
-* **PE also evaluates aspects other than testing** e.g., your product evaluation skills, effort estimation skills etc. When evaluating those aspects in particular, they are ==not graded solely based on peer ratings==. Rather, PE data are cross-validated with tutors' grades to identify cases that need further investigation. When peer inputs are used for grading, they are usually combined with tutors' grades with appropriate weight for each. In some cases ratings from team members are given a higher weight compared to ratings from other peers, if that is appropriate.
+* **You are not taking marks from someone else** -- at least, don't think of it that way. The point of contention is 'is this really a bug?' which is independent of the people involved. Furthermore, the reward for detecting a bug and the penalty for having a bug in your code are different (i.e., not zero-sum) and are calculated independently.
+* **Still, _none of us_ likes it when others point out flaws in our work**. Some of us don't even like pointing out flaws in others' work. But ==we just have to learn not to take bug reports personally==. Another important intended outcome is to be able to report bugs in a way that doesn't feel like you are _attacking_ or trying to _sabotage_ the dev team.
+* **PE also evaluates aspects other than testing** e.g., your product evaluation skills, effort estimation skills etc. When evaluating those aspects in particular, they are ==not graded solely based on peer ratings==. Rather, PE data are cross-validated with tutors' grades to identify cases that need further investigation. When peer inputs are used for grading, they are usually combined with tutors' grades with appropriate weight for each.
 </panel><p/>
 </div>
 
-* **The PE is divided into four phases, and is of the form 'take-home assignment'**:
+* **The PE is a 'take-home assignment' consisting of four phases:**
   * ****Phase 1: Bug Reporting****{.text-success}: <span id="pe-p1-desc">In this phase, you will test the allocated product, report bugs, and ==select up to 6 bugs to send to the dev team==.<br>
     This phase is divided further into parts I, II, III, and IV.<br>
     The recommended order and duration of each part are given below. You will be given about **24 hours (Friday 12 noon to Saturday 12 noon) to finish this phase**.<br>
@@ -133,14 +133,13 @@ The above **applies to this and all remaining PE phases**.
 {{ show_faq("tpTestingLessBuggyProducts", is_compact="1") }}
 {{ show_faq("tpNoBugsInTestedProduct", is_compact="1") }}
 {{ show_faq("tpNeedToFindAllBugs", is_compact="1") }}
-{{ show_faq("peVaguePlannedEnhancements", is_compact="1") }}
 {{ show_faq("peCanTestersCombineBugs") }}
 
 -------------------------------------------------------------------------{.border-success}
 
 #### <span class="badge bg-success">&rarr; PE Phase 1 - Part II</span> <span class="text-success">Evaluating Documents [~30 minutes]</span>
 
-* **Use this slot mainly to report documentation bugs** (but you may report product bugs too). You may report bugs related to the UG and the DG.<br>
+* **Move to reporting documentation bugs next** (but you may continue to report product bugs too). You may report bugs related to the UG and the DG.<br>
   Only the content of the UG/DG pages should be considered. Do not report bugs that are not contained within those two pages (e.g., bugs in the `README.md`).
 * **For each bug reported, cite evidence and justify.** For example, if you think the explanation of a feature is too brief, explain what information is missing and why the omission hinders the reader.<br>
 
@@ -246,9 +245,9 @@ Use the person's PPP and RepoSense page to evaluate the effort.
 
 <box type="tip" seamless>
 
-**Bonus marks for high accuracy rates!**{.text-success}
+**Correct `severity.*` boosts marks!**{.text-success}
 
-You will receive bonus marks if a high percentage (e.g., some bonus if >50%, a substantial bonus if >70%) of your bugs are _**accepted as reported**_ (i.e., the eventual ~~`type.*` and~~ `severity.*` of the bug matches the value you chose initially and the bug is either `response.Accepted` or `response.NotInScope`).
+If the eventual `severity.*` of the bug matches the value you chose initially and the bug is either `response.Accepted` or `response.NotInScope`, the bug will earn higher marks (indicative: 15-20% more) than otherwise. So, aim to choose the correct severity as much as possible.
 </box>
 
 ****Procedure:****
@@ -267,7 +266,7 @@ You will receive bonus marks if a high percentage (e.g., some bonus if >50%, a s
    * {{ faq }} Do the 'excess' bugs (i.e., the ones not sent to the dev team) still affect our marks? No. They are ignored entirely when grading.
 1. **Justify severity of !!selected!! bugs**. For each selected bug, update the bug description (#r#do not add a new comment##) explaining why you chose that severity.
    * {{ icon_important_big_red }} Reminder: Aim to choose the correct severity. If in doubt, go lower.<br>
-     Reason: If the dev team objects to the severity you chose, and the teaching team agrees with the tester, your accuracy marks will be affected.
+     %%Reason: If the dev team objects to the severity you chose, and the teaching team agrees with the tester, your marks will be affected.%%
    * {{ faq }} What if I don't justify the severity of a selected bug? Not giving a justification will work against you if the dev team objects to your severity and the teaching team has to make the final decision.
    * What details to give in the severity justification? You can explain how the current severity matches the description of that severity (given below, for your easy reference). It might help if you also explain why the bug doesn't match the description of the next lower severity (and hence, you have no choice but to choose the current higher level).
 
@@ -282,7 +281,7 @@ You will receive bonus marks if a high percentage (e.g., some bonus if >50%, a s
 <include src="tp-pe-fragment.md#pe-p2-desc" inline /><p/>
 
 ==**Deadline:** {{ get_date(date_w13_start if pe_week == "13" else date_w12_start, 8 if S == 2 else 8, time="23:59") }}==<br>
-==**Aim to finish by Mon 23:59**== and keep Tuesday as a buffer. Reason: We'll send you a status update at the end of Monday, so that you can fix any problems with your responses during Tuesday.
+==**Aim to finish by Mon 23:59**== and keep Tuesday as a buffer. %%Reason: We'll send you a status update at the end of Monday, so that you can fix any problems with your responses during Tuesday.%%
 
 {% if pe_week == "13" %}
 <box type="info" seamless>
@@ -292,7 +291,7 @@ You will receive bonus marks if a high percentage (e.g., some bonus if >50%, a s
 {% endif %}
 <box type="important" >
 
-****Yes, that can be better!**** For each bug report you receive, if you think a software engineer who takes pride in their own work would say "yes, that can be better!", accept it graciously, even if you can come up with _some_ BS argument to justify the current behavior. <br>
+****Yes, that can be better!**** For each bug report you receive, if you think a software engineer who takes pride in their own work would say "yes, that can be better!", accept it graciously, even if you can come up with _some_ hair-splitting argument to justify the current behavior. <br>
   Even when you still want to defend the current behavior, instead of pretending that the behavior was a deliberate choice to begin with, you can say something like,
   > "Thanks for raising this. Indeed, it didn't occur to us. But now that we have thought about it, we still feel ..."
 
@@ -301,9 +300,9 @@ You will receive bonus marks if a high percentage (e.g., some bonus if >50%, a s
 
 <box type="tip" seamless>
 
-**Bonus marks for high accuracy rates!**{.text-success}
+**Higher marks for higher accuracy!**{.text-success}
 
-You will receive bonus marks if a high percentage (e.g., some bonus if >60%, a substantial bonus if >80%) of bugs are _**accepted as triaged**_ (i.e., the eventual ~~`type.*`,~~ `severity.*`, and `response.*` of the bug match the ones you chose).
+You will receive more marks if the eventual `severity.*` and/or `response.*` of the bug match the values you chose (indicative: 10-20% more).
 </box>
 
 <box type="important" seamless>
@@ -315,17 +314,6 @@ When the tester and the dev team cannot reach a consensus, the teaching team wil
 Hence, do not be tempted to argue for an unreasonable position in the hope that you'll receive something less than asked but still in your favor. For example, if the tester chose `severity.High` but you think it should be `severity.Medium`, don't argue for `severity.VeryLow` in the hope that the teaching team will decide a middle ground of `severity.Low` or `severity.Medium`. It's more likely that the teaching team will choose the tester's position as yours seems unreasonable.
 
 More importantly, this is not a negotiation between two parties; it's **an attempt to determine the true nature of the bug, and your ability to do so (which is an important skill)**.
-</box>
-
-<box type="tip" seamless>
-
-==**Favor `response.NotInScope` over `response.NotApplicable`**=={.text-success}
-
-If there is even the slightest chance that the change directly suggested (or indirectly hinted at) by a bug report is an improvement that you *might* consider doing in a future version of the product, choose `response.NotInScope`.<br/>
- Choose `response.NotApplicable` only for bug reports that are clearly incorrect (e.g., the tester misunderstood something).<br>
-Accordingly, it is typical for a team to have a lot more `response.NotInScope` bugs and very few `response.NotApplicable` bugs.
-
-Note that `response.NotInScope` bugs earn a small amount of credit for the tester without any penalty for the dev team, unless there is an unusually high number of such bugs for a team.
 </box>
 
 <include src="tp-pe-fragment.md#pe-questions-we-cannot-answer" />
@@ -376,6 +364,16 @@ Only the `response.Accepted` bugs are counted against the dev team. While `respo
 </box>
 </div>
 
+<box type="tip" seamless>
+
+==**Favor `response.NotInScope` over `response.NotApplicable`**=={.text-success}
+
+If there is even the slightest chance that the change directly suggested (or indirectly hinted at) by a bug report is an improvement that you *might* consider doing in a future version of the product, choose `response.NotInScope`.<br/>
+ Choose `response.NotApplicable` only for bug reports that are clearly incorrect (e.g., the tester misunderstood something).<br>
+Accordingly, it is typical for a team to have a lot more `response.NotInScope` bugs and very few `response.NotApplicable` bugs.
+
+Note that `response.NotInScope` bugs earn a small amount of credit for the tester without any penalty for the dev team, unless there is an unusually high number of such bugs for a team.
+</box>
 
 * **Bug type:**{ .text-info } **If you disagree with the original bug type assigned to the bug**, you may change it to the correct type. <br>
 
@@ -390,11 +388,10 @@ Only the `response.Accepted` bugs are counted against the dev team. While `respo
 * `type.DocumentationBug`: A flaw in the documentation %%e.g., a missing step, a wrong instruction, typos%%
 </box>
 
-* If you assign more than one type label, we'll pick one of them at random. If there is no type label, we will revert to the one given by the tester.
 * If a bug fits multiple types _equally_ well, the team is free to choose the one they think is the best match.
 </div>
 
-* **Bug severity:**{ .text-info } **If you disagree with the original severity assigned to the bug**, change it to the correct level.
+* **Bug severity:**{ .text-info } **If you disagree with the original severity assigned to the bug**, change it to the level you think is correct.
 <div class="indented">
 <include src="appendixE-gitHub.md#bug-severity" />
 
@@ -419,7 +416,7 @@ Only the `response.Accepted` bugs are counted against the dev team. While `respo
      >We think fixing this bug is not in scope because ...
   * **==You must add a team response comment==, if you** did _any_ of the following to the bug:
     * **downgraded the severity**<br>
-      Note: If the 'inherited' severity of a duplicate is lower than the severity given by the tester, it counts as a downgrading of severity, and you need to justify it in your team response of either the _original_ bug or the duplicate bug (both team responses will be shown to the tester).
+      Note: If the 'inherited' severity of a duplicate is lower than the severity given by the tester, it counts as a downgrading of severity, and you need to justify it in your team response of either the _original_ bug or the duplicate bug (both of those team responses will be shown to the tester).
     * **did not choose `response.Accepted`**
     * **chose it as a duplicate of another bug**
     * ~~changed the bug type~~ (no need to justify this)

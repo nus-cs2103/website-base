@@ -138,7 +138,7 @@ In some weeks, there will be some programming exercises for you to submit (on Co
 **FAQ: Which code editor to use when doing programming exercises?**<br>
 **Answer:** Here are some options:
 
-* Later in the course, we will be using [Intellij IDEA](https://www.jetbrains.com/idea/) as our code editor. If you are already familiar with using similar editors (e.g., VS Code), you can start using it early. The community edition (free) is good enough for this course.
+* Later in the course, we will be using [IntelliJ IDEA](https://www.jetbrains.com/idea/) as our code editor. If you are already familiar with using similar editors (e.g., VS Code), you can start using it early. The community edition (free) is good enough for this course.
 * If you are familiar with another code editor that supports Java (e.g., VS Code), you can use that.
 * For the time being, you can use an online code editor such as repl.it (create an account -> sign in -> click on `+ Create Repl` -> choose Java).
 * You can use a simple text editor, compile using `javac` command, and run using `java` command.

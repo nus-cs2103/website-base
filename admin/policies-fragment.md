@@ -207,7 +207,7 @@ If you **reused code snippets found on the Internet** %%e.g., from StackOverflow
 **Citing the use of AI-generated/assisted work** %%(e.g., using GitHub Copilot for project work)%%:
 
 * If the use of the tool was localized to a few places %%(e.g., used it to write a few methods/classes only)%%, cite its use in comments near where you used it.
-* If the use was more widespread %%(e.g., used it as an auto-complete tool during most of your coding)%%, cite the usage (i.e., which tool, who used it, the extent of use) in the following location instead (i.e., no need to cite in code comments):
+* If the use was more widespread %%(e.g., used AI to generate most of your code)%%, cite the usage (i.e., which tool, who used it, the extent of use) in the following location instead (i.e., no need to cite in code comments):
   * iP: in the README file
   * tP: in the DG, under the Acknowledgements section
 </box>

@@ -402,7 +402,7 @@ Not enough focus on it at all<br><span class="text-info bg-info">.</span><span c
 Should focus on it a little bit more<br><span class="text-info bg-info">.........</span><span class="text-light bg-light">...........................................................................................</span> |15 | 9.43%
 Just enough focus on it<br><span class="text-info bg-info">......................................................................</span><span class="text-light bg-light">..............................</span> |112 | 70.44%
 Just a bit too much focus on it<br><span class="text-info bg-info">.............</span><span class="text-light bg-light">.......................................................................................</span> |21 | 13.21%
-Way too much obsessing about AI+SE<br><span class="text-info bg-info">......</span><span class="text-light bg-light">..............................................................................................</span> |9 | 5.66%
+Way too much focus on it<br><span class="text-info bg-info">......</span><span class="text-light bg-light">..............................................................................................</span> |9 | 5.66%
         
 
 

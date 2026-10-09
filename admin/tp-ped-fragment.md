@@ -84,7 +84,7 @@ While PE are primarily _manual_ testing sessions, **you may also use any test au
 * The file is zipped using a two-part password.
   * We will email you the second part in advance (it's unique to each student). Keep it safe, and have it ready at the start of the PE.
   * At the start of the PE, we'll give you the first part of the password (common to the whole class), via a Canvas announcement. Use the combined password to unzip the file, which should give you another zip file with the name suffix `_inner.zip`.
-  * Unzip that second zip file normally (no password required). That will give you a folder containing the JAR file to test and other PDF files needed for the PE. ==Warning: do not run the JAR file while it is still inside the zip file==.<br>
+  * Unzip that second zip file normally (no password required). That will give you a folder containing the JAR file to test and a README.txt containing the URL of their product website. ==Warning: do not run the JAR file while it is still inside the zip file==.<br>
   Ignore the `padding_file` found among the extracted files. %%Its only purpose is to mask the true size of the JAR file so that someone cannot guess which team they will be testing based on the zip file size.%%<br>
     :fab-apple: Some macOS versions will automatically unzip the inner zip file after you unzip the outer zip file using the password.
   * {{ icon_tip }} Strongly recommended: Try the above steps using [this sample zip file](https://github.com/nus-cs2103/website-base/files/14849276/JohnDoe.zip) if you wish (first part of the password: `password1-`, second part: `password2` i.e., you should use `password1-password2` to unzip it).<br>
@@ -102,8 +102,7 @@ While PE are primarily _manual_ testing sessions, **you may also use any test au
 1. Launch the jar file ==using the `java -jar` command== rather than double-clicking %%(reason: to ensure the jar file is using the same java version that you verified above)%%. Use double-clicking as a last resort.<br>
   {{ icon_info }} We strongly recommend surrounding the jar filename with double quotes, in case special characters in the filename cause the `java -jar` command to break.<br>
   e.g., `java -jar "jar_file_name.jar"`<br>
-  {{ icon_info }} Note that the name of the JAR file inside the zip file can be different from the one given in their UG. This is because our scripts rename the JAR file using a different naming format before distribution. So, adapt your `java -jar` command to match the actual JAR file name.<br>
-  :fab-windows: Windows users: use the DOS prompt or the PowerShell (not the WSL terminal) to run the JAR file.{% if cs2103 %}<br>
+  {{ icon_info }} Note that the name of the JAR file inside the zip file can be different from the one given in their UG. This is because our scripts rename the JAR file using a different naming format before distribution. So, adapt your `java -jar` command to match the actual JAR file name.{% if cs2103 %}<br>
   :fab-linux: Linux users: If the JAR fails with an error labeled `Gdk-CRITICAL` (happens in Wayland display servers), try running it using the `GDK_BACKEND=x11 java -jar jar_file_name.jar` command instead.{% endif %}
 </box>
 
@@ -119,8 +118,9 @@ While PE are primarily _manual_ testing sessions, **you may also use any test au
 1. **Wait for him to give you a fallback** team to test.<br>
    Expected response times: [12 noon - 4pm] 20 minutes, [4-6pm] 5 minutes, [after 6pm] not available #r#(i.e., you need to resolve these issues before 6pm)##.<br>
    Contact the prof via email if you didn't get a response via MS Teams.
-1. **Close bug reports you submitted for the previous team** (if any).
-1. **You should not go back to testing the previous team** _after_ you've been given a fallback team to test.
+1. **If you are then given a different team to test:**
+   1. **Close bug reports you submitted for the previous team** (if any).
+   1. **You should not go back to testing the previous team** _after_ you've been given a fallback team to test.
 {% endif %}
 </box>
 
@@ -129,17 +129,12 @@ While PE are primarily _manual_ testing sessions, **you may also use any test au
 
 #g#In the scope of PE## | #r#Not in the scope##
 -------------------|---------------------
-{{ icon_tick_green }} The behavior of the product jar file<br>{{ icon_tick_green }} UG (html) page of the course website<br>{{ icon_tick_green }} DG (html) page of the course website | {{ icon_x_red }} The rest of the product website, including `.md` files such as README.md<br>{{ icon_x_red }} Data and config files that come with the app (unless they affect the app behavior)<br>{{ icon_x_red }} Terminal output (unless it attracts the attention of the user and worries/alarms him/her unnecessarily)<br>{{ icon_x_red }} Code quality issues (but there is no restriction on examining code to identify product/UG/DG bugs)
+{{ icon_tick_green }} The behavior of the product jar file<br>{{ icon_tick_green }} UG (.html) page of the course website<br>{{ icon_tick_green }} DG (.html) page of the course website | {{ icon_x_red }} The rest of the product website, including `.md` files such as README.md<br>{{ icon_x_red }} Data and config files that come with the app (unless they affect the app behavior)<br>{{ icon_x_red }} Terminal output (unless it attracts the attention of the user and worries/alarms him/her unnecessarily)<br>{{ icon_x_red }} Code quality issues (but there is no restriction on examining code to identify product/UG/DG bugs)
 
-* **Test ==based on the Developer Guide== (Appendix named _Instructions for Manual Testing_) ==and the User Guide==.** The testing instructions in the Developer Guide can provide you with some guidance, but if you follow those instructions strictly, you are unlikely to find many bugs. You can deviate from the instructions to probe areas that are more likely to have bugs.{% if cs2103 %}
-* **The DG appendix named _Planned Enhancements_** (if it exists) gives some enhancements the team is planning for the near future. The feature flaws these enhancements address are 'known' -- reporting them will not earn you any credit.<br/>
-  However, you can report `type.FeatureFlaw` bugs if you think these enhancements themselves are flawed/inadequate.<br/>
-  You can also report `type.DocumentationBug` bugs if any of the enhancements in this list combines more than one enhancement.{% endif %}
+* **Test ==based on the Developer Guide== (Appendix named _Instructions for Manual Testing_) ==and the User Guide==.** The testing instructions in the Developer Guide can provide you with some guidance, but if you follow those instructions strictly, you are unlikely to find many bugs. You can deviate from the instructions to probe areas that are more likely to have bugs.
 * **You may do both _system testing_ and _acceptance testing_**.
 * **Focus on product testing first**, before expanding the focus to reporting documentation bugs.<br>
-  Reason: If there are serious issues with the jar file that make product testing impossible, you need to find that out quickly (within the first 10 minutes) so that you can switch to a different product to test. If you find yourself in such a situation much later, the time spent testing the previous product would go to waste.
-* {{ icon_tip }} **Be careful when copying commands from the UG** (PDF version) to the app, as some PDF viewers can affect the pasted text. If that happens, you might want to open the UG in a different PDF viewer.<br>
-  If the command you copied spans multiple lines, check to ensure the line break did not mess up the copied command.
+  Reason: If there are serious issues with the jar file that make product testing impossible, you need to find that out quickly so that you can switch to a different product to test.
 
 ###### <div class="text-white bg-secondary p-1">c) What bugs to report?</div>
 

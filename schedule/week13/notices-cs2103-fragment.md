@@ -16,7 +16,7 @@ There is no weekly briefing this week. Instead, we have the following two course
 
 <box type="info">
 
-Please note that ==tutors will not be available for consultations _after_ this week==. This does not apply to this week. As most tutors are UG students who have their own exams, we do not allow {{ course_pair }} students to take up tutors' time during the reading week and the exam period. This is especially important for {{ course_pair }} tutors as they have to spend significant time adjudicating disputed PE bugs.
+==Tutors will not be available for consultations _after_ the end of this week==. As most tutors are UG students who have their own exams, we do not allow {{ course_pair }} students to take up tutors' time during the reading week and the exam period.
 
 Any questions about the course should be posted in the [forum]({{ url_forum }}) (preferred) or sent to the course email `{{ course_email }}`.
 </box>

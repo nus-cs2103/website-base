@@ -371,9 +371,16 @@ Note the following:
 <p/>
 </div>
 
+{% if semester != 'AY2627S1' %}
+
 2. {{ timing_badge("first few minutes of the tutorial", "warning") }}
    * Paste the diagram (take a photo if you drew on paper) in the _tutorial workspace_ document.
    * **Discuss answers** as guided by the tutor.
+{% else %}
+
+2. **==Submission:==** Hand-draw the class diagram and the object diagram, convert them into a digital format (e.g., scan or take a photo), and submit via the corresponding Canvas assignment.<br>
+#r#Deadline: Mon 12th Oct, 23:59##
+{% endif %}
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="draw-sd-personlist">
@@ -402,15 +409,21 @@ class PersonList{
 ```
 </div>
 
+{% if semester != 'AY2627S1' %}
 
 2. {{ timing_badge("first few minutes of the tutorial", "warning") }}:
 
 <div class="indented">
 
 * As before, paste the diagram in the _tutorial workspace_ document, and take part in the follow-up discussion, as guided by the tutor.
-
-
 </div>
+
+{% else %}
+
+2. **==Submission:==** Hand-draw the diagram, convert it into a digital format (e.g., scan or take a photo), and submit via the corresponding Canvas assignment.<br>
+#r#Deadline: Mon 12th Oct, 23:59##
+{% endif %}
+
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="demo-test-coverage">

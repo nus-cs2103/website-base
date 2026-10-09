@@ -410,7 +410,6 @@
       {location: ["qualityAssurance", "formalVerification", "what"]},
     {heading: "Secure Software Engineering"},
       {location: ["security", "what"]},
-      {location: ["security", "why"]},
       {location: ["security", "how"]},
       {location: ["security", "when"]},
       {location: ["security", "ai"]},

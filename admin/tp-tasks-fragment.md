@@ -1,5 +1,5 @@
 {% from "common/admin.njk" import show_admin_page with context %}
-{% from "common/macros.njk" import as_tag, button, embed_topic, get_date, mdblock, show_ai_guidance, show_as_tab, show_as_rounded_tab, show_caution, show_example, show_extra_info, show_faq, show_gm_lesson_link, show_tp_goals, show_tp_week_intro, show_tp_week_outro, show_tp_iterations_gantt, thumb, thumb_small, timing_badge with context %}
+{% from "common/macros.njk" import as_tag, button, embed_topic, get_date, mdblock, show_ai_guidance, show_as_tab, show_as_rounded_tab, show_caution, show_example, show_extra_info, show_extra_info_as_rich_popover_trigger, show_extra_info_as_rich_popover_body, show_faq, show_gm_lesson_link, show_tp_goals, show_tp_week_intro, show_tp_week_outro, show_tp_iterations_gantt, thumb, thumb_small, timing_badge with context %}
 {% from "admin/ip-tasks-fragment.md" import show_xp_page  with context %}
 {% from "_course-" + course + "/weeklyTpTasks-fragment.md" import weekly_tp_tasks  with context %}
 {% from "_course-" + course + "/studentData-fragment.md" import tp_dg_review_allocation with context %}
@@ -14,7 +14,7 @@
 <box type="warning" seamless>
 
 **The goal of freezing features in the pre-release iteration is to minimize latent bugs** by avoiding behavior changes unless they are strictly necessary.<br>
-In a real project, minor or critical changes might be allowed even near a deadline -- but in the tP, it is hard to enforce such a rule objectively. Instead, we use a quantitative limit that is easier to enforce: <span class="text-danger">**no more than 15% or 100 LoC (whichever is higher) of the functional code is allowed to be changed during iteration {{ version_final }}**</span>.<br>
+In a real project, minor or critical changes might be allowed even near a deadline -- but in the tP, it is hard to enforce such a rule objectively. Instead, we use a quantitative limit that is easier to enforce: <span class="text-danger">**no more than 15% or 150 LoC (whichever is higher) of the functional code is allowed to be changed during iteration {{ version_final }}**</span>.<br>
 Finer details of this limit are given below (**also see [Q0] and [Q1]** given under FAQs):
 
 * **==The feature freeze starts at the `{{ version_penultimate }}` deadline== (Thu 23:59).** Any code updated after that time is counted against the feature freeze.
@@ -27,9 +27,6 @@ Finer details of this limit are given below (**also see [Q0] and [Q1]** given un
   a) the **priority** (i.e., how important the change is), and<br>
   b) the **risk** (i.e., the chance of the change introducing new bugs).
 
-**Using the 'Planned Enhancements' DG section to counter known feature flaws:** Given you are not allowed to update functional code freely in {{ version_final }}, we allow you to optionally add a section named `Appendix: Planned Enhancements` to the end of the DG. More details in the panel below:
-
-{{ embed_topic("tp-deliverables-dg-fragment.md#planned-enhancements-info", "Admin " + icon_embedding + " tP → Deliverables → DG (extract): Planned Enhancements", "3", indent="1") }}
 
 ****FAQs on the feature freeze:****
 
@@ -40,14 +37,14 @@ Finer details of this limit are given below (**also see [Q0] and [Q1]** given un
 Furthermore, it is based on 'in the final code, how many lines are attributed to you (by the code dashboard)'.<br>
 <pic src="images/tpCodeDashboardLoc.png" />
 
-Example (note: LoC numbers refer to lines of functional code only): Suppose you currently have `600 LoC` under your name. At the end of `{{ version_final }}` you ended up with,
+Example (note: LoC numbers refer to lines of functional code only): Suppose you currently have `800 LoC` under your name. At the end of `{{ version_final }}` you ended up with,
 
-* `800 LoC` %%(you added some code, and edited some other code)%%:<br>
-  → Of that `800 LoC`, you could have added/edited up to `800 * 15% = 120 LoC` during the feature freeze.
+* `1200 LoC` %%(you added some code, and edited some other code)%%:<br>
+  → Of that `1200 LoC`, you could have added/edited up to `1200 * 15% = 180 LoC` during the feature freeze.
 * `700 LoC` %%(lower than you started with because you deleted some code)%%:<br>
-  → Of that `700 LoC`, you could have added/edited up to `700 * 15% = 105 LoC` during the feature freeze.
+  → Of that `700 LoC`,  `700 * 15% = 105 LoC` is lower than `150`. You could have added/edited up to `150 LoC` during the feature freeze.
 * `500 LoC` %%(because you deleted a lot of code)%%:<br>
-  → `500 * 15% = 75 LoC` is less than `100 LoC`. You could have added/edited up to `100 LoC` of that `500 LoC`.
+  → `500 * 15% = 75 LoC` is less than `150 LoC`. You could have added/edited up to `150 LoC` of that `500 LoC`.
 
 So, **deleting lines does not count as a change** (only editing and adding are counted as changes), but deleting lines reduces the number of LoC attributed to you, and hence reduces the number of lines you can change during the feature freeze.
 
@@ -77,10 +74,7 @@ Both code dashboards are currently set to auto-update every three hours.
 
 **A:** No single bug can incur a penalty of more than `-2`, which is the minimum penalty for violating the feature freeze.
 
-Product design is hard, and achieving a very good design takes experience, skill, and multiple iterative refinements. Hence, having some bugs at this stage is natural. Accordingly, bugs will not be penalized in the following cases:
-
-* If it is a feature flaw that will be fixed by an item you listed in the _Planned Enhancements_ DG section (as mentioned above).
-* After the bug is reported during the PE, you successfully argue it as 'not in scope' (i.e., fixing it is of lower priority than the work done already, and hence it is justifiable to be postponed to a future version). Reporters of such bugs will earn partial credit.
+Product design is hard, and achieving a very good design takes experience, skill, and multiple iterative refinements. Hence, having some bugs at this stage is natural. Accordingly, the bug will not be penalized if (after the bug is reported during the PE) you successfully argue it as 'not in scope' (i.e., fixing it is of lower priority than the work done already, and hence it is justifiable to be postponed to a future version). Reporters of such bugs will earn partial credit.
 
 In addition, you can mitigate the impact of such bugs and thus lower their severity by tweaking the UG (e.g., explain the feature better, clearly state the limitations and guide users to work around those limitations).
 </panel>
@@ -115,16 +109,6 @@ In addition, you can mitigate the impact of such bugs and thus lower their sever
 <panel type="seamless" header="**[Q8]** We already merged a PR that violates the feature freeze. Now what?" minimal>
 
 **A:** No penalty if you revert the change for the final submission. You can use [GitHub's _Revert PR_ feature](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/incorporating-changes-from-a-pull-request/reverting-a-pull-request) for this. Failing that, you'll need to reverse the merge commit of the offending PR manually, or at least do another PR to reverse the effect of the previous feature freeze violation.
-</panel>
-
-<panel type="seamless" header="**[Q9]** How to decide between recording a feature flaw as a 'known issue' (in the UG) and a 'planned enhancement' (in the DG)?" minimal>
-
-**A:**
-
-* UG's 'Known Issues' is a way to caution users about limitations of the app. In terms of grading, informing users of an issue can reduce the severity of the issue, but such issues are not totally immune from being reported/penalized as bugs.<br>
-  DG's 'Planned Enhancements' are immune from PE bug reporting. It's mostly for PE purposes (i.e., a course-specific item); not something you see often in real DGs.
-* There is no limit to how many known issues you can list in the UG, but listing many will put the product in a negative light.
-* You can list the same item in both, in which case its presentation/details can vary between the two as well (as the two documents are meant for different audiences).
 </panel>
 
 </box>
@@ -1145,7 +1129,7 @@ So, **use AI-generated content sparingly in the first 1-2 weeks of tP coding.** 
 ****A: Update the `README.md` to match your project:****
 
 * Add a UI mockup of your intended final product.
-    Note that the ==image of the UI should be `docs/images/Ui.png`== so that it can be downloaded by our scripts. Limit the file to one screenshot/mockup, and ensure the new image has roughly the same `height x width` proportions as the original one. <span class="badge bg-body-secondary rounded-pill text-info-emphasis fw-normal d-print-none"><trigger trigger="click" for="modal:ui-why-same-proportions">:octicon-info: Why same proportions?</trigger></span><br>
+    Note that the ==image of the UI should be `docs/images/Ui.png`== so that it can be downloaded by our scripts. Limit the file to one screenshot/mockup, and ensure the new image has roughly the same `height x width` proportions as the original one.{{ show_extra_info_as_rich_popover_trigger("Why same proportions?", "w8-tp-photo-why-same-proportions") }}<br>
     {{ info }} The UI mockup can be a hand-drawn sketch or created using a tool such as PowerPoint, PlantUML, or Figma. Don't spend a lot of time on this, as this will eventually be replaced by a screenshot of the actual product.<br>
     {{ icon_Q }} Can we use an AB3 screenshot for this? Only in the unlikely case that your final product UI is expected to look exactly the same as AB3.{ texts="['A1.', 'A2.', 'A3.', 'A4.']" }
 * Update the link of the GitHub Actions _build status badge_ (<img src="https://github.com/se-edu/addressbook-level3/workflows/Java%20CI/badge.svg" alt="Build Status">) so that it reflects the build status of your team repo.
@@ -1157,6 +1141,11 @@ So, **use AI-generated content sparingly in the first 1-2 weeks of tP coding.** 
 
 When we compile these images from all teams into one page ([example]({{ url_team_list }})), yours should not look out of place.
 </modal>
+
+{% call show_extra_info_as_rich_popover_body("w8-tp-photo-why-same-proportions", "Why Does Ui.png Need the Same Proportions?") %}
+When we compile these images from all teams into one page ([example]({{ url_team_list }})), yours should not look out of place.
+{% endcall %}
+
 
 <box type="tip" seamless>
 
@@ -1529,6 +1518,21 @@ Suppose you are asked to implement a feature F in the current iteration. Instead
 %%{{ icon_resource }} Side reading: [blog post] [Small Pull Requests: 6 reasons why they are the best choice](https://blog.codacy.com/small-pull-requests).%%
 </box>
 
+{% call show_ai_guidance("AI can help with code reviews") %}
+
+**Most AI tools have built-in support for code review.** For example, Codex has [a built-in _Code review_ plugin](https://learn.chatgpt.com/docs/code-review?surface=app). Otherwise, you can simply explain to the AI what help you need. For example, you can ask it to point out violations of the specific coding standard we follow.
+
+**You can also get AI to create a project-specific skill `tp-code-review` and fine-tune it to match your exact needs.** Examples:
+
+1. You can instruct it to check for specific problems such as duplicated code and weak SLAP.
+1. Instead of just reviewing the PR diff on GitHub, you can instruct AI to pull the branch to your repo and do a more holistic review, including testing of the code.
+
+After 'coaching' it through a few PRs, you can use it to take a first pass at reviewing incoming PRs.
+
+**Vet AI's PR review before you allow it to post it.** Although AI contributed to the review, the review itself is a graded deliverable that you are accountable for. For example, if you allow AI to post 'spammy' or questionable reviews, your team members will mark you down later.
+
+{% endcall %}
+
 ****Steps:****
 
 * {{ icon_individual }} **Select a code change to implement**, as follows:{text="S1." t-class="fw-bold"}
@@ -1634,9 +1638,7 @@ If you use the `javax.web` library simply to display the user guide as a web pag
 <p/>
 
 * {{ icon_team }} **Manage the iteration** `{{ version_mvp }}`, and reach the milestone `{{ version_mvp }}` (which delivers product version `{{ version_mvp }}`).
-* {{ icon_team }} **Aim to deliver on time**, as that is linked to our tP learning outcome of this iteration. This means you need to monitor progress, and course-correct as you go.
-  * Revise the MVP design further, if needed. If you think some of the ongoing work items intended for the current iteration may not finish in time, you can reassign them to a future iteration, provided they are not _essential_ for the `{{ version_mvp }}` %%(i.e., you can still get a 'working product' without them)%%.
-  * <tooltip content="e.g., change scope">Revise</tooltip> or <tooltip content="i.e., reassign to a future milestone">reschedule</tooltip> issues/PRs accordingly.
+* {{ icon_team }} **Aim to deliver on time**. If you are falling behind, <tooltip content="e.g., change scope">revise</tooltip> or <tooltip content="i.e., reassign to a future milestone">reschedule</tooltip> issues/PRs as necessary.
 * **Do a release on GitHub**, when the product `{{ version_mvp }}` is ready. Requirements:
   * **==Write fairly detailed _Release Notes_==** in the text field GitHub provides for the description of the release. In particular, describe what has been changed (compared to AB3). This is just an itemized list of _What's New_ -- no need to be as elaborate as a user guide.<br>
     **Include screenshots** (or screen recordings) of your product in action, featuring the changes you've made.<br>
@@ -1689,7 +1691,7 @@ This is a good time to get familiar with the diagramming tools used by the tP.
 * FYI, the panel below has some DG tips, some of which are related to drawing diagrams.
 
 <div class="indented">
-<panel type="light" minimized>
+<panel type="light">
 <div slot="header" class="card-title">
 
 <span> {{ icon_tip }} Admin {{ icon_embedding }} tP Deliverables → DG → Tips</span>
@@ -1775,9 +1777,8 @@ Resist the temptation to try to deliver each of those features/enhancements in o
 
 ##### {{ icon_tip }} Ways to level up your tP game:{.text-success}
 
-1. <span class="text-success">**Use parallel PRs:**</span> We encourage you to try sending parallel PRs (i.e., send another PR while the previous PR you sent is waiting to be merged) if you haven't done that yet.<br>
-   Reason: It's important to learn how to do that, because in most real projects it is common to have ==multiple open PRs from the **same author**==.<br>
-   {{ icon_important_big_red }} We require each student to have parallel PRs at least once during the tP %%so that we can confirm you are able to handle them%%.
+1. <span class="text-success">**Use parallel PRs:**</span> Try sending parallel PRs (i.e., send another PR while the previous PR you sent is waiting to be merged) if you haven't done that yet. {{ show_extra_info("Why parallel PRs?", "Reason: It's important to learn how to do that, because in most real projects it is common to have ==multiple open PRs from the **same author**==.") }}<br>
+   {{ icon_important_big_red }} **We require each student to have parallel PRs at least once** during the tP %%so that we can confirm you are able to handle them%%.
 1. **Maintain the defensiveness of the code:**{.text-success} Use assertions, exceptions, and logging in your code, as well as other defensive programming measures (refer to this week's topic on _defensive programming_ for more details) when appropriate. This will be considered when grading your tP code quality.<br>
    Remember to [enable assertions in your IDEA run configurations](https://se-education.org/guides/tutorials/intellijUsefulSettings.html) and [in the gradle file](https://se-education.org/guides/tutorials/gradle.html#enabling-assertions).
 </box>
@@ -1950,12 +1951,12 @@ This week, we would like you to smoke-test the CATcher app **to ensure it can wo
 <span class="text-danger">**This task is time-sensitive.**</span> If done later than the iteration deadline given above, it will not be counted as 'done'.
 </box>
 
-* {{ icon_important_big_red }} **Update the User Guide** to match the current version of the product. %%Reason: testers will need to refer to the UG during the practical exam dry run%%.
+* {{ icon_important_big_red }} **Update the User Guide** to match the current version of the product. %%Reason: alpha-testers will need to refer to the UG when testing.%%.
   * {% if cs2103 %}Remove mentions of features not implemented yet, if any. As you are not allowed to change features during the iteration {{ version_final }}, there is no point keeping those in the UG.<br>
   Alternatively, clearly{% else %}Clearly{% endif %} indicate which features are not implemented yet %%e.g., tag those features with a `Coming soon` label%%.
   * For those features already implemented, ensure their descriptions match the exact behavior of the product %%e.g., replace mockups with actual screenshots%%
   * {{ icon_tip }} Some things not addressed in the AB3 UG that you might want to consider addressing in your UG (if applicable):
-    * Double-clicking the jar might not work on some systems.
+    * Double-clicking the JAR file might not work on some systems.
     * The app will not work properly if it is placed in a write-protected folder.
     * Mac users using the fullscreen mode for secondary dialogs (e.g., the help dialog) might encounter unexpected behaviors.
 
@@ -2006,7 +2007,7 @@ If you want to smoke-test your JAR file on an OS not available within your team,
 
 <box type="tip" seamless>
 
-The panel below contains guidelines your peers will use when determining bugs in the final product -- knowing them might be useful in preventing such bugs in your product in the first place. You may skip the 'General' section.
+The panel below contains guidelines your peers will use when determining bugs in the final product -- knowing them might be useful in preventing such bugs in your product in the first place. #r#You may skip the 'General' section.##
 {{ embed_topic("tp-pe-bug-triaging-guidelines-fragment.md", "Admin " + icon_embedding + " Practical Exam → **Guidelines for determining bugs**", "3", indent="1") }}
 </box>
 
@@ -2275,13 +2276,12 @@ Test the product yourself (test each other's features) using the JAR file, repor
 
 1. **Is it something you think you'll never fix** even if you were to continue this project in the future?<br>
    If yes, you can leave it unfixed and reject it if the same bug is reported in the PE. Caution: If the PE tester disagrees and the teaching team agrees with the tester's justification, the bug might result in a penalty %%(why say '_might_ result ...'? Because bugs are penalized only when the bug density exceeds a certain bar)%%.<br>
-   {{ icon_info }} How to decide if a PE bug can be not-accepted? Refer to <trigger trigger="click" for="modal:pedTriagingWorkflow-peBugTriagingGuidelines">PE Bug Triaging Guidelines</trigger> for details (you may skip the 'General' section).
+   {{ icon_info }} How to decide if a PE bug can be not-accepted? Refer to <trigger trigger="click" for="modal:pedTriagingWorkflow-peBugTriagingGuidelines">PE Bug Triaging Guidelines</trigger> for details #r#(you may skip the 'General' section).
 1. **Else, is it something you may consider fixing in a future version** but that was not important enough to have been done in {{ version_penultimate }}?<br>
    If yes, you can expect to categorize it as `NotInScope` if the same bug is reported in the PE (<trigger trigger="click" for="modal:pedTriagingWorkflow-peNotInScope">eligibility criteria</trigger>).
 1. **Else, it is something you should have fixed in the current version.**
    * You may fix it in this iteration. If left unfixed, it can be reported as a bug in the PE, and _might_ result in a penalty eventually.{text="3.a)"}
-   * Alternatively, you can list it under 'Planned Enhancements' in the DG so that it becomes immune to PE bug reporting (caution: there is a limit on how many items you can list as planned enhancements -- see the panel below for more details).<br>
-     In addition, you can update the UG to mitigate its impact on users (e.g., keep users informed of it).{text="3.b)"}
+   * In addition, you can update the UG to mitigate its impact on users (e.g., keep users informed of it).{text="3.b)"}
 
 {{ embed_topic("tp-deliverables.md#tp-deliverables-dg", "Admin " + icon_embedding + " tP → Deliverables → Developer Guide", "3", indent="3") }}
 
@@ -2368,7 +2368,6 @@ Not applicable this semester
   * The whole team is penalized for problems in team submissions %%e.g., a -1 penalty for a team submission will be a -1 penalty for each team member%%.{% if not cs2103 %}<br>
     Only the respective student is penalized for problems in individual submissions.{% endif %}
 * **Submit via the Canvas assignment we have set up**.
-  {% if has_t %}{{ course}}T students: documents should be submitted to both courses. It's not enough to submit to the CS2101 side only.{% endif %}
 * {{ icon_important_big_red }} **Follow submission instructions closely**. ==Any non-compliance will be penalized== (e.g., wrong file name/format).<br>
   Canvas might automatically add a file name suffix (e.g., `*-1.jar`, `*-2.jar`, ...) if you upload a file multiple times. You can safely ignore that suffix.
 * **Do not update the code during the 30 days after the deadline.** Get our permission first if you need to update the code in the repo during that _code-freeze_ period.

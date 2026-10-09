@@ -17,7 +17,7 @@ What you need to do:
 </box>
 {% endif %}
 
-#### {{ thumb(1) }} Demonstrate an assertion failure
+#### {{ thumb(1) }} {{ timing_badge("--before the tutorial--", "warning") }} Demonstrate an assertion failure
 
 * Task: Demonstrate an assertion failure using your tP code.
 * Objective: to verify that assertions are being checked when you run the code locally.
@@ -27,20 +27,20 @@ Here are the steps:
 1. Java assertions are not enabled by default.
    * If using Gradle to run your app, [check if your `build.gradle` has been updated to enable assertions](https://se-education.org/guides/tutorials/gradle.html#enabling-assertions).<br>
      If needed, update it as necessary.
-   * If using Intellij's native features to run your app (i.e., `Gradle` is not selected in this [setting](https://se-education.org/guides/tutorials/images/gradle/intellijRunUsingGradle.png)), [check if you have enabled assertions in IntelliJ settings](https://se-education.org/guides/tutorials/intellijUsefulSettings.html).
-1. Modify the code of your tP to deliberately cause an assertion failure<br>
+   * If using IntelliJ's native features to run your app (i.e., `Gradle` is not selected in this [setting](https://se-education.org/guides/tutorials/images/gradle/intellijRunUsingGradle.png)), [check if you have enabled assertions in IntelliJ settings](https://se-education.org/guides/tutorials/intellijUsefulSettings.html).
+1. Modify the code of your tP to deliberately cause an assertion failure,<br>
    e.g., add `assert false;`{.java} somewhere in your code.
 1. Run the code so that the application crashes with an assertion failure.
 1. Take a ==screenshot that shows the assertion error message== and save it somewhere. During the tutorial, the tutor will ask you to paste it in the tutorial workspace document.
 
 
-#### {{ thumb(2) }} Give examples of defensive programming
+#### {{ thumb(2) }} {{ timing_badge("--before the tutorial--", "warning") }} Give examples of defensive programming
 
 * Note down examples of _defensive programming_ from AB3 or your tP.<br>
   During the tutorial, the tutor will ask you for these examples.
 
 
-#### {{ thumb(3) }} Review sample <tooltip content="Developer Guide">DG</tooltip> extracts
+#### {{ thumb(3) }} {{ timing_badge("--before the tutorial--", "warning") }} Review sample <tooltip content="Developer Guide">DG</tooltip> extracts
 
 * Download the sample DG extracts in `T10-DG-Extracts.pdf` (in [Canvas/Files]({{ url_files }})/Handouts).
 * Evaluate the given extract to find errors or areas to improve. Note them down (e.g., add comments to the PDF file).

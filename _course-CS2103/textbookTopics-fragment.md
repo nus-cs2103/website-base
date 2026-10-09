@@ -816,23 +816,19 @@
           {
             name: "goTopDown",
             level_three_topics: [
-              {name: "what", heading: "What", priority: "2"},
-              {name: "why", heading: "Why", priority: "3"},
-              {name: "how", heading: "How", priority: "2"}
+              {name: "what", heading: "What", priority: "2"}
             ]
           },
           {
             name: "aimForComprehensibility",
             level_three_topics: [
-              {name: "what", heading: "What", priority: "2"},
-              {name: "how", heading: "How", priority: "3"}
+              {name: "what", heading: "What", priority: "2"}
             ]
           },
           {
             name: "documentMinimally",
             level_three_topics: [
-              {name: "what", heading: "What", priority: "2"},
-              {name: "how", heading: "How", priority: "3"}
+              {name: "what", heading: "What", priority: "2"}
             ]
           }
         ]
@@ -1366,7 +1362,6 @@
             name: "",
             level_three_topics: [
               {name: "what", heading: "What", priority: "2"},
-              {name: "why", heading: "Why", priority: "2"},
               {name: "how", heading: "How", priority: "4"},
               {name: "when", heading: "When", priority: "4"},
               {name: "ai", heading: "Securing AI-Assisted Code", priority: "4"},

@@ -71,12 +71,9 @@ For example, an app to manage one of these:{% if cs2113 %}
 
 <div tags="m--cs2103">
 
-<span class="badge rounded-pill bg-dark text-light">++++Direction 1: Evolve++++</span> Evolve <tooltip content="AddressBook-Level3">AB3</tooltip> into a more powerful or more optimized contact management app.
+**You are expected to evolve <tooltip content="AddressBook-Level3">AB3</tooltip> into a more powerful or more optimized contact management app** i.e., make AB3 a better version of itself.
 
-<box type="tip" seamless>
 
-TLDR: **In the Evolve direction, make AB3 a better version of itself.**
-</box>
 Some examples:
 
 * Contact management optimized for a specific type of user, for example:
@@ -99,21 +96,6 @@ Some examples:
   * undo/redo
   * result preview (i.e., show what would happen if the current command is executed)
 * Internal improvements e.g., refactor the current design/implementation to make it better in some way
-
-<div class="indented-level1">
-
-{{ pros }} fewer changes to existing code at the start of the project (i.e., progress will be smoother at the start), and can result in a more mature product with deeper features as the project progresses.<br><br>
-{{ cons }} less flexibility in product design.
-</div>
-
-~~<span class="badge rounded-pill bg-dark text-light">++++Direction 2: Morph++++</span> Morph AB3 in any direction you wish.~~
-
-==**This direction is <span class="text-danger">not available this semester</span>, because it tends to increase tP workload**== beyond what students anticipate when making this choice (e.g., 40-50% more work than strictly needed by the tP). Also, it is less brownfield than direction 1.
-<div class="indented-level1">
-
-~~{{ pros }} more flexibility in the project direction.<br><br>
-{{ cons }} more changes to the existing code at the start while you are still not very familiar with the codebase, morphing is less common in real projects (compared to direction 1).~~
-</div>
 
 Note that **creating a novel/unique/interesting product will NOT earn you extra marks** in this course. While those qualities are important in real-world projects, and we do allow you room to explore those directions, they are not the focus of this course {% if cs2103 %}%%(there are other courses such as CS3216 and CS3217 that focus on those aspects)%%. Focus your energy on creating a _solid product at a high quality level_, which takes more effort than you might realize at first. Pursue novelty or uniqueness only if you have energy to spare and can do so without compromising quality. For example, a bland feature/product implemented well will score more marks than a novel product that is buggy, even if the novel features were harder to implement.
 

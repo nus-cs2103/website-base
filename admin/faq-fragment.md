@@ -959,15 +959,7 @@ Yes, you may remove them, but you are welcome to keep them too (they can be usef
 If you keep them in the DG, update them to match the current version of the product. Otherwise, outdated content can be reported as DG bugs.
 
 </div>
-<!-- =============================================================== -->
 
-<div id="faq-tpCountingSimilarPlannedEnhancements-Q">When listing 'Planned Enhancements' in the DG, if enhancement X and Y are very similar, can we count them as one?</div>
-<div id="faq-tpCountingSimilarPlannedEnhancements-A">
-
-Only if adding one automatically adds the other (if it is indeed the case but it may not be obvious to an outsider, you need to explain how it is so). If one can be added without the other, they are counted as two enhancements.
-
-Note that what matters is not if an enhancement *can* be done independently of another, but if it reasonably *should* be. %%For example, detecting extra spaces at the start of a command _can_ be implemented for just one command but the reasonable thing to do is to implement it for all commands at once in a central location. In that case, they are counted as one enhancement.%%
-</div>
 <!-- =============================================================== -->
 
 <div id="faq-tpFeatureTakeovers-Q">What if someone took over a feature from another team member?</div>
@@ -984,14 +976,14 @@ For code authorship, only one person can claim authorship of a line, and that pe
 Product design is hard (harder than programming). Feature design choices %%(e.g., to support sorting or not support sorting, sort descending or ascending, which sort order should be default, etc.)%% are subjective and need to be evaluated case by case.
 
 General guidance: Choose by considering<br>
- **[A] what is best for the user** (specifically, with reference to the target user profile you chose for the product), but also factor in<br>
- **[B] what is _possible_ within your resources** (e.g., time, manpower, expertise) -- what is 'ideal' may not be practical.
+ **[A] what is best for the user** (specifically, with reference to the target user profile you chose for the product), but also factor in,<br>
+ **[B] what is _possible_ within <tooltip content="e.g., time, manpower, expertise">your resources</tooltip>** -- what is 'ideal' may not be practical.
 
 **Implications for the practical exam (PE):**
 
 <div class="indented-level1">
 
-Keeping in mind that during the PE, testers can file bug reports against design choices, whatever choice you make, be prepared to justify it (based on [A] and [B] above) in case a tester files a bug report objecting to the current design.
+Keeping in mind that during the PE, testers can file bug reports against design choices. Whatever choice you make, be prepared to justify it (based on [A] and [B] above) if that happens.
 
 Given these justifications are subjective, if both the developer's justification and the tester's justification seem equally valid, we will rule in favor of the developer (i.e., no penalty for the developer).
 
@@ -1021,7 +1013,7 @@ But you should still allocate different members to be 'in charge of' different c
 
 Yes, you may use any other tool too (e.g., PowerPoint). But wait; if you do, note the following:
 
-* ==Choose a diagramming tool that has some 'source' format that can be version-controlled using git and updated incrementally== %%(reason: diagrams need to evolve with the code that is already being version controlled using git)%%. For example, if you use PowerPoint to draw diagrams, also commit the source PowerPoint files so that they can be reused when updating diagrams later.
+* ==Choose a diagramming tool that has some 'source' format that can be version-controlled using Git and updated incrementally== %%(reason: diagrams need to evolve with the code that is already being version controlled using git)%%. For example, if you use PowerPoint to draw diagrams, also commit the source PowerPoint files so that they can be reused when updating diagrams later.
 * Use the same diagramming tool for the whole project, except in cases for which there is a _strong_ need to use a different tool due to a shortcoming in the primary diagramming tool. %%Do not use a mix of different tools simply based on personal preferences.%%
 
 So far, PlantUML seems to be the best fit for the above requirements.
@@ -1127,7 +1119,7 @@ The product testing part of the PE is expected to take no more than 2 hours, and
 <div id="faq-peMorePowerfulTools-Q">Will students using more powerful (e.g., paid) tools for testing have an unfair advantage?</div>
 <div id="faq-peMorePowerfulTools-A">
 
-Given the nature of the product you are testing (small, simple), we expect that everyone will be able to find enough bugs to qualify for full marks for the product testing portion of the tP, even if you are not using any tools at all (i.e., manual testing only). At this scale, and at the current state of the art, we estimate the difference between using AI tools and manual testing to be negligible.
+Given the nature of the product you are testing (small, simple), we expect that everyone will be able to find enough bugs to qualify for full marks for the product testing portion of the tP, even if you are not using any tools at all (i.e., manual testing only). At this scale, and at the current state of the art, we estimate the difference between using higher-paid AI tools and the standard AI tools you all are given will be negligible.
 </div>
 <!-- =============================================================== -->
 
@@ -1163,13 +1155,7 @@ Report each bug as a separate bug report. If you include multiple bugs in one bu
   * Given these are lower-severity bugs, it is better to report them once and focus more on looking for higher-severity bugs.
 * On the positive side, if similar bugs reported by multiple testers are later combined into one bug report by the dev team (with our permission) and given a higher severity, all testers who reported instances of that bug will benefit from the higher severity.
 </div>
-<!-- =============================================================== -->
 
-<div id="faq-peVaguePlannedEnhancements-Q">What if a 'Planned Enhancement' is written broadly so that it covers a variety of bugs?</div>
-<div id="faq-peVaguePlannedEnhancements-A">
-
-As per our instructions, each planned enhancement should be specific and detailed. If you feel a certain planned enhancement is too broad or not specific enough, you can 'reject' that planned enhancement and still report bugs as if it didn't exist. But in this case you should also justify why you 'reject' the corresponding planned enhancement.
-</div>
 <!-- =============================================================== -->
 
 <div id="faq-tpJustifyBugsAcceptedAsIs-Q">Do we need to justify even if we accept the bug _as is_?</div>
@@ -1182,7 +1168,7 @@ No need to provide a justification if you accept the bug without _any_ changes t
 <div id="faq-tpMoreCodeMeansHigherPenalty-Q">So, those who write more code will be hit with more bugs? How's that fair?</div>
 <div id="faq-tpMoreCodeMeansHigherPenalty-A">
 
-Penalty for bugs is applied based on bug _density_, not bug count. Here's an example:
+That is not true. The penalty for bugs is applied based on bug _density_, not bug count. Here's an example:
 
 * `n` bugs found in Ann's feature; it is a big feature consisting of a lot of code → marks for dev testing: 4
 * `n` bugs found in Jim's feature; it is a small feature with a small amount of code → marks for dev testing: 1

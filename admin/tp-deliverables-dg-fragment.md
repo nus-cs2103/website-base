@@ -36,31 +36,7 @@
   * Explain the difficulty level, challenges faced, effort required, and achievements of the project.
   * Use AB3 as a reference point %%e.g., you can explain that while AB3 deals with only one entity type, your project was harder because it deals with multiple entity types%%.
 </div>
-<div tags="m--cs2103" id="planned-enhancements-info">
 
-* {{ icon_important_big_red }} **We highly recommend adding an appendix named _Planned Enhancements_**, listing fixes you propose to add in the near future, to counter known feature flaws that you are not allowed to fix in {{ version_final }}.<br>
-  **Enhancements listed in this section will be immune from the PE bug reporting** i.e., they will not be penalized if reported as bugs during the PE.
-  * This can be added _after_ the iteration `{{ version_penultimate }}` is over.
-  * This section may contain up to `team_size x 2` enhancements %%e.g., a 5-person team can have up to 10 enhancements%%.
-  * At the start of the section, clearly state the team size. While this information is not useful for a real DG, it will help PE testers easily see if you have exceeded the allowed planned enhancements count.<br>
-    For a similar reason, structure this section as a numbered list, each item in the list describing exactly one planned enhancement.<br>
-    Each enhancement should be specific, describing the feature flaw it addresses and how exactly the feature will be changed, providing sample UIs/inputs/outputs if applicable. e.g.,
-    > ****Planned Enhancements****
-    >
-    > Team size: 5
-    >
-    > 1. **Make 'failed contact deletion' message more specific**: The current error message for a failed contact deletion `Operation failed!` is too general. We plan to make the error message also mention which action failed and the reason for the failure: `The contact Amy Lee could not be deleted as it is referenced by another contact Ben Chua`.
-    > 2. ...
-  * Each enhancement should be a tweak to an existing feature, and should not be a new feature altogether.
-  * An enhancement should not be too broad, or fix multiple things.
-    * #r#Too broad##: `Make the name field more flexible`, `Make error messages more informative`
-    * #g#OK##: `Accept non-English characters for the name`, `When a command fails due to an invalid index, state the reason in the error message`
-  * `type.FeatureFlaw` bug reports matching an item in this section ==will not be penalized== for the team, and testers will not earn credit for reporting them either. However, testers can report `type.FeatureFlaw` bugs on the enhancements listed in this section, if they think the planned feature tweak itself is flawed/inadequate.
-
-{{ show_faq("tpCountingSimilarPlannedEnhancements") }}
-
-* <span class="text-danger">If the team has exceeded the allowed count in the planned enhancements</span>, only the first N items (where N is `team_size x 2`) in that list will have immunity. The rest can be reported as bugs. In addition, exceeding the count can be reported as a separate DG bug.
-</div>
 <div tags="m--cs2103">
 
 * **What to do with other dev docs** linked from the DG e.g., [_Setting up and getting started_ guide](https://se-education.org/addressbook-level3/SettingUp.html)?
