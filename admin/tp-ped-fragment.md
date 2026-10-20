@@ -150,11 +150,10 @@ While PE are primarily _manual_ testing sessions, **you may also use any test au
 
 * Do not post suggestions, but if the product is missing a critical functionality that makes the product less useful to the intended user, it can be reported as a bug of type `Type.FeatureFlaw`. The dev team is allowed to reject bug reports framed as mere suggestions and/or lacking a convincing justification as to why the omission or the current design of that functionality is problematic.
 
-* **It may be useful to read the PE guidelines the dev team will follow when responding to bug reports**, given in the panel below. You can ignore the `General:` section though.
+* **It may be useful to read the PE guidelines the dev team will follow when responding to bug reports**, given in the panel below.
 <div class="indented-level1">
-<panel type="info" header="Guidelines for the dev team to follow when triaging PE bugs" peek>
-
-<include src="tp-pe-bug-triaging-guidelines-fragment.md"/>
+<panel header="Admin {{ icon_embedding }} Practical Exam → **Guidelines for determining bugs (extract)**" minimized >
+<include src="tp-pe-bug-triaging-guidelines-fragment.md" var-general="no" />
 </panel>
 </div>
 <p/>

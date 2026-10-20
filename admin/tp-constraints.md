@@ -123,6 +123,12 @@ In addition, the GUI should be _usable_ (i.e., all functions can be used even if
 {%- endcall %}
 </span>
 
+{% call show_constraint("Constraint-Browser-Compatibility") -%}
+Users should be able to read the online HTML version of the UG and the DG without hindrance using the current production versions of **desktop browsers Chrome and Firefox**, in all three major OS'es. The required support for screen resolutions/scaling is similar to those stated in `Constraint-Screen-Resolution`.
+
+Support for other browsers and devices (e.g., tablets, mobile devices) is good to have but not required.
+{%- endcall %}
+
 {% call show_constraint("Constraint-Single-File") -%}
 Package everything into a single JAR file.<br>
 %%**Reason:** Requiring the users to download more files can cause complications in the final peer-testing session.%%

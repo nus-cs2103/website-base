@@ -79,10 +79,10 @@
 
 * **We recommend that you read the guidelines the dev team will follow when responding to your bug reports later**, given in the panel below. This will help you decide what kind of bugs to report.
 <div class="indented-level1">
-<panel type="info" header="Guidelines for the dev team to follow when triaging PE bugs" peek>
-
-<include src="tp-pe-bug-triaging-guidelines-fragment.md"/>
+<panel header="Admin {{ icon_embedding }} Practical Exam → **Guidelines for determining bugs (extract)**" minimized>
+<include src="tp-pe-bug-triaging-guidelines-fragment.md" var-general="no" />
 </panel>
+
 </div>
 <p/>
 
@@ -546,7 +546,7 @@ However, ==if the dev team's argument is not too far from 'reasonable', it may b
 * If a bug report has been subjected to any of the actions below by the dev team, and you don't agree with their action, you can record your objections and the reason for the objection.
   * `response.*`: bug not accepted {texts="['(a)', '(b)', '(c)', '(d)']"}
   * `severity.*`: severity downgraded
-  * `duplicate`: bug flagged as duplicate %%(Note that you still get credit for bugs flagged as duplicates, unless you reported both bugs yourself. Nevertheless, it is in your interest to object to incorrect duplicate flags because when a bug is reported by more testers, it will be considered an 'obvious' bug and will earn slightly less credit than otherwise)%%
+  * `duplicate`: bug flagged as duplicate %%(Note that you still get credit for bugs flagged as duplicates, unless you reported both bugs yourself. Nevertheless, it is in your interest to object to incorrect duplicate flags because when a bug is reported by more testers, it will be considered an 'obvious' bug and will earn slightly less credit than otherwise).%%
 <p/>
 
 * No action is required for a bug if:
@@ -624,7 +624,7 @@ However, ==if the dev team's argument is not too far from 'reasonable', it may b
 
 {{ embed_topic("tp-grading-bugs-fragment.md#bugCalculationNotes", "Admin " + icon_embedding + " tP Grading → Grading bugs found in the PE", "pe-gradingBugsFoundInPe", indent=1) }}
 
-* If the dev team disagreed with the <tooltip content="i.e., accept vs not accept">validity</tooltip> of the bug and you now agree with the dev team's position, it will not hurt your accuracy rating. This amnesty #r#does not apply to `severity.*` downgrades##.<br>
+* If the dev team disagreed with the <tooltip content="i.e., accept vs not accept">validity</tooltip> of the bug and you now agree with the dev team's position, it will not hurt your accuracy. This amnesty #r#does not apply to `severity.*` downgrades##.<br>
 Here are the possibilities:
 
 {% set up %}<span class="text-success">:fas-arrow-up:</span>{% endset %}
@@ -638,7 +638,7 @@ Not accepted| agreed        |                     | {{ up }}           | no effe
 Not accepted| disagreed     | Accepted            | {{ down }}         | {{ up }}
 Not accepted| disagreed     | Not accepted        | {{ up }}           | {{ down }}
 
- <span class="badge rounded-pill bg-warning text-dark">Caution:</span> **Don't be tempted to contest every severity downgrade, thinking that there is 'no harm trying'** to overturn the downgrade because there is no additional penalty for trying to do so. If the teaching team feels that a tester is contesting a severity without a good basis, there will be an additional heavy penalty for the 'unreasonable' behavior. So if you feel the dev team's justification for the severity downgrade is somewhat reasonable, it is in your interest to agree rather than to contest.
+ <span class="badge rounded-pill bg-warning text-dark">Caution:</span> **Accuracy of objections affects marks.** So, don't be tempted to contest every severity downgrade, thinking that there is 'no harm trying'. Unsuccessful objections lowers your accuracy, and consequently, your marks.
 
 {{ icon_info }} Dev accuracy is calculated individually (not per team), based on assignees.
 </div>

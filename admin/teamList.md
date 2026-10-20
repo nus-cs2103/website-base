@@ -22,7 +22,7 @@ This page will be populated later in the semester ...
 <div class="row">
 <div class="col border">
 
-### {{ team_id }} <small>[:fab-github:]({{ team_repo }}) [:fas-home:]({{ team_website }}) [:fas-code-branch:](https://github.com/{{ course_org }}/{{ tp_repo_name }}/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aopen+{{ team_id }}) [:far-comment:]({{ team_repo }}/issues/new)</small> {% if ((current_week | int) >= 7) %}[:fas-w:]({{ get_watcher_url(team_org) }}){% endif %} {% if (current_week | int) > 6 %}[<pic eager src="{{ team_repo }}/workflows/Java%20CI/badge.svg"></pic>]({{ team_repo }}/actions){% endif %} {{ "[**" + products[team_id] + "]**" if team_id in products else ""}}
+### {{ team_id }} <small>[:fab-github:]({{ team_repo }}) [:fas-home:]({{ team_website }}) [:fas-code-branch:](https://github.com/{{ course_org }}/{{ tp_repo_name }}/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aopen+{{ team_id }}) [:far-comment:]({{ team_repo }}/issues/new)</small> {% if (current_week | int) > 6 %}[<pic eager src="{{ team_repo }}/workflows/Java%20CI/badge.svg"></pic>]({{ team_repo }}/actions){% endif %} {{ "[**" + products[team_id] + "]**" if team_id in products else ""}}
 
 <span tags="m--cs2103">
 

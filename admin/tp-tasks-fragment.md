@@ -2007,8 +2007,11 @@ If you want to smoke-test your JAR file on an OS not available within your team,
 
 <box type="tip" seamless>
 
-The panel below contains guidelines your peers will use when determining bugs in the final product -- knowing them might be useful in preventing such bugs in your product in the first place. #r#You may skip the 'General' section.##
-{{ embed_topic("tp-pe-bug-triaging-guidelines-fragment.md", "Admin " + icon_embedding + " Practical Exam → **Guidelines for determining bugs**", "3", indent="1") }}
+The panel below contains guidelines your peers will use when determining bugs in the final product -- knowing them might be useful in preventing such bugs in your product in the first place.
+
+<panel header="Admin {{ icon_embedding }} Practical Exam → **Guidelines for determining bugs (extract)**" minimized >
+<include src="tp-pe-bug-triaging-guidelines-fragment.md" var-general="no" />
+</panel>
 </box>
 
 <panel type="info" header="**Some testing tips** to get you started (not an exhaustive list)..." peek >
@@ -2276,7 +2279,7 @@ Test the product yourself (test each other's features) using the JAR file, repor
 
 1. **Is it something you think you'll never fix** even if you were to continue this project in the future?<br>
    If yes, you can leave it unfixed and reject it if the same bug is reported in the PE. Caution: If the PE tester disagrees and the teaching team agrees with the tester's justification, the bug might result in a penalty %%(why say '_might_ result ...'? Because bugs are penalized only when the bug density exceeds a certain bar)%%.<br>
-   {{ icon_info }} How to decide if a PE bug can be not-accepted? Refer to <trigger trigger="click" for="modal:pedTriagingWorkflow-peBugTriagingGuidelines">PE Bug Triaging Guidelines</trigger> for details #r#(you may skip the 'General' section).
+   {{ icon_info }} How to decide if a PE bug can be not-accepted? Refer to <trigger trigger="click" for="modal:pedTriagingWorkflow-peBugTriagingGuidelines">PE Bug Triaging Guidelines (extract)</trigger> for details.
 1. **Else, is it something you may consider fixing in a future version** but that was not important enough to have been done in {{ version_penultimate }}?<br>
    If yes, you can expect to categorize it as `NotInScope` if the same bug is reported in the PE (<trigger trigger="click" for="modal:pedTriagingWorkflow-peNotInScope">eligibility criteria</trigger>).
 1. **Else, it is something you should have fixed in the current version.**
@@ -2288,10 +2291,11 @@ Test the product yourself (test each other's features) using the JAR file, repor
 {{ show_faq("tpFeatureDesignChoice") }}
 </box>
 
-<modal large header="" id="modal:pedTriagingWorkflow-peBugTriagingGuidelines">
-<include src="tp-pe-bug-triaging-guidelines-fragment.md"/>
+<modal large header="PE Bug Triaging Guidelines (extract)" id="modal:pedTriagingWorkflow-peBugTriagingGuidelines">
+
+<include src="tp-pe-bug-triaging-guidelines-fragment.md" var-general="no" />
 </modal>
-<modal large header="" id="modal:pedTriagingWorkflow-peNotInScope">
+<modal large header="Eligibility criteria for marking a bug you received as `response.NotInScope`" id="modal:pedTriagingWorkflow-peNotInScope">
 <include src="tp-pe-bug-triaging-guidelines-fragment.md#how-to-prove-out-of-scope"/>
 </modal>
 {% endif %}

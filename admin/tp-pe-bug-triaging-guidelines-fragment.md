@@ -1,5 +1,8 @@
 {% from "common/macros.njk" import embed_topic, get_date with context %}
 
+{% if general == "no" %}
+#r#[some parts skipped ... as they are not relevant here]##
+{% else %}
 ##### General:
 
 * **Don't freak out if there are a lot of bug reports.** Many can be duplicates and some can be _false positives_. In any case, we anticipate that all of these products will have some bugs and our penalties for bugs are not harsh. Furthermore, the penalty depends on the severity of the bug. Some bugs may not even be penalized.
@@ -46,7 +49,7 @@ Accordingly, we hope you'll **accept bug reports graciously** (rather than fight
 * **Even bugs inherited from AB3 are counted**. As the current development team, you are responsible for all bugs in the product, irrespective of when they were created.
 
 * **Listing something as a known issue** in the UG can reduce the severity of the issue %%(because informing users about the issue, and possibly how to avoid/circumvent it, reduces the impact of the issue to some extent)%%, but that does not mean it is totally immune from being considered a bug.
-
+{% endif %}
 <div id="triaging-functionality-bugs">
 
 ##### Triaging functionality bugs

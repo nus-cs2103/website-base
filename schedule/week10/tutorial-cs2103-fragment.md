@@ -29,8 +29,8 @@ Here are the steps:
      If needed, update it as necessary.
    * If using IntelliJ's native features to run your app (i.e., `Gradle` is not selected in this [setting](https://se-education.org/guides/tutorials/images/gradle/intellijRunUsingGradle.png)), [check if you have enabled assertions in IntelliJ settings](https://se-education.org/guides/tutorials/intellijUsefulSettings.html).
 1. Modify the code of your tP to deliberately cause an assertion failure,<br>
-   e.g., add `assert false;`{.java} somewhere in your code.
-1. Run the code so that the application crashes with an assertion failure.
+   e.g., add `assert false;`{.java} somewhere in your code, in the path that is executed right after the app is launched.
+1. Run the code so that the application crashes with an assertion failure. %%Note that the execution need to reach the `assert` statement you added above for the app to crash.%%
 1. Take a ==screenshot that shows the assertion error message== and save it somewhere. During the tutorial, the tutor will ask you to paste it in the tutorial workspace document.
 
 

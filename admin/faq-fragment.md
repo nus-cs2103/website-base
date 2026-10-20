@@ -1208,7 +1208,7 @@ Yes, you may. Given that the dev team did not get to see this additional info wh
 <div id="faq-tpPeAccuracyForNotInScope-Q">If the bug I reported is `NotInScope`, how does it affect my accuracy bonus?</div>
 <div id="faq-tpPeAccuracyForNotInScope-A">
 
-A bug that is `response.Accepted` or `response.NotInScope` can boost your accuracy if the `severity.*` you chose matches the eventual `severity.*` of the bug. ~~Same for `type.*`~~ (the `type.*` will not be considered for accuracy).
+A bug that is `response.Accepted` or `response.NotInScope` can boost your accuracy if the `severity.*` you chose matches the eventual `severity.*` of the bug. the `type.*` will not be considered for accuracy.
 </div>
 <!-- =============================================================== -->
 

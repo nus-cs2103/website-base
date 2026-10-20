@@ -42,11 +42,17 @@ These are considered _functionality bugs_:<br>
 <span id="neatnessBugs">
 
 :fas-bug: Neatness/correctness:
-* looks messy
-* not well-formatted
-* broken links, other inaccuracies, typos, etc.
-* hard to read/understand
-* unnecessary repetitions %%(i.e., hard to see what's similar and what's different)%%
+* Looks messy
+* Not well-formatted
+* Broken links, other inaccuracies, typos, etc.
+* Hard to understand
+* Unnecessary repetitions %%(i.e., hard to see what's similar and what's different)%%
+</span>
+<span id="usabilityBugs">
+
+:fas-bug: Usability:
+* Hard to navigate
+* Hard to read/see contents
 </span>
 </div>
 
@@ -69,7 +75,7 @@ Those mentioned elsewhere as possible UG bugs ...
 :fas-bug: Architecture:
 * Symbols used are not intuitive
 * Indiscriminate use of double-headed arrows
-* <tooltip content="e.g., the sequence diagram showing interactions between main components">_architecture-level_</tooltip> diagrams contain lower-level details
+* <tooltip content="e.g., the sequence diagram showing interactions between main components">_Architecture-level_</tooltip> diagrams contain lower-level details
 * Descriptions given are not sufficiently high-level
 </span>
 <span id="umlDiagramBugs">
