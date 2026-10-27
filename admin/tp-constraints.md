@@ -57,7 +57,8 @@ The data should be stored locally and should be in a human-editable text file.<b
 {% call show_constraint("Constraint-Data-Sandbox") -%}
 
 The app may not read or write files outside the 'home folder,' i.e., the folder containing the JAR file. But it may create sub-folders inside the home folder and write to any such sub-folder.
-The app may not change any OS-level configuration settings.
+The app may not change any OS-level configuration settings.<br>
+%%File reading/writing done by JVM's internal purposes is exempt from this contstraint.%%
 
 %%**Reason:** To prevent the app from messing up testers' local files/settings.%%
 {%- endcall  %}
@@ -118,8 +119,6 @@ The GUI should _work well_ (i.e., should not cause any resolution-related inconv
 In addition, the GUI should be _usable_ (i.e., all functions can be used even if the user experience is not optimal) at:
 * resolutions 1280x720 and higher, and
 * screen scales 150%.
-
-
 {%- endcall %}
 </span>
 
@@ -130,7 +129,7 @@ Support for other browsers and devices (e.g., tablets, mobile devices) is good t
 {%- endcall %}
 
 {% call show_constraint("Constraint-Single-File") -%}
-Package everything into a single JAR file.<br>
+Package everything into #r#a single JAR file that works on all three main OSes## -- Linux, macOS (Intel, ARM), Windows (including WSL). Do not create one JAR per OS.<br>
 %%**Reason:** Requiring the users to download more files can cause complications in the final peer-testing session.%%
 
 If you are unable to package everything into a JAR file, package the JAR file and any other needed files into a single ZIP file.

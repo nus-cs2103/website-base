@@ -5,6 +5,6 @@ title: "UML Reference Sheet"
 <div id="main">
 
 {% for pic in range(5,7) %}
-<pic src="images/uml/Slide{{ pic }}.png" width="1080"/>
+<pic src="images/exam-reference/Slide{{ pic }}.png"/>
 {% endfor %}
 </div>

@@ -87,13 +87,15 @@ week11: [
   {id: 'fix_alpha_test_bugs'},
   {id: 'update_ug_dg'},
   {id: 'settle_code_authorship'},
-  {id: 'release_as_a_jar_file', deadline: get_date(date_w11_start, 3, time="23:59")}
+  {id: 'release_as_a_jar_file', deadline: get_date(date_w11_start, 3, time="23:59")},
+  {id: 'beta_test', deadline: "recommended: during lecture slot on " + get_date(date_w11_start, 4, time="4-6pm"), deadline_type: 'warning'}
 ] if ped_week == '11' else [
   {id: 'alpha_test_product'},
   {id: 'fix_alpha_test_bugs'},
   {id: 'update_ug_dg', deadline: get_date(date_w11_start, 3, time="23:59") + " + (a buffer of 7 days)"},
   {id: 'settle_code_authorship'},
-  {id: 'release_as_a_jar_file', deadline: get_date(date_w11_start, 3, time="23:59") + " + (a buffer of 7 days)"}
+  {id: 'release_as_a_jar_file', deadline: get_date(date_w11_start, 3, time="23:59") + " + (a buffer of 7 days)"},
+  {id: 'beta_test', deadline: "recommended: during lecture slot on " + get_date(date_w12_start, 4, time="4-6pm"), deadline_type: 'warning'}
 ],
 week12: week12_tasks,
 week13: week13_tasks

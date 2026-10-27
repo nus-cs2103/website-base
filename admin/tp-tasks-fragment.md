@@ -1985,6 +1985,11 @@ This week, we would like you to smoke-test the CATcher app **to ensure it can wo
 <span id="heading_alpha_test_product">{{ icon_team }} Alpha-test the product</span>
 <div id="desc_alpha_test_product">
 
+<box type="warning" seamless>
+
+**Recommended to do soon after the `{{ version_alpha }}` release.** Continue doing this throughout the `{{ version_alpha }}` as bugs get fixed and features get poilished, more bugs can creep in.
+</box>
+
 1. **Create a label `alpha-bug`** in your issue tracker.
 1. **Plan the alpha test**:
    * Decide who will be testing which feature. Suggested: Assign two members (excluding the feature author) to test each feature.
@@ -2252,10 +2257,21 @@ Also see:
 Test the product yourself (test each other's features) using the JAR file, report the bugs in the issue tracker, and fix them in due course.
 </div>
 {#====================================================================================================================#}
+<span id="heading_beta_test">{{ icon_team }} Beta-test your own product</span>
+<div id="desc_beta_test">
+
+<box type="warning" seamless>
+
+**Recommended to do as a team during the Week {{ ped_week }} Friday lecture slot** as all team members are expected to be free during that time, and you'll have more time to fix the bugs if you find them early.
+</box>
+
+Pretend to be PE testers but test your own product. Test the `{{ version_penultimate }}` JAR, UG, DG that you just released. Try to break the product in ways you anticipate PE testers will. Also, use this as a practice session for the PE.
+</div>
+{#====================================================================================================================#}
 <span id="heading_start_fixing_PED_bugs">{{ icon_team }} Fix any latent bugs</span>
 <div id="desc_start_fixing_PED_bugs">
 
-**Find any bugs that slipped through alpha testing.**
+**Find any bugs that you found through beta testing.**
 
 {% if cs2103 %}
 1. ****Note the following details of the _feature freeze_ enforced in this iteration****:

@@ -1,5 +1,5 @@
 {% from "common/admin.njk" import show_admin_page with context %}
-{% from "common/macros.njk" import show_faq with context %}
+{% from "common/macros.njk" import show_faq, show_ai_guidance with context %}
 
 {% call show_admin_page("appendixD-help") %}
 <div id="main">
@@ -40,6 +40,30 @@
 
   **==If your problem remains unsolved 24 hours after posting in the forum==**, please alert `{{ course_email }}` so that the teaching team can look into it.
   </box>
+
+<div class="indented-level1" id="using-ai-in-forum-posts">
+{% call show_ai_guidance("Using AI in forum posts") %}
+
+**Forum participation credit depends on value, not post count.** A human evaluator reviews all your posts before deciding how much forum participation credit you deserve. #r#Low-value posts earn no credit; excessive low-value posting may count against you.##
+
+<box type="info" seamless>
+
+**Occasional mistakes are OK.** Learning to use AI takes experimentation. Occasional low-value posts will be ignored when grading; only excessive low-value posting earns negative credit.
+
+{% if semester=="AY2627S1" %}Low-value posts created _before_ these guidelines were shared (i.e., before Week 11 Tue) will not count against you either.{% endif %}
+</box>
+
+**AI use in the forum is encouraged when it supports learning or adds value.** But AI-generated exchanges that nobody reads create noise and bury useful posts.
+
+**Recommended practices:**
+
+* **Post only an AI-generated question if you care about the answer.** To show you care, you can offer your own answer and invite other views, or explain how the answer would help you and your classmates. If you can't think of a reason why answering it matters, it is probably not worth the time of forum users either.
+* **AI disclosure is encouraged but optional.** Sharing your prompt, agent/model, or effort level can help others learn. Undisclosed AI use can leave readers feeling they got 'tricked' into reading "AI slop".
+* **Ask AI for concise text**, for example, by setting a word limit. Verbosity is a common complaint about AI-generated posts.
+* **Nudge others gently in the right direction.** When you feel a post is low-value, suggest gently how it can be better or why it might not matter to this audience. This also makes you practice evaluating the value of AI-generated work critically.
+
+{% endcall %}
+</div>
 
   * **Give full details of the problem**. Conversations via online forums take time. If you post everything that is relevant to your problem, your chances of getting an answer on the first try are higher. If others have to ask you more questions before they can help you, it will take longer. But this doesn't mean you dump too much information into the thread either.
     * Give a meaningful title to the post. Be as specific as you can.<br>
