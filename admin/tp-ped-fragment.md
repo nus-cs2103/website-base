@@ -86,7 +86,7 @@ While PE are primarily _manual_ testing sessions, **you may also use any test au
   * At the start of the PE, we'll give you the first part of the password (common to the whole class), via a Canvas announcement. Use the combined password to unzip the file, which should give you another zip file with the name suffix `_inner.zip`.
   * Unzip that second zip file normally (no password required). That will give you a folder containing the JAR file to test and a README.txt containing the URL of their product website. ==Warning: do not run the JAR file while it is still inside the zip file==.<br>
   Ignore the `padding_file` found among the extracted files. %%Its only purpose is to mask the true size of the JAR file so that someone cannot guess which team they will be testing based on the zip file size.%%<br>
-    :fab-apple: macOS automatically unzips the inner zip file after you unzip the outer zip file using the password. Newer macOS versions can run into a permission issue when trying to auto-extract the inner zip file with an error `Unable to expand "..._inner.zip" It is an unsupported foramt`. Just ignore the error message and manually extract the inner zip file by dobule-clicking it.
+    :fab-apple: macOS automatically unzips the inner zip file after you unzip the outer zip file using the password. Newer macOS versions can run into a permission issue when trying to auto-extract the inner zip file with an error `Unable to expand "..._inner.zip" It is an unsupported format`. Just ignore the error message and manually extract the inner zip file by double-clicking it.
   * {{ icon_tip }} Strongly recommended: Try the above steps using [this sample zip file](https://github.com/user-attachments/files/{{ '33901091' if cs2103 else '33901164' }}/A---0000X.zip) if you wish (first part of the password: `password1-`, second part: `password2` i.e., you should use `password1-password2` to unzip it).<br>
     Use the JAR file inside it to try the steps given below as well, to confirm that your computer's Java environment is as expected and can run PE JAR files.
 
@@ -129,12 +129,14 @@ While PE are primarily _manual_ testing sessions, **you may also use any test au
 
 #g#In the scope of PE## | #r#Not in the scope##
 -------------------|---------------------
-{{ icon_tick_green }} The behavior of the product jar file<br>{{ icon_tick_green }} UG (.html) page of the course website<br>{{ icon_tick_green }} DG (.html) page of the course website | {{ icon_x_red }} The rest of the product website, including `.md` files such as README.md<br>{{ icon_x_red }} Data and config files that come with the app (unless they affect the app behavior)<br>{{ icon_x_red }} Terminal output (unless it attracts the attention of the user and worries/alarms him/her unnecessarily)<br>{{ icon_x_red }} Code quality issues (but there is no restriction on examining code to identify product/UG/DG bugs)
+{{ icon_tick_green }} The behavior of the product jar file<br>{{ icon_tick_green }} UG (.html) page of the course website<br>{{ icon_tick_green }} DG (.html) page of the course website | {{ icon_x_red }} The rest of the product website, including `.md` files such as README.md<br>{{ icon_x_red }} Data and config files that come with the app (unless they affect the app behavior)<br>{{ icon_x_red }} Terminal output (unless it attracts the attention of the user and worries/alarms him/her unnecessarily)<br>{{ icon_x_red }} Code quality issues (but there is no restriction on examining code to identify product/UG/DG bugs)<br>{{ icon_x_red }} The team's version of the secondary DG pages linked from the [AB3 DG]({{ url_course_gihub_io }}/tp/DeveloperGuide.html) e.g., _Setting up and getting started_ page.
 
 * **Test ==based on the Developer Guide== (Appendix named _Instructions for Manual Testing_) ==and the User Guide==.** The testing instructions in the Developer Guide can provide you with some guidance, but if you follow those instructions strictly, you are unlikely to find many bugs. You can deviate from the instructions to probe areas that are more likely to have bugs.
 * **You may do both _system testing_ and _acceptance testing_**.
 * **Focus on product testing first**, before expanding the focus to reporting documentation bugs.<br>
   Reason: If there are serious issues with the jar file that make product testing impossible, you need to find that out quickly so that you can switch to a different product to test.
+
+<div id="what-bugs-to-report">
 
 ###### <div class="text-white bg-secondary p-1">c) What bugs to report?</div>
 
@@ -158,6 +160,7 @@ While PE are primarily _manual_ testing sessions, **you may also use any test au
 </div>
 <p/>
 
+</div>
 
 ###### <div class="text-white bg-secondary p-1">d) How to report bugs</div>
 

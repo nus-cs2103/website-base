@@ -222,16 +222,16 @@ The following exam resources will be **available from the start of week 13**.
   You can use it to get familiar with the quiz format that will be used for the final exam.
   Password: `Hello123`<br>
   Model answers are in {{ handouts_link }}.
-* **A practice exam** of the same format/length/difficulty<sup>[see caveat]</sup> as the actual exam will be available at least one week before the exam.<br>
+* **A practice exam** of the same format/length/difficulty<sup>[see caveat]</sup> as the actual exam will be available at least one week before the exam. We'll announce it when it is ready.<br>
   You can use it to practice your timing/pace. Multiple attempts are allowed.
   * Recommended:
       * Watch the exam briefing video and finish studying the topics before
         you attempt the practice exam, to get its full benefit.<br>
       * Do the mock exam (to get used to the software and question structure) before the practice exam.
   * Where to find it: on Examplify.
-    * Part 1: Password `Hello123`  (Resume code: `FF2A0A`)
-    * Part 2: Password `Hello123`  (Resume code: `57DDA2`)
-  * Model answers are available on {{ handouts_link }}.
+    * Part 1: Password `Hello123`  (Resume code: `7684AE`)
+    * Part 2: Password `Hello123`  (Resume code: TBD)
+  * Model answers will be available on {{ handouts_link }}.
 
 <box type="warning" header="CAVEAT about difficulty level of the practice exam" seamless>
 

@@ -17,7 +17,7 @@
 In a real project, minor or critical changes might be allowed even near a deadline -- but in the tP, it is hard to enforce such a rule objectively. Instead, we use a quantitative limit that is easier to enforce: <span class="text-danger">**no more than 15% or 150 LoC (whichever is higher) of the functional code is allowed to be changed during iteration {{ version_final }}**</span>.<br>
 Finer details of this limit are given below (**also see [Q0] and [Q1]** given under FAQs):
 
-* **==The feature freeze starts at the `{{ version_penultimate }}` deadline== (Thu 23:59).** Any code updated after that time is counted against the feature freeze.
+* **==The feature freeze starts at the `{{ version_penultimate }}` deadline + a buffer of 10 hours (i.e., Fri 10am)==.** Any code updated after that time is counted against the feature freeze.
 * **The limit is applied per member**. That is, we compare the amount of code attributed to each member (as per the tP code dashboard) against the portion of that code that was changed during the feature freeze. Any penalty for violating the feature freeze will be applied to that member only.
 * **The limit applies to functional code only**. More specifically, it covers all changes (including blank lines and comments) to any code file inside the `src\main` folder and sub-folders. The feature freeze doesn't apply to test code, documentation, or non-code files (e.g., images).
 * **The calculation is based on the [tP code dashboard]({{ url_tp_dashboard }})**, computed as 'of the total functional LoC attributed to you at the end of `{{ version_final }}`, what percentage was edited by you during the feature freeze?'.
@@ -1883,7 +1883,7 @@ In addition,
 
 <box type="important" seamless>
 
-#r#Do this before the feature freeze begins## (i.e., Thu 23:59). Any changes done after that will be subject to the limits of the feature freeze.
+#r#Do this before the feature freeze begins## (i.e., Fri 10:00). Any changes done after that will be subject to the limits of the feature freeze.
 </box>
 
 * **Ensure your code is <tooltip content="i.e., RepoSense can detect your code as yours">RepoSense-compatible</tooltip>** and the **code RepoSense attributes to you is indeed the code written by you (including code you generated using AI)**, as explained below:
@@ -2271,7 +2271,7 @@ Pretend to be PE testers but test your own product. Test the `{{ version_penulti
 <span id="heading_start_fixing_PED_bugs">{{ icon_team }} Fix any latent bugs</span>
 <div id="desc_start_fixing_PED_bugs">
 
-**Find any bugs that you found through beta testing.**
+**Fix any bugs that you found through beta testing.**
 
 {% if cs2103 %}
 1. ****Note the following details of the _feature freeze_ enforced in this iteration****:
@@ -2377,17 +2377,34 @@ Not applicable this semester
 <span id="heading_submit_final_deliverables">{{ icon_individual }}{{ icon_team }} Submit final deliverables</span>
 <div id="desc_submit_final_deliverables">
 
-* **Deadline** for all {{ version_final }} submissions is **{{ date_final_submission | date(format_normal)}} {{ time_final_submission }}:00** unless stated otherwise. Note that <span class="text-danger">{{ time_final_submission }}:01 is considered late</span>, as per the Canvas deadline mechanism.
-* {{ icon_important_big_red }} **Penalty for late submission** (per file): <br>
+* **Deadline** for all {{ version_final }} submissions is **{{ date_final_submission | date(format_normal)}} {{ time_final_submission }}:00** unless stated otherwise. Note that <span class="text-danger">{{ time_final_submission }}:01 is considered late</span>, as per the Canvas deadline mechanism.<br>
+* {{ icon_important_big_red }} **Penalty for late submission** (per deliverable: JAR, UG, DG): <br>
   ==-1 mark for missing the deadline (up to 2 hours late).==<br>
   -2 for an _extended delay_ (up to 24 hours late).<br>
   Penalty for delays beyond 24 hours is determined on a case-by-case basis.
   * Even a one-second delay is considered late, irrespective of the reason.
   * For submissions done via Canvas, the submission time is the timestamp shown by Canvas.
-  * When determining the late submission penalty, **we take the latest submission** even if the exact same file was submitted earlier. Do not submit the same file multiple times if you want to avoid unnecessary late submission penalties.
+  * When determining the late submission penalty, **we take the latest submission** even if the exact same file was submitted earlier. Submitting the same file multiple times can cost you unnecessary late submission penalties.
   * The whole team is penalized for problems in team submissions %%e.g., a -1 penalty for a team submission will be a -1 penalty for each team member%%.{% if not cs2103 %}<br>
     Only the respective student is penalized for problems in individual submissions.{% endif %}
-* **Submit via the Canvas assignment we have set up**.
+* **JAR: Submit via the Canvas assignment we have set up**. Submission time is the time recorded by Canvas.<br>
+  **UG/DG: Deploy in your tP website.** Submission time is the time start time of the last CI run or the timestamp of the latest commit, whichever is later.<br>
+
+<div class="indented-level1">
+
+<box type="important" seamless>
+
+**Additional notes on submitting UG/DG via the team repo:**{.text-danger}
+
+Ensure that all relevant commits are pushed to the repo before the deadline.
+
+* Pushing commits after the deadline will be considered late submissions, #r#even if the commit was created before the deadline##.
+* We save a local copy of the team repo at the deadline and use it as the reference for determining late submissions.
+* To reduce the risk of accidental pushes, a team member with admin access to the team repo can go to `[YOUR TEAM REPO]/settings/branch_protection_rules/new` and enable `Lock branch` for your `master` branch.
+</box>
+</div>
+
+
 * {{ icon_important_big_red }} **Follow submission instructions closely**. ==Any non-compliance will be penalized== (e.g., wrong file name/format).<br>
   Canvas might automatically add a file name suffix (e.g., `*-1.jar`, `*-2.jar`, ...) if you upload a file multiple times. You can safely ignore that suffix.
 * **Do not update the code during the 30 days after the deadline.** Get our permission first if you need to update the code in the repo during that _code-freeze_ period.
@@ -2421,8 +2438,9 @@ Your product name: <cv-placeholder-input name="productName" appearance="underlin
   * Do a release on GitHub, tagged appropriately e.g., `{{ version_final }}` or `{{ version_final }}b`.{% if cs2103 %}<br>
     Writing detailed release notes is optional.{% endif %}
   * Upload the JAR file to Canvas.<br>
-    File name: `[TEAM_ID][ProductName].jar` %%e.g., [[[teamId: {{ example_team_id }}]]][[[productName: ContactsPro]]].jar%%<br>
-    {{ icon_important }} Recommended to <span class="text-danger">avoid spaces and special characters in the product name</span> as they can cause problems when running the JAR file using the command line.<br>
+    #r#One JAR file only -- not one JAR per each OS!## (see [Constraint-Single-File]({{ baseUrl }}/admin/tp-constraints.html?cv-box=Constraint-Single-File%3Ared))<br>
+    File name format: `[TEAM_ID][ProductName].jar` %%e.g., [[[teamId: {{ example_team_id }}]]][[[productName: ContactsPro]]].jar%%<br>
+    {{ icon_important }} Recommended to <span class="text-danger">avoid spaces and special characters in the `ProductName` part of the JAR name</span> as they can cause problems when running the JAR file using the command line.<br>
     %%{{ icon_info }} This name requirement is for the JAR file you upload to Canvas only. You may name the JAR file you upload to GitHub in any reasonable way.%%
 
 {{ embed_topic("tp-deliverables.md#tp-deliverables-executable", "Admin " + icon_embedding + " tP → Deliverables → Executable", "3", indent="2") }}
@@ -2445,7 +2463,7 @@ Reminder: double-check to ensure the code attributed to you by RepoSense is corr
 {{ embed_topic("tp-deliverables.md#tp-deliverables-ug", "Admin " + icon_embedding + " tP → Deliverables → User Guide", "3", indent="2") }}
 
 * **Developer Guide**:{icon="fas-users"}
-  * submission is similar to that of the UG
+  * Submission is similar to that of the UG.
 
 {{ embed_topic("tp-deliverables.md#tp-deliverables-dg", "Admin " + icon_embedding + " tP → Deliverables → Developer Guide", "3", indent="2") }}
 
@@ -2457,7 +2475,7 @@ Reminder: double-check to ensure the code attributed to you by RepoSense is corr
 * **{% if cs2103 %}{{ optional }} {% endif %}Project Portfolio Page (PPP)**:{icon="fas-user"}
   * HTML version: make available on `github.io`{% if cs2113 %}
   * PDF file: submission is similar to that of the UG<br>
-    File name: `[TEAM_ID][Your full Name as Given in Canvas]PPP.pdf` %%e.g., [[[teamId: {{ example_team_id }}]]][Leow Wai Kit, John]PPP.pdf%%<br>
+    File name format: `[TEAM_ID][Your full Name as Given in Canvas]PPP.pdf` %%e.g., [[[teamId: {{ example_team_id }}]]][Leow Wai Kit, John]PPP.pdf%%<br>
     {{ icon_info }} Use `-` in place of `/` if your name has it e.g., `Ravi s/o Veegan` → `Ravi s-o Veegan` (reason: Windows does not allow `/` in file names){% else %}
   * See the panel below to learn when you should opt for this submission.{% endif %}
 
@@ -2495,7 +2513,7 @@ Reminder: double-check to ensure the code attributed to you by RepoSense is corr
 </div>
 </div>
 {#====================================================================================================================#}
-<span id="heading_prepare_for_PE">{{ icon_individual }} Prepare for the practical exam</span>
+<span id="heading_prepare_for_PE">{{ icon_individual }} Prepare for the practical exam (PE)</span>
 <div id="desc_prepare_for_PE">
 
 {{ embed_topic("tp-pe-fragment.md#pe-overview", "Admin " + icon_embedding + " tP → **PE Overview**", "3", indent="2", type="success") }}

@@ -279,9 +279,10 @@ If the eventual `severity.*` of the bug matches the value you chose initially an
 #### <span class="badge bg-success">PE</span> <span class="text-success">Phase 2: Developer Response</span>
 
 <include src="tp-pe-fragment.md#pe-p2-desc" inline /><p/>
-
-==**Deadline:** {{ get_date(date_w13_start if pe_week == "13" else date_w12_start, 8 if S == 2 else 8, time="23:59") }}==<br>
-==**Aim to finish by Mon 23:59**== and keep Tuesday as a buffer. %%Reason: We'll send you a status update at the end of Monday, so that you can fix any problems with your responses during Tuesday.%%
+{% set p2_last_day = ("Wednesday" if semester == "AY2627S1" else "Tuesday") %}
+{% set p2_previous_day = ("Tuesday" if semester == "AY2627S1" else "Monday") %}
+==**Deadline:** {{ ("~~%%Tue 23:59%%~~ " + get_date(date_w12_start, 9, time="14:00")) if semester == "AY2627S1" else get_date(date_w13_start if pe_week == "13" else date_w12_start, 8 if S == 2 else 8, time="23:59") }}=={{ " %%(14 extra hours added because Monday is a public holiday)%%"  if semester == "AY2627S1" else ""}}<br>
+==**Aim to finish by {{ p2_previous_day}} 23:59**== and keep {{ p2_last_day }} as a buffer. %%Reason: We'll send you a status update at the end of {{ p2_prevous_day }}, so that you can fix any problems with your responses during Tuesday.%%
 
 {% if pe_week == "13" %}
 <box type="info" seamless>

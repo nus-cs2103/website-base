@@ -209,7 +209,14 @@ If you **reused code snippets found on the Internet** %%e.g., from StackOverflow
 * If the use of the tool was localized to a few places %%(e.g., used it to write a few methods/classes only)%%, cite its use in comments near where you used it.
 * If the use was more widespread %%(e.g., used AI to generate most of your code)%%, cite the usage (i.e., which tool, who used it, the extent of use) in the following location instead (i.e., no need to cite in code comments):
   * iP: in the README file
-  * tP: in the DG, under the Acknowledgements section
+  * tP: in the DG, under the Acknowledgements section. While this is consolidated declaration from the entire team but individuals are responsible for ensuring their own AI use is included in this declaration. Mention _how_ AI was used; optional to _who_ used it. e.g.,
+    ```
+    Notable uses of AI:
+
+    * Tool X and Y were used for preliminary PR reviews.
+    * Most icons used in the UI were generated using tool Y, and a few using tool Z.
+    * @JohnDoe used tool X to refine the CSS files used by the UI.
+    ```
 </box>
 
 <modal large header="Admin {{ icon_embedding }} Project mid-v1.3 (extract) →" id="modal:reusePolicy-authorTags">

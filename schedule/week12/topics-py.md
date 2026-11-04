@@ -5,5 +5,5 @@
 <div class="indented-level2">
 
 <pic eager src="../../images/cat.jpg"></pic><br>
-<small>%%[image source: esmemes.com]%%</small>
+<small>%%[image source: esmemes.com, retrieved in 2020 Jul]%%</small>
 </div>

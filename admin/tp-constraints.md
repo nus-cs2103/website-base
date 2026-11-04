@@ -132,7 +132,7 @@ Support for other browsers and devices (e.g., tablets, mobile devices) is good t
 Package everything into #r#a single JAR file that works on all three main OSes## -- Linux, macOS (Intel, ARM), Windows (including WSL). Do not create one JAR per OS.<br>
 %%**Reason:** Requiring the users to download more files can cause complications in the final peer-testing session.%%
 
-If you are unable to package everything into a JAR file, package the JAR file and any other needed files into a single ZIP file.
+If you are unable to package everything into a JAR file, ~~package the JAR file and any other needed files into a single ZIP file~~ approach us to explore an alternative.
 {%- endcall  %}
 
 {% call show_constraint("Constraint-File-Size") -%}
