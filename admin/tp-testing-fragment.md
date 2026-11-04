@@ -19,20 +19,42 @@
 
 * **[Optional] Have a good screen recording tool** if you plan to use screen recording clips as part of your bug reports.
 
-* **<span class="text-danger">Download the product to be tested</span>**.
+* **<span class="text-danger">Download the product to be tested** as explained in **part [A]** of the panel below</span>.
 
 
 <div id="zip-download-unzip-info" >
 <box type="info" header="++Downloading and unzipping JAR files you will test in the PE++" icon=":fas-download:">
 
-The files you need for the PE (i.e., `.jar` file, and a README.txt file containing the URL of the product website) will be **given to you as an encrypted zip file**. Here are the two steps involved in using it.
+The files you need for the PE (i.e., `.jar` file, and a README.html file containing the URLs of the UG and DG) will be **given to you as an encrypted zip file**. Here are the steps involved in using it.
+
+##### [A] Before the PE:
 
 1. **Downloading the zip file**: After we inform you of the details (via email), go to the download location (a Dropbox folder), and download the zip file bearing your partial student number (e.g., `A---0000X.zip`).
    * The **Dropbox password needed to download this** file is `{{ course | lower }}`.
    * ==You must download this file in advance.== Trying to download it during the PE can cause Dropbox to block you due to 'too many attempts'.
-1. **Unzipping the zip file**: You will **need a second password** to unzip this file. That password has two parts.
-   * The second part will be unique to each student, and will be given in the same email mentioned above.
+1. **Constructing the password needed to unzip the file**: You will **need a second password** to unzip this file. That password has two parts.
+   * The second part will be unique to each student, and will be given in the same email mentioned above. Keep it safe, and have it ready at the start of the PE.
    * The first part of the password (common to all) will only be announced in Canvas at the start of the PE period.
+
+1. **Recommended: Try the unzipping steps** (given in part [B] below) using [this sample zip file](https://github.com/user-attachments/files/{{ '33901091' if cs2103 else '33901164' }}/A---0000X.zip) before the PE (first part of the password: `password1-`, second part: `password2` i.e., you should use `password1-password2` to unzip it).<br>
+    Use the JAR file inside it to try the steps given below as well, to confirm that your computer's Java environment is as expected and can run PE JAR files.
+
+---
+
+##### [B] At the start of the PE:
+
+1. **Use the combined password to unzip the file**, which should give you another zip file with the name suffix `_inner.zip`.
+2. **Unzip that second zip file normally** (no password required). That will give you a folder containing the JAR file to test and a README.html containing the URL of their product website.
+     * ==Warning: do not run the JAR file while it is still inside the zip file==.
+     * Ignore the `padding_file` found among the extracted files. %%Its only purpose is to mask the true size of the JAR file so that someone cannot guess which team they will be testing based on the zip file size.%%
+
+<box type="warning" icon=":fab-apple:" seamless>
+
+macOS automatically unzips the inner zip file after you unzip the outer zip file using the password.
+
+Newer macOS versions can run into a permission issue when trying to auto-extract the inner zip file with an error `Unable to expand "..._inner.zip" It is an unsupported format`. Just ignore the error message and manually extract the inner zip file by double-clicking it.
+</box>
+
 </box>
 </div>
 

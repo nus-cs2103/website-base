@@ -86,9 +86,9 @@
 </div>
 <p/>
 
-* **Download the PE files to test**, as given below:
+* **Download the PE files to test**, as given in !!part [A]!! of the panel below:
 
-{{ embed_topic(baseUrl+"/admin/tp-testing-fragment.md#zip-download-unzip-info",  icon_embedding + " Downloading and unzipping JAR/PDF files you will test in the PE", indent=1, status='expanded') }}
+{{ embed_topic(baseUrl+"/admin/tp-testing-fragment.md#zip-download-unzip-info",  icon_embedding + " Downloading and unzipping the file you will need in the PE", indent=1, status='expanded') }}
 
 </div>
 

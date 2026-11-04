@@ -80,15 +80,10 @@ While PE are primarily _manual_ testing sessions, **you may also use any test au
 
 ###### <div class="text-white bg-secondary p-1">a) Downloading and launching the JAR file</div>
 
-* Download the zip file from the given location (to be given to you at least a few hours before the PE), if you haven't done that already.
-* The file is zipped using a two-part password.
-  * We will email you the second part in advance (it's unique to each student). Keep it safe, and have it ready at the start of the PE.
-  * At the start of the PE, we'll give you the first part of the password (common to the whole class), via a Canvas announcement. Use the combined password to unzip the file, which should give you another zip file with the name suffix `_inner.zip`.
-  * Unzip that second zip file normally (no password required). That will give you a folder containing the JAR file to test and a README.txt containing the URL of their product website. ==Warning: do not run the JAR file while it is still inside the zip file==.<br>
-  Ignore the `padding_file` found among the extracted files. %%Its only purpose is to mask the true size of the JAR file so that someone cannot guess which team they will be testing based on the zip file size.%%<br>
-    :fab-apple: macOS automatically unzips the inner zip file after you unzip the outer zip file using the password. Newer macOS versions can run into a permission issue when trying to auto-extract the inner zip file with an error `Unable to expand "..._inner.zip" It is an unsupported format`. Just ignore the error message and manually extract the inner zip file by double-clicking it.
-  * {{ icon_tip }} Strongly recommended: Try the above steps using [this sample zip file](https://github.com/user-attachments/files/{{ '33901091' if cs2103 else '33901164' }}/A---0000X.zip) if you wish (first part of the password: `password1-`, second part: `password2` i.e., you should use `password1-password2` to unzip it).<br>
-    Use the JAR file inside it to try the steps given below as well, to confirm that your computer's Java environment is as expected and can run PE JAR files.
+* Download the zip file from the given location (to be given to you at least a few hours before the PE), if you haven't done that already. !!Part B!! of the panel below explains how to unzip it.
+
+{{ embed_topic(baseUrl+"/admin/tp-testing-fragment.md#zip-download-unzip-info",  icon_embedding + " Downloading and unzipping the files you will need in the PE", indent=1, status="peek")}}
+
 
 <box type="important" id="tp-jar-testing-steps" seamless>
 
