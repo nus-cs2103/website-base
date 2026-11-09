@@ -941,7 +941,7 @@ This activity is worth `2x2=4` participation points.
 1. **Run the JAR file** as follows:
    * Put the JAR file in an ==empty folder==. {{ show_extra_info("Why an empty folder?", "This prevents data files created by other JAR files you tested earlier from interfering with the current JAR file.") }}<br>{ texts="['5.1','5.2','5.3','5.4']" }
    * Open a terminal and ==navigate to the folder== where you put the JAR file {{ show_extra_info("How?", "e.g., `cd smoke-test/ip1`") }} {{ show_extra_info("Why navigate to that folder?", "Data files will be created relative to the folder the terminal is currently in.") }}<br>
-   * {{ icon_important_big_red }} Run the ==`java -version` command== to confirm you are using Java {{ java_version }}.{% if cs2103 %}<br>
+   * {{ icon_important_big_red }} Run the ==`java -version` command== to confirm you are using Java {{ java_version }}. Mac users should be using [the Azul JDK]({{ baseUrl }}/admin/programmingLanguages.html).{% if cs2103 %}<br>
       :fab-apple: Mac users, confirm you are using the exact Java distribution we have prescribed [here](programmingLanguages.md).{% endif %}
    * Run the JAR file using the ==`java -jar "{file_name}"` command== (rather than double-clicking) in the same terminal. {{ show_extra_info("Why not double-click?", "To ensure the JAR is run using the Java version you just verified (double-clicking can run the JAR file using OS's default Java version), and it is run in the current folder (some OS'es will put run a double-clicked JAR file from a default sandbox location instead of the current folder)") }}<br>
      ```bash

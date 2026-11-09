@@ -90,7 +90,7 @@ While PE are primarily _manual_ testing sessions, **you may also use any test au
 ****Steps for testing a tP JAR file**** (please follow closely)
 
 1. Put the JAR file ==in an empty folder== in which the app is allowed to create files %%(i.e., do not use a write-protected folder)%%.<br>
-1. Open a command window. Run the `java -version` command to ensure you are using Java {{ java_version }}.<br>
+1. Open a command window. Run the `java -version` command to ensure you are using Java {{ java_version }}. Mac users should be using [the Azul JDK]({{ baseUrl }}/admin/programmingLanguages.html).<br>
   {{ icon_important_big_red }} Do this again even if you did this before, as your OS might have auto-updated the default Java version to a newer version.
 1. Check the UG to see if there are extra things you need to do before launching the JAR file %%e.g., download another file from somewhere%%.<br>
   {{ icon_info }} You may visit the team's _releases_ page on GitHub if they have provided some extra files you need to download.
@@ -145,8 +145,11 @@ While PE are primarily _manual_ testing sessions, **you may also use any test au
 </div><p/>
 
 
-* Do not post suggestions, but if the product is missing a critical functionality that makes the product less useful to the intended user, it can be reported as a bug of type `Type.FeatureFlaw`. The dev team is allowed to reject bug reports framed as mere suggestions and/or lacking a convincing justification as to why the omission or the current design of that functionality is problematic.
-
+* Do not post suggestions, but if the product is missing a critical functionality that makes the product less useful to the intended user, it can be reported as a bug of type `Type.FeatureFlaw`. The dev team is allowed to reject bug reports framed as mere suggestions and/or lacking a convincing justification as to why the omission or the current design of that functionality is problematic.{% if cs2103 %}
+* {{ icon_tip }} **Tips:** Don't over-rely on AI to detect bugs. The problems AI _can_ detect are likely to be fixed by AI already.
+  * **DG is a rich source of bugs that AI often misses**, especially the diagrams. In particular, the ones we discussed in Tutorial 10 (the answers are in Canvas/files) that relate to the appropriate level of abstraction/details in diagrams. These bugs are also unlikely to be detected by AI tools as they don't 'see' diagrams the way a human does.
+  * **AI is not good at detecting feature flaws:** In an AI-heavy software project, one critical role humans need to play is deciding _what_ to build -- AI is not good at that. Similarly, humans can often detect better than AI when a product feature is a poor fit for its target users.
+{% endif %}
 * **It may be useful to read the PE guidelines the dev team will follow when responding to bug reports**, given in the panel below.
 <div class="indented-level1">
 <panel header="Admin {{ icon_embedding }} Practical Exam → **Guidelines for determining bugs (extract)**" minimized >

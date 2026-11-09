@@ -143,4 +143,5 @@ Those mentioned elsewhere as possible UG bugs ...
 {{ show_faq("tpTestingLessBuggyProducts", is_compact="1") }}
 {{ show_faq("tpNoBugsInTestedProduct", is_compact="1") }}
 {{ show_faq("tpNeedToFindAllBugs") }}
+{{ show_faq("tpExactBugPenalty", is_compact=1) }}
 </div>

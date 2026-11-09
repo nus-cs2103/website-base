@@ -88,7 +88,10 @@
 
 * **Download the PE files to test**, as given in !!part [A]!! of the panel below:
 
+<div id="pe-zip-info">
+
 {{ embed_topic(baseUrl+"/admin/tp-testing-fragment.md#zip-download-unzip-info",  icon_embedding + " Downloading and unzipping the file you will need in the PE", indent=1, status='expanded') }}
+</div>
 
 </div>
 
@@ -121,9 +124,9 @@ You can send #r#no more than 6 bugs to the dev team## in the PE. So, if you enco
 <div id="pe-questions-we-cannot-answer">
 <box type="info" seamless>
 
-**If you are not sure if something is a bug, or the correct severity ...**{.text-info}
+**If you are not sure if something is a bug, or of the correct severity ...**{.text-info}
 
-If you are not sure if something is a bug, or the correct severity, you are welcome to post in the forum and discuss with peers. But given these decisions are part of PE deliverables, the teaching team will not be able to directly answer questions such as 'is this a bug?' or 'what's the correct severity for this bug?' -- but we can still pitch in by providing relevant information/guidelines.
+If you are not sure if something is a bug, or of the correct severity, you are welcome to post in the forum and discuss with peers. But given these decisions are part of PE deliverables, the teaching team will not be able to directly answer questions such as 'is this a bug?' or 'what's the correct severity for this bug?' -- but we can still pitch in by providing relevant information/guidelines.
 
 The above **applies to this and all remaining PE phases**.
 </box>
@@ -282,7 +285,7 @@ If the eventual `severity.*` of the bug matches the value you chose initially an
 {% set p2_last_day = ("Wednesday" if semester == "AY2627S1" else "Tuesday") %}
 {% set p2_previous_day = ("Tuesday" if semester == "AY2627S1" else "Monday") %}
 ==**Deadline:** {{ ("~~%%Tue 23:59%%~~ " + get_date(date_w12_start, 9, time="14:00")) if semester == "AY2627S1" else get_date(date_w13_start if pe_week == "13" else date_w12_start, 8 if S == 2 else 8, time="23:59") }}=={{ " %%(14 extra hours added because Monday is a public holiday)%%"  if semester == "AY2627S1" else ""}}<br>
-==**Aim to finish by {{ p2_previous_day}} 23:59**== and keep {{ p2_last_day }} as a buffer. %%Reason: We'll send you a status update at the end of {{ p2_prevous_day }}, so that you can fix any problems with your responses during Tuesday.%%
+==**Aim to finish by {{ p2_previous_day }} 23:59**== and keep {{ p2_last_day }} as a buffer. %%Reason: We'll send you a status update at the end of {{ p2_previous_day }}, so that you can fix any problems with your responses during {{ p2_last_day }}.%%
 
 {% if pe_week == "13" %}
 <box type="info" seamless>
@@ -338,17 +341,21 @@ More importantly, this is not a negotiation between two parties; it's **an attem
 * **Stray bugs:**{ .text-info } **If a bug seems to be for a different product** (i.e., wrongly assigned to your team), let us know ASAP.
 * **Assignee(s):**{ .text-info } **Assign the issue to the team member(s) responsible for the bug.**
   * If no one is assigned, the penalty will be divided equally among team members.
-  * {{ icon_important_big_red }} ==No more than <popover content="i.e., 50% of all bugs your team received, irrespective of the `response.*` assigned to them">50% of the bugs</popover> are allowed to remain 'unassigned'== (_unassigned_ here means there is no assignee, or the bug is allocated to _all_ members of the team).
+  * {{ icon_important_big_red }} ==No more than <popover content="i.e., 50% of all bugs your team received, irrespective of the `response.*` assigned to them">50% of the bugs</popover> may be in the <tooltip content="the sum of bugs without assignees and bugs that are allocated to all team members">('unassigned' + 'assigned-to-all') category</tooltip>==.
     * Any excess unassigned bugs will incur a <popover content="e.g., if a team member M's penalty is `-5`, it will be increased to `(-5)*120% = (-6)`">20% 'tax' on the total penalty each member received.</popover><br>
       Reasons:<br>
       → Pedagogical: Not being able to decide assignees for a bug shows a lack of clear division of responsibilities in the team.<br>
       → Administrative: Leaving too many bugs unassigned increases the burden on diligent team members who will then have to spend time responding to _all_ those bugs (in contrast, if all bugs are assigned, each member has to respond to 5-6 bugs on average).
-    * For this purpose, bugs flagged as duplicate are considered 'assigned' if the parent bug is assigned. Furthermore, each bug report is counted separately even if it is a duplicate of another bug report %%e.g., if bugs `B` and `C` are duplicates of bug `A` which has assignees, they are counted as three bugs with assignees%%.
+    * For this purpose, bugs flagged as duplicate are considered 'assigned' if the parent bug is assigned. Furthermore, each bug report is counted separately even if it is a duplicate of another bug report.<br>
+     %%{{ label_example }} if bugs `B` and `C` are duplicates of bug `A` which has assignees, they are counted as three bugs with assignees%%.
     * Reminder: for this purpose, bug reports assigned to _all_ team members are counted as 'unassigned'.
-  * There is no need to actually fix the bug though. It's simply an indication/acceptance of responsibility. The penalty for the bug (if any) will be divided among the assignees %%e.g., if the penalty is -0.4 and there are 2 assignees, each member will be penalized -0.2%%.
-  * If it is not easy to decide the assignee(s), we recommend (but do not enforce) that the feature owner should be assigned bugs related to the feature. Reason: The feature owner should have defended the feature against bugs using automated tests and defensive coding techniques.
+  * There is no need to actually fix the bug though. It's simply an indication/acceptance of responsibility. The penalty for the bug (if any) will be divided among the assignees<br>
+    %%{{ label_example }} if the penalty is -0.4 and there are 2 assignees, each member will be penalized -0.2%%.
+  * If it is not easy to decide the assignee(s), we recommend (but do not enforce) that the feature owner should be assigned bugs related to the feature.<br>
+    %%Reason: The feature owner should have defended the feature against bugs using automated tests and defensive coding techniques.%%
   * You may need to type the GitHub username of a member for it to appear in the assignee list.<br>
    <img width="347" src="../images/peAssignMemberDropdown.png" />
+  * ==#r#Do not assign teaching team members to bugs##== for any reason.
 * **Acceptance status:**{ .text-info } **Apply exactly one `response.*` label** (if missing, or if there are multiple such labels, we assign: `response.Accepted`)
 
 <div class="indented">
@@ -356,7 +363,8 @@ More importantly, this is not a negotiation between two parties; it's **an attem
 
 **Response** Labels:
 * `response.Accepted`: You accept it as a valid bug that !!should have been fixed in the current version!! even if you don't necessarily agree with the `severity.*` and `type.*` given.
-* `response.NotInScope`: It is a valid issue, but fixing it is less important than the work done in the current version of the product %%e.g., it was not related to features delivered in {{ version_final }} or lower priority than the work already done in {{ version_final }}%%.
+* `response.NotInScope`: It is a valid issue, but fixing it is less important than the work done in the current version of the product.<br>
+   %%{{ label_example }} it was not related to features delivered in {{ version_final }} or lower priority than the work already done in {{ version_final }}%%.
 * `response.NotApplicable`: What the tester treated as a bug is in fact the _expected_ and _correct_ behavior (from the user's point of view), or the tester was mistaken in some other way. %%Note: Disagreement with the bug severity/type given by the tester is not a valid reason to choose this response.%%
 * `response.CannotReproduce`: You are unable to reproduce the behavior reported in the bug after multiple tries.
 * `response.IssueUnclear`: The issue description is not clear. Don't post comments asking the tester to give more info. The tester will not be able to see those comments because the bug reports are anonymous.
@@ -386,7 +394,8 @@ Note that `response.NotInScope` bugs earn a small amount of credit for the teste
 * `type.FeatureFlaw`: Some functionality missing from a feature delivered in {{ version_final }} in a way that the feature becomes less useful to the intended target user for _normal_ usage, i.e., the feature is not 'complete'. In other words, an acceptance-testing bug that falls within the scope of {{ version_final }} features.<br>
   These issues are counted against the _product design_ aspect of the project. Therefore, other design problems (e.g., low testability, mismatches to the target user/problem, project constraint violations etc.) can be put in this category as well.<br>
   Features that work as specified by the UG but _should have been designed to work differently_ (from the end-user's point of view) fall in this category too.
-* `type.DocumentationBug`: A flaw in the documentation %%e.g., a missing step, a wrong instruction, typos%%
+* `type.DocumentationBug`: A flaw in the documentation.<br>
+   %%{{ label_example }} a missing step, a wrong instruction, typos%%
 </box>
 
 * If a bug fits multiple types _equally_ well, the team is free to choose the one they think is the best match.
@@ -398,6 +407,8 @@ Note that `response.NotInScope` bugs earn a small amount of credit for the teste
 
 * If there are multiple severity labels, we choose the lowest one. If there is no severity label, we revert to the one assigned by the tester.
 </div>
+
+{{ show_faq("tpMultipleChangesToOneBug") }}
 
 * **Justification:**{ .text-info } **Add a _team response comment_, justifying your response.** This comment will be communicated to the tester (who can then add their own counter-response, if they don't agree with yours) and will be considered by the teaching team in later phases (when resolving disputed bug reports).
   * **Give your team's response as a single comment, starting with a line that has the text `# T`** (<kbd>#</kbd><kbd> space </kbd><kbd>T</kbd>). Example:<br>
@@ -437,6 +448,7 @@ Note that `response.NotInScope` bugs earn a small amount of credit for the teste
      If there are multiple comments in the issue thread, we will take the latest comment that starts with `# T` as the team's response.<br>
      #r#If there aren't any comments starting with `# T`, we assume the team has not submitted a response##, even if there are other comments in the issue thread.
 
+{{ show_faq("tpAiGeneratedBugReports", is_compact=1) }}
 {{ show_faq("tpJustifyBugsAcceptedAsIs", is_compact=0) }}
 
 <div class="d-none">

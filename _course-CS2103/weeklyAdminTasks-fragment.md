@@ -54,14 +54,14 @@ week12: [
   {id: 'submit_reuse_declaration', deadline: "COMPULSORY | " + get_date(date_w13_start, 1), deadline_type: 'danger', graded: true},
   {id: 'submit_feedback_for_tutors'},
   {id: 'submit_final_peer_evaluations', deadline: get_date(date_w12_start, 3), graded: true},
-  {id: 'submit_pe_readiness_quiz', deadline: "before the PE", deadline_type: 'danger', graded: true}
+  {id: 'submit_pe_readiness_quiz', deadline: "before the PE, latest: " + get_date(date_w12_start, 4), deadline_type: 'danger', graded: true}
 ] if pe_week == '12' else [
   {id: 'submit_reuse_declaration', deadline: "COMPULSORY | " + get_date(date_w13_start, 1), deadline_type: 'danger', graded: true},
   {id: 'submit_feedback_for_tutors'}
 ],
 week13: [
   {id: 'submit_final_peer_evaluations', deadline: get_date(date_w13_start, 3), graded: true},
-  {id: 'submit_pe_readiness_quiz', deadline: "before the PE", deadline_type: 'danger', graded: true}
+  {id: 'submit_pe_readiness_quiz', deadline: "before the PE, latest: " + get_date(date_w13_start, 4), deadline_type: 'danger', graded: true}
 ] if pe_week == '13' else [
 ]
 } %}

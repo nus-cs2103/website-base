@@ -1165,6 +1165,36 @@ No need to provide a justification if you accept the bug without _any_ changes t
 </div>
 <!-- =============================================================== -->
 
+<div id="faq-tpAiGeneratedBugReports-Q">How to handle AI-generated bug reports?</div>
+<div id="faq-tpAiGeneratedBugReports-A">
+
+Treat them like any other bug reports and evaluate them based on their merits.
+
+However, you can separately report the bug as 'unprofessional' if it hasn't received enough 'care' from the tester.<br>
+%%{{ label_example }} dumped the AI output into the bug report without verifying or cleaning it up first.%%
+</div>
+<!-- =============================================================== -->
+
+<div id="faq-tpExactBugPenalty-Q">What are the exact penalties for various bug types/severities?</div>
+<div id="faq-tpExactBugPenalty-A">
+
+The exact penalties are not disclosed as they need to be recalibrated every semester. In the past, bug penalties have varied from `-0.10` to `-1.2`.
+
+</div>
+<!-- =============================================================== -->
+
+<div id="faq-tpMultipleChangesToOneBug-Q">Can a team change types/severity of a bug and also not accept the bug?</div>
+<div id="faq-tpMultipleChangesToOneBug-A">
+
+Yes, the three aspects are independently evaluated. Each will be considered independently by the tester and the teaching team.
+
+Example: Suppose the dev team chooses `response.NotInScope` and downgrades the severity. Some possible results:
+
+* Case 1: The tester disagrees with both. The teaching team agrees with dev team on `NotInScope` and with the tester on severity.
+* Case 2: The tester agrees with the response and disagrees with the severity downgrade. The teaching team agrees with the tester on the severity.
+</div>
+<!-- =============================================================== -->
+
 <div id="faq-tpMoreCodeMeansHigherPenalty-Q">So, those who write more code will be hit with more bugs? How's that fair?</div>
 <div id="faq-tpMoreCodeMeansHigherPenalty-A">
 

@@ -171,7 +171,8 @@ We recommend you configure the issue tracker of the tP team repo as follows:
 * `type.Epic`: A big feature which can be broken down into smaller stories e.g., search
 * `type.Story`: A user story
 * `type.Enhancement`: An enhancement to an existing story
-* `type.Task` (or `type.Chore`): Something that needs to be done, but not a story, bug, or an epic. %%e.g., Move testing code into a new folder%%
+* `type.Task` (or `type.Chore`): Something that needs to be done, but not a story, bug, or an epic.<br>
+   %%{{ label_example }} Move testing code into a new folder%%
 * `type.Bug`: A bug
 
 </box>
@@ -193,8 +194,10 @@ We recommend you configure the issue tracker of the tP team repo as follows:
 * `severity.Medium` : A flaw that causes occasional inconvenience to some users, but they can continue to use the product.
 * `severity.High` : A flaw that affects most users and causes major problems for them, i.e., only problems that make the product ==almost unusable for most users== should have this label.
 
-{{ icon_info }} **You may consider the impact on the product's credibility**, in addition to the impact on the user, when deciding the severity level %%e.g., obvious and visible bugs hurt the product's credibility more%%.<br>
-{{ icon_info }} **When determining severity of documentation bugs**, replace _user_ with _reader_ %%e.g., when deciding severity of DG bugs, consider the impact of the bug on developers reading the DG%%.
+{{ icon_info }} **You may consider the impact on the product's credibility**, in addition to the impact on the user, when deciding the severity level.<br>
+ %%{{ label_example }} obvious and visible bugs hurt the product's credibility more%%.<br>
+{{ icon_info }} **When determining severity of documentation bugs**, replace _user_ with _reader_<br>
+ %%{{ label_example }} when deciding severity of DG bugs, consider the impact of the bug on developers reading the DG%%.
 
 </box>
 </div>

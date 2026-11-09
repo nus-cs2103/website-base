@@ -35,7 +35,6 @@ The files you need for the PE (i.e., `.jar` file, and a README.html file contain
 1. **Constructing the password needed to unzip the file**: You will **need a second password** to unzip this file. That password has two parts.
    * The second part will be unique to each student, and will be given in the same email mentioned above. Keep it safe, and have it ready at the start of the PE.
    * The first part of the password (common to all) will only be announced in Canvas at the start of the PE period.
-
 1. **Recommended: Try the unzipping steps** (given in part [B] below) using [this sample zip file](https://github.com/user-attachments/files/{{ '33901091' if cs2103 else '33901164' }}/A---0000X.zip) before the PE (first part of the password: `password1-`, second part: `password2` i.e., you should use `password1-password2` to unzip it).<br>
     Use the JAR file inside it to try the steps given below as well, to confirm that your computer's Java environment is as expected and can run PE JAR files.
 
